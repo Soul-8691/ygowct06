@@ -191,6 +191,7 @@ SECTIONS {
     } >ewram
 
     iwram (NOLOAD) : ALIGN(4) {
+        . = 0x00000000; gIntrTable = .;
         . = 0x00000000; gUnk_03000000 = .;
         . = 0x00000020; gUnk_03000020 = .;
         . = 0x00000040; gUnk_03000040 = .;
@@ -250,12 +251,11 @@ SECTIONS {
         . = 0x00005F4A; gUnk_03005F4A = .;
         . = 0x00005F4C; gUnk_03005F4C = .;
         . = 0x00005F78; gUnk_03005F78 = .;
-        . = 0x00007800; gUnk_03007800 = .;
-        . = 0x00007E00; gUnk_03007E00 = .;
         . = 0x00008000;
     } >iwram
 
     rom : ALIGN(4) {
+        asm/crt0.o(.text);
         asm/code.o(.text);
         data/data.o(.rodata);
         rom_data_end = .;
