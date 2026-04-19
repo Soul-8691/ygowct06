@@ -257,6 +257,8 @@ SECTIONS {
     rom : ALIGN(4) {
         asm/crt0.o(.text);
         asm/code.o(.text);
+        asm/libagbsyscall.o(.text);
+        asm/code2.o(.text);
         data/data.o(.rodata);
         rom_data_end = .;
     } >rom

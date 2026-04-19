@@ -53,4 +53,6 @@ void SoundBiasReset(void);
 
 void SoundBiasSet(void);
 
+s32 GetBiosChecksum(void);
+
 #endif // GUARD_GBA_SYSCALL_H
