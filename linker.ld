@@ -161,8 +161,8 @@ SECTIONS {
         . = 0x000297E4; gUnk_020297E4 = .;
         . = 0x00029810; gUnk_02029810 = .;
         . = 0x00029E90; gUnk_02029E90 = .;
-        . = 0x00029EA0; gUnk_02029EA0 = .;
-        . = 0x00029EA4; gUnk_02029EA4 = .;
+        . = 0x00029EA0; ReadSramFast = .;
+        . = 0x00029EA4; VerifySramFast = .;
         . = 0x00029EA8; gUnk_02029EA8 = .;
         . = 0x00029EB0; gUnk_02029EB0 = .;
         . = 0x00029EB7; gUnk_02029EB7 = .;
@@ -235,10 +235,7 @@ SECTIONS {
         . = 0x00005608; gUnk_03005608 = .;
         . = 0x00005644; gUnk_03005644 = .;
         . = 0x00005648; gUnk_03005648 = .;
-        . = 0x00005658; gUnk_03005658 = .;
-        . = 0x00005659; gUnk_03005659 = .;
-        . = 0x000056F8; gUnk_030056F8 = .;
-        . = 0x000056F9; gUnk_030056F9 = .;
+        . = 0x00005658; src/agb_sram.o(.bss);
         . = 0x00005778; gUnk_03005778 = .;
         . = 0x0000577C; gUnk_0300577C = .;
         . = 0x00005780; gUnk_03005780 = .;
@@ -258,6 +255,7 @@ SECTIONS {
         asm/crt0.o(.text);
         asm/code.o(.text);
         asm/libagbsyscall.o(.text);
+        src/agb_sram.o(.text);
         asm/code2.o(.text);
         data/data.o(.rodata);
         rom_data_end = .;
