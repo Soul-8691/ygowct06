@@ -163,7 +163,7 @@ SECTIONS {
         . = 0x00029E90; gUnk_02029E90 = .;
         . = 0x00029EA0; ReadSramFast = .;
         . = 0x00029EA4; VerifySramFast = .;
-        . = 0x00029EA8; gUnk_02029EA8 = .;
+        . = 0x00029EA8; *libc.a:*.o(COMMON);
         . = 0x00029EB0; gUnk_02029EB0 = .;
         . = 0x00029EB7; gUnk_02029EB7 = .;
         . = 0x00029EC0; gUnk_02029EC0 = .;
@@ -236,18 +236,13 @@ SECTIONS {
         . = 0x00005644; gUnk_03005644 = .;
         . = 0x00005648; gUnk_03005648 = .;
         . = 0x00005658; src/agb_sram.o(.bss);
-        . = 0x00005778; gUnk_03005778 = .;
-        . = 0x0000577C; gUnk_0300577C = .;
-        . = 0x00005780; gUnk_03005780 = .;
-        . = 0x00005784; gUnk_03005784 = .;
-        . = 0x00005788; gUnk_03005788 = .;
-        . = 0x00005828; gUnk_03005828 = .;
-        . = 0x00005840; gUnk_03005840 = .;
+        . = 0x00005778; *libc.a:*.o(.bss);
+        . = 0x00005828; *libgcc.a:*.o(.bss);
         . = 0x00005850; gUnk_03005850 = .;
         . = 0x0000585C; gUnk_0300585C = .;
         . = 0x00005F4A; gUnk_03005F4A = .;
         . = 0x00005F4C; gUnk_03005F4C = .;
-        . = 0x00005F78; gUnk_03005F78 = .;
+        . = 0x00005F78; end = .;
         . = 0x00008000;
     } >iwram
 
@@ -256,8 +251,71 @@ SECTIONS {
         asm/code.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);
+
+        *libgcc.a:_call_via_rX.o(.text);
+        *libgcc.a:_divsi3.o(.text);
+        *libgcc.a:_dvmd_tls.o(.text);
+        *libgcc.a:_modsi3.o(.text);
+        *libgcc.a:_muldi3.o(.text);
+        *libgcc.a:_udivsi3.o(.text);
+        *libgcc.a:_umodsi3.o(.text);
+
+        *libc.a:memcmp.o(.text);
+        *libc.a:memcpy.o(.text);
+        *libc.a:memset.o(.text);
+        *libc.a:qsort.o(.text);
+        *libc.a:sscanf.o(.text);
+        *libc.a:strcat.o(.text);
+        *libc.a:strcmp.o(.text);
+        *libc.a:strcpy.o(.text);
+        *libc.a:strlen.o(.text);
+        *libc.a:strncmp.o(.text);
+        *libc.a:strncpy.o(.text);
+        *libc.a:vfscanf.o(.text);
+
         asm/code2.o(.text);
+        *libc.a:atof.o(.text);
+        *libc.a:fread.o(.text);
+        *libc.a:refill.o(.text);
+        *libc.a:strtod.o(.text);
+        *libc.a:strtol.o(.text);
+        *libc.a:strtoul.o(.text);
+        *libc.a:ungetc.o(.text);
+        *libc.a:fflush.o(.text);
+        *libc.a:findfp.o(.text);
+        *libc.a:freer.o(.text);
+        *libc.a:fwalk.o(.text);
+        *libc.a:makebuf.o(.text);
+        *libc.a:mallocr.o(.text);
+        *libc.a:mlock.o(.text);
+        *libc.a:mprec.o(.text);
+        *libc.a:reallocr.o(.text);
+        *libc.a:sbrkr.o(.text);
+        *libc.a:stdio.o(.text);
+        *libc.a:syscalls.o(.text);
+        *libc.a:writer.o(.text);
+        *libc.a:callocr.o(.text);
+        *libc.a:closer.o(.text);
+        *libc.a:errno.o(.text);
+        *libc.a:fstatr.o(.text);
+        *libc.a:libcfunc.o(.text);
+        *libc.a:lseekr.o(.text);
+        *libc.a:readr.o(.text);
+        *libgcc.a:dp-bit.o(.text);
+        *libgcc.a:fp-bit.o(.text);
+        *libgcc.a:_lshrdi3.o(.text);
+        *libgcc.a:_negdi2.o(.text);
+    } >rom
+
+    rodata : ALIGN(4) {
         data/data.o(.rodata);
+        src/agb_sram.o(.rodata);
+        *libc.a:vfscanf.o(.rodata);
+        data/data1.o(.rodata);
+        *libc.a:*.o(.rodata);
+        data/data2.o(.rodata);
+        *libc.a:*.o(.data);
+        data/data3.o(.rodata);
         rom_data_end = .;
     } >rom
 
