@@ -249,6 +249,8 @@ SECTIONS {
     rom : ALIGN(4) {
         asm/crt0.o(.text);
         asm/code.o(.text);
+        src/GL_File.o(.text);
+        asm/code_0801510C.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);
 
@@ -309,6 +311,8 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
+        src/GL_File.o(.rodata);
+        data/data_09E399D0.o(.rodata);
         src/agb_sram.o(.rodata);
         *libc.a:vfscanf.o(.rodata);
         data/data1.o(.rodata);
