@@ -251,6 +251,8 @@ SECTIONS {
         asm/code.o(.text);
         src/GL_File.o(.text);
         asm/code_0801510C.o(.text);
+        asm/g2d_Animation.o(.text);
+        asm/code_080E9340.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);
 
