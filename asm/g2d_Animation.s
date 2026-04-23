@@ -1385,3 +1385,14 @@ _080E9330: .4byte gUnk_09E4A4A8
 _080E9334: .4byte 0x000002BB
 _080E9338: .4byte gUnk_09E4A49C
 _080E933C: .4byte gUnk_09E4A4D0
+
+	thumb_func_start sub_080E9340
+sub_080E9340: @ 0x080E9340
+	adds r1, r0, #0
+	adds r1, #3
+	movs r0, #0x80
+	lsls r0, r0, #9
+	lsls r0, r1
+	lsrs r0, r0, #0x10
+	bx lr
+	.align 2, 0
