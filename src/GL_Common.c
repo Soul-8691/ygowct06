@@ -44,24 +44,6 @@ extern struct Unk_03000040 gUnk_03000040;
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);
 
-inline void* sub_08014E54(u16 *bgCntAddr)
-{
-    u16 bgCnt = *bgCntAddr;
-    return (void*)0x06000000 + (((vBgCnt*)&bgCnt)->charBaseBlock * 0x4000);
-}
-
-inline s32 sub_08014E70(u16* bgCntAddr)
-{
-    u16 bgCnt = *bgCntAddr;
-    return ((vBgCnt*)&bgCnt)->screenSize;
-}
-
-inline void* sub_08014E84(u16 *bgCntAddr)
-{
-    u16 bgCnt = *bgCntAddr;
-    return (void*)0x06000000 + (((vBgCnt*)&bgCnt)->screenBaseBlock * 0x800);
-}
-
 void GL_CpuCopy(void *src, void *dest, s32 size)
 {
     s32 size16;
@@ -275,6 +257,12 @@ void sub_08014914(void)
     }
 }
 
+inline void* sub_08014E54(u16 *bgCntAddr)
+{
+    u16 bgCnt = *bgCntAddr;
+    return (void*)0x06000000 + (((vBgCnt*)&bgCnt)->charBaseBlock * 0x4000);
+}
+
 void* sub_08014A10(void)
 {
     return sub_08014E54((void*)REG_ADDR_BG0CNT);
@@ -293,6 +281,12 @@ void* sub_08014A50(void)
 void* sub_08014A70(void)
 {
     return sub_08014E54((void*)REG_ADDR_BG3CNT);
+}
+
+inline s32 sub_08014E70(u16* bgCntAddr)
+{
+    u16 bgCnt = *bgCntAddr;
+    return ((vBgCnt*)&bgCnt)->screenSize;
 }
 
 s32 sub_08014A90(void)
@@ -385,10 +379,17 @@ s32 sub_08014AF0(s32 arg0, s32 arg1, s32 arg2)
     return var_r5;
 }
 
+// unused?
 void sub_08014B6C(s32 arg0, s32 arg1, s32 arg2)
 {
     ((vu16 *)REG_ADDR_BG0HOFS)[arg0] = arg1;
     ((vu16 *)REG_ADDR_BG0VOFS)[arg0] = arg2;
+}
+
+inline void* sub_08014E84(u16 *bgCntAddr)
+{
+    u16 bgCnt = *bgCntAddr;
+    return (void*)0x06000000 + (((vBgCnt*)&bgCnt)->screenBaseBlock * 0x800);
 }
 
 void* sub_08014B8C(void)
