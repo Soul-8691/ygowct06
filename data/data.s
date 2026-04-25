@@ -129914,18 +129914,3 @@ gUnk_09E398A4:: @ 09E398A4
 
 gUnk_09E398C0:: @ 09E398C0
 	.incbin "baserom.gba", 0x1E398C0, 0x1C
-
-gUnk_09E398DC:: @ 09E398DC
-	.incbin "baserom.gba", 0x1E398DC, 0x10
-
-gUnk_09E398EC:: @ 09E398EC
-	.incbin "baserom.gba", 0x1E398EC, 0x20
-
-gUnk_09E3990C:: @ 09E3990C
-	.incbin "baserom.gba", 0x1E3990C, 0x1C
-
-gUnk_09E39928:: @ 09E39928
-	.incbin "baserom.gba", 0x1E39928, 0x1C
-
-gUnk_09E39944:: @ 09E39944
-	.incbin "baserom.gba", 0x1E39944, 0x18

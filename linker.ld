@@ -250,7 +250,7 @@ SECTIONS {
         asm/crt0.o(.text);
         asm/code.o(.text);
         src/GL_Char.o(.text);
-        asm/GL_Common.o(.text);
+        src/GL_Common.o(.text);
         src/GL_File.o(.text);
         asm/code_0801510C.o(.text);
         asm/fx_mtx22.o(.text);
@@ -324,6 +324,7 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
+        src/GL_Common.o(.rodata);
         src/GL_File.o(.rodata);
         data/data_09E399D0.o(.rodata);
         src/agb_sram.o(.rodata);

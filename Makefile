@@ -157,6 +157,7 @@ sound/songs/%.s: sound/songs/%.mid
 
 $(C_BUILDDIR)/agb_sram.o: CFLAGS = -mthumb-interwork -Wimplicit -Wparentheses -Werror -O1 -g -fhex-asm -ffix-debug-line
 $(C_BUILDDIR)/GL_Char.o: CC1 := tools/agbcc/bin/old_agbcc
+$(C_BUILDDIR)/GL_Common.o: CC1 := tools/agbcc/bin/old_agbcc
 $(C_BUILDDIR)/GL_File.o: CC1 := tools/agbcc/bin/old_agbcc
 
 ifeq ($(NODEP),1)
