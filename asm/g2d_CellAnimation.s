@@ -35,7 +35,7 @@ _080E9376:
 	adds r4, r0, #0
 	ldr r0, [r5, #0x30]
 	ldrh r1, [r4]
-	bl sub_080EB7F0
+	bl NNS_G2dGetCellDataByIdx
 	str r0, [r5, #0x2c]
 	cmp r0, #0
 	bne _080E93A0
