@@ -1,7 +1,8 @@
 #include "global.h"
+#include "GL_Common.h"
 
 struct Unk_02023480_8 {
-    u32 unk_0_0:2; // BLDCNT Color Effect
+    u32 bldCntEffect:2; // BLDCNT Color Effect
     u32 unk_0_2:8;
     u32 unk_0_A:8;
 };
@@ -9,11 +10,11 @@ struct Unk_02023480_8 {
 struct Unk_02023480 {
     s8 unk_0;
     s8 unk_1;
-    u8 unk_2; // 1st target pixel
+    u8 bldCntTarget1; // 1st target pixel
     s8 unk_3;
     s8 unk_4;
     s8 unk_5;
-    u8 unk_6; // 2nd target pixel
+    u8 bldCntTarget2; // 2nd target pixel
     s8 unk_7;
     struct Unk_02023480_8 unk_8;
 };
@@ -44,6 +45,7 @@ extern struct Unk_03000040 gUnk_03000040;
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);
 
+// 14600
 void GL_CpuCopy(void *src, void *dest, s32 size)
 {
     s32 size16;
@@ -70,6 +72,7 @@ void GL_CpuCopy(void *src, void *dest, s32 size)
     }
 }
 
+// 14638
 void sub_08014638(void)
 {
     gUnk_03000040.unk_174 = 0;
@@ -88,32 +91,35 @@ void sub_08014638(void)
     REG_BG3VOFS = 0;
 }
 
+// 1469C
 void sub_0801469C(void)
 {
-    gUnk_02023480.unk_8.unk_0_0 = 0;
+    gUnk_02023480.unk_8.bldCntEffect = 0;
     gUnk_02023480.unk_8.unk_0_2 = 0;
     gUnk_02023480.unk_8.unk_0_A = 1;
 }
 
+// 146CC
 void sub_080146CC(s32 bright)
 {
     if (gUnk_02023480.unk_1 >= 0)
     {
         if (gUnk_02023480.unk_0 >= 0)
         {
-            gUnk_02023480.unk_8.unk_0_0 = 2;
+            gUnk_02023480.unk_8.bldCntEffect = BLDCNT_EFFECT_LIGHTEN >> 6;
         }
         else
         {
-            gUnk_02023480.unk_8.unk_0_0 = 3;
+            gUnk_02023480.unk_8.bldCntEffect = BLDCNT_EFFECT_DARKEN >> 6;
         }
     }
     else
     {
-        gUnk_02023480.unk_8.unk_0_0 = 3;
+        gUnk_02023480.unk_8.bldCntEffect = BLDCNT_EFFECT_DARKEN >> 6;
     }
 }
 
+// 146FC
 void sub_080146FC(s32 arg0, s32 bright)
 {
     struct Unk_02023480 *unk_02023480 = &gUnk_02023480;
@@ -125,12 +131,13 @@ void sub_080146FC(s32 arg0, s32 bright)
 
     unk_02023480->unk_1 = bright;
     unk_02023480->unk_0 = bright;
-    unk_02023480->unk_2 = arg0;
+    unk_02023480->bldCntTarget1 = arg0;
     unk_02023480->unk_8.unk_0_2 = 0;
     unk_02023480->unk_8.unk_0_A = 1;
     sub_080146CC(bright);
 }
 
+// 14754
 void sub_08014754(s32 arg0, s32 arg1, s32 blend1, s32 blend2)
 {
     struct Unk_02023480 *unk_02023480 = &gUnk_02023480;
@@ -146,15 +153,16 @@ void sub_08014754(s32 arg0, s32 arg1, s32 blend1, s32 blend2)
 
     unk_02023480->unk_1 = blend1;
     unk_02023480->unk_0 = blend1;
-    unk_02023480->unk_2 = arg0;
+    unk_02023480->bldCntTarget1 = arg0;
     unk_02023480->unk_5 = blend2;
     unk_02023480->unk_4 = blend2;
-    unk_02023480->unk_6 = arg1;
+    unk_02023480->bldCntTarget2 = arg1;
     unk_02023480->unk_8.unk_0_2 = 0;
     unk_02023480->unk_8.unk_0_A = 1;
-    unk_02023480->unk_8.unk_0_0 = 1;
+    unk_02023480->unk_8.bldCntEffect = 1;
 }
 
+// 147D8
 void sub_080147D8(s32 arg0, s32 bright, s32 arg2)
 {
     struct Unk_02023480 *unk_02023480 = &gUnk_02023480;
@@ -168,10 +176,11 @@ void sub_080147D8(s32 arg0, s32 bright, s32 arg2)
     unk_02023480->unk_8.unk_0_A = arg2;
     unk_02023480->unk_0 = unk_02023480->unk_1;
     unk_02023480->unk_1 = bright;
-    unk_02023480->unk_2 = arg0;
+    unk_02023480->bldCntTarget1 = arg0;
     sub_080146CC(bright);
 }
 
+// 14838
 void sub_08014838(s32 arg0, s32 arg1, s32 blend1, s32 blend2, s32 arg4)
 {
     struct Unk_02023480 *unk_02023480 = &gUnk_02023480;
@@ -189,23 +198,26 @@ void sub_08014838(s32 arg0, s32 arg1, s32 blend1, s32 blend2, s32 arg4)
     unk_02023480->unk_4 = unk_02023480->unk_5;
     unk_02023480->unk_1 = blend1;
     unk_02023480->unk_5 = blend2;
-    unk_02023480->unk_2 = arg0;
-    unk_02023480->unk_6 = arg1;
-    unk_02023480->unk_8.unk_0_0 = 1;
+    unk_02023480->bldCntTarget1 = arg0;
+    unk_02023480->bldCntTarget2 = arg1;
+    unk_02023480->unk_8.bldCntEffect = 1;
     unk_02023480->unk_8.unk_0_2 = 0;
     unk_02023480->unk_8.unk_0_A = arg4;
 }
 
+// 148D0
 void sub_080148D0(void)
 {
     sub_080147D8(0x3F, 0, 8);
 }
 
+// 148E0
 void sub_080148E0(void)
 {
     sub_080147D8(0x3F, -16, 8);
 }
 
+// 148F4
 s32 sub_080148F4(void)
 {
     if (gUnk_02023480.unk_8.unk_0_2 != gUnk_02023480.unk_8.unk_0_A)
@@ -215,13 +227,14 @@ s32 sub_080148F4(void)
     return 0;
 }
 
+// 14914
 void sub_08014914(void)
 {
     s32 var_r5;
     s32 var_0;
     s32 var_2;
     s32 var_3;
-    s32 var_4;
+    s32 bldCnt;
     s32 var_5;
     s32 var_6;
     struct Unk_02023480 *unk_02023480 = &gUnk_02023480;
@@ -232,123 +245,134 @@ void sub_08014914(void)
         return;
 
     unk_02023480->unk_8.unk_0_2 += 1;
-    switch (unk_02023480->unk_8.unk_0_0 << 6)
+    switch (unk_02023480->unk_8.bldCntEffect << 6)
     {
-        case 0 << 6:
-        case 1 << 6:
-            var_0 = (unk_02023480->unk_8.unk_0_0 << 6) | (unk_02023480_1->unk_2) | (unk_02023480_1->unk_6 << 8);
+        case BLDCNT_EFFECT_NONE:
+        case BLDCNT_EFFECT_BLEND:
+            var_0 = (unk_02023480->unk_8.bldCntEffect << 6) | (unk_02023480_1->bldCntTarget1) | (unk_02023480_1->bldCntTarget2 << 8); // BLDCNT
             var_2 = ((-unk_02023480_1->unk_0 + unk_02023480_1->unk_1) * unk_02023480->unk_8.unk_0_2) / unk_02023480->unk_8.unk_0_A;
-            var_0 |= (unk_02023480_1->unk_0 + var_2) << 0x10;
+            var_0 |= (unk_02023480_1->unk_0 + var_2) << 0x10; // BLDALPHA EVA
             var_3 = ((-unk_02023480_1->unk_4 + unk_02023480_1->unk_5) * unk_02023480->unk_8.unk_0_2) / unk_02023480->unk_8.unk_0_A;
-            var_0 |= (unk_02023480_1->unk_4 + var_3) << 0x18;
-            *(u32 *)0x04000050 = var_0;
+            var_0 |= (unk_02023480_1->unk_4 + var_3) << 0x18; // BLDALPHA EVB
+            *(u32 *)REG_ADDR_BLDCNT = var_0;
             break;
 
-        case (1 | 2) << 6:
+        case BLDCNT_EFFECT_DARKEN:
             var_r5 = -1;
             /* fallthrough */
-        case 2 << 6:
-            var_4 = (unk_02023480->unk_8.unk_0_0 << 6) | (unk_02023480_1->unk_2) | (unk_02023480_1->unk_6 << 8);
-            *(u16 *)0x04000050 = var_4;
+        case BLDCNT_EFFECT_LIGHTEN:
+            bldCnt = (unk_02023480->unk_8.bldCntEffect << 6) | (unk_02023480_1->bldCntTarget1) | (unk_02023480_1->bldCntTarget2 << 8);
+            *(u16 *)REG_ADDR_BLDCNT = bldCnt;
             var_5 = ((-unk_02023480_1->unk_0 + unk_02023480_1->unk_1) * unk_02023480->unk_8.unk_0_2) / unk_02023480->unk_8.unk_0_A;
             var_6 = var_r5 * (unk_02023480_1->unk_0 + var_5);
-            *(u16 *)0x04000054 = var_6;
+            *(vu16 *)REG_ADDR_BLDY = var_6;
             break;
     }
 }
 
-inline void* sub_08014E54(u16 *bgCntAddr)
+// 14E54
+inline void* GL_GetBgCharBasePtr_Inline(u16 *bgCntAddr)
 {
     u16 bgCnt = *bgCntAddr;
-    return (void*)0x06000000 + (((vBgCnt*)&bgCnt)->charBaseBlock * 0x4000);
+    return BG_CHAR_ADDR(((vBgCnt*)&bgCnt)->charBaseBlock);
 }
 
-void* sub_08014A10(void)
+// 14A10
+void* GL_GetBg0CharBasePtr(void)
 {
-    return sub_08014E54((void*)REG_ADDR_BG0CNT);
+    return GL_GetBgCharBasePtr_Inline((void*)REG_ADDR_BG0CNT);
 }
 
-void* sub_08014A30(void)
+// 14A30
+void* GL_GetBg1CharBasePtr(void)
 {
-    return sub_08014E54((void*)REG_ADDR_BG1CNT);
+    return GL_GetBgCharBasePtr_Inline((void*)REG_ADDR_BG1CNT);
 }
 
-void* sub_08014A50(void)
+// 14A50
+void* GL_GetBg2CharBasePtr(void)
 {
-    return sub_08014E54((void*)REG_ADDR_BG2CNT);
+    return GL_GetBgCharBasePtr_Inline((void*)REG_ADDR_BG2CNT);
 }
 
-void* sub_08014A70(void)
+// 14A70
+void* GL_GetBg3CharBasePtr(void)
 {
-    return sub_08014E54((void*)REG_ADDR_BG3CNT);
+    return GL_GetBgCharBasePtr_Inline((void*)REG_ADDR_BG3CNT);
 }
 
-inline s32 sub_08014E70(u16* bgCntAddr)
+// 14E70
+inline s32 GL_GetBgScreenSize_Inline(u16* bgCntAddr)
 {
     u16 bgCnt = *bgCntAddr;
     return ((vBgCnt*)&bgCnt)->screenSize;
 }
 
-s32 sub_08014A90(void)
+// 14A90
+s32 GL_GetBg0ScreenSize(void)
 {
-    return sub_08014E70((void*)REG_ADDR_BG0CNT);
+    return GL_GetBgScreenSize_Inline((void*)REG_ADDR_BG0CNT);
 }
 
-s32 sub_08014AA8(void)
+// 14AA8
+s32 GL_GetBg1ScreenSize(void)
 {
-    return sub_08014E70((void*)REG_ADDR_BG1CNT);
+    return GL_GetBgScreenSize_Inline((void*)REG_ADDR_BG1CNT);
 }
 
-s32 sub_08014AC0(void)
+// 14AC0
+s32 GL_GetBg2ScreenSize(void)
 {
-    return sub_08014E70((void*)REG_ADDR_BG2CNT);
+    return GL_GetBgScreenSize_Inline((void*)REG_ADDR_BG2CNT);
 }
 
-s32 sub_08014AD8(void)
+// 14AD8
+s32 GL_GetBg3ScreenSize(void)
 {
-    return sub_08014E70((void*)REG_ADDR_BG3CNT);
+    return GL_GetBgScreenSize_Inline((void*)REG_ADDR_BG3CNT);
 }
 
-s32 sub_08014AF0(s32 arg0, s32 arg1, s32 arg2)
+// 14AF0
+s32 sub_08014AF0(s32 bgNum, s32 arg1, s32 arg2)
 {
-    s32 var_r1;
+    s32 bgScreenSize;
     s32 var_r5;
 
-    var_r1 = 0;
+    bgScreenSize = 0;
     var_r5 = 0;
 
-    switch (arg0)
+    switch (bgNum)
     {
         case 0:
-            var_r1 = sub_08014A90();
+            bgScreenSize = GL_GetBg0ScreenSize();
             break;
 
         case 1:
-            var_r1 = sub_08014AA8();
+            bgScreenSize = GL_GetBg1ScreenSize();
             break;
 
         case 2:
-            var_r1 = sub_08014AC0();
+            bgScreenSize = GL_GetBg2ScreenSize();
             break;
 
         case 3:
-            var_r1 = sub_08014AD8();
+            bgScreenSize = GL_GetBg3ScreenSize();
             break;
     }
 
-    switch (var_r1)
+    switch (bgScreenSize)
     {
-        case 0:
+        case BGCNT_TXT256x256 >> 14:
             break;
 
-        case 1:
+        case BGCNT_TXT512x256 >> 14:
             if (arg1 > 0x1F)
             {
                 var_r5 = 0x800;
             }
             break;
 
-        case 2:
+        case BGCNT_TXT256x512 >> 14:
             if (arg2 > 0x1F)
             {
                 here:
@@ -356,7 +380,7 @@ s32 sub_08014AF0(s32 arg0, s32 arg1, s32 arg2)
             }
             break;
 
-        case 3:
+        case BGCNT_TXT512x512 >> 14:
             if (arg1 > 0x1F)
             {
                 if (arg2 > 0x1F)
@@ -380,121 +404,137 @@ s32 sub_08014AF0(s32 arg0, s32 arg1, s32 arg2)
 }
 
 // unused?
+// 14B6C
 void sub_08014B6C(s32 arg0, s32 arg1, s32 arg2)
 {
     ((vu16 *)REG_ADDR_BG0HOFS)[arg0] = arg1;
     ((vu16 *)REG_ADDR_BG0VOFS)[arg0] = arg2;
 }
 
-inline void* sub_08014E84(u16 *bgCntAddr)
+// 14E84
+inline void* GL_GetBgScreenBasePtr_Inline(u16 *bgCntAddr)
 {
     u16 bgCnt = *bgCntAddr;
-    return (void*)0x06000000 + (((vBgCnt*)&bgCnt)->screenBaseBlock * 0x800);
+    return BG_SCREEN_ADDR(((vBgCnt*)&bgCnt)->screenBaseBlock);
 }
 
-void* sub_08014B8C(void)
+// 14B8C
+void* GL_GetBg0ScreenBasePtr(void)
 {
-    return sub_08014E84((void*)REG_ADDR_BG0CNT);
+    return GL_GetBgScreenBasePtr_Inline((void*)REG_ADDR_BG0CNT);
 }
 
-void* sub_08014BAC(void)
+// 14BAC
+void* GL_GetBg1ScreenBasePtr(void)
 {
-    return sub_08014E84((void*)REG_ADDR_BG1CNT);
+    return GL_GetBgScreenBasePtr_Inline((void*)REG_ADDR_BG1CNT);
 }
 
-void* sub_08014BCC(void)
+// 14BCC
+void* GL_GetBg2ScreenBasePtr(void)
 {
-    return sub_08014E84((void*)REG_ADDR_BG2CNT);
+    return GL_GetBgScreenBasePtr_Inline((void*)REG_ADDR_BG2CNT);
 }
 
-void* sub_08014BEC(void)
+// 14BEC
+void* GL_GetBg3ScreenBasePtr(void)
 {
-    return sub_08014E84((void*)REG_ADDR_BG3CNT);
+    return GL_GetBgScreenBasePtr_Inline((void*)REG_ADDR_BG3CNT);
 }
 
-void* sub_08014C0C(void)
+// 14C0C
+void* GL_GetObjCharPtr(void)
 {
-    return (void*)0x06010000;
+    return (void*)OBJ_VRAM0;
 }
 
-void sub_08014C14(void *pSrc, s32 vramOffset, s32 size)
+// 14C14
+void GL_LoadBg0Char(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x1E2, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuFastCopy(pSrc, sub_08014A10() + vramOffset, (u32) size);
+    CpuFastCopy(pSrc, GL_GetBg0CharBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014C54(void *pSrc, s32 vramOffset, s32 size)
+// 14C54
+void GL_LoadBg1Char(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x1E7, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuFastCopy(pSrc, sub_08014A30() + vramOffset, (u32) size);
+    CpuFastCopy(pSrc, GL_GetBg1CharBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014C94(void *pSrc, s32 vramOffset, s32 size)
+// 14C94
+void GL_LoadBg2Char(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x1EC, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuFastCopy(pSrc, sub_08014A50() + vramOffset, (u32) size);
+    CpuFastCopy(pSrc, GL_GetBg2CharBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014CD4(void *pSrc, s32 vramOffset, s32 size)
+// 14CD4
+void GL_LoadBg3Char(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x1F1, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuFastCopy(pSrc, sub_08014A70() + vramOffset, (u32) size);
+    CpuFastCopy(pSrc, GL_GetBg3CharBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014D14(void *pSrc, s32 vramOffset, s32 size)
+// 14D14
+void GL_LoadBg0Screen(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x1F7, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuCopy16(pSrc, sub_08014B8C() + vramOffset, (u32) size);
+    CpuCopy16(pSrc, GL_GetBg0ScreenBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014D54(void *pSrc, s32 vramOffset, s32 size)
+// 14D54
+void GL_LoadBg1Screen(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x1FC, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuCopy16(pSrc, sub_08014BAC() + vramOffset, (u32) size);
+    CpuCopy16(pSrc, GL_GetBg1ScreenBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014D94(void *pSrc, s32 vramOffset, s32 size)
+// 14D94
+void GL_LoadBg2Screen(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x201, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuCopy16(pSrc, sub_08014BCC() + vramOffset, (u32) size);
+    CpuCopy16(pSrc, GL_GetBg2ScreenBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014DD4(void *pSrc, s32 vramOffset, s32 size)
+// 14DD4
+void GL_LoadBg3Screen(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x206, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuCopy16(pSrc, sub_08014BEC() + vramOffset, (u32) size);
+    CpuCopy16(pSrc, GL_GetBg3ScreenBasePtr() + vramOffset, (u32) size);
 }
 
-void sub_08014E14(void *pSrc, s32 vramOffset, s32 size)
+// 14E14
+void GL_LoadObj(void *pSrc, s32 vramOffset, s32 size)
 {
-    if ((u32)pSrc & 3)
+    if (!(((u32)pSrc & 0x3) == 0))
     {
         OSi_Panic("GL/GL_Common.c", 0x20C, "((u32)pSrc & 0x3) == 0", 1);
     }
-    CpuCopy16(pSrc, sub_08014C0C() + vramOffset, (u32) size);
+    CpuCopy16(pSrc, GL_GetObjCharPtr() + vramOffset, (u32) size);
 }
 

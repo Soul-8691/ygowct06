@@ -598,7 +598,7 @@ _080E9E76:
 	ldr r0, [r4, #0x14]
 	ldr r2, [r4, #0x10]
 	mov r1, r8
-	bl sub_08014E14
+	bl GL_LoadObj
 	b _080E9EB8
 	.align 2, 0
 _080E9E84: .4byte gUnk_09E4B61C
@@ -881,7 +881,7 @@ _080EA126:
 	ldr r0, [r4, #0x14]
 	ldr r2, [r4, #0x10]
 	mov r1, r8
-	bl sub_08014E14
+	bl GL_LoadObj
 	b _080EA16C
 	.align 2, 0
 _080EA134: .4byte gUnk_09E4B61C
@@ -1824,7 +1824,7 @@ _080EA986:
 	ldr r0, [r4, #0x14]
 	ldr r2, [r4, #0x10]
 	adds r1, r7, #0
-	bl sub_08014E14
+	bl GL_LoadObj
 	b _080EA9BC
 	.align 2, 0
 _080EA994: .4byte gUnk_09E4B61C
