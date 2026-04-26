@@ -1,8 +1,9 @@
 #include "global.h"
 #include "GL_Char.h"
+#include "constants/languages.h"
 
 struct Unk_02000000_6C2C {
-    u8 language:3; // 0: jp, 1: en, 2: de, 3: fr, 4: it, 5: es
+    u8 language:3;
 };
 struct Unk_02000000 {
     u8 pad_0[0x6C2C];
@@ -26,7 +27,7 @@ s32 GL_Strncpy(u8 *src, u8 *dest, s32 maxChars)
 
     initialMaxChars = maxChars;
 
-    if ((gUnk_02000000.unk_6C2C.language == 0) || (gUnk_0202348C != 0))
+    if ((gUnk_02000000.unk_6C2C.language == LANGUAGE_JAPANESE) || (gUnk_0202348C != 0))
     {
         // Japanese
         while ((*src != '\0') && (maxChars != 0))
@@ -84,7 +85,7 @@ s32 GL_Strcat(u8 *src, u8 *dest)
 
     destCharCount = 0;
 
-    if ((gUnk_02000000.unk_6C2C.language == 0) || (gUnk_0202348C != 0))
+    if ((gUnk_02000000.unk_6C2C.language == LANGUAGE_JAPANESE) || (gUnk_0202348C != 0))
     {
         // Japanese
         while (*dest != 0)
@@ -127,7 +128,7 @@ u8 *GL_AdvanceChars(u8 *str, s32 destIndex)
 
     charIndex = 0;
 
-    if ((gUnk_02000000.unk_6C2C.language == 0) || (gUnk_0202348C != 0))
+    if ((gUnk_02000000.unk_6C2C.language == LANGUAGE_JAPANESE) || (gUnk_0202348C != 0))
     {
         // Japanese
         while ((*str != 0) && (charIndex < destIndex))
@@ -174,7 +175,7 @@ s32 GL_Strlen(u8 *str)
 
     charCount = 0;
 
-    if ((gUnk_02000000.unk_6C2C.language == 0) || (gUnk_0202348C != 0))
+    if ((gUnk_02000000.unk_6C2C.language == LANGUAGE_JAPANESE) || (gUnk_0202348C != 0))
     {
         // Japanese
         while (*str != 0)
@@ -219,7 +220,7 @@ s32 GL_StrWidth(u8 *str, s32 charWidth)
     strCharCount = GL_Strlen(str);
     halfCharWidth = charWidth >> 1;
 
-    if ((gUnk_02000000.unk_6C2C.language == 0) || (gUnk_0202348C != 0))
+    if ((gUnk_02000000.unk_6C2C.language == LANGUAGE_JAPANESE) || (gUnk_0202348C != 0))
     {
         return strCharCount * charWidth;
     }

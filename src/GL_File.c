@@ -1,11 +1,12 @@
 #include "global.h"
 #include "GL_File.h"
+#include "constants/languages.h"
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);
 extern void GL_CpuCopy(void *src, void *dest, s32 size);
 
 struct Unk_02000000_6C2C {
-    u8 language:3; // 0: jp, 1: en, 2: de, 3: fr, 4: it, 5: es
+    u8 language:3;
 };
 struct Unk_02000000 {
     u8 pad_0[0x6C2C];
@@ -122,8 +123,13 @@ void* GL_OpenFile(u8* filePathString, void *dest)
     u8 *lzCheck = ".LZ";
     u8 *poundCheck = "#";
     u8 *bangCheck = "!";
-    u8* languageOptions[6] = {
-        "j", "e", "g", "f", "i", "s"
+    u8* languageOptions[LANGAGUE_COUNT] = {
+        [LANGUAGE_JAPANESE] = "j",
+        [LANGUAGE_ENGLISH] = "e",
+        [LANGUAGE_GERMAN] = "g",
+        [LANGUAGE_FRENCH] = "f",
+        [LANGUAGE_ITALIAN] = "i",
+        [LANGUAGE_SPANISH] = "s"
     };
     u8 buf[0x40];
     u8* filePath;
