@@ -1,5 +1,5 @@
 #include "global.h"
-#include "GL_Common.h"
+#include "GL/GL_Common.h"
 
 struct Unk_02023480_8 {
     u32 bldCntEffect:2; // BLDCNT Color Effect

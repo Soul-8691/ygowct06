@@ -78,10 +78,10 @@ else
 NODEP := 1
 endif
 
-C_SRCS := $(wildcard $(C_SUBDIR)/*.c)
+C_SRCS := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c)
 C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
 
-ASM_SRCS := $(wildcard $(ASM_SUBDIR)/*.s)
+ASM_SRCS := $(wildcard $(ASM_SUBDIR)/*.s $(ASM_SUBDIR)/*/*.s $(ASM_SUBDIR)/*/*/*.s)
 ASM_OBJS := $(patsubst $(ASM_SUBDIR)/%.s,$(ASM_BUILDDIR)/%.o,$(ASM_SRCS))
 
 DATA_ASM_SRCS := $(wildcard $(DATA_ASM_SUBDIR)/*.s)
@@ -95,6 +95,9 @@ MID_OBJS := $(patsubst $(MID_SUBDIR)/%.mid,$(MID_BUILDDIR)/%.o,$(MID_SRCS))
 
 OBJS := $(C_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(SONG_OBJS) $(MID_OBJS)
 OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
+
+SUBDIRS  := $(sort $(dir $(OBJS)))
+$(shell mkdir -p $(SUBDIRS))
 
 TOOLDIRS := $(filter-out tools/agbcc tools/binutils,$(wildcard tools/*))
 TOOLBASE = $(TOOLDIRS:tools/%=%)
@@ -156,9 +159,9 @@ sound/songs/%.s: sound/songs/%.mid
 	cd $(@D) && ../../$(MID) $(<F)
 
 $(C_BUILDDIR)/agb_sram.o: CFLAGS = -mthumb-interwork -Wimplicit -Wparentheses -Werror -O1 -g -fhex-asm -ffix-debug-line
-$(C_BUILDDIR)/GL_Char.o: CC1 := tools/agbcc/bin/old_agbcc
-$(C_BUILDDIR)/GL_Common.o: CC1 := tools/agbcc/bin/old_agbcc
-$(C_BUILDDIR)/GL_File.o: CC1 := tools/agbcc/bin/old_agbcc
+$(C_BUILDDIR)/GL/GL_Char.o: CC1 := tools/agbcc/bin/old_agbcc
+$(C_BUILDDIR)/GL/GL_Common.o: CC1 := tools/agbcc/bin/old_agbcc
+$(C_BUILDDIR)/GL/GL_File.o: CC1 := tools/agbcc/bin/old_agbcc
 
 ifeq ($(NODEP),1)
 $(C_BUILDDIR)/%.o: c_dep :=

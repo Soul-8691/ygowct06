@@ -1,5 +1,5 @@
 #include "global.h"
-#include "GL_File.h"
+#include "GL/GL_File.h"
 #include "constants/languages.h"
 
 extern void OSi_Panic(u8 *, s32, u8 *, s32);

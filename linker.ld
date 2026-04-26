@@ -249,20 +249,20 @@ SECTIONS {
     rom : ALIGN(4) {
         asm/crt0.o(.text);
         asm/code.o(.text);
-        src/GL_Char.o(.text);
-        src/GL_Common.o(.text);
-        src/GL_File.o(.text);
+        src/GL/GL_Char.o(.text);
+        src/GL/GL_Common.o(.text);
+        src/GL/GL_File.o(.text);
         asm/code_0801510C.o(.text);
-        asm/fx_mtx22.o(.text);
-        asm/g2d_Animation.o(.text);
-        asm/g2d_CellAnimation.o(.text);
-        asm/g2d_Image.o(.text);
-        asm/g2d_Load.o(.text);
-        asm/g2d_NAN_load.o(.text);
-        asm/g2d_NCG_load.o(.text);
-        asm/g2d_NCL_load.o(.text);
-        asm/g2d_NOB_load.o(.text);
-        asm/g2d_SRTControl.o(.text);
+        asm/nnsys/g2d/fx_mtx22.o(.text);
+        asm/nnsys/g2d/g2d_Animation.o(.text);
+        asm/nnsys/g2d/g2d_CellAnimation.o(.text);
+        asm/nnsys/g2d/g2d_Image.o(.text);
+        asm/nnsys/g2d/g2d_Load.o(.text);
+        asm/nnsys/g2d/g2d_NAN_load.o(.text);
+        asm/nnsys/g2d/g2d_NCG_load.o(.text);
+        asm/nnsys/g2d/g2d_NCL_load.o(.text);
+        asm/nnsys/g2d/g2d_NOB_load.o(.text);
+        asm/nnsys/g2d/g2d_SRTControl.o(.text);
         asm/code_080EBB14.o(.text);
         asm/libagbsyscall.o(.text);
         src/agb_sram.o(.text);
@@ -324,8 +324,8 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
-        src/GL_Common.o(.rodata);
-        src/GL_File.o(.rodata);
+        src/GL/GL_Common.o(.rodata);
+        src/GL/GL_File.o(.rodata);
         data/data_09E399D0.o(.rodata);
         src/agb_sram.o(.rodata);
         *libc.a:vfscanf.o(.rodata);

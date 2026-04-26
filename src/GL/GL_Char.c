@@ -1,5 +1,5 @@
 #include "global.h"
-#include "GL_Char.h"
+#include "GL/GL_Char.h"
 #include "constants/languages.h"
 
 struct Unk_02000000_6C2C {
