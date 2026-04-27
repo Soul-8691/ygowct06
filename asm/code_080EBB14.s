@@ -5268,7 +5268,7 @@ sub_080EE52C: @ 0x080EE52C
 	movs r0, #0x3f
 	bl sub_080146FC
 	bl sub_080148D0
-	bl sub_08015138
+	bl GL_InitializeObjects
 	movs r0, #1
 	add sp, #4
 	pop {r1}
@@ -5389,7 +5389,7 @@ sub_080EE654: @ 0x080EE654
 	push {r4, lr}
 	sub sp, #0x14
 	movs r0, #0x10
-	bl sub_080151D8
+	bl GL_CreateNewObject
 	ldr r1, _080EE6B0 @ =0xC000A300
 	str r1, [r0]
 	ldr r1, _080EE6B4 @ =0xFFFFFE00
@@ -36030,7 +36030,7 @@ sub_080FD2F0: @ 0x080FD2F0
 	rsbs r1, r1, #0
 	movs r0, #0x3f
 	bl sub_080146FC
-	bl sub_08015138
+	bl GL_InitializeObjects
 	bl sub_080156AC
 	bl sub_080F9B98
 	movs r1, #0xe4
@@ -37232,8 +37232,8 @@ _080FDCD8:
 	adds r0, r2, r1
 	str r0, [r4]
 _080FDCF6:
-	bl sub_0801522C
-	bl sub_08015160
+	bl GL_SendObjectsToOam
+	bl GL_ResetObjects
 	bl sub_080148F4
 	cmp r0, #0
 	bne _080FDD28

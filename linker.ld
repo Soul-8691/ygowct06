@@ -252,6 +252,7 @@ SECTIONS {
         src/GL/GL_Char.o(.text);
         src/GL/GL_Common.o(.text);
         src/GL/GL_File.o(.text);
+        src/GL/GL_Oam.o(.text);
         asm/code_0801510C.o(.text);
         asm/nnsys/g2d/fx_mtx22.o(.text);
         asm/nnsys/g2d/g2d_Animation.o(.text);
@@ -326,6 +327,8 @@ SECTIONS {
         data/data.o(.rodata);
         src/GL/GL_Common.o(.rodata);
         src/GL/GL_File.o(.rodata);
+        src/GL/GL_Sin.o(.rodata);
+        src/GL/GL_Oam.o(.rodata);
         data/data_09E399D0.o(.rodata);
         src/agb_sram.o(.rodata);
         *libc.a:vfscanf.o(.rodata);

@@ -162,6 +162,7 @@ $(C_BUILDDIR)/agb_sram.o: CFLAGS = -mthumb-interwork -Wimplicit -Wparentheses -W
 $(C_BUILDDIR)/GL/GL_Char.o: CC1 := tools/agbcc/bin/old_agbcc
 $(C_BUILDDIR)/GL/GL_Common.o: CC1 := tools/agbcc/bin/old_agbcc
 $(C_BUILDDIR)/GL/GL_File.o: CC1 := tools/agbcc/bin/old_agbcc
+$(C_BUILDDIR)/GL/GL_Oam.o: CC1 := tools/agbcc/bin/old_agbcc
 
 ifeq ($(NODEP),1)
 $(C_BUILDDIR)/%.o: c_dep :=

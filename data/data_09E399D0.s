@@ -1,15 +1,6 @@
 	.section .rodata
 
-    .byte 0x0, 0x0, 0x0
-
-gUnk_09E399D0:: @ 09E399D0
-	.incbin "baserom.gba", 0x1E399D0, 0x280
-
-gUnk_09E39C50:: @ 09E39C50
-	.incbin "baserom.gba", 0x1E39C50, 0xC
-
-gUnk_09E39C5C:: @ 09E39C5C
-	.incbin "baserom.gba", 0x1E39C5C, 0xC
+	.byte 0x0, 0x0, 0x0
 
 gUnk_09E39C68:: @ 09E39C68
 	.incbin "baserom.gba", 0x1E39C68, 0x14

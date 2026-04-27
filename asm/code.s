@@ -4949,7 +4949,7 @@ sub_08013510: @ 0x08013510
 	rsbs r1, r1, #0
 	movs r0, #0x3f
 	bl sub_080146FC
-	bl sub_08015138
+	bl GL_InitializeObjects
 	bl sub_080156AC
 	movs r0, #1
 	add sp, #4
@@ -6686,8 +6686,8 @@ _0801433C:
 _0801435C:
 	bl sub_08013A10
 _08014360:
-	bl sub_0801522C
-	bl sub_08015160
+	bl GL_SendObjectsToOam
+	bl GL_ResetObjects
 	bl sub_080148F4
 	cmp r0, #0
 	bne _08014380

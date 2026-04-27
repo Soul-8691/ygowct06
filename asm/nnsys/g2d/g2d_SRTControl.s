@@ -199,7 +199,7 @@ _080EBA08:
 _080EBA18:
 	adds r0, r4, #0
 	bl MTX_Identity22_
-	ldr r2, _080EBA78 @ =gUnk_09E399D0
+	ldr r2, _080EBA78 @ =GL_SinTable
 	ldrb r1, [r5, #0x10]
 	lsls r0, r1, #1
 	adds r0, r0, r2
@@ -237,7 +237,7 @@ _080EBA68: .4byte gUnk_09E4E974
 _080EBA6C: .4byte gUnk_09E4E944
 _080EBA70: .4byte gUnk_09E4E8E4
 _080EBA74: .4byte gUnk_09E4E8FC
-_080EBA78: .4byte gUnk_09E399D0
+_080EBA78: .4byte GL_SinTable
 
 	thumb_func_start NNSi_G2dSrtcBuildMatrixFromSRT_3D
 NNSi_G2dSrtcBuildMatrixFromSRT_3D: @ 0x080EBA7C
@@ -269,7 +269,7 @@ _080EBAA2:
 	movs r3, #1
 	bl OSi_Panic
 _080EBAB4:
-	ldr r2, _080EBB08 @ =gUnk_09E399D0
+	ldr r2, _080EBB08 @ =GL_SinTable
 	ldrb r1, [r4, #0x10]
 	lsls r0, r1, #1
 	adds r0, r0, r2
@@ -305,6 +305,6 @@ _080EBAF8: .4byte gUnk_09E4E91C
 _080EBAFC: .4byte gUnk_09E4E93C
 _080EBB00: .4byte gUnk_09E4E974
 _080EBB04: .4byte gUnk_09E4E944
-_080EBB08: .4byte gUnk_09E399D0
+_080EBB08: .4byte GL_SinTable
 _080EBB0C: .4byte gUnk_09E4E8E4
 _080EBB10: .4byte gUnk_09E4E8FC
