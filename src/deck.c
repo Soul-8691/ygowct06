@@ -1,0 +1,12698 @@
+#include "card.h"
+
+// Deck: LV1Kuriboh1  (offset 0x9e64684)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Kuriboh1_9E64684 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_RED_DASH_EYES_B_DOT_DRAGON,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_ROCKET_WARRIOR,
+        KONAMI_MAHA_VAILO,
+        KONAMI_MAHA_VAILO,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_KURIBOH,
+        KONAMI_KURIBOH,
+        KONAMI_KURIBOH,
+        KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH,
+        KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_MULTIPLY,
+        KONAMI_MULTIPLY,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_REMOVE_TRAP,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_TRAP_HOLE,
+        KONAMI_NEGATE_ATTACK,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_METALMORPH,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Kuriboh2  (offset 0x9e646e4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Kuriboh2_9E646E4 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_RED_DASH_EYES_B_DOT_DRAGON,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_ROCKET_WARRIOR,
+        KONAMI_MAHA_VAILO,
+        KONAMI_MAHA_VAILO,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_KURIBOH,
+        KONAMI_KURIBOH,
+        KONAMI_KURIBOH,
+        KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH,
+        KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_MULTIPLY,
+        KONAMI_MULTIPLY,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_REMOVE_TRAP,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_TRAP_HOLE,
+        KONAMI_NEGATE_ATTACK,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_METALMORPH,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Pikeru1  (offset 0x9e64744)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Pikeru1_9E64744 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SILENT_MAGICIAN_LV8,
+        KONAMI_PRINCESS_CURRAN,
+        KONAMI_PRINCESS_PIKERU,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_SANGAN,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_THE_UNHAPPY_GIRL,
+        KONAMI_THE_UNHAPPY_GIRL,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_MAGE_POWER,
+        KONAMI_YAMI,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_A_RIVAL_APPEARS_EXCLAMATION,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Pikeru2  (offset 0x9e647a4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Pikeru2_9E647A4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SILENT_MAGICIAN_LV8,
+        KONAMI_PRINCESS_CURRAN,
+        KONAMI_PRINCESS_PIKERU,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_SANGAN,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_THE_UNHAPPY_GIRL,
+        KONAMI_THE_UNHAPPY_GIRL,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_MAGE_POWER,
+        KONAMI_YAMI,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_A_RIVAL_APPEARS_EXCLAMATION,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Sukego1  (offset 0x9e64804)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Sukego1_9E64804 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_FUSILIER_DRAGON_COMMA_THE_DUAL_DASH_MODE_BEAST,
+        KONAMI_FUSILIER_DRAGON_COMMA_THE_DUAL_DASH_MODE_BEAST,
+        KONAMI_FUSILIER_DRAGON_COMMA_THE_DUAL_DASH_MODE_BEAST,
+        KONAMI_BEHEMOTH_THE_KING_OF_ALL_ANIMALS,
+        KONAMI_BEHEMOTH_THE_KING_OF_ALL_ANIMALS,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_GIANT_ORC,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_CATHEDRAL_OF_NOBLES,
+        KONAMI_BAIT_DOLL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_A_FEATHER_OF_THE_PHOENIX,
+        KONAMI_A_FEATHER_OF_THE_PHOENIX,
+        KONAMI_JUDGMENT_OF_ANUBIS,
+        KONAMI_ROYAL_SURRENDER,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SKILL_DRAIN,
+        KONAMI_SKILL_DRAIN,
+        KONAMI_SKILL_DRAIN,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_MAGIC_JAMMER,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Sukego2  (offset 0x9e64864)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Sukego2_9E64864 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_FUSILIER_DRAGON_COMMA_THE_DUAL_DASH_MODE_BEAST,
+        KONAMI_FUSILIER_DRAGON_COMMA_THE_DUAL_DASH_MODE_BEAST,
+        KONAMI_FUSILIER_DRAGON_COMMA_THE_DUAL_DASH_MODE_BEAST,
+        KONAMI_BEHEMOTH_THE_KING_OF_ALL_ANIMALS,
+        KONAMI_BEHEMOTH_THE_KING_OF_ALL_ANIMALS,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_GIANT_ORC,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_CATHEDRAL_OF_NOBLES,
+        KONAMI_BAIT_DOLL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_A_FEATHER_OF_THE_PHOENIX,
+        KONAMI_A_FEATHER_OF_THE_PHOENIX,
+        KONAMI_JUDGMENT_OF_ANUBIS,
+        KONAMI_ROYAL_SURRENDER,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SKILL_DRAIN,
+        KONAMI_SKILL_DRAIN,
+        KONAMI_SKILL_DRAIN,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_MAGIC_JAMMER,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Waito1  (offset 0x9e648c4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Waito1_9E648C4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SKULL_SERVANT,
+        KONAMI_SKULL_SERVANT,
+        KONAMI_SKULL_SERVANT,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_KING_OF_THE_SKULL_SERVANTS,
+        KONAMI_KING_OF_THE_SKULL_SERVANTS,
+        KONAMI_KING_OF_THE_SKULL_SERVANTS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_OPTI_DASH_CAMOUFLAGE_ARMOR,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_THE_LEAGUE_OF_UNIFORM_NOMENCLATURE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_NEXT_TO_BE_LOST,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Waito2  (offset 0x9e64924)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Waito2_9E64924 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SKULL_SERVANT,
+        KONAMI_SKULL_SERVANT,
+        KONAMI_SKULL_SERVANT,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_KING_OF_THE_SKULL_SERVANTS,
+        KONAMI_KING_OF_THE_SKULL_SERVANTS,
+        KONAMI_KING_OF_THE_SKULL_SERVANTS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_OPTI_DASH_CAMOUFLAGE_ARMOR,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_THE_LEAGUE_OF_UNIFORM_NOMENCLATURE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_NEXT_TO_BE_LOST,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Watapon1  (offset 0x9e64984)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Watapon1_9E64984 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ZABORG_THE_THUNDER_MONARCH,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_SOUL_OF_PURITY_AND_LIGHT,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SANGAN,
+        KONAMI_MARSHMALLON,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_WATAPON,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_THE_SANCTUARY_IN_THE_SKY,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MISTOBODY,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_WALL_OF_REVEALING_LIGHT,
+        KONAMI_BECKONING_LIGHT,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV1Watapon2  (offset 0x9e649e4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV1Watapon2_9E649E4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ZABORG_THE_THUNDER_MONARCH,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_SOUL_OF_PURITY_AND_LIGHT,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SANGAN,
+        KONAMI_MARSHMALLON,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_WATAPON,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_THE_SANCTUARY_IN_THE_SKY,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MISTOBODY,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_WALL_OF_REVEALING_LIGHT,
+        KONAMI_BECKONING_LIGHT,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2Denti1  (offset 0x9e64a44)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2Denti1_9E64A44 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ANCIENT_GEAR_GOLEM,
+        KONAMI_PERFECT_MACHINE_KING,
+        KONAMI_MACHINE_KING,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MACHINE_KING_PROTOTYPE,
+        KONAMI_DRILLROID,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_GYROID,
+        KONAMI_HEAVY_MECH_SUPPORT_PLATFORM,
+        KONAMI_HEAVY_MECH_SUPPORT_PLATFORM,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_BATTERYMAN_C,
+        KONAMI_BATTERYMAN_C,
+        KONAMI_BATTERYMAN_C,
+        KONAMI_BATTERYMAN_AA,
+        KONAMI_BATTERYMAN_AA,
+        KONAMI_BATTERYMAN_AA,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_INFERNO_RECKLESS_SUMMON,
+        KONAMI_INFERNO_RECKLESS_SUMMON,
+        KONAMI_COLLAPSE,
+        KONAMI_BATTERY_CHARGER,
+        KONAMI_BATTERY_CHARGER,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DNA_SURGERY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_RARE_METALMORPH,
+        KONAMI_RARE_METALMORPH,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2Denti2  (offset 0x9e64aa4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2Denti2_9E64AA4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ANCIENT_GEAR_GOLEM,
+        KONAMI_PERFECT_MACHINE_KING,
+        KONAMI_MACHINE_KING,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MACHINE_KING_PROTOTYPE,
+        KONAMI_DRILLROID,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_GYROID,
+        KONAMI_HEAVY_MECH_SUPPORT_PLATFORM,
+        KONAMI_HEAVY_MECH_SUPPORT_PLATFORM,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_BATTERYMAN_C,
+        KONAMI_BATTERYMAN_C,
+        KONAMI_BATTERYMAN_C,
+        KONAMI_BATTERYMAN_AA,
+        KONAMI_BATTERYMAN_AA,
+        KONAMI_BATTERYMAN_AA,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_INFERNO_RECKLESS_SUMMON,
+        KONAMI_INFERNO_RECKLESS_SUMMON,
+        KONAMI_COLLAPSE,
+        KONAMI_BATTERY_CHARGER,
+        KONAMI_BATTERY_CHARGER,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DNA_SURGERY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_RARE_METALMORPH,
+        KONAMI_RARE_METALMORPH,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2Kaeru1  (offset 0x9e64b04)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[1];
+    u16 padding;
+}gDeck_LV2Kaeru1_9E64B04 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SANGAN,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_T_DOT_A_DOT_D_DOT_P_DOT_O_DOT_L_DOT_E_DOT,
+        KONAMI_T_DOT_A_DOT_D_DOT_P_DOT_O_DOT_L_DOT_E_DOT,
+        KONAMI_T_DOT_A_DOT_D_DOT_P_DOT_O_DOT_L_DOT_E_DOT,
+        KONAMI_BEELZE_FROG,
+        KONAMI_BEELZE_FROG,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_GORA_TURTLE,
+        KONAMI_TREEBORN_FROG,
+        KONAMI_DES_FROG,
+        KONAMI_DES_FROG,
+        KONAMI_DES_FROG,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_UMIIRUKA,
+        KONAMI_UMIIRUKA,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_DES_CROAKING,
+        KONAMI_DES_CROAKING,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_POLYMERIZATION,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_SALVAGE,
+        KONAMI_SALVAGE,
+    },
+    /* extraCount */ 1,
+    /* extraDeck  */ {
+        KONAMI_D_DOT_3_DOT_S_DOT_FROG,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2Kaeru2  (offset 0x9e64b64)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[1];
+    u16 padding;
+}gDeck_LV2Kaeru2_9E64B64 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SANGAN,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_T_DOT_A_DOT_D_DOT_P_DOT_O_DOT_L_DOT_E_DOT,
+        KONAMI_T_DOT_A_DOT_D_DOT_P_DOT_O_DOT_L_DOT_E_DOT,
+        KONAMI_T_DOT_A_DOT_D_DOT_P_DOT_O_DOT_L_DOT_E_DOT,
+        KONAMI_BEELZE_FROG,
+        KONAMI_BEELZE_FROG,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_GORA_TURTLE,
+        KONAMI_TREEBORN_FROG,
+        KONAMI_DES_FROG,
+        KONAMI_DES_FROG,
+        KONAMI_DES_FROG,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_UMIIRUKA,
+        KONAMI_UMIIRUKA,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_DES_CROAKING,
+        KONAMI_DES_CROAKING,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_POLYMERIZATION,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_SALVAGE,
+        KONAMI_SALVAGE,
+    },
+    /* extraCount */ 1,
+    /* extraDeck  */ {
+        KONAMI_D_DOT_3_DOT_S_DOT_FROG,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2KingG1  (offset 0x9e64bc4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2KingG1_9E64BC4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_GOBLIN_KING,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_YAMI,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2KingG2  (offset 0x9e64c24)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2KingG2_9E64C24 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_GOBLIN_KING,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_YAMI,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2KingG21  (offset 0x9e64c84)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2KingG21_9E64C84 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SKULL_ARCHFIEND_OF_LIGHTNING,
+        KONAMI_SKULL_ARCHFIEND_OF_LIGHTNING,
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_TERRORKING_ARCHFIEND,
+        KONAMI_TERRORKING_ARCHFIEND,
+        KONAMI_TERRORKING_ARCHFIEND,
+        KONAMI_SHADOWKNIGHT_ARCHFIEND,
+        KONAMI_SHADOWKNIGHT_ARCHFIEND,
+        KONAMI_SHADOWKNIGHT_ARCHFIEND,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_VILEPAWN_ARCHFIEND,
+        KONAMI_VILEPAWN_ARCHFIEND,
+        KONAMI_DESROOK_ARCHFIEND,
+        KONAMI_DESROOK_ARCHFIEND,
+        KONAMI_INFERNALQUEEN_ARCHFIEND,
+        KONAMI_INFERNALQUEEN_ARCHFIEND,
+        KONAMI_DARKBISHOP_ARCHFIEND,
+        KONAMI_GOBLIN_KING,
+        KONAMI_GOBLIN_KING,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CHECKMATE,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_PANDEMONIUM,
+        KONAMI_PANDEMONIUM,
+        KONAMI_PANDEMONIUM,
+        KONAMI_FALLING_DOWN,
+        KONAMI_FALLING_DOWN,
+        KONAMI_BATTLE_DASH_SCARRED,
+        KONAMI_BATTLE_DASH_SCARRED,
+        KONAMI_ARCHFIEND_APOSTROPHE_S_ROAR,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_LIFE_ABSORBING_MACHINE,
+        KONAMI_THE_SPELL_ABSORBING_LIFE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2KingG22  (offset 0x9e64ce4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2KingG22_9E64CE4 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SKULL_ARCHFIEND_OF_LIGHTNING,
+        KONAMI_SKULL_ARCHFIEND_OF_LIGHTNING,
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_TERRORKING_ARCHFIEND,
+        KONAMI_TERRORKING_ARCHFIEND,
+        KONAMI_TERRORKING_ARCHFIEND,
+        KONAMI_SHADOWKNIGHT_ARCHFIEND,
+        KONAMI_SHADOWKNIGHT_ARCHFIEND,
+        KONAMI_SHADOWKNIGHT_ARCHFIEND,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_VILEPAWN_ARCHFIEND,
+        KONAMI_VILEPAWN_ARCHFIEND,
+        KONAMI_DESROOK_ARCHFIEND,
+        KONAMI_DESROOK_ARCHFIEND,
+        KONAMI_INFERNALQUEEN_ARCHFIEND,
+        KONAMI_INFERNALQUEEN_ARCHFIEND,
+        KONAMI_DARKBISHOP_ARCHFIEND,
+        KONAMI_GOBLIN_KING,
+        KONAMI_GOBLIN_KING,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CHECKMATE,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_PANDEMONIUM,
+        KONAMI_PANDEMONIUM,
+        KONAMI_PANDEMONIUM,
+        KONAMI_FALLING_DOWN,
+        KONAMI_FALLING_DOWN,
+        KONAMI_BATTLE_DASH_SCARRED,
+        KONAMI_BATTLE_DASH_SCARRED,
+        KONAMI_ARCHFIEND_APOSTROPHE_S_ROAR,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_LIFE_ABSORBING_MACHINE,
+        KONAMI_THE_SPELL_ABSORBING_LIFE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2Ojama1  (offset 0x9e64d44)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2Ojama1_9E64D44 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_BOWGANIAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_SANGAN,
+        KONAMI_MARYOKUTAI,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_DASH_TEAM_COLON_TRAP_DISPOSAL_UNIT,
+        KONAMI_OJAMA_YELLOW,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_SPATIAL_COLLAPSE,
+        KONAMI_SPATIAL_COLLAPSE,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_XING_ZHEN_HU,
+        KONAMI_XING_ZHEN_HU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2Ojama2  (offset 0x9e64da4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2Ojama2_9E64DA4 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_BOWGANIAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_SANGAN,
+        KONAMI_MARYOKUTAI,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_DASH_TEAM_COLON_TRAP_DISPOSAL_UNIT,
+        KONAMI_OJAMA_YELLOW,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_SPATIAL_COLLAPSE,
+        KONAMI_SPATIAL_COLLAPSE,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_XING_ZHEN_HU,
+        KONAMI_XING_ZHEN_HU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2WaterD1  (offset 0x9e64e04)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2WaterD1_9E64E04 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_WATER_DRAGON,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_OXYGEDDON,
+        KONAMI_OXYGEDDON,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_HYDROGEDDON,
+        KONAMI_HYDROGEDDON,
+        KONAMI_HYDROGEDDON,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_BONDING_DASH_H2O,
+        KONAMI_BONDING_DASH_H2O,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_TORNADO_WALL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV2WaterD2  (offset 0x9e64e64)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV2WaterD2_9E64E64 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_WATER_DRAGON,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_OXYGEDDON,
+        KONAMI_OXYGEDDON,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_HYDROGEDDON,
+        KONAMI_HYDROGEDDON,
+        KONAMI_HYDROGEDDON,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_BONDING_DASH_H2O,
+        KONAMI_BONDING_DASH_H2O,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_TORNADO_WALL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3RedEyes1  (offset 0x9e64ec4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3RedEyes1_9E64EC4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ARMED_DRAGON_LV10,
+        KONAMI_ARMED_DRAGON_LV7,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_RED_DASH_EYES_DARKNESS_DRAGON,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_RED_DASH_EYES_B_DOT_CHICK,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_CEASEFIRE,
+        KONAMI_THE_DRAGON_APOSTROPHE_S_BEAD,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3RedEyes2  (offset 0x9e64f24)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3RedEyes2_9E64F24 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ARMED_DRAGON_LV10,
+        KONAMI_ARMED_DRAGON_LV7,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_RED_DASH_EYES_DARKNESS_DRAGON,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_RED_DASH_EYES_B_DOT_CHICK,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_CEASEFIRE,
+        KONAMI_THE_DRAGON_APOSTROPHE_S_BEAD,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Daidaros1  (offset 0x9e64f84)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Daidaros1_9E64F84 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_OCEAN_DRAGON_LORD_DASH_NEO_DASH_DAEDALUS,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_FENRIR,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SALVAGE,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TORNADO_WALL,
+        KONAMI_TORNADO_WALL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Daidaros2  (offset 0x9e64fe4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Daidaros2_9E64FE4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_OCEAN_DRAGON_LORD_DASH_NEO_DASH_DAEDALUS,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_FENRIR,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SALVAGE,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TORNADO_WALL,
+        KONAMI_TORNADO_WALL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Flame1  (offset 0x9e65044)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Flame1_9E65044 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_LAVA_GOLEM,
+        KONAMI_LAVA_GOLEM,
+        KONAMI_INFERNAL_FLAME_EMPEROR,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_INVASION_OF_FLAMES,
+        KONAMI_SANGAN,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_FOX_FIRE,
+        KONAMI_FOX_FIRE,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Flame2  (offset 0x9e650a4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Flame2_9E650A4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_LAVA_GOLEM,
+        KONAMI_LAVA_GOLEM,
+        KONAMI_INFERNAL_FLAME_EMPEROR,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_INVASION_OF_FLAMES,
+        KONAMI_SANGAN,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_FOX_FIRE,
+        KONAMI_FOX_FIRE,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Heriosu1  (offset 0x9e65104)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Heriosu1_9E65104 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_HOMONCULUS_GOLD,
+        KONAMI_HOMONCULUS_GOLD,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_DIMENSIONAL_WARRIOR,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_BANISHER_OF_THE_LIGHT,
+        KONAMI_BANISHER_OF_THE_LIGHT,
+        KONAMI_BANISHER_OF_THE_LIGHT,
+        KONAMI_GREN_MAJU_DA_EIZA,
+        KONAMI_GREN_MAJU_DA_EIZA,
+        KONAMI_HELIOS_DUO_MEGISTE,
+        KONAMI_HELIOS_DUO_MEGISTE,
+        KONAMI_HELIOS_TRIS_MEGISTE,
+        KONAMI_THE_ANCIENT_SUN_HELIOS,
+        KONAMI_THE_ANCIENT_SUN_HELIOS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_SOUL_RELEASE,
+        KONAMI_SOUL_RELEASE,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_KARMA_CUT,
+        KONAMI_KARMA_CUT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BIG_BURN,
+        KONAMI_FIEND_COMEDIAN,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Heriosu2  (offset 0x9e65164)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Heriosu2_9E65164 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_HOMONCULUS_GOLD,
+        KONAMI_HOMONCULUS_GOLD,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_DIMENSIONAL_WARRIOR,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_BANISHER_OF_THE_LIGHT,
+        KONAMI_BANISHER_OF_THE_LIGHT,
+        KONAMI_BANISHER_OF_THE_LIGHT,
+        KONAMI_GREN_MAJU_DA_EIZA,
+        KONAMI_GREN_MAJU_DA_EIZA,
+        KONAMI_HELIOS_DUO_MEGISTE,
+        KONAMI_HELIOS_DUO_MEGISTE,
+        KONAMI_HELIOS_TRIS_MEGISTE,
+        KONAMI_THE_ANCIENT_SUN_HELIOS,
+        KONAMI_THE_ANCIENT_SUN_HELIOS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_SOUL_RELEASE,
+        KONAMI_SOUL_RELEASE,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_KARMA_CUT,
+        KONAMI_KARMA_CUT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BIG_BURN,
+        KONAMI_FIEND_COMEDIAN,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Vamp1  (offset 0x9e651c4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Vamp1_9E651C4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VAMPIRE_GENESIS,
+        KONAMI_RYU_KOKKI,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_SOUL_DASH_ABSORBING_BONE_TOWER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_OVERPOWERING_EYE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV3Vamp2  (offset 0x9e65224)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV3Vamp2_9E65224 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VAMPIRE_GENESIS,
+        KONAMI_RYU_KOKKI,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_SOUL_DASH_ABSORBING_BONE_TOWER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_OVERPOWERING_EYE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Ehero1  (offset 0x9e65284)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_LV4Ehero1_9E65284 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_WROUGHTWEILER,
+        KONAMI_WROUGHTWEILER,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_SKYSCRAPER,
+        KONAMI_SKYSCRAPER,
+        KONAMI_MIRACLE_FUSION,
+        KONAMI_MIRACLE_FUSION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_DE_DASH_FUSION,
+        KONAMI_A_HERO_EMERGES,
+        KONAMI_HERO_SIGNAL,
+        KONAMI_HERO_BARRIER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_HERO_HEYRO,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_ELEMENTAL_HERO_ERIKSHIELER,
+        KONAMI_ELEMENTAL_HERO_TEMPEST,
+        KONAMI_ELEMENTAL_HERO_WILDEDGE,
+        KONAMI_ELEMENTAL_HERO_SHINING_FLARE_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_THUNDER_GIANT,
+        KONAMI_ELEMENTAL_HERO_FLAME_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_RAMPART_BLASTER,
+        KONAMI_ELEMENTAL_HERO_MADBALLMAN,
+        KONAMI_ELEMENTAL_HERO_STEAM_HEALER,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Ehero2  (offset 0x9e652f4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_LV4Ehero2_9E652F4 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_WROUGHTWEILER,
+        KONAMI_WROUGHTWEILER,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_SKYSCRAPER,
+        KONAMI_SKYSCRAPER,
+        KONAMI_MIRACLE_FUSION,
+        KONAMI_MIRACLE_FUSION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_DE_DASH_FUSION,
+        KONAMI_A_HERO_EMERGES,
+        KONAMI_HERO_SIGNAL,
+        KONAMI_HERO_BARRIER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_HERO_HEYRO,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_ELEMENTAL_HERO_ERIKSHIELER,
+        KONAMI_ELEMENTAL_HERO_TEMPEST,
+        KONAMI_ELEMENTAL_HERO_WILDEDGE,
+        KONAMI_ELEMENTAL_HERO_SHINING_FLARE_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_THUNDER_GIANT,
+        KONAMI_ELEMENTAL_HERO_FLAME_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_RAMPART_BLASTER,
+        KONAMI_ELEMENTAL_HERO_MADBALLMAN,
+        KONAMI_ELEMENTAL_HERO_STEAM_HEALER,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Ankokukai1  (offset 0x9e65364)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Ankokukai1_9E65364 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GOLDD_COMMA_WU_DASH_LORD_OF_DARK_WORLD,
+        KONAMI_GOLDD_COMMA_WU_DASH_LORD_OF_DARK_WORLD,
+        KONAMI_GOLDD_COMMA_WU_DASH_LORD_OF_DARK_WORLD,
+        KONAMI_SILLVA_COMMA_WARLORD_OF_DARK_WORLD,
+        KONAMI_SILLVA_COMMA_WARLORD_OF_DARK_WORLD,
+        KONAMI_SILLVA_COMMA_WARLORD_OF_DARK_WORLD,
+        KONAMI_BRRON_COMMA_MAD_KING_OF_DARK_WORLD,
+        KONAMI_BRRON_COMMA_MAD_KING_OF_DARK_WORLD,
+        KONAMI_BRRON_COMMA_MAD_KING_OF_DARK_WORLD,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BEIIGE_COMMA_VANGUARD_OF_DARK_WORLD,
+        KONAMI_BEIIGE_COMMA_VANGUARD_OF_DARK_WORLD,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_BROWW_COMMA_HUNTSMAN_OF_DARK_WORLD,
+        KONAMI_MORPHING_JAR,
+        KONAMI_SCARR_COMMA_SCOUT_OF_DARK_WORLD,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_GATEWAY_TO_DARK_WORLD,
+        KONAMI_GATEWAY_TO_DARK_WORLD,
+        KONAMI_DARK_WORLD_LIGHTNING,
+        KONAMI_DARK_WORLD_LIGHTNING,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_THE_FORCES_OF_DARKNESS,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_DARK_DEAL,
+        KONAMI_DARK_DEAL,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Ankokukai2  (offset 0x9e653c4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Ankokukai2_9E653C4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GOLDD_COMMA_WU_DASH_LORD_OF_DARK_WORLD,
+        KONAMI_GOLDD_COMMA_WU_DASH_LORD_OF_DARK_WORLD,
+        KONAMI_GOLDD_COMMA_WU_DASH_LORD_OF_DARK_WORLD,
+        KONAMI_SILLVA_COMMA_WARLORD_OF_DARK_WORLD,
+        KONAMI_SILLVA_COMMA_WARLORD_OF_DARK_WORLD,
+        KONAMI_SILLVA_COMMA_WARLORD_OF_DARK_WORLD,
+        KONAMI_BRRON_COMMA_MAD_KING_OF_DARK_WORLD,
+        KONAMI_BRRON_COMMA_MAD_KING_OF_DARK_WORLD,
+        KONAMI_BRRON_COMMA_MAD_KING_OF_DARK_WORLD,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BEIIGE_COMMA_VANGUARD_OF_DARK_WORLD,
+        KONAMI_BEIIGE_COMMA_VANGUARD_OF_DARK_WORLD,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_BROWW_COMMA_HUNTSMAN_OF_DARK_WORLD,
+        KONAMI_MORPHING_JAR,
+        KONAMI_SCARR_COMMA_SCOUT_OF_DARK_WORLD,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_GATEWAY_TO_DARK_WORLD,
+        KONAMI_GATEWAY_TO_DARK_WORLD,
+        KONAMI_DARK_WORLD_LIGHTNING,
+        KONAMI_DARK_WORLD_LIGHTNING,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_THE_FORCES_OF_DARKNESS,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_DARK_DEAL,
+        KONAMI_DARK_DEAL,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Exodo1  (offset 0x9e65424)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Exodo1_9E65424 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GRANMARG_THE_ROCK_MONARCH,
+        KONAMI_HIERACOSPHINX,
+        KONAMI_GUARDIAN_SPHINX,
+        KONAMI_GRAVE_OHJA,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_CRIOSPHINX,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_SANGAN,
+        KONAMI_SAND_MOTH,
+        KONAMI_CYBER_JAR,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_LOST_GUARDIAN,
+        KONAMI_GUARDIAN_EXODE,
+        KONAMI_MEGAROCK_DRAGON,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_UNITY,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SHIELD_AMPERSAND_SWORD,
+        KONAMI_ROCK_BOMBARDMENT,
+        KONAMI_ROCK_BOMBARDMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_STAUNCH_DEFENDER,
+        KONAMI_STAUNCH_DEFENDER,
+        KONAMI_FAIRY_BOX,
+        KONAMI_FAIRY_BOX,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Exodo2  (offset 0x9e65484)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Exodo2_9E65484 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GRANMARG_THE_ROCK_MONARCH,
+        KONAMI_HIERACOSPHINX,
+        KONAMI_GUARDIAN_SPHINX,
+        KONAMI_GRAVE_OHJA,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_CRIOSPHINX,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_SANGAN,
+        KONAMI_SAND_MOTH,
+        KONAMI_CYBER_JAR,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_LOST_GUARDIAN,
+        KONAMI_GUARDIAN_EXODE,
+        KONAMI_MEGAROCK_DRAGON,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_UNITY,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SHIELD_AMPERSAND_SWORD,
+        KONAMI_ROCK_BOMBARDMENT,
+        KONAMI_ROCK_BOMBARDMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_STAUNCH_DEFENDER,
+        KONAMI_STAUNCH_DEFENDER,
+        KONAMI_FAIRY_BOX,
+        KONAMI_FAIRY_BOX,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Gilfo1  (offset 0x9e654e4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Gilfo1_9E654E4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GILFORD_THE_LEGEND,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MATAZA_THE_ZAPPER,
+        KONAMI_COMMAND_KNIGHT,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_ARMED_SAMURAI_DASH_BEN_KEI,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_DIVINE_SWORD_DASH_PHOENIX_BLADE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_WICKED_DASH_BREAKING_FLAMBERGE_DASH_BAOU,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_MAGE_POWER,
+        KONAMI_FUSION_SWORD_MURASAME_BLADE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_THE_A_DOT_FORCES,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_DUST_TORNADO,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Gilfo2  (offset 0x9e65544)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Gilfo2_9E65544 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GILFORD_THE_LEGEND,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MATAZA_THE_ZAPPER,
+        KONAMI_COMMAND_KNIGHT,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_ARMED_SAMURAI_DASH_BEN_KEI,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_DIVINE_SWORD_DASH_PHOENIX_BLADE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_WICKED_DASH_BREAKING_FLAMBERGE_DASH_BAOU,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_MAGE_POWER,
+        KONAMI_FUSION_SWORD_MURASAME_BLADE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_THE_A_DOT_FORCES,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_DUST_TORNADO,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Kuromadou1  (offset 0x9e655a4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Kuromadou1_9E655A4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_ERADICATOR_WARLOCK,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_EXILED_FORCE,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MAGE_POWER,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_YAMI,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV4Kuromadou2  (offset 0x9e65604)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV4Kuromadou2_9E65604 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_ERADICATOR_WARLOCK,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_EXILED_FORCE,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MAGE_POWER,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_YAMI,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Cyber1  (offset 0x9e65664)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[7];
+    u16 padding;
+}gDeck_LV5Cyber1_9E65664 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CYBER_BARRIER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_THE_LIGHT_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_LIGHT_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_LIGHT_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_COLLAPSE,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POWER_BOND,
+        KONAMI_POWER_BOND,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_ATTACK_REFLECTOR_UNIT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_SAKURETSU_ARMOR,
+    },
+    /* extraCount */ 7,
+    /* extraDeck  */ {
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Cyber2  (offset 0x9e656d0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[7];
+    u16 padding;
+}gDeck_LV5Cyber2_9E656D0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CYBER_BARRIER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_THE_LIGHT_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_LIGHT_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_LIGHT_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_COLLAPSE,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POWER_BOND,
+        KONAMI_POWER_BOND,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_ATTACK_REFLECTOR_UNIT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_SAKURETSU_ARMOR,
+    },
+    /* extraCount */ 7,
+    /* extraDeck  */ {
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Gadget1  (offset 0x9e6573c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Gadget1_9E6573C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DARK_HOLE,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_RELOAD,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_STRONGHOLD,
+        KONAMI_STRONGHOLD,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_RISING_ENERGY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Gadget2  (offset 0x9e6579c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Gadget2_9E6579C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DARK_HOLE,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_RELOAD,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_STRONGHOLD,
+        KONAMI_STRONGHOLD,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_RISING_ENERGY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Horus1  (offset 0x9e657fc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Horus1_9E657FC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_TENKABITO_SHIEN,
+        KONAMI_TENKABITO_SHIEN,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_THE_THING_IN_THE_CRATER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_LEVEL_MODULATION,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Horus2  (offset 0x9e6585c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Horus2_9E6585C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_TENKABITO_SHIEN,
+        KONAMI_TENKABITO_SHIEN,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_THE_THING_IN_THE_CRATER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_LEVEL_MODULATION,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Nephthys1  (offset 0x9e658bc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Nephthys1_9E658BC = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_SANGAN,
+        KONAMI_HAND_OF_NEPHTHYS,
+        KONAMI_HAND_OF_NEPHTHYS,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_MISTOBODY,
+        KONAMI_MISTOBODY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Nephthys2  (offset 0x9e6591c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Nephthys2_9E6591C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_SANGAN,
+        KONAMI_HAND_OF_NEPHTHYS,
+        KONAMI_HAND_OF_NEPHTHYS,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_MISTOBODY,
+        KONAMI_MISTOBODY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Ravieru1  (offset 0x9e6597c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Ravieru1_9E6597C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_PROTECTOR_OF_THE_SANCTUARY,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_EARTHBOUND_SPIRIT,
+        KONAMI_SPEAR_CRETIN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: LV5Ravieru2  (offset 0x9e659dc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_LV5Ravieru2_9E659DC = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_PROTECTOR_OF_THE_SANCTUARY,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_EARTHBOUND_SPIRIT,
+        KONAMI_SPEAR_CRETIN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD0STARTER1  (offset 0x9e65a3c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD0STARTER1_9E65A3C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GAZELLE_THE_KING_OF_MYTHICAL_BEASTS,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_LUSTER_DRAGON,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_DARK_BLADE,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_WARRIOR_OF_ZERA,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_SKELENGEL,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_KURIBOH,
+        KONAMI_PRINCESS_OF_TSURUGI,
+        KONAMI_SPEAR_DRAGON,
+        KONAMI_SPIRIT_CALLER,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_OOKAZI,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_GAIA_POWER,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_RED_MEDICINE,
+        KONAMI_FISSURE,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_CASTLE_WALLS,
+        KONAMI_READY_FOR_INTERCEPTING,
+        KONAMI_DUST_TORNADO,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_CEMETARY_BOMB,
+        KONAMI_MAGIC_CYLINDER,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD0STARTER2  (offset 0x9e65a9c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD0STARTER2_9E65A9C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GAZELLE_THE_KING_OF_MYTHICAL_BEASTS,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_LUSTER_DRAGON,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_DARK_BLADE,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_WARRIOR_OF_ZERA,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_SKELENGEL,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_KURIBOH,
+        KONAMI_PRINCESS_OF_TSURUGI,
+        KONAMI_SPEAR_DRAGON,
+        KONAMI_SPIRIT_CALLER,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_OOKAZI,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_GAIA_POWER,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_RED_MEDICINE,
+        KONAMI_FISSURE,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_CASTLE_WALLS,
+        KONAMI_READY_FOR_INTERCEPTING,
+        KONAMI_DUST_TORNADO,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_CEMETARY_BOMB,
+        KONAMI_MAGIC_CYLINDER,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD1DRAGON1  (offset 0x9e65afc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD1DRAGON1_9E65AFC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_RED_DASH_EYES_B_DOT_DRAGON,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_RED_DASH_EYES_B_DOT_CHICK,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_RED_DASH_EYES_DARKNESS_DRAGON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_CURSE_OF_ANUBIS,
+        KONAMI_CEASEFIRE,
+        KONAMI_THE_DRAGON_APOSTROPHE_S_BEAD,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_RECKLESS_GREED,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD1DRAGON2  (offset 0x9e65b5c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD1DRAGON2_9E65B5C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_RED_DASH_EYES_B_DOT_DRAGON,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_RED_DASH_EYES_B_DOT_CHICK,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_RED_DASH_EYES_DARKNESS_DRAGON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_CURSE_OF_ANUBIS,
+        KONAMI_CEASEFIRE,
+        KONAMI_THE_DRAGON_APOSTROPHE_S_BEAD,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_RECKLESS_GREED,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD2UNDEAD1  (offset 0x9e65bbc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD2UNDEAD1_9E65BBC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VAMPIRE_GENESIS,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_DESPAIR_FROM_THE_DARK,
+        KONAMI_DESPAIR_FROM_THE_DARK,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_SOUL_DASH_ABSORBING_BONE_TOWER,
+        KONAMI_DARK_DUST_SPIRIT,
+        KONAMI_RYU_KOKKI,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LADY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_POT_OF_GREED,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_RECKLESS_GREED,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD2UNDEAD2  (offset 0x9e65c1c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD2UNDEAD2_9E65C1C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VAMPIRE_GENESIS,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_DESPAIR_FROM_THE_DARK,
+        KONAMI_DESPAIR_FROM_THE_DARK,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_SOUL_DASH_ABSORBING_BONE_TOWER,
+        KONAMI_DARK_DUST_SPIRIT,
+        KONAMI_RYU_KOKKI,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LADY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_POT_OF_GREED,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_RECKLESS_GREED,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD3FIRE1  (offset 0x9e65c7c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD3FIRE1_9E65C7C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GREAT_ANGUS,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_INFERNAL_FLAME_EMPEROR,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_LITTLE_CHIMERA,
+        KONAMI_INFERNO,
+        KONAMI_INFERNO,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_THESTALOS_THE_FIRESTORM_MONARCH,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_FOX_FIRE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_RELOAD,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_NECKLACE_OF_COMMAND,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_SPELL_SHIELD_TYPE_DASH_8,
+        KONAMI_BACKFIRE,
+        KONAMI_BACKFIRE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD3FIRE2  (offset 0x9e65cdc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD3FIRE2_9E65CDC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GREAT_ANGUS,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_INFERNAL_FLAME_EMPEROR,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_LITTLE_CHIMERA,
+        KONAMI_INFERNO,
+        KONAMI_INFERNO,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_THESTALOS_THE_FIRESTORM_MONARCH,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_FOX_FIRE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_RELOAD,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_LEVEL_LIMIT_DASH_AREA_B,
+        KONAMI_NECKLACE_OF_COMMAND,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_SPELL_SHIELD_TYPE_DASH_8,
+        KONAMI_BACKFIRE,
+        KONAMI_BACKFIRE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD4UMI1  (offset 0x9e65d3c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD4UMI1_9E65D3C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_7_COLORED_FISH,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_SPACE_MAMBO,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_OCEAN_DRAGON_LORD_DASH_NEO_DASH_DAEDALUS,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_STAR_BOY,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_FENRIR,
+        KONAMI_FENRIR,
+        KONAMI_AMPHIBIOUS_BUGROTH_MK_DASH_3,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_CREEPING_DOOM_MANTA,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_SALVAGE,
+        KONAMI_SALVAGE,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_TORNADO_WALL,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_SPELL_SHIELD_TYPE_DASH_8,
+        KONAMI_XING_ZHEN_HU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD4UMI2  (offset 0x9e65d9c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD4UMI2_9E65D9C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_7_COLORED_FISH,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_SPACE_MAMBO,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_OCEAN_DRAGON_LORD_DASH_NEO_DASH_DAEDALUS,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_STAR_BOY,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_FENRIR,
+        KONAMI_FENRIR,
+        KONAMI_AMPHIBIOUS_BUGROTH_MK_DASH_3,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_CREEPING_DOOM_MANTA,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_CREATURE_SWAP,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_SALVAGE,
+        KONAMI_SALVAGE,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_TORNADO_WALL,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_SPELL_SHIELD_TYPE_DASH_8,
+        KONAMI_XING_ZHEN_HU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD5SOLDIER1  (offset 0x9e65dfc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD5SOLDIER1_9E65DFC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_BLADE,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_GILFORD_THE_LEGEND,
+        KONAMI_GEARFRIED_THE_SWORDMASTER,
+        KONAMI_WARRIOR_LADY_OF_THE_WASTELAND,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_COMMAND_KNIGHT,
+        KONAMI_SWIFT_GAIA_THE_FIERCE_KNIGHT,
+        KONAMI_ARMED_SAMURAI_DASH_BEN_KEI,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_EXILED_FORCE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_MATAZA_THE_ZAPPER,
+        KONAMI_OBNOXIOUS_CELTIC_GUARD,
+        KONAMI_MYSTIC_SWORDSMAN_LV2,
+        KONAMI_MYSTIC_SWORDSMAN_LV4,
+        KONAMI_FAIRY_OF_THE_SPRING,
+        KONAMI_LIGHTNING_BLADE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_RELEASE_RESTRAINT,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_DIVINE_SWORD_DASH_PHOENIX_BLADE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_WICKED_DASH_BREAKING_FLAMBERGE_DASH_BAOU,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_SWORDS_OF_CONCEALING_LIGHT,
+        KONAMI_FUSION_SWORD_MURASAME_BLADE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_BLAST_WITH_CHAIN,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD5SOLDIER2  (offset 0x9e65e5c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD5SOLDIER2_9E65E5C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_BLADE,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_GILFORD_THE_LEGEND,
+        KONAMI_GEARFRIED_THE_SWORDMASTER,
+        KONAMI_WARRIOR_LADY_OF_THE_WASTELAND,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_COMMAND_KNIGHT,
+        KONAMI_SWIFT_GAIA_THE_FIERCE_KNIGHT,
+        KONAMI_ARMED_SAMURAI_DASH_BEN_KEI,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_EXILED_FORCE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_MATAZA_THE_ZAPPER,
+        KONAMI_OBNOXIOUS_CELTIC_GUARD,
+        KONAMI_MYSTIC_SWORDSMAN_LV2,
+        KONAMI_MYSTIC_SWORDSMAN_LV4,
+        KONAMI_FAIRY_OF_THE_SPRING,
+        KONAMI_LIGHTNING_BLADE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_RELEASE_RESTRAINT,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_DIVINE_SWORD_DASH_PHOENIX_BLADE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_WICKED_DASH_BREAKING_FLAMBERGE_DASH_BAOU,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_SWORDS_OF_CONCEALING_LIGHT,
+        KONAMI_FUSION_SWORD_MURASAME_BLADE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RELOAD,
+        KONAMI_RELOAD,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_BLAST_WITH_CHAIN,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD6MAGICIAN1  (offset 0x9e65ebc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD6MAGICIAN1_9E65EBC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_COMMAND_MAGICIAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_GEMINI_ELF,
+        KONAMI_TSUKUYOMI,
+        KONAMI_DARK_ERADICATOR_WARLOCK,
+        KONAMI_BLAST_MAGICIAN,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_RAPID_DASH_FIRE_MAGICIAN,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DIFFUSION_WAVE_DASH_MOTION,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTIC_BOX,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DARK_MAGIC_ATTACK,
+        KONAMI_MAGICAL_BLAST,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MAGE_POWER,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RELOAD,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_SPELL_SHIELD_TYPE_DASH_8,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD6MAGICIAN2  (offset 0x9e65f1c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD6MAGICIAN2_9E65F1C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0xA739, 0x42CF },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_COMMAND_MAGICIAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_GEMINI_ELF,
+        KONAMI_TSUKUYOMI,
+        KONAMI_DARK_ERADICATOR_WARLOCK,
+        KONAMI_BLAST_MAGICIAN,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_RAPID_DASH_FIRE_MAGICIAN,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DIFFUSION_WAVE_DASH_MOTION,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTIC_BOX,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DARK_MAGIC_ATTACK,
+        KONAMI_MAGICAL_BLAST,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MAGE_POWER,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RELOAD,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_SPELL_SHIELD_TYPE_DASH_8,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD7GANSEKI1  (offset 0x9e65f7c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD7GANSEKI1_9E65F7C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HIERACOSPHINX,
+        KONAMI_GIGANTES,
+        KONAMI_GIGANTES,
+        KONAMI_GUARDIAN_SPHINX,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_CRIOSPHINX,
+        KONAMI_MAHARAGHI,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_SAND_MOTH,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_GUARDIAN_STATUE,
+        KONAMI_GREAT_SPIRIT,
+        KONAMI_MEDUSA_WORM,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_MEGAROCK_DRAGON,
+        KONAMI_GUARDIAN_EXODE,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_ECTOPLASMER,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_FAULT_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_SHIELD_AMPERSAND_SWORD,
+        KONAMI_SHIELD_AMPERSAND_SWORD,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_ORDEAL_OF_A_TRAVELER,
+        KONAMI_ORDEAL_OF_A_TRAVELER,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_RECKLESS_GREED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: SD7GANSEKI2  (offset 0x9e65fdc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_SD7GANSEKI2_9E65FDC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HIERACOSPHINX,
+        KONAMI_GIGANTES,
+        KONAMI_GIGANTES,
+        KONAMI_GUARDIAN_SPHINX,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_CRIOSPHINX,
+        KONAMI_MAHARAGHI,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_SAND_MOTH,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_GUARDIAN_STATUE,
+        KONAMI_GREAT_SPIRIT,
+        KONAMI_MEDUSA_WORM,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_MEGAROCK_DRAGON,
+        KONAMI_GUARDIAN_EXODE,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_ECTOPLASMER,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_FAULT_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_SHIELD_AMPERSAND_SWORD,
+        KONAMI_SHIELD_AMPERSAND_SWORD,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_COMPULSORY_EVACUATION_DEVICE,
+        KONAMI_ORDEAL_OF_A_TRAVELER,
+        KONAMI_ORDEAL_OF_A_TRAVELER,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_RECKLESS_GREED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0001  (offset 0x9e6603c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0001_9E6603C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_JINZO_2,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_EXILED_FORCE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_AMPLIFIER,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0011  (offset 0x9e6609c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0011_9E6609C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_SUMMON_PRIEST,
+        KONAMI_SUMMON_PRIEST,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BLADE_KNIGHT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_MYSTIC_SWORDSMAN_LV4,
+        KONAMI_MYSTIC_SWORDSMAN_LV4,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_MAGE_POWER,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_ROPE_OF_SPIRIT,
+        KONAMI_ROPE_OF_SPIRIT,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0021  (offset 0x9e660fc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0021_9E660FC = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GIANT_KOZAKY,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_CYBER_JAR,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_MARSHMALLON,
+        KONAMI_NIGHT_ASSAILANT,
+        KONAMI_DES_KOALA,
+        KONAMI_DES_KOALA,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_DUMMY_GOLEM,
+        KONAMI_KOZAKY,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MERCHANT,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_DARK_HOLE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_DIMENSION_WALL,
+        KONAMI_DIMENSION_WALL,
+        KONAMI_DIMENSION_WALL,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0031  (offset 0x9e6615c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0031_9E6615C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HEADLESS_KNIGHT,
+        KONAMI_HEADLESS_KNIGHT,
+        KONAMI_CYBERNETIC_CYCLOPEAN,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_DON_ZALOOG,
+        KONAMI_GILASAURUS,
+        KONAMI_GILASAURUS,
+        KONAMI_SHADOWSLAYER,
+        KONAMI_SHADOWSLAYER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_SAND_MOTH,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_MAJU_GARZETT,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0041  (offset 0x9e661bc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0041_9E661BC = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_THE_FORGIVING_MAIDEN,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_WALL_OF_ILLUSION,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_PANTHER_WARRIOR,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0051  (offset 0x9e6621c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0051_9E6621C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SILENT_MAGICIAN_LV8,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_THE_TRICKY,
+        KONAMI_THE_TRICKY,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_EXILED_FORCE,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_YAMI,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0061  (offset 0x9e6627c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0061_9E6627C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_TERRORKING_SALMON,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_GIANT_RED_SEASNAKE,
+        KONAMI_GIANT_RED_SEASNAKE,
+        KONAMI_7_COLORED_FISH,
+        KONAMI_7_COLORED_FISH,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_DUST_BARRIER,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0071  (offset 0x9e662dc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0071_9E662DC = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ANCIENT_GEAR_GOLEM,
+        KONAMI_ANCIENT_GEAR_GOLEM,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0081  (offset 0x9e6633c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0081_9E6633C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BLADE_KNIGHT,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SANGAN,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MARSHMALLON,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_NIGHT_ASSAILANT,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DARK_HOLE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0091  (offset 0x9e6639c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0091_9E6639C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_TYRANT_DRAGON,
+        KONAMI_TYRANT_DRAGON,
+        KONAMI_TYRANT_DRAGON,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_FLAME_RULER,
+        KONAMI_FLAME_RULER,
+        KONAMI_TENKABITO_SHIEN,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_TRAP_HOLE,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_XING_ZHEN_HU,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0101  (offset 0x9e663fc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0101_9E663FC = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_INVADER_OF_DARKNESS,
+        KONAMI_INVADER_OF_DARKNESS,
+        KONAMI_SILENT_SWORDSMAN_LV7,
+        KONAMI_DARK_MAGICIAN_OF_CHAOS,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MARSHMALLON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_ROD_OF_SILENCE_DASH_KAY_APOSTROPHE_EST,
+        KONAMI_ROD_OF_SILENCE_DASH_KAY_APOSTROPHE_EST,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_DE_DASH_SPELL,
+        KONAMI_DE_DASH_SPELL,
+        KONAMI_LIGHTNING_VORTEX,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0111  (offset 0x9e6645c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0111_9E6645C = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_LAVA_GOLEM,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_KOALA,
+        KONAMI_DES_KOALA,
+        KONAMI_BOWGANIAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_PARASITE_PARACIDE,
+        KONAMI_PARASITE_PARACIDE,
+        KONAMI_TREMENDOUS_FIRE,
+        KONAMI_TREMENDOUS_FIRE,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_OOKAZI,
+        KONAMI_OOKAZI,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0121  (offset 0x9e664bc)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0121_9E664BC = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CANNON_SOLDIER,
+        KONAMI_CANNON_SOLDIER,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_RAPID_DASH_FIRE_MAGICIAN,
+        KONAMI_GILASAURUS,
+        KONAMI_GILASAURUS,
+        KONAMI_GILASAURUS,
+        KONAMI_SERVANT_OF_CATABOLISM,
+        KONAMI_SERVANT_OF_CATABOLISM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_KURIBOH,
+        KONAMI_KURIBOH,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_WABOKU,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0131  (offset 0x9e6651c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[60];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0131_9E6651C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 60,
+    /* mainDeck  */ {
+        KONAMI_VAMPIRE_GENESIS,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_EXILED_FORCE,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0141  (offset 0x9e665a4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[80];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0141_9E665A4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 80,
+    /* mainDeck  */ {
+        KONAMI_RYU_KOKKI,
+        KONAMI_RYU_KOKKI,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_CYBER_JAR,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_DARK_HOLE,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_TRAP_HOLE,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0161  (offset 0x9e66654)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[6];
+    u16 padding;
+}gDeck_Limit0161_9E66654 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ARMED_DRAGON_LV7,
+        KONAMI_BUSTER_BLADER,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_CAVE_DRAGON,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DE_DASH_SPELL,
+        KONAMI_DE_DASH_SPELL,
+        KONAMI_MOUNTAIN,
+        KONAMI_MOUNTAIN,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_LIGHTNING_VORTEX,
+    },
+    /* extraCount */ 6,
+    /* extraDeck  */ {
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_DARK_PALADIN,
+        KONAMI_DARK_PALADIN,
+        KONAMI_DARK_PALADIN,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0171  (offset 0x9e666c0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Limit0171_9E666C0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ARMED_DRAGON_LV7,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_GILASAURUS,
+        KONAMI_GILASAURUS,
+        KONAMI_GILASAURUS,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_SCAPEGOAT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_FUSION_GATE,
+        KONAMI_POLYMERIZATION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_FAIRY_BOX,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0181  (offset 0x9e66730)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0181_9E66730 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_TOON_DRAGON,
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_TOON_DARK_MAGICIAN_GIRL,
+        KONAMI_TOON_DARK_MAGICIAN_GIRL,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_MASKED_SORCERER,
+        KONAMI_TOON_MASKED_SORCERER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_SEBEK_APOSTROPHE_S_BLESSING,
+        KONAMI_SEBEK_APOSTROPHE_S_BLESSING,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_WORLD,
+        KONAMI_TOON_WORLD,
+        KONAMI_TOON_WORLD,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_EMERGENCY_PROVISIONS,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0191  (offset 0x9e66790)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0191_9E66790 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HINO_DASH_KAGU_DASH_TSUCHI,
+        KONAMI_DARK_DUST_SPIRIT,
+        KONAMI_DARK_DUST_SPIRIT,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_MAHARAGHI,
+        KONAMI_MAHARAGHI,
+        KONAMI_MAHARAGHI,
+        KONAMI_TSUKUYOMI,
+        KONAMI_INABA_WHITE_RABBIT,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_FENGSHENG_MIRROR,
+        KONAMI_SPIRITUAL_ENERGY_SETTLE_MACHINE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_CORPSE_OF_YATA_DASH_GARASU,
+        KONAMI_CORPSE_OF_YATA_DASH_GARASU,
+        KONAMI_CORPSE_OF_YATA_DASH_GARASU,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0201  (offset 0x9e667f0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0201_9E667F0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SILENT_MAGICIAN_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_SILENT_SWORDSMAN_LV5,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_SILENT_SWORDSMAN_LV3,
+        KONAMI_DARK_MIMIC_LV3,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_SILENT_MAGICIAN_LV4,
+        KONAMI_DARK_MIMIC_LV1,
+        KONAMI_DARK_MIMIC_LV1,
+        KONAMI_DARK_MIMIC_LV1,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_THE_GRAVEYARD_IN_THE_FOURTH_DIMENSION,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_LEVEL_UP_EXCLAMATION,
+        KONAMI_THE_A_DOT_FORCES,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0211  (offset 0x9e66850)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[16];
+    u16 padding;
+}gDeck_Limit0211_9E66850 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_NECROSHADE,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SKYSCRAPER,
+        KONAMI_MIRACLE_FUSION,
+        KONAMI_MIRACLE_FUSION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_DE_DASH_FUSION,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_HERO_SIGNAL,
+        KONAMI_HERO_SIGNAL,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 16,
+    /* extraDeck  */ {
+        KONAMI_ELEMENTAL_HERO_ERIKSHIELER,
+        KONAMI_ELEMENTAL_HERO_TEMPEST,
+        KONAMI_ELEMENTAL_HERO_TEMPEST,
+        KONAMI_ELEMENTAL_HERO_WILDEDGE,
+        KONAMI_ELEMENTAL_HERO_WILDEDGE,
+        KONAMI_ELEMENTAL_HERO_SHINING_FLARE_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_THUNDER_GIANT,
+        KONAMI_ELEMENTAL_HERO_THUNDER_GIANT,
+        KONAMI_ELEMENTAL_HERO_FLAME_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_FLAME_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_RAMPART_BLASTER,
+        KONAMI_ELEMENTAL_HERO_RAMPART_BLASTER,
+        KONAMI_ELEMENTAL_HERO_MADBALLMAN,
+        KONAMI_ELEMENTAL_HERO_MADBALLMAN,
+        KONAMI_ELEMENTAL_HERO_STEAM_HEALER,
+        KONAMI_ELEMENTAL_HERO_STEAM_HEALER,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0221  (offset 0x9e668d0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0221_9E668D0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ARMED_DRAGON_LV7,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_WHITE_HORNS_D_DOT,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_CAVE_DRAGON,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_ELEMENT_DRAGON,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_TRAP_HOLE,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0231  (offset 0x9e66930)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Limit0231_9E66930 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_QUEEN_APOSTROPHE_S_KNIGHT,
+        KONAMI_QUEEN_APOSTROPHE_S_KNIGHT,
+        KONAMI_JACK_APOSTROPHE_S_KNIGHT,
+        KONAMI_JACK_APOSTROPHE_S_KNIGHT,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_KING_APOSTROPHE_S_KNIGHT,
+        KONAMI_KING_APOSTROPHE_S_KNIGHT,
+        KONAMI_COMMAND_KNIGHT,
+        KONAMI_COMMAND_KNIGHT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_EXILED_FORCE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_BLADE_KNIGHT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_THE_A_DOT_FORCES,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_ALKANA_KNIGHT_JOKER,
+        KONAMI_ALKANA_KNIGHT_JOKER,
+        KONAMI_ALKANA_KNIGHT_JOKER,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0241  (offset 0x9e66994)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0241_9E66994 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SORCERER_OF_DARK_MAGIC,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_DARK_ELF,
+        KONAMI_DARK_ELF,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_D_DOT_D_DOT_M_DOT_DASH_DIFFERENT_DIMENSION_MASTER,
+        KONAMI_D_DOT_D_DOT_M_DOT_DASH_DIFFERENT_DIMENSION_MASTER,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0251  (offset 0x9e669f4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0251_9E669F4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SHINATO_COMMA_KING_OF_A_HIGHER_PLANE,
+        KONAMI_SHINATO_COMMA_KING_OF_A_HIGHER_PLANE,
+        KONAMI_MOISTURE_CREATURE,
+        KONAMI_MOISTURE_CREATURE,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_ZOLGA,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_MUDORA,
+        KONAMI_MUDORA,
+        KONAMI_MUDORA,
+        KONAMI_ELEMENT_VALKYRIE,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_MARSHMALLON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SHINATO_APOSTROPHE_S_ARK,
+        KONAMI_SHINATO_APOSTROPHE_S_ARK,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0261  (offset 0x9e66a54)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0261_9E66A54 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VAMPIRE_GENESIS,
+        KONAMI_RYU_KOKKI,
+        KONAMI_RYU_KOKKI,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_REGENERATING_MUMMY,
+        KONAMI_VAMPIRE_LADY,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SOUL_DASH_ABSORBING_BONE_TOWER,
+        KONAMI_SOUL_DASH_ABSORBING_BONE_TOWER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0271  (offset 0x9e66ab4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[6];
+    u16 padding;
+}gDeck_Limit0271_9E66AB4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MOISTURE_CREATURE,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_THUNDER_NYAN_NYAN,
+        KONAMI_THUNDER_NYAN_NYAN,
+        KONAMI_THUNDER_NYAN_NYAN,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_PROTO_DASH_CYBER_DRAGON,
+        KONAMI_MARSHMALLON,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POWER_BOND,
+        KONAMI_POWER_BOND,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_LIGHTFORCE_SWORD,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 6,
+    /* extraDeck  */ {
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0281  (offset 0x9e66b20)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0281_9E66B20 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_SANGAN,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_DARK_DREADROUTE,
+        KONAMI_DARK_DREADROUTE,
+        KONAMI_DARK_DREADROUTE,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPY,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPY,
+        KONAMI_BRAIN_JACKER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_THE_SHALLOW_GRAVE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_ULTIMATE_OFFERING,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGICAL_HATS,
+        KONAMI_MAGICAL_HATS,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0291  (offset 0x9e66b80)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0291_9E66B80 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV3,
+        KONAMI_ARMED_DRAGON_LV7,
+        KONAMI_ARMED_DRAGON_LV5,
+        KONAMI_ULTIMATE_INSECT_LV3,
+        KONAMI_ULTIMATE_INSECT_LV3,
+        KONAMI_ULTIMATE_INSECT_LV7,
+        KONAMI_ULTIMATE_INSECT_LV5,
+        KONAMI_GYROID,
+        KONAMI_INSECT_SOLDIERS_OF_THE_SKY,
+        KONAMI_FLYING_KAMAKIRI,
+        KONAMI_FLYING_KAMAKIRI,
+        KONAMI_FLYING_KAMAKIRI,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_WYNN,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_WYNN,
+        KONAMI_WYNN_THE_WIND_CHARMER,
+        KONAMI_LITTLE_DASH_WINGUARD,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_SOUL_TAKER,
+        KONAMI_RISING_AIR_CURRENT,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_XING_ZHEN_HU,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0301  (offset 0x9e66be0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0301_9E66BE0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_INFERNAL_FLAME_EMPEROR,
+        KONAMI_THESTALOS_THE_FIRESTORM_MONARCH,
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_SPIRIT_OF_FLAMES,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_RIGRAS_LEEVER,
+        KONAMI_FLAME_RULER,
+        KONAMI_FLAME_RULER,
+        KONAMI_TENKABITO_SHIEN,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_UFO_TURTLE,
+        KONAMI_HIITA_THE_FIRE_CHARMER,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_ULTIMATE_BASEBALL_KID,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_RIRYOKU,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_LAST_WILL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BACKFIRE,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0311  (offset 0x9e66c40)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Limit0311_9E66C40 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BEHEMOTH_THE_KING_OF_ALL_ANIMALS,
+        KONAMI_BEHEMOTH_THE_KING_OF_ALL_ANIMALS,
+        KONAMI_BIG_KOALA,
+        KONAMI_BIG_KOALA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_AUSSA,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_ENRAGED_BATTLE_OX,
+        KONAMI_ENRAGED_BATTLE_OX,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_GILASAURUS,
+        KONAMI_GIANT_RAT,
+        KONAMI_THE_EARTH_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_EARTH_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_EARTH_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_EXILED_FORCE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_THE_BIG_MARCH_OF_ANIMALS,
+        KONAMI_THE_BIG_MARCH_OF_ANIMALS,
+        KONAMI_WILD_NATURE_APOSTROPHE_S_RELEASE,
+        KONAMI_WILD_NATURE_APOSTROPHE_S_RELEASE,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_BEAST_SOUL_SWAP,
+        KONAMI_BEAST_SOUL_SWAP,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_MASTER_OF_OZ,
+        KONAMI_MASTER_OF_OZ,
+        KONAMI_MASTER_OF_OZ,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0321  (offset 0x9e66ca4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0321_9E66CA4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_LEVIA_DASH_DRAGON_DASH_DAEDALUS,
+        KONAMI_GIGA_GAGAGIGO,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_ORCA_MEGA_DASH_FORTRESS_OF_DARKNESS,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_ERIA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_ERIA,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_ABYSS_SOLDIER,
+        KONAMI_AQUA_SPIRIT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_MERMAID_KNIGHT,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_MOTHER_GRIZZLY,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BIG_WAVE_SMALL_WAVE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SALVAGE,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_A_LEGENDARY_OCEAN,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TORNADO_WALL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0331  (offset 0x9e66d04)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0331_9E66D04 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ANCIENT_GEAR_GOLEM,
+        KONAMI_ANCIENT_GEAR_GOLEM,
+        KONAMI_PERFECT_MACHINE_KING,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_THE_TROJAN_HORSE,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_GEAR_GOLEM_THE_MOVING_FORTRESS,
+        KONAMI_GEAR_GOLEM_THE_MOVING_FORTRESS,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_FISSURE,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0341  (offset 0x9e66d64)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0341_9E66D64 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_MAGICIAN_OF_CHAOS,
+        KONAMI_DARK_RULER_VANDALGYON,
+        KONAMI_MOBIUS_THE_FROST_MONARCH,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_TSUKUYOMI,
+        KONAMI_DARK_SCORPION_BURGLARS,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MARSHMALLON,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_FISSURE,
+        KONAMI_UNITED_WE_STAND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0351  (offset 0x9e66dc4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[7];
+    u16 padding;
+}gDeck_Limit0351_9E66DC4 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GILFORD_THE_LIGHTNING,
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_DARK_RULER_HA_DES,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CHAOS_SORCERER,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_D_DOT_D_DOT_ASSAILANT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_MARSHMALLON,
+    },
+    /* extraCount */ 7,
+    /* extraDeck  */ {
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0361  (offset 0x9e66e30)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0361_9E66E30 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HEAVY_STORM,
+        KONAMI_TREMENDOUS_FIRE,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_JAM_BREEDING_MACHINE,
+        KONAMI_JAM_BREEDING_MACHINE,
+        KONAMI_OOKAZI,
+        KONAMI_OOKAZI,
+        KONAMI_OOKAZI,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_MASS_DRIVER,
+        KONAMI_MASS_DRIVER,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_EMBODIMENT_OF_APOPHIS,
+        KONAMI_EMBODIMENT_OF_APOPHIS,
+        KONAMI_EMBODIMENT_OF_APOPHIS,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_TIME_SEAL,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0362  (offset 0x9e66e90)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0362_9E66E90 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HEAVY_STORM,
+        KONAMI_TREMENDOUS_FIRE,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_JAM_BREEDING_MACHINE,
+        KONAMI_JAM_BREEDING_MACHINE,
+        KONAMI_OOKAZI,
+        KONAMI_OOKAZI,
+        KONAMI_OOKAZI,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_MASS_DRIVER,
+        KONAMI_MASS_DRIVER,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_EMBODIMENT_OF_APOPHIS,
+        KONAMI_EMBODIMENT_OF_APOPHIS,
+        KONAMI_EMBODIMENT_OF_APOPHIS,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_SKULL_ZOMA,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_TIME_SEAL,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MAGIC_DRAIN,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0371  (offset 0x9e66ef0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0371_9E66EF0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_GIANT_ORC,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_SANGAN,
+        KONAMI_CYBER_JAR,
+        KONAMI_MORPHING_JAR,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_COLLAPSE,
+        KONAMI_SPECIAL_HURRICANE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_DARK_HOLE,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_RIRYOKU_FIELD,
+        KONAMI_RIRYOKU_FIELD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0372  (offset 0x9e66f50)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0372_9E66F50 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_GREAT_MAJU_GARZETT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ELITE_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_GOBLIN_ATTACK_FORCE,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_GIANT_ORC,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_CHAINSAW_INSECT,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_SANGAN,
+        KONAMI_CYBER_JAR,
+        KONAMI_MORPHING_JAR,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_COLLAPSE,
+        KONAMI_SPECIAL_HURRICANE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_DARK_HOLE,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_RIRYOKU_FIELD,
+        KONAMI_RIRYOKU_FIELD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_SAKURETSU_ARMOR,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0381  (offset 0x9e66fb0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[15];
+    u16 padding;
+}gDeck_Limit0381_9E66FB0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLACK_LUSTER_SOLDIER_DASH_ENVOY_OF_THE_BEGINNING,
+        KONAMI_JINZO_2,
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_TSUKUYOMI,
+        KONAMI_SANGAN,
+        KONAMI_MORPHING_JAR,
+        KONAMI_HAND_OF_NEPHTHYS,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DELINQUENT_DUO,
+        KONAMI_ENEMY_CONTROLLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_GRACEFUL_CHARITY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_MIRROR_FORCE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 15,
+    /* extraDeck  */ {
+        KONAMI_GATLING_DRAGON,
+        KONAMI_KING_DRAGUN,
+        KONAMI_THE_LAST_WARRIOR_FROM_ANOTHER_PLANET,
+        KONAMI_DARK_FLARE_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_SANWITCH,
+        KONAMI_FIEND_SKULL_DRAGON,
+        KONAMI_RYU_SENSHI,
+        KONAMI_DARK_BALTER_THE_TERRIBLE,
+        KONAMI_REAPER_ON_THE_NIGHTMARE,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_OJAMA_KING,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0382  (offset 0x9e6702c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[15];
+    u16 padding;
+}gDeck_Limit0382_9E6702C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLACK_LUSTER_SOLDIER_DASH_ENVOY_OF_THE_BEGINNING,
+        KONAMI_JINZO_2,
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_TSUKUYOMI,
+        KONAMI_SANGAN,
+        KONAMI_MORPHING_JAR,
+        KONAMI_HAND_OF_NEPHTHYS,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DELINQUENT_DUO,
+        KONAMI_ENEMY_CONTROLLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_GRACEFUL_CHARITY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_MIRROR_FORCE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 15,
+    /* extraDeck  */ {
+        KONAMI_GATLING_DRAGON,
+        KONAMI_KING_DRAGUN,
+        KONAMI_THE_LAST_WARRIOR_FROM_ANOTHER_PLANET,
+        KONAMI_DARK_FLARE_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_SANWITCH,
+        KONAMI_FIEND_SKULL_DRAGON,
+        KONAMI_RYU_SENSHI,
+        KONAMI_DARK_BALTER_THE_TERRIBLE,
+        KONAMI_REAPER_ON_THE_NIGHTMARE,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_OJAMA_KING,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0391  (offset 0x9e670a8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0391_9E670A8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_RED_DASH_EYES_B_DOT_DRAGON,
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_RIGRAS_LEEVER,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_FLAME_RULER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_FORCEFUL_SENTRY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_CHANGE_OF_HEART,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0392  (offset 0x9e67108)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0392_9E67108 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8,
+        KONAMI_RED_DASH_EYES_B_DOT_DRAGON,
+        KONAMI_SACRED_PHOENIX_OF_NEPHTHYS,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6,
+        KONAMI_GAIA_SOUL_THE_COMBUSTIBLE_COLLECTIVE,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_RIGRAS_LEEVER,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_FLAME_RULER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_FORCEFUL_SENTRY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_CHANGE_OF_HEART,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_MOLTEN_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_ROYAL_DECREE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0401  (offset 0x9e67168)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0401_9E67168 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REBORN,
+        KONAMI_GRACEFUL_CHARITY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CRUSH_CARD,
+        KONAMI_CRUSH_CARD,
+        KONAMI_CRUSH_CARD,
+        KONAMI_MIRROR_FORCE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0402  (offset 0x9e671c8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Limit0402_9E671C8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_AIRKNIGHT_PARSHATH,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SANGAN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REBORN,
+        KONAMI_GRACEFUL_CHARITY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CRUSH_CARD,
+        KONAMI_CRUSH_CARD,
+        KONAMI_CRUSH_CARD,
+        KONAMI_MIRROR_FORCE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0411  (offset 0x9e67228)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 extraDeck[10];
+    u16 padding;
+}gDeck_Limit0411_9E67228 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_BLACK_LUSTER_SOLDIER_DASH_ENVOY_OF_THE_BEGINNING,
+        KONAMI_CHAOS_EMPEROR_DRAGON_DASH_ENVOY_OF_THE_END,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_JINZO_2,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BLADE_KNIGHT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_WITCH_OF_THE_BLACK_FOREST,
+        KONAMI_SANGAN,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_MAGICAL_SCIENTIST,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_YATA_DASH_GARASU,
+        KONAMI_MIRAGE_OF_NIGHTMARE,
+        KONAMI_DELINQUENT_DUO,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_FORCEFUL_SENTRY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_RAIGEKI,
+        KONAMI_MONSTER_REBORN,
+        KONAMI_GRACEFUL_CHARITY,
+        KONAMI_HARPIE_APOSTROPHE_S_FEATHER_DUSTER,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_IMPERIAL_ORDER,
+        KONAMI_MIRROR_FORCE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 10,
+    /* extraDeck  */ {
+        KONAMI_CRIMSON_SUNBIRD,
+        KONAMI_CRIMSON_SUNBIRD,
+        KONAMI_FIEND_SKULL_DRAGON,
+        KONAMI_FIEND_SKULL_DRAGON,
+        KONAMI_RYU_SENSHI,
+        KONAMI_RYU_SENSHI,
+        KONAMI_DARK_BALTER_THE_TERRIBLE,
+        KONAMI_DARK_BALTER_THE_TERRIBLE,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Limit0412  (offset 0x9e6729c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 extraDeck[10];
+    u16 padding;
+}gDeck_Limit0412_9E6729C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_BLACK_LUSTER_SOLDIER_DASH_ENVOY_OF_THE_BEGINNING,
+        KONAMI_CHAOS_EMPEROR_DRAGON_DASH_ENVOY_OF_THE_END,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_JINZO_2,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BLADE_KNIGHT,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_WITCH_OF_THE_BLACK_FOREST,
+        KONAMI_SANGAN,
+        KONAMI_INJECTION_FAIRY_LILY,
+        KONAMI_MAGICAL_SCIENTIST,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SINISTER_SERPENT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_YATA_DASH_GARASU,
+        KONAMI_MIRAGE_OF_NIGHTMARE,
+        KONAMI_DELINQUENT_DUO,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_FORCEFUL_SENTRY,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_RAIGEKI,
+        KONAMI_MONSTER_REBORN,
+        KONAMI_GRACEFUL_CHARITY,
+        KONAMI_HARPIE_APOSTROPHE_S_FEATHER_DUSTER,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_IMPERIAL_ORDER,
+        KONAMI_MIRROR_FORCE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_SIXTH_SENSE,
+        KONAMI_RING_OF_DESTRUCTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 10,
+    /* extraDeck  */ {
+        KONAMI_CRIMSON_SUNBIRD,
+        KONAMI_CRIMSON_SUNBIRD,
+        KONAMI_FIEND_SKULL_DRAGON,
+        KONAMI_FIEND_SKULL_DRAGON,
+        KONAMI_RYU_SENSHI,
+        KONAMI_RYU_SENSHI,
+        KONAMI_DARK_BALTER_THE_TERRIBLE,
+        KONAMI_DARK_BALTER_THE_TERRIBLE,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+        KONAMI_THOUSAND_DASH_EYES_RESTRICT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0011  (offset 0x9e67310)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0011_9E67310 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_EXARION_UNIVERSE,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_ROCKET_WARRIOR,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_MECHA_DASH_DOG_MARRON,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_WINGED_KURIBOH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_WATAPON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_RAIN_OF_MERCY,
+        KONAMI_MOOYAN_CURRY,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SOLAR_RAY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0012  (offset 0x9e67370)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0012_9E67370 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_EXARION_UNIVERSE,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_ROCKET_WARRIOR,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_MECHA_DASH_DOG_MARRON,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_WINGED_KURIBOH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_WATAPON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_RAIN_OF_MERCY,
+        KONAMI_MOOYAN_CURRY,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SOLAR_RAY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0021  (offset 0x9e673d0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0021_9E673D0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BIG_KOALA,
+        KONAMI_BIG_KOALA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_GREAT_ANGUS,
+        KONAMI_GREAT_ANGUS,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_ENRAGED_BATTLE_OX,
+        KONAMI_SONIC_DUCK,
+        KONAMI_SONIC_DUCK,
+        KONAMI_BATTLE_OX,
+        KONAMI_BATTLE_OX,
+        KONAMI_WOLF_AXWIELDER,
+        KONAMI_WOLF_AXWIELDER,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_FOREST,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0022  (offset 0x9e67430)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0022_9E67430 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BIG_KOALA,
+        KONAMI_BIG_KOALA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_GREAT_ANGUS,
+        KONAMI_GREAT_ANGUS,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_ENRAGED_BATTLE_OX,
+        KONAMI_SONIC_DUCK,
+        KONAMI_SONIC_DUCK,
+        KONAMI_BATTLE_OX,
+        KONAMI_BATTLE_OX,
+        KONAMI_WOLF_AXWIELDER,
+        KONAMI_WOLF_AXWIELDER,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_FOREST,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0031  (offset 0x9e67490)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0031_9E67490 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_DANCING_FAIRY,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_MECHA_DASH_DOG_MARRON,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_SPIRIT_OF_THE_BREEZE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0032  (offset 0x9e674f0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0032_9E674F0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_DANCING_FAIRY,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_MECHA_DASH_DOG_MARRON,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_RAGING_FLAME_SPRITE,
+        KONAMI_SPIRIT_OF_THE_BREEZE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0041  (offset 0x9e67550)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[45];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0041_9E67550 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 45,
+    /* mainDeck  */ {
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_PRINCESS_PIKERU,
+        KONAMI_SKULL_DASH_MARK_LADYBUG,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_KISEITAI,
+        KONAMI_KISEITAI,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_OUTSTANDING_DOG_MARRON,
+        KONAMI_OUTSTANDING_DOG_MARRON,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_REVERSAL_OF_GRAVES,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0042  (offset 0x9e675b8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[45];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0042_9E675B8 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 45,
+    /* mainDeck  */ {
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_GUARDIAN_ANGEL_JOAN,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DUNAMES_DARK_WITCH,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_ABSORBING_KID_FROM_THE_SKY,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_PRINCESS_PIKERU,
+        KONAMI_SKULL_DASH_MARK_LADYBUG,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_WHITE_MAGICIAN_PIKERU,
+        KONAMI_KISEITAI,
+        KONAMI_KISEITAI,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_NIMBLE_MOMONGA,
+        KONAMI_OUTSTANDING_DOG_MARRON,
+        KONAMI_OUTSTANDING_DOG_MARRON,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CESTUS_OF_DAGLA,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_DIAN_KETO_THE_CURE_MASTER,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HAMMER_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_RAY_OF_HOPE,
+        KONAMI_REVERSAL_OF_GRAVES,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0051  (offset 0x9e67620)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0051_9E67620 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_NEO_BUG,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_GEAR_GOLEM_THE_MOVING_FORTRESS,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_PRINCESS_CURRAN,
+        KONAMI_SAND_MOTH,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_SANGAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_DES_KOALA,
+        KONAMI_DES_KOALA,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_THE_RELIABLE_GUARDIAN,
+        KONAMI_THE_RELIABLE_GUARDIAN,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DARK_CORE,
+        KONAMI_MESSENGER_OF_PEACE,
+        KONAMI_MESSENGER_OF_PEACE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SECRET_BARREL,
+        KONAMI_CEMETARY_BOMB,
+        KONAMI_FATAL_ABACUS,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0052  (offset 0x9e67680)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0052_9E67680 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_NEO_BUG,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_GEAR_GOLEM_THE_MOVING_FORTRESS,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_PRINCESS_CURRAN,
+        KONAMI_SAND_MOTH,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_SANGAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_BOWGANIAN,
+        KONAMI_DES_KOALA,
+        KONAMI_DES_KOALA,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_EBON_MAGICIAN_CURRAN,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_TRIAL_OF_THE_PRINCESSES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_THE_RELIABLE_GUARDIAN,
+        KONAMI_THE_RELIABLE_GUARDIAN,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DARK_CORE,
+        KONAMI_MESSENGER_OF_PEACE,
+        KONAMI_MESSENGER_OF_PEACE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SECRET_BARREL,
+        KONAMI_SECRET_BARREL,
+        KONAMI_CEMETARY_BOMB,
+        KONAMI_FATAL_ABACUS,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0061  (offset 0x9e676e0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0061_9E676E0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_JACK_APOSTROPHE_S_KNIGHT,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_AXE_RAIDER,
+        KONAMI_AXE_RAIDER,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_WARRIOR_OF_ZERA,
+        KONAMI_WARRIOR_OF_ZERA,
+        KONAMI_SKULL_MARINER,
+        KONAMI_SKULL_MARINER,
+        KONAMI_KING_APOSTROPHE_S_KNIGHT,
+        KONAMI_KING_APOSTROPHE_S_KNIGHT,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_BEAUTIFUL_HEADHUNTRESS,
+        KONAMI_BEAUTIFUL_HEADHUNTRESS,
+        KONAMI_QUEEN_APOSTROPHE_S_KNIGHT,
+        KONAMI_QUEEN_APOSTROPHE_S_KNIGHT,
+        KONAMI_BLADE_SKATER,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0062  (offset 0x9e67740)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0062_9E67740 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_JACK_APOSTROPHE_S_KNIGHT,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_GEARFRIED_THE_IRON_KNIGHT,
+        KONAMI_AXE_RAIDER,
+        KONAMI_AXE_RAIDER,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_WARRIOR_OF_ZERA,
+        KONAMI_WARRIOR_OF_ZERA,
+        KONAMI_SKULL_MARINER,
+        KONAMI_SKULL_MARINER,
+        KONAMI_KING_APOSTROPHE_S_KNIGHT,
+        KONAMI_KING_APOSTROPHE_S_KNIGHT,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_BEAUTIFUL_HEADHUNTRESS,
+        KONAMI_BEAUTIFUL_HEADHUNTRESS,
+        KONAMI_QUEEN_APOSTROPHE_S_KNIGHT,
+        KONAMI_QUEEN_APOSTROPHE_S_KNIGHT,
+        KONAMI_BLADE_SKATER,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0071  (offset 0x9e677a0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0071_9E677A0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ZABORG_THE_THUNDER_MONARCH,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_GHOUL_WITH_AN_APPETITE,
+        KONAMI_GHOUL_WITH_AN_APPETITE,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_THE_SNAKE_HAIR,
+        KONAMI_THE_SNAKE_HAIR,
+        KONAMI_ARMORED_ZOMBIE,
+        KONAMI_ARMORED_ZOMBIE,
+        KONAMI_YARANZO,
+        KONAMI_YARANZO,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_RETURN_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0072  (offset 0x9e67800)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0072_9E67800 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ZABORG_THE_THUNDER_MONARCH,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_GHOUL_WITH_AN_APPETITE,
+        KONAMI_GHOUL_WITH_AN_APPETITE,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_THE_SNAKE_HAIR,
+        KONAMI_THE_SNAKE_HAIR,
+        KONAMI_ARMORED_ZOMBIE,
+        KONAMI_ARMORED_ZOMBIE,
+        KONAMI_YARANZO,
+        KONAMI_YARANZO,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_RETURN_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_TWO_DASH_MAN_CELL_BATTLE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0081  (offset 0x9e67860)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0081_9E67860 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_ERIA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_WYNN,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_AUSSA,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_NEO_THE_MAGIC_SWORDSMAN,
+        KONAMI_NEO_THE_MAGIC_SWORDSMAN,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAIDEN_OF_THE_MOONLIGHT,
+        KONAMI_MAIDEN_OF_THE_MOONLIGHT,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_WYNN_THE_WIND_CHARMER,
+        KONAMI_AUSSA_THE_EARTH_CHARMER,
+        KONAMI_ERIA_THE_WATER_CHARMER,
+        KONAMI_HIITA_THE_FIRE_CHARMER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_YAMI,
+        KONAMI_YAMI,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CONSCRIPTION,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0082  (offset 0x9e678c0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0082_9E678C0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_HIITA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_ERIA,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_WYNN,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_AUSSA,
+        KONAMI_KYCOO_THE_GHOST_DESTROYER,
+        KONAMI_NEO_THE_MAGIC_SWORDSMAN,
+        KONAMI_NEO_THE_MAGIC_SWORDSMAN,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_VALKYRIE,
+        KONAMI_MAIDEN_OF_THE_MOONLIGHT,
+        KONAMI_MAIDEN_OF_THE_MOONLIGHT,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_AQUA_MADOOR,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_WYNN_THE_WIND_CHARMER,
+        KONAMI_AUSSA_THE_EARTH_CHARMER,
+        KONAMI_ERIA_THE_WATER_CHARMER,
+        KONAMI_HIITA_THE_FIRE_CHARMER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_MAGICAL_DIMENSION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_YAMI,
+        KONAMI_YAMI,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CONSCRIPTION,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGICIAN_APOSTROPHE_S_CIRCLE,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0091  (offset 0x9e67920)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0091_9E67920 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BIG_KOALA,
+        KONAMI_THE_ALL_DASH_SEEING_WHITE_TIGER,
+        KONAMI_THE_ALL_DASH_SEEING_WHITE_TIGER,
+        KONAMI_THE_ALL_DASH_SEEING_WHITE_TIGER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_BIG_DASH_TUSKED_MAMMOTH,
+        KONAMI_BIG_DASH_TUSKED_MAMMOTH,
+        KONAMI_KING_TIGER_WANGHU,
+        KONAMI_DES_KANGAROO,
+        KONAMI_DES_KANGAROO,
+        KONAMI_LEGENDARY_JUJITSU_MASTER,
+        KONAMI_MYSTICAL_SHEEP_2,
+        KONAMI_DES_KOALA,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_GYAKU_DASH_GIRE_PANDA,
+        KONAMI_GYAKU_DASH_GIRE_PANDA,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_HANE_DASH_HANE,
+        KONAMI_RESCUE_CAT,
+        KONAMI_RESCUE_CAT,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_THE_BIG_MARCH_OF_ANIMALS,
+        KONAMI_FUSION_GATE,
+        KONAMI_FUSION_GATE,
+        KONAMI_DARK_CORE,
+        KONAMI_POISON_FANGS,
+        KONAMI_POISON_FANGS,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BEAST_SOUL_SWAP,
+        KONAMI_BEAST_SOUL_SWAP,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_MASTER_OF_OZ,
+        KONAMI_MASTER_OF_OZ,
+        KONAMI_MASTER_OF_OZ,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0092  (offset 0x9e67984)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0092_9E67984 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BIG_KOALA,
+        KONAMI_THE_ALL_DASH_SEEING_WHITE_TIGER,
+        KONAMI_THE_ALL_DASH_SEEING_WHITE_TIGER,
+        KONAMI_THE_ALL_DASH_SEEING_WHITE_TIGER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_BIG_DASH_TUSKED_MAMMOTH,
+        KONAMI_BIG_DASH_TUSKED_MAMMOTH,
+        KONAMI_KING_TIGER_WANGHU,
+        KONAMI_DES_KANGAROO,
+        KONAMI_DES_KANGAROO,
+        KONAMI_LEGENDARY_JUJITSU_MASTER,
+        KONAMI_MYSTICAL_SHEEP_2,
+        KONAMI_DES_KOALA,
+        KONAMI_NIGHTMARE_PENGUIN,
+        KONAMI_GYAKU_DASH_GIRE_PANDA,
+        KONAMI_GYAKU_DASH_GIRE_PANDA,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_HANE_DASH_HANE,
+        KONAMI_RESCUE_CAT,
+        KONAMI_RESCUE_CAT,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_THE_BIG_MARCH_OF_ANIMALS,
+        KONAMI_FUSION_GATE,
+        KONAMI_FUSION_GATE,
+        KONAMI_DARK_CORE,
+        KONAMI_POISON_FANGS,
+        KONAMI_POISON_FANGS,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BEAST_SOUL_SWAP,
+        KONAMI_BEAST_SOUL_SWAP,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_MASTER_OF_OZ,
+        KONAMI_MASTER_OF_OZ,
+        KONAMI_MASTER_OF_OZ,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0101  (offset 0x9e679e8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0101_9E679E8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GADGET_SOLDIER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_DRILLROID,
+        KONAMI_DRILLAGO,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_METALMORPH,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_RARE_METALMORPH,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0102  (offset 0x9e67a48)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0102_9E67A48 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GADGET_SOLDIER,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_DRILLROID,
+        KONAMI_DRILLAGO,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GREEN_GADGET,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_RED_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_YELLOW_GADGET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_TRIBUTE_TO_THE_DOOMED,
+        KONAMI_COLLAPSE,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_METALMORPH,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_RARE_METALMORPH,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0111  (offset 0x9e67aa8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0111_9E67AA8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MYSTICAL_BEAST_SERKET,
+        KONAMI_MYSTICAL_BEAST_SERKET,
+        KONAMI_THE_END_OF_ANUBIS,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_GUARDIAN_SPHINX,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_SANGAN,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_PHARAONIC_PROTECTOR,
+        KONAMI_GUARDIAN_STATUE,
+        KONAMI_GUARDIAN_STATUE,
+        KONAMI_YOMI_SHIP,
+        KONAMI_YOMI_SHIP,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_NUBIAN_GUARD,
+        KONAMI_SWARM_OF_SCARABS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_CATHEDRAL_OF_NOBLES,
+        KONAMI_CATHEDRAL_OF_NOBLES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HIEROGLYPH_LITHOGRAPH,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_NEEDLE_WALL,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MICHIZURE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_ACID_TRAP_HOLE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0112  (offset 0x9e67b08)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0112_9E67B08 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MYSTICAL_BEAST_SERKET,
+        KONAMI_MYSTICAL_BEAST_SERKET,
+        KONAMI_THE_END_OF_ANUBIS,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_GUARDIAN_SPHINX,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_SANGAN,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_PHARAONIC_PROTECTOR,
+        KONAMI_GUARDIAN_STATUE,
+        KONAMI_GUARDIAN_STATUE,
+        KONAMI_YOMI_SHIP,
+        KONAMI_YOMI_SHIP,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_NUBIAN_GUARD,
+        KONAMI_SWARM_OF_SCARABS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_CATHEDRAL_OF_NOBLES,
+        KONAMI_CATHEDRAL_OF_NOBLES,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HIEROGLYPH_LITHOGRAPH,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_NEEDLE_WALL,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_MICHIZURE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_ACID_TRAP_HOLE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0121  (offset 0x9e67b68)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0121_9E67B68 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_B_DOT_E_DOT_S_DOT_COVERED_CORE,
+        KONAMI_CYBER_DASH_TECH_ALLIGATOR,
+        KONAMI_BIG_CORE,
+        KONAMI_B_DOT_E_DOT_S_DOT_CRYSTAL_CORE,
+        KONAMI_B_DOT_E_DOT_S_DOT_TETRAN,
+        KONAMI_NANOBREAKER,
+        KONAMI_NANOBREAKER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_GRADIUS,
+        KONAMI_GRADIUS,
+        KONAMI_GRADIUS,
+        KONAMI_ADHESIVE_EXPLOSIVE,
+        KONAMI_SANGAN,
+        KONAMI_GYROID,
+        KONAMI_MIGHTY_GUARD,
+        KONAMI_MIGHTY_GUARD,
+        KONAMI_SONIC_JAMMER,
+        KONAMI_SONIC_JAMMER,
+        KONAMI_GRADIUS_APOSTROPHE_OPTION,
+        KONAMI_GRADIUS_APOSTROPHE_OPTION,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_KOZAKY_APOSTROPHE_S_SELF_DASH_DESTRUCT_BUTTON,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SECRET_BARREL,
+        KONAMI_DAMAGE_CONDENSER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0122  (offset 0x9e67bc8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0122_9E67BC8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_B_DOT_E_DOT_S_DOT_COVERED_CORE,
+        KONAMI_CYBER_DASH_TECH_ALLIGATOR,
+        KONAMI_BIG_CORE,
+        KONAMI_B_DOT_E_DOT_S_DOT_CRYSTAL_CORE,
+        KONAMI_B_DOT_E_DOT_S_DOT_TETRAN,
+        KONAMI_NANOBREAKER,
+        KONAMI_NANOBREAKER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_GRADIUS,
+        KONAMI_GRADIUS,
+        KONAMI_GRADIUS,
+        KONAMI_ADHESIVE_EXPLOSIVE,
+        KONAMI_SANGAN,
+        KONAMI_GYROID,
+        KONAMI_MIGHTY_GUARD,
+        KONAMI_MIGHTY_GUARD,
+        KONAMI_SONIC_JAMMER,
+        KONAMI_SONIC_JAMMER,
+        KONAMI_GRADIUS_APOSTROPHE_OPTION,
+        KONAMI_GRADIUS_APOSTROPHE_OPTION,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_KOZAKY_APOSTROPHE_S_SELF_DASH_DESTRUCT_BUTTON,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SECRET_BARREL,
+        KONAMI_DAMAGE_CONDENSER,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0131  (offset 0x9e67c28)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[13];
+    u16 padding;
+}gDeck_Theme0131_9E67C28 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_STEAMROID,
+        KONAMI_STEAMROID,
+        KONAMI_STEAMROID,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_UFOROID,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_GYROID,
+        KONAMI_GYROID,
+        KONAMI_GYROID,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_FUSION_GATE,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CHTHONIAN_POLYMER,
+        KONAMI_CHTHONIAN_POLYMER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DISAPPEAR,
+    },
+    /* extraCount */ 13,
+    /* extraDeck  */ {
+        KONAMI_ELEMENTAL_HERO_ERIKSHIELER,
+        KONAMI_ELEMENTAL_HERO_TEMPEST,
+        KONAMI_ELEMENTAL_HERO_WILDEDGE,
+        KONAMI_ELEMENTAL_HERO_SHINING_FLARE_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_THUNDER_GIANT,
+        KONAMI_STEAM_GYROID,
+        KONAMI_STEAM_GYROID,
+        KONAMI_ELEMENTAL_HERO_FLAME_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_RAMPART_BLASTER,
+        KONAMI_ELEMENTAL_HERO_MADBALLMAN,
+        KONAMI_ELEMENTAL_HERO_STEAM_HEALER,
+        KONAMI_UFOROID_FIGHTER,
+        KONAMI_UFOROID_FIGHTER,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0132  (offset 0x9e67ca0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[13];
+    u16 padding;
+}gDeck_Theme0132_9E67CA0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ELEMENTAL_HERO_BLADEDGE,
+        KONAMI_STEAMROID,
+        KONAMI_STEAMROID,
+        KONAMI_STEAMROID,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_SPARKMAN,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_ELEMENTAL_HERO_WILDHEART,
+        KONAMI_UFOROID,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_ELEMENTAL_HERO_BURSTINATRIX,
+        KONAMI_GYROID,
+        KONAMI_GYROID,
+        KONAMI_GYROID,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_AVIAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_BUBBLEMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_FUSION_GATE,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CHTHONIAN_POLYMER,
+        KONAMI_CHTHONIAN_POLYMER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DISAPPEAR,
+    },
+    /* extraCount */ 13,
+    /* extraDeck  */ {
+        KONAMI_ELEMENTAL_HERO_ERIKSHIELER,
+        KONAMI_ELEMENTAL_HERO_TEMPEST,
+        KONAMI_ELEMENTAL_HERO_WILDEDGE,
+        KONAMI_ELEMENTAL_HERO_SHINING_FLARE_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_THUNDER_GIANT,
+        KONAMI_STEAM_GYROID,
+        KONAMI_STEAM_GYROID,
+        KONAMI_ELEMENTAL_HERO_FLAME_WINGMAN,
+        KONAMI_ELEMENTAL_HERO_RAMPART_BLASTER,
+        KONAMI_ELEMENTAL_HERO_MADBALLMAN,
+        KONAMI_ELEMENTAL_HERO_STEAM_HEALER,
+        KONAMI_UFOROID_FIGHTER,
+        KONAMI_UFOROID_FIGHTER,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0141  (offset 0x9e67d18)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0141_9E67D18 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLACK_LUSTER_SOLDIER,
+        KONAMI_BLACK_LUSTER_SOLDIER,
+        KONAMI_MAGICIAN_OF_BLACK_CHAOS,
+        KONAMI_MAGICIAN_OF_BLACK_CHAOS,
+        KONAMI_DARK_MASTER_DASH_ZORC,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_GAGAGIGO,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_GREAT_ANGUS,
+        KONAMI_SPACE_MAMBO,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_SENJU_OF_THE_THOUSAND_HANDS,
+        KONAMI_SENJU_OF_THE_THOUSAND_HANDS,
+        KONAMI_SONIC_BIRD,
+        KONAMI_SONIC_BIRD,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_SANGAN,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_RELINQUISHED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_EARTH_CHANT,
+        KONAMI_EARTH_CHANT,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_CONTRACT_WITH_THE_ABYSS,
+        KONAMI_CONTRACT_WITH_THE_ABYSS,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MISTOBODY,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_ASTRAL_BARRIER,
+        KONAMI_THREATENING_ROAR,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0142  (offset 0x9e67d78)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0142_9E67D78 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLACK_LUSTER_SOLDIER,
+        KONAMI_BLACK_LUSTER_SOLDIER,
+        KONAMI_MAGICIAN_OF_BLACK_CHAOS,
+        KONAMI_MAGICIAN_OF_BLACK_CHAOS,
+        KONAMI_DARK_MASTER_DASH_ZORC,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_GAGAGIGO,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_GREAT_ANGUS,
+        KONAMI_SPACE_MAMBO,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_SENJU_OF_THE_THOUSAND_HANDS,
+        KONAMI_SENJU_OF_THE_THOUSAND_HANDS,
+        KONAMI_SONIC_BIRD,
+        KONAMI_SONIC_BIRD,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_SANGAN,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_RELINQUISHED,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_EARTH_CHANT,
+        KONAMI_EARTH_CHANT,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_CONTRACT_WITH_THE_ABYSS,
+        KONAMI_CONTRACT_WITH_THE_ABYSS,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_CROSSOUT,
+        KONAMI_MISTOBODY,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_ASTRAL_BARRIER,
+        KONAMI_THREATENING_ROAR,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0151  (offset 0x9e67dd8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0151_9E67DD8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_THEINEN_THE_GREAT_SPHINX,
+        KONAMI_THEINEN_THE_GREAT_SPHINX,
+        KONAMI_ANDRO_SPHINX,
+        KONAMI_ANDRO_SPHINX,
+        KONAMI_SPHINX_TELEIA,
+        KONAMI_SPHINX_TELEIA,
+        KONAMI_MANTICORE_OF_DARKNESS,
+        KONAMI_MANTICORE_OF_DARKNESS,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_EAGLE_EYE,
+        KONAMI_ABARE_USHIONI,
+        KONAMI_TORNADO_BIRD,
+        KONAMI_HYENA,
+        KONAMI_HYENA,
+        KONAMI_HYENA,
+        KONAMI_BUBONIC_VERMIN,
+        KONAMI_BUBONIC_VERMIN,
+        KONAMI_BUBONIC_VERMIN,
+        KONAMI_PREVENT_RAT,
+        KONAMI_PREVENT_RAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BAIT_DOLL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_EMERGENCY_PROVISIONS,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_SWORDS_OF_CONCEALING_LIGHT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_PYRAMID_OF_LIGHT,
+        KONAMI_PYRAMID_OF_LIGHT,
+        KONAMI_PYRAMID_OF_LIGHT,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_SPELLBINDING_CIRCLE,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0152  (offset 0x9e67e38)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0152_9E67E38 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_THEINEN_THE_GREAT_SPHINX,
+        KONAMI_THEINEN_THE_GREAT_SPHINX,
+        KONAMI_ANDRO_SPHINX,
+        KONAMI_ANDRO_SPHINX,
+        KONAMI_SPHINX_TELEIA,
+        KONAMI_SPHINX_TELEIA,
+        KONAMI_MANTICORE_OF_DARKNESS,
+        KONAMI_MANTICORE_OF_DARKNESS,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_EAGLE_EYE,
+        KONAMI_ABARE_USHIONI,
+        KONAMI_TORNADO_BIRD,
+        KONAMI_HYENA,
+        KONAMI_HYENA,
+        KONAMI_HYENA,
+        KONAMI_BUBONIC_VERMIN,
+        KONAMI_BUBONIC_VERMIN,
+        KONAMI_BUBONIC_VERMIN,
+        KONAMI_PREVENT_RAT,
+        KONAMI_PREVENT_RAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BAIT_DOLL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_EMERGENCY_PROVISIONS,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_SWORDS_OF_CONCEALING_LIGHT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_PYRAMID_OF_LIGHT,
+        KONAMI_PYRAMID_OF_LIGHT,
+        KONAMI_PYRAMID_OF_LIGHT,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_SPELLBINDING_CIRCLE,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0161  (offset 0x9e67e98)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0161_9E67E98 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_GHOUL_WITH_AN_APPETITE,
+        KONAMI_THE_SNAKE_HAIR,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_RED_DASH_MOON_BABY,
+        KONAMI_RED_DASH_MOON_BABY,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BAIT_DOLL,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_EMERGENCY_PROVISIONS,
+        KONAMI_RIRYOKU,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_BLAST_WITH_CHAIN,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MICHIZURE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+        KONAMI_DES_COUNTERBLOW,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0162  (offset 0x9e67ef8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0162_9E67EF8 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_GHOUL_WITH_AN_APPETITE,
+        KONAMI_THE_SNAKE_HAIR,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_RED_DASH_MOON_BABY,
+        KONAMI_RED_DASH_MOON_BABY,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_HEAVY_STORM,
+        KONAMI_BAIT_DOLL,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_EMERGENCY_PROVISIONS,
+        KONAMI_RIRYOKU,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_BLAST_WITH_CHAIN,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MICHIZURE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+        KONAMI_DES_COUNTERBLOW,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0171  (offset 0x9e67f58)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0171_9E67F58 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ANTEATEREATINGANT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_GIGANTES,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_NEO_BUG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_SPIRIT_OF_FLAMES,
+        KONAMI_SPIRIT_OF_FLAMES,
+        KONAMI_DARKFIRE_SOLDIER,
+        KONAMI_THE_ROCK_SPIRIT,
+        KONAMI_THE_ROCK_SPIRIT,
+        KONAMI_AQUA_SPIRIT,
+        KONAMI_AQUA_SPIRIT,
+        KONAMI_GARUDA_THE_WIND_SPIRIT,
+        KONAMI_GARUDA_THE_WIND_SPIRIT,
+        KONAMI_INFERNO,
+        KONAMI_HEAVY_STORM,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_DARK_MIRROR_FORCE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0172  (offset 0x9e67fb8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0172_9E67FB8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ANTEATEREATINGANT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_GIGANTES,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_NEO_BUG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_SPIRIT_OF_FLAMES,
+        KONAMI_SPIRIT_OF_FLAMES,
+        KONAMI_DARKFIRE_SOLDIER,
+        KONAMI_THE_ROCK_SPIRIT,
+        KONAMI_THE_ROCK_SPIRIT,
+        KONAMI_AQUA_SPIRIT,
+        KONAMI_AQUA_SPIRIT,
+        KONAMI_GARUDA_THE_WIND_SPIRIT,
+        KONAMI_GARUDA_THE_WIND_SPIRIT,
+        KONAMI_INFERNO,
+        KONAMI_HEAVY_STORM,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_CARD_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_DARK_MIRROR_FORCE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0181  (offset 0x9e68018)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0181_9E68018 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ULTIMATE_INSECT_LV7,
+        KONAMI_SABER_BEETLE,
+        KONAMI_SABER_BEETLE,
+        KONAMI_ULTIMATE_INSECT_LV5,
+        KONAMI_INSECT_QUEEN,
+        KONAMI_INSECT_QUEEN,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_NEO_BUG,
+        KONAMI_NEO_BUG,
+        KONAMI_ULTIMATE_INSECT_LV3,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_GOKIPON,
+        KONAMI_GOKIPON,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_ULTIMATE_INSECT_LV1,
+        KONAMI_MULTIPLICATION_OF_ANTS,
+        KONAMI_MULTIPLICATION_OF_ANTS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_LIGHTFORCE_SWORD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0182  (offset 0x9e68078)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0182_9E68078 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_ULTIMATE_INSECT_LV7,
+        KONAMI_SABER_BEETLE,
+        KONAMI_SABER_BEETLE,
+        KONAMI_ULTIMATE_INSECT_LV5,
+        KONAMI_INSECT_QUEEN,
+        KONAMI_INSECT_QUEEN,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_NEO_BUG,
+        KONAMI_NEO_BUG,
+        KONAMI_ULTIMATE_INSECT_LV3,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_GOKIPON,
+        KONAMI_GOKIPON,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_ULTIMATE_INSECT_LV1,
+        KONAMI_MULTIPLICATION_OF_ANTS,
+        KONAMI_MULTIPLICATION_OF_ANTS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COST_DOWN,
+        KONAMI_COST_DOWN,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SCAPEGOAT,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_LIGHTFORCE_SWORD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0191  (offset 0x9e680d8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0191_9E680D8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GIANT_ORC,
+        KONAMI_GIANT_ORC,
+        KONAMI_GIANT_ORC,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_ZOMBIE_TIGER,
+        KONAMI_ZOMBIE_TIGER,
+        KONAMI_ZOMBIE_TIGER,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_DECAYED_COMMANDER,
+        KONAMI_DECAYED_COMMANDER,
+        KONAMI_DECAYED_COMMANDER,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SECOND_GOBLIN,
+        KONAMI_SECOND_GOBLIN,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COMBINATION_ATTACK,
+        KONAMI_COMBINATION_ATTACK,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0192  (offset 0x9e68138)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0192_9E68138 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GIANT_ORC,
+        KONAMI_GIANT_ORC,
+        KONAMI_GIANT_ORC,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_ZOMBIE_TIGER,
+        KONAMI_ZOMBIE_TIGER,
+        KONAMI_ZOMBIE_TIGER,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_DECAYED_COMMANDER,
+        KONAMI_DECAYED_COMMANDER,
+        KONAMI_DECAYED_COMMANDER,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SECOND_GOBLIN,
+        KONAMI_SECOND_GOBLIN,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_COMBINATION_ATTACK,
+        KONAMI_COMBINATION_ATTACK,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0201  (offset 0x9e68198)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0201_9E68198 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_MANGA_RYU_DASH_RAN,
+        KONAMI_TOON_DARK_MAGICIAN_GIRL,
+        KONAMI_TOON_DARK_MAGICIAN_GIRL,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_MERMAID,
+        KONAMI_TOON_MERMAID,
+        KONAMI_TOON_MERMAID,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_MASKED_SORCERER,
+        KONAMI_TOON_MASKED_SORCERER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_WORLD,
+        KONAMI_TOON_WORLD,
+        KONAMI_TOON_WORLD,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TOON_DEFENSE,
+        KONAMI_TOON_DEFENSE,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0202  (offset 0x9e681f8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0202_9E681F8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_SUMMONED_SKULL,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_TOON_GOBLIN_ATTACK_FORCE,
+        KONAMI_MANGA_RYU_DASH_RAN,
+        KONAMI_TOON_DARK_MAGICIAN_GIRL,
+        KONAMI_TOON_DARK_MAGICIAN_GIRL,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_GEMINI_ELF,
+        KONAMI_TOON_MERMAID,
+        KONAMI_TOON_MERMAID,
+        KONAMI_TOON_MERMAID,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_TOON_MASKED_SORCERER,
+        KONAMI_TOON_MASKED_SORCERER,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_WORLD,
+        KONAMI_TOON_WORLD,
+        KONAMI_TOON_WORLD,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_TOON_DEFENSE,
+        KONAMI_TOON_DEFENSE,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0211  (offset 0x9e68258)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0211_9E68258 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_TERRORKING_SALMON,
+        KONAMI_TERRORKING_SALMON,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_GIANT_RED_SEASNAKE,
+        KONAMI_GIANT_RED_SEASNAKE,
+        KONAMI_GIROCHIN_KUWAGATA,
+        KONAMI_GIROCHIN_KUWAGATA,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_ISLAND_TURTLE,
+        KONAMI_HUMANOID_SLIME,
+        KONAMI_IRON_BLACKSMITH_KOTETSU,
+        KONAMI_IRON_BLACKSMITH_KOTETSU,
+        KONAMI_IRON_BLACKSMITH_KOTETSU,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_MYSTIC_BOX,
+        KONAMI_SCAPEGOAT,
+        KONAMI_TWIN_SWORDS_OF_FLASHING_LIGHT_DASH_TRYCE,
+        KONAMI_STIM_DASH_PACK,
+        KONAMI_NITRO_UNIT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_A_FEATHER_OF_THE_PHOENIX,
+        KONAMI_RAIN_OF_MERCY,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_SHOOTING_STAR_BOW_DASH_CEAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0212  (offset 0x9e682b8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0212_9E682B8 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_TERRORKING_SALMON,
+        KONAMI_TERRORKING_SALMON,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_GIANT_RED_SEASNAKE,
+        KONAMI_GIANT_RED_SEASNAKE,
+        KONAMI_GIROCHIN_KUWAGATA,
+        KONAMI_GIROCHIN_KUWAGATA,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_ISLAND_TURTLE,
+        KONAMI_HUMANOID_SLIME,
+        KONAMI_IRON_BLACKSMITH_KOTETSU,
+        KONAMI_IRON_BLACKSMITH_KOTETSU,
+        KONAMI_IRON_BLACKSMITH_KOTETSU,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_MYSTIC_BOX,
+        KONAMI_SCAPEGOAT,
+        KONAMI_TWIN_SWORDS_OF_FLASHING_LIGHT_DASH_TRYCE,
+        KONAMI_STIM_DASH_PACK,
+        KONAMI_NITRO_UNIT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_A_FEATHER_OF_THE_PHOENIX,
+        KONAMI_RAIN_OF_MERCY,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_SHOOTING_STAR_BOW_DASH_CEAL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0221  (offset 0x9e68318)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0221_9E68318 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_FAIRY_KING_TRUESDALE,
+        KONAMI_HOMUNCULUS_THE_ALCHEMIC_BEING,
+        KONAMI_HOMUNCULUS_THE_ALCHEMIC_BEING,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_VAMPIRE_ORCHIS,
+        KONAMI_VAMPIRE_ORCHIS,
+        KONAMI_VAMPIRE_ORCHIS,
+        KONAMI_LORD_POISON,
+        KONAMI_LORD_POISON,
+        KONAMI_LORD_POISON,
+        KONAMI_BEAN_SOLDIER,
+        KONAMI_BEAN_SOLDIER,
+        KONAMI_GRASS_PHANTOM,
+        KONAMI_GRASS_PHANTOM,
+        KONAMI_GRASS_PHANTOM,
+        KONAMI_SANGAN,
+        KONAMI_DES_DENDLE,
+        KONAMI_DES_DENDLE,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MALICE_DISPERSION,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_FISSURE,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_THE_RELIABLE_GUARDIAN,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_FOREST,
+        KONAMI_FOREST,
+        KONAMI_CONSCRIPTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0222  (offset 0x9e68378)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0222_9E68378 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_FAIRY_KING_TRUESDALE,
+        KONAMI_HOMUNCULUS_THE_ALCHEMIC_BEING,
+        KONAMI_HOMUNCULUS_THE_ALCHEMIC_BEING,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_VAMPIRE_ORCHIS,
+        KONAMI_VAMPIRE_ORCHIS,
+        KONAMI_VAMPIRE_ORCHIS,
+        KONAMI_LORD_POISON,
+        KONAMI_LORD_POISON,
+        KONAMI_LORD_POISON,
+        KONAMI_BEAN_SOLDIER,
+        KONAMI_BEAN_SOLDIER,
+        KONAMI_GRASS_PHANTOM,
+        KONAMI_GRASS_PHANTOM,
+        KONAMI_GRASS_PHANTOM,
+        KONAMI_SANGAN,
+        KONAMI_DES_DENDLE,
+        KONAMI_DES_DENDLE,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MALICE_DISPERSION,
+        KONAMI_AUTONOMOUS_ACTION_UNIT,
+        KONAMI_FISSURE,
+        KONAMI_CARD_OF_SAFE_RETURN,
+        KONAMI_THE_RELIABLE_GUARDIAN,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BIG_BANG_SHOT,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_FOREST,
+        KONAMI_FOREST,
+        KONAMI_CONSCRIPTION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0231  (offset 0x9e683d8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[6];
+    u16 padding;
+}gDeck_Theme0231_9E683D8 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VORSE_RAIDER,
+        KONAMI_GIL_GARTH,
+        KONAMI_GIL_GARTH,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_INFERNO_HAMMER,
+        KONAMI_BLOWBACK_DRAGON,
+        KONAMI_KIRYU,
+        KONAMI_EXARION_UNIVERSE,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_ELEMENT_DOOM,
+        KONAMI_THE_DARK_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_DARK_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_SANGAN,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_FISSURE,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_FUSION_GATE,
+        KONAMI_CENTRIFUGAL_FIELD,
+    },
+    /* extraCount */ 6,
+    /* extraDeck  */ {
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_SANWITCH,
+        KONAMI_SANWITCH,
+        KONAMI_SANWITCH,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0232  (offset 0x9e68444)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[6];
+    u16 padding;
+}gDeck_Theme0232_9E68444 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VORSE_RAIDER,
+        KONAMI_GIL_GARTH,
+        KONAMI_GIL_GARTH,
+        KONAMI_DARK_BLADE,
+        KONAMI_DARK_BLADE,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_LA_JINN_THE_MYSTICAL_GENIE_OF_THE_LAMP,
+        KONAMI_INFERNO_HAMMER,
+        KONAMI_BLOWBACK_DRAGON,
+        KONAMI_KIRYU,
+        KONAMI_EXARION_UNIVERSE,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_ELEMENT_DOOM,
+        KONAMI_THE_DARK_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_THE_DARK_DASH_HEX_DASH_SEALED_FUSION,
+        KONAMI_SANGAN,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_PITCH_DASH_DARK_DRAGON,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_FISSURE,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_METEOR_OF_DESTRUCTION,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_FUSION_RECOVERY,
+        KONAMI_POLYMERIZATION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_FUSION_GATE,
+        KONAMI_CENTRIFUGAL_FIELD,
+    },
+    /* extraCount */ 6,
+    /* extraDeck  */ {
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_DARK_BLADE_THE_DRAGON_KNIGHT,
+        KONAMI_SANWITCH,
+        KONAMI_SANWITCH,
+        KONAMI_SANWITCH,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0241  (offset 0x9e684b0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0241_9E684B0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_RULER_VANDALGYON,
+        KONAMI_DARK_RULER_VANDALGYON,
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_THE_FIEND_MEGACYBER,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_EMISSARY_OF_THE_AFTERLIFE,
+        KONAMI_EMISSARY_OF_THE_AFTERLIFE,
+        KONAMI_ARMORED_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_OLD_VINDICTIVE_MAGICIAN,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_OFFERINGS_TO_THE_DOOMED,
+        KONAMI_MIND_CONTROL,
+        KONAMI_SOUL_TAKER,
+        KONAMI_MYSTIC_PLASMA_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_ADHESION_TRAP_HOLE,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0242  (offset 0x9e68510)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0242_9E68510 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_RULER_VANDALGYON,
+        KONAMI_DARK_RULER_VANDALGYON,
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_THE_FIEND_MEGACYBER,
+        KONAMI_ZOMBYRA_THE_DARK,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_EMISSARY_OF_THE_AFTERLIFE,
+        KONAMI_EMISSARY_OF_THE_AFTERLIFE,
+        KONAMI_ARMORED_ZOMBIE,
+        KONAMI_SANGAN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_PETEN_THE_DARK_CLOWN,
+        KONAMI_OLD_VINDICTIVE_MAGICIAN,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_OFFERINGS_TO_THE_DOOMED,
+        KONAMI_MIND_CONTROL,
+        KONAMI_SOUL_TAKER,
+        KONAMI_MYSTIC_PLASMA_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_ADHESION_TRAP_HOLE,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0251  (offset 0x9e68570)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0251_9E68570 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_GEMINI_ELF,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_AUSSA,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_THE_ROCK_SPIRIT,
+        KONAMI_AMAZONESS_PALADIN,
+        KONAMI_AMAZONESS_PALADIN,
+        KONAMI_KING_TIGER_WANGHU,
+        KONAMI_AMAZONESS_CHAIN_MASTER,
+        KONAMI_AMAZONESS_FIGHTER,
+        KONAMI_AMAZONESS_SWORDS_WOMAN,
+        KONAMI_AMAZONESS_SWORDS_WOMAN,
+        KONAMI_OBNOXIOUS_CELTIC_GUARD,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_LEGENDARY_JUJITSU_MASTER,
+        KONAMI_AMAZONESS_TIGER,
+        KONAMI_AMAZONESS_BLOWPIPER,
+        KONAMI_AUSSA_THE_EARTH_CHARMER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_GAIA_POWER,
+        KONAMI_GAIA_POWER,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_SOUL_TAKER,
+        KONAMI_TOLL,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_SPIRITUAL_EARTH_ART_DASH_KUROGANE,
+        KONAMI_SPIRITUAL_EARTH_ART_DASH_KUROGANE,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_LIGHTFORCE_SWORD,
+        KONAMI_CHTHONIAN_BLAST,
+        KONAMI_PHOENIX_WING_WIND_BLAST,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0252  (offset 0x9e685d0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0252_9E685D0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_INDOMITABLE_FIGHTER_LEI_LEI,
+        KONAMI_GEMINI_ELF,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_FAMILIAR_DASH_POSSESSED_DASH_AUSSA,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_THE_ROCK_SPIRIT,
+        KONAMI_AMAZONESS_PALADIN,
+        KONAMI_AMAZONESS_PALADIN,
+        KONAMI_KING_TIGER_WANGHU,
+        KONAMI_AMAZONESS_CHAIN_MASTER,
+        KONAMI_AMAZONESS_FIGHTER,
+        KONAMI_AMAZONESS_SWORDS_WOMAN,
+        KONAMI_AMAZONESS_SWORDS_WOMAN,
+        KONAMI_OBNOXIOUS_CELTIC_GUARD,
+        KONAMI_GIANT_RAT,
+        KONAMI_GIANT_RAT,
+        KONAMI_ANCIENT_GEAR_SOLDIER,
+        KONAMI_LEGENDARY_JUJITSU_MASTER,
+        KONAMI_AMAZONESS_TIGER,
+        KONAMI_AMAZONESS_BLOWPIPER,
+        KONAMI_AUSSA_THE_EARTH_CHARMER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_GAIA_POWER,
+        KONAMI_GAIA_POWER,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_SOUL_TAKER,
+        KONAMI_TOLL,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_SPIRITUAL_EARTH_ART_DASH_KUROGANE,
+        KONAMI_SPIRITUAL_EARTH_ART_DASH_KUROGANE,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_LIGHTFORCE_SWORD,
+        KONAMI_CHTHONIAN_BLAST,
+        KONAMI_PHOENIX_WING_WIND_BLAST,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0261  (offset 0x9e68630)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0261_9E68630 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_EXODIA_NECROSS,
+        KONAMI_EXODIA_NECROSS,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_SANGAN,
+        KONAMI_EXODIA_THE_FORBIDDEN_ONE,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_RIGHT_LEG_OF_THE_FORBIDDEN_ONE,
+        KONAMI_RIGHT_ARM_OF_THE_FORBIDDEN_ONE,
+        KONAMI_LEFT_ARM_OF_THE_FORBIDDEN_ONE,
+        KONAMI_LEFT_LEG_OF_THE_FORBIDDEN_ONE,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_CONTRACT_WITH_EXODIA,
+        KONAMI_CONTRACT_WITH_EXODIA,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_SWORDS_OF_CONCEALING_LIGHT,
+        KONAMI_ALTAR_FOR_TRIBUTE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_HIDDEN_SOLDIER,
+        KONAMI_HIDDEN_SOLDIER,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0262  (offset 0x9e68690)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0262_9E68690 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_EXODIA_NECROSS,
+        KONAMI_EXODIA_NECROSS,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_D_DOT_D_DOT_SURVIVOR,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_SANGAN,
+        KONAMI_EXODIA_THE_FORBIDDEN_ONE,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_RIGHT_LEG_OF_THE_FORBIDDEN_ONE,
+        KONAMI_RIGHT_ARM_OF_THE_FORBIDDEN_ONE,
+        KONAMI_LEFT_ARM_OF_THE_FORBIDDEN_ONE,
+        KONAMI_LEFT_LEG_OF_THE_FORBIDDEN_ONE,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_CONTRACT_WITH_EXODIA,
+        KONAMI_CONTRACT_WITH_EXODIA,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_FOOLISH_BURIAL,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_SWORDS_OF_CONCEALING_LIGHT,
+        KONAMI_ALTAR_FOR_TRIBUTE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_HIDDEN_SOLDIER,
+        KONAMI_HIDDEN_SOLDIER,
+        KONAMI_TORRENTIAL_TRIBUTE,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_JAR_OF_GREED,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_WIDESPREAD_RUIN,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0271  (offset 0x9e686f0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0271_9E686F0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_GIL_GARTH,
+        KONAMI_GIL_GARTH,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_SHADOWSLAYER,
+        KONAMI_SHADOWSLAYER,
+        KONAMI_BLOOD_SUCKER,
+        KONAMI_BLOOD_SUCKER,
+        KONAMI_PROTECTOR_OF_THE_SANCTUARY,
+        KONAMI_SANGAN,
+        KONAMI_KRYUEL,
+        KONAMI_MEMORY_CRUSHER,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GRAVEDIGGER_GHOUL,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_RIRYOKU,
+        KONAMI_DARK_CORE,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_MONSTER_GATE,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_SKULL_DICE,
+        KONAMI_THREATENING_ROAR,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CRUSH_CARD,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_DECK_DEVASTATION_VIRUS,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0272  (offset 0x9e68750)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0272_9E68750 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_DARK_NECROFEAR,
+        KONAMI_GIL_GARTH,
+        KONAMI_GIL_GARTH,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_SHADOWSLAYER,
+        KONAMI_SHADOWSLAYER,
+        KONAMI_BLOOD_SUCKER,
+        KONAMI_BLOOD_SUCKER,
+        KONAMI_PROTECTOR_OF_THE_SANCTUARY,
+        KONAMI_SANGAN,
+        KONAMI_KRYUEL,
+        KONAMI_MEMORY_CRUSHER,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_GRAVEDIGGER_GHOUL,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_RIRYOKU,
+        KONAMI_DARK_CORE,
+        KONAMI_FAIRY_METEOR_CRUSH,
+        KONAMI_MONSTER_GATE,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_SKULL_DICE,
+        KONAMI_THREATENING_ROAR,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CRUSH_CARD,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_DECK_DEVASTATION_VIRUS,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0281  (offset 0x9e687b0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0281_9E687B0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_DEMISE_COMMA_KING_OF_ARMAGEDDON,
+        KONAMI_DEMISE_COMMA_KING_OF_ARMAGEDDON,
+        KONAMI_DEMISE_COMMA_KING_OF_ARMAGEDDON,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_SENJU_OF_THE_THOUSAND_HANDS,
+        KONAMI_SONIC_BIRD,
+        KONAMI_SONIC_BIRD,
+        KONAMI_DON_ZALOOG,
+        KONAMI_NEWDORIA,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_EARTHBOUND_SPIRIT,
+        KONAMI_EARTHBOUND_SPIRIT,
+        KONAMI_SANGAN,
+        KONAMI_FAMILIAR_KNIGHT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_END_OF_THE_WORLD,
+        KONAMI_END_OF_THE_WORLD,
+        KONAMI_END_OF_THE_WORLD,
+        KONAMI_HEAVY_STORM,
+        KONAMI_FULFILLMENT_OF_THE_CONTRACT,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_NECKLACE_OF_COMMAND,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_ENERGY_DRAIN,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_TIME_SEAL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0282  (offset 0x9e68810)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0282_9E68810 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_DEMISE_COMMA_KING_OF_ARMAGEDDON,
+        KONAMI_DEMISE_COMMA_KING_OF_ARMAGEDDON,
+        KONAMI_DEMISE_COMMA_KING_OF_ARMAGEDDON,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_ZURE_COMMA_KNIGHT_OF_DARK_WORLD,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_MANJU_OF_THE_TEN_THOUSAND_HANDS,
+        KONAMI_SENJU_OF_THE_THOUSAND_HANDS,
+        KONAMI_SONIC_BIRD,
+        KONAMI_SONIC_BIRD,
+        KONAMI_DON_ZALOOG,
+        KONAMI_NEWDORIA,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_EARTHBOUND_SPIRIT,
+        KONAMI_EARTHBOUND_SPIRIT,
+        KONAMI_SANGAN,
+        KONAMI_FAMILIAR_KNIGHT,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_END_OF_THE_WORLD,
+        KONAMI_END_OF_THE_WORLD,
+        KONAMI_END_OF_THE_WORLD,
+        KONAMI_HEAVY_STORM,
+        KONAMI_FULFILLMENT_OF_THE_CONTRACT,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_NECKLACE_OF_COMMAND,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_ENERGY_DRAIN,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DIVINE_WRATH,
+        KONAMI_TIME_SEAL,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0291  (offset 0x9e68870)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0291_9E68870 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_YAMATA_DRAGON,
+        KONAMI_YAMATA_DRAGON,
+        KONAMI_YAMATA_DRAGON,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_TSUKUYOMI,
+        KONAMI_SANGAN,
+        KONAMI_BATTLE_FOOTBALLER,
+        KONAMI_INABA_WHITE_RABBIT,
+        KONAMI_INABA_WHITE_RABBIT,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_OTOHIME,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_MEGAMORPH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0292  (offset 0x9e688d0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0292_9E688D0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_YAMATA_DRAGON,
+        KONAMI_YAMATA_DRAGON,
+        KONAMI_YAMATA_DRAGON,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_SUSA_SOLDIER,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_BERSERK_GORILLA,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_ASURA_PRIEST,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_FUSHI_NO_TORI,
+        KONAMI_TSUKUYOMI,
+        KONAMI_SANGAN,
+        KONAMI_BATTLE_FOOTBALLER,
+        KONAMI_INABA_WHITE_RABBIT,
+        KONAMI_INABA_WHITE_RABBIT,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_OTOHIME,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_MEGAMORPH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_DUST_TORNADO,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0301  (offset 0x9e68930)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Theme0301_9E68930 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_LORD_OF_D_DOT,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_DRAGON_APOSTROPHE_S_MIRROR,
+        KONAMI_DRAGON_APOSTROPHE_S_MIRROR,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POLYMERIZATION,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_KING_DRAGUN,
+        KONAMI_KING_DRAGUN,
+        KONAMI_KING_DRAGUN,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0302  (offset 0x9e689a0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Theme0302_9E689A0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_WHITE_DRAGON,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_DIVINE_DRAGON_RAGNAROK,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_LORD_OF_D_DOT,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_KING_OF_THE_SWAMP,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_DRAGON_APOSTROPHE_S_MIRROR,
+        KONAMI_DRAGON_APOSTROPHE_S_MIRROR,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_POLYMERIZATION,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_F_DOT_G_DOT_D_DOT,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_KING_DRAGUN,
+        KONAMI_KING_DRAGUN,
+        KONAMI_KING_DRAGUN,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0311  (offset 0x9e68a10)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0311_9E68A10 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_LAVA_GOLEM,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_ISLAND_TURTLE,
+        KONAMI_ISLAND_TURTLE,
+        KONAMI_BATTLE_FOOTBALLER,
+        KONAMI_BATTLE_FOOTBALLER,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_SATELLITE_CANNON,
+        KONAMI_SATELLITE_CANNON,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DESTRUCTION_RING,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_BEGONE_COMMA_KNAVE_EXCLAMATION,
+        KONAMI_SHADOW_OF_EYES,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0312  (offset 0x9e68a70)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0312_9E68A70 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_LAVA_GOLEM,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_SOLAR_FLARE_DRAGON,
+        KONAMI_ISLAND_TURTLE,
+        KONAMI_ISLAND_TURTLE,
+        KONAMI_BATTLE_FOOTBALLER,
+        KONAMI_BATTLE_FOOTBALLER,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_BIG_SHIELD_GARDNA,
+        KONAMI_SATELLITE_CANNON,
+        KONAMI_SATELLITE_CANNON,
+        KONAMI_DARK_ROOM_OF_NIGHTMARE,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POISON_OF_THE_OLD_MAN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_GRAVITY_BIND,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DESTRUCTION_RING,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_BEGONE_COMMA_KNAVE_EXCLAMATION,
+        KONAMI_SHADOW_OF_EYES,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0341  (offset 0x9e68ad0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0341_9E68AD0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_SANGAN,
+        KONAMI_CYBER_JAR,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_MORPHING_JAR,
+        KONAMI_COBRA_JAR,
+        KONAMI_COBRA_JAR,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_DICE_JAR,
+        KONAMI_DICE_JAR,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_CHORUS_OF_SANCTUARY,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DARK_HOLE,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_CHAIN_ENERGY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0342  (offset 0x9e68b30)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0342_9E68B30 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_SANGAN,
+        KONAMI_CYBER_JAR,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_MORPHING_JAR_2,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_STEALTH_BIRD,
+        KONAMI_MORPHING_JAR,
+        KONAMI_COBRA_JAR,
+        KONAMI_COBRA_JAR,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_DIMENSION_JAR,
+        KONAMI_DICE_JAR,
+        KONAMI_DICE_JAR,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_SHIFTING_SHADOWS,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_CHORUS_OF_SANCTUARY,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_WAVE_DASH_MOTION_CANNON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_DARK_HOLE,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_CHAIN_ENERGY,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_DUST_TORNADO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0351  (offset 0x9e68b90)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[42];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0351_9E68B90 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 42,
+    /* mainDeck  */ {
+        KONAMI_DESPAIR_FROM_THE_DARK,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_GIANT_AXE_MUMMY,
+        KONAMI_GIANT_AXE_MUMMY,
+        KONAMI_PATRICIAN_OF_DARKNESS,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MICRO_RAY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_ACID_TRAP_HOLE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0352  (offset 0x9e68bf4)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[42];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0352_9E68BF4 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 42,
+    /* mainDeck  */ {
+        KONAMI_DESPAIR_FROM_THE_DARK,
+        KONAMI_CURSE_OF_VAMPIRE,
+        KONAMI_GIANT_AXE_MUMMY,
+        KONAMI_GIANT_AXE_MUMMY,
+        KONAMI_PATRICIAN_OF_DARKNESS,
+        KONAMI_VAMPIRE_LORD,
+        KONAMI_ROYAL_KEEPER,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_FEAR_FROM_THE_DARK,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_GOBLIN_ZOMBIE,
+        KONAMI_MASTER_KYONSHEE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_PYRAMID_TURTLE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_DRAGON_ZOMBIE,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_DES_LACOODA,
+        KONAMI_DES_LACOODA,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_BOOK_OF_LIFE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_CALL_OF_THE_MUMMY,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_MICRO_RAY,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_ACID_TRAP_HOLE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0361  (offset 0x9e68c58)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0361_9E68C58 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VICTORY_D_DOT,
+        KONAMI_VICTORY_D_DOT,
+        KONAMI_VICTORY_D_DOT,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_SPEAR_DRAGON,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_EXILED_FORCE,
+        KONAMI_TROOP_DRAGON,
+        KONAMI_TROOP_DRAGON,
+        KONAMI_TROOP_DRAGON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DRAGON_APOSTROPHE_S_GUNFIRE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BURST_BREATH,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0362  (offset 0x9e68cb8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0362_9E68CB8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VICTORY_D_DOT,
+        KONAMI_VICTORY_D_DOT,
+        KONAMI_VICTORY_D_DOT,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_SPEAR_DRAGON,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_EXILED_FORCE,
+        KONAMI_TROOP_DRAGON,
+        KONAMI_TROOP_DRAGON,
+        KONAMI_TROOP_DRAGON,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DRAGON_APOSTROPHE_S_GUNFIRE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_BLACK_PENDANT,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_BURST_BREATH,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0371  (offset 0x9e68d18)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Theme0371_9E68D18 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_W_DASH_WING_CATAPULT,
+        KONAMI_W_DASH_WING_CATAPULT,
+        KONAMI_SANGAN,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_VWXYZ_DASH_DRAGON_CATAPULT_CANNON,
+        KONAMI_VWXYZ_DASH_DRAGON_CATAPULT_CANNON,
+        KONAMI_VWXYZ_DASH_DRAGON_CATAPULT_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_VW_DASH_TIGER_CATAPULT,
+        KONAMI_VW_DASH_TIGER_CATAPULT,
+        KONAMI_VW_DASH_TIGER_CATAPULT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0372  (offset 0x9e68d88)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Theme0372_9E68D88 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_V_DASH_TIGER_JET,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_W_DASH_WING_CATAPULT,
+        KONAMI_W_DASH_WING_CATAPULT,
+        KONAMI_SANGAN,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_VWXYZ_DASH_DRAGON_CATAPULT_CANNON,
+        KONAMI_VWXYZ_DASH_DRAGON_CATAPULT_CANNON,
+        KONAMI_VWXYZ_DASH_DRAGON_CATAPULT_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_VW_DASH_TIGER_CATAPULT,
+        KONAMI_VW_DASH_TIGER_CATAPULT,
+        KONAMI_VW_DASH_TIGER_CATAPULT,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0381  (offset 0x9e68df8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0381_9E68DF8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_MECHA_DASH_DOG_MARRON,
+        KONAMI_SANGAN,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_SCAPEGOAT,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_TRAP_HOLE,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0382  (offset 0x9e68e5c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0382_9E68E5C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_REFLECT_BOUNDER,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Z_DASH_METAL_TANK,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_Y_DASH_DRAGON_HEAD,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_MECHA_DASH_DOG_MARRON,
+        KONAMI_SANGAN,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_LUMINOUS_SPARK,
+        KONAMI_SCAPEGOAT,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_FRONTLINE_BASE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_TRAP_HOLE,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_ROLL_OUT_EXCLAMATION,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+        KONAMI_XYZ_DASH_DRAGON_CANNON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0391  (offset 0x9e68ec0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0391_9E68EC0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_URIA_COMMA_LORD_OF_SEARING_FLAMES,
+        KONAMI_URIA_COMMA_LORD_OF_SEARING_FLAMES,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPY,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPY,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPEAR_SOLDIER,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPEAR_SOLDIER,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPEAR_SOLDIER,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_SANGAN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_NECROVALLEY,
+        KONAMI_NECROVALLEY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_NEEDLE_WALL,
+        KONAMI_ANTI_DASH_SPELL_FRAGRANCE,
+        KONAMI_ANTI_DASH_SPELL_FRAGRANCE,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_FAIRY_BOX,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SHADOW_SPELL,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0392  (offset 0x9e68f20)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0392_9E68F20 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_URIA_COMMA_LORD_OF_SEARING_FLAMES,
+        KONAMI_URIA_COMMA_LORD_OF_SEARING_FLAMES,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYSTIC_TOMATO,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPY,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPY,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_MOLTEN_ZOMBIE,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPEAR_SOLDIER,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPEAR_SOLDIER,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SPEAR_SOLDIER,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_BLAZING_INPACHI,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_SANGAN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_NECROVALLEY,
+        KONAMI_NECROVALLEY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_SOLEMN_WISHES,
+        KONAMI_NIGHTMARE_WHEEL,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_NEEDLE_WALL,
+        KONAMI_ANTI_DASH_SPELL_FRAGRANCE,
+        KONAMI_ANTI_DASH_SPELL_FRAGRANCE,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_FAIRY_BOX,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SHADOW_SPELL,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0401  (offset 0x9e68f80)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0401_9E68F80 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HAMON_COMMA_LORD_OF_STRIKING_THUNDER,
+        KONAMI_HAMON_COMMA_LORD_OF_STRIKING_THUNDER,
+        KONAMI_HAMON_COMMA_LORD_OF_STRIKING_THUNDER,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_KISHIDO_SPIRIT,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SERVANT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0402  (offset 0x9e68fe0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0402_9E68FE0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_HAMON_COMMA_LORD_OF_STRIKING_THUNDER,
+        KONAMI_HAMON_COMMA_LORD_OF_STRIKING_THUNDER,
+        KONAMI_HAMON_COMMA_LORD_OF_STRIKING_THUNDER,
+        KONAMI_GAGAGIGO,
+        KONAMI_GAGAGIGO,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_SEA_SERPENT_WARRIOR_OF_DARKNESS,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_HEAVY_STORM,
+        KONAMI_KISHIDO_SPIRIT,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_GRAVEKEEPER_APOSTROPHE_S_SERVANT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_SPELL_ABSORPTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0411  (offset 0x9e69040)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0411_9E69040 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_GIANT_ORC,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_EMISSARY_OF_THE_AFTERLIFE,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_NEWDORIA,
+        KONAMI_PROTECTOR_OF_THE_SANCTUARY,
+        KONAMI_SANGAN,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_WALL_OF_ILLUSION,
+        KONAMI_KURIBOH,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DAMAGE_CONDENSER,
+        KONAMI_CHAIN_DISAPPEARANCE,
+        KONAMI_CHAIN_DISAPPEARANCE,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0412  (offset 0x9e690a0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0412_9E690A0 = {
+    /* pad      */ { 0xCC01, 0xCCCC, 0x217F, 0x4177 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_RAVIEL_COMMA_LORD_OF_PHANTASMS,
+        KONAMI_GIANT_ORC,
+        KONAMI_SLATE_WARRIOR,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_ARCHFIEND_SOLDIER,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_EMISSARY_OF_THE_AFTERLIFE,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_NEWDORIA,
+        KONAMI_PROTECTOR_OF_THE_SANCTUARY,
+        KONAMI_SANGAN,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_WALL_OF_ILLUSION,
+        KONAMI_KURIBOH,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_D_DOT_D_DOT_TRAINER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_GROUND_COLLAPSE,
+        KONAMI_COLLAPSE,
+        KONAMI_BOOK_OF_MOON,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_GIANT_TRUNADE,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_REINFORCEMENTS,
+        KONAMI_OPTION_HUNTER,
+        KONAMI_DUST_TORNADO,
+        KONAMI_DAMAGE_CONDENSER,
+        KONAMI_CHAIN_DISAPPEARANCE,
+        KONAMI_CHAIN_DISAPPEARANCE,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_BARK_OF_DARK_RULER,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0421  (offset 0x9e69100)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0421_9E69100 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_SONIC_DUCK,
+        KONAMI_SONIC_DUCK,
+        KONAMI_SPACE_MAMBO,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_OJAMA_GREEN,
+        KONAMI_OJAMA_GREEN,
+        KONAMI_OJAMA_YELLOW,
+        KONAMI_OJAMA_YELLOW,
+        KONAMI_OJAMA_BLACK,
+        KONAMI_OJAMA_BLACK,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_OJAMA_DELTA_HURRICANE_EXCLAMATION_EXCLAMATION,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_OJAMA_KING,
+        KONAMI_OJAMA_KING,
+        KONAMI_OJAMA_KING,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0422  (offset 0x9e69164)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0422_9E69164 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_JERRY_BEANS_MAN,
+        KONAMI_SONIC_DUCK,
+        KONAMI_SONIC_DUCK,
+        KONAMI_SPACE_MAMBO,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_OJAMA_GREEN,
+        KONAMI_OJAMA_GREEN,
+        KONAMI_OJAMA_YELLOW,
+        KONAMI_OJAMA_YELLOW,
+        KONAMI_OJAMA_BLACK,
+        KONAMI_OJAMA_BLACK,
+        KONAMI_COPYCAT,
+        KONAMI_HEAVY_STORM,
+        KONAMI_OJAMA_DELTA_HURRICANE_EXCLAMATION_EXCLAMATION,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_HEART_OF_THE_UNDERDOG,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_POLYMERIZATION,
+        KONAMI_OJAMA_TRIO,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_OJAMA_KING,
+        KONAMI_OJAMA_KING,
+        KONAMI_OJAMA_KING,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0431  (offset 0x9e691c8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0431_9E691C8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_UNITED_RESISTANCE,
+        KONAMI_UNITED_RESISTANCE,
+        KONAMI_UNITED_RESISTANCE,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_PEOPLE_RUNNING_ABOUT,
+        KONAMI_PEOPLE_RUNNING_ABOUT,
+        KONAMI_PEOPLE_RUNNING_ABOUT,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_HUGE_REVOLUTION,
+        KONAMI_HUGE_REVOLUTION,
+        KONAMI_HUGE_REVOLUTION,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0432  (offset 0x9e69228)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0432_9E69228 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_MAD_DOG_OF_DARKNESS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SANGAN,
+        KONAMI_UNITED_RESISTANCE,
+        KONAMI_UNITED_RESISTANCE,
+        KONAMI_UNITED_RESISTANCE,
+        KONAMI_MASK_OF_DARKNESS,
+        KONAMI_PEOPLE_RUNNING_ABOUT,
+        KONAMI_PEOPLE_RUNNING_ABOUT,
+        KONAMI_PEOPLE_RUNNING_ABOUT,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_A_CAT_OF_ILL_OMEN,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_OPPRESSED_PEOPLE,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_CHARCOAL_INPACHI,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_SCAPEGOAT,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_ENCHANTING_FITTING_ROOM,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION,
+        KONAMI_RAIGEKI_BREAK,
+        KONAMI_HUGE_REVOLUTION,
+        KONAMI_HUGE_REVOLUTION,
+        KONAMI_HUGE_REVOLUTION,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SOUL_RESURRECTION,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0441  (offset 0x9e69288)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Theme0441_9E69288 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_STEAMROID,
+        KONAMI_DRILLROID,
+        KONAMI_DRILLAGO,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MEGAMORPH,
+        KONAMI_MEGAMORPH,
+        KONAMI_MEGAMORPH,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_POWER_BOND,
+        KONAMI_POWER_BOND,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0442  (offset 0x9e692f8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[9];
+    u16 padding;
+}gDeck_Theme0442_9E692F8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_CYBER_DRAGON,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_MECHANICALCHASER,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_X_DASH_HEAD_CANNON,
+        KONAMI_STEAMROID,
+        KONAMI_DRILLROID,
+        KONAMI_DRILLAGO,
+        KONAMI_TOON_CANNON_SOLDIER,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_SHINING_ANGEL,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_MEGAMORPH,
+        KONAMI_MEGAMORPH,
+        KONAMI_MEGAMORPH,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_TOON_TABLE_OF_CONTENTS,
+        KONAMI_POWER_BOND,
+        KONAMI_POWER_BOND,
+        KONAMI_METAMORPHOSIS,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_LIMITER_REMOVAL,
+        KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER,
+        KONAMI_DRAINING_SHIELD,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_METAL_REFLECT_SLIME,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 9,
+    /* extraDeck  */ {
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_END_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+        KONAMI_CYBER_TWIN_DRAGON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0451  (offset 0x9e69368)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0451_9E69368 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BARREL_DRAGON,
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_MAHA_VAILO,
+        KONAMI_MAHA_VAILO,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_SANGAN,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_WINGED_KURIBOH_LV10,
+        KONAMI_WINGED_KURIBOH,
+        KONAMI_WINGED_KURIBOH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_KURIBOH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_FISSURE,
+        KONAMI_TRANSCENDENT_WINGS,
+        KONAMI_TRANSCENDENT_WINGS,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0452  (offset 0x9e693c8)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0452_9E693C8 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BARREL_DRAGON,
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_SUMMONED_SKULL,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_VORSE_RAIDER,
+        KONAMI_GEMINI_ELF,
+        KONAMI_GEMINI_ELF,
+        KONAMI_MAHA_VAILO,
+        KONAMI_MAHA_VAILO,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_GIANT_SOLDIER_OF_STONE,
+        KONAMI_SANGAN,
+        KONAMI_MYSTICAL_ELF,
+        KONAMI_PENGUIN_SOLDIER,
+        KONAMI_MAN_DASH_EATER_BUG,
+        KONAMI_WINGED_KURIBOH_LV10,
+        KONAMI_WINGED_KURIBOH,
+        KONAMI_WINGED_KURIBOH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_KURIBOH,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_MALEVOLENT_NUZZLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_FISSURE,
+        KONAMI_TRANSCENDENT_WINGS,
+        KONAMI_TRANSCENDENT_WINGS,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_AXE_OF_DESPAIR,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_TRAP_HOLE,
+        KONAMI_TRAP_HOLE,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_MAGIC_CYLINDER,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0461  (offset 0x9e69428)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0461_9E69428 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_SHINING_DRAGON,
+        KONAMI_BLUE_DASH_EYES_SHINING_DRAGON,
+        KONAMI_BLUE_DASH_EYES_SHINING_DRAGON,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_SANGAN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_MOUNTAIN,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0462  (offset 0x9e6948c)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 extraDeck[3];
+    u16 padding;
+}gDeck_Theme0462_9E6948C = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BLUE_DASH_EYES_SHINING_DRAGON,
+        KONAMI_BLUE_DASH_EYES_SHINING_DRAGON,
+        KONAMI_BLUE_DASH_EYES_SHINING_DRAGON,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_AXE_DRAGONUTE,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_SKULL_DESCOVERY_KNIGHT,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_LUSTER_DRAGON_2,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_MIRAGE_DRAGON,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_RANCER_DRAGONUTE,
+        KONAMI_TWIN_DASH_HEADED_BEHEMOTH,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_MASKED_DRAGON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_SANGAN,
+        KONAMI_CYBER_DASH_STEIN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_FISSURE,
+        KONAMI_FISSURE,
+        KONAMI_STAMPING_DESTRUCTION,
+        KONAMI_BRAIN_CONTROL,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_MOUNTAIN,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_SEVEN_TOOLS_OF_THE_BANDIT,
+        KONAMI_MAGIC_JAMMER,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_DRAGON_APOSTROPHE_S_RAGE,
+    },
+    /* extraCount */ 3,
+    /* extraDeck  */ {
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+        KONAMI_BLUE_DASH_EYES_ULTIMATE_DRAGON,
+    },
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0471  (offset 0x9e694f0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0471_9E694F0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_PERFECTLY_ULTIMATE_GREAT_MOTH,
+        KONAMI_PERFECTLY_ULTIMATE_GREAT_MOTH,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_NEO_BUG,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SANGAN,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_PINCH_HOPPER,
+        KONAMI_EXILED_FORCE,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_GOKIPON,
+        KONAMI_GOKIPON,
+        KONAMI_SWARM_OF_SCARABS,
+        KONAMI_PETIT_MOTH,
+        KONAMI_PETIT_MOTH,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_COCOON_OF_EVOLUTION,
+        KONAMI_COCOON_OF_EVOLUTION,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_INSECT_IMITATION,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_FOREST,
+        KONAMI_FOREST,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CONSCRIPTION,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_MAGIC_DASH_ARM_SHIELD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0472  (offset 0x9e69550)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0472_9E69550 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_PERFECTLY_ULTIMATE_GREAT_MOTH,
+        KONAMI_PERFECTLY_ULTIMATE_GREAT_MOTH,
+        KONAMI_JIRAI_GUMO,
+        KONAMI_INSECT_KNIGHT,
+        KONAMI_CHIRON_THE_MAGE,
+        KONAMI_NEO_BUG,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_SANGAN,
+        KONAMI_SWARM_OF_LOCUSTS,
+        KONAMI_PINCH_HOPPER,
+        KONAMI_EXILED_FORCE,
+        KONAMI_4_DASH_STARRED_LADYBUG_OF_DOOM,
+        KONAMI_GOKIPON,
+        KONAMI_GOKIPON,
+        KONAMI_SWARM_OF_SCARABS,
+        KONAMI_PETIT_MOTH,
+        KONAMI_PETIT_MOTH,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_PRICKLE_FAIRY,
+        KONAMI_COCOON_OF_EVOLUTION,
+        KONAMI_COCOON_OF_EVOLUTION,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_MONSTER_REINCARNATION,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_POT_OF_AVARICE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_INSECT_IMITATION,
+        KONAMI_NOBLEMAN_OF_EXTERMINATION,
+        KONAMI_FOREST,
+        KONAMI_FOREST,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_CONSCRIPTION,
+        KONAMI_TRAP_JAMMER,
+        KONAMI_MAGIC_DASH_ARM_SHIELD,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0481  (offset 0x9e695b0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0481_9E695B0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GATE_GUARDIAN,
+        KONAMI_SANGA_OF_THE_THUNDER,
+        KONAMI_SANGA_OF_THE_THUNDER,
+        KONAMI_SUIJIN,
+        KONAMI_KAZEJIN,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_WHIRLWIND_PRODIGY,
+        KONAMI_WHIRLWIND_PRODIGY,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_SANGAN,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_ENEMY_CONTROLLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SOUL_EXCHANGE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0482  (offset 0x9e69610)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0482_9E69610 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_GATE_GUARDIAN,
+        KONAMI_SANGA_OF_THE_THUNDER,
+        KONAMI_SANGA_OF_THE_THUNDER,
+        KONAMI_SUIJIN,
+        KONAMI_KAZEJIN,
+        KONAMI_NIN_DASH_KEN_DOG,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_KAISER_SEA_HORSE,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_UNSHAVEN_ANGLER,
+        KONAMI_WHIRLWIND_PRODIGY,
+        KONAMI_WHIRLWIND_PRODIGY,
+        KONAMI_SKULL_DOG_MARRON,
+        KONAMI_THE_DRAGON_DWELLING_IN_THE_CAVE,
+        KONAMI_SANGAN,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_GIANT_GERM,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_NIGHTMARE_APOSTROPHE_S_STEELCAGE,
+        KONAMI_ENEMY_CONTROLLER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SOUL_EXCHANGE,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_SWORDS_OF_REVEALING_LIGHT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_FAIRY_BOX,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0491  (offset 0x9e69670)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0491_9E69670 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VALKYRION_THE_MAGNA_WARRIOR,
+        KONAMI_VALKYRION_THE_MAGNA_WARRIOR,
+        KONAMI_BETA_THE_MAGNET_WARRIOR,
+        KONAMI_BETA_THE_MAGNET_WARRIOR,
+        KONAMI_BETA_THE_MAGNET_WARRIOR,
+        KONAMI_GAMMA_THE_MAGNET_WARRIOR,
+        KONAMI_GAMMA_THE_MAGNET_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_ALPHA_THE_MAGNET_WARRIOR,
+        KONAMI_ALPHA_THE_MAGNET_WARRIOR,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SAND_MOTH,
+        KONAMI_SAND_MOTH,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0492  (offset 0x9e696d0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0492_9E696D0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_VALKYRION_THE_MAGNA_WARRIOR,
+        KONAMI_VALKYRION_THE_MAGNA_WARRIOR,
+        KONAMI_BETA_THE_MAGNET_WARRIOR,
+        KONAMI_BETA_THE_MAGNET_WARRIOR,
+        KONAMI_BETA_THE_MAGNET_WARRIOR,
+        KONAMI_GAMMA_THE_MAGNET_WARRIOR,
+        KONAMI_GAMMA_THE_MAGNET_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_ALPHA_THE_MAGNET_WARRIOR,
+        KONAMI_ALPHA_THE_MAGNET_WARRIOR,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_MOAI_INTERCEPTOR_CANNONS,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_SAND_MOTH,
+        KONAMI_SAND_MOTH,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_GOLEM_SENTRY,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_STONE_STATUE_OF_THE_AZTECS,
+        KONAMI_MAGICAL_MALLET,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_FAULT_ZONE,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_LIGHTNING_VORTEX,
+        KONAMI_ROBBIN_APOSTROPHE_GOBLIN,
+        KONAMI_SOLEMN_JUDGMENT,
+        KONAMI_DUST_TORNADO,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+        KONAMI_WABOKU,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0501  (offset 0x9e69730)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0501_9E69730 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_SAGE,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_TIME_WIZARD,
+        KONAMI_TIME_WIZARD,
+        KONAMI_TIME_WIZARD,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DARK_MAGIC_CURTAIN,
+        KONAMI_DARK_MAGIC_CURTAIN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_SECOND_COIN_TOSS,
+        KONAMI_SECOND_COIN_TOSS,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_MIRACLE_RESTORING,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0502  (offset 0x9e69790)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0502_9E69790 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_DARK_SAGE,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_DOUBLE_COSTON,
+        KONAMI_TRIBE_DASH_INFECTING_VIRUS,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_TIME_WIZARD,
+        KONAMI_TIME_WIZARD,
+        KONAMI_TIME_WIZARD,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SPIRIT_REAPER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_SOUL_TIGER,
+        KONAMI_HEAVY_STORM,
+        KONAMI_DARK_MAGIC_CURTAIN,
+        KONAMI_DARK_MAGIC_CURTAIN,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SHIELD_CRASH,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_SCAPEGOAT,
+        KONAMI_SECOND_COIN_TOSS,
+        KONAMI_SECOND_COIN_TOSS,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_ENCHANTED_ARROW,
+        KONAMI_BANNER_OF_COURAGE,
+        KONAMI_MIRACLE_RESTORING,
+        KONAMI_DUST_TORNADO,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0511  (offset 0x9e697f0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0511_9E697F0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_DARK_SCORPION_DASH_GORG_THE_STRONG,
+        KONAMI_DARK_SCORPION_DASH_GORG_THE_STRONG,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_DON_ZALOOG,
+        KONAMI_DON_ZALOOG,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_CLIFF_THE_TRAP_REMOVER,
+        KONAMI_CLIFF_THE_TRAP_REMOVER,
+        KONAMI_DARK_SCORPION_DASH_CHICK_THE_YELLOW,
+        KONAMI_DARK_SCORPION_DASH_CHICK_THE_YELLOW,
+        KONAMI_DARK_SCORPION_BURGLARS,
+        KONAMI_DARK_SCORPION_BURGLARS,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_BAIT_DOLL,
+        KONAMI_MUSTERING_OF_THE_DARK_SCORPIONS,
+        KONAMI_MUSTERING_OF_THE_DARK_SCORPIONS,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_TOLL,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_THE_A_DOT_FORCES,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_DARK_SCORPION_COMBINATION,
+        KONAMI_DARK_SCORPION_COMBINATION,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0512  (offset 0x9e69850)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[41];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0512_9E69850 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 41,
+    /* mainDeck  */ {
+        KONAMI_DARK_SCORPION_DASH_GORG_THE_STRONG,
+        KONAMI_DARK_SCORPION_DASH_GORG_THE_STRONG,
+        KONAMI_NINJA_GRANDMASTER_SASUKE,
+        KONAMI_WARRIOR_DAI_GREPHER,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_DON_ZALOOG,
+        KONAMI_DON_ZALOOG,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_MARAUDING_CAPTAIN,
+        KONAMI_CLIFF_THE_TRAP_REMOVER,
+        KONAMI_CLIFF_THE_TRAP_REMOVER,
+        KONAMI_DARK_SCORPION_DASH_CHICK_THE_YELLOW,
+        KONAMI_DARK_SCORPION_DASH_CHICK_THE_YELLOW,
+        KONAMI_DARK_SCORPION_BURGLARS,
+        KONAMI_DARK_SCORPION_BURGLARS,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_DARK_SCORPION_DASH_MEANAE_THE_THORN,
+        KONAMI_SANGAN,
+        KONAMI_EXILED_FORCE,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_ELEMENTAL_HERO_CLAYMAN,
+        KONAMI_BAIT_DOLL,
+        KONAMI_MUSTERING_OF_THE_DARK_SCORPIONS,
+        KONAMI_MUSTERING_OF_THE_DARK_SCORPIONS,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_COLLAPSE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_THE_WARRIOR_RETURNING_ALIVE,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_REINFORCEMENT_OF_THE_ARMY,
+        KONAMI_TOLL,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_THE_A_DOT_FORCES,
+        KONAMI_BOTTOMLESS_TRAP_HOLE,
+        KONAMI_DARK_SCORPION_COMBINATION,
+        KONAMI_DARK_SCORPION_COMBINATION,
+        KONAMI_MAGIC_DRAIN,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0521  (offset 0x9e698b0)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0521_9E698B0 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BUSTER_BLADER,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_GEMINI_ELF,
+        KONAMI_SKILLED_WHITE_MAGICIAN,
+        KONAMI_SKILLED_WHITE_MAGICIAN,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_BLAST_MAGICIAN,
+        KONAMI_BLAST_MAGICIAN,
+        KONAMI_SANGAN,
+        KONAMI_MAGICAL_PLANT_MANDRAGOLA,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_PYRAMID_ENERGY,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_MEGA_TON_MAGICAL_CANNON,
+        KONAMI_MEGA_TON_MAGICAL_CANNON,
+        KONAMI_MIRACLE_RESTORING,
+        KONAMI_DUST_TORNADO,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_TOWER_OF_BABEL,
+        KONAMI_TOWER_OF_BABEL,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};
+
+// ---------------------------------------------------------------------------
+// Deck: Theme0522  (offset 0x9e69910)
+static const struct {
+    u16 pad[4];
+    u16 mainCount;
+    u16 mainDeck[40];
+    u16 extraCount;
+    u16 padding;
+}gDeck_Theme0522_9E69910 = {
+    /* pad      */ { 0xFC01, 0x0012, 0x574F, 0x3F44 },
+    /* mainCount */ 40,
+    /* mainDeck  */ {
+        KONAMI_BUSTER_BLADER,
+        KONAMI_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_SKILLED_DARK_MAGICIAN,
+        KONAMI_GEMINI_ELF,
+        KONAMI_SKILLED_WHITE_MAGICIAN,
+        KONAMI_SKILLED_WHITE_MAGICIAN,
+        KONAMI_BREAKER_THE_MAGICAL_WARRIOR,
+        KONAMI_D_DOT_D_DOT_WARRIOR_LADY,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_MYTHICAL_BEAST_CERBERUS,
+        KONAMI_BLAST_MAGICIAN,
+        KONAMI_BLAST_MAGICIAN,
+        KONAMI_SANGAN,
+        KONAMI_MAGICAL_PLANT_MANDRAGOLA,
+        KONAMI_APPRENTICE_MAGICIAN,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_MAGICIAN_OF_FAITH,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_ROYAL_MAGICAL_LIBRARY,
+        KONAMI_HEAVY_STORM,
+        KONAMI_SNATCH_STEAL,
+        KONAMI_POT_OF_GREED,
+        KONAMI_MYSTICAL_SPACE_TYPHOON,
+        KONAMI_SMASHING_GROUND,
+        KONAMI_COLLAPSE,
+        KONAMI_RUSH_RECKLESSLY,
+        KONAMI_PREMATURE_BURIAL,
+        KONAMI_PYRAMID_ENERGY,
+        KONAMI_BACK_TO_SQUARE_ONE,
+        KONAMI_MEGA_TON_MAGICAL_CANNON,
+        KONAMI_MEGA_TON_MAGICAL_CANNON,
+        KONAMI_MIRACLE_RESTORING,
+        KONAMI_DUST_TORNADO,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_PITCH_DASH_BLACK_POWER_STONE,
+        KONAMI_TOWER_OF_BABEL,
+        KONAMI_TOWER_OF_BABEL,
+        KONAMI_SAKURETSU_ARMOR,
+        KONAMI_CALL_OF_THE_HAUNTED,
+    },
+    /* extraCount */ 0,
+    0,
+};

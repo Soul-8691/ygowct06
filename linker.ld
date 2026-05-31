@@ -350,6 +350,8 @@ SECTIONS {
         data/data2.o(.rodata);
         src/input.o(.data);
         data/data_09E5F8F0.o(.data);
+        src/deck.o(.rodata);
+        data/data_09E69970.o(.rodata);
 
         *libc.a:mallocr.o(.data);
 
