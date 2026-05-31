@@ -335,6 +335,8 @@ SECTIONS {
         src/GL/GL_Oam.o(.rodata);
         src/GL/GL_Scrollbar.o(.rodata);
         data/data_09E39C7C.o(.rodata);
+        src/effects.o(.rodata);
+        data/data_09E47464.o(.rodata);
         src/main.o(.rodata);
         data/data_09E4F498.o(.rodata);
         src/agb_sram.o(.rodata);
