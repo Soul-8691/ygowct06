@@ -1,67 +1,7 @@
 	.section .rodata
 
-gCardStats2:: @ 09821E04
-	.incbin "baserom.gba", 0x1821E04, 0x4A4
-
-gUnk_098222A8:: @ 098222A8
-	.incbin "baserom.gba", 0x18222A8, 0x12B3
-
-gUnk_0982355B:: @ 0982355B
-	.incbin "baserom.gba", 0x182355B, 0x38E
-
-gUnk_098238E9:: @ 098238E9
-	.incbin "baserom.gba", 0x18238E9, 0x717
-
-gUnk_09824000:: @ 09824000
-	.incbin "baserom.gba", 0x1824000, 0x635
-
-gUnk_09824635:: @ 09824635
-	.incbin "baserom.gba", 0x1824635, 0x20F8
-
-gUnk_0982672D:: @ 0982672D
-	.incbin "baserom.gba", 0x182672D, 0x4C2
-
-gUnk_09826BEF:: @ 09826BEF
-	.incbin "baserom.gba", 0x1826BEF, 0x2C15
-
-gUnk_09829804:: @ 09829804
-	.incbin "baserom.gba", 0x1829804, 0x88F
-
-gUnk_0982A093:: @ 0982A093
-	.incbin "baserom.gba", 0x182A093, 0x9F9
-
-gUnk_0982AA8C:: @ 0982AA8C
-	.incbin "baserom.gba", 0x182AA8C, 0x1B8C
-
-gUnk_0982C618:: @ 0982C618
-	.incbin "baserom.gba", 0x182C618, 0x514
-
-gUnk_0982CB2C:: @ 0982CB2C
-	.incbin "baserom.gba", 0x182CB2C, 0x114E
-
-gUnk_0982DC7A:: @ 0982DC7A
-	.incbin "baserom.gba", 0x182DC7A, 0x44D
-
-gUnk_0982E0C7:: @ 0982E0C7
-	.incbin "baserom.gba", 0x182E0C7, 0x9BC
-
-gUnk_0982EA83:: @ 0982EA83
-	.incbin "baserom.gba", 0x182EA83, 0x29D
-
-gUnk_0982ED20:: @ 0982ED20
-	.incbin "baserom.gba", 0x182ED20, 0x12E0
-
-gUnk_09830000:: @ 09830000
-	.incbin "baserom.gba", 0x1830000, 0x6E0
-
-gUnk_098306E0:: @ 098306E0
-	.incbin "baserom.gba", 0x18306E0, 0xAA3
-
-gUnk_09831183:: @ 09831183
-	.incbin "baserom.gba", 0x1831183, 0x689
-
-gUnk_0983180C:: @ 0983180C
-	.incbin "baserom.gba", 0x183180C, 0xDF8
+gUnk_09830194:: @ 09830194
+	.incbin "baserom.gba", 0x1830194, 0x2470
 
 gCardNamesAlphabeticalOffsets:: @ 09832604
 	.incbin "baserom.gba", 0x1832604, 0x221C

@@ -358,7 +358,10 @@ gUnk_09E61168:: @ 09E61168
 	.incbin "baserom.gba", 0x1E61168, 0x10
 
 gFileSystemHeader:: @ 09E61178
-	.incbin "baserom.gba", 0x1E61178, 0x560
+	.incbin "baserom.gba", 0x1E61178, 0x14
+
+gFileSystem:: @ 09E6118C
+	.incbin "baserom.gba", 0x1E6118C, 0x54C
 
 gUnk_09E616D8:: @ 09E616D8
 	.incbin "baserom.gba", 0x1E616D8, 0x2EBF

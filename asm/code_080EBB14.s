@@ -6387,7 +6387,7 @@ sub_080EEDF8: @ 0x080EEDF8
 	ldr r0, _080EEE14 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEE20
-	ldr r2, _080EEE18 @ =gCardStats2
+	ldr r2, _080EEE18 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEE1C @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6399,7 +6399,7 @@ sub_080EEDF8: @ 0x080EEDF8
 	b _080EEE22
 	.align 2, 0
 _080EEE14: .4byte 0x00000FA6
-_080EEE18: .4byte gCardStats2
+_080EEE18: .4byte gCardStatsKonamiIDs
 _080EEE1C: .4byte 0xFFFFF059
 _080EEE20:
 	movs r0, #0
@@ -6412,7 +6412,7 @@ sub_080EEE24: @ 0x080EEE24
 	ldr r0, _080EEE40 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEE4C
-	ldr r2, _080EEE44 @ =gCardStats2
+	ldr r2, _080EEE44 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEE48 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6424,7 +6424,7 @@ sub_080EEE24: @ 0x080EEE24
 	b _080EEE4E
 	.align 2, 0
 _080EEE40: .4byte 0x00000FA6
-_080EEE44: .4byte gCardStats2
+_080EEE44: .4byte gCardStatsKonamiIDs
 _080EEE48: .4byte 0xFFFFF059
 _080EEE4C:
 	movs r0, #0
@@ -6437,7 +6437,7 @@ sub_080EEE50: @ 0x080EEE50
 	ldr r0, _080EEE6C @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEE78
-	ldr r2, _080EEE70 @ =gCardStats2
+	ldr r2, _080EEE70 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEE74 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6449,7 +6449,7 @@ sub_080EEE50: @ 0x080EEE50
 	b _080EEE7A
 	.align 2, 0
 _080EEE6C: .4byte 0x00000FA6
-_080EEE70: .4byte gCardStats2
+_080EEE70: .4byte gCardStatsKonamiIDs
 _080EEE74: .4byte 0xFFFFF059
 _080EEE78:
 	movs r0, #0
@@ -6462,7 +6462,7 @@ sub_080EEE7C: @ 0x080EEE7C
 	ldr r0, _080EEE98 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEEA4
-	ldr r2, _080EEE9C @ =gCardStats2
+	ldr r2, _080EEE9C @ =gCardStatsKonamiIDs
 	ldr r0, _080EEEA0 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6474,7 +6474,7 @@ sub_080EEE7C: @ 0x080EEE7C
 	b _080EEEA6
 	.align 2, 0
 _080EEE98: .4byte 0x00000FA6
-_080EEE9C: .4byte gCardStats2
+_080EEE9C: .4byte gCardStatsKonamiIDs
 _080EEEA0: .4byte 0xFFFFF059
 _080EEEA4:
 	movs r0, #0
@@ -6487,7 +6487,7 @@ sub_080EEEA8: @ 0x080EEEA8
 	ldr r0, _080EEEC4 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEED0
-	ldr r2, _080EEEC8 @ =gCardStats2
+	ldr r2, _080EEEC8 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEECC @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6499,7 +6499,7 @@ sub_080EEEA8: @ 0x080EEEA8
 	b _080EEED2
 	.align 2, 0
 _080EEEC4: .4byte 0x00000FA6
-_080EEEC8: .4byte gCardStats2
+_080EEEC8: .4byte gCardStatsKonamiIDs
 _080EEECC: .4byte 0xFFFFF059
 _080EEED0:
 	movs r0, #0
@@ -6512,7 +6512,7 @@ sub_080EEED4: @ 0x080EEED4
 	ldr r0, _080EEEF8 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEF08
-	ldr r2, _080EEEFC @ =gCardStats2
+	ldr r2, _080EEEFC @ =gCardStatsKonamiIDs
 	ldr r0, _080EEF00 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6528,7 +6528,7 @@ sub_080EEED4: @ 0x080EEED4
 	b _080EEF0A
 	.align 2, 0
 _080EEEF8: .4byte 0x00000FA6
-_080EEEFC: .4byte gCardStats2
+_080EEEFC: .4byte gCardStatsKonamiIDs
 _080EEF00: .4byte 0xFFFFF059
 _080EEF04: .4byte 0x0000FFFF
 _080EEF08:
@@ -6542,7 +6542,7 @@ sub_080EEF0C: @ 0x080EEF0C
 	ldr r0, _080EEF30 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEF40
-	ldr r2, _080EEF34 @ =gCardStats2
+	ldr r2, _080EEF34 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEF38 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6558,7 +6558,7 @@ sub_080EEF0C: @ 0x080EEF0C
 	b _080EEF42
 	.align 2, 0
 _080EEF30: .4byte 0x00000FA6
-_080EEF34: .4byte gCardStats2
+_080EEF34: .4byte gCardStatsKonamiIDs
 _080EEF38: .4byte 0xFFFFF059
 _080EEF3C: .4byte 0x0000FFFF
 _080EEF40:
@@ -6572,7 +6572,7 @@ sub_080EEF44: @ 0x080EEF44
 	ldr r0, _080EEF60 @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEF6C
-	ldr r2, _080EEF64 @ =gCardStats2
+	ldr r2, _080EEF64 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEF68 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6584,7 +6584,7 @@ sub_080EEF44: @ 0x080EEF44
 	b _080EEF6E
 	.align 2, 0
 _080EEF60: .4byte 0x00000FA6
-_080EEF64: .4byte gCardStats2
+_080EEF64: .4byte gCardStatsKonamiIDs
 _080EEF68: .4byte 0xFFFFF059
 _080EEF6C:
 	movs r0, #0
@@ -6597,7 +6597,7 @@ sub_080EEF70: @ 0x080EEF70
 	ldr r0, _080EEF8C @ =0x00000FA6
 	cmp r1, r0
 	ble _080EEF98
-	ldr r2, _080EEF90 @ =gCardStats2
+	ldr r2, _080EEF90 @ =gCardStatsKonamiIDs
 	ldr r0, _080EEF94 @ =0xFFFFF059
 	adds r1, r1, r0
 	movs r0, #0xb
@@ -6609,7 +6609,7 @@ sub_080EEF70: @ 0x080EEF70
 	b _080EEF9A
 	.align 2, 0
 _080EEF8C: .4byte 0x00000FA6
-_080EEF90: .4byte gCardStats2
+_080EEF90: .4byte gCardStatsKonamiIDs
 _080EEF94: .4byte 0xFFFFF059
 _080EEF98:
 	movs r0, #0

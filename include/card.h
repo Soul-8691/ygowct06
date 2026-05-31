@@ -89,22 +89,26 @@ enum EditedArtwork {
 };
 
 // One entry per card ID.  gCardTable[0] is the null entry (no card).
-struct CardInfo {
-    /* 0x0 */ u16 konamiId;     // Konami card ID (wct06.toml cardnames)
-    /* 0x2 */ u8  artwork;       // Artwork variant index
-    /* 0x3 */ u8  editedArtwork; // enum EditedArtwork
-    /* 0x4 */ u16 atk;           // Attack points  (0 for Spell/Trap)
-    /* 0x6 */ u16 def;           // Defense points (0 for Spell/Trap)
-    /* 0x8 */ u8  level;         // Level / Rank   (0 for Spell/Trap)
-    /* 0x9 */ u8  race;          // enum Race
-    /* 0xA */ u8  attribute;     // enum Attribute
-    /* 0xB */ u8  type;          // enum CardType
-    /* 0xC */ u8  spellTrapType; // enum SpellTrapType (0 for monsters)
-}; /* size = 0xD (padded to 0xE) */
+struct __attribute__((packed)) CardInfo {
+    /* 0x0 */ u16 konamiId;       // Konami card ID (wct06.toml cardnames)
+    /* 0x2 */ u16  artwork;       // Artwork variant index
+    /* 0x3 */ u16  editedArtwork; // enum EditedArtwork
+    /* 0x4 */ u16 atk;            // Attack points  (0 for Spell/Trap)
+    /* 0x6 */ u16 def;            // Defense points (0 for Spell/Trap)
+    /* 0x8 */ u16  level;         // Level / Rank   (0 for Spell/Trap)
+    /* 0x9 */ u16  race;          // enum Race
+    /* 0xA */ u16  attribute;     // enum Attribute
+    /* 0xB */ u16  type;          // enum CardType
+    /* 0xC */ u16  spellTrapType; // enum SpellTrapType (0 for monsters)
+    u16 padding;
+};
 
-#define CARD_TABLE_SIZE 2098
+#define CARD_TABLE_SIZE    2098
+#define KONAMI_BASE_ID     4007
+#define KONAMI_TABLE_SIZE  2648
 
 extern const struct CardInfo gCardTable[CARD_TABLE_SIZE];
+extern const struct CardInfo gCardStatsKonamiIDs[KONAMI_TABLE_SIZE];
 
 // ---------------------------------------------------------------------------
 // Konami card IDs  (wct06.toml [[List]] Name=cardnames)
