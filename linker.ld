@@ -337,6 +337,8 @@ SECTIONS {
         data/data_09E39C7C.o(.rodata);
         src/effects.o(.rodata);
         data/data_09E47464.o(.rodata);
+        src/ai.o(.rodata);
+        data/data_09E491C0.o(.rodata);
         src/main.o(.rodata);
         data/data_09E4F498.o(.rodata);
         src/agb_sram.o(.rodata);

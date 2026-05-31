@@ -252364,7 +252364,7 @@ sub_0808DA68: @ 0x0808DA68
 	movs r2, #0
 	movs r3, #0x99
 	lsls r3, r3, #1
-	ldr r6, _0808DA8C @ =gSearcherCardEffects
+	ldr r6, _0808DA8C @ =gAISearcherCardEffects
 	adds r5, r6, #0
 _0808DA76:
 	adds r0, r2, r3
@@ -252379,7 +252379,7 @@ _0808DA76:
 	adds r2, r1, #1
 	b _0808DA92
 	.align 2, 0
-_0808DA8C: .4byte gSearcherCardEffects
+_0808DA8C: .4byte gAISearcherCardEffects
 _0808DA90:
 	adds r3, r1, #0
 _0808DA92:
@@ -252416,7 +252416,7 @@ sub_0808DAB0: @ 0x0808DAB0
 	str r0, [r7, #0xc]
 	cmp r1, #0
 	blt _0808DAE0
-	ldr r0, _0808DAEC @ =gSearcherCardEffects
+	ldr r0, _0808DAEC @ =gAISearcherCardEffects
 	lsls r1, r1, #3
 	adds r0, #4
 	adds r1, r1, r0
@@ -252432,7 +252432,7 @@ _0808DAE0:
 	bx r1
 	.align 2, 0
 _0808DAE8: .4byte gUnk_0201E4F0
-_0808DAEC: .4byte gSearcherCardEffects
+_0808DAEC: .4byte gAISearcherCardEffects
 
 	thumb_func_start sub_0808DAF0
 sub_0808DAF0: @ 0x0808DAF0
@@ -334659,7 +334659,7 @@ gEngineEffectSpecialSummonNegate_080B4BA8: @ 0x080B4BA8
 	ldr r0, _080B4BD8 @ =gUnk_0201AFE0
 	str r4, [r0]
 	movs r6, #0
-	ldr r5, _080B4BDC @ =gCardEffects4
+	ldr r5, _080B4BDC @ =gAIEffects
 _080B4BB4:
 	adds r0, r4, #0
 	adds r1, r5, #0
@@ -334679,7 +334679,7 @@ _080B4BB4:
 	b _080B4BE2
 	.align 2, 0
 _080B4BD8: .4byte gUnk_0201AFE0
-_080B4BDC: .4byte gCardEffects4
+_080B4BDC: .4byte gAIEffects
 _080B4BE0:
 	movs r0, #1
 _080B4BE2:
@@ -334696,7 +334696,7 @@ gEngineEffectDestroyDamage_080B4BE8: @ 0x080B4BE8
 	ldr r0, _080B4C34 @ =gUnk_0201AFE0
 	str r7, [r0]
 	movs r4, #0
-	ldr r5, _080B4C38 @ =gCardEffects5
+	ldr r5, _080B4C38 @ =gAIEffects2
 _080B4BF6:
 	adds r0, r7, #0
 	adds r1, r5, #0
@@ -334728,14 +334728,14 @@ _080B4BF6:
 	b _080B4C5E
 	.align 2, 0
 _080B4C34: .4byte gUnk_0201AFE0
-_080B4C38: .4byte gCardEffects5
+_080B4C38: .4byte gAIEffects2
 _080B4C3C: .4byte 0x000013F9 @ Fairy Box
 _080B4C40:
 	movs r0, #1
 	b _080B4C60
 _080B4C44:
 	movs r4, #0
-	ldr r5, _080B4C68 @ =gCardEffects4
+	ldr r5, _080B4C68 @ =gAIEffects
 _080B4C48:
 	adds r0, r7, #0
 	adds r1, r5, #0
@@ -334754,7 +334754,7 @@ _080B4C60:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B4C68: .4byte gCardEffects4
+_080B4C68: .4byte gAIEffects
 
 	thumb_func_start gEngineEffectSendToGYGraveyard_080B4C6C
 gEngineEffectSendToGYGraveyard_080B4C6C: @ 0x080B4C6C
@@ -344273,7 +344273,7 @@ _080B8EE4:
 	.align 2, 0
 _080B8EF0: .4byte gUnk_0201AFE0
 _080B8EF4:
-	ldr r2, _080B8F60 @ =gCardEffects7
+	ldr r2, _080B8F60 @ =gAIEffects4
 	mov r8, r2
 	ldr r1, [r2]
 	ldr r0, _080B8F64 @ =0x00001379 (Graverobber)
@@ -344328,7 +344328,7 @@ _080B8F54:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080B8F60: .4byte gCardEffects7
+_080B8F60: .4byte gAIEffects4
 _080B8F64: .4byte 0x00001379 @ Graverobber
 
 	@ Stop Defense
@@ -349297,7 +349297,7 @@ _080BB2F4: .4byte 0x00001CE8
 _080BB2F8: .4byte gUnk_0201AFE0
 _080BB2FC:
 	movs r5, #0
-	ldr r4, _080BB340 @ =gCardEffects6
+	ldr r4, _080BB340 @ =gAIEffects3
 _080BB300:
 	adds r0, r6, #0
 	adds r1, r4, #0
@@ -349331,7 +349331,7 @@ _080BB33A:
 	movs r0, #0
 	b _080BB352
 	.align 2, 0
-_080BB340: .4byte gCardEffects6
+_080BB340: .4byte gAIEffects3
 _080BB344: .4byte gUnk_0201AFE0
 _080BB348:
 	ldr r1, _080BB358 @ =gUnk_0201AFE0
@@ -349354,7 +349354,7 @@ gEngineEffectSpecialSummon_080BB35C: @ 0x080BB35C
 	movs r4, #0
 _080BB362:
 	lsls r1, r4, #3
-	ldr r0, _080BB378 @ =gCardEffects7
+	ldr r0, _080BB378 @ =gAIEffects4
 	adds r1, r1, r0
 	adds r0, r5, #0
 	bl gEngineEffectSpecialSummon_080BAED0
@@ -349363,7 +349363,7 @@ _080BB362:
 	movs r0, #1
 	b _080BB384
 	.align 2, 0
-_080BB378: .4byte gCardEffects7
+_080BB378: .4byte gAIEffects4
 _080BB37C:
 	adds r4, #1
 	cmp r4, #0xa4
@@ -349381,7 +349381,7 @@ gEngineEffectSpecialSummon_080BB38C: @ 0x080BB38C
 	adds r6, r0, #0
 	adds r7, r1, #0
 	movs r4, #0
-	ldr r5, _080BB3B0 @ =gCardEffects8
+	ldr r5, _080BB3B0 @ =gAIEffects5
 _080BB396:
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -349396,13 +349396,13 @@ _080BB396:
 	beq _080BB3B8
 	b _080BB3D0
 	.align 2, 0
-_080BB3B0: .4byte gCardEffects8
+_080BB3B0: .4byte gAIEffects5
 _080BB3B4:
 	movs r0, #1
 	b _080BB3D2
 _080BB3B8:
 	movs r4, #0
-	ldr r5, _080BB3D8 @ =gCardEffects9
+	ldr r5, _080BB3D8 @ =gAIEffects6
 _080BB3BC:
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -349420,14 +349420,14 @@ _080BB3D2:
 	pop {r1}
 	bx r1
 	.align 2, 0
-_080BB3D8: .4byte gCardEffects9
+_080BB3D8: .4byte gAIEffects6
 
 	thumb_func_start gEngineEffectSpecialSummonNegate_080BB3DC
 gEngineEffectSpecialSummonNegate_080BB3DC: @ 0x080BB3DC
 	push {r4, r5, r6, lr}
 	adds r6, r0, #0
 	movs r5, #0
-	ldr r4, _080BB400 @ =gCardEffects10
+	ldr r4, _080BB400 @ =gAIEffects7
 _080BB3E4:
 	ldr r0, [r4]
 	bl sub_0804AD48
@@ -349442,7 +349442,7 @@ _080BB3E4:
 	movs r0, #1
 	b _080BB40E
 	.align 2, 0
-_080BB400: .4byte gCardEffects10
+_080BB400: .4byte gAIEffects7
 _080BB404:
 	adds r4, #8
 	adds r5, #1
@@ -349485,7 +349485,7 @@ gEngineEffectDestroyFlip_080BB414: @ 0x080BB414
 	sub sp, #0x20
 	adds r6, r0, #0
 	movs r7, #0
-	ldr r4, _080BB488 @ =gCardEffects10
+	ldr r4, _080BB488 @ =gAIEffects7
 _080BB426:
 	adds r0, r6, #0
 	adds r1, r4, #0
@@ -349532,7 +349532,7 @@ _080BB434:
 	adds r2, r0, r1
 	b _080BB49A
 	.align 2, 0
-_080BB488: .4byte gCardEffects10
+_080BB488: .4byte gAIEffects7
 _080BB48C: .4byte 0x0000FFFE
 _080BB490: .4byte 0x00000868
 _080BB494: .4byte gUnk_0201C740
@@ -350240,7 +350240,7 @@ _080BB9E8:
 	b _080BBB7C
 _080BB9EE:
 	movs r7, #0
-	ldr r4, _080BBB28 @ =gCardEffects11
+	ldr r4, _080BBB28 @ =gAIEffects8
 _080BB9F2:
 	adds r0, r6, #0
 	adds r1, r4, #0
@@ -350399,7 +350399,7 @@ _080BBB16:
 	beq _080BBB58
 	b _080BBB5E
 	.align 2, 0
-_080BBB28: .4byte gCardEffects11
+_080BBB28: .4byte gAIEffects8
 _080BBB2C: .4byte gUnk_0201AFE0
 _080BBB30: .4byte gUnk_0201C510
 _080BBB34: .4byte 0x00000868

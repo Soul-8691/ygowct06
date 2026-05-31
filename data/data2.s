@@ -95,7 +95,7 @@ gFusion:: @ 09E59E14
 gRitual:: @ 09E5A0C4
 	.incbin "baserom.gba", 0x1E5A0C4, 0x64
 
-gSearcherCardEffects:: @ 09E5A128
+gAISearcherCardEffects:: @ 09E5A128
 	.incbin "baserom.gba", 0x1E5A128, 0x1AE
 
 gUnk_09E5A2D6:: @ 09E5A2D6
