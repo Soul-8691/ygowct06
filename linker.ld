@@ -348,6 +348,8 @@ SECTIONS {
         *libc.a:syscalls.o(.rodata);
 
         data/data2.o(.rodata);
+        src/pack.o(.rodata);
+        data/data_09E5E2E8.o(.rodata);
         src/input.o(.data);
         data/data_09E5F8F0.o(.data);
         src/deck.o(.rodata);

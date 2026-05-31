@@ -1,0 +1,3830 @@
+<StructRow 'data.packs'[0]>
+150
+5
+106
+7001
+7101
+0
+Hitotsu-Me Giant	Common
+Tyhone	Common
+Flame Swordsman	Common
+Skull Servant	Common
+Beaver Warrior	Common
+Celtic Guardian	Common
+Karbonala Warrior	Common
+Basic Insect	Common
+Mammoth Graveyard	Common
+Silver Fang	Common
+Giant Soldier of Stone	Common
+Uraby	Common
+Reaper of the Cards	Common
+Dark Gray	Common
+Trial of Nightmare	Common
+Nemuriko	Common
+The 13th Grave	Common
+Charubin the Fire Knight	Common
+Witty Phantom	Common
+Flame Manipulator	Common
+Monster Egg	Common
+Larvas	Common
+Hard Armor	Common
+Firegrass	Common
+Man Eater	Common
+M-Warrior	Common
+M-Warrior	Common
+Darkfire Dragon	Common
+Dark King of the Abyss	Common
+Spirit of the Harp	Common
+Armaill	Common
+Fiend Reflection	Common
+Fusionist	Common
+Turtle Tiger	Common
+Terra the Terrible	Common
+Petit Dragon	Common
+Frenzied Panda	Common
+Petit Angel	Common
+Hinotama Soul	Common
+Aqua Madoor	Common
+Kagemusha of the Blue Flame	Common
+Flame Ghost	Common
+Two-Mouth Darkruler	Common
+Kumootoko	Common
+Dissolverock	Common
+Meda Bat	Common
+Root Water	Common
+Enchanting Mermaid	Common
+The Furious Sea King	Common
+Green Phantom King	Common
+Ray & Temperature	Common
+King Fog	Common
+Mystical Sheep	Common
+Fireyarou	Common
+Masaki the Legendary Swordsman	Common
+Dragoness the Wicked Knight	Common
+One-Eyed Shield Dragon	Common
+Kurama	Common
+Dragon Capture Jar	Common
+Forest	Common
+Wasteland	Common
+Mountain	Common
+Sogen	Common
+Umi	Common
+Red Medicine	Common
+Goblin's Secret Remedy	Common
+Sparks	Common
+Metal Dragon	Common
+Tripwire Beast	Common
+Skull Red Bird	Common
+Flower Wolf	Common
+Steel Ogre Grotto	Common
+Lesser Dragon	Common
+Darkworld Thorns	Common
+Drooling Lizard	Common
+Armored Starfish	Common
+Tri-Horned Dragon	Common
+Gravedigger Ghoul	Common
+Raigeki	Secret Rare
+Blue-Eyes White Dragon	Secret Rare
+Blue-Eyes White Dragon	Ultra Rare
+Dark Magician	Ultra Rare
+Dark Hole	Ultra Rare
+Monster Reborn	Ultra Rare
+Right Leg of the Forbidden One	Super Rare
+Left Leg of the Forbidden One	Super Rare
+Right Arm of the Forbidden One	Super Rare
+Left Arm of the Forbidden One	Super Rare
+Exodia the Forbidden One	Super Rare
+Red-Eyes B. Dragon	Super Rare
+Swords of Revealing Light	Super Rare
+Mystical Elf	Rare
+Gaia the Dragon Champion	Rare
+Gaia The Fierce Knight	Rare
+Curse of Dragon	Rare
+Stop Defense	Rare
+Yami	Rare
+Armed Ninja	Rare
+Man-Eater Bug	Rare
+Hane-Hane	Rare
+Fissure	Rare
+Trap Hole	Rare
+Polymerization	Rare
+Remove Trap	Rare
+Two-Pronged Attack	Rare
+Pot of Greed	Rare
+<StructRow 'data.packs'[1]>
+150
+5
+114
+7002
+7102
+0
+Baby Dragon	Common
+Feral Imp	Common
+Winged Dragon, Guardian of the Fortress	Common
+Blackland Fire Dragon	Common
+Rock Ogre Grotto	Common
+Saggi the Dark Clown	Common
+Illusionist Faceless Mage	Common
+Armored Lizard	Common
+Killer Needle	Common
+Larvae Moth	Common
+Great Moth	Common
+Harpie Lady	Common
+Kojikocy	Common
+Thousand Dragon	Common
+Jellyfish	Common
+Castle of Dark Illusions	Common
+King of Yamimakai	Common
+Mystic Horseman	Common
+Rabid Horseman	Common
+Crass Clown	Common
+Armored Zombie	Common
+Pumpking the King of Ghosts	Common
+White Magical Hat	Common
+Dream Clown	Common
+Masked Sorcerer	Common
+Guardian of the Labyrinth	Common
+Water Omotics	Common
+Prevent Rat	Common
+The Little Swordsman of Aile	Common
+Princess of Tsurugi	Common
+Ground Attacker Bugroth	Common
+Petit Moth	Common
+Protector of the Throne	Common
+Elegant Egotist	Common
+Tremendous Fire	Common
+Jirai Gumo	Common
+Shadow Ghoul	Common
+Labyrinth Tank	Common
+Ryu-Kishin Powered	Common
+Bickuribox	Common
+Giltia the D. Knight	Common
+Launcher Spider	Common
+Ocubeam	Common
+Giga-Tech Wolf	Common
+Jinzo	Common
+Ancient Elf	Common
+Deepsea Shark	Common
+Bottom Dweller	Common
+7 Colored Fish	Common
+Destroyer Golem	Common
+Kaminari Attack	Common
+The Immortal of Thunder	Common
+Punished Eagle	Common
+Insect Soldiers of the Sky	Common
+Rainbow Flower	Common
+Hoshiningen	Common
+Musician King	Common
+Muka Muka	Common
+The Bistro Butcher	Common
+Star Boy	Common
+Milus Radiant	Common
+Flame Cerebrus	Common
+Mega Thunderball	Common
+Niwatori	Common
+Tongyo	Common
+Dark Elf	Common
+Pale Beast	Common
+Little Chimera	Common
+Bladefly	Common
+Lady of Faith	Common
+Twin-Headed Thunder Dragon	Common
+Witch's Apprentice	Common
+Ancient Lizard Warrior	Common
+Blue-Winged Crown	Common
+Disk Magician	Common
+Gazelle the King of Mythical Beasts	Common
+Garnecia Elefantis	Common
+Shield & Sword	Common
+The Cheerful Coffin	Common
+Sword of Deep-Seated	Common
+Block Attack	Common
+Germ Infection	Common
+Ring of Magnetism	Common
+Share the Pain	Common
+Stim-Pack	Common
+Witch of the Black Forest	Secret Rare
+Change of Heart	Secret Rare
+Mirror Force	Secret Rare
+Sangan	Ultra Rare
+Sanga of the Thunder	Ultra Rare
+Gate Guardian	Ultra Rare
+Barrel Dragon	Ultra Rare
+Summoned Skull	Super Rare
+Kazejin	Super Rare
+Suijin	Super Rare
+Solemn Judgment	Super Rare
+Magic Jammer	Super Rare
+Seven Tools of the Bandit	Super Rare
+Horn of Heaven	Super Rare
+Time Wizard	Rare
+Kuriboh	Rare
+Harpie Lady Sisters	Rare
+Cocoon of Evolution	Rare
+Catapult Turtle	Rare
+Mask of Darkness	Rare
+B. Skull Dragon	Rare
+Thunder Dragon	Rare
+Magician of Faith	Rare
+Cannon Soldier	Rare
+Tribute to The Doomed	Rare
+Soul Release	Rare
+The Unhappy Maiden	Rare
+Robbin' Goblin	Rare
+Heavy Storm	Rare
+<StructRow 'data.packs'[2]>
+200
+5
+92
+7003
+7103
+0
+Thousand-Eyes Idol	Common
+Steel Ogre Grotto	Common
+Three-Headed Geedo	Common
+Parasite Paracide	Common
+Sword Hunter	Common
+Drill Bug	Common
+Deepsea Warrior	Common
+Beast of Talwar	Common
+Chain Destruction	Common
+Insect Barrier	Common
+Michizure	Common
+Gust	Common
+Driving Snow	Common
+Forced Requisition	Common
+Minor Goblin Official	Common
+Gamble	Common
+DNA Surgery	Common
+The Regulation of Tribe	Common
+Attack and Receive	Common
+Light of Intervention	Common
+Respect Play	Common
+Skull Invitation	Common
+Bubonic Vermin	Common
+Twin-Headed Fire Dragon	Common
+Darkfire Soldier	Common
+Mr. Volcano	Common
+Darkfire Soldier	Common
+Kiseitai	Common
+Cyber Falcon	Common
+Dark Bat	Common
+Flying Kamakiri	Common
+Harpie's Brother	Common
+Oni Tank T-34	Common
+Overdrive	Common
+Time Seal	Common
+Gift of The Mystical Elf	Common
+The Eye of Truth	Common
+Solomon's Lawbook	Common
+Enchanted Javelin	Common
+Infinite Dismissal	Common
+Solemn Wishes	Common
+Burning Land	Common
+Cold Wave	Common
+Shift	Common
+Insect Imitation	Common
+Dimensionhole	Common
+Magic Drain	Common
+Girochin Kuwagata	Common
+Hayabusa Knight	Common
+Bombardment Beetle	Common
+4-Starred Ladybug of Doom	Common
+Gradius	Common
+Red-Moon Baby	Common
+Mad Sword Beast	Common
+Skull Mariner	Common
+The All-Seeing White Tiger	Common
+Island Turtle	Common
+Wingweaver	Common
+Science Soldier	Common
+Souls of the Forgotten	Common
+Dokuroyaiba	Common
+Rain of Mercy	Common
+Type Zero Magic Crusher	Common
+Ground Collapse	Common
+Imperial Order	Secret Rare
+Thousand-Eyes Restrict	Ultra Rare
+Jinzo	Ultra Rare
+Premature Burial	Ultra Rare
+Call of the Haunted	Ultra Rare
+Limiter Removal	Ultra Rare
+Lightforce Sword	Super Rare
+Backup Soldier	Super Rare
+Ceasefire	Super Rare
+Nobleman of Crossout	Super Rare
+Nobleman of Extermination	Super Rare
+Buster Blader	Super Rare
+Mirror Wall	Super Rare
+Gravity Bind	Super Rare
+The Fiend Megacyber	Rare
+Numinous Healer	Rare
+Appropriate	Rare
+Magical Hats	Rare
+The Shallow Grave	Rare
+Morphing Jar	Rare
+Graverobber	Rare
+Dust Tornado	Rare
+Gearfried the Iron Knight	Rare
+The Legendary Fisherman	Rare
+Fairy Meteor Crush	Rare
+Shadow of Eyes	Rare
+Goblin Attack Force	Rare
+Monster Recovery	Rare
+<StructRow 'data.packs'[3]>
+300
+5
+91
+7004
+7104
+0
+King Tiger Wanghu	Common
+Birdface	Common
+Kryuel	Common
+Molten Behemoth	Common
+Arsenal Bug	Common
+Jowls of Dark Demise	Common
+Souleater	Common
+Timeater	Common
+Mucus Yolk	Common
+Servant of Catabolism	Common
+Moisture Creature	Common
+Byser Shock	Common
+Gora Turtle	Common
+Poison Mummy	Common
+Dark Dust Spirit	Common
+Royal Keeper	Common
+Wandering Mummy	Common
+Swarm of Scarabs	Common
+Swarm of Locusts	Common
+Giant Axe Mummy	Common
+Dice Jar	Common
+Des Lacooda	Common
+Cobraman Sakuzy	Common
+Call of the Mummy	Common
+Timidity	Common
+Pyramid Energy	Common
+Tutan Mask	Common
+Ordeal of a Traveler	Common
+Bottomless Shifting Sand	Common
+Curse of Royal	Common
+Needle Ceiling	Common
+Dark Coffin	Common
+Trap Dustshoot	Common
+Newdoria	Common
+Dark Jeroid	Common
+Master Kyonshee	Common
+Kabazauls	Common
+Inpachi	Common
+Gravekeeper's Spy	Common
+Gravekeeper's Curse	Common
+Gravekeeper's Cannonholder	Common
+Gravekeeper's Assailant	Common
+A Man with Wdjat	Common
+Mystical Knight of Jackal	Common
+A Cat of Ill Omen	Common
+Yomi Ship	Common
+Winged Sage Falcos	Common
+An Owl of Luck	Common
+Charm of Shabti	Common
+Cobra Jar	Common
+Card Shuffle	Common
+Reasoning	Common
+Different Dimension Capsule	Common
+Buster Rancher	Common
+Hieroglyph Lithograph	Common
+Dark Snake Syndrome	Common
+Terraforming	Common
+Banner of Courage	Common
+Royal Tribute	Common
+Reversal Quiz	Common
+Curse of Aging	Common
+Disturbance Strategy	Common
+Rite of Spirit	Common
+Non Aggression Area	Common
+D. Tribe	Common
+Mirage of Nightmare	Secret Rare
+Great Dezard	Ultra Rare
+Fushioh Richie	Ultra Rare
+Helpoemer	Ultra Rare
+Metamorphosis	Ultra Rare
+Guardian Sphinx	Super Rare
+Pyramid Turtle	Super Rare
+Don Zaloog	Super Rare
+Book of Moon	Super Rare
+Reckless Greed	Super Rare
+Necrovalley	Super Rare
+Raigeki Break	Super Rare
+Maiden of the Aqua	Rare
+Rope of Life	Rare
+Sasuke Samurai	Rare
+Dark Scorpion Burglars	Rare
+Book of Life	Rare
+Book of Taiyou	Rare
+Statue of the Wicked	Rare
+Needle Wall	Rare
+Gravekeeper's Guard	Rare
+Gravekeeper's Spear Soldier	Rare
+Spirit Reaper	Rare
+Nightmare Horse	Rare
+Reaper on the Nightmare	Rare
+Dark Room of Nightmare	Rare
+<StructRow 'data.packs'[4]>
+200
+5
+88
+7005
+7105
+0
+Penguin Knight	Common
+Psychic Kappa	Common
+Horn of Light	Common
+Horn of the Unicorn	Common
+Malevolent Nuzzler	Common
+Wall Shadow	Common
+Electric Snake	Common
+Ameba	Common
+Maha Vailo	Common
+Guardian of the Throne Room	Common
+Fire Kraken	Common
+Minar	Common
+Griggle	Common
+Mechanical Snail	Common
+Liquid Beast	Common
+Twin Long Rods	Common
+Hiro's Shadow Scout	Common
+High Tide Gyojin	Common
+Invader of the Throne	Common
+Whiptail Crow	Common
+Magical Labyrinth	Common
+Eternal Rest	Common
+Commencement Dance	Common
+Hamburger Recipe	Common
+House of Adhesive Tape	Common
+Turtle Oath	Common
+Performance of Sword	Common
+Hungry Burger	Common
+Serpent Night Dragon	Common
+Crab Turtle	Common
+Slot Machine	Common
+Red Archery Girl	Common
+Ryu-Ran	Common
+Manga Ryu-Ran	Common
+Toon Mermaid	Common
+Hyozanryu	Common
+Gravekeeper's Servant	Common
+Toll	Common
+Final Destiny	Common
+Chorus of Sanctuary	Common
+Tailor of the Fickle	Common
+Rush Recklessly	Common
+The Reliable Guardian	Common
+Chain Energy	Common
+Snake Fang	Common
+Giant Rat	Common
+UFO Turtle	Common
+Flash Assailant	Common
+Karate Man	Common
+Spear Cretin	Common
+Mother Grizzly	Common
+Flying Kamakiri	Common
+Ceremonial Bell	Common
+Sonic Bird	Common
+Kotodama	Common
+Gaia Power	Common
+Umiiruka	Common
+Molten Destruction	Common
+Rising Air Current	Common
+Delinquent Duo	Secret Rare
+The Forceful Sentry	Secret Rare
+Painful Choice	Secret Rare
+Snatch Steal	Ultra Rare
+Confiscation	Ultra Rare
+Mystical Space Typhoon	Ultra Rare
+Cyber Jar	Ultra Rare
+Axe of Despair	Super Rare
+Spellbinding Circle	Super Rare
+Megamorph	Super Rare
+Relinquished	Super Rare
+Blue-Eyes Toon Dragon	Super Rare
+Upstart Goblin	Super Rare
+Banisher of the Light	Super Rare
+Black Pendant	Rare
+Labyrinth Wall	Rare
+Toon Summoned Skull	Rare
+Toon World	Rare
+Black Illusion Ritual	Rare
+Fairy's Hand Mirror	Rare
+Giant Trunade	Rare
+Senju of the Thousand Hands	Rare
+Giant Germ	Rare
+Nimble Momonga	Rare
+Shining Angel	Rare
+Mystic Tomato	Rare
+Luminous Spark	Rare
+Mystic Plasma Zone	Rare
+Messenger of Peace	Rare
+<StructRow 'data.packs'[5]>
+250
+5
+96
+7006
+7106
+0
+Swordsman of Landstar	Common
+Boneheimer	Common
+Flame Dancer	Common
+Humanoid Slime	Common
+Worm Drake	Common
+Humanoid Worm Drake	Common
+Revival Jam	Common
+Flying Fish	Common
+Lightning Conger	Common
+Spherous Lady	Common
+Shining Abyss	Common
+Gadget Soldier	Common
+Grand Tiki Elder	Common
+Melchid the Four-Face Beast	Common
+Nuvia the Wicked	Common
+Mask of Weakness	Common
+Mask of Dispel	Common
+Mask of the Accursed	Common
+Mask of Brutality	Common
+Return of the Doomed	Common
+Lightning Blade	Common
+Jam Breeding Machine	Common
+Jam Defender	Common
+Amazon Archer	Common
+Fire Princess	Common
+Spirit of the Breeze	Common
+Dancing Fairy	Common
+Empress Mantis	Common
+Cure Mermaid	Common
+Hysteric Fairy	Common
+Bio-Mage	Common
+The Forgiving Maiden	Common
+St. Joan	Common
+Marie the Fallen One	Common
+Scroll of Bewitchment	Common
+Offerings to the Doomed	Common
+The Portrait's Secret	Common
+The Gross Ghost of Fled Dreams	Common
+Headless Knight	Common
+The Dark Door	Common
+Earthbound Spirit	Common
+Dark Spirit of the Silent	Common
+The Earl of Demise	Common
+Spiritualism	Common
+Jowgen the Spiritualist	Common
+Kycoo the Ghost Destroyer	Common
+Bazoo the Soul-Eater	Common
+Soul of Purity and Light	Common
+Spirit of Flames	Common
+Aqua Spirit	Common
+The Rock Spirit	Common
+Garuda the Wind Spirit	Common
+Gilasaurus	Common
+Tornado Bird	Common
+Dreamsprite	Common
+Supply	Common
+Maryokutai	Common
+Collected Power	Common
+Riryoku Field	Common
+Skull Lair	Common
+Graverobber's Retribution	Common
+Deal of Phantom	Common
+Destruction Punch	Common
+Blind Destruction	Common
+The Emperor's Holiday	Common
+Cyclon Laser	Common
+Bait Doll	Common
+Ekibyo Drakmord	Common
+Miracle Dig	Common
+Vengeful Bog Spirit	Common
+The Last Warrior from Another Planet	Ultra Rare
+Torrential Tribute	Ultra Rare
+Magic Cylinder	Ultra Rare
+United We Stand	Ultra Rare
+Mage Power	Ultra Rare
+Fairy Box	Super Rare
+Dark Necrofear	Super Rare
+Destiny Board	Super Rare
+Royal Command	Super Rare
+Spirit Message "I	Super Rare
+Spirit Message "N	Super Rare
+Spirit Message "A	Super Rare
+Spirit Message "L	Super Rare
+Gemini Elf	Rare
+Amphibian Beast	Rare
+The Masked Beast	Rare
+Curse of the Masked Beast	Rare
+Mask of Restrict	Rare
+Tornado Wall	Rare
+De-Fusion	Rare
+Infinite Cards	Rare
+Card of Safe Return	Rare
+Jar of Greed	Rare
+Zombyra the Dark	Rare
+Summoner of Illusions	Rare
+Fusion Gate	Rare
+<StructRow 'data.packs'[6]>
+250
+5
+92
+7007
+7107
+0
+Bad Reaction to Simochi	Common
+Wolf Axwielder	Common
+The Illusory Gentleman	Common
+Patrician of Darkness	Common
+Serpentine Princess	Common
+Robotic Knight	Common
+Thunder Nyan Nyan	Common
+Twin-Headed Behemoth	Common
+Woodland Sprite	Common
+Robolady	Common
+Roboyarou	Common
+Dark Balter the Terrible	Common
+Lesser Fiend	Common
+Possessed Dark Soul	Common
+Winged Minion	Common
+Ryu-Kishin Clown	Common
+Twin-Headed Wolf	Common
+Opticlops	Common
+Bark of Dark Ruler	Common
+Life Absorbing Machine	Common
+Double Snare	Common
+Freed the Matchless General	Common
+Throwstone Unit	Common
+Ryu Senshi	Common
+Warrior Dai Grepher	Common
+Frontier Wiseman	Common
+The Hunter with 7 Weapons	Common
+Shadow Tamer	Common
+Dragon Manipulator	Common
+The A. Forces	Common
+The Warrior Returning Alive	Common
+Ready for Intercepting	Common
+A Feint Plan	Common
+Spirit Ryu	Common
+The Dragon dwelling in the Cave	Common
+Lizard Soldier	Common
+Cave Dragon	Common
+Gray Wing	Common
+Troop Dragon	Common
+The Dragon's Bead	Common
+A Wingbeat of Giant Dragon	Common
+Dragon's Gunfire	Common
+Stamping Destruction	Common
+Super Rejuvenation	Common
+Dragon's Rage	Common
+Burst Breath	Common
+Luster Dragon	Common
+Gradius' Option	Common
+Great Long Nose	Common
+Otohime	Common
+Fushi No Tori	Common
+Fengsheng Mirror	Common
+Heart of Clear Water	Common
+Fusion Sword Murasame Blade	Common
+Smoke Grenade of the Thief	Common
+Spiritual Energy Settle Machine	Common
+Second Coin Toss	Common
+Convulsion of Nature	Common
+The Secret of the Bandit	Common
+After the Struggle	Common
+Disappear	Common
+Ominous Fortunetelling	Common
+Nutrient Z	Common
+Drop Off	Common
+Fiend Comedian	Common
+Fiber Jar	Secret Rare
+Yata-Garasu	Secret Rare
+Injection Fairy Lily	Ultra Rare
+Creature Swap	Ultra Rare
+Exiled Force	Ultra Rare
+Emergency Provisions	Ultra Rare
+Inaba White Rabbit	Ultra Rare
+Dark Ruler Ha Des	Super Rare
+Marauding Captain	Super Rare
+Reinforcement of the Army	Super Rare
+Tyrant Dragon	Super Rare
+Maharaghi	Super Rare
+Susa Soldier	Super Rare
+Asura Priest	Super Rare
+A Legendary Ocean	Super Rare
+Airknight Parshath	Rare
+Fatal Abacus	Rare
+Array of Revealing Light	Rare
+Spear Dragon	Rare
+Fiend Skull Dragon	Rare
+Yamata Dragon	Rare
+Hino-Kagu-Tsuchi	Rare
+Super Robolady	Rare
+Super Roboyarou	Rare
+Blast with Chain	Rare
+Bottomless Trap Hole	Rare
+Last Turn	Rare
+<StructRow 'data.packs'[7]>
+300
+5
+92
+7008
+7108
+0
+Amazoness Archers	Common
+Amazoness Fighter	Common
+People Running About	Common
+Oppressed People	Common
+United Resistance	Common
+Dark Blade	Common
+Pitch-Dark Dragon	Common
+Kiryu	Common
+Decayed Commander	Common
+Zombie Tiger	Common
+Giant Orc	Common
+Second Goblin	Common
+Vampire Orchis	Common
+Des Dendle	Common
+Burning Beast	Common
+Freezing Beast	Common
+D.D. Crazy Beast	Common
+Helping Robo For Combat	Common
+Dimension Jar	Common
+Roulette Barrel	Common
+Frontline Base	Common
+Demotion	Common
+Combination Attack	Common
+Poison of the Old Man	Common
+Dark Core	Common
+Raregold Armor	Common
+Kishido Spirit	Common
+Tribute Doll	Common
+Huge Revolution	Common
+Thunder of Ruler	Common
+Spell Shield Type-8	Common
+Meteorain	Common
+Pineapple Blast	Common
+Secret Barrel	Common
+Formation Union	Common
+Adhesion Trap Hole	Common
+Diffusion Wave-Motion	Common
+Great Angus	Common
+Aitsu	Common
+Sonic Duck	Common
+Amazoness Paladin	Common
+Amazoness Blowpiper	Common
+Amazoness Tiger	Common
+Old Vindictive Magician	Common
+Chaos Command Magician	Common
+Magical Marionette	Common
+Magical Plant Mandragola	Common
+Armor Exe	Common
+Cliff the Trap Remover	Common
+Magical Merchant	Common
+Koitsu	Common
+Cat's Ear Tribe	Common
+Ultimate Obedient Fiend	Common
+Pitch-Black Power Stone	Common
+Gather Your Mind	Common
+Mass Driver	Common
+Senri Eye	Common
+Emblem of Dragon Destroyer	Common
+Jar Robber	Common
+Mega Ton Magical Cannon	Common
+Exhausting Spell	Common
+Hidden Book of Spell	Common
+Miracle Restoring	Common
+Disarmament	Common
+Anti-Spell	Common
+The Spell Absorbing Life	Common
+Magical Scientist	Secret Rare
+Dark Magician Girl	Ultra Rare
+Paladin of White Dragon	Ultra Rare
+Dark Paladin	Ultra Rare
+Breaker the Magical Warrior	Ultra Rare
+Tribe-Infecting Virus	Ultra Rare
+XY-Dragon Cannon	Super Rare
+XYZ-Dragon Cannon	Super Rare
+Spell Canceller	Super Rare
+Autonomous Action Unit	Super Rare
+XZ-Tank Cannon	Super Rare
+YZ-Tank Dragon	Super Rare
+Royal Magical Library	Super Rare
+Amazoness Swords Woman	Rare
+X-Head Cannon	Rare
+Y-Dragon Head	Rare
+Z-Metal Tank	Rare
+White Dragon Ritual	Rare
+Wave-Motion Cannon	Rare
+Luster Dragon	Rare
+Skilled White Magician	Rare
+Skilled Dark Magician	Rare
+Apprentice Magician	Rare
+Des Koala	Rare
+Big Bang Shot	Rare
+Continuous Destruction Punch	Rare
+<StructRow 'data.packs'[8]>
+300
+5
+101
+7009
+7109
+0
+Cyber Raider	Common
+Little-Winguard	Common
+Judgment of Anubis	Common
+Keldo	Common
+Dragged Down into the Grave	Common
+Kaiser Glider	Common
+Spell Reproduction	Common
+Mudora	Common
+Cestus of Dagla	Common
+Des Feral Imp	Common
+Kelbek	Common
+Zolga	Common
+Blast Held by a Tribute	Common
+Agido	Common
+Interdimensional Matter Transporter	Common
+Cost Down	Common
+Final Attack Orders	Common
+Shinato, King of a Higher Plane	Common
+Berserk Dragon	Common
+Battle Footballer	Common
+Arsenal Summoner	Common
+Nin-Ken Dog	Common
+Acrobat Monkey	Common
+Guardian Elma	Common
+Guardian Baou	Common
+Guardian Kay'est	Common
+Guardian Tryce	Common
+Gyaku-Gire Panda	Common
+Blindly Loyal Goblin	Common
+Thousand Needles	Common
+Shinato's Ark	Common
+A Deal with Dark Ruler	Common
+Contract with Exodia	Common
+Shooting Star Bow - Ceal	Common
+Wicked-Breaking Flamberge - Baou	Common
+Rod of Silence - Kay'est	Common
+Precious Cards from Beyond	Common
+Rod of the Mind's Eye	Common
+Fairy of the Spring	Common
+Token Thanksgiving	Common
+Non-Spellcasting Area	Common
+Staunch Defender	Common
+Ojama Trio	Common
+Arsenal Robber	Common
+Really Eternal Rest	Common
+Gagagigo	Common
+D. D. Trainer	Common
+Ojama Green	Common
+Archfiend Soldier	Common
+Pandemonium Watchbear	Common
+Dark Scorpion - Gorg the Strong	Common
+Outstanding Dog Marron	Common
+Iron Blacksmith Kotetsu	Common
+Mefist the Infernal General	Common
+Vilepawn Archfiend	Common
+Shadowknight Archfiend	Common
+Darkbishop Archfiend	Common
+Metallizing Parasite - Lunatite	Common
+Legendary Flame Lord	Common
+Incandescent Ordeal	Common
+Contract with the Abyss	Common
+Contract with the Dark Master	Common
+Falling Down	Common
+Checkmate	Common
+Mustering of the Dark Scorpions	Common
+Pandemonium	Common
+Altar for Tribute	Common
+Frozen Soul	Common
+Battle-Scarred	Common
+Dark Scorpion Combination	Common
+Archfiend's Roar	Common
+Dice Re-Roll	Common
+Spell Vanishing	Common
+Ray of Hope	Common
+Butterfly Dagger - Elma	Secret Rare
+Reflect Bounder	Ultra Rare
+Vampire Lord	Ultra Rare
+D.D. Warrior Lady	Ultra Rare
+Tsukuyomi	Ultra Rare
+Dark Flare Knight	Super Rare
+Mirage Knight	Super Rare
+Exodia Necross	Super Rare
+Great Maju Garzett	Super Rare
+Terrorking Archfiend	Super Rare
+Skull Archfiend of Lightning	Super Rare
+Dark Master - Zorc	Super Rare
+Guardian Ceal	Rare
+Guardian Grarl	Rare
+Despair from the Dark	Rare
+Maju Garzett	Rare
+Fear from the Dark	Rare
+Dark Scorpion - Chick the Yellow	Rare
+Gravity Axe - Grarl	Rare
+Twin Swords of Flashing Light - Tryce	Rare
+Skill Drain	Rare
+Sasuke Samurai	Rare
+Dark Scorpion - Meanae the Thorn	Rare
+Desrook Archfiend	Rare
+Infernalqueen Archfiend	Rare
+Final Countdown	Rare
+Sakuretsu Armor	Rare
+<StructRow 'data.packs'[9]>
+350
+5
+107
+7010
+7110
+0
+Skull-Mark Ladybug	Common
+Pinch Hopper	Common
+Multiplication of Ants	Common
+Yellow Luster Shield	Common
+Lord Poison	Common
+Drillago	Common
+Lekunga	Common
+Bowganian	Common
+Granadora	Common
+Ojama Yellow	Common
+Ojama Black	Common
+Soul Tiger	Common
+Big Koala	Common
+Des Kangaroo	Common
+Crimson Ninja	Common
+Strike Ninja	Common
+Gale Lizard	Common
+Chopman the Desperate Outlaw	Common
+D. D. Scout Plane	Common
+Freed the Brave Wanderer	Common
+Chaos Necromancer	Common
+Chaosrider Gustaph	Common
+Inferno	Common
+Fenrir	Common
+Silpheed	Common
+Fuhma Shuriken	Common
+Wild Nature's Release	Common
+Ojama Delta Hurricane!!	Common
+Stumbling	Common
+Chaos Greed	Common
+D. D. Borderline	Common
+Recycle	Common
+Thunder Crash	Common
+Dimension Distortion	Common
+Reload	Common
+Soul Absorption	Common
+Big Burn	Common
+Blasting the Ruins	Common
+Cursed Seal of the Forbidden Spell	Common
+Tower of Babel	Common
+Spatial Collapse	Common
+Chain Disappearance	Common
+Zero Gravity	Common
+Energy Drain	Common
+Giga Gagagigo	Common
+Mad Dog of Darkness	Common
+Neo Bug	Common
+Sea Serpent Warrior of Darkness	Common
+Blazing Inpachi	Common
+Burning Algae	Common
+The Thing in the Crater	Common
+Molten Zombie	Common
+Sacred Crane	Common
+Enraged Battle Ox	Common
+Don Turtle	Common
+Dark Driceratops	Common
+Hyper Hammerhead	Common
+Black Tyranno	Common
+Anti-Aircraft Flower	Common
+Prickle Fairy	Common
+Torpedo Fish	Common
+Orca Mega-Fortress of Darkness	Common
+Cannonball Spear Shellfish	Common
+Mataza the Zapper	Common
+Gryphon's Feather Duster	Common
+Stray Lambs	Common
+Dimension Fusion	Common
+Dedication through Light and Darkness	Common
+Salvage	Common
+Ultra Evolution Pill	Common
+Earth Chant	Common
+Jade Insect Whistle	Common
+Destruction Ring	Common
+Fiend's Hand Mirror	Common
+Compulsory Evacuation Device	Common
+A Hero Emerges	Common
+Curse of Darkness	Common
+Begone, Knave!	Common
+Invader of Darkness	Common
+Black Luster Soldier - Envoy of the Beginning	Secret Rare
+Chaos Emperor Dragon - Envoy of the End	Secret Rare
+Chaos Sorcerer	Ultra Rare
+Dark Magician of Chaos	Ultra Rare
+Manticore of Darkness	Ultra Rare
+Manju of the Ten Thousand Hands	Ultra Rare
+Witch Doctor of Chaos	Super Rare
+Primal Seed	Super Rare
+Amphibious Bugroth MK-3	Super Rare
+Levia-Dragon - Daedalus	Super Rare
+Guardian Angel Joan	Super Rare
+Smashing Ground	Super Rare
+DNA Transplant	Super Rare
+Sasuke Samurai	Rare
+Berserk Gorilla	Rare
+Gigantes	Rare
+Gren Maju Da Eiza	Rare
+Heart of the Underdog	Rare
+Chaos End	Rare
+Dark Mirror Force	Rare
+Terrorking Salmon	Rare
+Stealth Bird	Rare
+Insect Princess	Rare
+Getsu Fuhma	Rare
+Ryu Kokki	Rare
+Self-Destruct Button	Rare
+Robbin' Zombie	Rare
+Trap Jammer	Rare
+<StructRow 'data.packs'[10]>
+350
+5
+103
+7011
+7111
+0
+Amplifier	Common
+Sonic Jammer	Common
+Gogiga Gagagigo	Common
+Warrior of Zera	Common
+Mystical Shine Ball	Common
+Metal Armored Bug	Common
+The Agent of Wisdom - Mercury	Common
+The Agent of Creation - Venus	Common
+Soul-Absorbing Bone Tower	Common
+The Kick Man	Common
+Rocket Jumper	Common
+Avatar of The Pot	Common
+Legendary Jujitsu Master	Common
+KA-2 Des Scissors	Common
+Needle Burrower	Common
+Atomic Firefly	Common
+Mermaid Knight	Common
+Two Thousand Needles	Common
+Disc Fighter	Common
+Arcane Archer of the Forest	Common
+Lady Ninja Yae	Common
+Goblin King	Common
+Solar Flare Dragon	Common
+Opti-Camouflage Armor	Common
+Mystik Wok	Common
+Burst Stream of Destruction	Common
+Earthquake	Common
+Goblin Thief	Common
+Backfire	Common
+Micro Ray	Common
+Light of Judgment	Common
+Solar Ray	Common
+Ninjitsu Art of Transformation	Common
+Beckoning Light	Common
+Draining Shield	Common
+Armor Break	Common
+Mokey Mokey	Common
+Gigobyte	Common
+Kozaky	Common
+Fiend Scorpion	Common
+Pharaoh's Servant	Common
+Pharaonic Protector	Common
+Theban Nightmare	Common
+Aswan Apparition	Common
+Protector of the Sanctuary	Common
+Nubian Guard	Common
+Desertapir	Common
+Sand Gambler	Common
+Ghost Knight of Jackal	Common
+Absorbing Kid from the Sky	Common
+Elephant Statue of Blessing	Common
+Elephant Statue of Disaster	Common
+Spirit Caller	Common
+Emissary of the Afterlife	Common
+Regenerating Mummy	Common
+Night Assailant	Common
+Man-Thro' Tro	Common
+Emissary of the Oasis	Common
+Order to Charge	Common
+Sword of the Soul-Eater	Common
+Dust Barrier	Common
+Soul Reversal	Common
+Spell Economics	Common
+7	Common
+Enchanting Fitting Room	Common
+The Law of the Normal	Common
+Dark Magic Attack	Common
+Delta Attacker	Common
+Thousand Energy	Common
+Triangle Power	Common
+Human-Wave Tactics	Common
+Curse of Anubis	Common
+Desert Sunlight	Common
+Des Counterblow	Common
+Labyrinth of Nightmare	Common
+Soul Resurrection	Common
+Order to Smash	Common
+Zaborg the Thunder Monarch	Ultra Rare
+Archlord Zerato	Ultra Rare
+Spirit of the Pharaoh	Ultra Rare
+The End of Anubis	Ultra Rare
+Enemy Controller	Super Rare
+The Agent of Judgment - Saturn	Super Rare
+Blowback Dragon	Super Rare
+White Magician Pikeru	Super Rare
+The Sanctuary in the Sky	Super Rare
+Wall of Revealing Light	Super Rare
+Level Limit - Area B	Super Rare
+Stone Statue of the Aztecs	Rare
+Gear Golem the Moving Fortress	Rare
+Sealmaster Meisei	Rare
+The Agent of Force - Mars	Rare
+The Unhappy Girl	Rare
+Vampire Lady	Rare
+Piranha Army	Rare
+Monster Gate	Rare
+Mazera DeVille	Rare
+Double Coston	Rare
+King of the Swamp	Rare
+Special Hurricane	Rare
+The Third Sarcophagus	Rare
+The Second Sarcophagus	Rare
+The First Sarcophagus	Rare
+<StructRow 'data.packs'[11]>
+400
+5
+57
+7012
+7112
+0
+Gorgon's Eye	Common
+Neo Aqua Madoor	Common
+Skull Dog Marron	Common
+Goblin Calligrapher	Common
+Dark Mimic LV1	Common
+Armed Dragon LV3	Common
+Horus' Servant	Common
+Red-Eyes B. Chick	Common
+Ultimate Baseball Kid	Common
+Element Dragon	Common
+Element Soldier	Common
+Howling Insect	Common
+Masked Dragon	Common
+Unshaven Angler	Common
+The Trojan Horse	Common
+Nobleman-Eater Bug	Common
+Enraged Muka Muka	Common
+Hade-Hane	Common
+Sanwitch	Common
+Dark Factory of Mass Production	Common
+Mind Wipe	Common
+Abyssal Designator	Common
+Level Up!	Common
+The Graveyard in the Fourth Dimension	Common
+Two-Man Cell Battle	Common
+Big Wave Small Wave	Common
+Fusion Weapon	Common
+Ritual Weapon	Common
+Taunt	Common
+Absolute End	Common
+Ninjitsu Art of Decoy	Common
+Heavy Slump	Common
+Cemetary Bomb	Common
+Horus the Black Flame Dragon LV6	Ultra Rare
+Horus the Black Flame Dragon LV8	Ultra Rare
+Mystic Swordsman LV4	Ultra Rare
+Armed Dragon LV7	Ultra Rare
+Inferno Fire Blast	Ultra Rare
+Ectoplasmer	Super Rare
+Horus the Black Flame Dragon LV4	Super Rare
+Mobius the Frost Monarch	Super Rare
+Penumbral Soldier Lady	Super Rare
+Greed	Super Rare
+Hallowed Life Barrier	Super Rare
+Charcoal Inpachi	Rare
+Ultimate Insect LV1	Rare
+Dark Mimic LV3	Rare
+Mystic Swordsman LV2	Rare
+Armed Dragon LV5	Rare
+Ninja Grandmaster Sasuke	Rare
+Rafflesia Seduction	Rare
+Mind on Air	Rare
+Ojama King	Rare
+Master of Oz	Rare
+Hammer Shot	Rare
+Spirit Barrier	Rare
+Enervating Mist	Rare
+<StructRow 'data.packs'[12]>
+400
+5
+59
+7013
+7113
+0
+Nightmare Penguin	Common
+Woodborg Inpachi	Common
+Mighty Guard	Common
+Bokoichi the Freightening Car	Common
+Harpie Girl	Common
+The Creator Incarnate	Common
+Heavy Mech Support Platform	Common
+Element Magician	Common
+Element Saurus	Common
+Roc from the Valley of Haze	Common
+Harpie Lady 1	Common
+Harpie Lady 2	Common
+Harpie Lady 3	Common
+Raging Flame Sprite	Common
+Eagle Eye	Common
+Tactical Espionage Expert	Common
+Invasion of Flames	Common
+Creeping Doom Manta	Common
+Pitch-Black Warwolf	Common
+Mirage Dragon	Common
+Fox Fire	Common
+Homunculus the Alchemic Being	Common
+Mokey Mokey King	Common
+Harpies' Hunting Ground	Common
+Mokey Mokey Smackdown	Common
+Back to Square One	Common
+Ballista of Rampart Smashing	Common
+Lighten the Load	Common
+Malice Dispersion	Common
+Xing Zhen Hu	Common
+Mind Haxorz	Common
+Fuh-Rin-Ka-Zan	Common
+Spell Purification	Common
+Astral Barrier	Common
+Perfect Machine King	Ultra Rare
+Silent Swordsman LV3	Ultra Rare
+The Creator	Ultra Rare
+Mystic Swordsman LV6	Ultra Rare
+Tragedy	Super Rare
+Thestalos the Firestorm Monarch	Super Rare
+Big Core	Super Rare
+Triangle Ecstasy Spark	Super Rare
+Monster Reincarnation	Super Rare
+Divine Wrath	Super Rare
+Pikeru's Circle of Enchantment	Super Rare
+Machine Duplication	Rare
+Ultimate Insect LV3	Rare
+Sasuke Samurai	Rare
+Gaia Soul the Combustible Collective	Rare
+Fusilier Dragon, the Dual-Mode Beast	Rare
+Dekoichi the Battlechanted Locomotive	Rare
+A-Team: Trap Disposal Unit	Rare
+Dark Blade the Dragon Knight	Rare
+Serial Spell	Rare
+Necklace of Command	Rare
+Flint	Rare
+Rare Metalmorph	Rare
+Chain Burst	Rare
+Covering Fire	Rare
+<StructRow 'data.packs'[13]>
+450
+5
+58
+7014
+7114
+0
+Space Mambo	Common
+Divine Dragon Ragnarok	Common
+Chu-Ske the Mouse Fighter	Common
+Insect Knight	Common
+Hand of Nephthys	Common
+Element Valkyrie	Common
+Element Doom	Common
+Maji-Gire Panda	Common
+Catnipped Kitty	Common
+Kangaroo Champ	Common
+Hyena	Common
+Blade Rabbit	Common
+Mecha-Dog Marron	Common
+Armed Samurai - Ben Kei	Common
+Golem Sentry	Common
+Abare Ushioni	Common
+The Light - Hex-Sealed Fusion	Common
+The Dark - Hex-Sealed Fusion	Common
+The Earth - Hex-Sealed Fusion	Common
+Whirlwind Prodigy	Common
+Flame Ruler	Common
+Firebird	Common
+Rescue Cat	Common
+Poison Fangs	Common
+Release Restraint	Common
+Centrifugal Field	Common
+Fulfillment of the Contract	Common
+Re-Fusion	Common
+The Big March of Animals	Common
+Threatening Roar	Common
+Good Goblin Housekeeping	Common
+Beast Soul Swap	Common
+D.D. Dynamite	Common
+Elemental Burst	Common
+Silent Swordsman LV5	Ultra Rare
+Sacred Phoenix of Nephthys	Ultra Rare
+Gearfried the Swordmaster	Ultra Rare
+Gatling Dragon	Ultra Rare
+Lightning Vortex	Super Rare
+Granmarg the Rock Monarch	Super Rare
+Behemoth the King of All Animals	Super Rare
+Blast Magician	Super Rare
+King Dragun	Super Rare
+A Feather of the Phoenix	Super Rare
+Deck Devastation Virus	Super Rare
+Meteor of Destruction	Rare
+Spell Absorption	Rare
+Chiron the Mage	Rare
+Ultimate Insect LV5	Rare
+Big-Tusked Mammoth	Rare
+Shadowslayer	Rare
+Brain Jacker	Rare
+Swords of Concealing Light	Rare
+Spiral Spear Strike	Rare
+Cross Counter	Rare
+Phoenix Wing Wind Blast	Rare
+Assault on GHQ	Rare
+Forced Ceasefire	Rare
+<StructRow 'data.packs'[14]>
+450
+5
+58
+7015
+7115
+0
+Elemental Hero Avian	Common
+Elemental Hero Burstinatrix	Common
+Elemental Hero Clayman	Common
+Elemental Hero Sparkman	Common
+Ancient Gear Soldier	Common
+Lost Guardian	Common
+Moai Interceptor Cannons	Common
+Dummy Golem	Common
+Mine Golem	Common
+Monk Fighter	Common
+Guardian Statue	Common
+Medusa Worm	Common
+White Ninja	Common
+Aussa the Earth Charmer	Common
+Eria the Water Charmer	Common
+Hiita the Fire Charmer	Common
+Wynn the Wind Charmer	Common
+Batteryman AA	Common
+Des Wombat	Common
+King of the Skull Servants	Common
+Gift of the Martyr	Common
+Double Attack	Common
+Battery Charger	Common
+Kaminote Blow	Common
+Doriado's Blessing	Common
+Final Ritual of the Ancients	Common
+Shifting Shadows	Common
+Impenetrable Formation	Common
+Pikeru's Second Sight	Common
+Minefield Eruption	Common
+Mispolymerization	Common
+Level Conversion Lab	Common
+Rock Bombardment	Common
+Ancient Gear Golem	Ultra Rare
+Reshef the Dark Being	Ultra Rare
+Elemental Hero Flame Wingman	Ultra Rare
+Elemental Hero Thunder Giant	Ultra Rare
+Brain Control	Super Rare
+Card of Sanctity	Super Rare
+Winged Kuriboh	Super Rare
+Ultimate Insect LV7	Super Rare
+Hieracosphinx	Super Rare
+Megarock Dragon	Super Rare
+Master Monk	Super Rare
+Ancient Gear Beast	Rare
+Millennium Scorpion	Rare
+Criosphinx	Rare
+Grave Ohja	Rare
+D.D. Survivor	Rare
+Mid Shield Gardna	Rare
+Elemental Mistress Doriado	Rare
+Legendary Black Belt	Rare
+Nitro Unit	Rare
+Hero Signal	Rare
+Kozaky's Self-Destruct Button	Rare
+Token Feastevil	Rare
+Spell-Stopping Statute	Rare
+Royal Surrender	Rare
+<StructRow 'data.packs'[15]>
+500
+5
+59
+7016
+7116
+0
+Cycroid	Common
+Patroid	Common
+Gyroid	Common
+Steamroid	Common
+Drillroid	Common
+Jetroid	Common
+Steam Gyroid	Common
+Soitsu	Common
+Mad Lobster	Common
+Jerry Beans Man	Common
+Cybernetic Cyclopean	Common
+Mechanical Hound	Common
+Cyber Archfiend	Common
+Giant Kozaky	Common
+Indomitable Fighter Lei Lei	Common
+Protective Soul Ailin	Common
+Doitsu	Common
+Des Frog	Common
+T.A.D.P.O.L.E.	Common
+Poison Draw Frog	Common
+Tyranno Infinity	Common
+Batteryman C	Common
+Ebon Magician Curran	Common
+Fusion Recovery	Common
+Dragon's Mirror	Common
+Des Croaking	Common
+Pot of Generosity	Common
+Shien's Spy	Common
+Spiritual Earth Art - Kurogane	Common
+Spiritual Water Art - Aoi	Common
+Spiritual Fire Art - Kurenai	Common
+Spiritual Wind Art - Miyabi	Common
+A Rival Appears!	Common
+Conscription	Common
+Prepare to Strike Back	Common
+UFOroid Fighter	Ultra Rare
+Cyber End Dragon	Ultra Rare
+Power Bond	Ultra Rare
+Winged Kuriboh LV10	Ultra Rare
+UFOroid	Super Rare
+Cyber Dragon	Super Rare
+Cyber Twin Dragon	Super Rare
+Skyscraper	Super Rare
+Cybernetic Magician	Super Rare
+Goblin Elite Attack Force	Super Rare
+B.E.S. Crystal Core	Super Rare
+Wroughtweiler	Rare
+Elemental Hero Bubbleman	Rare
+Transcendent Wings	Rare
+Bubble Shuffle	Rare
+Spark Blaster	Rare
+D.D.M. - Different Dimension Master	Rare
+Miracle Fusion	Rare
+System Down	Rare
+Fire Darts	Rare
+Magical Explosion	Rare
+Rising Energy	Rare
+D.D. Trap Hole	Rare
+Dimension Wall	Rare
+<StructRow 'data.packs'[16]>
+500
+5
+57
+7017
+7117
+0
+Level Modulation	Common
+Ojamuscle	Common
+Ojamagic	Common
+V-Tiger Jet	Common
+Blade Skater	Common
+Reborn Zombie	Common
+W-Wing Catapult	Common
+Elemental Hero Wildheart	Common
+Hydrogeddon	Common
+Oxygeddon	Common
+Etoile Cyber	Common
+VW-Tiger Catapult	Common
+Bonding - H2O	Common
+Chthonian Polymer	Common
+Feather Wind	Common
+Zure, Knight of Dark World	Common
+Nanobreaker	Common
+Beiige, Vanguard of Dark World	Common
+Scarr, Scout of Dark World	Common
+Familiar-Possessed - Aussa	Common
+Familiar-Possessed - Eria	Common
+Familiar-Possessed - Hiita	Common
+Familiar-Possessed - Wynn	Common
+Dark World Lightning	Common
+Boss Rush	Common
+Gateway to Dark World	Common
+The Forces of Darkness	Common
+Dark Deal	Common
+Simultaneous Loss	Common
+Weed Out	Common
+The League of Uniform Nomenclature	Common
+Roll Out!	Common
+Non-Fusion Area	Common
+Elemental Hero Shining Flare Wingman	Ultra Rare
+Elemental Hero Rampart Blaster	Ultra Rare
+Elemental Hero Tempest	Ultra Rare
+Elemental Hero Wildedge	Ultra Rare
+Elemental Hero Bladedge	Super Rare
+Water Dragon	Super Rare
+VWXYZ-Dragon Catapult Cannon	Super Rare
+Cyber Blader	Super Rare
+B.E.S. Tetran	Super Rare
+Goldd, Wu-Lord of Dark World	Super Rare
+Pot of Avarice	Super Rare
+Queen's Knight	Rare
+King's Knight	Rare
+Jack's Knight	Rare
+Chthonian Alliance	Rare
+Feather Shot	Rare
+Chthonian Blast	Rare
+Hero Barrier	Rare
+Rapid-Fire Magician	Rare
+Broww, Huntsman of Dark World	Rare
+Brron, Mad King of Dark World	Rare
+Sillva, Warlord of Dark World	Rare
+Level Limit - Area A	Rare
+Armed Changer	Rare
+<StructRow 'data.packs'[17]>
+500
+5
+58
+7018
+7118
+0
+Elemental Hero Neo Bubbleman	Common
+Hero Kid	Common
+Ancient Gear	Common
+Hero Heart	Common
+Magnet Circle LV2	Common
+Ancient Gear Drill	Common
+Photon Generator Unit	Common
+Miracle Kids	Common
+Attack Reflector Unit	Common
+Ancient Gear Cannon	Common
+Machine King Prototype	Common
+D.D. Guide	Common
+Chain Thrasher	Common
+Disciple of the Forbidden Spell	Common
+Tenkabito Shien	Common
+Parasitic Ticky	Common
+Gokipon	Common
+Silent Insect	Common
+Anteatereatingant	Common
+Saber Beetle	Common
+Beelze Frog	Common
+Malice Ascendant	Common
+Grass Phantom	Common
+Sand Moth	Common
+D.3.S. Frog	Common
+Symbol of Heritage	Common
+Trial of the Princesses	Common
+End of the World	Common
+Samsara	Common
+Next to be Lost	Common
+Generation Shift	Common
+Full Salvo	Common
+Success Probability 0%	Common
+Uria, Lord of Searing Flames	Ultra Rare
+Hamon, Lord of Striking Thunder	Ultra Rare
+Raviel, Lord of Phantasms	Ultra Rare
+Cyber Laser Dragon	Ultra Rare
+Cyber Barrier Dragon	Super Rare
+Ancient Gear Castle	Super Rare
+Damage Condenser	Super Rare
+B.E.S. Covered Core	Super Rare
+Divine Dragon - Excelion	Super Rare
+Ruin, Queen of Oblivion	Super Rare
+Demise, King of Armageddon	Super Rare
+Phantasmal Martyrs	Rare
+Cyclone Boomerang	Rare
+Proto-Cyber Dragon	Rare
+Adhesive Explosive	Rare
+Chainsaw Insect	Rare
+Doom Dozer	Rare
+Treeborn Frog	Rare
+Princess Pikeru	Rare
+Princess Curran	Rare
+Memory Crusher	Rare
+Karma Cut	Rare
+Option Hunter	Rare
+Goblin Out of the Frying Pan	Rare
+Malfunction	Rare
+<StructRow 'data.packs'[18]>
+1000
+5
+82
+7019
+7119
+0
+Garma Sword Oath	Common
+Garma Sword	Common
+Dark Magic Ritual	Common
+Alpha The Magnet Warrior	Common
+Hannibal Necromancer	Common
+Berfomet	Common
+Chimera the Flying Mythical Beast	Common
+Beta The Magnet Warrior	Common
+Insect Queen	Common
+Satellite Cannon	Common
+Dunames Dark Witch	Common
+Cyber-Tech Alligator	Common
+Gamma The Magnet Warrior	Common
+Time Machine	Common
+Negate Attack	Common
+Mesmeric Control	Common
+Graceful Dice	Common
+Skull Dice	Common
+Mind Control	Common
+Card Destruction	Common
+Waboku	Common
+Windstorm of Etaqua	Common
+Alligator's Sword Dragon	Common
+Aqua Chorus	Common
+Sebek's Blessing	Common
+Anti-Spell Fragrance	Common
+Riryoku	Common
+Sword of Dragon's Soul	Common
+Fairy King Truesdale	Common
+Rigras Leever	Common
+Soul Exchange	Common
+Exchange	Common
+Cathedral of Nobles	Common
+Foolish Burial	Common
+Mystical Beast Serket	Common
+Viser Des	Common
+De-Spell Germ Weapon	Common
+Kaiser Sea Horse	Common
+Exarion Universe	Common
+Puppet Master	Common
+Calamity of the Wicked	Common
+Rope of Spirit	Common
+Goblin Zombie	Common
+Excavation of Mage Stones	Common
+Knight's Title	Common
+Sage's Stone	Common
+Twinheaded Beast	Common
+Inferno Hammer	Common
+Infernal Flame Emperor	Common
+Hero Heyro	Common
+Magical Blast	Common
+Magical Mallet	Common
+Great Spirit	Common
+Sinister Serpent	Secret Rare
+Graceful Charity	Secret Rare
+Ring of Destruction	Ultra Rare
+Master of Dragon Soldier	Ultra Rare
+Helios Duo Megiste	Ultra Rare
+Helios Tris Megiste	Ultra Rare
+Valkyrion the Magna Warrior	Super Rare
+Slate Warrior	Super Rare
+Enchanted Arrow	Super Rare
+Gilford the Lightning	Super Rare
+D. D. Assailant	Super Rare
+Homonculus Gold	Super Rare
+The Ancient Sun Helios	Super Rare
+Kunai with Chain	Rare
+Metalmorph	Rare
+Acid Trap Hole	Rare
+Widespread Ruin	Rare
+Panther Warrior	Rare
+Magic-Arm Shield	Rare
+Vorse Raider	Rare
+Kinetic Soldier	Rare
+Toon Dark Magician Girl	Rare
+Abyss Soldier	Rare
+Emes the Infinity	Rare
+Teva	Rare
+Silent Swordsman LV7	Rare
+Magician's Unite	Rare
+Kaibaman	Rare
+Elemental Hero Madballman	Rare
+<StructRow 'data.packs'[19]>
+1000
+5
+72
+7020
+7120
+0
+Gaia The Fierce Knight	Common
+Celtic Guardian	Common
+Kuriboh	Common
+Tiger Axe	Common
+Thousand Dragon	Common
+Trial of Nightmare	Common
+The 13th Grave	Common
+Dark King of the Abyss	Common
+Turtle Tiger	Common
+Yaranzo	Common
+Kanan the Swordmistress	Common
+Takriminos	Common
+Stuffed Animal	Common
+Three-Legged Zombies	Common
+Flying Penguin	Common
+Millennium Shield	Common
+Fairy's Gift	Common
+Gate Guardian	Common
+La Jinn the Mystical Genie of the Lamp	Common
+Pendulum Machine	Common
+Launcher Spider	Common
+Sengenjin	Common
+Tri-Horned Dragon	Common
+Serpent Night Dragon	Common
+Meteor B. Dragon	Common
+Firewing Pegasus	Common
+Magician of Black Chaos	Common
+Blast Sphere	Common
+Gazelle the King of Mythical Beasts	Common
+Alligator's Sword	Common
+Garnecia Elefantis	Common
+Total Defense Shogun	Common
+Nightmare's Steelcage	Common
+Makiu	Common
+Ancient Lamp	Common
+Makyura the Destructor	Common
+Blade Knight	Common
+Hidden Soldier	Common
+Gil Garth	Common
+Monster Relief	Common
+Queen's Knight	Common
+King's Knight	Common
+Jack's Knight	Common
+Judgement of Pharaoh	Common
+Friendship	Common
+Sixth Sense	Common
+Earthbound Spirit's Invitation	Common
+Harpie's Feather Duster	Secret Rare
+Blue-Eyes Ultimate Dragon	Ultra Rare
+Reversal of Graves	Ultra Rare
+Dark Dreadroute	Ultra Rare
+Elemental Hero Neos	Ultra Rare
+Blue-Eyes White Dragon	Super Rare
+Summoned Skull	Super Rare
+Red-Eyes B. Dragon	Super Rare
+Dark Magician Girl	Super Rare
+Sorcerer of Dark Magic	Super Rare
+Dandylion	Super Rare
+Gemini Elf	Rare
+Crush Card	Rare
+Shadow Spell	Rare
+Panther Warrior	Rare
+Copycat	Rare
+Scapegoat	Rare
+Cyber Harpie Lady	Rare
+Stronghold	Rare
+Castle Gate	Rare
+Owner's Seal	Rare
+Curse of Vampire	Rare
+Union Attack	Rare
+Elemental Hero Flame Wingman	Rare
+White Horns D.	Rare
+<StructRow 'data.packs'[20]>
+500
+5
+68
+7023
+7123
+0
+Gyakutenno Megami	Common
+Goddess with the Third Eye	Common
+Weather Control	Common
+Mystical Capture Chain	Common
+Spirit of the Harp	Common
+Happy Lover	Common
+Petit Angel	Common
+Hourglass of Life	Common
+Lunar Queen Elzaim	Common
+Wing Egg Elf	Common
+Ray & Temperature	Common
+Ocubeam	Common
+Goddess of Whim	Common
+Binding Chain	Common
+Muse-A	Common
+Tenderness	Common
+Shining Friendship	Common
+Dunames Dark Witch	Common
+Kotodama	Common
+Wingweaver	Common
+Spirit of the Breeze	Common
+Dancing Fairy	Common
+Hysteric Fairy	Common
+Bio-Mage	Common
+The Forgiving Maiden	Common
+St. Joan	Common
+Soul of Purity and Light	Common
+Mudora	Common
+Kelbek	Common
+Aitsu	Common
+Koitsu	Common
+Guardian Elma	Common
+Silpheed	Common
+Mystical Shine Ball	Common
+The Agent of Creation - Venus	Common
+Mokey Mokey	Common
+Absorbing Kid from the Sky	Common
+Mokey Mokey King	Common
+Element Valkyrie	Common
+Whirlwind Prodigy	Common
+Soitsu	Common
+Protective Soul Ailin	Common
+Doitsu	Common
+Archlord Zerato	Ultra Rare
+Marshmallon	Ultra Rare
+Winged Kuriboh LV10	Ultra Rare
+Ruin, Queen of Oblivion	Ultra Rare
+Mystical Beast Serket	Super Rare
+Asura Priest	Super Rare
+Shinato, King of a Higher Plane	Super Rare
+The Agent of Judgment - Saturn	Super Rare
+The Agent of Force - Mars	Super Rare
+Winged Kuriboh	Super Rare
+Hoshiningen	Rare
+Skelengel	Rare
+Banisher of the Light	Rare
+Senju of the Thousand Hands	Rare
+Shining Angel	Rare
+Airknight Parshath	Rare
+Moisture Creature	Rare
+Shining Abyss	Rare
+Keldo	Rare
+Zolga	Rare
+Agido	Rare
+Guardian Angel Joan	Rare
+Manju of the Ten Thousand Hands	Rare
+The Agent of Wisdom - Mercury	Rare
+Watapon	Rare
+<StructRow 'data.packs'[21]>
+500
+5
+76
+7024
+7124
+0
+Baby Dragon	Common
+Winged Dragon, Guardian of the Fortress	Common
+Blackland Fire Dragon	Common
+Koumori Dragon	Common
+Curse of Dragon	Common
+Thousand Dragon	Common
+Yamatano Dragon Scroll	Common
+Darkfire Dragon	Common
+Petit Dragon	Common
+B. Skull Dragon	Common
+One-Eyed Shield Dragon	Common
+Wicked Dragon with the Ersatz Head	Common
+Parrot Dragon	Common
+Kaiser Dragon	Common
+Lesser Dragon	Common
+B. Dragon Jungle King	Common
+Fairy Dragon	Common
+Tri-Horned Dragon	Common
+Serpent Night Dragon	Common
+Mikazukinoyaiba	Common
+Meteor Dragon	Common
+Meteor B. Dragon	Common
+Ryu-Ran	Common
+Manga Ryu-Ran	Common
+Hyozanryu	Common
+Twin-Headed Behemoth	Common
+Tyrant Dragon	Common
+Spear Dragon	Common
+Spirit Ryu	Common
+The Dragon dwelling in the Cave	Common
+Lizard Soldier	Common
+Cave Dragon	Common
+Gray Wing	Common
+Troop Dragon	Common
+Luster Dragon	Common
+Kaiser Glider	Common
+Pitch-Dark Dragon	Common
+Kiryu	Common
+Luster Dragon	Common
+Crush D. Gandra	Common
+Rare Metal Dragon	Common
+Horus the Black Flame Dragon LV4	Common
+Armed Dragon LV3	Common
+Red-Eyes B. Chick	Common
+Element Dragon	Common
+Masked Dragon	Common
+Mirage Dragon	Common
+Divine Dragon Ragnarok	Common
+Rancer Dragonute	Common
+Axe Dragonute	Common
+Chaos Emperor Dragon - Envoy of the End	Secret Rare
+Blue-Eyes White Dragon	Ultra Rare
+Blue-Eyes Ultimate Dragon	Ultra Rare
+Master of Dragon Soldier	Ultra Rare
+Blue-Eyes Shining Dragon	Ultra Rare
+Armed Dragon LV10	Ultra Rare
+F.G.D.	Super Rare
+Victory D.	Super Rare
+Horus the Black Flame Dragon LV8	Super Rare
+Armed Dragon LV7	Super Rare
+Red-Eyes Darkness Dragon	Super Rare
+Dark Ruler Vandalgyon	Super Rare
+Gaia the Dragon Champion	Rare
+Red-Eyes B. Dragon	Rare
+Harpie's Pet Dragon	Rare
+Blue-Eyes Toon Dragon	Rare
+Alligator's Sword Dragon	Rare
+Fiend Skull Dragon	Rare
+Yamata Dragon	Rare
+Des Volstgalph	Rare
+Paladin of White Dragon	Rare
+Horus the Black Flame Dragon LV6	Rare
+Armed Dragon LV5	Rare
+King Dragun	Rare
+White Horns D.	Rare
+Divine Dragon - Excelion	Rare
+<StructRow 'data.packs'[22]>
+400
+5
+82
+7025
+7125
+0
+Flame Swordsman	Common
+Gaia The Fierce Knight	Common
+Celtic Guardian	Common
+Karbonala Warrior	Common
+Kojikocy	Common
+Axe Raider	Common
+Battle Warrior	Common
+Kageningen	Common
+Hero of the East	Common
+Supporter in the Shadows	Common
+Dream Clown	Common
+Dragon Statue	Common
+Monster Egg	Common
+Rhaimundos of the Red Sword	Common
+Hard Armor	Common
+M-Warrior	Common
+M-Warrior	Common
+The Judgement Hand	Common
+Mysterious Puppeteer	Common
+Armaill	Common
+Masked Clown	Common
+Eyearmor	Common
+Doron	Common
+Kagemusha of the Blue Flame	Common
+Trap Master	Common
+Fiend Sword	Common
+Skull Stalker	Common
+Wood Clown	Common
+Beautiful Headhuntress	Common
+Guardian of the Labyrinth	Common
+Vishwar Randi	Common
+Hyo	Common
+The Little Swordsman of Aile	Common
+Unknown Warrior of Fiend	Common
+Protector of the Throne	Common
+Moon Envoy	Common
+Masaki the Legendary Swordsman	Common
+Dragoness the Wicked Knight	Common
+Sonic Maid	Common
+Kanan the Swordmistress	Common
+Stuffed Animal	Common
+Wall Shadow	Common
+Swordstalker	Common
+Giltia the D. Knight	Common
+D. Human	Common
+Oscillo Hero	Common
+Greenkappa	Common
+Warrior of Tradition	Common
+Performance of Sword	Common
+Hungry Burger	Common
+Skull Guardian	Common
+Garma Sword	Common
+Swordsman of Landstar	Common
+Little-Winguard	Common
+Sword Hunter	Common
+Deepsea Warrior	Common
+Karate Man	Common
+Hayabusa Knight	Common
+Skull Mariner	Common
+Science Soldier	Common
+Black Luster Soldier	Ultra Rare
+The Last Warrior from Another Planet	Ultra Rare
+Buster Blader	Ultra Rare
+Swift Gaia the Fierce Knight	Ultra Rare
+Dimensional Warrior	Super Rare
+Gate Guardian	Super Rare
+The Fiend Megacyber	Super Rare
+Total Defense Shogun	Super Rare
+Luminous Soldier	Super Rare
+The Legendary Fisherman	Super Rare
+Judge Man	Rare
+Princess of Tsurugi	Rare
+Millennium Shield	Rare
+Armed Ninja	Rare
+Invader of the Throne	Rare
+Big Shield Gardna	Rare
+Command Knight	Rare
+Gearfried the Iron Knight	Rare
+Rocket Warrior	Rare
+Goblin Attack Force	Rare
+Amazon Archer	Rare
+Obnoxious Celtic Guard	Rare
+<StructRow 'data.packs'[23]>
+600
+5
+85
+7026
+7125
+0
+Supply	Common
+Amazoness Chain Master	Common
+Amazoness Fighter	Common
+Throwstone Unit	Common
+Ryu Senshi	Common
+Warrior Dai Grepher	Common
+The Hunter with 7 Weapons	Common
+Shadow Tamer	Common
+Dragon Manipulator	Common
+Sasuke Samurai	Common
+Dark Scorpion Burglars	Common
+Toon Goblin Attack Force	Common
+Blade Knight	Common
+Queen's Knight	Common
+King's Knight	Common
+Jack's Knight	Common
+Dark Blade	Common
+Amazoness Paladin	Common
+Amazoness Blowpiper	Common
+Cliff the Trap Remover	Common
+Mirage Knight	Common
+Blindly Loyal Goblin	Common
+Dark Scorpion - Chick the Yellow	Common
+Sasuke Samurai	Common
+Dark Scorpion - Gorg the Strong	Common
+Dark Scorpion - Meanae the Thorn	Common
+Crimson Ninja	Common
+Strike Ninja	Common
+Sasuke Samurai	Common
+Chaosrider Gustaph	Common
+Mataza the Zapper	Common
+Getsu Fuhma	Common
+Warrior of Zera	Common
+Disc Fighter	Common
+Arcane Archer of the Forest	Common
+Lady Ninja Yae	Common
+Nubian Guard	Common
+Familiar Knight	Common
+Mystic Swordsman LV2	Common
+Mystic Swordsman LV4	Common
+Ultimate Baseball Kid	Common
+Penumbral Soldier Lady	Common
+Silent Swordsman LV3	Common
+The Creator Incarnate	Common
+Sasuke Samurai	Common
+Tactical Espionage Expert	Common
+Dark Blade the Dragon Knight	Common
+Armed Samurai - Ben Kei	Common
+D.D. Survivor	Common
+Mid Shield Gardna	Common
+White Ninja	Common
+Warrior Lady of the Wasteland	Common
+Blade Skater	Common
+Hero Kid	Common
+D.D. Guide	Common
+Chain Thrasher	Common
+Disciple of the Forbidden Spell	Common
+Makyura the Destructor	Secret Rare
+Black Luster Soldier - Envoy of the Beginning	Secret Rare
+Exiled Force	Ultra Rare
+D.D. Warrior Lady	Ultra Rare
+Alkana Knight Joker	Ultra Rare
+Gilford the Legend	Ultra Rare
+Freed the Matchless General	Super Rare
+Gilford the Lightning	Super Rare
+D. D. Assailant	Super Rare
+Silent Swordsman LV7	Super Rare
+Mystic Swordsman LV6	Super Rare
+Gearfried the Swordmaster	Super Rare
+Holy Knight Ishzark	Super Rare
+Homonculus Gold	Super Rare
+Zombyra the Dark	Rare
+Amazoness Swords Woman	Rare
+Marauding Captain	Rare
+Don Zaloog	Rare
+Dark Flare Knight	Rare
+Dark Magician Knight	Rare
+Freed the Brave Wanderer	Rare
+Teva	Rare
+Maximum Six	Rare
+Ninja Grandmaster Sasuke	Rare
+Silent Swordsman LV5	Rare
+Kaibaman	Rare
+Etoile Cyber	Rare
+Cyber Blader	Rare
+<StructRow 'data.packs'[24]>
+400
+5
+67
+7027
+7127
+0
+Ryu-Kishin	Common
+Feral Imp	Common
+Horn Imp	Common
+Reaper of the Cards	Common
+King of Yamimakai	Common
+Barox	Common
+Metal Guardian	Common
+Crass Clown	Common
+Job-Change Mirror	Common
+That Which Feeds on Life	Common
+Trial of Nightmare	Common
+Witty Phantom	Common
+The Shadow Who Controls the Dark	Common
+Lord of the Lamp	Common
+Lord of Zemia	Common
+Dark King of the Abyss	Common
+Dark Prisoner	Common
+Claw Reacher	Common
+Dark Shade	Common
+Terra the Terrible	Common
+Midnight Fiend	Common
+Madjinn Gunn	Common
+Dark Titan of Terror	Common
+The Drdek	Common
+Candle of Fate	Common
+Meda Bat	Common
+Embryonic Beast	Common
+Wicked Mirror	Common
+Megirus Light	Common
+Gorgon Egg	Common
+King Fog	Common
+Mystic Clown	Common
+Bio Plant	Common
+Fiend's Mirror	Common
+Ryu-Kishin Powered	Common
+Bickuribox	Common
+Monster Eye	Common
+Soul Hunter	Common
+Dragon Seeker	Common
+Invader from Another Dimension	Common
+Wretched Ghost of the Attic	Common
+Key Mace	Common
+Hiro's Shadow Scout	Common
+Whiptail Crow	Common
+Chakra	Common
+Three-Headed Geedo	Common
+Beast of Talwar	Common
+Baron of the Fiend Sword	Common
+Man-Eating Treasure Chest	Common
+Flash Assailant	Common
+Spear Cretin	Common
+Kiseitai	Common
+Kryuel	Common
+Summoned Skull	Ultra Rare
+Sangan	Ultra Rare
+Zoa	Ultra Rare
+Kuriboh	Super Rare
+Mask of Darkness	Super Rare
+Zera The Mant	Super Rare
+Toon Summoned Skull	Super Rare
+Berfomet	Super Rare
+Castle of Dark Illusions	Rare
+Versago the Destroyer	Rare
+La Jinn the Mystical Genie of the Lamp	Rare
+The Bistro Butcher	Rare
+Wall of Illusion	Rare
+Giant Germ	Rare
+<StructRow 'data.packs'[25]>
+600
+5
+87
+7028
+7127
+0
+Jowls of Dark Demise	Common
+Grand Tiki Elder	Common
+Melchid the Four-Face Beast	Common
+Nuvia the Wicked	Common
+Souls of the Forgotten	Common
+Dokuroyaiba	Common
+The Portrait's Secret	Common
+The Gross Ghost of Fled Dreams	Common
+Headless Knight	Common
+Earthbound Spirit	Common
+The Earl of Demise	Common
+Viser Des	Common
+Byser Shock	Common
+Dark Balter the Terrible	Common
+Lesser Fiend	Common
+Possessed Dark Soul	Common
+Winged Minion	Common
+Ryu-Kishin Clown	Common
+Twin-Headed Wolf	Common
+Opticlops	Common
+Legendary Fiend	Common
+Gil Garth	Common
+Dark Jeroid	Common
+Giant Orc	Common
+Second Goblin	Common
+Ultimate Obedient Fiend	Common
+Guardian Baou	Common
+Maju Garzett	Common
+D. D. Trainer	Common
+Archfiend Soldier	Common
+Great Maju Garzett	Common
+Mefist the Infernal General	Common
+Vilepawn Archfiend	Common
+Shadowknight Archfiend	Common
+Darkbishop Archfiend	Common
+Desrook Archfiend	Common
+Infernalqueen Archfiend	Common
+Chaos Necromancer	Common
+Gren Maju Da Eiza	Common
+Inferno Hammer	Common
+Goblin King	Common
+Mazera DeVille	Common
+Kozaky	Common
+Theban Nightmare	Common
+Aswan Apparition	Common
+Emissary of the Afterlife	Common
+Goblin Calligrapher	Common
+Dark Mimic LV1	Common
+Dark Mimic LV3	Common
+Element Soldier	Common
+Element Doom	Common
+Shadowslayer	Common
+Brain Jacker	Common
+Cyber Archfiend	Common
+Giant Kozaky	Common
+Zure, Knight of Dark World	Common
+Beiige, Vanguard of Dark World	Common
+Broww, Huntsman of Dark World	Common
+Brron, Mad King of Dark World	Common
+Sillva, Warlord of Dark World	Common
+Scarr, Scout of Dark World	Common
+Memory Crusher	Common
+Yata-Garasu	Secret Rare
+Protector of the Sanctuary	Ultra Rare
+Dark Dreadroute	Ultra Rare
+Raviel, Lord of Phantasms	Ultra Rare
+Demise, King of Armageddon	Ultra Rare
+Skull Archfiend of Lightning	Super Rare
+Dark Master - Zorc	Super Rare
+Invader of Darkness	Super Rare
+Night Assailant	Super Rare
+The End of Anubis	Super Rare
+Reshef the Dark Being	Super Rare
+Goldd, Wu-Lord of Dark World	Super Rare
+Slate Warrior	Rare
+Archfiend of Gilfer	Rare
+The Masked Beast	Rare
+Marie the Fallen One	Rare
+Dark Necrofear	Rare
+Dark Ruler Ha Des	Rare
+Puppet Master	Rare
+Newdoria	Rare
+Helpoemer	Rare
+Lava Golem	Rare
+Terrorking Archfiend	Rare
+Skull Descovery Knight	Rare
+Goblin Elite Attack Force	Rare
+<StructRow 'data.packs'[26]>
+400
+5
+53
+7029
+7129
+0
+Ground Attacker Bugroth	Common
+Holograh	Common
+Cyber Soldier of Darkworld	Common
+Labyrinth Tank	Common
+Pendulum Machine	Common
+Launcher Spider	Common
+Yaiba Robo	Common
+Metal Dragon	Common
+Giga-Tech Wolf	Common
+Shovel Crusher	Common
+Blocker	Common
+Golgoil	Common
+Cyber Commander	Common
+Jinzo	Common
+Guardian of the Throne Room	Common
+Brave Scizzar	Common
+Dharma Cannon	Common
+Steel Ogre Grotto	Common
+Mechanical Snail	Common
+Disk Magician	Common
+Royal Guard	Common
+Steel Ogre Grotto	Common
+Cyber Falcon	Common
+Oni Tank T-34	Common
+Overdrive	Common
+Robotic Knight	Common
+Robolady	Common
+Roboyarou	Common
+Gadget Soldier	Common
+Gradius	Common
+Gradius' Option	Common
+Super Robolady	Common
+Super Roboyarou	Common
+Metalzoa	Ultra Rare
+Red-Eyes Black Metal Dragon	Ultra Rare
+Jinzo	Ultra Rare
+Reflect Bounder	Ultra Rare
+Cyber-Stein	Super Rare
+Barrel Dragon	Super Rare
+Gear Golem the Moving Fortress	Super Rare
+Satellite Cannon	Super Rare
+Cyber-Tech Alligator	Super Rare
+Machine King	Rare
+Mechanicalchaser	Rare
+Cannon Soldier	Rare
+Slot Machine	Rare
+Blast Sphere	Rare
+Cyber Raider	Rare
+UFO Turtle	Rare
+Kinetic Soldier	Rare
+Timeater	Rare
+Sonic Jammer	Rare
+Toon Cannon Soldier	Rare
+<StructRow 'data.packs'[27]>
+600
+5
+68
+7030
+7129
+0
+Inpachi	Common
+Y-Dragon Head	Common
+Z-Metal Tank	Common
+Drillago	Common
+Helping Robo For Combat	Common
+Dimension Jar	Common
+Roulette Barrel	Common
+Bowganian	Common
+Battle Footballer	Common
+Acrobat Monkey	Common
+Perfect Machine King	Common
+D. D. Scout Plane	Common
+Amphibious Bugroth MK-3	Common
+KA-2 Des Scissors	Common
+Needle Burrower	Common
+Woodborg Inpachi	Common
+Mighty Guard	Common
+Bokoichi the Freightening Car	Common
+Big Core	Common
+Dekoichi the Battlechanted Locomotive	Common
+A-Team: Trap Disposal Unit	Common
+Mecha-Dog Marron	Common
+Ancient Gear Beast	Common
+Ancient Gear Soldier	Common
+Cycroid	Common
+Patroid	Common
+Gyroid	Common
+Steamroid	Common
+Drillroid	Common
+Jetroid	Common
+Wroughtweiler	Common
+Steam Gyroid	Common
+UFOroid Fighter	Common
+Mechanical Hound	Common
+B.E.S. Crystal Core	Common
+V-Tiger Jet	Common
+W-Wing Catapult	Common
+B.E.S. Tetran	Common
+Nanobreaker	Common
+Ancient Gear	Common
+Ancient Gear Cannon	Common
+Adhesive Explosive	Common
+Machine King Prototype	Common
+B.E.S. Covered Core	Common
+XYZ-Dragon Cannon	Ultra Rare
+Ancient Gear Golem	Ultra Rare
+Cyber Twin Dragon	Ultra Rare
+Cyber End Dragon	Ultra Rare
+XY-Dragon Cannon	Super Rare
+XZ-Tank Cannon	Super Rare
+YZ-Tank Dragon	Super Rare
+Emes the Infinity	Super Rare
+VWXYZ-Dragon Catapult Cannon	Super Rare
+Cyber Barrier Dragon	Super Rare
+Cyber Laser Dragon	Super Rare
+X-Head Cannon	Rare
+Spell Canceller	Rare
+Blowback Dragon	Rare
+Green Gadget	Rare
+Red Gadget	Rare
+Yellow Gadget	Rare
+Heavy Mech Support Platform	Rare
+Fusilier Dragon, the Dual-Mode Beast	Rare
+Gatling Dragon	Rare
+UFOroid	Rare
+Cyber Dragon	Rare
+VW-Tiger Catapult	Rare
+Proto-Cyber Dragon	Rare
+<StructRow 'data.packs'[28]>
+400
+5
+63
+7031
+7131
+0
+Saggi the Dark Clown	Common
+Illusionist Faceless Mage	Common
+Rogue Doll	Common
+Curtain of the Dark Ones	Common
+White Magical Hat	Common
+Kamionwizard	Common
+Nemuriko	Common
+Flame Manipulator	Common
+Necrolancer the Timelord	Common
+Djinn the Watcher of the Wind	Common
+The Bewitching Phantom Thief	Common
+Hurricail	Common
+Phantom Dewan	Common
+Lucky Trinket	Common
+Genin	Common
+Akakieisu	Common
+Aqua Madoor	Common
+Dryad	Common
+Masked Sorcerer	Common
+Fairywitch	Common
+Ancient Sorcerer	Common
+Sectarian of Secrets	Common
+Tao the Chanter	Common
+Fairy's Gift	Common
+Ancient Elf	Common
+Boo Koo	Common
+Maha Vailo	Common
+Musician King	Common
+Eldeen	Common
+Dark Elf	Common
+Lady of Faith	Common
+Witch's Apprentice	Common
+Maiden of the Moonlight	Common
+Relinquished	Common
+Thousand-Eyes Idol	Common
+Neo the Magic Swordsman	Common
+Sorcerer of the Doomed	Common
+The Illusory Gentleman	Common
+Witch of the Black Forest	Secret Rare
+Dark Magician	Ultra Rare
+Thousand-Eyes Restrict	Ultra Rare
+Injection Fairy Lily	Ultra Rare
+Dark Sage	Ultra Rare
+Time Wizard	Super Rare
+Exodia the Forbidden One	Super Rare
+Magician of Faith	Super Rare
+Magician of Black Chaos	Super Rare
+Hannibal Necromancer	Super Rare
+Dark Magician Girl	Super Rare
+Dark Magician	Super Rare
+Mystical Elf	Rare
+Right Leg of the Forbidden One	Rare
+Left Leg of the Forbidden One	Rare
+Right Arm of the Forbidden One	Rare
+Left Arm of the Forbidden One	Rare
+Kazejin	Rare
+Gemini Elf	Rare
+Cosmo Queen	Rare
+Lord of D.	Rare
+Copycat	Rare
+The Unhappy Maiden	Rare
+Ceremonial Bell	Rare
+Ancient Lamp	Rare
+<StructRow 'data.packs'[29]>
+600
+5
+70
+7032
+7131
+0
+Kycoo the Ghost Destroyer	Common
+Frontier Wiseman	Common
+Otohime	Common
+Toon Masked Sorcerer	Common
+Gravekeeper's Spy	Common
+Gravekeeper's Curse	Common
+Gravekeeper's Guard	Common
+Gravekeeper's Cannonholder	Common
+Gravekeeper's Assailant	Common
+A Man with Wdjat	Common
+Chaos Command Magician	Common
+Magical Marionette	Common
+Magical Plant Mandragola	Common
+Arsenal Summoner	Common
+Legendary Flame Lord	Common
+Witch Doctor of Chaos	Common
+Sealmaster Meisei	Common
+The Unhappy Girl	Common
+White Magician Pikeru	Common
+Sand Gambler	Common
+Spirit Caller	Common
+Emissary of the Oasis	Common
+Peten the Dark Clown	Common
+Neo Aqua Madoor	Common
+Mind on Air	Common
+Sanwitch	Common
+Element Magician	Common
+Hand of Nephthys	Common
+Aussa the Earth Charmer	Common
+Eria the Water Charmer	Common
+Hiita the Fire Charmer	Common
+Wynn the Wind Charmer	Common
+Summon Priest	Common
+Cybernetic Magician	Common
+Ebon Magician Curran	Common
+D.D.M. - Different Dimension Master	Common
+Familiar-Possessed - Aussa	Common
+Familiar-Possessed - Eria	Common
+Familiar-Possessed - Hiita	Common
+Familiar-Possessed - Wynn	Common
+Mythical Beast Cerberus	Common
+Princess Pikeru	Common
+Princess Curran	Common
+Magical Scientist	Secret Rare
+Dark Paladin	Ultra Rare
+Breaker the Magical Warrior	Ultra Rare
+Tsukuyomi	Ultra Rare
+Chaos Sorcerer	Ultra Rare
+Dark Eradicator Warlock	Ultra Rare
+Exodia Necross	Super Rare
+Dark Magician of Chaos	Super Rare
+Sorcerer of Dark Magic	Super Rare
+The Tricky	Super Rare
+Silent Magician LV4	Super Rare
+Silent Magician LV8	Super Rare
+Elemental Mistress Doriado	Super Rare
+Rapid-Fire Magician	Super Rare
+Jowgen the Spiritualist	Rare
+Summoner of Illusions	Rare
+Great Dezard	Rare
+Toon Dark Magician Girl	Rare
+Toon Gemini Elf	Rare
+Gravekeeper's Spear Soldier	Rare
+Skilled White Magician	Rare
+Skilled Dark Magician	Rare
+Apprentice Magician	Rare
+Old Vindictive Magician	Rare
+Royal Magical Library	Rare
+Magician's Valkyrie	Rare
+Blast Magician	Rare
+<StructRow 'data.packs'[30]>
+500
+5
+66
+7033
+7133
+0
+Skull Servant	Common
+Zombie Warrior	Common
+The Snake Hair	Common
+Armored Zombie	Common
+Dragon Zombie	Common
+Clown Zombie	Common
+Graveyard and the Hand of Invitation	Common
+The 13th Grave	Common
+Fiend's Hand	Common
+Blue-Eyed Silver Zombie	Common
+Temple of Skulls	Common
+Dokuroizo the Grim Reaper	Common
+Fire Reaper	Common
+Phantom Ghost	Common
+Flame Ghost	Common
+Wood Remains	Common
+Dark Assailant	Common
+Yaranzo	Common
+Three-Legged Zombies	Common
+Magical Ghost	Common
+Corroding Shark	Common
+Skelgon	Common
+The Wandering Doomed	Common
+Great Mammoth of Goldfine	Common
+Ghoul with an Appetite	Common
+Dokurorider	Common
+Patrician of Darkness	Common
+Red-Moon Baby	Common
+Poison Mummy	Common
+Royal Keeper	Common
+Wandering Mummy	Common
+Giant Axe Mummy	Common
+Des Lacooda	Common
+Master Kyonshee	Common
+Goblin Zombie	Common
+Decayed Commander	Common
+Zombie Tiger	Common
+Chopman the Desperate Outlaw	Common
+Soul-Absorbing Bone Tower	Common
+The Kick Man	Common
+Return Zombie	Common
+Pharaoh's Servant	Common
+Pharaonic Protector	Common
+Regenerating Mummy	Common
+Reborn Zombie	Common
+Malice Ascendant	Common
+Vampire Lord	Ultra Rare
+Fushioh Richie	Ultra Rare
+Spirit of the Pharaoh	Ultra Rare
+Vampire Genesis	Ultra Rare
+Despair from the Dark	Super Rare
+Fear from the Dark	Super Rare
+Ryu Kokki	Super Rare
+Vampire Lady	Super Rare
+Curse of Vampire	Super Rare
+Blood Sucker	Super Rare
+Pumpking the King of Ghosts	Rare
+Shadow Ghoul	Rare
+Dark Dust Spirit	Rare
+Pyramid Turtle	Rare
+Spirit Reaper	Rare
+Nightmare Horse	Rare
+Reaper on the Nightmare	Rare
+Berserk Dragon	Rare
+Double Coston	Rare
+King of the Skull Servants	Rare
+<StructRow 'data.packs'[31]>
+800
+5
+55
+7035
+7135
+0
+Manga Ryu-Ran	Common
+Maharaghi	Common
+Inaba White Rabbit	Common
+Great Long Nose	Common
+Otohime	Common
+Hino-Kagu-Tsuchi	Common
+Asura Priest	Common
+Fushi No Tori	Common
+Fengsheng Mirror	Common
+Spiritual Energy Settle Machine	Common
+Toon Masked Sorcerer	Common
+X-Head Cannon	Common
+Z-Metal Tank	Common
+Pitch-Dark Dragon	Common
+Kiryu	Common
+Decayed Commander	Common
+Zombie Tiger	Common
+Giant Orc	Common
+Second Goblin	Common
+Vampire Orchis	Common
+Des Dendle	Common
+Burning Beast	Common
+Freezing Beast	Common
+Combination Attack	Common
+Formation Union	Common
+Aitsu	Common
+Koitsu	Common
+Metallizing Parasite - Lunatite	Common
+Soitsu	Common
+Protective Soul Ailin	Common
+Doitsu	Common
+V-Tiger Jet	Common
+W-Wing Catapult	Common
+Yata-Garasu	Secret Rare
+Blue-Eyes Toon Dragon	Ultra Rare
+Toon Dark Magician Girl	Ultra Rare
+Tsukuyomi	Ultra Rare
+Toon Summoned Skull	Super Rare
+Toon World	Super Rare
+Susa Soldier	Super Rare
+Yamata Dragon	Super Rare
+Heavy Mech Support Platform	Super Rare
+Toon Mermaid	Rare
+Dark Dust Spirit	Rare
+Toon Defense	Rare
+Toon Table of Contents	Rare
+Toon Gemini Elf	Rare
+Toon Cannon Soldier	Rare
+Toon Goblin Attack Force	Rare
+Y-Dragon Head	Rare
+Dark Blade	Rare
+Frontline Base	Rare
+Corpse of Yata-Garasu	Rare
+Indomitable Fighter Lei Lei	Rare
+Roll Out!	Rare
+<StructRow 'data.packs'[32]>
+1000
+5
+62
+7036
+7136
+0
+Polymerization	Common
+Fusion Sage	Common
+Ultimate Insect LV1	Common
+Horus the Black Flame Dragon LV4	Common
+Horus the Black Flame Dragon LV6	Common
+Dark Mimic LV1	Common
+Dark Mimic LV3	Common
+Mystic Swordsman LV2	Common
+Mystic Swordsman LV4	Common
+Armed Dragon LV3	Common
+Level Up!	Common
+The Graveyard in the Fourth Dimension	Common
+Silent Swordsman LV3	Common
+Ultimate Insect LV3	Common
+Elemental Hero Avian	Common
+Elemental Hero Burstinatrix	Common
+Elemental Hero Clayman	Common
+Elemental Hero Sparkman	Common
+Hero Signal	Common
+Wroughtweiler	Common
+Elemental Hero Bubbleman	Common
+Transcendent Wings	Common
+Bubble Shuffle	Common
+Spark Blaster	Common
+Level Modulation	Common
+Elemental Hero Bladedge	Common
+Feather Shot	Common
+Hero Barrier	Common
+Feather Wind	Common
+Burst Return	Common
+Bubble Blaster	Common
+Bubble Illusion	Common
+Clay Charge	Common
+Elemental Hero Neo Bubbleman	Common
+Hero Heart	Common
+Cyclone Boomerang	Common
+Horus the Black Flame Dragon LV8	Ultra Rare
+Elemental Hero Shining Flare Wingman	Ultra Rare
+Armed Dragon LV10	Ultra Rare
+Elemental Hero Erikshieler	Ultra Rare
+Elemental Hero Neos	Ultra Rare
+Armed Dragon LV7	Super Rare
+Silent Swordsman LV7	Super Rare
+Silent Magician LV8	Super Rare
+Mystic Swordsman LV6	Super Rare
+Elemental Hero Flame Wingman	Super Rare
+Elemental Hero Thunder Giant	Super Rare
+Winged Kuriboh LV10	Super Rare
+Elemental Hero Necroshade	Super Rare
+Armed Dragon LV5	Rare
+Silent Swordsman LV5	Rare
+Silent Magician LV4	Rare
+Ultimate Insect LV5	Rare
+Ultimate Insect LV7	Rare
+Skyscraper	Rare
+Miracle Fusion	Rare
+Elemental Hero Wildheart	Rare
+Elemental Hero Rampart Blaster	Rare
+Elemental Hero Tempest	Rare
+Elemental Hero Wildedge	Rare
+Elemental Hero Madballman	Rare
+Elemental Hero Steam Healer	Rare
+<StructRow 'data.packs'[33]>
+450
+3
+71
+7037
+7137
+0
+Castle of Dark Illusions	Common
+Reaper of the Cards	Common
+Trap Master	Common
+Princess of Tsurugi	Common
+The Immortal of Thunder	Common
+Armed Ninja	Common
+Needle Worm	Common
+Greenkappa	Common
+Morphing Jar	Common
+Hiro's Shadow Scout	Common
+Invader of the Throne	Common
+Parasite Paracide	Common
+Spear Cretin	Common
+Jowls of Dark Demise	Common
+Rigras Leever	Common
+Sonic Jammer	Common
+Bombardment Beetle	Common
+4-Starred Ladybug of Doom	Common
+Tornado Bird	Common
+Shadow Tamer	Common
+Dragon Manipulator	Common
+Des Feral Imp	Common
+Poison Mummy	Common
+Cobra Jar	Common
+Dimension Jar	Common
+Magical Plant Mandragola	Common
+Magical Merchant	Common
+Arsenal Summoner	Common
+Crimson Ninja	Common
+Gale Lizard	Common
+Witch Doctor of Chaos	Common
+Desertapir	Common
+Spirit Caller	Common
+Soul Reversal	Common
+Dark Mimic LV1	Common
+Rafflesia Seduction	Common
+Nobleman-Eater Bug	Common
+Hade-Hane	Common
+Dekoichi the Battlechanted Locomotive	Common
+Brain Jacker	Common
+Dummy Golem	Common
+White Ninja	Common
+Aussa the Earth Charmer	Common
+Eria the Water Charmer	Common
+Hiita the Fire Charmer	Common
+Wynn the Wind Charmer	Common
+Fiber Jar	Secret Rare
+Cyber Jar	Ultra Rare
+Morphing Jar	Ultra Rare
+Slate Warrior	Ultra Rare
+Night Assailant	Ultra Rare
+Mask of Darkness	Super Rare
+Magician of Faith	Super Rare
+Penguin Soldier	Super Rare
+Nobleman of Crossout	Super Rare
+Dice Jar	Super Rare
+Des Koala	Super Rare
+Man-Eater Bug	Rare
+Hane-Hane	Rare
+Bubonic Vermin	Rare
+Summoner of Illusions	Rare
+Supply	Rare
+Royal Command	Rare
+Blade Knight	Rare
+Gravekeeper's Spy	Rare
+Gravekeeper's Guard	Rare
+A Cat of Ill Omen	Rare
+An Owl of Luck	Rare
+Old Vindictive Magician	Rare
+Iron Blacksmith Kotetsu	Rare
+Harpie Lady 2	Rare
+<StructRow 'data.packs'[34]>
+300
+5
+56
+7038
+7138
+0
+Mysterious Puppeteer	Common
+Mooyan Curry	Common
+Red Medicine	Common
+Goblin's Secret Remedy	Common
+Soul of the Pure	Common
+The Immortal of Thunder	Common
+Griggle	Common
+Bad Reaction to Simochi	Common
+Numinous Healer	Common
+Kiseitai	Common
+Gift of The Mystical Elf	Common
+The Eye of Truth	Common
+Sebek's Blessing	Common
+Rain of Mercy	Common
+Spirit of the Breeze	Common
+Dancing Fairy	Common
+Cure Mermaid	Common
+Hysteric Fairy	Common
+Dark Magician's Tome of Black Magic	Common
+Life Absorbing Machine	Common
+Fushi No Tori	Common
+Nutrient Z	Common
+Spell Absorption	Common
+The Spell Absorbing Life	Common
+Token Thanksgiving	Common
+Altar for Tribute	Common
+Burning Algae	Common
+Gryphon's Feather Duster	Common
+Goblin Thief	Common
+Draining Shield	Common
+Absorbing Kid from the Sky	Common
+Elephant Statue of Blessing	Common
+Option Hunter	Common
+Upstart Goblin	Ultra Rare
+Snatch Steal	Ultra Rare
+Emergency Provisions	Ultra Rare
+Elemental Hero Steam Healer	Ultra Rare
+Fire Princess	Super Rare
+Marie the Fallen One	Super Rare
+Cestus of Dagla	Super Rare
+Zolga	Super Rare
+Poison of the Old Man	Super Rare
+Granadora	Super Rare
+Dian Keto the Cure Master	Rare
+Skull-Mark Ladybug	Rare
+Nimble Momonga	Rare
+Enchanted Javelin	Rare
+Solemn Wishes	Rare
+Soul Taker	Rare
+Soul Absorption	Rare
+Guardian Angel Joan	Rare
+White Magician Pikeru	Rare
+Mystik Wok	Rare
+7	Rare
+Brain Jacker	Rare
+Princess Pikeru	Rare
+<StructRow 'data.packs'[35]>
+600
+3
+86
+7039
+7139
+0
+Larvae Moth	Common
+Elegant Egotist	Common
+Super War-Lion	Common
+Magical Labyrinth	Common
+Javelin Beetle	Common
+Fortress Whale	Common
+Dokurorider	Common
+Chimera the Flying Mythical Beast	Common
+Pinch Hopper	Common
+The Flute of Summoning Dragon	Common
+Dark Magic Curtain	Common
+Polymerization	Common
+Monster Reborn	Common
+Last Will	Common
+Giant Rat	Common
+UFO Turtle	Common
+Spear Cretin	Common
+Shining Angel	Common
+Mother Grizzly	Common
+Flying Kamakiri	Common
+Mystic Tomato	Common
+Serpentine Princess	Common
+Revival Jam	Common
+Multiplication of Ants	Common
+De-Fusion	Common
+Jam Breeding Machine	Common
+Insect Imitation	Common
+Red-Moon Baby	Common
+Embodiment of Apophis	Common
+Soul of Purity and Light	Common
+Spirit of Flames	Common
+Aqua Spirit	Common
+The Rock Spirit	Common
+Garuda the Wind Spirit	Common
+Gilasaurus	Common
+Troop Dragon	Common
+Agido	Common
+Silent Fiend	Common
+Gradius' Option	Common
+Statue of the Wicked	Common
+Puppet Master	Common
+Lord Poison	Common
+Hidden Soldier	Common
+Monster Relief	Common
+Machine Duplication	Common
+Gravekeeper's Spy	Common
+Cobra Jar	Common
+Rite of Spirit	Common
+Y-Dragon Head	Common
+Z-Metal Tank	Common
+Rope of Spirit	Common
+King's Knight	Common
+Lekunga	Common
+Pitch-Dark Dragon	Common
+Kiryu	Common
+Decayed Commander	Common
+Zombie Tiger	Common
+Second Goblin	Common
+Vampire Orchis	Common
+Des Dendle	Common
+Burning Beast	Common
+Freezing Beast	Common
+Scapegoat	Ultra Rare
+Morphing Jar	Ultra Rare
+Call of the Haunted	Ultra Rare
+Metamorphosis	Ultra Rare
+The Last Warrior from Another Planet	Super Rare
+Cyber Jar	Super Rare
+Dark Necrofear	Super Rare
+Dark Sage	Super Rare
+Marauding Captain	Super Rare
+Fushioh Richie	Super Rare
+Lava Golem	Super Rare
+Great Moth	Rare
+Harpie Lady Sisters	Rare
+Perfectly Ultimate Great Moth	Rare
+Cyber-Stein	Rare
+Insect Queen	Rare
+Giant Germ	Rare
+Nimble Momonga	Rare
+Bubonic Vermin	Rare
+Ancient Lamp	Rare
+Summoner of Illusions	Rare
+Rope of Life	Rare
+Great Dezard	Rare
+Pyramid Turtle	Rare
+<StructRow 'data.packs'[36]>
+800
+3
+85
+7040
+7139
+0
+Frontline Base	Common
+Tribute Doll	Common
+Formation Union	Common
+Fiend's Sanctuary	Common
+Koitsu	Common
+Miracle Restoring	Common
+Guardian Elma	Common
+Guardian Ceal	Common
+Guardian Grarl	Common
+Guardian Baou	Common
+Guardian Kay'est	Common
+Guardian Tryce	Common
+A Deal with Dark Ruler	Common
+Contract with Exodia	Common
+Ojama Trio	Common
+Magical Dimension	Common
+Knight's Title	Common
+Sage's Stone	Common
+Desrook Archfiend	Common
+Metallizing Parasite - Lunatite	Common
+Mustering of the Dark Scorpions	Common
+Archfiend's Roar	Common
+D. D. Scout Plane	Common
+Inferno	Common
+Fenrir	Common
+Gigantes	Common
+Silpheed	Common
+Dimension Distortion	Common
+The Thing in the Crater	Common
+Don Turtle	Common
+Dimension Fusion	Common
+Dedication through Light and Darkness	Common
+Ultra Evolution Pill	Common
+A Hero Emerges	Common
+Skull Zoma	Common
+Monster Gate	Common
+Ninjitsu Art of Transformation	Common
+Ghost Knight of Jackal	Common
+Spirit Caller	Common
+Enchanting Fitting Room	Common
+The First Sarcophagus	Common
+Human-Wave Tactics	Common
+Soul Resurrection	Common
+Return from the Different Dimension	Common
+Familiar Knight	Common
+Peten the Dark Clown	Common
+Ultimate Insect LV1	Common
+Horus the Black Flame Dragon LV4	Common
+Dark Mimic LV1	Common
+Mystic Swordsman LV2	Common
+Mystic Swordsman LV4	Common
+Armed Dragon LV3	Common
+Howling Insect	Common
+Masked Dragon	Common
+Level Up!	Common
+Two-Man Cell Battle	Common
+Big Wave Small Wave	Common
+Magical Scientist	Secret Rare
+Black Luster Soldier - Envoy of the Beginning	Secret Rare
+Chaos Emperor Dragon - Envoy of the End	Secret Rare
+Chaos Sorcerer	Ultra Rare
+Spirit of the Pharaoh	Ultra Rare
+Blue-Eyes Shining Dragon	Ultra Rare
+Sorcerer of Dark Magic	Ultra Rare
+Paladin of White Dragon	Super Rare
+Metal Reflect Slime	Super Rare
+Manticore of Darkness	Super Rare
+Andro Sphinx	Super Rare
+Sphinx Teleia	Super Rare
+Theinen the Great Sphinx	Super Rare
+The Tricky	Super Rare
+Skilled White Magician	Rare
+Skilled Dark Magician	Rare
+Dark Flare Knight	Rare
+Despair from the Dark	Rare
+Fear from the Dark	Rare
+Dark Magician Knight	Rare
+Stray Lambs	Rare
+The Agent of Creation - Venus	Rare
+Watapon	Rare
+Horus the Black Flame Dragon LV6	Rare
+Armed Dragon LV5	Rare
+Red-Eyes B. Chick	Rare
+Stronghold	Rare
+Tricky's Magic 4	Rare
+<StructRow 'data.packs'[37]>
+1000
+3
+93
+7041
+7139
+0
+Silent Swordsman LV3	Common
+Silent Magician LV4	Common
+Ultimate Insect LV3	Common
+Fox Fire	Common
+Mokey Mokey King	Common
+Ultimate Insect LV5	Common
+Hyena	Common
+The Light - Hex-Sealed Fusion	Common
+The Dark - Hex-Sealed Fusion	Common
+The Earth - Hex-Sealed Fusion	Common
+Rescue Cat	Common
+Release Restraint	Common
+Centrifugal Field	Common
+Beast Soul Swap	Common
+Curse of Vampire	Common
+Master Monk	Common
+King of the Skull Servants	Common
+Battery Charger	Common
+Hero Signal	Common
+Elemental Hero Bubbleman	Common
+Summon Priest	Common
+Transcendent Wings	Common
+Bubble Shuffle	Common
+Protective Soul Ailin	Common
+Doitsu	Common
+Des Frog	Common
+D.D.M. - Different Dimension Master	Common
+Dragon's Mirror	Common
+Spiritual Earth Art - Kurogane	Common
+A Rival Appears!	Common
+Conscription	Common
+Warrior Lady of the Wasteland	Common
+Level Modulation	Common
+W-Wing Catapult	Common
+Bonding - H2O	Common
+Beiige, Vanguard of Dark World	Common
+Sillva, Warlord of Dark World	Common
+Familiar-Possessed - Aussa	Common
+Familiar-Possessed - Eria	Common
+Familiar-Possessed - Hiita	Common
+Familiar-Possessed - Wynn	Common
+Boss Rush	Common
+Gateway to Dark World	Common
+The League of Uniform Nomenclature	Common
+Inferno Reckless Summon	Common
+Elemental Hero Neo Bubbleman	Common
+Hero Kid	Common
+Ancient Gear	Common
+Magnet Circle LV2	Common
+Phantasmal Martyrs	Common
+Photon Generator Unit	Common
+Attack Reflector Unit	Common
+Damage Condenser	Common
+Anteatereatingant	Common
+Doom Dozer	Common
+Treeborn Frog	Common
+Princess Pikeru	Common
+Princess Curran	Common
+Trial of the Princesses	Common
+The Flute of Summoning Kuriboh	Common
+Uria, Lord of Searing Flames	Secret Rare
+Hamon, Lord of Striking Thunder	Secret Rare
+Raviel, Lord of Phantasms	Secret Rare
+Sacred Phoenix of Nephthys	Ultra Rare
+Dark Ruler Vandalgyon	Ultra Rare
+Cyber Barrier Dragon	Ultra Rare
+Cyber Laser Dragon	Ultra Rare
+The Creator	Super Rare
+Red-Eyes Darkness Dragon	Super Rare
+Vampire Genesis	Super Rare
+Ocean Dragon Lord - Neo-Daedalus	Super Rare
+Cyber Dragon	Super Rare
+Power Bond	Super Rare
+Dark Eradicator Warlock	Super Rare
+Guardian Exode	Super Rare
+Helios Duo Megiste	Super Rare
+Helios Tris Megiste	Super Rare
+Dandylion	Super Rare
+The Blockman	Rare
+Silent Swordsman LV5	Rare
+Magician's Circle	Rare
+The Creator Incarnate	Rare
+Hand of Nephthys	Rare
+Gearfried the Swordmaster	Rare
+King Dragun	Rare
+Kaibaman	Rare
+UFOroid	Rare
+Winged Kuriboh LV10	Rare
+Miracle Fusion	Rare
+Hydrogeddon	Rare
+Water Dragon	Rare
+Goldd, Wu-Lord of Dark World	Rare
+Sand Moth	Rare
+<StructRow 'data.packs'[38]>
+400
+3
+74
+7042
+7142
+0
+Insect Armor with Laser Cannon	Common
+Black Pendant	Common
+Horn of Light	Common
+Horn of the Unicorn	Common
+Malevolent Nuzzler	Common
+Magical Labyrinth	Common
+Salamandra	Common
+Bright Castle	Common
+Amplifier	Common
+Sword of Deep-Seated	Common
+Germ Infection	Common
+Ring of Magnetism	Common
+Stim-Pack	Common
+Sword of Dragon's Soul	Common
+Mask of the Accursed	Common
+Mask of Brutality	Common
+Lightning Blade	Common
+Scroll of Bewitchment	Common
+Dark Magician's Tome of Black Magic	Common
+Cyclon Laser	Common
+Cestus of Dagla	Common
+Heart of Clear Water	Common
+Fusion Sword Murasame Blade	Common
+Smoke Grenade of the Thief	Common
+Buster Rancher	Common
+Demotion	Common
+Guardian Elma	Common
+Shooting Star Bow - Ceal	Common
+Gravity Axe - Grarl	Common
+Rod of Silence - Kay'est	Common
+Rod of the Mind's Eye	Common
+Arsenal Robber	Common
+Falling Down	Common
+Fuhma Shuriken	Common
+Armor Break	Common
+Sword of the Soul-Eater	Common
+Fusion Weapon	Common
+Ritual Weapon	Common
+Necklace of Command	Common
+Flint	Common
+Ballista of Rampart Smashing	Common
+Legendary Black Belt	Common
+Nitro Unit	Common
+Spark Blaster	Common
+Chthonian Alliance	Common
+Armed Changer	Common
+Bubble Blaster	Common
+Cyclone Boomerang	Common
+Symbol of Heritage	Common
+Trial of the Princesses	Common
+Butterfly Dagger - Elma	Secret Rare
+Snatch Steal	Ultra Rare
+Premature Burial	Ultra Rare
+United We Stand	Ultra Rare
+Mage Power	Ultra Rare
+Autonomous Action Unit	Super Rare
+Wicked-Breaking Flamberge - Baou	Super Rare
+Fairy of the Spring	Super Rare
+Iron Blacksmith Kotetsu	Super Rare
+Gilford the Legend	Super Rare
+Axe of Despair	Rare
+Megamorph	Rare
+Fairy Meteor Crush	Rare
+Ekibyo Drakmord	Rare
+Raregold Armor	Rare
+Big Bang Shot	Rare
+Twin Swords of Flashing Light - Tryce	Rare
+Chopman the Desperate Outlaw	Rare
+The Kick Man	Rare
+Opti-Camouflage Armor	Rare
+Fulfillment of the Contract	Rare
+Re-Fusion	Rare
+Divine Sword - Phoenix Blade	Rare
+Mistobody	Rare
+<StructRow 'data.packs'[39]>
+300
+3
+74
+7043
+7143
+0
+Dragon Capture Jar	Common
+Bad Reaction to Simochi	Common
+Ectoplasmer	Common
+Insect Barrier	Common
+Magical Thorn	Common
+Gravekeeper's Servant	Common
+Toll	Common
+Chain Energy	Common
+Appropriate	Common
+Forced Requisition	Common
+Minor Goblin Official	Common
+The Regulation of Tribe	Common
+Light of Intervention	Common
+Respect Play	Common
+Skull Invitation	Common
+The Eye of Truth	Common
+Aqua Chorus	Common
+Anti-Spell Fragrance	Common
+Mask of Dispel	Common
+Mask of Restrict	Common
+Tornado Wall	Common
+Infinite Dismissal	Common
+Jam Breeding Machine	Common
+Infinite Cards	Common
+Jam Defender	Common
+Card of Safe Return	Common
+Solemn Wishes	Common
+Burning Land	Common
+Type Zero Magic Crusher	Common
+Yellow Luster Shield	Common
+The Dark Door	Common
+Skull Lair	Common
+Graverobber's Retribution	Common
+Blind Destruction	Common
+The Emperor's Holiday	Common
+Vengeful Bog Spirit	Common
+Fatal Abacus	Common
+Life Absorbing Machine	Common
+The Dragon's Bead	Common
+Dragon's Rage	Common
+Spiritual Energy Settle Machine	Common
+Second Coin Toss	Common
+Convulsion of Nature	Common
+Ominous Fortunetelling	Common
+Call of the Mummy	Common
+Bottomless Shifting Sand	Common
+Toon Defense	Common
+Imperial Order	Secret Rare
+Mirage of Nightmare	Secret Rare
+Royal Decree	Ultra Rare
+Messenger of Peace	Ultra Rare
+Call of the Haunted	Ultra Rare
+Gravity Bind	Ultra Rare
+Mirror Wall	Super Rare
+Fairy Box	Super Rare
+Destiny Board	Super Rare
+Royal Command	Super Rare
+Nightmare Wheel	Super Rare
+Needle Wall	Super Rare
+Spellbinding Circle	Rare
+Shadow Spell	Rare
+Toon World	Rare
+Ultimate Offering	Rare
+Robbin' Goblin	Rare
+DNA Surgery	Rare
+Ground Collapse	Rare
+Cathedral of Nobles	Rare
+Embodiment of Apophis	Rare
+Spirit Message "I	Rare
+Spirit Message "N	Rare
+Spirit Message "A	Rare
+Spirit Message "L	Rare
+The A. Forces	Rare
+Ordeal of a Traveler	Rare
+<StructRow 'data.packs'[40]>
+500
+3
+80
+7044
+7143
+0
+Card Shuffle	Common
+Dark Snake Syndrome	Common
+Banner of Courage	Common
+Frontline Base	Common
+Kishido Spirit	Common
+Final Attack Orders	Common
+Mass Driver	Common
+Senri Eye	Common
+Battle-Scarred	Common
+Stumbling	Common
+D. D. Borderline	Common
+Recycle	Common
+Soul Absorption	Common
+Tower of Babel	Common
+Spatial Collapse	Common
+Curse of Darkness	Common
+Begone, Knave!	Common
+Skull Zoma	Common
+Dangerous Machine TYPE-6	Common
+Backfire	Common
+Ninjitsu Art of Transformation	Common
+Marshmallon glasses	Common
+Nubian Guard	Common
+Dust Barrier	Common
+Spell Economics	Common
+7	Common
+The Third Sarcophagus	Common
+The Second Sarcophagus	Common
+The First Sarcophagus	Common
+Human-Wave Tactics	Common
+Des Counterblow	Common
+Labyrinth of Nightmare	Common
+Soul Resurrection	Common
+Two-Man Cell Battle	Common
+Spirit Barrier	Common
+Ninjitsu Art of Decoy	Common
+Enervating Mist	Common
+Greed	Common
+Mokey Mokey Smackdown	Common
+Lighten the Load	Common
+Malice Dispersion	Common
+Chain Burst	Common
+Spell Purification	Common
+Astral Barrier	Common
+Poison Fangs	Common
+Spiral Spear Strike	Common
+Centrifugal Field	Common
+Shifting Shadows	Common
+Impenetrable Formation	Common
+Spell-Stopping Statute	Common
+Royal Surrender	Common
+Prepare to Strike Back	Common
+Boss Rush	Common
+Non-Fusion Area	Common
+Ancient Gear Castle	Common
+Silent Insect	Common
+Samsara	Common
+Uria, Lord of Searing Flames	Secret Rare
+Hamon, Lord of Striking Thunder	Secret Rare
+Metal Reflect Slime	Ultra Rare
+Level Limit - Area B	Ultra Rare
+Level Limit - Area A	Ultra Rare
+Dark Room of Nightmare	Super Rare
+Wave-Motion Cannon	Super Rare
+Skill Drain	Super Rare
+Wall of Revealing Light	Super Rare
+Xing Zhen Hu	Super Rare
+Swords of Concealing Light	Super Rare
+Spell Absorption	Rare
+Pitch-Black Power Stone	Rare
+Continuous Destruction Punch	Rare
+Precious Cards from Beyond	Rare
+Non-Spellcasting Area	Rare
+Heart of the Underdog	Rare
+DNA Transplant	Rare
+Robbin' Zombie	Rare
+Pyramid of Light	Rare
+Rare Metalmorph	Rare
+Skyscraper	Rare
+Fault Zone	Rare
+<StructRow 'data.packs'[41]>
+800
+5
+66
+7045
+7145
+0
+Multiply	Common
+Graceful Dice	Common
+Horn of Heaven	Common
+Tailor of the Fickle	Common
+Rush Recklessly	Common
+The Reliable Guardian	Common
+Sebek's Blessing	Common
+Monster Recovery	Common
+Offerings to the Doomed	Common
+Judgment of Anubis	Common
+Riryoku Field	Common
+Super Rejuvenation	Common
+Pyramid Energy	Common
+Tutan Mask	Common
+Curse of Royal	Common
+Combination Attack	Common
+Jar Robber	Common
+Anti-Spell	Common
+A Deal with Dark Ruler	Common
+Unity	Common
+Spell Vanishing	Common
+Reload	Common
+Cursed Seal of the Forbidden Spell	Common
+Dedication through Light and Darkness	Common
+Mystik Wok	Common
+Armor Break	Common
+Order to Charge	Common
+Soul Reversal	Common
+Mind Wipe	Common
+Tricky's Magic 4	Common
+Malice Dispersion	Common
+The Big March of Animals	Common
+Spell-Stopping Statute	Common
+Transcendent Wings	Common
+Bubble Shuffle	Common
+Feather Wind	Common
+Gateway to Dark World	Common
+Bubble Illusion	Common
+Goblin Out of the Frying Pan	Common
+Malfunction	Common
+Scapegoat	Ultra Rare
+Mystical Space Typhoon	Ultra Rare
+Limiter Removal	Ultra Rare
+Emergency Provisions	Ultra Rare
+Book of Moon	Ultra Rare
+Magic Jammer	Super Rare
+Seven Tools of the Bandit	Super Rare
+Enchanted Arrow	Super Rare
+Collapse	Super Rare
+Enemy Controller	Super Rare
+Trap Jammer	Super Rare
+Divine Wrath	Super Rare
+Negate Attack	Rare
+Solemn Judgment	Rare
+De-Fusion	Rare
+Magic Drain	Rare
+Poison of the Old Man	Rare
+Spell Shield Type-8	Rare
+Magical Dimension	Rare
+Inferno Tempest	Rare
+Serial Spell	Rare
+Royal Surrender	Rare
+Triage	Rare
+Inferno Reckless Summon	Rare
+Photon Generator Unit	Rare
+The Flute of Summoning Kuriboh	Rare
+<StructRow 'data.packs'[42]>
+600
+5
+107
+7046
+7146
+0
+Princess of Tsurugi	Common
+Megirus Light	Common
+Black Pendant	Common
+Sparks	Common
+Ookazi	Common
+Ameba	Common
+Minar	Common
+Bad Reaction to Simochi	Common
+Parasite Paracide	Common
+Just Desserts	Common
+Giant Germ	Common
+Minor Goblin Official	Common
+Attack and Receive	Common
+Skull Invitation	Common
+Woodland Sprite	Common
+Burning Land	Common
+Mad Sword Beast	Common
+Type Zero Magic Crusher	Common
+Amazon Archer	Common
+Graverobber's Retribution	Common
+Cyclon Laser	Common
+Nightmare Wheel	Common
+Spear Dragon	Common
+Dragon's Gunfire	Common
+Stamping Destruction	Common
+Dragon's Rage	Common
+Blast Held by a Tribute	Common
+The Secret of the Bandit	Common
+Ominous Fortunetelling	Common
+Poison Mummy	Common
+Toon Cannon Soldier	Common
+Gravekeeper's Cannonholder	Common
+Cobra Jar	Common
+Dark Room of Nightmare	Common
+Dark Snake Syndrome	Common
+Meteorain	Common
+Koitsu	Common
+Mass Driver	Common
+Bowganian	Common
+Gyaku-Gire Panda	Common
+Rod of the Mind's Eye	Common
+Mefist the Infernal General	Common
+Inferno	Common
+Fuhma Shuriken	Common
+Thunder Crash	Common
+Blasting the Ruins	Common
+Enraged Battle Ox	Common
+Dark Driceratops	Common
+Anti-Aircraft Flower	Common
+Robbin' Zombie	Common
+Solar Flare Dragon	Common
+Backfire	Common
+Elephant Statue of Disaster	Common
+Man-Thro' Tro	Common
+Ultimate Baseball Kid	Common
+Gaia Soul the Combustible Collective	Common
+Dark Blade the Dragon Knight	Common
+Chain Burst	Common
+Mecha-Dog Marron	Common
+Abare Ushioni	Common
+Poison Fangs	Common
+Spiral Spear Strike	Common
+Union Attack	Common
+Blood Sucker	Common
+Grave Ohja	Common
+Mine Golem	Common
+Minefield Eruption	Common
+Kozaky's Self-Destruct Button	Common
+Rock Bombardment	Common
+Token Feastevil	Common
+Giant Kozaky	Common
+Oxygeddon	Common
+Familiar-Possessed - Aussa	Common
+Familiar-Possessed - Eria	Common
+Familiar-Possessed - Hiita	Common
+Familiar-Possessed - Wynn	Common
+Clay Charge	Common
+Rancer Dragonute	Common
+Saber Beetle	Common
+Chaos Emperor Dragon - Envoy of the End	Secret Rare
+Hamon, Lord of Striking Thunder	Secret Rare
+Vampire Lord	Ultra Rare
+Ancient Gear Golem	Ultra Rare
+Cyber End Dragon	Ultra Rare
+Elemental Hero Bladedge	Ultra Rare
+Airknight Parshath	Super Rare
+Des Volstgalph	Super Rare
+Pitch-Dark Dragon	Super Rare
+Thestalos the Firestorm Monarch	Super Rare
+Dark Ruler Vandalgyon	Super Rare
+Rapid-Fire Magician	Super Rare
+Dark Eradicator Warlock	Super Rare
+Cannon Soldier	Rare
+Robbin' Goblin	Rare
+Fairy Meteor Crush	Rare
+Fire Princess	Rare
+Kycoo the Ghost Destroyer	Rare
+Enchanted Arrow	Rare
+Exarion Universe	Rare
+Lava Golem	Rare
+Gravekeeper's Curse	Rare
+Gravekeeper's Spear Soldier	Rare
+Big Bang Shot	Rare
+Stealth Bird	Rare
+Vampire Lady	Rare
+Andro Sphinx	Rare
+Sphinx Teleia	Rare
+<StructRow 'data.packs'[43]>
+500
+5
+49
+7047
+7147
+0
+Jinzo	Common
+Rainbow Flower	Common
+Manga Ryu-Ran	Common
+Toon Mermaid	Common
+Sebek's Blessing	Common
+Jowls of Dark Demise	Common
+Servant of Catabolism	Common
+Super Robolady	Common
+Nightmare Horse	Common
+Drillago	Common
+Kiryu	Common
+Decayed Commander	Common
+Shooting Star Bow - Ceal	Common
+Checkmate	Common
+Dark Scorpion Combination	Common
+Black Tyranno	Common
+Rocket Jumper	Common
+Piranha Army	Common
+Delta Attacker	Common
+Des Counterblow	Common
+Absolute End	Common
+Astral Barrier	Common
+Shadowslayer	Common
+Overpowering Eye	Common
+Feather Shot	Common
+Memory Crusher	Common
+Magical Scientist	Secret Rare
+Blue-Eyes Toon Dragon	Ultra Rare
+Toon Dark Magician Girl	Ultra Rare
+Victory D.	Ultra Rare
+Elemental Hero Rampart Blaster	Ultra Rare
+Toon Summoned Skull	Super Rare
+Gear Golem the Moving Fortress	Super Rare
+Alligator's Sword Dragon	Super Rare
+Spirit Reaper	Super Rare
+Silent Swordsman LV5	Super Rare
+Etoile Cyber	Super Rare
+Mucus Yolk	Rare
+Zombyra the Dark	Rare
+Inaba White Rabbit	Rare
+Toon Defense	Rare
+Toon Masked Sorcerer	Rare
+Toon Gemini Elf	Rare
+Toon Cannon Soldier	Rare
+Toon Goblin Attack Force	Rare
+Reaper on the Nightmare	Rare
+Amphibious Bugroth MK-3	Rare
+Opti-Camouflage Armor	Rare
+Raging Flame Sprite	Rare
+<StructRow 'data.packs'[44]>
+800
+5
+130
+7048
+7148
+0
+Dream Clown	Common
+Dragon Seeker	Common
+House of Adhesive Tape	Common
+Widespread Ruin	Common
+Blast Sphere	Common
+Insect Queen	Common
+Amplifier	Common
+Fissure	Common
+Trap Hole	Common
+Tribute to The Doomed	Common
+Kotodama	Common
+Michizure	Common
+King Tiger Wanghu	Common
+Kryuel	Common
+Thousand Knives	Common
+Mystic Box	Common
+Offerings to the Doomed	Common
+Judgment of Anubis	Common
+Skull Lair	Common
+Destruction Punch	Common
+Ekibyo Drakmord	Common
+Throwstone Unit	Common
+Dragon's Gunfire	Common
+Heart of Clear Water	Common
+Sasuke Samurai	Common
+Swarm of Scarabs	Common
+Bottomless Shifting Sand	Common
+Needle Wall	Common
+Newdoria	Common
+Yomi Ship	Common
+Zombie Tiger	Common
+Des Dendle	Common
+Helping Robo For Combat	Common
+Old Vindictive Magician	Common
+Magical Marionette	Common
+Continuous Destruction Punch	Common
+Guardian Ceal	Common
+Guardian Baou	Common
+Thousand Needles	Common
+Wicked-Breaking Flamberge - Baou	Common
+Soul Taker	Common
+Magical Dimension	Common
+Battle-Scarred	Common
+Des Kangaroo	Common
+Freed the Brave Wanderer	Common
+Inferno	Common
+Fenrir	Common
+Wild Nature's Release	Common
+Thunder Crash	Common
+Orca Mega-Fortress of Darkness	Common
+Guardian Angel Joan	Common
+Getsu Fuhma	Common
+Ryu Kokki	Common
+Destruction Ring	Common
+Inferno Hammer	Common
+Dangerous Machine TYPE-6	Common
+KA-2 Des Scissors	Common
+Needle Burrower	Common
+Two Thousand Needles	Common
+Disc Fighter	Common
+Ninjitsu Art of Transformation	Common
+Absorbing Kid from the Sky	Common
+Order to Charge	Common
+Des Counterblow	Common
+Soul Resurrection	Common
+Mystic Swordsman LV2	Common
+Mystic Swordsman LV4	Common
+Ninja Grandmaster Sasuke	Common
+Element Dragon	Common
+Nobleman-Eater Bug	Common
+Element Magician	Common
+Divine Wrath	Common
+Element Doom	Common
+Blade Rabbit	Common
+Gatling Dragon	Common
+Cross Counter	Common
+Medusa Worm	Common
+White Ninja	Common
+Legendary Black Belt	Common
+Drillroid	Common
+D.D. Trap Hole	Common
+Hydrogeddon	Common
+Chthonian Blast	Common
+Nanobreaker	Common
+Weed Out	Common
+Armed Changer	Common
+Adhesive Explosive	Common
+Disciple of the Forbidden Spell	Common
+Symbol of Heritage	Common
+Generation Shift	Common
+Dark Hole	Secret Rare
+Raigeki	Secret Rare
+Ring of Destruction	Secret Rare
+Black Luster Soldier - Envoy of the Beginning	Secret Rare
+Hamon, Lord of Striking Thunder	Secret Rare
+Crush Card	Ultra Rare
+Nobleman of Crossout	Ultra Rare
+Premature Burial	Ultra Rare
+Call of the Haunted	Ultra Rare
+Exiled Force	Ultra Rare
+Deck Devastation Virus	Ultra Rare
+Autonomous Action Unit	Super Rare
+Sakuretsu Armor	Super Rare
+Smashing Ground	Super Rare
+Emes the Infinity	Super Rare
+Zaborg the Thunder Monarch	Super Rare
+Hammer Shot	Super Rare
+Elemental Hero Shining Flare Wingman	Super Rare
+Cyber Laser Dragon	Super Rare
+Ruin, Queen of Oblivion	Super Rare
+Barrel Dragon	Rare
+Mystical Beast Serket	Rare
+Bottomless Trap Hole	Rare
+Des Volstgalph	Rare
+Great Dezard	Rare
+Roulette Barrel	Rare
+Paladin of White Dragon	Rare
+YZ-Tank Dragon	Rare
+Dark Master - Zorc	Rare
+Insect Princess	Rare
+Archlord Zerato	Rare
+Skull Descovery Knight	Rare
+Shield Crash	Rare
+Armed Dragon LV5	Rare
+Mystic Swordsman LV6	Rare
+Blast Magician	Rare
+Gearfried the Swordmaster	Rare
+Elemental Hero Flame Wingman	Rare
+Elemental Hero Steam Healer	Rare
+Divine Dragon - Excelion	Rare

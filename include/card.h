@@ -88,6 +88,34 @@ enum EditedArtwork {
     ARTWORK_YES        = 3, // "Yes"
 };
 
+// Booster pack card rarity
+// Source: wct06.toml [[List]] Name=rarities
+enum Rarity {
+    RARITY_COMMON      = 0, // "Common"
+    RARITY_NONE        = 1,
+    RARITY_RESERVED_2  = 2,
+    RARITY_RESERVED_3  = 3,
+    RARITY_SECRET_RARE = 4, // "Secret Rare"
+    RARITY_SECRET_RARE_2 = 5, // "Secret Rare"
+    RARITY_RESERVED_6  = 6,
+    RARITY_RESERVED_7  = 7,
+    RARITY_ULTRA_RARE  = 8, // "Ultra Rare"
+    RARITY_RESERVED_9  = 9,
+    RARITY_RESERVED_10 = 10,
+    RARITY_RESERVED_11 = 11,
+    RARITY_SUPER_RARE  = 12, // "Super Rare"
+    RARITY_RESERVED_13 = 13,
+    RARITY_RESERVED_14 = 14,
+    RARITY_RESERVED_15 = 15,
+    RARITY_RARE        = 16, // "Rare"
+};
+
+// One card slot entry inside a booster pack.
+struct __attribute__((packed)) PackCard {
+    /* 0x0 */ u16 konamiId; // Konami card ID
+    /* 0x2 */ u16 rarity;   // enum Rarity
+};
+
 // One entry per card ID.  gCardTable[0] is the null entry (no card).
 struct __attribute__((packed)) CardInfo {
     /* 0x0 */ u16 konamiId;       // Konami card ID (wct06.toml cardnames)
