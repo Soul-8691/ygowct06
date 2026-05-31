@@ -1,7 +1,6 @@
 #include "card.h"
 
-// clang-format off
-const struct CardInfo gCardTable[CARD_TABLE_SIZE] = {
+const struct CardInfo gCardStats[CARD_TABLE_SIZE] = {
 //                                                            KonamiId                                                  Art  EditedArtwork    ATK    DEF  Lv  Race                Attribute   Type                SpellTrapType
     [CARD_0                                                ] /*    0 */ = { KONAMI_NONE                                             , 0, ARTWORK_NONE,     0,     0,  0, RACE_NONE         , ATTR_NONE , TYPE_NONE         , SPELLTYPE_NONE },
     [CARD_BLUE_DASH_EYES_WHITE_DRAGON_1                    ] /*    1 */ = { KONAMI_BLUE_DASH_EYES_WHITE_DRAGON                      , 0, ARTWORK_NO  ,  3000,  2500,  8, RACE_DRAGON       , ATTR_LIGHT, TYPE_NONE         , SPELLTYPE_NONE },
@@ -2102,4 +2101,3 @@ const struct CardInfo gCardTable[CARD_TABLE_SIZE] = {
     [CARD_PHANTASMAL_MARTYR_TOKEN                          ] /* 2096 */ = { KONAMI_PHANTASMAL_MARTYR_TOKEN                          , 0, ARTWORK_NO  ,     0,     0,  1, RACE_FIEND        , ATTR_DARK , TYPE_TOKEN        , SPELLTYPE_NONE },
     [CARD_FLUFFY_TOKEN                                     ] /* 2097 */ = { KONAMI_FLUFFY_TOKEN                                     , 0, ARTWORK_NO  ,     0,     0,  1, RACE_PLANT        , ATTR_LIGHT, TYPE_TOKEN        , SPELLTYPE_NONE },
 };
-// clang-format on
