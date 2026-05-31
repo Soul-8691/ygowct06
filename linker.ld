@@ -352,6 +352,8 @@ SECTIONS {
         *libc.a:syscalls.o(.rodata);
 
         data/data2.o(.rodata);
+        src/ai_2.o(.rodata);
+        data/data_09E5AAC0.o(.rodata);
         src/pack.o(.rodata);
         data/data_09E5E2E8.o(.rodata);
         src/input.o(.data);
