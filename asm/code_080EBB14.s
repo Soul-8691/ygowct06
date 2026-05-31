@@ -5792,7 +5792,7 @@ _080EE960:
 	.align 2, 0
 _080EE964: .4byte gUnk_09DCF47A
 _080EE968:
-	ldr r1, _080EE980 @ =gUnk_095F3A5C
+	ldr r1, _080EE980 @ =gCardNamePointers
 	lsls r0, r2, #1
 	adds r0, r0, r2
 	lsls r0, r0, #1
@@ -5800,13 +5800,13 @@ _080EE968:
 	lsls r0, r0, #2
 	adds r0, r0, r1
 	ldr r0, [r0]
-	ldr r1, _080EE984 @ =gCardNamesDescriptionsPointers
+	ldr r1, _080EE984 @ =gCardNames
 	adds r0, r0, r1
 _080EE97C:
 	bx lr
 	.align 2, 0
-_080EE980: .4byte gUnk_095F3A5C
-_080EE984: .4byte gCardNamesDescriptionsPointers
+_080EE980: .4byte gCardNamePointers
+_080EE984: .4byte gCardNames
 
 	thumb_func_start sub_080EE988
 sub_080EE988: @ 0x080EE988
@@ -6117,7 +6117,7 @@ _080EEBD4:
 	.align 2, 0
 _080EEBD8: .4byte gUnk_09DCF472
 _080EEBDC:
-	ldr r1, _080EEBF4 @ =gUnk_0980A508
+	ldr r1, _080EEBF4 @ =gCardDescriptionPointers
 	lsls r0, r2, #1
 	adds r0, r0, r2
 	lsls r0, r0, #1
@@ -6125,13 +6125,13 @@ _080EEBDC:
 	lsls r0, r0, #2
 	adds r0, r0, r1
 	ldr r0, [r0]
-	ldr r1, _080EEBF8 @ =gUnk_095FFF0C
+	ldr r1, _080EEBF8 @ =gCardDescriptions
 	adds r0, r0, r1
 _080EEBF0:
 	bx lr
 	.align 2, 0
-_080EEBF4: .4byte gUnk_0980A508
-_080EEBF8: .4byte gUnk_095FFF0C
+_080EEBF4: .4byte gCardDescriptionPointers
+_080EEBF8: .4byte gCardDescriptions
 
 	thumb_func_start sub_080EEBFC
 sub_080EEBFC: @ 0x080EEBFC

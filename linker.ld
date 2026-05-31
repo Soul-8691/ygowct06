@@ -327,6 +327,7 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
+        src/card_names_descriptions.o(.rodata);
         src/card.o(.rodata);
         data/data_09830194.o(.rodata);
         src/GL/GL_Common.o(.rodata);
