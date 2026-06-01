@@ -360,6 +360,8 @@ SECTIONS {
         data/data_09E5AAC0.o(.rodata);
         src/pack.o(.rodata);
         data/data_09E5E2E8.o(.rodata);
+        src/ban.o(.rodata);
+        data/data_09E5F6CC.o(.rodata);
         src/input.o(.data);
         data/data_09E5F8F0.o(.data);
         src/deck.o(.rodata);
