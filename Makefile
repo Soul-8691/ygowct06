@@ -116,8 +116,6 @@ TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
 MAKEFLAGS += --no-print-directory
 
-AUTO_GEN_TARGETS := $(CARD_GRAPHICS_C) $(CARD_PALETTES_C)
-
 all: tools rom
 
 rom: $(ROM)
@@ -136,9 +134,7 @@ compare: all
 mostlyclean: tidy
 	rm -f sound/direct_sound_samples/*.bin
 	rm -f $(SONG_OBJS) $(MID_SUBDIR)/*.s
-	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.6bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' \) -exec rm {} +
-	rm -f $(AUTO_GEN_TARGETS)
-
+	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.6bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' \)
 clean-tools:
 	@$(foreach tooldir,$(TOOLDIRS),$(MAKE) clean -C $(tooldir);)
 

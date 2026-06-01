@@ -51,6 +51,7 @@ types_*.taghl
 !sound/programmable_wave_samples/*.pcm
 _Deparsed_XSubs.pm
 *.py
+!convert_graphics.py
 useful
 *.cheats
 *.ss*

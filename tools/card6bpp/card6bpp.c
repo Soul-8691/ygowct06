@@ -22,12 +22,12 @@
 #define TILE_SIZE_8BPP   64
 #define TILE_SIZE_6BPP   48
 
-#define GRAPHICS_PNG_DIR  "graphics/png"
-#define GRAPHICS_8BPP_DIR "graphics/8bpp"
-#define GRAPHICS_6BPP_DIR "graphics/6bpp"
+#define GRAPHICS_PNG_DIR  "graphics/png/cards"
+#define GRAPHICS_8BPP_DIR "graphics/8bpp/cards"
+#define GRAPHICS_6BPP_DIR "graphics/6bpp/cards"
 #define CARD_GRAPHICS_C   "src/card_graphics.c"
 #define CARD_PALETTES_C   "src/card_palettes.c"
-#define GRAPHICS_PAL_DIR  "graphics/pal"
+#define GRAPHICS_PAL_DIR  "graphics/pal/cards"
 #define DEFAULT_GBAGFX    "tools/gbagfx/gbagfx"
 
 /* encode_gba_tile_6bpp_from_indices — 64 row-major indices 0..63 -> 48 bytes */
@@ -338,7 +338,7 @@ static bool write_card_palettes_c(struct CardEntry *entries, size_t count)
 
         sanitize_identifier(stem, ident, sizeof(ident));
         fprintf(out,
-            "static const u16 gCardPalettes%s[] = INCBIN_U16(\"graphics/pal/%s.gbapal\");\n",
+            "const u16 gCardPalettes%s[] = INCBIN_U16(\"graphics/pal/cards/%s.gbapal\");\n",
             ident, stem);
     }
 
@@ -552,7 +552,7 @@ static bool cmd_gen(int argc, char **argv)
         name_only[base_len] = '\0';
 
         sanitize_identifier(name_only, ident, sizeof(ident));
-        fprintf(out, "const u32 gCardGraphics%s[] = INCBIN_U32(\"graphics/6bpp/%.*s.6bpp\");\n",
+        fprintf(out, "const u32 gCardGraphics%s[] = INCBIN_U32(\"graphics/6bpp/cards/%.*s.6bpp\");\n",
             ident, (int)base_len, basename);
     }
 

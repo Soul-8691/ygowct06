@@ -5578,7 +5578,7 @@ _080EE7C2:
 	muls r0, r2, r0
 	adds r0, r0, r1
 	ldrh r1, [r0]
-	ldr r0, _080EE7E8 @ =0x00001498 (Spirit Message \"N\")
+	ldr r0, _080EE7E8 @ =0x00001498 (Spirit Message \'N\')
 	cmp r1, r0
 	beq _080EE85C
 	cmp r1, r0
@@ -5590,9 +5590,9 @@ _080EE7C2:
 	.align 2, 0
 _080EE7E0: .4byte 0x080000AE
 _080EE7E4: .4byte gCardStats
-_080EE7E8: .4byte 0x00001498 @ Spirit Message \"N\"
+_080EE7E8: .4byte 0x00001498 @ Spirit Message \'N\'
 _080EE7EC:
-	ldr r0, _080EE7FC @ =0x00001499 (Spirit Message \"A\")
+	ldr r0, _080EE7FC @ =0x00001499 (Spirit Message \'A\')
 	cmp r1, r0
 	beq _080EE8B8
 	adds r0, #1
@@ -5602,7 +5602,7 @@ _080EE7EC:
 _080EE7FA:
 	b _080EE968
 	.align 2, 0
-_080EE7FC: .4byte 0x00001499 @ Spirit Message \"A\"
+_080EE7FC: .4byte 0x00001499 @ Spirit Message \'A\'
 _080EE800:
 	ldr r0, _080EE82C @ =gUnk_02000000
 	ldr r1, _080EE830 @ =0x00006C2C
@@ -5823,7 +5823,7 @@ _080EE996:
 	muls r0, r2, r0
 	adds r0, r0, r1
 	ldrh r1, [r0]
-	ldr r0, _080EE9BC @ =0x00001498 (Spirit Message \"N\")
+	ldr r0, _080EE9BC @ =0x00001498 (Spirit Message \'N\')
 	cmp r1, r0
 	beq _080EEA30
 	cmp r1, r0
@@ -5835,9 +5835,9 @@ _080EE996:
 	.align 2, 0
 _080EE9B4: .4byte 0x080000AE
 _080EE9B8: .4byte gCardStats
-_080EE9BC: .4byte 0x00001498 @ Spirit Message \"N\"
+_080EE9BC: .4byte 0x00001498 @ Spirit Message \'N\'
 _080EE9C0:
-	ldr r0, _080EE9D0 @ =0x00001499 (Spirit Message \"A\")
+	ldr r0, _080EE9D0 @ =0x00001499 (Spirit Message \'A\')
 	cmp r1, r0
 	beq _080EEA8C
 	adds r0, #1
@@ -5847,7 +5847,7 @@ _080EE9C0:
 _080EE9CE:
 	b _080EEB3C
 	.align 2, 0
-_080EE9D0: .4byte 0x00001499 @ Spirit Message \"A\"
+_080EE9D0: .4byte 0x00001499 @ Spirit Message \'A\'
 _080EE9D4:
 	ldr r0, _080EEA00 @ =gUnk_02000000
 	ldr r1, _080EEA04 @ =0x00006C2C

@@ -99836,7 +99836,7 @@ _080466A4:
 	.align 2, 0
 _080466A8: .4byte 0x00001366 @ Premature Burial
 _080466AC:
-	ldr r0, _080466C4 @ =0x0000149A (Spirit Message \"L\")
+	ldr r0, _080466C4 @ =0x0000149A (Spirit Message \'L\')
 	cmp r4, r0
 	bgt _080466C8
 	subs r0, #3
@@ -99851,7 +99851,7 @@ _080466BA:
 _080466C2:
 	b _0804670E
 	.align 2, 0
-_080466C4: .4byte 0x0000149A @ Spirit Message \"L\"
+_080466C4: .4byte 0x0000149A @ Spirit Message \'L\'
 _080466C8:
 	ldr r0, _080466D4 @ =0x0000150E (Spiritual Energy Settle Machine)
 	cmp r4, r0
@@ -100286,7 +100286,7 @@ _080469DE:
 	beq _08046A0E
 	cmp r2, r3
 	blt _08046A1C
-	ldr r0, _08046A34 @ =0x0000149A (Spirit Message \"L\")
+	ldr r0, _08046A34 @ =0x0000149A (Spirit Message \'L\')
 	cmp r2, r0
 	bgt _08046A1C
 	subs r0, #3
@@ -100309,7 +100309,7 @@ _08046A1C:
 _08046A28: .4byte 0x00000868
 _08046A2C: .4byte gUnk_0201C510
 _08046A30: .4byte 0x00001468 @ Destiny Board
-_08046A34: .4byte 0x0000149A @ Spirit Message \"L\"
+_08046A34: .4byte 0x0000149A @ Spirit Message \'L\'
 _08046A38:
 	mov r1, sb
 	lsls r1, r1, #2
@@ -101148,7 +101148,7 @@ _08047048:
 	beq _08047078
 	cmp r2, r1
 	blt _08047088
-	ldr r0, _080470A0 @ =0x0000149A (Spirit Message \"L\")
+	ldr r0, _080470A0 @ =0x0000149A (Spirit Message \'L\')
 	cmp r2, r0
 	bgt _08047088
 	subs r0, #3
@@ -101172,7 +101172,7 @@ _08047088:
 _08047094: .4byte 0x00000868
 _08047098: .4byte gUnk_0201C510
 _0804709C: .4byte 0x00001468 @ Destiny Board
-_080470A0: .4byte 0x0000149A @ Spirit Message \"L\"
+_080470A0: .4byte 0x0000149A @ Spirit Message \'L\'
 _080470A4:
 	ldr r1, _08047104 @ =0x000017AF (The First Sarcophagus)
 	movs r2, #1
@@ -106258,13 +106258,13 @@ _08049768:
 	.align 2, 0
 _08049770: .4byte 0x000017C5 @ Peten the Dark Clown
 _08049774:
-	ldr r0, _0804977C @ =0x000019FE (Dandylion\",)
+	ldr r0, _0804977C @ =0x000019FE (Dandylion\',)
 _08049776:
 	cmp r1, r0
 	beq _080497B6
 	b _080497DC
 	.align 2, 0
-_0804977C: .4byte 0x000019FE @ Dandylion",
+_0804977C: .4byte 0x000019FE @ Dandylion',
 _08049780:
 	ldr r2, [r5]
 	lsls r0, r2, #0x12
@@ -106509,13 +106509,13 @@ _08049958:
 	.align 2, 0
 _08049960: .4byte 0x000017C5 @ Peten the Dark Clown
 _08049964:
-	ldr r0, _0804996C @ =0x000019FE (Dandylion",)
+	ldr r0, _0804996C @ =0x000019FE (Dandylion',)
 _08049966:
 	cmp r5, r0
 	beq _08049992
 	b _080499A8
 	.align 2, 0
-_0804996C: .4byte 0x000019FE @ Dandylion",
+_0804996C: .4byte 0x000019FE @ Dandylion',
 _08049970:
 	mov r0, sl
 	movs r1, #0xe
@@ -112294,7 +112294,7 @@ _0804C18A:
 	thumb_func_start sub_0804C18C
 sub_0804C18C: @ 0x0804C18C
 	adds r1, r0, #0
-	ldr r0, _0804C1AC @ =0x00001497 (Spirit Message \"I\")
+	ldr r0, _0804C1AC @ =0x00001497 (Spirit Message \'I\')
 	cmp r1, r0
 	blt _0804C1B4
 	adds r0, #3
@@ -112310,7 +112310,7 @@ _0804C1A6:
 	movs r0, #1
 	b _0804C1B6
 	.align 2, 0
-_0804C1AC: .4byte 0x00001497 @ Spirit Message \"I\"
+_0804C1AC: .4byte 0x00001497 @ Spirit Message \'I\'
 _0804C1B0: .4byte 0x000017AE @ The Second Sarcophagus
 _0804C1B4:
 	movs r0, #0
@@ -189867,22 +189867,22 @@ _0806F946:
 	beq _0806F968
 	b _0806FB76
 _0806F950:
-	ldr r3, _0806F954 @ =0x00001497 (Spirit Message \"I\")
+	ldr r3, _0806F954 @ =0x00001497 (Spirit Message \'I\')
 	b _0806F96A
 	.align 2, 0
-_0806F954: .4byte 0x00001497 @ Spirit Message \"I\"
+_0806F954: .4byte 0x00001497 @ Spirit Message \'I\'
 _0806F958:
-	ldr r3, _0806F95C @ =0x00001498 (Spirit Message \"N\")
+	ldr r3, _0806F95C @ =0x00001498 (Spirit Message \'N\')
 	b _0806F96A
 	.align 2, 0
-_0806F95C: .4byte 0x00001498 @ Spirit Message \"N\"
+_0806F95C: .4byte 0x00001498 @ Spirit Message \'N\'
 _0806F960:
-	ldr r3, _0806F964 @ =0x00001499 (Spirit Message \"A\")
+	ldr r3, _0806F964 @ =0x00001499 (Spirit Message \'A\')
 	b _0806F96A
 	.align 2, 0
-_0806F964: .4byte 0x00001499 @ Spirit Message \"A\"
+_0806F964: .4byte 0x00001499 @ Spirit Message \'A\'
 _0806F968:
-	ldr r3, _0806F988 @ =0x0000149A (Spirit Message \"L\")
+	ldr r3, _0806F988 @ =0x0000149A (Spirit Message \'L\')
 _0806F96A:
 	ldr r0, _0806F98C @ =gUnk_0201B290
 	movs r1, #0x94
@@ -189900,7 +189900,7 @@ _0806F97C:
 	ldr r0, [r0]
 	mov pc, r0
 	.align 2, 0
-_0806F988: .4byte 0x0000149A @ Spirit Message \"L\"
+_0806F988: .4byte 0x0000149A @ Spirit Message \'L\'
 _0806F98C: .4byte gUnk_0201B290
 _0806F990: .4byte _0806F994
 _0806F994: @ jump table
@@ -240525,7 +240525,7 @@ _08087FE6:
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
 	lsrs r1, r0, #0x13
-	ldr r0, _08088050 @ =0x00001497 (Spirit Message \"I\")
+	ldr r0, _08088050 @ =0x00001497 (Spirit Message \'I\')
 	cmp r1, r0
 	blt _0808801E
 	adds r0, #3
@@ -240561,7 +240561,7 @@ _08088038:
 _08088044: .4byte gUnk_0201C4E0
 _08088048: .4byte 0x00000868
 _0808804C: .4byte gUnk_0201C740
-_08088050: .4byte 0x00001497 @ Spirit Message \"I\"
+_08088050: .4byte 0x00001497 @ Spirit Message \'I\'
 _08088054: .4byte 0x000017AE @ The Second Sarcophagus
 
 	@ Graverobber
@@ -257864,10 +257864,10 @@ _080904DE:
 	@ Dark Coffin
 	@ Kozaky's Self-Destruct Button
 	@ Ojamagic
-	@ Spirit Message "A
-	@ Spirit Message "I
-	@ Spirit Message "L
-	@ Spirit Message "N
+	@ Spirit Message 'A
+	@ Spirit Message 'I
+	@ Spirit Message 'L
+	@ Spirit Message 'N
 	@ Statue of the Wicked
 	@ The Second Sarcophagus
 	@ The Third Sarcophagus
@@ -266737,22 +266737,22 @@ gEngineEffectSendToGYGraveyard_08094800: @ 0x08094800
 	bl sub_08032654
 	cmp r0, #0
 	beq _0809485C
-	ldr r1, _0809484C @ =0x00001497 (Spirit Message \"I\")
+	ldr r1, _0809484C @ =0x00001497 (Spirit Message \'I\')
 	adds r0, r4, #0
 	bl sub_080324B4
 	cmp r0, #0
 	blt _0809485C
-	ldr r1, _08094850 @ =0x00001498 (Spirit Message \"N\")
+	ldr r1, _08094850 @ =0x00001498 (Spirit Message \'N\')
 	adds r0, r4, #0
 	bl sub_080324B4
 	cmp r0, #0
 	blt _0809485C
-	ldr r1, _08094854 @ =0x00001499 (Spirit Message \"A\")
+	ldr r1, _08094854 @ =0x00001499 (Spirit Message \'A\')
 	adds r0, r4, #0
 	bl sub_080324B4
 	cmp r0, #0
 	blt _0809485C
-	ldr r1, _08094858 @ =0x0000149A (Spirit Message \"L\")
+	ldr r1, _08094858 @ =0x0000149A (Spirit Message \'L\')
 	adds r0, r4, #0
 	bl sub_080324B4
 	cmp r0, #0
@@ -266761,10 +266761,10 @@ gEngineEffectSendToGYGraveyard_08094800: @ 0x08094800
 	b _0809485E
 	.align 2, 0
 _08094848: .4byte 0x00001468 @ Destiny Board
-_0809484C: .4byte 0x00001497 @ Spirit Message \"I\"
-_08094850: .4byte 0x00001498 @ Spirit Message \"N\"
-_08094854: .4byte 0x00001499 @ Spirit Message \"A\"
-_08094858: .4byte 0x0000149A @ Spirit Message \"L\"
+_0809484C: .4byte 0x00001497 @ Spirit Message \'I\'
+_08094850: .4byte 0x00001498 @ Spirit Message \'N\'
+_08094854: .4byte 0x00001499 @ Spirit Message \'A\'
+_08094858: .4byte 0x0000149A @ Spirit Message \'L\'
 _0809485C:
 	movs r0, #0
 _0809485E:
@@ -318106,7 +318106,7 @@ _080AD324:
 	ldr r0, _080AD334 @ =0x000013E9 (Masked Beast Des Gardius (None))
 	cmp r1, r0
 	beq _080AD330
-	ldr r0, _080AD338 @ =0x000019FE (Dandylion",)
+	ldr r0, _080AD338 @ =0x000019FE (Dandylion',)
 	cmp r1, r0
 	bne _080AD33C
 _080AD330:
@@ -318114,7 +318114,7 @@ _080AD330:
 	b _080AD33E
 	.align 2, 0
 _080AD334: .4byte 0x000013E9 @ Masked Beast Des Gardius (None)
-_080AD338: .4byte 0x000019FE @ Dandylion",
+_080AD338: .4byte 0x000019FE @ Dandylion',
 _080AD33C:
 	movs r0, #0
 _080AD33E:
@@ -318988,13 +318988,13 @@ _080AD92C:
 	.align 2, 0
 _080AD944: .4byte 0x0000197F @ Elemental Hero Necroshade
 _080AD948:
-	ldr r0, _080AD950 @ =0x000019FE (Dandylion",)
+	ldr r0, _080AD950 @ =0x000019FE (Dandylion',)
 _080AD94A:
 	cmp r3, r0
 	beq _080AD962
 	b _080AD970
 	.align 2, 0
-_080AD950: .4byte 0x000019FE @ Dandylion",
+_080AD950: .4byte 0x000019FE @ Dandylion',
 _080AD954:
 	movs r0, #0
 	cmp r1, #0
@@ -429653,32 +429653,32 @@ _080E3464:
 	bne _080E3470
 	b _080E3864
 _080E3470:
-	ldr r0, _080E349C @ =0x00001497 (Spirit Message \"I\")
+	ldr r0, _080E349C @ =0x00001497 (Spirit Message \'I\')
 	bl sub_080E3DB8
 	cmp r0, #0
 	bne _080E347C
 	b _080E3864
 _080E347C:
-	ldr r0, _080E34A0 @ =0x00001498 (Spirit Message \"N\")
+	ldr r0, _080E34A0 @ =0x00001498 (Spirit Message \'N\')
 	bl sub_080E3DB8
 	cmp r0, #0
 	bne _080E3488
 	b _080E3864
 _080E3488:
-	ldr r0, _080E34A4 @ =0x00001499 (Spirit Message \"A\")
+	ldr r0, _080E34A4 @ =0x00001499 (Spirit Message \'A\')
 	bl sub_080E3DB8
 	cmp r0, #0
 	bne _080E3494
 	b _080E3864
 _080E3494:
-	ldr r0, _080E34A8 @ =0x0000149A (Spirit Message \"L\")
+	ldr r0, _080E34A8 @ =0x0000149A (Spirit Message \'L\')
 	b _080E368A
 	.align 2, 0
 _080E3498: .4byte 0x00001468 @ Destiny Board
-_080E349C: .4byte 0x00001497 @ Spirit Message \"I\"
-_080E34A0: .4byte 0x00001498 @ Spirit Message \"N\"
-_080E34A4: .4byte 0x00001499 @ Spirit Message \"A\"
-_080E34A8: .4byte 0x0000149A @ Spirit Message \"L\"
+_080E349C: .4byte 0x00001497 @ Spirit Message \'I\'
+_080E34A0: .4byte 0x00001498 @ Spirit Message \'N\'
+_080E34A4: .4byte 0x00001499 @ Spirit Message \'A\'
+_080E34A8: .4byte 0x0000149A @ Spirit Message \'L\'
 _080E34AC:
 	ldr r0, _080E34D4 @ =0x00001681 (Ojama Green)
 	bl sub_080E3DB8
@@ -431476,21 +431476,21 @@ _080E4264:
 	bne _080E4274
 	bl sub_080E55FC
 _080E4274:
-	ldr r5, _080E42BC @ =0x00001497 (Spirit Message \"I\")
+	ldr r5, _080E42BC @ =0x00001497 (Spirit Message \'I\')
 	adds r0, r5, #0
 	bl sub_080F9208
 	cmp r0, #0
 	bne _080E4284
 	bl sub_080E55FC
 _080E4284:
-	ldr r5, _080E42C0 @ =0x00001498 (Spirit Message \"N\")
+	ldr r5, _080E42C0 @ =0x00001498 (Spirit Message \'N\')
 	adds r0, r5, #0
 	bl sub_080F9208
 	cmp r0, #0
 	bne _080E4294
 	bl sub_080E55FC
 _080E4294:
-	ldr r5, _080E42C4 @ =0x00001499 (Spirit Message \"A\")
+	ldr r5, _080E42C4 @ =0x00001499 (Spirit Message \'A\')
 	adds r0, r5, #0
 _080E4298:
 	bl sub_080F9208
@@ -431498,7 +431498,7 @@ _080E4298:
 	bne _080E42A4
 	bl sub_080E55FC
 _080E42A4:
-	ldr r5, _080E42C8 @ =0x0000149A (Spirit Message \"L\")
+	ldr r5, _080E42C8 @ =0x0000149A (Spirit Message \'L\')
 _080E42A6:
 	adds r0, r5, #0
 	bl sub_080F9208
@@ -431509,10 +431509,10 @@ _080E42B4:
 	bl sub_080E55FC
 	.align 2, 0
 _080E42B8: .4byte 0x00001468 @ Destiny Board
-_080E42BC: .4byte 0x00001497 @ Spirit Message \"I\"
-_080E42C0: .4byte 0x00001498 @ Spirit Message \"N\"
-_080E42C4: .4byte 0x00001499 @ Spirit Message \"A\"
-_080E42C8: .4byte 0x0000149A @ Spirit Message \"L\"
+_080E42BC: .4byte 0x00001497 @ Spirit Message \'I\'
+_080E42C0: .4byte 0x00001498 @ Spirit Message \'N\'
+_080E42C4: .4byte 0x00001499 @ Spirit Message \'A\'
+_080E42C8: .4byte 0x0000149A @ Spirit Message \'L\'
 _080E42CC:
 	ldr r5, _080E42D0 @ =0x0000169C (Final Countdown)
 	b _080E42A6
