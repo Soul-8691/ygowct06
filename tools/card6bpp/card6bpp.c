@@ -129,13 +129,6 @@ static bool write_file(const char *path, const uint8_t *data, size_t size)
     return true;
 }
 
-static bool file_exists(const char *path)
-{
-    struct stat st;
-
-    return stat(path, &st) == 0 && S_ISREG(st.st_mode);
-}
-
 static bool needs_update(const char *dst_path, const char *src_path)
 {
     struct stat dst_st, src_st;
@@ -260,6 +253,22 @@ static bool run_gbagfx(const char *gbagfx, const char *png_path, const char *bpp
     return true;
 }
 
+static bool build_gbpal_from_png(const char *gbagfx, const char *png_name)
+{
+    size_t name_len = strlen(png_name);
+    char png_path[512];
+    char gbpal_path[512];
+
+    if (name_len < 5 || strcmp(png_name + name_len - 4, ".png") != 0)
+        return true;
+
+    snprintf(png_path, sizeof(png_path), "%s/%s", GRAPHICS_PNG_DIR, png_name);
+    snprintf(gbpal_path, sizeof(gbpal_path), "%s/%.*s.gbapal",
+        GRAPHICS_PAL_DIR, (int)(name_len - 4), png_name);
+
+    return run_gbagfx(gbagfx, png_path, gbpal_path);
+}
+
 static bool build_8bpp_from_png(const char *gbagfx, const char *png_name)
 {
     size_t name_len = strlen(png_name);
@@ -318,20 +327,11 @@ static bool write_card_palettes_c(struct CardEntry *entries, size_t count)
     for (i = 0; i < count; i++) {
         char ident[512];
         char stem[512];
-        char pal_path[512];
         const char *basename = entries[i].basename;
         size_t stem_len;
 
         if (!copy_stem(basename, stem, sizeof(stem), &stem_len)) {
             fprintf(stderr, "error: cannot parse stem from '%s'\n", basename);
-            fclose(out);
-            return false;
-        }
-
-        snprintf(pal_path, sizeof(pal_path), "%s/%s.gbapal", GRAPHICS_PAL_DIR, stem);
-
-        if (!file_exists(pal_path)) {
-            fprintf(stderr, "error: missing palette '%s'\n", pal_path);
             fclose(out);
             return false;
         }
@@ -347,90 +347,95 @@ static bool write_card_palettes_c(struct CardEntry *entries, size_t count)
     return true;
 }
 
-static bool collect_pal_entries(struct CardEntry **out_entries, size_t *out_count)
+static bool append_png_entry(struct CardEntry **entries, size_t *count, size_t *capacity,
+    const char *png_name, int index)
+{
+    size_t name_len = strlen(png_name);
+    char bpp8_name[512];
+    struct CardEntry *entry;
+
+    snprintf(bpp8_name, sizeof(bpp8_name), "%.*s.8bpp", (int)(name_len - 4), png_name);
+
+    if (*count == *capacity) {
+        size_t new_cap = *capacity == 0 ? 256 : *capacity * 2;
+        struct CardEntry *new_entries = realloc(*entries, new_cap * sizeof(**entries));
+
+        if (!new_entries) {
+            fprintf(stderr, "error: out of memory\n");
+            return false;
+        }
+        *entries = new_entries;
+        *capacity = new_cap;
+    }
+
+    entry = &(*entries)[(*count)++];
+    entry->basename = strdup(bpp8_name);
+    entry->index = index;
+    if (!entry->basename) {
+        fprintf(stderr, "error: out of memory\n");
+        return false;
+    }
+    return true;
+}
+
+static bool cmd_gen_palettes(int argc, char **argv)
 {
     DIR *dir;
     struct dirent *ent;
     struct CardEntry *entries = NULL;
     size_t count = 0;
     size_t capacity = 0;
+    const char *gbagfx = DEFAULT_GBAGFX;
+    bool ok = false;
 
-    dir = opendir(GRAPHICS_PAL_DIR);
+    if (argc >= 1 && argv[0][0] != '\0')
+        gbagfx = argv[0];
+
+    if (!mkdir_p(GRAPHICS_PAL_DIR)) {
+        fprintf(stderr, "error: cannot create '%s'\n", GRAPHICS_PAL_DIR);
+        return false;
+    }
+
+    dir = opendir(GRAPHICS_PNG_DIR);
     if (!dir) {
-        fprintf(stderr, "error: cannot open '%s': %s\n", GRAPHICS_PAL_DIR, strerror(errno));
+        fprintf(stderr, "error: cannot open '%s': %s\n", GRAPHICS_PNG_DIR, strerror(errno));
         return false;
     }
 
     while ((ent = readdir(dir)) != NULL) {
         size_t name_len = strlen(ent->d_name);
         int index;
-        struct CardEntry *entry;
 
-        if (name_len < 8 || strcmp(ent->d_name + name_len - 7, ".gbapal") != 0)
+        if (name_len < 5 || strcmp(ent->d_name + name_len - 4, ".png") != 0)
             continue;
 
         index = get_card_index(ent->d_name);
         if (index < 0) {
             fprintf(stderr, "error: cannot parse index from '%s'\n", ent->d_name);
-            goto fail;
+            goto finish;
         }
 
-        if (count == capacity) {
-            size_t new_cap = capacity == 0 ? 256 : capacity * 2;
-            struct CardEntry *new_entries = realloc(entries, new_cap * sizeof(*entries));
+        if (!build_gbpal_from_png(gbagfx, ent->d_name))
+            goto finish;
 
-            if (!new_entries) {
-                fprintf(stderr, "error: out of memory\n");
-                goto fail;
-            }
-            entries = new_entries;
-            capacity = new_cap;
-        }
-
-        entry = &entries[count++];
-        entry->basename = strdup(ent->d_name);
-        entry->index = index;
-        if (!entry->basename) {
-            fprintf(stderr, "error: out of memory\n");
-            goto fail;
-        }
+        if (!append_png_entry(&entries, &count, &capacity, ent->d_name, index))
+            goto finish;
     }
 
     closedir(dir);
+    dir = NULL;
 
     if (count == 0) {
-        fprintf(stderr, "error: no .gbapal files in '%s'\n", GRAPHICS_PAL_DIR);
-        free(entries);
-        return false;
+        fprintf(stderr, "error: no .png files in '%s'\n", GRAPHICS_PNG_DIR);
+        goto finish;
     }
 
     qsort(entries, count, sizeof(*entries), compare_entries);
-    *out_entries = entries;
-    *out_count = count;
-    return true;
-
-fail:
-    closedir(dir);
-    for (size_t i = 0; i < count; i++)
-        free(entries[i].basename);
-    free(entries);
-    return false;
-}
-
-static bool cmd_gen_palettes(int argc, char **argv)
-{
-    struct CardEntry *entries = NULL;
-    size_t count = 0;
-    bool ok = false;
-
-    (void)argc;
-    (void)argv;
-
-    if (!collect_pal_entries(&entries, &count))
-        return false;
-
     ok = write_card_palettes_c(entries, count);
 
+finish:
+    if (dir)
+        closedir(dir);
     for (size_t i = 0; i < count; i++)
         free(entries[i].basename);
     free(entries);
@@ -452,7 +457,7 @@ static bool cmd_gen(int argc, char **argv)
     if (argc >= 1 && argv[0][0] != '\0')
         gbagfx = argv[0];
 
-    if (!mkdir_p(GRAPHICS_8BPP_DIR) || !mkdir_p(GRAPHICS_6BPP_DIR)) {
+    if (!mkdir_p(GRAPHICS_PAL_DIR) || !mkdir_p(GRAPHICS_8BPP_DIR) || !mkdir_p(GRAPHICS_6BPP_DIR)) {
         fprintf(stderr, "error: cannot create graphics output dirs\n");
         return false;
     }
@@ -479,6 +484,9 @@ static bool cmd_gen(int argc, char **argv)
             fprintf(stderr, "error: cannot parse index from '%s'\n", ent->d_name);
             goto finish;
         }
+
+        if (!build_gbpal_from_png(gbagfx, ent->d_name))
+            goto finish;
 
         if (!build_8bpp_from_png(gbagfx, ent->d_name))
             goto finish;
@@ -569,8 +577,8 @@ int main(int argc, char **argv)
 {
     if (argc < 2) {
         fprintf(stderr, "usage: %s <convert|gen> ...\n", argv[0]);
-        fprintf(stderr, "  gen [gbagfx]       - PNG -> 8bpp -> 6bpp -> card_graphics.c + card_palettes.c\n");
-        fprintf(stderr, "  gen-palettes       - card_palettes.c from graphics/pal/*.gbapal\n");
+        fprintf(stderr, "  gen [gbagfx]       - PNG -> gbapal/8bpp/6bpp -> card_graphics.c + card_palettes.c\n");
+        fprintf(stderr, "  gen-palettes [gfx] - PNG -> gbapal -> card_palettes.c\n");
         return 1;
     }
 
