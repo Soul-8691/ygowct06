@@ -13,7 +13,6 @@
 *.sgm
 *.sa1
 *.sg1
-*.gbapal
 *.hwjpnfont
 *.i
 *.id0
@@ -58,3 +57,5 @@ useful
 .vscode
 ygoprodeck_card_info.json
 *.toml
+graphics/8bpp/*
+graphics/png/*
