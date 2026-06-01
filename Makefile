@@ -86,7 +86,8 @@ NODEP := 1
 endif
 
 CARD_GRAPHICS_C := $(C_SUBDIR)/card_graphics.c
-C_SRCS := $(sort $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c) $(CARD_GRAPHICS_C))
+CARD_PALETTES_C := $(C_SUBDIR)/card_palettes.c
+C_SRCS := $(sort $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c) $(CARD_GRAPHICS_C) $(CARD_PALETTES_C))
 C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
 
 ASM_SRCS := $(wildcard $(ASM_SUBDIR)/*.s $(ASM_SUBDIR)/*/*.s $(ASM_SUBDIR)/*/*/*.s)
@@ -115,7 +116,7 @@ TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
 MAKEFLAGS += --no-print-directory
 
-AUTO_GEN_TARGETS := $(CARD_GRAPHICS_C)
+AUTO_GEN_TARGETS := $(CARD_GRAPHICS_C) $(CARD_PALETTES_C)
 
 all: tools rom
 
@@ -175,6 +176,12 @@ $(C_BUILDDIR)/card_graphics.o: $(CARD_GRAPHICS_C)
 	@$(PREPROC) $(C_BUILDDIR)/card_graphics.i charmap.txt | $(CC1) $(CFLAGS) -o $(C_BUILDDIR)/card_graphics.s
 	@echo -e "\t.text\n\t.align\t2, 0 @ Don't pad with nop\n" >> $(C_BUILDDIR)/card_graphics.s
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/card_graphics.s
+
+$(C_BUILDDIR)/card_palettes.o: $(CARD_PALETTES_C)
+	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/card_palettes.i
+	@$(PREPROC) $(C_BUILDDIR)/card_palettes.i charmap.txt | $(CC1) $(CFLAGS) -o $(C_BUILDDIR)/card_palettes.s
+	@echo -e "\t.text\n\t.align\t2, 0 @ Don't pad with nop\n" >> $(C_BUILDDIR)/card_palettes.s
+	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/card_palettes.s
 
 $(CARD6BPP):
 	@$(MAKE) -C tools/card6bpp

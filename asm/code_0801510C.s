@@ -15498,7 +15498,7 @@ _0801D31A:
 	adds r0, r5, r0
 	ldrh r0, [r0]
 	lsls r1, r0, #7
-	ldr r2, _0801D430 @ =gCardPalettes
+	ldr r2, _0801D430 @ =gCardPalettesNone_0
 	adds r1, r1, r2
 	adds r0, r4, #0
 	movs r2, #0x80
@@ -15632,7 +15632,7 @@ _0801D420: .4byte gCardArtIndexes
 _0801D424: .4byte 0x080000AE
 _0801D428: .4byte gUnk_02000000
 _0801D42C: .4byte 0x00006C2C
-_0801D430: .4byte gCardPalettes
+_0801D430: .4byte gCardPalettesNone_0
 _0801D434: .4byte gCardGraphicsNone_0
 _0801D438: .4byte 0x06004000
 _0801D43C: .4byte 0x0000031F
@@ -358936,7 +358936,7 @@ _080BFFEA:
 	add r0, r8
 	ldrh r0, [r0]
 	lsls r1, r0, #7
-	ldr r0, _080C00E8 @ =gCardPalettes
+	ldr r0, _080C00E8 @ =gCardPalettesNone_0
 	adds r1, r1, r0
 	adds r0, r5, #0
 	movs r2, #0x80
@@ -359048,7 +359048,7 @@ _080C00D8: .4byte 0x00006C2C
 _080C00DC: .4byte gCardGraphicsNone_0
 _080C00E0: .4byte 0x060148C0
 _080C00E4: .4byte 0x05000200
-_080C00E8: .4byte gCardPalettes
+_080C00E8: .4byte gCardPalettesNone_0
 _080C00EC: .4byte 0x06010000
 
 	thumb_func_start sub_080C00F0
@@ -420904,7 +420904,7 @@ _080DED2A:
 	adds r0, r4, r0
 	ldrh r0, [r0]
 	lsls r1, r0, #7
-	ldr r2, _080DED68 @ =gCardPalettes
+	ldr r2, _080DED68 @ =gCardPalettesNone_0
 	adds r1, r1, r2
 	ldr r0, _080DED6C @ =0x05000020
 	movs r2, #0x80
@@ -420922,7 +420922,7 @@ _080DED58: .4byte 0x00006C2C
 _080DED5C: .4byte gCardGraphicsNone_0
 _080DED60: .4byte 0x06008EC0
 _080DED64: .4byte 0x00003F3F
-_080DED68: .4byte gCardPalettes
+_080DED68: .4byte gCardPalettesNone_0
 _080DED6C: .4byte 0x05000020
 _080DED70: .4byte gUnk_0300585C
 _080DED74:

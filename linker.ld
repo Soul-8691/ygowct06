@@ -327,6 +327,8 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
+        src/card_palettes.o(.rodata);
+        data/data_08510440.o(.rodata);
         src/card_graphics.o(.rodata);
         data/data_08FBC080.o(.rodata);
         src/password.o(.rodata);
