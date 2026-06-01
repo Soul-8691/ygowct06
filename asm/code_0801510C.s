@@ -15531,7 +15531,7 @@ _0801D352:
 	lsls r0, r1, #4
 	subs r0, r0, r1
 	lsls r0, r0, #6
-	ldr r1, _0801D434 @ =gCardGraphics
+	ldr r1, _0801D434 @ =gCardGraphicsNone_0
 	adds r6, r0, r1
 	ldr r5, _0801D438 @ =0x06004000
 	add r5, sl
@@ -15633,7 +15633,7 @@ _0801D424: .4byte 0x080000AE
 _0801D428: .4byte gUnk_02000000
 _0801D42C: .4byte 0x00006C2C
 _0801D430: .4byte gCardPalettes
-_0801D434: .4byte gCardGraphics
+_0801D434: .4byte gCardGraphicsNone_0
 _0801D438: .4byte 0x06004000
 _0801D43C: .4byte 0x0000031F
 _0801D440: .4byte 0x00003F3F
@@ -34109,7 +34109,7 @@ _08026BC8:
 	bge _08026C44
 	ldr r1, _08026C60 @ =gInterfaceTextOffsets
 	mov r8, r1
-	ldr r6, _08026C64 @ =gUnk_08C10000
+	ldr r6, _08026C64 @ =0x08C10000
 	ldr r5, _08026C68 @ =0x04C70000
 	ldr r7, _08026C6C @ =gUnk_02006C2C
 _08026BE0:
@@ -34176,7 +34176,7 @@ _08026C56:
 	.align 2, 0
 _08026C5C: .4byte gUnk_02023360
 _08026C60: .4byte gInterfaceTextOffsets
-_08026C64: .4byte gUnk_08C10000
+_08026C64: .4byte 0x08C10000
 _08026C68: .4byte 0x04C70000
 _08026C6C: .4byte gUnk_02006C2C
 _08026C70: .4byte gInterfaceText
@@ -358906,7 +358906,7 @@ _080BFFAA:
 	lsls r0, r1, #4
 	subs r0, r0, r1
 	lsls r0, r0, #6
-	ldr r1, _080C00DC @ =gCardGraphics
+	ldr r1, _080C00DC @ =gCardGraphicsNone_0
 	adds r7, r0, r1
 	ldr r0, _080C00E0 @ =0x060148C0
 	mov sb, r0
@@ -359045,7 +359045,7 @@ _080C00CC: .4byte gCardArtIndexes
 _080C00D0: .4byte 0x080000AE
 _080C00D4: .4byte gUnk_02000000
 _080C00D8: .4byte 0x00006C2C
-_080C00DC: .4byte gCardGraphics
+_080C00DC: .4byte gCardGraphicsNone_0
 _080C00E0: .4byte 0x060148C0
 _080C00E4: .4byte 0x05000200
 _080C00E8: .4byte gCardPalettes
@@ -420792,7 +420792,7 @@ _080DEC4C:
 	lsls r0, r1, #4
 	subs r0, r0, r1
 	lsls r0, r0, #6
-	ldr r1, _080DED5C @ =gCardGraphics
+	ldr r1, _080DED5C @ =gCardGraphicsNone_0
 	adds r6, r0, r1
 	ldr r5, _080DED60 @ =0x06008EC0
 	movs r1, #0
@@ -420919,7 +420919,7 @@ _080DED4C: .4byte gCardArtIndexes
 _080DED50: .4byte 0x080000AE
 _080DED54: .4byte gUnk_02000000
 _080DED58: .4byte 0x00006C2C
-_080DED5C: .4byte gCardGraphics
+_080DED5C: .4byte gCardGraphicsNone_0
 _080DED60: .4byte 0x06008EC0
 _080DED64: .4byte 0x00003F3F
 _080DED68: .4byte gCardPalettes

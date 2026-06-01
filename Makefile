@@ -18,6 +18,12 @@ MAKER_CODE  := A4
 
 SHELL := /bin/bash -o pipefail
 
+ifeq ($(OS),Windows_NT)
+EXE := .exe
+else
+EXE :=
+endif
+
 BUILD_NAME  := ygowct06
 ROM := $(BUILD_NAME).gba
 OBJ_DIR := build/$(BUILD_NAME)
@@ -51,6 +57,7 @@ LIB := -L ../../tools/agbcc/lib -lc -lgcc
 
 SHA1 := $(shell { command -v sha1sum || command -v shasum; } 2>/dev/null) -c
 GFX := tools/gbagfx/gbagfx
+CARD6BPP := tools/card6bpp/card6bpp$(EXE)
 AIF := tools/aif2pcm/aif2pcm
 MID := tools/mid2agb/mid2agb
 SCANINC := tools/scaninc/scaninc
@@ -78,7 +85,8 @@ else
 NODEP := 1
 endif
 
-C_SRCS := $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c)
+CARD_GRAPHICS_C := $(C_SUBDIR)/card_graphics.c
+C_SRCS := $(sort $(wildcard $(C_SUBDIR)/*.c $(C_SUBDIR)/*/*.c $(C_SUBDIR)/*/*/*.c) $(CARD_GRAPHICS_C))
 C_OBJS := $(patsubst $(C_SUBDIR)/%.c,$(C_BUILDDIR)/%.o,$(C_SRCS))
 
 ASM_SRCS := $(wildcard $(ASM_SUBDIR)/*.s $(ASM_SUBDIR)/*/*.s $(ASM_SUBDIR)/*/*/*.s)
@@ -107,7 +115,7 @@ TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
 MAKEFLAGS += --no-print-directory
 
-AUTO_GEN_TARGETS :=
+AUTO_GEN_TARGETS := $(CARD_GRAPHICS_C)
 
 all: tools rom
 
@@ -127,7 +135,7 @@ compare: all
 mostlyclean: tidy
 	rm -f sound/direct_sound_samples/*.bin
 	rm -f $(SONG_OBJS) $(MID_SUBDIR)/*.s
-	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' \) -exec rm {} +
+	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.6bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' \) -exec rm {} +
 	rm -f $(AUTO_GEN_TARGETS)
 
 clean-tools:
@@ -160,6 +168,16 @@ sound/songs/%.s: sound/songs/%.mid
 
 $(C_BUILDDIR)/agb_sram.o: CFLAGS = -mthumb-interwork -Wimplicit -Wparentheses -Werror -O1 -g -fhex-asm -ffix-debug-line
 $(C_BUILDDIR)/agb_sram.o: CC1 := tools/agbcc/bin/agbcc
+
+# scaninc emits spaced paths for each INCBIN; that breaks make prerequisites
+$(C_BUILDDIR)/card_graphics.o: $(CARD_GRAPHICS_C)
+	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/card_graphics.i
+	@$(PREPROC) $(C_BUILDDIR)/card_graphics.i charmap.txt | $(CC1) $(CFLAGS) -o $(C_BUILDDIR)/card_graphics.s
+	@echo -e "\t.text\n\t.align\t2, 0 @ Don't pad with nop\n" >> $(C_BUILDDIR)/card_graphics.s
+	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/card_graphics.s
+
+$(CARD6BPP):
+	@$(MAKE) -C tools/card6bpp
 
 ifeq ($(NODEP),1)
 $(C_BUILDDIR)/%.o: c_dep :=
