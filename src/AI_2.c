@@ -1,7 +1,5 @@
 #include "AI.h"
 
-// clang-format off
-
 // Forward declarations for gAISearcherCardEffects functions
 extern void gCardAIBanishBoostATK_0808896C(void);
 extern void gCardAIBanishBoostATK_0808A83C(void);
@@ -497,5 +495,3 @@ const struct CardAIEffect gAISearcherCardEffects[307] = {
     { 0xFFFE                                            , 0, sub_0808D704                                },
     { 0xFFFF                                            , 0, sub_0808D7F4                                },
 };
-
-// clang-format on

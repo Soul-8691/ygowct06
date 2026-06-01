@@ -1,6 +1,5 @@
 #include "card.h"
 
-// clang-format off
 const u32 gCardPrices[2098] = {
     [   0] /* CARD_0                                           */ = 0,
     [   1] /* CARD_BLUE_EYES_WHITE_DRAGON_1                    */ = 7800,
@@ -2101,4 +2100,3 @@ const u32 gCardPrices[2098] = {
     [2096] /* CARD_PHANTASMAL_MARTYR_TOKEN                     */ = 0,
     [2097] /* CARD_FLUFFY_TOKEN                                */ = 0,
 };
-// clang-format on

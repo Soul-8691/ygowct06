@@ -6,8 +6,6 @@ struct BanlistEntry {
     u16 limit;
 };
 
-// clang-format off
-
 // gBanlistSeptember03  (17 entries)
 const struct BanlistEntry gBanlistSeptember03[17] = {
 //  { KonamiId                                           , Limit }
@@ -539,5 +537,3 @@ const struct BanlistEntry gBanlistSeptember07[83] = {
     { KONAMI_GOOD_GOBLIN_HOUSEKEEPING                   , 2 },
     { KONAMI_LAST_TURN                                  , 2 },
 };
-
-// clang-format on

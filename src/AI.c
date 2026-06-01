@@ -1,7 +1,5 @@
 #include "AI.h"
 
-// clang-format off
-
 // Forward declarations for AI effect functions
 extern void gCardAIBanishDamage_080B1E04(void);
 extern void gCardAIBanishDestroy_080B2694(void);
@@ -1393,5 +1391,3 @@ const struct CardAIEffect gAIEffects8[70] = {
     { KONAMI_SPIRITUAL_ENERGY_SETTLE_MACHINE            , 0, gCardAIDiscardReturnToHand_080B803C           },
     { KONAMI_CHAIN_ENERGY                               , 0, gCardAIGraveyardDestroy_080B76A4              },
 };
-
-// clang-format on
