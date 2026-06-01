@@ -336,6 +336,8 @@ SECTIONS {
         src/card_names_descriptions.o(.rodata);
         src/card.o(.rodata);
         data/data_09830194.o(.rodata);
+        src/card_alphabet.o(.rodata);
+        data/data_09838790.o(.rodata);
         src/prices.o(.rodata);
         data/data_09CF006C.o(.rodata);
         src/GL/GL_Common.o(.rodata);
