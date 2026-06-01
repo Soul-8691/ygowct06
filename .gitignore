@@ -52,6 +52,7 @@ types_*.taghl
 _Deparsed_XSubs.pm
 *.py
 !convert_graphics.py
+!convert_icons.py
 useful
 *.cheats
 *.ss*

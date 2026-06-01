@@ -330,7 +330,8 @@ SECTIONS {
         src/card_palettes.o(.rodata);
         data/data_08510440.o(.rodata);
         src/card_graphics.o(.rodata);
-        data/data_08FBC080.o(.rodata);
+        src/card_icons.o(.rodata);
+        data/data_093264C0.o(.rodata);
         src/password.o(.rodata);
         src/card_names_descriptions.o(.rodata);
         src/card.o(.rodata);

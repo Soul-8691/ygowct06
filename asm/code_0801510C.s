@@ -356427,7 +356427,7 @@ _080BEBC8:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r0, _080BEC04 @ =gCardIconsSmall
+	ldr r0, _080BEC04 @ =gCardIconSmallStraightNone_0
 	adds r1, r1, r0
 	str r1, [sp, #0x10]
 	b _080BEC0C
@@ -356441,7 +356441,7 @@ _080BEBF4: .4byte gCardArtIndexes
 _080BEBF8: .4byte 0x080000AE
 _080BEBFC: .4byte gUnk_02000000
 _080BEC00: .4byte 0x00006C2C
-_080BEC04: .4byte gCardIconsSmall
+_080BEC04: .4byte gCardIconSmallStraightNone_0
 _080BEC08:
 	ldr r4, _080BEC34 @ =gUnk_0984FBCC
 	str r4, [sp, #0x10]
@@ -364589,7 +364589,7 @@ _080C2D50:
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #9
-	ldr r0, _080C2D8C @ =gCardIconsLarge
+	ldr r0, _080C2D8C @ =gCardIconLargeNone_0
 	adds r4, r1, r0
 	lsls r0, r5, #5
 	ldr r1, _080C2D90 @ =0x06010000
@@ -364607,7 +364607,7 @@ _080C2D7C: .4byte gCardArtIndexes
 _080C2D80: .4byte 0x080000AE
 _080C2D84: .4byte gUnk_02000000
 _080C2D88: .4byte 0x00006C2C
-_080C2D8C: .4byte gCardIconsLarge
+_080C2D8C: .4byte gCardIconLargeNone_0
 _080C2D90: .4byte 0x06010000
 _080C2D94:
 	movs r0, #0
@@ -365433,14 +365433,14 @@ _080C33F6:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r0, _080C3418 @ =gUnk_093264C0
+	ldr r0, _080C3418 @ =0x093264C0
 	b _080C3470
 	.align 2, 0
 _080C3408: .4byte gCardArtIndexes
 _080C340C: .4byte 0x080000AE
 _080C3410: .4byte gUnk_02000000
 _080C3414: .4byte 0x00006C2C
-_080C3418: .4byte gUnk_093264C0
+_080C3418: .4byte 0x093264C0
 _080C341C:
 	ldr r5, _080C3450 @ =gCardArtIndexes
 	lsls r2, r0, #1
@@ -365468,14 +365468,14 @@ _080C343E:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r0, _080C3460 @ =gCardIconsSmall
+	ldr r0, _080C3460 @ =gCardIconSmallStraightNone_0
 	b _080C3470
 	.align 2, 0
 _080C3450: .4byte gCardArtIndexes
 _080C3454: .4byte 0x080000AE
 _080C3458: .4byte gUnk_02000000
 _080C345C: .4byte 0x00006C2C
-_080C3460: .4byte gCardIconsSmall
+_080C3460: .4byte gCardIconSmallStraightNone_0
 _080C3464:
 	movs r0, #1
 	ands r0, r2
@@ -366125,14 +366125,14 @@ _080C3942:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r0, _080C3964 @ =gUnk_093264C0
+	ldr r0, _080C3964 @ =0x093264C0
 	b _080C39C2
 	.align 2, 0
 _080C3954: .4byte gCardArtIndexes
 _080C3958: .4byte 0x080000AE
 _080C395C: .4byte gUnk_02000000
 _080C3960: .4byte 0x00006C2C
-_080C3964: .4byte gUnk_093264C0
+_080C3964: .4byte 0x093264C0
 _080C3968:
 	ldr r4, _080C39A0 @ =gCardArtIndexes
 	mov r0, sb
@@ -366161,14 +366161,14 @@ _080C398C:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r0, _080C39B0 @ =gCardIconsSmall
+	ldr r0, _080C39B0 @ =gCardIconSmallStraightNone_0
 	b _080C39C2
 	.align 2, 0
 _080C39A0: .4byte gCardArtIndexes
 _080C39A4: .4byte 0x080000AE
 _080C39A8: .4byte gUnk_02000000
 _080C39AC: .4byte 0x00006C2C
-_080C39B0: .4byte gCardIconsSmall
+_080C39B0: .4byte gCardIconSmallStraightNone_0
 _080C39B4:
 	movs r0, #1
 	ldr r4, [sp]
@@ -366341,7 +366341,7 @@ _080C3AEE:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r0, _080C3B3C @ =gCardIconsSmall
+	ldr r0, _080C3B3C @ =gCardIconSmallStraightNone_0
 	adds r0, r1, r0
 _080C3B00:
 	cmp r0, #0
@@ -366370,7 +366370,7 @@ _080C3B2C: .4byte gCardArtIndexes
 _080C3B30: .4byte 0x080000AE
 _080C3B34: .4byte gUnk_02000000
 _080C3B38: .4byte 0x00006C2C
-_080C3B3C: .4byte gCardIconsSmall
+_080C3B3C: .4byte gCardIconSmallStraightNone_0
 _080C3B40:
 	adds r0, r6, #0
 	adds r1, r5, #0
@@ -382142,7 +382142,7 @@ _080CB752:
 	adds r0, r7, #0
 	adds r1, r1, r0
 	lsls r1, r1, #9
-	ldr r0, _080CB7C8 @ =gCardIconsLarge
+	ldr r0, _080CB7C8 @ =gCardIconLargeNone_0
 	adds r1, r1, r0
 	movs r2, #0xc0
 	lsls r2, r2, #3
@@ -382188,7 +382188,7 @@ _080CB7B8: .4byte gCardArtIndexes
 _080CB7BC: .4byte 0x080000AE
 _080CB7C0: .4byte gUnk_02000000
 _080CB7C4: .4byte 0x00006C2C
-_080CB7C8: .4byte gCardIconsLarge
+_080CB7C8: .4byte gCardIconLargeNone_0
 _080CB7CC: .4byte 0x06006340
 _080CB7D0: .4byte 0x06008020
 _080CB7D4: .4byte 0x060080A0
@@ -414221,7 +414221,7 @@ _080DB94E:
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #9
-	ldr r0, _080DB9A0 @ =gCardIconsLarge
+	ldr r0, _080DB9A0 @ =gCardIconLargeNone_0
 	adds r1, r1, r0
 	cmp r3, #0
 	bne _080DB9A8
@@ -414252,7 +414252,7 @@ _080DB990: .4byte gCardArtIndexes
 _080DB994: .4byte 0x080000AE
 _080DB998: .4byte gUnk_02000000
 _080DB99C: .4byte 0x00006C2C
-_080DB9A0: .4byte gCardIconsLarge
+_080DB9A0: .4byte gCardIconLargeNone_0
 _080DB9A4: .4byte 0x000002FF
 _080DB9A8:
 	adds r6, r1, #0

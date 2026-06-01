@@ -7,16 +7,21 @@ convert-graphics:
 	@if find graphics/png/cards -name '*.png' -newer graphics/6bpp -print -quit 2>/dev/null | grep -q . || \
 	    [ ! -d graphics/6bpp ] || [ -z "$$(ls -A graphics/6bpp 2>/dev/null)" ]; then \
 		echo 'Running convert_graphics.py (PNGs newer than 6bpp or 6bpp missing)…'; \
-		python convert_graphics.py; \
+		python3 convert_graphics.py; \
 	fi
 
 # Ensure 6bpp files exist before card_graphics.o is assembled
 $(C_BUILDDIR)/card_graphics.o: | convert-graphics
 
-$(CARD_GRAPHICS_C) $(CARD_PALETTES_C): $(CARD6BPP) | tools
-	@if [ ! -f $(CARD_GRAPHICS_C) ] || [ ! -f $(CARD_PALETTES_C) ] || \
-	    find graphics/png/cards -name '*.png' -newer $(CARD_GRAPHICS_C) -print -quit 2>/dev/null | grep -q .; then \
-		$(CARD6BPP) gen $(GFX); \
+# card_graphics.c, card_palettes.c and card_icons.c are static source files.
+
+.PHONY: convert-icons
+
+convert-icons:
+	@if find graphics/png/cards/icons -name '*.png' -newer graphics/8bpp/cards/icons -print -quit 2>/dev/null | grep -q . || \
+	    [ ! -d graphics/8bpp/cards/icons ] || [ -z "$$(ls -A graphics/8bpp/cards/icons 2>/dev/null)" ]; then \
+		echo 'Running convert_icons.py (PNGs newer than 8bpp or 8bpp missing)...'; \
+		python3 convert_icons.py --build; \
 	fi
 
 .PHONY: graphics-8bpp graphics-pal card-graphics-force

@@ -95,7 +95,7 @@ def win_to_wsl(path: str) -> str:
     return path
 
 
-GBAGFX = win_to_wsl(os.path.join(SCRIPT_DIR, 'gbagfx'))
+GBAGFX = win_to_wsl(os.path.join(SCRIPT_DIR, 'tools', 'gbagfx', 'gbagfx'))
 
 
 def run_gbagfx(*args):

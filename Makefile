@@ -179,6 +179,12 @@ $(C_BUILDDIR)/card_palettes.o: $(CARD_PALETTES_C)
 	@echo -e "\t.text\n\t.align\t2, 0 @ Don't pad with nop\n" >> $(C_BUILDDIR)/card_palettes.s
 	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/card_palettes.s
 
+$(C_BUILDDIR)/card_icons.o: $(C_SUBDIR)/card_icons.c | convert-icons
+	@$(CPP) $(CPPFLAGS) $< -o $(C_BUILDDIR)/card_icons.i
+	@$(PREPROC) $(C_BUILDDIR)/card_icons.i charmap.txt | $(CC1) $(CFLAGS) -o $(C_BUILDDIR)/card_icons.s
+	@echo -e "\t.text\n\t.align\t2, 0 @ Don't pad with nop\n" >> $(C_BUILDDIR)/card_icons.s
+	$(AS) $(ASFLAGS) -o $@ $(C_BUILDDIR)/card_icons.s
+
 $(CARD6BPP):
 	@$(MAKE) -C tools/card6bpp
 

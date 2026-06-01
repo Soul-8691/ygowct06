@@ -9792,7 +9792,7 @@ _080F9D3A:
 	lsls r1, r2, #1
 	adds r1, r1, r2
 	lsls r1, r1, #9
-	ldr r2, _080F9E0C @ =gCardIconsLarge
+	ldr r2, _080F9E0C @ =gCardIconLargeNone_0
 	mov r8, r2
 	add r1, r8
 	movs r2, #0xc0
@@ -9804,7 +9804,7 @@ _080F9D3A:
 	lsls r1, r2, #3
 	adds r1, r1, r2
 	lsls r1, r1, #7
-	ldr r4, _080F9E14 @ =gCardIconsSmall
+	ldr r4, _080F9E14 @ =gCardIconSmallStraightNone_0
 	adds r1, r1, r4
 	movs r6, #0x90
 	lsls r6, r6, #3
@@ -9845,9 +9845,9 @@ _080F9DFC: .4byte gCardStats
 _080F9E00: .4byte 0x06004200
 _080F9E04: .4byte 0x06008400
 _080F9E08: .4byte gCardArtIndexes
-_080F9E0C: .4byte gCardIconsLarge
+_080F9E0C: .4byte gCardIconLargeNone_0
 _080F9E10: .4byte 0x06008A00
-_080F9E14: .4byte gCardIconsSmall
+_080F9E14: .4byte gCardIconSmallStraightNone_0
 _080F9E18: .4byte 0x06008E80
 _080F9E1C: .4byte 0x06009480
 
@@ -24364,7 +24364,7 @@ _08101246:
 	adds r0, r7, #0
 	adds r1, r1, r0
 	lsls r1, r1, #7
-	ldr r0, _08101290 @ =gCardIconsSmall
+	ldr r0, _08101290 @ =gCardIconSmallStraightNone_0
 	adds r1, r1, r0
 	adds r0, r3, #0
 	movs r2, #0x90
@@ -24386,7 +24386,7 @@ _08101280: .4byte gUnk_0202F438
 _08101284: .4byte 0x06000040
 _08101288: .4byte gCardArtIndexes
 _0810128C: .4byte 0x080000AE
-_08101290: .4byte gCardIconsSmall
+_08101290: .4byte gCardIconSmallStraightNone_0
 _08101294:
 	movs r5, #0
 	ldr r0, _081012F8 @ =gUnk_02000000+0x6C2C
@@ -24433,7 +24433,7 @@ _081012D8:
 	adds r0, r7, #0
 	adds r1, r1, r0
 	lsls r1, r1, #7
-	ldr r0, _08101310 @ =gCardIconsSmall
+	ldr r0, _08101310 @ =gCardIconSmallStraightNone_0
 	adds r1, r1, r0
 	adds r0, r3, #0
 	movs r2, #0x90
@@ -24447,7 +24447,7 @@ _08101300: .4byte gUnk_0202F438
 _08101304: .4byte gUnk_0202A4D0
 _08101308: .4byte gCardArtIndexes
 _0810130C: .4byte 0x080000AE
-_08101310: .4byte gCardIconsSmall
+_08101310: .4byte gCardIconSmallStraightNone_0
 _08101314:
 	adds r0, r4, #0
 	movs r1, #0x90
