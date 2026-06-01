@@ -57,5 +57,4 @@ useful
 .vscode
 ygoprodeck_card_info.json
 *.toml
-graphics/8bpp/*
-graphics/png/*
+graphics/png/*.png
