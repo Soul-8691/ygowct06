@@ -57,3 +57,4 @@ useful
 *.ss*
 .vscode
 ygoprodeck_card_info.json
+*.toml
