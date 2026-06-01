@@ -327,9 +327,12 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
+        src/password.o(.rodata);
         src/card_names_descriptions.o(.rodata);
         src/card.o(.rodata);
         data/data_09830194.o(.rodata);
+        src/prices.o(.rodata);
+        data/data_09CF006C.o(.rodata);
         src/GL/GL_Common.o(.rodata);
         src/GL/GL_File.o(.rodata);
         src/GL/GL_Sin.o(.rodata);

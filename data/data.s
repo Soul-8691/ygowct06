@@ -113876,18 +113876,3 @@ gUnk_095B8F5E:: @ 095B8F5E
 
 gUnk_095B9159:: @ 095B9159
 	.incbin "baserom.gba", 0x15B9159, 0x373
-
-gCardPasswords:: @ 095B94CC
-	.incbin "baserom.gba", 0x15B94CC, 0x13D6
-
-gUnk_095BA8A2:: @ 095BA8A2
-	.incbin "baserom.gba", 0x15BA8A2, 0xF1
-
-gUnk_095BA993:: @ 095BA993
-	.incbin "baserom.gba", 0x15BA993, 0x522
-
-gUnk_095BAEB5:: @ 095BAEB5
-	.incbin "baserom.gba", 0x15BAEB5, 0x426
-
-gUnk_095BB2DB:: @ 095BB2DB
-	.incbin "baserom.gba", 0x15BB2DB, 0x2B9
