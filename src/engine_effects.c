@@ -18,8 +18,8 @@ s32 gEngineEffectSpecialSummonDiscard_080A6630(void)
         return gEngineEffectSpecialSummonDiscard_080A5F7C();
     }
     else {
-        u8 temp_r6 = gUnk_0201E4D0.unk13_2;
-        switch (temp_r6) {
+        u8 state = gUnk_0201E4D0.unk13_2;
+        switch (state) {
             case 0: {
                 if (gUnk_0201E2A0.unk8[gUnk_0201E4D0.unk0] == 1) {
                     gEngineEffectSpecialSummonGraveyard_080B70AC(gUnk_0201E4D0.unk0, gUnk_0201E4D0.card_id, &gEngineEffectSpecialSummon_080A5714);
@@ -33,12 +33,13 @@ s32 gEngineEffectSpecialSummonDiscard_080A6630(void)
             }
             case 1: {
                 if (sub_08096B14() != 0) {
-                    s32 temp_r5 = gPlayerCards.unk1D68;
-                    s32 temp_r4 = gPlayerCards.unk1D6C + gPlayerCards.unk1D70;
-                    gEngineEffectSpecialSummon_0801EC9C(40, temp_r5, temp_r4, 0);
-                    gUnk_0201E4D0.unk8 = temp_r6;
-                    gUnk_0201E4D0.unkC = (u8)temp_r5; // Bitfield?
-                    gUnk_0201E4D0.unkC |= (u8)temp_r4 << 8;
+                    // ATK/DEF boost amounts, matching the args to gEngineEffectBoostATKBoostDEF_08047A38.
+                    s32 atkBoost = gPlayerCards.unk1D68;
+                    s32 defBoost = gPlayerCards.unk1D6C + gPlayerCards.unk1D70;
+                    gEngineEffectSpecialSummon_0801EC9C(40, atkBoost, defBoost, 0);
+                    gUnk_0201E4D0.unk8 = state;
+                    gUnk_0201E4D0.unkC = (u8)atkBoost;
+                    gUnk_0201E4D0.unkC |= (u8)defBoost << 8;
                     return 1;
                 }
     

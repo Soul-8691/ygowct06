@@ -40,64 +40,64 @@ s32 gEngineEffectSpecialSummonGraveyard_080A71E4(void)
             // Fallthrough
         }
         case 4: {
-            s32 yep;
-            s32 idk1[0x100/4];
-            s32 idk2[0x100/4];
-            s32 temp_r6 = gEngineEffectSpecialSummonGraveyard_080A422C(gUnk_0201E4D0.card_id);
+            s32 msgArg;
+            s32 msgBuf1[0x100/4];
+            s32 msgBuf2[0x100/4];
+            s32 count = gEngineEffectSpecialSummonGraveyard_080A422C(gUnk_0201E4D0.card_id);
 
             switch (gUnk_0201E4D0.card_id) {
                 case KONAMI_DARK_NECROFEAR:
                 case KONAMI_MEGAROCK_DRAGON:
                 case KONAMI_DOOM_DOZER: {
                     sub_080EEDF8(gUnk_0201E4D0.card_id);
-                    yep = sub_080EECA8();
+                    msgArg = sub_080EECA8();
                     break;
                 }
                 case KONAMI_CHAOS_SORCERER:
                 case KONAMI_BLACK_LUSTER_SOLDIER_ENVOY_OF_THE_BEGINNING:
                 case KONAMI_CHAOS_EMPEROR_DRAGON_ENVOY_OF_THE_END: {
-                    s32 dudesrsly;
+                    s32 mode;
 
                     if (gUnk_0201E4D0.unk13_4 != 0)
-                        dudesrsly = 2;
+                        mode = 2;
                     else
-                        dudesrsly = 1;
+                        mode = 1;
 
-                    yep = sub_080EED50(dudesrsly);
+                    msgArg = sub_080EED50(mode);
                     break;
                 }
                 default: {
-                        yep = sub_080EED50(sub_080EEE24(gUnk_0201E4D0.card_id));
+                        msgArg = sub_080EED50(sub_080EEE24(gUnk_0201E4D0.card_id));
                     break;
                 }
             }
 
-            gUnk_0201E4D0.unk13_3 = temp_r6;
-            if (sub_0802FC90(gUnk_0201E4D0.unk0, 11, 0x14A0) != 0) {
-                if (temp_r6 > 1) {
-                    sub_0801F2C4(idk2, 0xD6, yep);
-                    sub_0801F338(idk1, idk2, temp_r6);
+            gUnk_0201E4D0.unk13_3 = count;
+            if (sub_0802FC90(gUnk_0201E4D0.unk0, 11, KONAMI_SPIRIT_ELIMINATION_NONE) != 0) {
+                if (count > 1) {
+                    sub_0801F2C4(msgBuf2, 0xD6, msgArg);
+                    sub_0801F338(msgBuf1, msgBuf2, count);
                 }
                 else {
-                    sub_0801F2C4(idk1, 0xD8, yep);
+                    sub_0801F2C4(msgBuf1, 0xD8, msgArg);
                 }
 
                 gUnk_0201E4D0.unk13_2 = 5;
             }
             else {
-                if (temp_r6 > 1) {
-                    sub_0801F2C4(idk2, 0xD7, yep);
-                    sub_0801F338(idk1, idk2, temp_r6);
+                if (count > 1) {
+                    sub_0801F2C4(msgBuf2, 0xD7, msgArg);
+                    sub_0801F338(msgBuf1, msgBuf2, count);
                 }
                 else {
-                    sub_0801F2C4(idk1, 0xD9, yep);
+                    sub_0801F2C4(msgBuf1, 0xD9, msgArg);
                 }
 
                 gUnk_0201E4D0.unk13_2 = 1;
             }
 
             if (gUnk_0201E2A0.unk8[gUnk_0201E4D0.unk0] != 1)
-                gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, idk1);
+                gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, msgBuf1);
 
             break;
         }
@@ -106,13 +106,13 @@ s32 gEngineEffectSpecialSummonGraveyard_080A71E4(void)
                 gEngineEffectDiscardDestroyAll_080941C4(gUnk_0201E4D0.unk0, 0x47, gUnk_0201E4D0.card_id, gUnk_0201E4D0.unk13_4);
             }
             else {
-                s32 a0 = gUnk_0201E4D0.unk0;
-                s32 a1 = gUnk_0201E4D0.unk13_3;
+                s32 playerIdx = gUnk_0201E4D0.unk0;
+                s32 limit = gUnk_0201E4D0.unk13_3;
 
-                if (a1 > 32)
-                    a1 = 32;
+                if (limit > 32)
+                    limit = 32;
 
-                gEngineEffectDiscardDestroyAll_080941C4(a0, a1 + 6, gUnk_0201E4D0.card_id, gUnk_0201E4D0.unk13_4);
+                gEngineEffectDiscardDestroyAll_080941C4(playerIdx, limit + 6, gUnk_0201E4D0.card_id, gUnk_0201E4D0.unk13_4);
             }
 
             gUnk_0201E4D0.unk13_2++;
