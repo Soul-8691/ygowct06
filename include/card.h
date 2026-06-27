@@ -2792,6 +2792,12 @@ extern const struct CardInfo gCardStatsKonamiIDs[KONAMI_TABLE_SIZE];
 #define KONAMI_DANDYLION                                    6654
 
 // ---------------------------------------------------------------------------
+// Starter deck card IDs (Konami ID order, x4 to allow alternate-art copies)
+// ---------------------------------------------------------------------------
+#define STARTER_DECK_BASE_ID 16029
+#define STARTER_DECK_CARD(konamiId, altArt) (STARTER_DECK_BASE_ID + ((konamiId) - KONAMI_BLUE_EYES_WHITE_DRAGON) * 4 + (altArt))
+
+// ---------------------------------------------------------------------------
 // Card ID constants  (value = 0-based row index in card_info_2.tsv)
 // ---------------------------------------------------------------------------
 #define CARD_0                                            0
