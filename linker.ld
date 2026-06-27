@@ -327,6 +327,11 @@ SECTIONS {
 
     rodata : ALIGN(4) {
         data/data.o(.rodata);
+        asm/code_08114A90.o(.text);
+        asm/new_code.o(.text);
+        FILL(0xFF)
+        . = ORIGIN(rom) + 0x194180;  /* pad with 0xFF to gUnk_08194180 */
+        data/data_2.o(.rodata);
         src/card_palettes.o(.rodata);
         data/data_08510440.o(.rodata);
         src/card_graphics.o(.rodata);
@@ -334,6 +339,9 @@ SECTIONS {
         data/data_093264C0.o(.rodata);
         src/password.o(.rodata);
         src/card_names_descriptions.o(.rodata);
+        data/data_08114B20.o(.rodata);
+        FILL(0xFF)
+        . = ORIGIN(rom) + 0x18169B8;  /* pad with 0xFF to gUnk_098169B8 */
         src/card.o(.rodata);
         data/data_09830194.o(.rodata);
         src/card_alphabet.o(.rodata);

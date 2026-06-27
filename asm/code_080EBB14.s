@@ -5793,11 +5793,11 @@ _080EE960:
 _080EE964: .4byte gUnk_09DCF47A
 _080EE968:
 	ldr r1, _080EE980 @ =gCardNamePointers
-	lsls r0, r2, #1
-	adds r0, r0, r2
-	lsls r0, r0, #1
-	adds r0, r0, r3
-	lsls r0, r0, #2
+	lsls r0, r2, #2
+	nop
+	nop
+	nop
+	nop
 	adds r0, r0, r1
 	ldr r0, [r0]
 	ldr r1, _080EE984 @ =gCardNames
@@ -6118,11 +6118,11 @@ _080EEBD4:
 _080EEBD8: .4byte gUnk_09DCF472
 _080EEBDC:
 	ldr r1, _080EEBF4 @ =gCardDescriptionPointers
-	lsls r0, r2, #1
-	adds r0, r0, r2
-	lsls r0, r0, #1
-	adds r0, r0, r3
-	lsls r0, r0, #2
+	lsls r0, r2, #2
+	nop
+	nop
+	nop
+	nop
 	adds r0, r0, r1
 	ldr r0, [r0]
 	ldr r1, _080EEBF8 @ =gCardDescriptions
@@ -7132,7 +7132,8 @@ sub_080EF370: @ 0x080EF370
 	lsls r0, r1, #2
 	adds r0, r0, r2
 	ldr r0, [r0]
-	bl sub_080EF35C
+	nop
+	nop
 	pop {r1}
 	bx r1
 	.align 2, 0

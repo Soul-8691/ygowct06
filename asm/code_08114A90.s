@@ -1,0 +1,46 @@
+	.include "asm/macros.inc"
+	.include "constants/constants.inc"
+
+	.syntax unified
+
+	.text
+
+	.global gUnk_08114A90
+gUnk_08114A90: @ 0x08114A90
+	.align 2, 0
+_08114A90: .4byte gUnk_08114B20
+_08114A94: .4byte gUnk_081176BC
+_08114A98: .4byte gUnk_0811C8B8
+_08114A9C: .4byte gUnk_08120774
+_08114AA0: .4byte gUnk_08122DC4
+_08114AA4: .4byte gUnk_081266D8
+_08114AA8: .4byte gUnk_08129360
+_08114AAC: .4byte gUnk_0812B14C
+_08114AB0: .4byte gUnk_0812BDEC
+_08114AB4: .4byte gUnk_0812EBD0
+_08114AB8: .4byte gUnk_08130D84
+_08114ABC: .4byte gUnk_081341A8
+_08114AC0: .4byte gUnk_08137924
+_08114AC4: .4byte gUnk_0813ABF0
+_08114AC8: .4byte gUnk_0813E98C
+_08114ACC: .4byte gUnk_081407C8
+_08114AD0: .4byte gUnk_08146A90
+_08114AD4: .4byte gUnk_0814BBB0
+_08114AD8: .4byte gUnk_0814D340
+_08114ADC: .4byte gUnk_08150524
+_08114AE0: .4byte gUnk_081547D4
+_08114AE4: .4byte gUnk_08155AD0
+_08114AE8: .4byte gUnk_08157C0C
+_08114AEC: .4byte gUnk_08161A8C
+_08114AF0: .4byte gUnk_0816A21C
+_08114AF4: .4byte gUnk_0816A720
+_08114AF8: .4byte gUnk_0816BE64
+_08114AFC: .4byte gUnk_0816EF20
+_08114B00: .4byte gUnk_081771A0
+_08114B04: .4byte gUnk_0817EA50
+_08114B08: .4byte gUnk_08180604
+_08114B0C: .4byte gUnk_081849C4
+_08114B10: .4byte gUnk_0818BB70
+_08114B14: .4byte gUnk_0818E9A8
+_08114B18: .4byte gUnk_0818ECEC
+_08114B1C: .4byte gUnk_08190F24
