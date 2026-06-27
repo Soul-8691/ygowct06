@@ -32,6 +32,3 @@ gUnk_09E5F864:: @ 09E5F864
 
 gUnk_09E5F874:: @ 09E5F874
 	.incbin "baserom.gba", 0x1E5F874, 0x10
-
-gStarterDeckTrunk:: @ 09E5F884
-	.incbin "baserom.gba", 0x1E5F884, 0x50

@@ -370,6 +370,7 @@ SECTIONS {
         data/data_09E5E2E8.o(.rodata);
         src/ban.o(.rodata);
         data/data_09E5F6CC.o(.rodata);
+        src/starter_trunk.o(.rodata);
         src/input.o(.data);
         data/data_09E5F8F0.o(.data);
         src/starter_decks.o(.data);
