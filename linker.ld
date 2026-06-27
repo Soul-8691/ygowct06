@@ -253,6 +253,8 @@ SECTIONS {
         src/GL/GL_Oam.o(.text);
         src/GL/GL_Scrollbar.o(.text);
         asm/code_0801510C.o(.text);
+        src/engine_effects.o(.text);
+        asm/code_080A672C.o(.text);
         asm/nnsys/g2d/fx_mtx22.o(.text);
         asm/nnsys/g2d/g2d_Animation.o(.text);
         asm/nnsys/g2d/g2d_CellAnimation.o(.text);
