@@ -36,14 +36,14 @@ typedef struct Unk_0201E4D0
     u32 unk13_4:8;
 } Unk_0201E4D0;
 
-typedef struct Unk_0201C4E0 {
+typedef struct PlayerCards {
     u8 fill0[0x1D40-0x0];
     s32 unk1D40;
     u8 fill1D44[0x1D68-0x1D44];
     u32 unk1D68;
     u32 unk1D6C;
     u32 unk1D70;
-} Unk_0201C4E0;
+} PlayerCards;
 
 typedef struct Unk_0201E2A0 {
     u8 fill0[0x8-0x0];

@@ -4899,4 +4899,12 @@ extern const struct CardInfo gCardStatsKonamiIDs[KONAMI_TABLE_SIZE];
 #define CARD_PHANTASMAL_MARTYR_TOKEN                      2096
 #define CARD_FLUFFY_TOKEN                                 2097
 
+struct PlayerCard
+{
+    u32 card:13;
+    u32 unk_14:1;
+    u32 pad_15:8;
+    u32 unk_23:8;
+};
+
 #endif // GUARD_CARD_H

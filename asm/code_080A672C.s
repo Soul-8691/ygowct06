@@ -121,7 +121,7 @@ _080A6808:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A6880
-	ldr r0, _080A6874 @ =gUnk_0201C4E0
+	ldr r0, _080A6874 @ =gPlayerCards
 	ldr r2, _080A6878 @ =0x00001D68
 	adds r1, r0, r2
 	ldr r5, [r1]
@@ -169,7 +169,7 @@ _080A6808:
 	subs r1, #1
 	b _080A6778
 	.align 2, 0
-_080A6874: .4byte gUnk_0201C4E0
+_080A6874: .4byte gPlayerCards
 _080A6878: .4byte 0x00001D68
 _080A687C:
 	movs r0, #1
@@ -286,7 +286,7 @@ _080A6950:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A6A08
-	ldr r5, _080A69F0 @ =gUnk_0201C4E0
+	ldr r5, _080A69F0 @ =gPlayerCards
 	ldr r3, _080A69F4 @ =0x00001D68
 	adds r0, r5, r3
 	ldr r0, [r0]
@@ -357,7 +357,7 @@ _080A6950:
 	strb r0, [r2, #0x14]
 	b _080A6A12
 	.align 2, 0
-_080A69F0: .4byte gUnk_0201C4E0
+_080A69F0: .4byte gPlayerCards
 _080A69F4: .4byte 0x00001D68
 _080A69F8: .4byte 0x00001D6C
 _080A69FC: .4byte 0x00001D70
@@ -465,7 +465,7 @@ _080A6AC4:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A6B24
-	ldr r2, _080A6B1C @ =gUnk_0201C4E0
+	ldr r2, _080A6B1C @ =gPlayerCards
 	ldr r3, _080A6B20 @ =0x00001D68
 	adds r0, r2, r3
 	ldr r0, [r0]
@@ -505,7 +505,7 @@ _080A6AC4:
 	strb r0, [r6, #0x14]
 	b _080A6B2E
 	.align 2, 0
-_080A6B1C: .4byte gUnk_0201C4E0
+_080A6B1C: .4byte gPlayerCards
 _080A6B20: .4byte 0x00001D68
 _080A6B24:
 	movs r0, #1
@@ -615,7 +615,7 @@ _080A6BF0:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A6C80
-	ldr r0, _080A6C74 @ =gUnk_0201C4E0
+	ldr r0, _080A6C74 @ =gPlayerCards
 	ldr r2, _080A6C78 @ =0x00001D68
 	adds r1, r0, r2
 	ldr r5, [r1]
@@ -677,7 +677,7 @@ _080A6BF0:
 	movs r0, #0
 	b _080A6C84
 	.align 2, 0
-_080A6C74: .4byte gUnk_0201C4E0
+_080A6C74: .4byte gPlayerCards
 _080A6C78: .4byte 0x00001D68
 _080A6C7C:
 	movs r0, #1
@@ -824,7 +824,7 @@ _080A6D90:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A6E2C
-	ldr r0, _080A6DBC @ =gUnk_0201C4E0
+	ldr r0, _080A6DBC @ =gPlayerCards
 	ldr r2, _080A6DC0 @ =0x00001D68
 	adds r1, r0, r2
 	ldr r3, [r1]
@@ -841,7 +841,7 @@ _080A6D90:
 	bl gEngineEffectSendToGYGraveyard_0804448C
 	b _080A6DD0
 	.align 2, 0
-_080A6DBC: .4byte gUnk_0201C4E0
+_080A6DBC: .4byte gPlayerCards
 _080A6DC0: .4byte 0x00001D68
 _080A6DC4: .4byte 0x00001D70
 _080A6DC8:
@@ -1051,7 +1051,7 @@ _080A6F58:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A6FC8
-	ldr r0, _080A6FC0 @ =gUnk_0201C4E0
+	ldr r0, _080A6FC0 @ =gPlayerCards
 	ldr r2, _080A6FC4 @ =0x00001D68
 	adds r1, r0, r2
 	ldr r5, [r1]
@@ -1099,7 +1099,7 @@ _080A6F58:
 	strb r0, [r6, #0x14]
 	b _080A7056
 	.align 2, 0
-_080A6FC0: .4byte gUnk_0201C4E0
+_080A6FC0: .4byte gPlayerCards
 _080A6FC4: .4byte 0x00001D68
 _080A6FC8:
 	movs r0, #1
@@ -1127,7 +1127,7 @@ _080A6FF0:
 	bl sub_08096B14
 	cmp r0, #0
 	beq _080A7038
-	ldr r0, _080A7030 @ =gUnk_0201C4E0
+	ldr r0, _080A7030 @ =gPlayerCards
 	ldr r2, _080A7034 @ =0x00001D68
 	adds r1, r0, r2
 	ldr r5, [r1]
@@ -1154,7 +1154,7 @@ _080A6FF0:
 	movs r0, #1
 	b _080A7058
 	.align 2, 0
-_080A7030: .4byte gUnk_0201C4E0
+_080A7030: .4byte gPlayerCards
 _080A7034: .4byte 0x00001D68
 _080A7038:
 	adds r0, r7, #0
@@ -1365,7 +1365,7 @@ _080A717C:
 	movs r0, #0
 	b _080A71DC
 _080A71BA:
-	ldr r1, _080A71D0 @ =gUnk_0201C4E0
+	ldr r1, _080A71D0 @ =gPlayerCards
 	ldr r2, _080A71D4 @ =0x00001D68
 	adds r0, r1, r2
 	ldr r0, [r0]
@@ -1377,7 +1377,7 @@ _080A71CC:
 	movs r0, #1
 	b _080A71DC
 	.align 2, 0
-_080A71D0: .4byte gUnk_0201C4E0
+_080A71D0: .4byte gPlayerCards
 _080A71D4: .4byte 0x00001D68
 _080A71D8:
 	bl gEngineEffectSpecialSummonDiscard_080A5F7C

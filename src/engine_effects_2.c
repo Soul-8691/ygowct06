@@ -1,7 +1,7 @@
 #include "card.h"
 #include "effects.h"
 
-extern Unk_0201C4E0 gUnk_0201C4E0;
+extern PlayerCards gPlayerCards;
 extern Unk_0201E2A0 gUnk_0201E2A0;
 extern Unk_0201E4D0 gUnk_0201E4D0;
 extern s32 gEngineEffectSpecialSummonGraveyard_080A5AFC;
@@ -120,7 +120,7 @@ s32 gEngineEffectSpecialSummonGraveyard_080A71E4(void)
             break;
         }
         case 2: {
-            if (++gUnk_0201E4D0.unk13_3 <= gUnk_0201C4E0.unk1D40)
+            if (++gUnk_0201E4D0.unk13_3 <= gPlayerCards.unk1D40)
                 sub_08044970(gUnk_0201E4D0.unk0, sub_080945F4(gUnk_0201E4D0.unk13_3), 0);
             else
                 gUnk_0201E4D0.unk13_2++;
@@ -139,7 +139,7 @@ s32 gEngineEffectSpecialSummonGraveyard_080A71E4(void)
                     break;
                 }
                 case KONAMI_MEGAROCK_DRAGON: {
-                    gUnk_0201E4D0.unkC = gUnk_0201C4E0.unk1D40;
+                    gUnk_0201E4D0.unkC = gPlayerCards.unk1D40;
                     break;
                 }
             }
@@ -159,7 +159,7 @@ s32 gEngineEffectSpecialSummonGraveyard_080A71E4(void)
         }
         case 6: {
             if (sub_08096B14() != 0) {
-                gEngineEffectBoostATKBoostDEF_08047A38(gUnk_0201C4E0.unk1D68, gUnk_0201C4E0.unk1D6C + gUnk_0201C4E0.unk1D70, 0);
+                gEngineEffectBoostATKBoostDEF_08047A38(gPlayerCards.unk1D68, gPlayerCards.unk1D6C + gPlayerCards.unk1D70, 0);
 
                 if (--gUnk_0201E4D0.unk13_3 == 0) {
                     gUnk_0201E4D0.unk13_2 = 3;

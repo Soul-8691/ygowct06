@@ -7,7 +7,7 @@ s32 sub_08096B14(void);
 s32 gEngineEffectSpecialSummonDiscard_080A5F7C(void);
 s32 gEngineEffectSpecialSummonGraveyard_080B70AC(u32, u32, s32*);
 
-extern Unk_0201C4E0 gUnk_0201C4E0;
+extern PlayerCards gPlayerCards;
 extern Unk_0201E2A0 gUnk_0201E2A0;
 extern s32 gEngineEffectSpecialSummon_080A5714;
 extern Unk_0201E4D0 gUnk_0201E4D0;
@@ -33,8 +33,8 @@ s32 gEngineEffectSpecialSummonDiscard_080A6630(void)
             }
             case 1: {
                 if (sub_08096B14() != 0) {
-                    s32 temp_r5 = gUnk_0201C4E0.unk1D68;
-                    s32 temp_r4 = gUnk_0201C4E0.unk1D6C + gUnk_0201C4E0.unk1D70;
+                    s32 temp_r5 = gPlayerCards.unk1D68;
+                    s32 temp_r4 = gPlayerCards.unk1D6C + gPlayerCards.unk1D70;
                     gEngineEffectSpecialSummon_0801EC9C(40, temp_r5, temp_r4, 0);
                     gUnk_0201E4D0.unk8 = temp_r6;
                     gUnk_0201E4D0.unkC = (u8)temp_r5; // Bitfield?
