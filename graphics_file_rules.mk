@@ -18,11 +18,15 @@ $(C_BUILDDIR)/card_graphics.o: | convert-graphics
 .PHONY: convert-icons
 
 convert-icons:
+	@echo 'Checking card icon graphics...'
 	@if find graphics/png/cards/icons -name '*.png' -newer graphics/8bpp/cards/icons -print -quit 2>/dev/null | grep -q . || \
 	    [ ! -d graphics/8bpp/cards/icons ] || [ -z "$$(ls -A graphics/8bpp/cards/icons 2>/dev/null)" ]; then \
 		echo 'Running convert_icons.py (PNGs newer than 8bpp or 8bpp missing)...'; \
 		python3 convert_icons.py --build; \
 	fi
+
+# Ensure icon 8bpp files exist before card_icons.o is assembled
+$(C_BUILDDIR)/card_icons.o: | convert-icons
 
 .PHONY: graphics-8bpp graphics-pal card-graphics-force
 

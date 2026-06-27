@@ -89,6 +89,8 @@ def truncate_palettes():
 # ---------------------------------------------------------------------------
 
 def win_to_wsl(path: str) -> str:
+    if os.name != 'nt':
+        return path
     path = path.replace('\\', '/')
     if len(path) >= 2 and path[1] == ':':
         return f'/mnt/{path[0].lower()}{path[2:]}'
@@ -97,9 +99,12 @@ def win_to_wsl(path: str) -> str:
 
 GBAGFX = win_to_wsl(os.path.join(SCRIPT_DIR, 'tools', 'gbagfx', 'gbagfx'))
 
-
-def run_gbagfx(*args):
-    return subprocess.run(['wsl', GBAGFX, *args], capture_output=True, text=True)
+if os.name == 'nt':
+    def run_gbagfx(*args):
+        return subprocess.run(['wsl', GBAGFX, *args], capture_output=True, text=True)
+else:
+    def run_gbagfx(*args):
+        return subprocess.run([GBAGFX, *args], capture_output=True, text=True)
 
 
 # ---------------------------------------------------------------------------
@@ -107,17 +112,17 @@ def run_gbagfx(*args):
 # ---------------------------------------------------------------------------
 
 def step_png_to_8bpp():
-    """Convert PNGs → .8bpp using .gbapal files.
+    """Convert PNGs → .8bpp using the committed .gbapal files.
 
     Per-file rules:
       - If PNG has not changed (8bpp exists and is as new as the PNG): skip.
-      - If PNG is newer than the .gbapal (or .gbapal is missing): regenerate
-        the .gbapal from the PNG via gbagfx, then truncate to PAL_KEEP bytes.
-      - Then convert PNG → 8bpp using the (possibly refreshed) .gbapal.
+      - The .gbapal is never regenerated here — it must already exist as
+        committed in the repo. Use truncate_palettes() / gbagfx by hand if a
+        palette genuinely needs to be redone.
     """
     files = sorted(f for f in os.listdir(DIR_PNG) if f.endswith('.png'))
     total = len(files)
-    ok = up_to_date = pal_regen = err = 0
+    ok = up_to_date = err = 0
     print(f'Step 2a: converting {total} PNGs → .8bpp …')
     for i, fname in enumerate(files, 1):
         stem     = fname[:-4]
@@ -131,20 +136,10 @@ def step_png_to_8bpp():
             up_to_date += 1
             continue
 
-        # Regenerate .gbapal if the PNG is newer than it (or it doesn't exist)
-        if not os.path.exists(pal_path) or os.path.getmtime(pal_path) < png_mtime:
-            r = run_gbagfx(win_to_wsl(png_path), win_to_wsl(pal_path))
-            if r.returncode == 0:
-                # Truncate freshly-generated palette to PAL_KEEP bytes
-                data = open(pal_path, 'rb').read()[:PAL_KEEP]
-                open(pal_path, 'wb').write(data)
-                pal_regen += 1
-            else:
-                err += 1
-                print(f'  [{i}/{total}] ERROR generating palette: {fname}')
-                if r.stderr:
-                    print(f'    {r.stderr.strip()}')
-                continue
+        if not os.path.exists(pal_path):
+            err += 1
+            print(f'  [{i}/{total}] ERROR missing palette: {fname}')
+            continue
 
         result = run_gbagfx(
             win_to_wsl(png_path),
@@ -161,7 +156,7 @@ def step_png_to_8bpp():
             print(f'  [{i}/{total}] ERROR: {fname}')
             if result.stderr:
                 print(f'    {result.stderr.strip()}')
-    print(f'  done — {ok} converted, {up_to_date} up-to-date, {pal_regen} palettes refreshed, {err} errors.')
+    print(f'  done — {ok} converted, {up_to_date} up-to-date, {err} errors.')
 
 
 def step_8bpp_to_6bpp():
