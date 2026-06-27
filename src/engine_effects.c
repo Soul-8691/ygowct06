@@ -7,10 +7,10 @@ s32 sub_08096B14(void);
 s32 gEngineEffectSpecialSummonDiscard_080A5F7C(void);
 s32 gEngineEffectSpecialSummonGraveyard_080B70AC(u32, u32, s32*);
 
-extern unk2 gUnk_0201C4E0;
+extern Unk_0201C4E0 gUnk_0201C4E0;
 extern Unk_0201E2A0 gUnk_0201E2A0;
 extern s32 gEngineEffectSpecialSummon_080A5714;
-extern unk gUnk_0201E4D0;
+extern Unk_0201E4D0 gUnk_0201E4D0;
 
 s32 gEngineEffectSpecialSummonDiscard_080A6630(void)
 {
@@ -18,7 +18,7 @@ s32 gEngineEffectSpecialSummonDiscard_080A6630(void)
         return gEngineEffectSpecialSummonDiscard_080A5F7C();
     }
     else {
-        u8 temp_r6 = gUnk_0201E4D0.unk14;
+        u8 temp_r6 = gUnk_0201E4D0.unk13_2;
         switch (temp_r6) {
             case 0: {
                 if (gUnk_0201E2A0.unk8[gUnk_0201E4D0.unk0] == 1) {
@@ -28,7 +28,7 @@ s32 gEngineEffectSpecialSummonDiscard_080A6630(void)
                     sub_080969C4(&gEngineEffectSpecialSummon_080A5714);
                 }
     
-                gUnk_0201E4D0.unk14++;
+                gUnk_0201E4D0.unk13_2++;
                 return 0;
             }
             case 1: {
