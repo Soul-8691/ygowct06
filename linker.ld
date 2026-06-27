@@ -65,7 +65,7 @@ SECTIONS {
         . = 0x0001BCC2; gUnk_0201BCC2 = .;
         . = 0x0001C4D0; gUnk_0201C4D0 = .;
         . = 0x0001C4D8; gUnk_0201C4D8 = .;
-        . = 0x0001C4E0; gUnk_0201C4E0 = .;
+        . = 0x0001C4E0; gPlayerCards = .;
         . = 0x0001C4EC; gUnk_0201C4EC = .;
         . = 0x0001C4F0; gUnk_0201C4F0 = .;
         . = 0x0001C4F4; gUnk_0201C4F4 = .;
@@ -252,7 +252,13 @@ SECTIONS {
         src/GL/GL_File.o(.text);
         src/GL/GL_Oam.o(.text);
         src/GL/GL_Scrollbar.o(.text);
-        asm/code_0801510C.o(.text);
+        asm/code_0801563C.o(.text);
+        src/engine_effects_3.o(.text);
+        asm/code_08088C9C.o(.text);
+        src/engine_effects.o(.text);
+        asm/code_080A672C.o(.text);
+        src/engine_effects_2.o(.text);
+        asm/code_080A7650.o(.text);
         asm/nnsys/g2d/fx_mtx22.o(.text);
         asm/nnsys/g2d/g2d_Animation.o(.text);
         asm/nnsys/g2d/g2d_CellAnimation.o(.text);
