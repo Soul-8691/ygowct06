@@ -88,9 +88,3 @@ gUnk_09E59DC4:: @ 09E59DC4
 
 gUnk_09E59DD4:: @ 09E59DD4
 	.incbin "baserom.gba", 0x1E59DD4, 0x40
-
-gFusion:: @ 09E59E14
-	.incbin "baserom.gba", 0x1E59E14, 0x2B0
-
-gRitual:: @ 09E5A0C4
-	.incbin "baserom.gba", 0x1E5A0C4, 0x64

@@ -363,6 +363,7 @@ SECTIONS {
         *libc.a:syscalls.o(.rodata);
 
         data/data2.o(.rodata);
+        src/fusion_ritual.o(.rodata);
         src/ai_2.o(.rodata);
         data/data_09E5AAC0.o(.rodata);
         src/pack.o(.rodata);
