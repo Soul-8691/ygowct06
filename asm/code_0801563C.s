@@ -111195,7 +111195,7 @@ _0804BA68:
 	b _0804BA88
 _0804BA78:
 	adds r0, r4, #0
-	bl gEngineEffectSpecialSummon_0804B81C
+	bl gEngineEffectSpecialSummon_0804B81C_RDMD @ extended for Red-Eyes Darkness Metal Dragon (KONAMI_GOBLIN_CALLIGRAPHER); see asm/new_code.s
 	movs r1, #0
 	cmp r0, #0
 	ble _0804BA86

@@ -1260,6 +1260,9 @@ extern void gCardEffectUnknown_08083BA0(void);
 extern void gCardEffectUnknown_080845E0(void);
 extern void gCardEffectUnknown_08084AF4(void);
 
+// Red-Eyes Darkness Metal Dragon (src/new_code.c), slotted onto Goblin Calligrapher.
+extern void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void);
+
 // gEffects1  (676 entries)
 const struct CardEffects gCardEffects[] = {
 //  KonamiId                                             pad  eff1  eff2  eff3  eff4  eff5
@@ -1782,6 +1785,7 @@ const struct CardEffects gCardEffects[] = {
     { KONAMI_ORDER_TO_SMASH                             , 0, { gCardEffectDestroyTribute_0807965C               , gCardEffectDestroyDamage_08052AA8                , gCardEffectDestroySpellTrapTribute_08061E98      , NULL                                             , gCardEffectDestroy_0808198C                       } },
     { KONAMI_RETURN_FROM_THE_DIFFERENT_DIMENSION        , 0, { gCardEffectSpecialSummonBanish_08079944          , NULL                                             , gCardEffectSpecialSummonGraveyard_0805C248       , gCardEffectDamage_0805635C                       , NULL                                              } },
     { KONAMI_INFERNO_TEMPEST                            , 0, { gCardEffectBanishGraveyard_08079BDC              , NULL                                             , gCardEffectBanishGraveyard_08062048              , NULL                                             , NULL                                              } },
+    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, { gCardEffectRedEyesDarknessMetalDragon_SummonDragon, NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
     { KONAMI_DARK_FACTORY_OF_MASS_PRODUCTION            , 0, { gCardEffectGraveyardSearch_08066530              , NULL                                             , gCardEffectGraveyard_0805F068                    , NULL                                             , gCardEffectGraveyard_08082F44                     } },
     { KONAMI_HAMMER_SHOT                                , 0, { gCardEffectDestroy_08069984                      , gCardEffectDestroyChangePosition_0805474C        , NULL                                             , NULL                                             , NULL                                              } },
     { KONAMI_MIND_WIPE                                  , 0, { gCardEffectDraw_080741F8                         , NULL                                             , gCardEffectUnknown_08062378                      , NULL                                             , NULL                                              } },

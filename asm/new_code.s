@@ -287,5 +287,70 @@ EngineMarkUsedEffectThisTurn: @ r0=playerIdx, r1=cardId, r2=effectSlot
 	.align 2, 0
 _ENGMT_FLAGS: .4byte gEngNC_UsedEffectFlags
 
+@ ----------------------------------------------------------------------------
+@ Hooking effect (1) into the real engine. The original engine has no idea
+@ KONAMI_GOBLIN_CALLIGRAPHER's slot now means anything -- the two functions
+@ below extend the two real dispatchers that gate/resolve a hand-based
+@ alt-summon condition (REAL, traced this session): each checks for our
+@ card_id first and handles it directly; for every other card they fall
+@ straight through to the original, untouched function, so nothing else in
+@ the game changes. The 4 call sites that fed into the originals are
+@ repointed at these instead (see the asm/code_0801563C.s and
+@ asm/code_080A7650.s edits).
+@
+@   gEngineEffectSpecialSummon_0804B81C(cardId) -> bucket 0-5: the
+@   eligibility classifier consulted by gEngineEffectSpecialSummon_0804BA58/
+@   _0804BAB8/_080A8C30 sub-callers (sub_0804AD48 etc.) before allowing a
+@   hand alt-summon. Bucket 6 is new (the original only ever returns 0-5;
+@   every consumer found just treats nonzero as "eligible").
+@
+@   gEngineEffectSpecialSummon_080A8C30(void) reads gUnk_0201E4D0.card_id
+@   itself and resolves whichever specific card is actually being
+@   alt-summoned (this is what Blue-Eyes Shining Dragon/Metalzoa/etc. land
+@   in). Its sole caller is gEngineEffectSpecialSummon_080AB200.
+@ ----------------------------------------------------------------------------
+
+	@ s32 gEngineEffectSpecialSummon_0804B81C_RDMD(u32 cardId)
+	thumb_func_start gEngineEffectSpecialSummon_0804B81C_RDMD
+gEngineEffectSpecialSummon_0804B81C_RDMD: @ r0=cardId
+	push {r4, lr}
+	adds r4, r0, #0
+	ldr r1, _RDMD_0804B81C_ID
+	cmp r0, r1
+	bne _RDMD_0804B81C_ORIG
+	movs r0, #6 @ new bucket: Red-Eyes Darkness Metal Dragon
+	b _RDMD_0804B81C_RET
+_RDMD_0804B81C_ORIG:
+	adds r0, r4, #0
+	bl gEngineEffectSpecialSummon_0804B81C @ REAL: untouched original, unrelated cards fall through here
+_RDMD_0804B81C_RET:
+	pop {r4}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_RDMD_0804B81C_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
+
+	@ s32 gEngineEffectSpecialSummon_080A8C30_RDMD(void)
+	thumb_func_start gEngineEffectSpecialSummon_080A8C30_RDMD
+gEngineEffectSpecialSummon_080A8C30_RDMD:
+	push {lr}
+	ldr r0, _RDMD_080A8C30_E4D0
+	ldr r0, [r0]
+	lsls r0, r0, #9
+	lsrs r0, r0, #0x11 @ r0 = gUnk_0201E4D0.card_id
+	ldr r1, _RDMD_080A8C30_ID
+	cmp r0, r1
+	bne _RDMD_080A8C30_ORIG
+	bl gEngineEffectRedEyesDarknessMetalDragon_BanishSummon @ src/new_code.c
+	b _RDMD_080A8C30_RET
+_RDMD_080A8C30_ORIG:
+	bl gEngineEffectSpecialSummon_080A8C30 @ REAL: untouched original, unrelated cards fall through here
+_RDMD_080A8C30_RET:
+	pop {r1}
+	bx r1
+	.align 2, 0
+_RDMD_080A8C30_E4D0: .4byte gUnk_0201E4D0
+_RDMD_080A8C30_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
+
 	.align 2
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each

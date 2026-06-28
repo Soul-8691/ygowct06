@@ -187,6 +187,9 @@ SECTIONS {
         . = 0x00039EBC; gUnk_02039EBC = .;
         . = 0x0003A2C0; gUnk_0203A2C0 = .;
         . = 0x0003EEB0; gUnk_0203EEB0 = .;
+        src/new_code.o(.bss);
+        src/new_code.o(COMMON);
+        asm/new_code.o(.bss);
         . = 0x00040000;
     } >ewram
 
@@ -335,6 +338,7 @@ SECTIONS {
         data/data.o(.rodata);
         asm/code_08114A90.o(.text);
         asm/new_code.o(.text);
+        src/new_code.o(.text);
         src/new_code.o(.rodata);
         FILL(0xFF)
         . = ORIGIN(rom) + 0x194180;  /* pad with 0xFF to gUnk_08194180 */
@@ -346,6 +350,7 @@ SECTIONS {
         data/data_093264C0.o(.rodata);
         src/password.o(.rodata);
         src/card_names_descriptions.o(.rodata);
+        src/effects.o(.rodata);  /* moved here from its old spot (now 0xFF-filled) so it can grow */
         FILL(0x0)
         . = ORIGIN(rom) + 0x1797358;  /* pad with 0x0 */
         data/data_08114B20.o(.rodata);
@@ -361,7 +366,8 @@ SECTIONS {
         src/GL/GL_Oam.o(.rodata);
         src/GL/GL_Scrollbar.o(.rodata);
         data/data_09E39C7C.o(.rodata);
-        src/effects.o(.rodata);
+        FILL(0xFF)
+        . = ORIGIN(rom) + 0x1E47464;  /* gCardEffects grew and moved to the 0x0-padded gap below; fill its old space with 0xFF */
         data/data_09E47464.o(.rodata);
         src/ai.o(.rodata);
         data/data_09E491C0.o(.rodata);
