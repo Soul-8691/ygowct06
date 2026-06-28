@@ -540,5 +540,40 @@ _ESDFHT_ROWSTRIDE: .4byte 0x00000868
 _ESDFHT_HAND_OFS: .4byte 0x00000120 @ 0x48 elems * 4
 _ESDFHT_SELFID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
 
+@ ----------------------------------------------------------------------------
+@ Once-per-turn enforcement for effect (2)'s King Dragun-based row (see
+@ gCardAISpecialSummonDragonFromHand's header in src/new_code.c for why this
+@ exists: none of King Dragun's real slot 0/2/3 functions track it, and the
+@ real mechanism wasn't found). gCardAISpecialSummonDragonFromHand checks
+@ the same flag and skips registering any candidates once set, so this only
+@ needs to mark it -- the real slot-2 check then naturally reports
+@ "not eligible" on a repeat attempt within the same turn.
+@ ----------------------------------------------------------------------------
+
+	@ void EngineRDMD_MarkSummonUsedThenAnimate(s32* request)
+	@ Wired into gCardEffects3 slot 3 instead of the bare real function.
+	@ Marks the flag, then calls straight through to King Dragun's real
+	@ slot 3 (gCardEffectDestroySpecialSummon_080563A4 -- confirmed this
+	@ session to be a generic Time Wizard-themed animation/sound trigger
+	@ shared by 40+ unrelated cards, not card-specific logic) so the real
+	@ visual/audio behavior is unaffected.
+	thumb_func_start EngineRDMD_MarkSummonUsedThenAnimate
+EngineRDMD_MarkSummonUsedThenAnimate: @ r0 = request ptr
+	push {r4, lr}
+	adds r4, r0, #0 @ preserve the request ptr across both calls
+	ldrb r1, [r0, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f @ r0 = playerIdx
+	ldr r1, _ERDMD_ID @ r1 = KONAMI_GOBLIN_CALLIGRAPHER
+	movs r2, #1 @ r2 = RDMD_EFFECT_SUMMON_DRAGON
+	bl EngineMarkUsedEffectThisTurn
+	adds r0, r4, #0
+	bl gCardEffectDestroySpecialSummon_080563A4 @ REAL: untouched, see header above
+	pop {r4}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_ERDMD_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
+
 	.align 2
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each

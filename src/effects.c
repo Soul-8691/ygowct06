@@ -1261,6 +1261,7 @@ extern void gCardEffectUnknown_080845E0(void);
 extern void gCardEffectUnknown_08084AF4(void);
 
 extern void gCardEffectRedEyesDarknessMetalDragon_BanishSummon(void);
+extern void EngineRDMD_MarkSummonUsedThenAnimate(void); // asm/new_code.s
 
 // gEffects1  (676 entries)
 const struct CardEffects gCardEffects[] = {
@@ -2615,7 +2616,7 @@ const struct CardEffects gCardEffects3[] = {
     { KONAMI_CRUSH_D_GANDRA                             , 0, { gCardEffectSpecialSummonSendToGY_080797D0        , gCardEffectDestroyAllDamage_0805501C             , NULL                                             , gCardEffectDamage_0805635C                       , NULL                                              } },
     { KONAMI_BLUE_EYES_SHINING_DRAGON                   , 0, { gCardEffectFusionSummonNegate_08071170           , NULL                                             , gCardEffectSpecialSummonNegate_08061F10          , NULL                                             , NULL                                              } },
     { KONAMI_SORCERER_OF_DARK_MAGIC                     , 0, { gCardEffectSpecialSummonNegate_08079EC4          , NULL                                             , gCardEffectNegateDestroy_0805D118                , NULL                                             , NULL                                              } },
-    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, { gCardEffectSearchSpecialSummon_0806FDEC          , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
+    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, { gCardEffectSearchSpecialSummon_0806FDEC          , NULL                                             , gCardEffectSpecialSummon_08062E1C                , EngineRDMD_MarkSummonUsedThenAnimate             , NULL                                              } },
     { KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV8           , 0, { gCardEffectSpecialSummonNegate_08079EC4          , NULL                                             , gCardEffectNegateDestroy_0805D118                , NULL                                             , NULL                                              } },
     { KONAMI_ARMED_DRAGON_LV5                           , 0, { gCardEffectDestroy_08064654                      , gCardEffectSpecialSummonSendToGY_080546BC        , gCardEffectSpecialSummonSendToGY_08062170        , gCardEffectSpecialSummonSendToGY_0805934C        , gCardEffectDestroy_0808198C                       } },
     { KONAMI_ARMED_DRAGON_LV7                           , 0, { gCardEffectDestroy_08064660                      , gCardEffectSpecialSummonSendToGY_080546E0        , gCardEffectSpecialSummonSendToGY_08062170        , gCardEffectSpecialSummonSendToGY_0805934C        , NULL                                              } },

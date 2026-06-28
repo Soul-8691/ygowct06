@@ -266,20 +266,37 @@ s32 sub_0808D88C(s32, s32, u32);
 // gCardAISpecialSummonGraveyard_0808A010 (still asm-only) for Graveyard.
 // Whatever real execution chain is wired to this card's gCardEffects3 slots
 // then finds and resolves these candidates entirely on its own.
+//
+// Once-per-turn: King Dragun's real slots 0/2/3 (gCardEffectSpecialSummon_080659E8/
+// _08062E1C, gCardEffectDestroySpecialSummon_080563A4) all turned out to be
+// generic/shared utilities (an environment precondition check, a hand-scan
+// boolean check, and an unrelated Time Wizard animation trigger reused by
+// 40+ other cards) -- none of them track "once per turn" anywhere, and the
+// "0" field in every single gCardEffects row (including King Dragun's own)
+// is genuinely always zero, not a per-card flags field. The real mechanism
+// wasn't found, so this reuses our own EngineUsedEffectThisTurn flag
+// (NEW, self-contained -- see asm/new_code.s) instead: skip registering any
+// candidates at all once already used this turn, which makes King Dragun's
+// real slot-2 check correctly report "not eligible" on a repeat activation
+// attempt. Paired with EngineRDMD_MarkSummonUsedThenAnimate (asm/new_code.s,
+// wired into slot 3 instead of the bare real function) marking the flag.
 void gCardAISpecialSummonDragonFromHand(s32 arg0) {
     u32 i;
     u32 cardId;
 
+    if (EngineUsedEffectThisTurn(1 & arg0, KONAMI_GOBLIN_CALLIGRAPHER, RDMD_EFFECT_SUMMON_DRAGON))
+        return;
+
     for (i = 0; i < gPlayerCards[(1 & arg0)][3]; i++) {
         cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x48 + i]))->card;
-        if (sub_080EEDF8(cardId) == RACE_DRAGON) {
+        if (cardId != KONAMI_GOBLIN_CALLIGRAPHER && sub_080EEDF8(cardId) == RACE_DRAGON) {
             sub_0808D88C(arg0, 0xB, i);
         }
     }
     for (i = 0; i < gPlayerCards[(1 & arg0)][5]; i++)
     {
         cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x106 + i]))->card;
-        if (sub_080EEDF8(cardId) == RACE_DRAGON) {
+        if (cardId != KONAMI_GOBLIN_CALLIGRAPHER && sub_080EEDF8(cardId) == RACE_DRAGON) {
             sub_0808D88C(arg0, 0xE, i);
         }
     }
