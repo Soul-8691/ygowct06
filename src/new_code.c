@@ -255,13 +255,17 @@ s32 sub_080EEDF8(u32);
 s32 sub_0808D88C(s32, s32, u32);
 
 // AI-candidate registration for effect (2) (REAL primitives throughout --
-// see the breakthrough note above): for each card in hand that's a
-// Dragon-Type monster (sub_080EEDF8, confirmed real this session), register
-// it as a category-0xB (Hand zone) candidate via sub_0808D88C, the same
-// real call Cathedral of Nobles' own AI search uses
-// (gCardAISearchSpecialSummon_08088B2C, engine_effects_3.c). Whatever real
-// execution chain is wired to this card's gCardEffects3 slots then finds
-// and resolves these candidates entirely on its own.
+// see the breakthrough note above): for each Dragon-Type monster
+// (sub_080EEDF8, confirmed real this session) in hand or Graveyard,
+// register it as a candidate via sub_0808D88C -- category 0xB for the Hand
+// zone (offset 0x48, count [3]), category 0xE for the Graveyard zone
+// (offset 0x106, count [5]). Both the call convention and these exact zone
+// constants are confirmed directly from real AI search functions:
+// Cathedral of Nobles' gCardAISearchSpecialSummon_08088B2C (engine_effects_3.c)
+// for hand, and Skilled Dark Magician's shared
+// gCardAISpecialSummonGraveyard_0808A010 (still asm-only) for Graveyard.
+// Whatever real execution chain is wired to this card's gCardEffects3 slots
+// then finds and resolves these candidates entirely on its own.
 void gCardAISpecialSummonDragonFromHand(s32 arg0) {
     u32 i;
     u32 cardId;
@@ -272,11 +276,11 @@ void gCardAISpecialSummonDragonFromHand(s32 arg0) {
             sub_0808D88C(arg0, 0xB, i);
         }
     }
-    for (i = 0; i < gPlayerCards[(1 & arg0)][4]; i++)
+    for (i = 0; i < gPlayerCards[(1 & arg0)][5]; i++)
     {
-        cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x98 + i]))->card;
+        cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x106 + i]))->card;
         if (sub_080EEDF8(cardId) == RACE_DRAGON) {
-            sub_0808D88C(arg0, 0xD, i);
+            sub_0808D88C(arg0, 0xE, i);
         }
     }
 }
