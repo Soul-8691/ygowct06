@@ -383,11 +383,11 @@ _ENGMT_FLAGS: .4byte gEngNC_UsedEffectFlags
 	thumb_func_start gEngineEffectSpecialSummon_0804B81C_RDMD
 gEngineEffectSpecialSummon_0804B81C_RDMD: @ 0x0804B81C
 	adds r1, r0, #0
-	ldr r0, _RDMD_0804B81C_ID @ =0x000017D0 (Red-Eyes Darkness Metal Dragon)
-	cmp r1, r0
-	bne _0804B826_
-	movs r0, #6 @ new bucket: Red-Eyes Darkness Metal Dragon
-	b _0804BA56
+	@ldr r0, _RDMD_0804B81C_ID @ =0x000017D0 (Red-Eyes Darkness Metal Dragon)
+	@cmp r1, r0
+	@bne _0804B826_
+	@movs r0, #6 @ new bucket: Red-Eyes Darkness Metal Dragon
+	@b _0804BA56
 _0804B826_:
 	ldr r0, _0804B85C @ =0x00001758 (Archlord Zerato)
 	cmp r1, r0

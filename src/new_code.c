@@ -228,3 +228,21 @@ void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void)
 // against the original ROM -- expected on this ROM-hack branch, since
 // Goblin Calligrapher's slot is being deliberately overwritten with new
 // content.
+
+extern s32 gPlayerCards[][0x21A];
+s32 sub_080EEDF8(u32);
+s32 sub_0808D88C(s32, s32, u32);
+
+void gCardAISpecialSummonDragonFromHand(s32 arg0) {
+    u32 i;
+    u32 cardId;
+    s32 var_0;
+    s32 var_1;
+
+    for (i = 0; i < gPlayerCards[(1 & arg0)][3]; i++) {
+        cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x48 + i]))->card;
+        if (sub_080EEDF8(cardId) == RACE_DRAGON) {
+            sub_0808D88C(arg0, 0xB, i);
+        }
+    }
+}
