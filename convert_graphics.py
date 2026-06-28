@@ -145,7 +145,6 @@ def step_png_to_8bpp():
             win_to_wsl(png_path),
             win_to_wsl(bpp_path),
             '-mwidth', '10',
-            '-palette', win_to_wsl(pal_path),
         )
         if result.returncode == 0:
             ok += 1
