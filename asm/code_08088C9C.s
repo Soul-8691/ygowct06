@@ -10162,7 +10162,7 @@ sub_0808DA68: @ 0x0808DA68
 	push {r4, r5, r6, lr}
 	adds r4, r0, #0
 	movs r2, #0
-	movs r3, #0x99
+	movs r3, #0x9A
 	lsls r3, r3, #1
 	ldr r6, _0808DA8C @ =gAISearcherCardEffects
 	adds r5, r6, #0
@@ -15713,11 +15713,11 @@ _0809050E:
 	b _0809056C
 _08090518:
 	ldr r5, _08090520 @ =gCardEffects
-	ldr r2, _08090524 @ =0x000002A3
+	ldr r2, _08090524 @ =0x000002A4
 	b _0809056C
 	.align 2, 0
 _08090520: .4byte gCardEffects
-_08090524: .4byte 0x000002A3
+_08090524: .4byte 0x000002A4
 _08090528:
 	ldr r5, _08090530 @ =gFlipCardEffects
 	ldr r2, _08090534 @ =0x00000187
