@@ -388,7 +388,7 @@ const struct CardAIEffect gAISearcherCardEffects[308] = {
     { KONAMI_FAMILIAR_KNIGHT                            , 0, gCardAISpecialSummonReturnToHand_08089990   },
     { KONAMI_PETEN_THE_DARK_CLOWN                       , 0, gCardAISpecialSummonGraveyard_080872E4      },
     { KONAMI_THEINEN_THE_GREAT_SPHINX                   , 0, gCardAISpecialSummonGraveyard_080872E4      },
-    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, gCardAISpecialSummonDiscard_0808BE6C        },
+    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, gCardAISpecialSummon_08087BA8               },
     { KONAMI_ULTIMATE_INSECT_LV1                        , 0, gCardAISpecialSummonGraveyard_080872E4      },
     { KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV4           , 0, gCardAISpecialSummonGraveyard_080872E4      },
     { KONAMI_HORUS_THE_BLACK_FLAME_DRAGON_LV6           , 0, gCardAISpecialSummonGraveyard_080872E4      },

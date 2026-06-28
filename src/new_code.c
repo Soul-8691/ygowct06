@@ -171,11 +171,31 @@ s32 gEngineEffectRedEyesDarknessMetalDragon_SummonDragon(void)
     return 0;
 }
 
-// ---- gEffects1 adapter wrappers ----
+// ---- gCardEffectXxx adapter wrappers ----
 // struct CardEffects.effs[] entries are EffectFn (void(void)), not the
-// s32-returning step functions above -- every other entry in gEffects1 is a
-// thin "gCardEffectXxx" trampoline around the matching "gEngineEffectXxx"
-// state machine, so these two follow suit.
+// s32-returning step functions above -- every other entry in the gEffects
+// tables is a thin "gCardEffectXxx" trampoline around the matching
+// "gEngineEffectXxx" state machine, so these follow suit.
+//
+// CURRENT STATUS (see asm/new_code.s's header for the full writeup):
+//   - gCardEffectRedEyesDarknessMetalDragon_BanishSummon (effect 1) is
+//     wired into the alt-summon-condition dispatch
+//     (gEngineEffectSpecialSummon_080A8C30_RDMD in asm/new_code.s), but the
+//     actual call into it is commented out there: it depends on
+//     EngineFindFaceUpMonsterByRace/EngineRemoveFieldMonsterFromPlay, which
+//     use an unconfirmed placeholder field-zone offset known to corrupt
+//     state when exercised (same root cause documented below).
+//   - gCardEffectRedEyesDarknessMetalDragon_SummonDragon (effect 2) is NOT
+//     currently wired into gCardEffects3 at all. src/effects.c's
+//     KONAMI_GOBLIN_CALLIGRAPHER row instead points slots 2/3 directly at
+//     EngineCheckDragonInHand / EngineSummonDragonFromHandCommit
+//     (asm/new_code.s) -- simpler functions that only search+remove from
+//     hand (no field placement, no once-per-turn tracking) and were used to
+//     debug the real gCardEffects3 calling/staging convention. This
+//     gUnk_0201E4D0-based version is the intended end-state design (proper
+//     check/wait/commit staging, hand+GY search, once-per-turn tracking) to
+//     swap back in once the real field-monster-zone array and the real
+//     hand-removal-with-UI-sync mechanism are found.
 void gCardEffectRedEyesDarknessMetalDragon_BanishSummon(void)
 {
     gEngineEffectRedEyesDarknessMetalDragon_BanishSummon();
@@ -186,24 +206,25 @@ void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void)
     gEngineEffectRedEyesDarknessMetalDragon_SummonDragon();
 }
 
-// ---- Wiring this up for real would additionally need (not done here): ----
+// ---- Already wired up (see src/effects.c, src/card.c, linker.ld): ----
 //
-// src/effects.c -- add a gEffects1 row for the repurposed slot:
-//   { KONAMI_GOBLIN_CALLIGRAPHER, 0,
-//     { gCardEffectRedEyesDarknessMetalDragon_BanishSummon,
-//       gCardEffectRedEyesDarknessMetalDragon_SummonDragon,
-//       NULL, NULL, NULL } },
+// src/effects.c -- KONAMI_GOBLIN_CALLIGRAPHER has a gCardEffects3 row (see
+// above for why it points at EngineCheckDragonInHand/Commit, not the
+// gCardEffectXxx wrappers in this file). effects.o was moved to the
+// 0x0-padded free-space gap in linker.ld so it could grow without shifting
+// the rest of the ROM; its old slot is 0xFF-filled.
 //
 // src/card.c -- both CardInfo rows (CARD_GOBLIN_CALLIGRAPHER and the
-// KONAMI_GOBLIN_CALLIGRAPHER-indexed one) would need atk/def/level/race/
-// type updated from {400, 400, 1, RACE_FIEND, TYPE_NONE} to
-// {2800, 2400, 10, RACE_DRAGON, TYPE_EFFECT} (attribute is already
-// ATTR_DARK, so that one's a freebie).
+// KONAMI_GOBLIN_CALLIGRAPHER-indexed one) are atk=2800/def=2400/
+// race=RACE_DRAGON/type=TYPE_EFFECT (attribute was already ATTR_DARK).
+// Level is currently 1, not the real card's 10 -- deliberately, so it can
+// be Normal Summoned without 2 tributes while effect (1) is disabled.
+// Restore to 10 once that's no longer needed for testing.
 //
-// src/card_names_descriptions.c -- the in-game name/description text for
-// CARD_GOBLIN_CALLIGRAPHER.
+// Still not done: src/card_names_descriptions.c (in-game name/description
+// text for CARD_GOBLIN_CALLIGRAPHER still reads "Goblin Calligrapher").
 //
-// Note this intentionally breaks byte-matching for src/card.c and
-// src/effects.c against the original ROM -- expected on this ROM-hack
-// branch, since Goblin Calligrapher's slot is being deliberately
-// overwritten with new content.
+// This intentionally breaks byte-matching for src/card.c and src/effects.c
+// against the original ROM -- expected on this ROM-hack branch, since
+// Goblin Calligrapher's slot is being deliberately overwritten with new
+// content.

@@ -26,6 +26,42 @@
 @     (open/close a retry counter in gUnk_0201B290, trigger the removal
 @     animation). Reused for symmetry, though their full internal behavior
 @     beyond that wasn't pinned down.
+@   - gCardEffects3 slot 2 is a READ-ONLY eligibility check, called
+@     speculatively/repeatedly before the player ever confirms anything;
+@     slot 3 is the real, once-only commit. Confirmed via Cannon Soldier's
+@     real row (gCardEffectTributeDamage_0805C3EC / gCardEffectTribute_080567A0).
+@     Mixing those up is what caused hand corruption on every summon, before
+@     the player ever touched "Activate Effect".
+@
+@ CURRENT STATUS / KNOWN LIMITATIONS, as of this session:
+@   - Effect (2) (Special Summon a Dragon from hand), simplified to
+@     hand-only: EngineCheckDragonInHand (slot 2) / EngineSummonDragonFromHandCommit
+@     (slot 3) correctly find and remove a Dragon-Type card from hand. They
+@     do NOT place it anywhere yet, and the hand-browse cursor goes stale
+@     after the removal (view a card and return to the duel to refresh it).
+@     Both are symptoms of bypassing the real engine's action-queueing
+@     system (sub_080A1A00 -> sub_080A1968 -> a dispatch on
+@     gPlayerCards+0x1D90 -> per-card state machines) instead of going
+@     through it; several attempts to find Tribute's specific dispatch case
+@     this session were all wrong (gEngineEffectDrawSpecialSummon_080A2AD0,
+@     gEngineEffectTakeControlDiscard_080A2ED0, and others), so the real
+@     case is still unknown. The fully-staged version of this effect
+@     (gEngineEffectRedEyesDarknessMetalDragon_SummonDragon in
+@     src/new_code.c) is NOT currently wired into gCardEffects3 -- it's the
+@     intended end-state design, kept for when the real removal mechanism is
+@     found, but it depends on the same unconfirmed pieces.
+@   - Effect (1) (banish a Dragon you control to Special Summon this card
+@     from hand) is fully written (gEngineEffectRedEyesDarknessMetalDragon_BanishSummon,
+@     src/new_code.c) and its dispatcher hooks are live
+@     (gEngineEffectSpecialSummon_0804B81C_RDMD / _080A8C30_RDMD below), but
+@     the actual call into it from _080A8C30_RDMD is commented out, since it
+@     depends on the same placeholder field-zone offset (gUnk_0201C510 is
+@     NOT the real field array -- writing to it corrupted unrelated state)
+@     and would likely reproduce the same corruption.
+@   - src/card.c currently has Goblin Calligrapher's Level set to 1, not the
+@     real card's 10, so it can be Normal Summoned without 2 tributes for
+@     testing. Restore to 10 once Normal Summon is no longer needed to get
+@     it onto the field.
 @ ============================================================================
 
 	@ s32 EngineFindDragonInHandOrGY(u32 playerIdx, u32 race, u32 excludeCardId)
@@ -336,33 +372,22 @@ _ENGMT_FLAGS: .4byte gEngNC_UsedEffectFlags
 	@ Vampire Genesis
 	@ Wall Shadow
 
-@	@ s32 gEngineEffectSpecialSummon_0804B81C_RDMD(u32 cardId)
-@	thumb_func_start gEngineEffectSpecialSummon_0804B81C_RDMD
-@gEngineEffectSpecialSummon_0804B81C_RDMD: @ r0=cardId
-@	push {r4, lr}
-@	adds r4, r0, #0
-@	ldr r1, _RDMD_0804B81C_ID
-@	cmp r0, r1
-@	bne _RDMD_0804B81C_ORIG
-@	movs r0, #6 @ new bucket: Red-Eyes Darkness Metal Dragon
-@	b _RDMD_0804B81C_RET
-@_RDMD_0804B81C_ORIG:
-@	adds r0, r4, #0
-@	bl gEngineEffectSpecialSummon_0804B81C @ REAL: untouched original, unrelated cards fall through here
-@_RDMD_0804B81C_RET:
-@	pop {r4}
-@	pop {r1}
-@	bx r1
-@	.align 2, 0
-@_RDMD_0804B81C_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
-
+	@ s32 gEngineEffectSpecialSummon_0804B81C_RDMD(u32 cardId)
+	@ Literal duplicate of the original classifier's body (per request --
+	@ this extends the engine by duplicating-and-adding-on rather than
+	@ wrapping it), with one new case spliced in at the top: cardId ==
+	@ KONAMI_GOBLIN_CALLIGRAPHER returns bucket 6 (new; the original only
+	@ ever returns 0-5, and every consumer found just treats nonzero as
+	@ "eligible"). Every other cardId falls through to the exact same
+	@ comparison chain as the original gEngineEffectSpecialSummon_0804B81C.
 	thumb_func_start gEngineEffectSpecialSummon_0804B81C_RDMD
 gEngineEffectSpecialSummon_0804B81C_RDMD: @ 0x0804B81C
 	adds r1, r0, #0
-	@ldr r0, _RDMD_0804B81C_ID @ =0x000017D0 (Red-Eyes Darkness Metal Dragon)
-	@cmp r1, r0
-	@bne _0804B826_
-	@b _0804BA44_
+	ldr r0, _RDMD_0804B81C_ID @ =0x000017D0 (Red-Eyes Darkness Metal Dragon)
+	cmp r1, r0
+	bne _0804B826_
+	movs r0, #6 @ new bucket: Red-Eyes Darkness Metal Dragon
+	b _0804BA56
 _0804B826_:
 	ldr r0, _0804B85C @ =0x00001758 (Archlord Zerato)
 	cmp r1, r0
@@ -685,15 +710,23 @@ _0804BA4C:
 _0804BA50:
 	movs r0, #5
 	b _0804BA56
-_0804BA44_:
-	movs r0, #2
-	b _0804BA56
 _0804BA54:
 	movs r0, #0
 _0804BA56:
 	bx lr
 
 	@ s32 gEngineEffectSpecialSummon_080A8C30_RDMD(void)
+	@ DELIBERATELY a no-op passthrough right now: the card_id check below is
+	@ live, but the call into effect (1)'s state machine
+	@ (gEngineEffectRedEyesDarknessMetalDragon_BanishSummon, src/new_code.c)
+	@ is commented out. That state machine still depends on
+	@ EngineFindFaceUpMonsterByRace/EngineRemoveFieldMonsterFromPlay, which
+	@ use the same unconfirmed placeholder field-zone offset that caused the
+	@ hand/deck corruption debugged for effect (2) this session (see
+	@ EngineSummonDragonFromHandCommit's header above) -- enabling this
+	@ would very likely reproduce the same class of bug for the alt-summon
+	@ path. Re-enable the bl below once the real field-monster-zone array is
+	@ confirmed (gUnk_0201C510 is NOT it -- see above).
 	thumb_func_start gEngineEffectSpecialSummon_080A8C30_RDMD
 gEngineEffectSpecialSummon_080A8C30_RDMD:
 	push {lr}
@@ -704,7 +737,7 @@ gEngineEffectSpecialSummon_080A8C30_RDMD:
 	ldr r1, _RDMD_080A8C30_ID
 	cmp r0, r1
 	bne _RDMD_080A8C30_ORIG
-	@bl gEngineEffectSpecialSummonDiscard_080A6630 @ src/new_code.c - was gEngineEffectRedEyesDarknessMetalDragon_BanishSummon
+	@bl gEngineEffectRedEyesDarknessMetalDragon_BanishSummon @ src/new_code.c -- disabled, see header comment above
 	@b _RDMD_080A8C30_RET
 _RDMD_080A8C30_ORIG:
 	bl gEngineEffectSpecialSummon_080A8C30 @ REAL: untouched original, unrelated cards fall through here
@@ -716,31 +749,100 @@ _RDMD_080A8C30_E4D0: .4byte gUnk_0201E4D0
 _RDMD_080A8C30_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
 
 @ ----------------------------------------------------------------------------
-@ Standalone test for effect (2), simplified to hand-only ("knowing what we
-@ know now"): a single, separate function, not sharing code with Cannon
-@ Soldier/King Dragun or the _RDMD classifier duplicates above.
-@
-@ Finds a Dragon-Type monster in hand (REAL: race via sub_080EEDF8) and
-@ removes it from the hand zone (shift + decrement count, both confirmed
-@ safe). Does NOT place it anywhere yet: gUnk_0201C510 turned out to corrupt
-@ unrelated state (the deck-browsing UI broke after testing), so it's
-@ almost certainly a transient scratch/cache buffer that
-@ gEngineEffectTribute_080339D8 builds fresh each time, not the real
-@ persistent field-monster-zone storage. That real array hasn't been found
-@ yet, so the actual placement step is deliberately left out for now.
+@ Effect (2) test, simplified to hand-only, split into a check/commit pair
+@ matching the REAL protocol confirmed via Cannon Soldier this session:
+@ slot 2 is called speculatively/repeatedly (every frame the activate icon
+@ is being evaluated, before the player ever confirms anything) and must be
+@ READ-ONLY -- gEngineEffectTribute_080339D8 (Cannon Soldier's slot 2) only
+@ *counts* valid tribute targets via gEngineEffectTributeSpecialSummon_08033730,
+@ never mutates. slot 3 is the real commit step, only reached once the
+@ player actually activates -- gCardEffectTribute_080567A0 (Cannon Soldier's
+@ slot 3) calls sub_080A1C78 -> sub_080A1A00, the real action-queueing
+@ system. The original one-shot version of this function mutated on what
+@ was actually a read-only check call, corrupting hand/deck state on every
+@ summon. gUnk_0201E4D0-based state machines don't belong in these slots at
+@ all -- that subsystem is for the alt-summon-condition dispatch
+@ (gEngineEffectSpecialSummon_080A8C30 etc.), which uses a completely
+@ different calling convention (global context, not a request pointer) and
+@ either no-ops or hangs when called from here instead.
 @ ----------------------------------------------------------------------------
 
-	@ void EngineSummonDragonFromHandTest(s32* request)
-	@ r0 = the same small request struct every gCardEffectXxx function gets;
-	@ playerIdx is bit 0 of byte[2], the same extraction idiom used
-	@ everywhere (e.g. gCardEffectTribute_080567A0).
-	thumb_func_start EngineSummonDragonFromHandTest
-EngineSummonDragonFromHandTest: @ r0 = request ptr
+	@ s32 EngineCheckDragonInHand(s32* request)
+	@ slot 2: READ-ONLY. r0 = the same small request struct every
+	@ gCardEffectXxx function gets; playerIdx is bit 0 of byte[2] (same
+	@ extraction idiom as gCardEffectTribute_080567A0 etc). Returns 1 if a
+	@ Dragon-Type monster (other than this card) is in hand, else 0. Never
+	@ writes to gPlayerCards.
+	thumb_func_start EngineCheckDragonInHand
+EngineCheckDragonInHand: @ r0 = request ptr
+	push {r4, r6, r7, lr}
+	ldrb r1, [r0, #2]
+	lsls r0, r1, #0x1f
+	lsrs r6, r0, #0x1f @ r6 = playerIdx (0 or 1)
+	bl EngineFindDragonInHandHelper @ r0 = 1 if found, 0 if not (r6 = playerIdx in)
+	pop {r4, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
+
+	@ void EngineSummonDragonFromHandCommit(s32* request)
+	@ slot 3: the real commit, only reached once the player activates.
+	@ Re-scans (cheap, hand is small) and actually removes the Dragon from
+	@ hand (shift + decrement count, both confirmed safe). Does NOT place
+	@ it anywhere yet -- gUnk_0201C510 turned out to be transient
+	@ scratch/cache (writing to it corrupted unrelated state), not the
+	@ real persistent field-monster-zone storage, which hasn't been found.
+	thumb_func_start EngineSummonDragonFromHandCommit
+EngineSummonDragonFromHandCommit: @ r0 = request ptr
 	push {r4, r5, r6, r7, lr}
 	ldrb r1, [r0, #2]
 	lsls r0, r1, #0x1f
 	lsrs r6, r0, #0x1f @ r6 = playerIdx (0 or 1)
+	bl EngineFindDragonInHandHelper
+	cmp r0, #0
+	beq _ESDFC_DONE @ nothing to do (shouldn't happen if slot 2 already said yes)
 
+	@ r4 = found cardId, r5 = its hand index, r7 = hand row base (all set by the helper)
+	ldr r0, [r7, #0xC] @ count
+	subs r0, r0, #1 @ last valid index before removal
+	adds r1, r5, #0 @ r1 = shift cursor, starting at the found index
+_ESDFC_SHIFT:
+	cmp r1, r0
+	bge _ESDFC_SHIFTDONE
+	lsls r2, r1, #2
+	ldr r3, _ESDFC_HAND_OFS
+	adds r2, r2, r3
+	adds r2, r2, #4 @ offset of hand[i+1]
+	ldr r3, [r7, r2]
+	lsls r2, r1, #2
+	ldr r5, _ESDFC_HAND_OFS
+	adds r2, r2, r5
+	str r3, [r7, r2] @ hand[i] = hand[i+1]
+	adds r1, #1
+	b _ESDFC_SHIFT
+_ESDFC_SHIFTDONE:
+	lsls r2, r0, #2
+	ldr r3, _ESDFC_HAND_OFS
+	adds r2, r2, r3
+	movs r3, #0
+	str r3, [r7, r2] @ zero the now-stale last hand slot
+	ldr r1, [r7, #0xC]
+	subs r1, r1, #1
+	str r1, [r7, #0xC] @ count--
+_ESDFC_DONE:
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_ESDFC_HAND_OFS: .4byte 0x00000120 @ 0x48 elems * 4
+
+	@ s32 EngineFindDragonInHandHelper(void)
+	@ Shared scan, used by both functions above. In: r6 = playerIdx.
+	@ Out: r0 = 1/0 found, r4 = cardId, r5 = hand index, r7 = hand row base.
+	@ Read-only -- only reads gPlayerCards, never writes.
+	thumb_func_start EngineFindDragonInHandHelper
+EngineFindDragonInHandHelper:
+	push {lr}
 	ldr r7, _ESDFHT_PLAYERCARDS
 	movs r1, #1
 	ands r1, r6
@@ -774,44 +876,11 @@ _ESDFHT_NEXT:
 	b _ESDFHT_SCAN
 
 _ESDFHT_FOUND:
-	@ r4 = found cardId, r5 = its hand index, r6 = playerIdx, r7 = hand row base
-	ldr r0, [r7, #0xC] @ count
-	subs r0, r0, #1 @ last valid index before removal
-	adds r1, r5, #0 @ r1 = shift cursor, starting at the found index
-_ESDFHT_SHIFT:
-	cmp r1, r0
-	bge _ESDFHT_SHIFTDONE
-	lsls r2, r1, #2
-	ldr r3, _ESDFHT_HAND_OFS
-	adds r2, r2, r3
-	adds r2, r2, #4 @ offset of hand[i+1]
-	ldr r3, [r7, r2]
-	lsls r2, r1, #2
-	ldr r5, _ESDFHT_HAND_OFS
-	adds r2, r2, r5
-	str r3, [r7, r2] @ hand[i] = hand[i+1]
-	adds r1, #1
-	b _ESDFHT_SHIFT
-_ESDFHT_SHIFTDONE:
-	lsls r2, r0, #2
-	ldr r3, _ESDFHT_HAND_OFS
-	adds r2, r2, r3
-	movs r3, #0
-	str r3, [r7, r2] @ zero the now-stale last hand slot
-	ldr r1, [r7, #0xC]
-	subs r1, r1, #1
-	str r1, [r7, #0xC] @ count--
-
-	@ NOTE: the card (id in r4) is now removed from hand but not placed
-	@ anywhere -- see header comment. Report success since the removal
-	@ itself worked.
 	movs r0, #1
 	b _ESDFHT_DONE
-
 _ESDFHT_FAIL:
 	movs r0, #0
 _ESDFHT_DONE:
-	pop {r4, r5, r6, r7}
 	pop {r1}
 	bx r1
 	.align 2, 0
