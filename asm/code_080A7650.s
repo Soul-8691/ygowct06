@@ -44454,7 +44454,7 @@ _080BB9F2:
 _080BBA00:
 	adds r4, #8
 	adds r7, #1
-	cmp r7, #0x45
+	cmp r7, #0x46
 	bls _080BB9F2
 	ldr r1, _080BBB2C @ =gUnk_0201AFE0
 	ldr r0, [r1, #8]

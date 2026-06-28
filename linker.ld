@@ -351,6 +351,7 @@ SECTIONS {
         src/password.o(.rodata);
         src/card_names_descriptions.o(.rodata);
         src/effects.o(.rodata);  /* moved here from its old spot (now 0xFF-filled) so it can grow */
+        src/ai.o(.rodata);
         src/ai_2.o(.rodata);
         FILL(0x0)
         . = ORIGIN(rom) + 0x1797358;  /* pad with 0x0 */
@@ -370,7 +371,8 @@ SECTIONS {
         FILL(0xFF)
         . = ORIGIN(rom) + 0x1E47464;  /* gCardEffects grew and moved to the 0x0-padded gap below; fill its old space with 0xFF */
         data/data_09E47464.o(.rodata);
-        src/ai.o(.rodata);
+        FILL(0xFF)
+        . = ORIGIN(rom) + 0x01E491C0;
         data/data_09E491C0.o(.rodata);
         src/main.o(.rodata);
         data/data_09E4F498.o(.rodata);

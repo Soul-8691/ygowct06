@@ -1006,7 +1006,7 @@ const struct CardAIEffect gAIEffects7[207] = {
 };
 
 // gAIEffects8  (70 entries)
-const struct CardAIEffect gAIEffects8[70] = {
+const struct CardAIEffect gAIEffects8[71] = {
 //  KonamiId                                             pad  Effect
     { KONAMI_ROYAL_KEEPER                               , 0, gCardAIGraveyardDestroy_080B76A4              },
     { KONAMI_SWARM_OF_SCARABS                           , 0, gCardAIGraveyardDestroy_080B76A4              },
@@ -1025,6 +1025,7 @@ const struct CardAIEffect gAIEffects8[70] = {
     { KONAMI_GREAT_SPIRIT                               , 0, gCardAIGraveyardDestroy_080B76A4              },
     { KONAMI_CHAOS_EMPEROR_DRAGON_ENVOY_OF_THE_END      , 0, gCardAISpecialSummonSendToGY_080BAD10         },
     { KONAMI_CANNON_SOLDIER                             , 0, gCardAIDamageTribute_080BA134                 },
+    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, gCardAIDamageTribute_080BA134                 },
     { KONAMI_TOON_CANNON_SOLDIER                        , 0, gCardAIDamageTribute_080BA134                 },
     { KONAMI_CATAPULT_TURTLE                            , 0, gCardAIDamageTribute_080BA090                 },
     { KONAMI_ULTIMATE_BASEBALL_KID                      , 0, gCardAISendToGYBoostATK_080BA194              },

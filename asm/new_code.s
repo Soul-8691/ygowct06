@@ -359,10 +359,10 @@ _ENGMT_FLAGS: .4byte gEngNC_UsedEffectFlags
 	thumb_func_start gEngineEffectSpecialSummon_0804B81C_RDMD
 gEngineEffectSpecialSummon_0804B81C_RDMD: @ 0x0804B81C
 	adds r1, r0, #0
-	ldr r0, _RDMD_0804B81C_ID @ =0x000017D0 (Red-Eyes Darkness Metal Dragon)
-	cmp r1, r0
-	bne _0804B826_
-	b _0804BA44_
+	@ldr r0, _RDMD_0804B81C_ID @ =0x000017D0 (Red-Eyes Darkness Metal Dragon)
+	@cmp r1, r0
+	@bne _0804B826_
+	@b _0804BA44_
 _0804B826_:
 	ldr r0, _0804B85C @ =0x00001758 (Archlord Zerato)
 	cmp r1, r0
@@ -704,8 +704,8 @@ gEngineEffectSpecialSummon_080A8C30_RDMD:
 	ldr r1, _RDMD_080A8C30_ID
 	cmp r0, r1
 	bne _RDMD_080A8C30_ORIG
-	bl gEngineEffectSpecialSummonDiscard_080A6630 @ src/new_code.c
-	b _RDMD_080A8C30_RET
+	@bl gEngineEffectSpecialSummonDiscard_080A6630 @ src/new_code.c - was gEngineEffectRedEyesDarknessMetalDragon_BanishSummon
+	@b _RDMD_080A8C30_RET
 _RDMD_080A8C30_ORIG:
 	bl gEngineEffectSpecialSummon_080A8C30 @ REAL: untouched original, unrelated cards fall through here
 _RDMD_080A8C30_RET:
@@ -714,6 +714,111 @@ _RDMD_080A8C30_RET:
 	.align 2, 0
 _RDMD_080A8C30_E4D0: .4byte gUnk_0201E4D0
 _RDMD_080A8C30_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
+
+@ ----------------------------------------------------------------------------
+@ Standalone test for effect (2), simplified to hand-only ("knowing what we
+@ know now"): a single, separate function, not sharing code with Cannon
+@ Soldier/King Dragun or the _RDMD classifier duplicates above.
+@
+@ Finds a Dragon-Type monster in hand (REAL: race via sub_080EEDF8) and
+@ removes it from the hand zone (shift + decrement count, both confirmed
+@ safe). Does NOT place it anywhere yet: gUnk_0201C510 turned out to corrupt
+@ unrelated state (the deck-browsing UI broke after testing), so it's
+@ almost certainly a transient scratch/cache buffer that
+@ gEngineEffectTribute_080339D8 builds fresh each time, not the real
+@ persistent field-monster-zone storage. That real array hasn't been found
+@ yet, so the actual placement step is deliberately left out for now.
+@ ----------------------------------------------------------------------------
+
+	@ void EngineSummonDragonFromHandTest(s32* request)
+	@ r0 = the same small request struct every gCardEffectXxx function gets;
+	@ playerIdx is bit 0 of byte[2], the same extraction idiom used
+	@ everywhere (e.g. gCardEffectTribute_080567A0).
+	thumb_func_start EngineSummonDragonFromHandTest
+EngineSummonDragonFromHandTest: @ r0 = request ptr
+	push {r4, r5, r6, r7, lr}
+	ldrb r1, [r0, #2]
+	lsls r0, r1, #0x1f
+	lsrs r6, r0, #0x1f @ r6 = playerIdx (0 or 1)
+
+	ldr r7, _ESDFHT_PLAYERCARDS
+	movs r1, #1
+	ands r1, r6
+	ldr r2, _ESDFHT_ROWSTRIDE
+	muls r1, r2, r1
+	adds r7, r7, r1 @ r7 = &gPlayerCards[player][0]
+
+	movs r5, #0 @ r5 = hand loop index i
+	ldr r0, [r7, #0xC] @ count = gPlayerCards[player][3]
+_ESDFHT_SCAN:
+	cmp r5, r0
+	bge _ESDFHT_FAIL
+	lsls r1, r5, #2
+	ldr r2, _ESDFHT_HAND_OFS
+	adds r1, r1, r2
+	ldr r3, [r7, r1] @ r3 = raw hand entry
+	lsls r2, r3, #0x13
+	lsrs r2, r2, #0x13 @ r2 = candidate card:13 ID
+	adds r4, r2, #0 @ preserve across the upcoming bl
+	ldr r1, _ESDFHT_SELFID
+	cmp r2, r1
+	beq _ESDFHT_NEXT @ skip the card itself (this card, mid-activation)
+	adds r0, r2, #0
+	bl sub_080EEDF8 @ REAL: r0 = race of that card
+	movs r1, #1 @ RACE_DRAGON
+	cmp r0, r1
+	beq _ESDFHT_FOUND
+_ESDFHT_NEXT:
+	ldr r0, [r7, #0xC]
+	adds r5, #1
+	b _ESDFHT_SCAN
+
+_ESDFHT_FOUND:
+	@ r4 = found cardId, r5 = its hand index, r6 = playerIdx, r7 = hand row base
+	ldr r0, [r7, #0xC] @ count
+	subs r0, r0, #1 @ last valid index before removal
+	adds r1, r5, #0 @ r1 = shift cursor, starting at the found index
+_ESDFHT_SHIFT:
+	cmp r1, r0
+	bge _ESDFHT_SHIFTDONE
+	lsls r2, r1, #2
+	ldr r3, _ESDFHT_HAND_OFS
+	adds r2, r2, r3
+	adds r2, r2, #4 @ offset of hand[i+1]
+	ldr r3, [r7, r2]
+	lsls r2, r1, #2
+	ldr r5, _ESDFHT_HAND_OFS
+	adds r2, r2, r5
+	str r3, [r7, r2] @ hand[i] = hand[i+1]
+	adds r1, #1
+	b _ESDFHT_SHIFT
+_ESDFHT_SHIFTDONE:
+	lsls r2, r0, #2
+	ldr r3, _ESDFHT_HAND_OFS
+	adds r2, r2, r3
+	movs r3, #0
+	str r3, [r7, r2] @ zero the now-stale last hand slot
+	ldr r1, [r7, #0xC]
+	subs r1, r1, #1
+	str r1, [r7, #0xC] @ count--
+
+	@ NOTE: the card (id in r4) is now removed from hand but not placed
+	@ anywhere -- see header comment. Report success since the removal
+	@ itself worked.
+	movs r0, #1
+	b _ESDFHT_DONE
+
+_ESDFHT_FAIL:
+	movs r0, #0
+_ESDFHT_DONE:
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_ESDFHT_PLAYERCARDS: .4byte gPlayerCards
+_ESDFHT_ROWSTRIDE: .4byte 0x00000868
+_ESDFHT_HAND_OFS: .4byte 0x00000120 @ 0x48 elems * 4
+_ESDFHT_SELFID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
 
 	.align 2
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each

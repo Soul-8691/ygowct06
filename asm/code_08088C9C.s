@@ -15713,11 +15713,11 @@ _0809050E:
 	b _0809056C
 _08090518:
 	ldr r5, _08090520 @ =gCardEffects
-	ldr r2, _08090524 @ =0x000002A4
+	ldr r2, _08090524 @ =0x000002A3
 	b _0809056C
 	.align 2, 0
 _08090520: .4byte gCardEffects
-_08090524: .4byte 0x000002A4
+_08090524: .4byte 0x000002A3
 _08090528:
 	ldr r5, _08090530 @ =gFlipCardEffects
 	ldr r2, _08090534 @ =0x00000187
@@ -15733,7 +15733,7 @@ _08090538:
 _08090540: .4byte gCardEffects2
 _08090544:
 	ldr r5, _0809054C @ =gCardEffects3
-	movs r2, #0xb7
+	movs r2, #0xb8
 	b _0809056C
 	.align 2, 0
 _0809054C: .4byte gCardEffects3
