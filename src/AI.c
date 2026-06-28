@@ -794,7 +794,7 @@ const struct CardAIEffect gAIEffects6[5] = {
 };
 
 // gAIEffects7  (207 entries)
-const struct CardAIEffect gAIEffects7[207] = {
+const struct CardAIEffect gAIEffects7[208] = {
 //  KonamiId                                             pad  Effect
     { KONAMI_MOOYAN_CURRY                               , 0, gCardAIGainLP_080B777C                        },
     { KONAMI_RED_MEDICINE                               , 0, gCardAIGainLP_080B777C                        },
@@ -972,6 +972,7 @@ const struct CardAIEffect gAIEffects7[207] = {
     { KONAMI_ELEMENTAL_HERO_TEMPEST                     , 0, gCardAISpecialSummonFusionSummon_080BAB1C     },
     { KONAMI_RAVIEL_LORD_OF_PHANTASMS                   , 0, gCardAISpecialSummonBoostATK_080BAB3C         },
     { KONAMI_ARCHLORD_ZERATO                            , 0, gCardAISpecialSummonDiscard_080BABA8          },
+    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, gCardAISpecialSummonDiscard_080BABA8          },
     { KONAMI_THE_BLOCKMAN                               , 0, gCardAISpecialSummonPreventAttack_080BACCC    },
     { KONAMI_LEKUNGA                                    , 0, gCardAISpecialSummonChangePosition_080BABD4   },
     { KONAMI_A_LEGENDARY_OCEAN                          , 0, gCardAIBoostATKBoostDEF_080B851C              },
@@ -1025,7 +1026,6 @@ const struct CardAIEffect gAIEffects8[71] = {
     { KONAMI_GREAT_SPIRIT                               , 0, gCardAIGraveyardDestroy_080B76A4              },
     { KONAMI_CHAOS_EMPEROR_DRAGON_ENVOY_OF_THE_END      , 0, gCardAISpecialSummonSendToGY_080BAD10         },
     { KONAMI_CANNON_SOLDIER                             , 0, gCardAIDamageTribute_080BA134                 },
-    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, gCardAIDamageTribute_080BA134                 },
     { KONAMI_TOON_CANNON_SOLDIER                        , 0, gCardAIDamageTribute_080BA134                 },
     { KONAMI_CATAPULT_TURTLE                            , 0, gCardAIDamageTribute_080BA090                 },
     { KONAMI_ULTIMATE_BASEBALL_KID                      , 0, gCardAISendToGYBoostATK_080BA194              },

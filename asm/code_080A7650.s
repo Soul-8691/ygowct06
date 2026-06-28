@@ -43649,7 +43649,7 @@ _080BB400: .4byte gAIEffects7
 _080BB404:
 	adds r4, #8
 	adds r5, #1
-	cmp r5, #0xce
+	cmp r5, #0xcf
 	bls _080BB3E4
 	movs r0, #0
 _080BB40E:

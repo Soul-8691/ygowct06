@@ -171,31 +171,49 @@ s32 gEngineEffectRedEyesDarknessMetalDragon_SummonDragon(void)
     return 0;
 }
 
-// ---- gCardEffectXxx adapter wrappers ----
+// ---- gCardEffectXxx adapter wrappers (effect 1 and the OLD effect-2 design) ----
 // struct CardEffects.effs[] entries are EffectFn (void(void)), not the
 // s32-returning step functions above -- every other entry in the gEffects
 // tables is a thin "gCardEffectXxx" trampoline around the matching
 // "gEngineEffectXxx" state machine, so these follow suit.
 //
-// CURRENT STATUS (see asm/new_code.s's header for the full writeup):
-//   - gCardEffectRedEyesDarknessMetalDragon_BanishSummon (effect 1) is
-//     wired into the alt-summon-condition dispatch
-//     (gEngineEffectSpecialSummon_080A8C30_RDMD in asm/new_code.s), but the
-//     actual call into it is commented out there: it depends on
-//     EngineFindFaceUpMonsterByRace/EngineRemoveFieldMonsterFromPlay, which
-//     use an unconfirmed placeholder field-zone offset known to corrupt
-//     state when exercised (same root cause documented below).
-//   - gCardEffectRedEyesDarknessMetalDragon_SummonDragon (effect 2) is NOT
-//     currently wired into gCardEffects3 at all. src/effects.c's
-//     KONAMI_GOBLIN_CALLIGRAPHER row instead points slots 2/3 directly at
-//     EngineCheckDragonInHand / EngineSummonDragonFromHandCommit
-//     (asm/new_code.s) -- simpler functions that only search+remove from
-//     hand (no field placement, no once-per-turn tracking) and were used to
-//     debug the real gCardEffects3 calling/staging convention. This
-//     gUnk_0201E4D0-based version is the intended end-state design (proper
-//     check/wait/commit staging, hand+GY search, once-per-turn tracking) to
-//     swap back in once the real field-monster-zone array and the real
-//     hand-removal-with-UI-sync mechanism are found.
+// BREAKTHROUGH for effect (2): src/effects.c's KONAMI_GOBLIN_CALLIGRAPHER
+// row is now King Dragun's *real, unmodified* gCardEffects3 row verbatim
+// (gCardEffectSpecialSummon_080659E8 / _08062E1C / gCardEffectDestroySpecialSummon_080563A4).
+// That alone didn't work (it found nothing, since King Dragun's own AI
+// function populates the AI-candidate list, gUnk_0201E4F0, with Dragons
+// from the *Deck*, not hand). The fix was adding gCardAISpecialSummonDragonFromHand
+// below to src/AI_2.c's table instead -- it populates the exact same
+// candidate list with Dragons from *hand* (using the real sub_080EEDF8 race
+// check and the real sub_0808D88C candidate-registration call, same as
+// Cathedral of Nobles' gCardAISearchSpecialSummon_08088B2C in
+// engine_effects_3.c). King Dragun's real execution chain then finds and
+// resolves that hand candidate correctly on its own -- confirmed working
+// end-to-end by hand, including real field placement, with no field-zone
+// or hand-removal code of our own at all. This sidesteps every problem
+// hit earlier (gUnk_0201C510 corruption, the stale hand-browse cursor,
+// the unconfirmed action-queue dispatch) by using real engine code for the
+// entire resolution instead of reimplementing any of it.
+//
+// gCardEffectRedEyesDarknessMetalDragon_SummonDragon below (and
+// EngineCheckDragonInHand/EngineSummonDragonFromHandCommit in
+// asm/new_code.s) are now SUPERSEDED by that for effect (2) -- left in
+// place as a reference for the hand-only search/remove primitives, not
+// wired into any table anymore.
+//
+// Effect (1) (banish a face-up Dragon you control to Special Summon this
+// card from hand) hasn't had the same treatment yet, but the same idea
+// likely applies: instead of EngineFindFaceUpMonsterByRace/
+// EngineRemoveFieldMonsterFromPlay (which use an unconfirmed placeholder
+// field-zone offset known to corrupt state), find or write a
+// gCardAIXxx-style function that registers a face-up field Dragon as an
+// AI candidate, and pair it with a real card's existing
+// banish-a-monster-you-control-to-summon-from-hand execution chain (e.g.
+// whichever of Dark Core/Chaos Sorcerer/VWXYZ-Dragon Catapult Cannon's real
+// gEffects1 functions actually perform it), the same way King Dragun's
+// chain got reused here. gEngineEffectSpecialSummon_080A8C30_RDMD's call
+// into gEngineEffectRedEyesDarknessMetalDragon_BanishSummon is still
+// commented out pending that.
 void gCardEffectRedEyesDarknessMetalDragon_BanishSummon(void)
 {
     gEngineEffectRedEyesDarknessMetalDragon_BanishSummon();
@@ -206,13 +224,16 @@ void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void)
     gEngineEffectRedEyesDarknessMetalDragon_SummonDragon();
 }
 
-// ---- Already wired up (see src/effects.c, src/card.c, linker.ld): ----
+// ---- Already wired up (see src/effects.c, src/AI_2.c, src/card.c, linker.ld): ----
 //
-// src/effects.c -- KONAMI_GOBLIN_CALLIGRAPHER has a gCardEffects3 row (see
-// above for why it points at EngineCheckDragonInHand/Commit, not the
-// gCardEffectXxx wrappers in this file). effects.o was moved to the
-// 0x0-padded free-space gap in linker.ld so it could grow without shifting
-// the rest of the ROM; its old slot is 0xFF-filled.
+// src/effects.c -- KONAMI_GOBLIN_CALLIGRAPHER's gCardEffects3 row is King
+// Dragun's real row (see above). effects.o was moved to the 0x0-padded
+// free-space gap in linker.ld so it could grow without shifting the rest
+// of the ROM; its old slot is 0xFF-filled.
+//
+// src/AI_2.c -- KONAMI_GOBLIN_CALLIGRAPHER's AI-candidate-search table entry
+// is gCardAISpecialSummonDragonFromHand (below), the function that actually
+// makes effect (2) work (see the breakthrough note above).
 //
 // src/card.c -- both CardInfo rows (CARD_GOBLIN_CALLIGRAPHER and the
 // KONAMI_GOBLIN_CALLIGRAPHER-indexed one) are atk=2800/def=2400/
@@ -224,25 +245,38 @@ void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void)
 // Still not done: src/card_names_descriptions.c (in-game name/description
 // text for CARD_GOBLIN_CALLIGRAPHER still reads "Goblin Calligrapher").
 //
-// This intentionally breaks byte-matching for src/card.c and src/effects.c
-// against the original ROM -- expected on this ROM-hack branch, since
-// Goblin Calligrapher's slot is being deliberately overwritten with new
-// content.
+// This intentionally breaks byte-matching for src/card.c, src/effects.c,
+// and src/AI_2.c against the original ROM -- expected on this ROM-hack
+// branch, since Goblin Calligrapher's slot is being deliberately
+// overwritten with new content.
 
 extern s32 gPlayerCards[][0x21A];
 s32 sub_080EEDF8(u32);
 s32 sub_0808D88C(s32, s32, u32);
 
+// AI-candidate registration for effect (2) (REAL primitives throughout --
+// see the breakthrough note above): for each card in hand that's a
+// Dragon-Type monster (sub_080EEDF8, confirmed real this session), register
+// it as a category-0xB (Hand zone) candidate via sub_0808D88C, the same
+// real call Cathedral of Nobles' own AI search uses
+// (gCardAISearchSpecialSummon_08088B2C, engine_effects_3.c). Whatever real
+// execution chain is wired to this card's gCardEffects3 slots then finds
+// and resolves these candidates entirely on its own.
 void gCardAISpecialSummonDragonFromHand(s32 arg0) {
     u32 i;
     u32 cardId;
-    s32 var_0;
-    s32 var_1;
 
     for (i = 0; i < gPlayerCards[(1 & arg0)][3]; i++) {
         cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x48 + i]))->card;
         if (sub_080EEDF8(cardId) == RACE_DRAGON) {
             sub_0808D88C(arg0, 0xB, i);
+        }
+    }
+    for (i = 0; i < gPlayerCards[(1 & arg0)][4]; i++)
+    {
+        cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x98 + i]))->card;
+        if (sub_080EEDF8(cardId) == RACE_DRAGON) {
+            sub_0808D88C(arg0, 0xD, i);
         }
     }
 }
