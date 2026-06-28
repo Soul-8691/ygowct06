@@ -11,7 +11,7 @@ struct CardAIEffect {
     /* 0x4 */ EffectFn effect;
 }; /* size = 0x8 */
 
-// extern const struct CardAIEffect gAISearcherCardEffectss[307]; // searchers
+extern const struct CardAIEffect gAISearcherCardEffects[307]; // searchers
 extern const struct CardAIEffect gAIEffects[222]; // effects4
 extern const struct CardAIEffect gAIEffects2[69]; // effects5
 extern const struct CardAIEffect gAIEffects3[57]; // effects6
