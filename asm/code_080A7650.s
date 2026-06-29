@@ -43427,7 +43427,7 @@ _080BB248:
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r5, #0
-	bl gEngineEffectSpecialSummon_080A4AF4
+	bl gEngineEffectSpecialSummon_080A4AF4_New
 	cmp r0, #0
 	beq _080BB2AC
 	ldr r1, _080BB2A0 @ =0x00001C44

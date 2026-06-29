@@ -1119,10 +1119,10 @@ _080A9126:
 	thumb_func_start gEngineEffectSpecialSummon_0804B81C_New
 gEngineEffectSpecialSummon_0804B81C_New: @ 0x0804B81C
 	adds r1, r0, #0
-	@ldr r0, _RDMD_0804B81C_ID_
-	@cmp r1, r0
-	@bne next_
-	@b _0804BA44
+	ldr r0, _RDMD_0804B81C_ID_
+	cmp r1, r0
+	bne next_
+	b _0804BA44
 next_:
 	ldr r0, _0804B85C @ =0x00001758 (Archlord Zerato)
 	cmp r1, r0
@@ -1449,6 +1449,1290 @@ _0804BA54:
 	movs r0, #0
 _0804BA56:
 	bx lr
+
+	@ Anteatereatingant
+	@ Archlord Zerato
+	@ Armed Dragon LV10
+	@ Black Luster Soldier - Envoy of the Beginning
+	@ Blue-Eyes Toon Dragon
+	@ Chain Energy
+	@ Chaos Emperor Dragon - Envoy of the End
+	@ Cyber Dragon
+	@ Dark Necrofear
+	@ Doom Dozer
+	@ Elemental HERO Bubbleman
+	@ Garuda the Wind Spirit
+	@ Gate Guardian
+	@ Gradius
+	@ Gravity Axe - Grarl
+	@ Guardian Exode
+	@ Masked Beast Des Gardius
+	@ Master Monk
+	@ Metalzoa
+	@ Perfectly Ultimate Great Moth
+	@ Pyramid of Light
+	@ Raviel, Lord of Phantasms
+	@ Red-Eyes Black Metal Dragon
+	@ Silpheed
+	@ Sphinx Teleia
+	@ Toon Summoned Skull
+	@ VW-Tiger Catapult
+	@ VWXYZ-Dragon Catapult Cannon
+	@ XY-Dragon Cannon
+	@ XYZ-Dragon Cannon
+	@ YZ-Tank Dragon
+	thumb_func_start gEngineEffectSpecialSummon_080A4AF4_New
+gEngineEffectSpecialSummon_080A4AF4_New: @ 0x080A4AF4
+	push {r4, r5, r6, r7, lr}
+	mov r7, r8
+	push {r7}
+	adds r5, r0, #0
+	mov r8, r1
+	ldr r7, _080A4B40 @ =gPlayerCards
+	lsls r0, r1, #2
+	adds r0, r0, r7
+	movs r1, #0x87
+	lsls r1, r1, #5
+	adds r0, r0, r1
+	ldrh r0, [r0]
+	lsls r0, r0, #0x13
+	lsrs r4, r0, #0x13
+	movs r6, #0
+	cmp r4, #0
+	beq _080A4BFE
+	adds r0, r4, #0
+	bl sub_0804AD48
+	cmp r0, #0
+	beq _080A4BFE
+	movs r1, #1
+	rsbs r1, r1, #0
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_08034298
+	cmp r0, #0
+	beq _080A4B4C
+	ldr r0, _080A4B44 @ =gUnk_0201E2A0
+	ldr r0, [r0, #4]
+	cmp r5, r0
+	bne _080A4BFE
+	ldr r2, _080A4B48 @ =0x00001D78
+	adds r1, r7, r2
+	movs r0, #0x10
+	str r0, [r1]
+	b _080A4BFE
+	.align 2, 0
+_080A4B40: .4byte gPlayerCards
+_080A4B44: .4byte gUnk_0201E2A0
+_080A4B48: .4byte 0x00001D78
+_080A4B4C:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummonChangePosition_0803BB7C
+	cmp r0, #0
+	bne _080A4B70
+	ldr r0, _080A4B68 @ =gUnk_0201E2A0
+	ldr r0, [r0, #4]
+	cmp r5, r0
+	bne _080A4BFE
+	ldr r0, _080A4B6C @ =0x00001D78
+	adds r1, r7, r0
+	movs r0, #0x11
+	str r0, [r1]
+	b _080A4BFE
+	.align 2, 0
+_080A4B68: .4byte gUnk_0201E2A0
+_080A4B6C: .4byte 0x00001D78
+_080A4B70:
+	ldr r0, _RDMD_0804B81C_ID___
+	cmp r4, r0
+	bne next__
+	b _080A50B0
+next__:
+	ldr r0, _080A4B8C @ =0x000015FA (YZ-Tank Dragon)
+	cmp r4, r0
+	bgt _080A4BAC
+	subs r0, #1
+	cmp r4, r0
+	bge _080A4BE4
+	ldr r0, _080A4B90 @ =0x0000128C (Red-Eyes Black Metal Dragon)
+	cmp r4, r0
+	beq _080A4BE4
+	cmp r4, r0
+	bgt _080A4B98
+	ldr r0, _080A4B94 @ =0x0000112E (Metalzoa)
+	b _080A4BA0
+	.align 2, 0
+_RDMD_0804B81C_ID___: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
+_080A4B8C: .4byte 0x000015FA @ YZ-Tank Dragon
+_080A4B90: .4byte 0x0000128C @ Red-Eyes Black Metal Dragon
+_080A4B94: .4byte 0x0000112E @ Metalzoa
+_080A4B98:
+	ldr r0, _080A4BA8 @ =0x000015B1 (XY-Dragon Cannon)
+	cmp r4, r0
+	beq _080A4BE4
+	adds r0, #3
+_080A4BA0:
+	cmp r4, r0
+	beq _080A4BE4
+	b _080A4C10
+	.align 2, 0
+_080A4BA8: .4byte 0x000015B1 @ XY-Dragon Cannon
+_080A4BAC:
+	ldr r0, _080A4BDC @ =0x00001953 (VW-Tiger Catapult)
+	cmp r4, r0
+	blt _080A4C10
+	adds r0, #1
+	cmp r4, r0
+	ble _080A4BE4
+	adds r0, #0x1a
+	cmp r4, r0
+	bgt _080A4C10
+	subs r0, #3
+	cmp r4, r0
+	blt _080A4C10
+	adds r0, r5, #0
+	mov r1, r8
+	bl sub_080312EC
+	cmp r0, #0
+	bge _080A4C10
+	ldr r1, _080A4BE0 @ =0x00001CF4
+	adds r0, r7, r1
+	ldr r0, [r0]
+	adds r1, r7, #0
+	b _080A4BEC
+	.align 2, 0
+_080A4BDC: .4byte 0x00001953 @ VW-Tiger Catapult
+_080A4BE0: .4byte 0x00001CF4
+_080A4BE4:
+	ldr r1, _080A4C04 @ =gPlayerCards
+	ldr r2, _080A4C08 @ =0x00001CF4
+	adds r0, r1, r2
+	ldr r0, [r0]
+_080A4BEC:
+	cmp r0, #2
+	beq _080A4BF4
+	cmp r0, #4
+	bne _080A4BFE
+_080A4BF4:
+	ldr r2, _080A4C0C @ =0x00001CE8
+	adds r0, r1, r2
+	ldr r0, [r0]
+	cmp r0, r5
+	beq _080A4C3C
+_080A4BFE:
+	movs r0, #0
+	b _080A517E
+	.align 2, 0
+_080A4C04: .4byte gPlayerCards
+_080A4C08: .4byte 0x00001CF4
+_080A4C0C: .4byte 0x00001CE8
+_080A4C10:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonDamage_0803B910
+	cmp r0, #0
+	bne _080A4C3C
+	ldr r0, _080A4C30 @ =gUnk_0201E2A0
+	ldr r0, [r0, #4]
+	cmp r5, r0
+	bne _080A4BFE
+	ldr r0, _080A4C34 @ =gPlayerCards
+	ldr r1, _080A4C38 @ =0x00001D78
+	adds r0, r0, r1
+	movs r1, #0x17
+	str r1, [r0]
+	b _080A4BFE
+	.align 2, 0
+_080A4C30: .4byte gUnk_0201E2A0
+_080A4C34: .4byte gPlayerCards
+_080A4C38: .4byte 0x00001D78
+_080A4C3C:
+	ldr r0, _080A4C84 @ =0x00001758 (Archlord Zerato)
+	cmp r4, r0
+	bne _080A4C44
+	b _080A50B0
+_080A4C44:
+	cmp r4, r0
+	ble _080A4C4A
+	b _080A4D90
+_080A4C4A:
+	ldr r0, _080A4C88 @ =0x00001487 (Garuda the Wind Spirit)
+	cmp r4, r0
+	bgt _080A4CF4
+	subs r0, #4
+	cmp r4, r0
+	blt _080A4C58
+	b _080A505C
+_080A4C58:
+	ldr r0, _080A4C8C @ =0x0000127F (Toon Summoned Skull)
+	cmp r4, r0
+	bgt _080A4CAC
+	subs r0, #2
+	cmp r4, r0
+	blt _080A4C66
+	b _080A50D8
+_080A4C66:
+	ldr r0, _080A4C90 @ =0x00000FE9 (Perfectly Ultimate Great Moth)
+	cmp r4, r0
+	bne _080A4C6E
+	b _080A502A
+_080A4C6E:
+	cmp r4, r0
+	bgt _080A4C94
+	subs r0, #0xa
+	cmp r4, r0
+	ble _080A4C7A
+	b _080A517C
+_080A4C7A:
+	subs r0, #1
+	cmp r4, r0
+	bge _080A4C82
+	b _080A517C
+_080A4C82:
+	b _080A502A
+	.align 2, 0
+_080A4C84: .4byte 0x00001758 @ Archlord Zerato
+_080A4C88: .4byte 0x00001487 @ Garuda the Wind Spirit
+_080A4C8C: .4byte 0x0000127F @ Toon Summoned Skull
+_080A4C90: .4byte 0x00000FE9 @ Perfectly Ultimate Great Moth
+_080A4C94:
+	ldr r0, _080A4CA8 @ =0x0000111C (Gate Guardian)
+	cmp r4, r0
+	bne _080A4C9C
+	b _080A504C
+_080A4C9C:
+	adds r0, #0x12
+	cmp r4, r0
+	bne _080A4CA4
+	b _080A5034
+_080A4CA4:
+	b _080A517C
+	.align 2, 0
+_080A4CA8: .4byte 0x0000111C @ Gate Guardian
+_080A4CAC:
+	ldr r0, _080A4CCC @ =0x000012A5 (Blue-Eyes Toon Dragon)
+	cmp r4, r0
+	bne _080A4CB4
+	b _080A50D8
+_080A4CB4:
+	cmp r4, r0
+	bgt _080A4CD0
+	subs r0, #0x19
+	cmp r4, r0
+	bne _080A4CC0
+	b _080A5034
+_080A4CC0:
+	adds r0, #0xd
+	cmp r4, r0
+	bne _080A4CC8
+	b _080A4EEC
+_080A4CC8:
+	b _080A517C
+	.align 2, 0
+_080A4CCC: .4byte 0x000012A5 @ Blue-Eyes Toon Dragon
+_080A4CD0:
+	ldr r0, _080A4CE8 @ =0x000013E9 (Masked Beast Des Gardius (None))
+	cmp r4, r0
+	bne _080A4CD8
+	b _080A5070
+_080A4CD8:
+	cmp r4, r0
+	bgt _080A4CEC
+	subs r0, #0x5f
+	cmp r4, r0
+	bne _080A4CE4
+	b _080A5054
+_080A4CE4:
+	b _080A517C
+	.align 2, 0
+_080A4CE8: .4byte 0x000013E9 @ Masked Beast Des Gardius (None)
+_080A4CEC:
+	ldr r0, _080A4CF0 @ =0x00001466 (Dark Necrofear)
+	b _080A4DF6
+	.align 2, 0
+_080A4CF0: .4byte 0x00001466 @ Dark Necrofear
+_080A4CF4:
+	ldr r0, _080A4D20 @ =0x000015FA (YZ-Tank Dragon)
+	cmp r4, r0
+	bgt _080A4D50
+	subs r0, #1
+	cmp r4, r0
+	blt _080A4D02
+	b _080A50CE
+_080A4D02:
+	subs r0, #0xaf
+	cmp r4, r0
+	bne _080A4D0A
+	b _080A50D8
+_080A4D0A:
+	cmp r4, r0
+	bgt _080A4D24
+	subs r0, #0xc2
+	cmp r4, r0
+	bne _080A4D16
+	b _080A4EE4
+_080A4D16:
+	adds r0, #0x74
+	cmp r4, r0
+	bne _080A4D1E
+	b _080A5078
+_080A4D1E:
+	b _080A517C
+	.align 2, 0
+_080A4D20: .4byte 0x000015FA @ YZ-Tank Dragon
+_080A4D24:
+	ldr r0, _080A4D3C @ =0x000015B1 (XY-Dragon Cannon)
+	cmp r4, r0
+	bne _080A4D2C
+	b _080A50CE
+_080A4D2C:
+	cmp r4, r0
+	bgt _080A4D40
+	subs r0, #0x39
+	cmp r4, r0
+	bne _080A4D38
+	b _080A5094
+_080A4D38:
+	b _080A517C
+	.align 2, 0
+_080A4D3C: .4byte 0x000015B1 @ XY-Dragon Cannon
+_080A4D40:
+	ldr r0, _080A4D4C @ =0x000015B4 (XYZ-Dragon Cannon)
+	cmp r4, r0
+	bne _080A4D48
+	b _080A50CE
+_080A4D48:
+	b _080A517C
+	.align 2, 0
+_080A4D4C: .4byte 0x000015B4 @ XYZ-Dragon Cannon
+_080A4D50:
+	ldr r0, _080A4D68 @ =0x000016C8 (Silpheed)
+	cmp r4, r0
+	bgt _080A4D6C
+	subs r0, #3
+	cmp r4, r0
+	blt _080A4D5E
+	b _080A505C
+_080A4D5E:
+	subs r0, #0x79
+	cmp r4, r0
+	bne _080A4D66
+	b _080A4F12
+_080A4D66:
+	b _080A517C
+	.align 2, 0
+_080A4D68: .4byte 0x000016C8 @ Silpheed
+_080A4D6C:
+	ldr r0, _080A4D7C @ =0x000016CB (Black Luster Soldier - Envoy of the Beginning)
+	cmp r4, r0
+	bne _080A4D74
+	b _080A5066
+_080A4D74:
+	cmp r4, r0
+	bgt _080A4D80
+	subs r0, #2
+	b _080A4D82
+	.align 2, 0
+_080A4D7C: .4byte 0x000016CB @ Black Luster Soldier - Envoy of the Beginning
+_080A4D80:
+	ldr r0, _080A4D8C @ =0x000016E4 (Chaos Emperor Dragon - Envoy of the End)
+_080A4D82:
+	cmp r4, r0
+	bne _080A4D88
+	b _080A5066
+_080A4D88:
+	b _080A517C
+	.align 2, 0
+_080A4D8C: .4byte 0x000016E4 @ Chaos Emperor Dragon - Envoy of the End
+_080A4D90:
+	ldr r0, _080A4DC4 @ =0x00001954 (VWXYZ-Dragon Catapult Cannon)
+	cmp r4, r0
+	bgt _080A4E30
+	subs r0, #1
+	cmp r4, r0
+	blt _080A4D9E
+	b _080A50CE
+_080A4D9E:
+	subs r0, #0xbf
+	cmp r4, r0
+	bne _080A4DA6
+	b _080A50B0
+_080A4DA6:
+	cmp r4, r0
+	bgt _080A4DE0
+	subs r0, #0xce
+	cmp r4, r0
+	bne _080A4DB2
+	b _080A50BA
+_080A4DB2:
+	cmp r4, r0
+	bgt _080A4DC8
+	subs r0, #0x5a
+	cmp r4, r0
+	bne _080A4DBE
+	b _080A50B0
+_080A4DBE:
+	adds r0, #0x56
+	b _080A4E12
+	.align 2, 0
+_080A4DC4: .4byte 0x00001954 @ VWXYZ-Dragon Catapult Cannon
+_080A4DC8:
+	ldr r0, _080A4DDC @ =0x000017C8 (Sphinx Teleia)
+	cmp r4, r0
+	bgt _080A4DD0
+	b _080A4F4C
+_080A4DD0:
+	adds r0, #0x3e
+	cmp r4, r0
+	bne _080A4DD8
+	b _080A4F98
+_080A4DD8:
+	b _080A517C
+	.align 2, 0
+_080A4DDC: .4byte 0x000017C8 @ Sphinx Teleia
+_080A4DE0:
+	ldr r0, _080A4E00 @ =0x000018B9 (Master Monk)
+	cmp r4, r0
+	bne _080A4DE8
+	b _080A50B0
+_080A4DE8:
+	cmp r4, r0
+	bgt _080A4E04
+	subs r0, #0x24
+	cmp r4, r0
+	bne _080A4DF4
+	b _080A50C4
+_080A4DF4:
+	adds r0, #0x1f
+_080A4DF6:
+	cmp r4, r0
+	bne _080A4DFC
+	b _080A505C
+_080A4DFC:
+	b _080A517C
+	.align 2, 0
+_080A4E00: .4byte 0x000018B9 @ Master Monk
+_080A4E04:
+	ldr r0, _080A4E1C @ =0x000018F6 (Cyber Dragon)
+	cmp r4, r0
+	bne _080A4E0C
+	b _080A4FC4
+_080A4E0C:
+	cmp r4, r0
+	bgt _080A4E20
+	subs r0, #0xe
+_080A4E12:
+	cmp r4, r0
+	bne _080A4E18
+	b _080A50B0
+_080A4E18:
+	b _080A517C
+	.align 2, 0
+_080A4E1C: .4byte 0x000018F6 @ Cyber Dragon
+_080A4E20:
+	ldr r0, _080A4E2C @ =0x000018F9 (Elemental Hero Bubbleman)
+	cmp r4, r0
+	bne _080A4E28
+	b _080A4FE6
+_080A4E28:
+	b _080A517C
+	.align 2, 0
+_080A4E2C: .4byte 0x000018F9 @ Elemental Hero Bubbleman
+_080A4E30:
+	ldr r0, _080A4E68 @ =0x000019A5 (Raviel, Lord of Phantasms)
+	cmp r4, r0
+	bne _080A4E38
+	b _080A50BA
+_080A4E38:
+	cmp r4, r0
+	bgt _080A4E88
+	subs r0, #0x23
+	cmp r4, r0
+	bne _080A4E44
+	b _080A50B0
+_080A4E44:
+	cmp r4, r0
+	bgt _080A4E6C
+	subs r0, #0x14
+	cmp r4, r0
+	ble _080A4E50
+	b _080A517C
+_080A4E50:
+	subs r0, #3
+	cmp r4, r0
+	bge _080A4E58
+	b _080A517C
+_080A4E58:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectTakeControlFlip_080A4058
+_080A4E60:
+	cmp r0, #0
+	bne _080A4E66
+	b _080A517C
+_080A4E66:
+	b _080A5178
+	.align 2, 0
+_080A4E68: .4byte 0x000019A5 @ Raviel, Lord of Phantasms
+_080A4E6C:
+	ldr r0, _080A4E84 @ =0x0000198C (Armed Dragon LV10)
+	cmp r4, r0
+	bne _080A4E74
+	b _080A50B0
+_080A4E74:
+	cmp r4, r0
+	bge _080A4E7A
+	b _080A517C
+_080A4E7A:
+	adds r0, #0x17
+	cmp r4, r0
+	bge _080A4E82
+	b _080A517C
+_080A4E82:
+	b _080A509C
+	.align 2, 0
+_080A4E84: .4byte 0x0000198C @ Armed Dragon LV10
+_080A4E88:
+	ldr r0, _080A4EAC @ =0x000019CA (Doom Dozer)
+	cmp r4, r0
+	bne _080A4E90
+	b _080A505C
+_080A4E90:
+	cmp r4, r0
+	bgt _080A4EC0
+	subs r0, #0x20
+	cmp r4, r0
+	bne _080A4E9C
+	b _080A5014
+_080A4E9C:
+	cmp r4, r0
+	bgt _080A4EB0
+	subs r0, #4
+	cmp r4, r0
+	bne _080A4EA8
+	b _080A50A6
+_080A4EA8:
+	b _080A517C
+	.align 2, 0
+_080A4EAC: .4byte 0x000019CA @ Doom Dozer
+_080A4EB0:
+	ldr r0, _080A4EBC @ =0x000019C8 (Anteatereatingant)
+	cmp r4, r0
+	bne _080A4EB8
+	b _080A509C
+_080A4EB8:
+	b _080A517C
+	.align 2, 0
+_080A4EBC: .4byte 0x000019C8 @ Anteatereatingant
+_080A4EC0:
+	ldr r0, _080A4EE0 @ =0x000019F0 (Guardian Exode)
+	cmp r4, r0
+	bne _080A4EC8
+	b _080A50B0
+_080A4EC8:
+	cmp r4, r0
+	bge _080A4ECE
+	b _080A517C
+_080A4ECE:
+	adds r0, #8
+	cmp r4, r0
+	ble _080A4ED6
+	b _080A517C
+_080A4ED6:
+	subs r0, #1
+	cmp r4, r0
+	bge _080A4EDE
+	b _080A517C
+_080A4EDE:
+	b _080A50B0
+	.align 2, 0
+_080A4EE0: .4byte 0x000019F0 @ Guardian Exode
+_080A4EE4:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	b _080A4E60
+_080A4EEC:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A4EF8
+	b _080A517C
+_080A4EF8:
+	adds r0, r5, #0
+	bl sub_08033188
+	adds r4, r0, #0
+	adds r4, #1
+	movs r0, #1
+	subs r0, r0, r5
+	bl sub_08033188
+	cmp r4, r0
+	blt _080A4F10
+	b _080A517C
+_080A4F10:
+	b _080A5178
+_080A4F12:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A4F1E
+	b _080A517C
+_080A4F1E:
+	ldr r2, _080A4F40 @ =gPlayerCards
+	movs r0, #1
+	ands r0, r5
+	ldr r1, _080A4F44 @ =0x00000868
+	muls r0, r1, r0
+	adds r2, #0xc
+	adds r0, r0, r2
+	ldr r0, [r0]
+	cmp r0, #1
+	bls _080A4F34
+	b _080A517C
+_080A4F34:
+	ldr r1, _080A4F48 @ =0x0000165E (Gravity Axe - Grarl)
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
+	b _080A4E60
+	.align 2, 0
+_080A4F40: .4byte gPlayerCards
+_080A4F44: .4byte 0x00000868
+_080A4F48: .4byte 0x0000165E @ Gravity Axe - Grarl
+_080A4F4C:
+	ldr r0, _080A4F88 @ =0x000017BF (Pyramid of Light)
+	bl gEngineEffectSpecialSummonBoostATK_08032CA4
+	cmp r0, #0
+	bne _080A4F58
+	b _080A517C
+_080A4F58:
+	ldr r2, _080A4F8C @ =gPlayerCards
+	movs r0, #1
+	ands r0, r5
+	ldr r1, _080A4F90 @ =0x00000868
+	adds r4, r0, #0
+	muls r4, r1, r4
+	adds r4, r4, r2
+	ldr r0, _080A4F94 @ =0x0000132C (Chain Energy)
+	bl sub_0803279C
+	lsls r1, r0, #5
+	subs r1, r1, r0
+	lsls r1, r1, #2
+	adds r1, r1, r0
+	lsls r1, r1, #2
+	movs r2, #0xfa
+	lsls r2, r2, #1
+	adds r1, r1, r2
+	ldr r0, [r4]
+	cmp r0, r1
+	bgt _080A4F84
+	b _080A517C
+_080A4F84:
+	b _080A5178
+	.align 2, 0
+_080A4F88: .4byte 0x000017BF @ Pyramid of Light
+_080A4F8C: .4byte gPlayerCards
+_080A4F90: .4byte 0x00000868
+_080A4F94: .4byte 0x0000132C @ Chain Energy
+_080A4F98:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A4FA4
+	b _080A517C
+_080A4FA4:
+	ldr r2, _080A4FBC @ =gPlayerCards
+	movs r0, #1
+	ands r0, r5
+	ldr r1, _080A4FC0 @ =0x00000868
+	muls r0, r1, r0
+	adds r2, #0xc
+	adds r0, r0, r2
+	ldr r0, [r0]
+	cmp r0, #1
+	bhi _080A4FBA
+	b _080A517C
+_080A4FBA:
+	b _080A5178
+	.align 2, 0
+_080A4FBC: .4byte gPlayerCards
+_080A4FC0: .4byte 0x00000868
+_080A4FC4:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A4FD0
+	b _080A517C
+_080A4FD0:
+	adds r0, r5, #0
+	bl sub_08033188
+	cmp r0, #0
+	beq _080A4FDC
+	b _080A517C
+_080A4FDC:
+	movs r0, #1
+	subs r0, r0, r5
+	bl sub_08033188
+	b _080A4E60
+_080A4FE6:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A4FF2
+	b _080A517C
+_080A4FF2:
+	ldr r2, _080A500C @ =gPlayerCards
+	movs r0, #1
+	ands r0, r5
+	ldr r1, _080A5010 @ =0x00000868
+	muls r0, r1, r0
+	adds r2, #0xc
+	adds r0, r0, r2
+	ldr r0, [r0]
+	cmp r0, #1
+	beq _080A5008
+	b _080A517C
+_080A5008:
+	b _080A5178
+	.align 2, 0
+_080A500C: .4byte gPlayerCards
+_080A5010: .4byte 0x00000868
+_080A5014:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A5020
+	b _080A517C
+_080A5020:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonBoostATK_08032CCC
+	b _080A4E60
+_080A502A:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonEquip_080A3A80
+	b _080A4E60
+_080A5034:
+	adds r0, r5, #0
+	mov r1, r8
+	bl sub_08031184
+	cmp r0, #0
+	bge _080A5042
+	b _080A517C
+_080A5042:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummon_080A3AE8
+	b _080A4E60
+_080A504C:
+	adds r0, r5, #0
+	bl gEngineEffectTribute_080A3DAC
+	b _080A4E60
+_080A5054:
+	adds r0, r5, #0
+	bl gEngineEffectTribute_080A3EB4
+	b _080A4E60
+_080A505C:
+	adds r1, r4, #0
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummonGraveyard_080A42B0
+	b _080A4E60
+_080A5066:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonChangePosition_080A43C8
+	b _080A4E60
+_080A5070:
+	adds r0, r5, #0
+	bl gEngineEffectTributeSpecialSummon_080A3FC8
+	b _080A4E60
+_080A5078:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	bne _080A5084
+	b _080A517C
+_080A5084:
+	ldr r1, _080A5090 @ =0x00001414 (Gradius)
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
+	b _080A4E60
+	.align 2, 0
+_080A5090: .4byte 0x00001414 @ Gradius
+_080A5094:
+	adds r0, r5, #0
+	bl gEngineEffectTribute_080A40BC
+	b _080A4E60
+_080A509C:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSendToGYGraveyard_080A3C2C
+	b _080A4E60
+_080A50A6:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonBanish_080A3D74
+	b _080A4E60
+_080A50B0:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummon_080A3AE8
+	b _080A4E60
+_080A50BA:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummon_080A3B74
+	b _080A4E60
+_080A50C4:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonGraveyard_080A3D0C
+	b _080A4E60
+_080A50CE:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gEngineEffectSpecialSummonDestroy_080A4134
+	b _080A4E60
+_080A50D8:
+	adds r0, r5, #0
+	bl gEngineEffectDamage_08033088
+	cmp r0, #0
+	bne _080A50E4
+	b _080A4BFE
+_080A50E4:
+	adds r0, r5, #0
+	mov r1, r8
+	bl gEngineEffectDiscardBoostATK_080377B0
+	cmp r0, #0
+	blt _080A511E
+	cmp r0, #4
+	ble _080A5108
+	cmp r0, #6
+	bgt _080A511E
+	movs r1, #1
+	rsbs r1, r1, #0
+	adds r0, r5, #0
+	bl gEngineEffectTribute_080339D8
+	cmp r0, #0
+	bgt _080A5114
+	b _080A512C
+_080A5108:
+	adds r0, r5, #0
+	bl gEngineEffectSpecialSummon_080335B8
+_080A510E:
+	cmp r0, #0
+	beq _080A5158
+	b _080A5178
+_080A5114:
+	adds r0, r5, #0
+	movs r1, #1
+	bl gEngineEffectSpecialSummonTribute_080A4648
+	b _080A510E
+_080A511E:
+	movs r1, #1
+	rsbs r1, r1, #0
+	adds r0, r5, #0
+	bl gEngineEffectTribute_080339D8
+	cmp r0, #1
+	bgt _080A514C
+_080A512C:
+	ldr r0, _080A5140 @ =gUnk_0201E2A0
+	ldr r0, [r0, #4]
+	cmp r5, r0
+	bne _080A517C
+	ldr r0, _080A5144 @ =gPlayerCards
+	ldr r2, _080A5148 @ =0x00001D78
+	adds r0, r0, r2
+	movs r1, #0
+	str r1, [r0]
+	b _080A517C
+	.align 2, 0
+_080A5140: .4byte gUnk_0201E2A0
+_080A5144: .4byte gPlayerCards
+_080A5148: .4byte 0x00001D78
+_080A514C:
+	adds r0, r5, #0
+	movs r1, #1
+	bl gEngineEffectSpecialSummonTribute_080A4648
+	cmp r0, #0
+	bne _080A5178
+_080A5158:
+	ldr r0, _080A516C @ =gUnk_0201E2A0
+	ldr r0, [r0, #4]
+	cmp r5, r0
+	bne _080A517C
+	ldr r0, _080A5170 @ =gPlayerCards
+	ldr r1, _080A5174 @ =0x00001D78
+	adds r0, r0, r1
+	movs r1, #0xb
+	str r1, [r0]
+	b _080A517C
+	.align 2, 0
+_080A516C: .4byte gUnk_0201E2A0
+_080A5170: .4byte gPlayerCards
+_080A5174: .4byte 0x00001D78
+_080A5178:
+	movs r0, #4
+	orrs r6, r0
+_080A517C:
+	adds r0, r6, #0
+_080A517E:
+	pop {r3}
+	mov r8, r3
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+
+	@ Archlord Zerato
+	@ Armed Dragon LV10
+	@ Armed Dragon LV7
+	@ Blue-Eyes Ultimate Dragon
+	@ Dark Magician
+	@ Guardian Exode
+	@ Helios Duo Megiste
+	@ Helios Tris Megiste
+	@ Levia-Dragon - Daedalus
+	@ Master Monk
+	@ Mazera DeVille
+	@ Metalmorph
+	@ Metalzoa
+	@ Monk Fighter
+	@ Pandemonium
+	@ Raviel, Lord of Phantasms
+	@ Red-Eyes B. Dragon
+	@ Red-Eyes Black Metal Dragon
+	@ Red-Eyes Darkness Dragon
+	@ Sorcerer of Dark Magic
+	@ The Ancient Sun Helios
+	@ The Sanctuary in the Sky
+	@ Warrior of Zera
+	@ Zoa
+	thumb_func_start gEngineEffectSpecialSummonDestroy_080A5498_New
+gEngineEffectSpecialSummonDestroy_080A5498_New: @ 0x080A5498
+	push {r4, r5, r6, r7, lr}
+	adds r6, r0, #0
+	adds r5, r1, r2
+	cmp r5, #4
+	ble _080A54A4
+	b _080A570A
+_080A54A4:
+	ldr r4, _080A552C @ =gUnk_0201E4D0
+	ldrb r1, [r4]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	adds r1, r6, #0
+	adds r2, r5, #0
+	bl gEngineEffectTributeSpecialSummon_08033730
+	cmp r0, #0
+	bne _080A54BA
+	b _080A570A
+_080A54BA:
+	ldrb r4, [r4]
+	lsls r0, r4, #0x1f
+	lsrs r0, r0, #0x1f
+	lsls r3, r5, #2
+	ldr r4, _080A5530 @ =gUnk_0201C510
+	cmp r0, r6
+	beq _080A54E0
+	movs r2, #1
+	ands r2, r6
+	adds r0, r3, r5
+	lsls r0, r0, #2
+	ldr r1, _080A5534 @ =0x00000868
+	muls r1, r2, r1
+	adds r0, r0, r1
+	adds r0, r0, r4
+	ldrh r0, [r0, #8]
+	cmp r0, #0
+	bne _080A54E0
+	b _080A570A
+_080A54E0:
+	movs r2, #1
+	ands r2, r6
+	adds r0, r3, r5
+	lsls r0, r0, #2
+	ldr r1, _080A5534 @ =0x00000868
+	muls r1, r2, r1
+	adds r0, r0, r1
+	adds r7, r0, r4
+	ldr r0, [r7]
+	lsls r0, r0, #0x13
+	lsrs r4, r0, #0x13
+	ldr r0, _080A552C @ =gUnk_0201E4D0
+	ldr r0, [r0]
+	lsls r0, r0, #9
+	lsrs r2, r0, #0x11
+	ldr r0, _RDMD_0804B81C_ID____
+	cmp r2, r0
+	bne next___
+	b _080A564E
+next___:
+	ldr r0, _080A5538 @ =0x000018B9 (Master Monk)
+	cmp r2, r0
+	bne _080A5506
+	b _080A5698
+_080A5506:
+	cmp r2, r0
+	bgt _080A5580
+	ldr r0, _080A553C @ =0x0000176C (Mazera DeVille)
+	cmp r2, r0
+	bne _080A5512
+	b _080A5638
+_080A5512:
+	cmp r2, r0
+	bgt _080A5554
+	ldr r0, _080A5540 @ =0x0000128C (Red-Eyes Black Metal Dragon)
+	cmp r2, r0
+	bne _080A551E
+	b _080A560C
+_080A551E:
+	cmp r2, r0
+	bgt _080A5548
+	ldr r0, _080A5544 @ =0x0000112E (Metalzoa)
+	cmp r2, r0
+	beq _080A55E8
+	b _080A570A
+	.align 2, 0
+_080A552C: .4byte gUnk_0201E4D0
+_080A5530: .4byte gUnk_0201C510
+_080A5534: .4byte 0x00000868
+_RDMD_0804B81C_ID____: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
+_080A5538: .4byte 0x000018B9 @ Master Monk
+_080A553C: .4byte 0x0000176C @ Mazera DeVille
+_080A5540: .4byte 0x0000128C @ Red-Eyes Black Metal Dragon
+_080A5544: .4byte 0x0000112E @ Metalzoa
+_080A5548:
+	ldr r0, _080A5550 @ =0x00001758 (Archlord Zerato)
+	cmp r2, r0
+	beq _080A5630
+	b _080A570A
+	.align 2, 0
+_080A5550: .4byte 0x00001758 @ Archlord Zerato
+_080A5554:
+	ldr r0, _080A556C @ =0x000017C6 (Sorcerer of Dark Magic)
+	cmp r2, r0
+	bne _080A555C
+	b _080A566C
+_080A555C:
+	cmp r2, r0
+	bgt _080A5570
+	subs r0, #4
+	cmp r2, r0
+	bne _080A5568
+	b _080A565C
+_080A5568:
+	b _080A570A
+	.align 2, 0
+_080A556C: .4byte 0x000017C6 @ Sorcerer of Dark Magic
+_080A5570:
+	ldr r0, _080A557C @ =0x00001894 (Red-Eyes Darkness Dragon)
+	cmp r2, r0
+	bne _080A5578
+	b _080A568A
+_080A5578:
+	b _080A570A
+	.align 2, 0
+_080A557C: .4byte 0x00001894 @ Red-Eyes Darkness Dragon
+_080A5580:
+	ldr r0, _080A55A4 @ =0x000019A5 (Raviel, Lord of Phantasms)
+	cmp r2, r0
+	bne _080A5588
+	b _080A56D8
+_080A5588:
+	cmp r2, r0
+	bgt _080A55B8
+	subs r0, #0x23
+	cmp r2, r0
+	bne _080A5594
+	b _080A56B8
+_080A5594:
+	cmp r2, r0
+	bgt _080A55A8
+	subs r0, #0x9a
+	cmp r2, r0
+	bne _080A55A0
+	b _080A56A8
+_080A55A0:
+	b _080A570A
+	.align 2, 0
+_080A55A4: .4byte 0x000019A5 @ Raviel, Lord of Phantasms
+_080A55A8:
+	ldr r0, _080A55B4 @ =0x0000198C (Armed Dragon LV10)
+	cmp r2, r0
+	bne _080A55B0
+	b _080A56C8
+_080A55B0:
+	b _080A570A
+	.align 2, 0
+_080A55B4: .4byte 0x0000198C @ Armed Dragon LV10
+_080A55B8:
+	ldr r1, _080A55D0 @ =0x000019F7 (Helios Duo Megiste)
+	cmp r2, r1
+	bne _080A55C0
+	b _080A56EA
+_080A55C0:
+	cmp r2, r1
+	bgt _080A55D8
+	ldr r0, _080A55D4 @ =0x000019F0 (Guardian Exode)
+	cmp r2, r0
+	bne _080A55CC
+	b _080A5700
+_080A55CC:
+	b _080A570A
+	.align 2, 0
+_080A55D0: .4byte 0x000019F7 @ Helios Duo Megiste
+_080A55D4: .4byte 0x000019F0 @ Guardian Exode
+_080A55D8:
+	ldr r0, _080A55E4 @ =0x000019F8 (Helios Tris Megiste)
+	cmp r2, r0
+	bne _080A55E0
+	b _080A56F8
+_080A55E0:
+	b _080A570A
+	.align 2, 0
+_080A55E4: .4byte 0x000019F8 @ Helios Tris Megiste
+_080A55E8:
+	ldr r1, _080A5604 @ =0x0000112D (Zoa)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	cmp r0, #0
+	bne _080A55F6
+	b _080A570A
+_080A55F6:
+	ldr r2, _080A5608 @ =0x00001238 (Metalmorph)
+	adds r0, r6, #0
+	adds r1, r5, #0
+	bl sub_0802F1F8
+	b _080A5706
+	.align 2, 0
+_080A5604: .4byte 0x0000112D @ Zoa
+_080A5608: .4byte 0x00001238 @ Metalmorph
+_080A560C:
+	ldr r1, _080A5628 @ =0x00000FF8 (Red-Eyes B. Dragon)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	cmp r0, #0
+	bne _080A561A
+	b _080A570A
+_080A561A:
+	ldr r2, _080A562C @ =0x00001238 (Metalmorph)
+	adds r0, r6, #0
+	adds r1, r5, #0
+	bl sub_0802F1F8
+	b _080A5706
+	.align 2, 0
+_080A5628: .4byte 0x00000FF8 @ Red-Eyes B. Dragon
+_080A562C: .4byte 0x00001238 @ Metalmorph
+_080A5630:
+	ldr r0, _080A5634 @ =0x0000175E (The Sanctuary in the Sky)
+	b _080A563A
+	.align 2, 0
+_080A5634: .4byte 0x0000175E @ The Sanctuary in the Sky
+_080A5638:
+	ldr r0, _080A5654 @ =0x0000169F (Pandemonium)
+_080A563A:
+	bl gEngineEffectBoostATKBoostDEF_0803412C
+	cmp r0, #0
+	beq _080A570A
+	ldrh r0, [r7, #8]
+	cmp r0, #0
+	beq _080A570A
+	ldr r0, _080A5658 @ =0x0000173B (Warrior of Zera)
+	cmp r4, r0
+	bne _080A570A
+_080A564E:
+	movs r0, #0x80
+	lsls r0, r0, #4
+	b _080A570C
+	.align 2, 0
+_080A5654: .4byte 0x0000169F @ Pandemonium
+_080A5658: .4byte 0x0000173B @ Warrior of Zera
+_080A565C:
+	ldr r1, _080A5668 @ =0x00001122 (Blue-Eyes Ultimate Dragon)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A5668: .4byte 0x00001122 @ Blue-Eyes Ultimate Dragon
+_080A566C:
+	adds r0, r6, #0
+	adds r1, r5, #0
+	bl gEngineEffectSpecialSummonChangePosition_0803A9A8
+	cmp r0, #5
+	ble _080A570A
+	adds r0, r6, #0
+	adds r1, r5, #0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
+	lsls r0, r0, #0x10
+	lsrs r0, r0, #0x10
+	cmp r0, #0x12
+	bne _080A570A
+	b _080A564E
+_080A568A:
+	ldr r1, _080A5694 @ =0x00000FF8 (Red-Eyes B. Dragon)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A5694: .4byte 0x00000FF8 @ Red-Eyes B. Dragon
+_080A5698:
+	ldr r1, _080A56A4 @ =0x000018B8 (Monk Fighter)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A56A4: .4byte 0x000018B8 @ Monk Fighter
+_080A56A8:
+	ldr r1, _080A56B4 @ =0x00001707 (Levia-Dragon - Daedalus)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A56B4: .4byte 0x00001707 @ Levia-Dragon - Daedalus
+_080A56B8:
+	ldr r1, _080A56C4 @ =0x00000FC9 (Dark Magician)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A56C4: .4byte 0x00000FC9 @ Dark Magician
+_080A56C8:
+	ldr r1, _080A56D4 @ =0x000017DB (Armed Dragon LV7)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A56D4: .4byte 0x000017DB @ Armed Dragon LV7
+_080A56D8:
+	adds r0, r6, #0
+	adds r1, r5, #0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
+	lsls r0, r0, #0x10
+	lsrs r0, r0, #0x10
+	cmp r0, #3
+	bne _080A570A
+	b _080A564E
+_080A56EA:
+	ldr r1, _080A56F4 @ =0x000019F6 (The Ancient Sun Helios)
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+	.align 2, 0
+_080A56F4: .4byte 0x000019F6 @ The Ancient Sun Helios
+_080A56F8:
+	adds r0, r4, #0
+	bl gEngineEffectBoostATKBoostDEF_0804AB4C
+	b _080A5706
+_080A5700:
+	adds r0, r4, #0
+	bl gEngineEffectReturnToHandSpecialSummon_0804B350
+_080A5706:
+	cmp r0, #0
+	bne _080A564E
+_080A570A:
+	movs r0, #0
+_080A570C:
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
 
 @ ----------------------------------------------------------------------------
 @ Hooking effect (1) into the real engine. The original engine has no idea

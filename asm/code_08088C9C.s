@@ -27647,7 +27647,7 @@ _080960FC:
 	str r1, [r0]
 	adds r0, r4, #0
 	mov r1, sb
-	bl gEngineEffectSpecialSummon_080A4AF4
+	bl gEngineEffectSpecialSummon_080A4AF4_New
 	mov r6, r8
 	orrs r6, r0
 	mov r8, r6
@@ -27679,7 +27679,7 @@ _08096128:
 	mov r8, r1
 	adds r0, r4, #0
 	mov r1, sb
-	bl gEngineEffectSpecialSummon_080A4AF4
+	bl gEngineEffectSpecialSummon_080A4AF4_New
 	mov r2, r8
 	orrs r2, r0
 	mov r8, r2
@@ -27694,7 +27694,7 @@ _0809616C:
 	str r1, [r0]
 	adds r0, r4, #0
 	mov r1, sb
-	bl gEngineEffectSpecialSummon_080A4AF4
+	bl gEngineEffectSpecialSummon_080A4AF4_New
 	mov r1, r8
 	orrs r1, r0
 	mov r8, r1
@@ -29497,7 +29497,7 @@ gEngineEffectSpecialSummonBoostATK_08096F9C: @ 0x08096F9C
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r4, #0
-	bl gEngineEffectSpecialSummon_080A4AF4
+	bl gEngineEffectSpecialSummon_080A4AF4_New
 	b _08096FDA
 	.align 2, 0
 _08096FD0: .4byte 0x00000868
@@ -29533,7 +29533,7 @@ gEngineEffectSpecialSummonBoostATK_08096FE0: @ 0x08096FE0
 	lsrs r0, r0, #0x1f
 	adds r1, r1, r0
 	adds r0, r4, #0
-	bl gEngineEffectSpecialSummon_080A4AF4
+	bl gEngineEffectSpecialSummon_080A4AF4_New
 	b _0809701E
 	.align 2, 0
 _08097014: .4byte 0x00000868
@@ -55897,7 +55897,7 @@ _080A3BC4:
 	adds r0, r5, #0
 	adds r1, r4, #0
 	movs r2, #0
-	bl gEngineEffectSpecialSummonDestroy_080A5498
+	bl gEngineEffectSpecialSummonDestroy_080A5498_New
 	cmp r0, #0
 	beq _080A3BEC
 	cmp r5, r7
@@ -59687,7 +59687,7 @@ _080A57A2:
 	adds r0, r6, #0
 	adds r1, r7, #0
 	mov r2, r8
-	bl gEngineEffectSpecialSummonDestroy_080A5498
+	bl gEngineEffectSpecialSummonDestroy_080A5498_New
 _080A57AC:
 	pop {r3}
 	mov r8, r3
