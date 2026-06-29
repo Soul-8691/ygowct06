@@ -368,14 +368,29 @@ gEngineEffectSpecialSummon_080A8C30_New: @ 0x080A8C30
 	adds r4, r1, #0
 	cmp r2, r0
 	bne next
-	@ NOTE: tried gating this on gUnk_0201E4D0.unk12 & 2 (the flag confirmed
-	@ needed in the now-dead gEngineEffectSpecialSummon_080A8C30_RDMD copy)
-	@ to stop this firing outside the real alt-summon context -- that broke
-	@ the legitimate case too (the banish stopped working even with exactly
-	@ 1 Dragon on the field), so unk12&2 isn't reliably set at this specific
-	@ call point. Reverted to unconditional; the real fix for the
-	@ Activate-Effect interference needs a different signal.
+	@ Real discriminator, found empirically via live memory dumps of
+	@ gUnk_0201E4D0's first byte: 0x46 before pressing anything, 0x26 after
+	@ pressing Normal Summon, 0xA6 after pressing Special Summon -- bit 7
+	@ (0x80) is set only for a real Special Summon attempt. (unk12&2 was
+	@ tried twice and was wrong both times -- this is a different bit, in
+	@ the unk0_1 field, not unk12.)
+	ldr r0, [r1]
+	movs r2, #0x80
+	ands r0, r2
+	beq next @ bne to a far target is itself out of beq/bne range
 	b _080A8F18_
+_RDMD_NOT_REAL_SPSUMMON:
+	@ Found via breakpoint tracing: gEngineEffectSpecialSummon_080AB200 only
+	@ clears gUnk_0201E4D0.unk12 bit 0 (the "please resolve an alt-summon"
+	@ trigger) when this function returns NONZERO. Returning 0 here left
+	@ that bit set forever, so whatever periodically re-invokes _080AB200
+	@ kept re-entering this exact pair of functions -- a real, confirmed
+	@ infinite loop (not a crash), observed by alternating breakpoints on
+	@ _080AB200/_080A8C30_New. Returning 1 directly via the function's own
+	@ epilogue (bypassing _080A8FB0, whose extra logic is for negative/
+	@ specific values we don't need here) clears the bit and ends the loop.
+	movs r0, #1
+	b _080A9126
 next:
 	ldr r0, _080A8C8C @ =0x000017C2 (Blue-Eyes Shining Dragon)
 	adds r4, r1, #0
@@ -1567,8 +1582,17 @@ _080A4B70:
 	adds r1, r1, r2
 	ldr r1, [r1]
 	cmp r0, r1
-	beq next__
+	beq _RDMD_080A4B70_USED @ bne to a far target is itself out of beq/bne range
 	b _080A50B0
+_RDMD_080A4B70_USED:
+	@ Already used this turn: return "not eligible" directly instead of
+	@ falling through to the rest of the real card-ID chain below, which
+	@ would pass REDMD's card_id into real functions (e.g.
+	@ gEngineEffectSpecialSummonDamage_0803B910) that were never designed
+	@ to receive an unrecognized ID -- a previously-unreachable path (since
+	@ REDMD always matched here unconditionally before this gate existed)
+	@ that froze the game once exposed.
+	b _080A4BFE
 	.align 2, 0
 _RDMD_080A4B70_DECKCOUNT: .4byte gEngNC_BanishSummonDeckCountAtLastUse
 _RDMD_080A4B70_PLAYERCARDS: .4byte gPlayerCards
@@ -2511,8 +2535,13 @@ _080A54E0:
 	adds r1, r1, r3
 	ldr r1, [r1]
 	cmp r0, r1
-	beq next___
+	beq _RDMD_080A54_USED @ bne to a far target is itself out of beq/bne range
 	b _080A564E
+_RDMD_080A54_USED:
+	@ Already used this turn: return "not eligible" directly instead of
+	@ falling through to the rest of the real card-ID chain below, for the
+	@ same reason as the gate in gEngineEffectSpecialSummon_080A4AF4_New.
+	b _080A570A
 	.align 2, 0
 _RDMD_080A54_E4D0: .4byte gUnk_0201E4D0
 _RDMD_080A54_DECKCOUNT: .4byte gEngNC_BanishSummonDeckCountAtLastUse
