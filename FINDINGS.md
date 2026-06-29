@@ -192,16 +192,43 @@ elsewhere, not invented:
 
 - **No dedicated "Special Summon" menu option.** The game has a real,
   separate "Special Summon" hand-menu item (distinct from "Summon") for
-  cards like Archlord Zerato/BESD. REDMD currently has no path to that
-  menu — effect (1) only fires because `gEngineEffectSpecialSummon_080AB200`
-  is itself called from a generic, unconditional per-tick dispatcher
-  (`gEngineEffectBoostATKBoostDEF_08094CD4`, asm/code_08088C9C.s:25157)
-  that happens to also run while Normal Summon's own bookkeeping has
-  `gUnk_0201E4D0.card_id` set to ours. What actually controls "Special
-  Summon" menu-item visibility was not found this session (the classifier
-  is the obvious candidate, but registering REDMD in it breaks Normal
-  Summon — see landmines above). Confirmed explicitly: Normal Summon must
-  stay unblocked; that's not a bug to fix.
+  cards like Archlord Zerato/BESD. REDMD currently has no path to that menu.
+  What we know concretely about the real dispatch chain so far:
+  - `gEngineEffectSpecialSummon_080AB200` (asm/code_080A7650.s:7814) only
+    calls the resolver (`_080A8C30_New`) if `gUnk_0201E4D0.unk12` **bit 0**
+    is set — a real, genuine gate, not unconditional (an earlier note in
+    this doc claiming it fires unconditionally was wrong).
+  - There's a whole real family of per-card-type "alt-summon setup"
+    functions (Equip/Tribute/Banish/GY-style,
+    asm/code_08088C9C.s:55720-56183, dispatched via
+    `gEngineEffectSpecialSummon_080A4AF4`/`_08095FE0`-style candidate
+    validation) that each set **bit 1**, not bit 0, then scan field zones
+    for valid material. Bit 1 looks like "alt-summon eligibility was
+    checked and a valid material exists", a different signal from bit 0
+    ("resolve now").
+  - `gEngineEffectSpecialSummon_080AB200`'s only static caller anywhere in
+    the codebase is inside `gEngineEffectBoostATKBoostDEF_08094CD4`
+    (asm/code_08088C9C.s:25157) — but that function itself has **zero**
+    static callers anywhere (verified by grep for both its symbol name and
+    raw address). Two research agents and direct tracing all failed to find
+    how it's actually reached during real gameplay, despite the resolver
+    chain demonstrably running in real testing. Likely reached via some
+    dynamic/indirect mechanism not visible to a static text search.
+  - **Tried and reverted**: forcing `unk12` bit 0 unconditionally for
+    REDMD's card_id right before calling the real, unmodified `_080AB200`
+    (a thin wrapper repointed at the one known call site). Result: worse,
+    not better — REDMD couldn't be summoned at all (neither Normal nor
+    Special), and with 2+ valid Dragons on the field, banishing now removed
+    *both* instead of the one chosen. Conclusion: bit 0 is not safe to force
+    in isolation — there's evidently a fuller real sequence (bit 1 set by
+    the real setup family above, then some other real code transitioning to
+    bit 0) that needs to be replicated completely, not just flipped as a
+    single bit. Don't retry this exact approach without finding that real
+    sequence first.
+  - The classifier (`_0804B81C`) is the other obvious candidate for
+    menu-visibility, but registering REDMD in it breaks Normal Summon (see
+    landmines above). Confirmed explicitly: Normal Summon must stay
+    unblocked; that's not a bug to fix.
 - **No real turn-change/reset event found.** Both a targeted search and a
   background research agent looked for a global turn counter or a generic
   turn-change hook real once-per-turn cards reset against, and found
