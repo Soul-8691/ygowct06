@@ -1,7 +1,13 @@
 # Card art from graphics/png/cards (paths contain spaces — never list as make prerequisites):
 #   convert_graphics.py: PNG -> .8bpp -> .6bpp  (build direction)
+#
+# Not wired into the normal build (card_graphics.o/card_icons.o don't depend
+# on these) -- run `make graphics` explicitly after changing any card art or
+# icon PNGs. Keeps regular builds from re-scanning thousands of PNGs every time.
 
-.PHONY: convert-graphics
+.PHONY: convert-graphics convert-icons graphics
+
+graphics: convert-graphics convert-icons
 
 convert-graphics:
 	@if find graphics/png/cards -name '*.png' -newer graphics/6bpp -print -quit 2>/dev/null | grep -q . || \
@@ -10,12 +16,7 @@ convert-graphics:
 		python3 convert_graphics.py; \
 	fi
 
-# Ensure 6bpp files exist before card_graphics.o is assembled
-$(C_BUILDDIR)/card_graphics.o: | convert-graphics
-
 # card_graphics.c, card_palettes.c and card_icons.c are static source files.
-
-.PHONY: convert-icons
 
 convert-icons:
 	@echo 'Checking card icon graphics...'
@@ -24,9 +25,6 @@ convert-icons:
 		echo 'Running convert_icons.py (PNGs newer than 8bpp or 8bpp missing)...'; \
 		python3 convert_icons.py --build; \
 	fi
-
-# Ensure icon 8bpp files exist before card_icons.o is assembled
-$(C_BUILDDIR)/card_icons.o: | convert-icons
 
 .PHONY: graphics-8bpp graphics-pal card-graphics-force
 
