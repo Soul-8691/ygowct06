@@ -1085,10 +1085,10 @@ _080A9126:
 	thumb_func_start gEngineEffectSpecialSummon_0804B81C_New
 gEngineEffectSpecialSummon_0804B81C_New: @ 0x0804B81C
 	adds r1, r0, #0
-	ldr r0, _RDMD_0804B81C_ID_
-	cmp r1, r0
-	bne next_
-	b _0804BA44
+	@ldr r0, _RDMD_0804B81C_ID_
+	@cmp r1, r0
+	@bne next_
+	@b _0804BA44
 next_:
 	ldr r0, _0804B85C @ =0x00001758 (Archlord Zerato)
 	cmp r1, r0

@@ -51,6 +51,12 @@ s32 sub_080969C4(s32*);                                             /* extern */
 s32 gEngineEffectSpecialSummonGraveyard_080B70AC(u32, u32, s32*);  /* extern */
 s32 gEngineEffectSpecialSummon_0801EC9C(s32, s32, s32, s32);
 s32 gEngineEffectSpecialSummonDiscard_080A5F7C(void);
+s32 sub_0804A870(void);
+// Cannon Soldier's real commit (gCardEffectTribute_080567A0) does nothing
+// but this single call -- queues case 8 into the real action system
+// (sub_080A1A00) and returns immediately, letting the queue handle
+// highlighting/selection/animation asynchronously. Trying the same here.
+void sub_080A1C78(u32 playerIdx, u32 arg1, u32 arg2);
 
 // ---- Implemented in asm/new_code.s (see that file for REAL vs NEW) ----
 // Field zone index of a face-up monster of "race" that "playerIdx" controls,
@@ -305,42 +311,32 @@ void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
     }
 }
 
+extern s32 gUnk_0201C510[][0x21A];
+
+// Confirmed safe to READ (not write -- writing to it earlier this session
+// corrupted the deck-browsing UI) via Cannon Soldier's real tribute-target
+// validator (gEngineEffectTributeSpecialSummon_08033730/gEngineEffectTribute_080339D8):
+// 5 field zones per player, 20 bytes (5 s32 words) per zone, card:13 in the
+// first word, base = gUnk_0201C510 + playerIdx*0x868.
+static bool32 EngineHasFaceUpDragon(u32 playerIdx)
+{
+    u32 i;
+    u32 cardId;
+
+    for (i = 0; i < 5; i++) {
+        cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
+        if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
 s32 gEngineEffectBanishToSpecialSummon(void)
 {
-    if (!(gUnk_0201E4D0.unk12 & 2)) {
-        return gEngineEffectSpecialSummonDiscard_080A5F7C();
-    }
-    else {
-        u8 state = gUnk_0201E4D0.unk13_2;
-        switch (state) {
-            case 0: {
-                if (gUnk_0201E2A0.unk8[gUnk_0201E4D0.unk0] == 1) {
-                    gEngineEffectSpecialSummonGraveyard_080B70AC(gUnk_0201E4D0.unk0, gUnk_0201E4D0.card_id, &gEngineEffectSpecialSummon_080A5714);
-                } else {
-                    gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, 18);
-                    sub_080969C4(&gEngineEffectSpecialSummon_080A5714);
-                }
-    
-                gUnk_0201E4D0.unk13_2++;
-                return 0;
-            }
-            case 1: {
-                if (sub_08096B14() != 0) {
-                    // ATK/DEF boost amounts, matching the args to gEngineEffectBoostATKBoostDEF_08047A38.
-                    s32 atkBoost = ((PlayerCards *)gPlayerCards)->unk1D68;
-                    s32 defBoost = ((PlayerCards *)gPlayerCards)->unk1D6C + ((PlayerCards *)gPlayerCards)->unk1D70;
-                    gEngineEffectSpecialSummon_0801EC9C(40, atkBoost, defBoost, 0);
-                    gUnk_0201E4D0.unk8 = state;
-                    gUnk_0201E4D0.unkC = (u8)atkBoost;
-                    gUnk_0201E4D0.unkC |= (u8)defBoost << 8;
-                    return 1;
-                }
-    
-                return -1;
-            }
-            default: {
-                return 0;
-            }
-        }
-    }
+    if (!EngineHasFaceUpDragon(gUnk_0201E4D0.unk0))
+        return -1;
+
+    sub_080A1C78(gUnk_0201E4D0.unk0, 0xFFFF, 1);
+    return 1;
 }
