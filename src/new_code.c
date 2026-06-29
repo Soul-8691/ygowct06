@@ -361,6 +361,18 @@ extern s32 gEngNC_LastValidatedDragonZone;
 // backwards before).
 s32 gEngineEffectBoostATKBoostDEF_08047A80(s32 *request, s32 playerRelative, s32 zoneIndex);
 
+// "Once per turn" for effect (1). No real turn-change/reset event was found
+// despite two separate searches (see FINDINGS.md), so EngineUsedEffectThisTurn/
+// EngineMarkUsedEffectThisTurn (a plain persistent flag) isn't usable here --
+// it permanently blocks after the first use, ever, exactly like it did for
+// effect (2) before that check was disabled. Using the player's own Deck
+// count instead (gPlayerCards[player][4]): it only ever decreases, by
+// exactly 1, during that player's own draw phase -- once per their own turn.
+// Comparing "deck count now" against "deck count when this effect was last
+// used" is a real, reliable per-player turn signal that needs no new engine
+// hook: unchanged means no draw has happened yet (still the same turn).
+extern s32 gEngNC_BanishSummonDeckCountAtLastUse[2];
+
 s32 gEngineEffectBanishToSpecialSummon(void)
 {
     switch (gUnk_0201E4D0.unk13_2) {
@@ -370,6 +382,9 @@ s32 gEngineEffectBanishToSpecialSummon(void)
             u32 playerIdx = gUnk_0201E4D0.unk0;
             u32 dragonCount = 0;
             s32 onlyZone = -1;
+
+            if (gEngNC_BanishSummonDeckCountAtLastUse[playerIdx] == gPlayerCards[playerIdx][4])
+                return -1;
 
             // _080A8C30_New intercepts card_id==KONAMI_GOBLIN_CALLIGRAPHER
             // unconditionally, including while REDMD is already on the
@@ -397,6 +412,7 @@ s32 gEngineEffectBanishToSpecialSummon(void)
 
                 ((u8 *)request)[2] = (u8)playerIdx;
                 gEngineEffectBoostATKBoostDEF_08047A80(request, 0, onlyZone);
+                gEngNC_BanishSummonDeckCountAtLastUse[playerIdx] = gPlayerCards[playerIdx][4];
                 return 1;
             }
 
@@ -407,12 +423,14 @@ s32 gEngineEffectBanishToSpecialSummon(void)
         }
         case 1: {
             s32 request[6] = {0};
+            u32 playerIdx = gUnk_0201E4D0.unk0;
 
             if (sub_08096B14() == 0)
                 return 0;
 
-            ((u8 *)request)[2] = (u8)gUnk_0201E4D0.unk0;
+            ((u8 *)request)[2] = (u8)playerIdx;
             gEngineEffectBoostATKBoostDEF_08047A80(request, 0, gEngNC_LastValidatedDragonZone);
+            gEngNC_BanishSummonDeckCountAtLastUse[playerIdx] = gPlayerCards[playerIdx][4];
             return 1;
         }
     }

@@ -111195,7 +111195,7 @@ _0804BA68:
 	b _0804BA88
 _0804BA78:
 	adds r0, r4, #0
-	bl gEngineEffectSpecialSummon_0804B81C_New @ extended for Red-Eyes Darkness Metal Dragon (KONAMI_GOBLIN_CALLIGRAPHER); see asm/new_code.s
+	bl gEngineEffectSpecialSummon_0804B81C
 	movs r1, #0
 	cmp r0, #0
 	ble _0804BA86
@@ -111326,7 +111326,7 @@ _0804BB4E:
 _0804BB54: .4byte 0x000019AA @ Ancient Gear
 _0804BB58:
 	adds r0, r1, #0
-	bl gEngineEffectSpecialSummon_0804B81C_New
+	bl gEngineEffectSpecialSummon_0804B81C
 	movs r1, #0
 	cmp r0, #2
 	bgt _0804BB66
@@ -111457,7 +111457,7 @@ _0804BC36:
 	beq _0804BC48
 _0804BC3A:
 	adds r0, r4, #0
-	bl gEngineEffectSpecialSummon_0804B81C_New
+	bl gEngineEffectSpecialSummon_0804B81C
 	cmp r0, #2
 	beq _0804BC48
 	cmp r0, #4

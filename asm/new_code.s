@@ -3077,4 +3077,17 @@ _EVDFZ_LASTZONE: .4byte gEngNC_LastValidatedDragonZone
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each
 	.global gEngNC_LastValidatedDragonZone
 gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZone header above
+	@ "Once per turn" for effect (1), without a real turn-change/reset event
+	@ (none was found despite two separate searches -- see FINDINGS.md). The
+	@ player's own Deck count (gPlayerCards[player][4]) only ever decreases,
+	@ by exactly 1, during that player's own draw phase -- once per their own
+	@ turn. Storing "deck count at last use" and comparing against the
+	@ current count is a real, reliable per-player turn signal that needs no
+	@ new engine hook: unchanged means no draw has happened yet (still the
+	@ same turn), changed means at least one of the player's own turns has
+	@ passed. .space zero-inits, so this starts at 0 -- harmless, since a
+	@ real deck count of 0 at the start of any turn never happens in
+	@ practice (the duel ends by deck-out long before that).
+	.global gEngNC_BanishSummonDeckCountAtLastUse
+gEngNC_BanishSummonDeckCountAtLastUse: .space 8 @ s32[2], one per player
 	.text
