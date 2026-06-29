@@ -187,6 +187,13 @@ SECTIONS {
         . = 0x00039EBC; gUnk_02039EBC = .;
         . = 0x0003A2C0; gUnk_0203A2C0 = .;
         . = 0x0003EEB0; gUnk_0203EEB0 = .;
+        /* gUnk_0203EEB0 turned out to be a real, actively-written
+           indeterminate-length buffer, not unused padding -- placing our
+           own .bss data right at its start let the real game overwrite it
+           as it grew. Reserve a 64-byte block at the very end of this gap
+           instead (our data only needs ~20 bytes), so that buffer has
+           thousands of bytes of room before ever reaching ours. */
+        . = 0x00040000 - 0x40;
         src/new_code.o(.bss);
         src/new_code.o(COMMON);
         asm/new_code.o(.bss);

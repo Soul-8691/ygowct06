@@ -323,25 +323,29 @@ void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
 // gEngineEffectTribute_080339D8): 5 field zones per player, 20 bytes
 // (5 s32 words) per zone, card:13 in the first word, base =
 // gUnk_0201C510 + playerIdx*0x868.
-// XYZ-Dragon Cannon's real alt-Fusion-summon path (gEngineEffectSpecialSummonFusion_080A7B78)
-// announces with opcode 0x46 (not 18, which BESD/Cannon-Soldier-style discard/
-// tribute-to-GY effects use) when asking the player to pick the field
-// monster(s) to remove from play for its "remove from play [specific cards]
-// you control" alt-summon cost. Testing whether that opcode alone changes
-// both the highlight set (field monsters) and the destination (banished
-// instead of GY).
+
+// Matches XYZ-Dragon Cannon's real validation-callback shape
+// (gEngineEffectSpecialSummon_080A7ACC) -- passed to sub_080969C4 to drive
+// the announce/highlight UI when there's more than one valid Dragon to
+// choose from, recording the player's choice into
+// gEngNC_LastValidatedDragonZone.
+s32 EngineValidateDragonFieldZone(s32 playerIdx, s32 category, s32 index);
+extern s32 gEngNC_LastValidatedDragonZone;
+
 // gEngineEffectBoostATKBoostDEF_08047A80(request, playerRelative, zoneIndex)
 // is the exact real function Dark Core/Chaos Sorcerer/BLS's real "remove
 // from play" cost calls (gCardEffectBanishSpecialSummon_08076DE0), hardcoded
 // to destination 0xF (Banished) inside (confirmed by reading it directly --
-// no need to pass 0xF ourselves).
+// no need to pass 0xF ourselves). Confirmed working end-to-end: actually
+// banishes the field monster, synchronously -- no async queue/wait hazard
+// like sub_080A1C78's Tribute-style chain (which is what froze the game
+// when we tried to move its GY result to Banished afterward).
 //
 // First param is a real gCardEffects3-style request pointer (not playerIdx
-// -- that was an earlier bug: passing a raw 0/1 made a deeper call
-// dereference an invalid address instead of failing loudly, so the monster
-// silently never got removed). Built the same way
-// gEngineEffectDrawDiscard_08047D28 builds its own request (zeroed buffer,
-// byte[2] bit 0 = playerIdx).
+// -- an earlier bug: passing a raw 0/1 made a deeper call dereference an
+// invalid address instead of failing loudly, so the monster silently never
+// got removed). Built the same way gEngineEffectDrawDiscard_08047D28 builds
+// its own request (zeroed buffer, byte[2] bit 0 = playerIdx).
 //
 // Second/third params: gEngineEffectBoostATKBoostDEF_08047724's loop tests
 // bit position (playerRelative<<4)+zoneIndex against gPlayerCards+0x1CE8
@@ -352,24 +356,59 @@ s32 gEngineEffectBoostATKBoostDEF_08047A80(s32 *request, s32 playerRelative, s32
 
 s32 gEngineEffectBanishToSpecialSummon(void)
 {
-    u32 i;
-    u32 cardId;
-    u32 playerIdx = gUnk_0201E4D0.unk0;
-    s32 foundZone = -1;
-    s32 request[6] = {0};
+    switch (gUnk_0201E4D0.unk13_2) {
+        case 0: {
+            u32 i;
+            u32 cardId;
+            u32 playerIdx = gUnk_0201E4D0.unk0;
+            u32 dragonCount = 0;
+            s32 onlyZone = -1;
 
-    for (i = 0; i < 5; i++) {
-        cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
-        if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON) {
-            foundZone = i;
+            // _080A8C30_New intercepts card_id==KONAMI_GOBLIN_CALLIGRAPHER
+            // unconditionally, including while REDMD is already on the
+            // field (e.g. effect (2)'s "Activate Effect" availability is
+            // being evaluated). Without this exclusion, the scan found
+            // REDMD itself sitting on the field (it's RACE_DRAGON) and
+            // acted on it every time that happened -- corrupting state and
+            // breaking effect (2) regardless of turn/session, matching what
+            // was observed. gCardAISpecialSummonDragonFromHandOrGraveyard
+            // already excludes it the same way.
+            for (i = 0; i < 5; i++) {
+                cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
+                if (cardId != 0 && cardId != KONAMI_GOBLIN_CALLIGRAPHER && sub_080EEDF8(cardId) == RACE_DRAGON) {
+                    dragonCount++;
+                    onlyZone = i;
+                }
+            }
+
+            if (dragonCount == 0)
+                return -1;
+
+            if (dragonCount == 1 || gUnk_0201E2A0.unk8[playerIdx] == 1) {
+                // Only one valid target, or CPU player: nothing to choose.
+                s32 request[6] = {0};
+
+                ((u8 *)request)[2] = (u8)playerIdx;
+                gEngineEffectBoostATKBoostDEF_08047A80(request, 0, onlyZone);
+                return 1;
+            }
+
+            gEngineEffectSpecialSummon_08093390(playerIdx, 0x46);
+            sub_080969C4((s32 *)EngineValidateDragonFieldZone);
+            gUnk_0201E4D0.unk13_2 = 1;
+            return 0;
+        }
+        case 1: {
+            s32 request[6] = {0};
+
+            if (sub_08096B14() == 0)
+                return 0;
+
+            ((u8 *)request)[2] = (u8)gUnk_0201E4D0.unk0;
+            gEngineEffectBoostATKBoostDEF_08047A80(request, 0, gEngNC_LastValidatedDragonZone);
+            return 1;
         }
     }
 
-    if (foundZone < 0)
-        return -1;
-
-    ((u8 *)request)[2] = (u8)playerIdx;
-    // gEngineEffectSpecialSummon_08093390(playerIdx, 0x46);
-    gEngineEffectBoostATKBoostDEF_08047A80(request, 0, foundZone);
-    return 1;
+    return 0;
 }

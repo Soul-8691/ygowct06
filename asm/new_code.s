@@ -368,6 +368,13 @@ gEngineEffectSpecialSummon_080A8C30_New: @ 0x080A8C30
 	adds r4, r1, #0
 	cmp r2, r0
 	bne next
+	@ NOTE: tried gating this on gUnk_0201E4D0.unk12 & 2 (the flag confirmed
+	@ needed in the now-dead gEngineEffectSpecialSummon_080A8C30_RDMD copy)
+	@ to stop this firing outside the real alt-summon context -- that broke
+	@ the legitimate case too (the banish stopped working even with exactly
+	@ 1 Dragon on the field), so unk12&2 isn't reliably set at this specific
+	@ call point. Reverted to unconditional; the real fix for the
+	@ Activate-Effect interference needs a different signal.
 	b _080A8F18_
 next:
 	ldr r0, _080A8C8C @ =0x000017C2 (Blue-Eyes Shining Dragon)
@@ -786,6 +793,23 @@ _080A8F18:
 	b _080A8FB0
 _080A8F18_:
 	bl gEngineEffectBanishToSpecialSummon
+	cmp r0, #0
+	blt _RDMD_8F18_FALLBACK @ not eligible -- see note below, don't route this through _080A8FB0
+	b _080A8FB0
+_RDMD_8F18_FALLBACK:
+	@ _080A8F18_ is reached whenever gUnk_0201E4D0.card_id==KONAMI_GOBLIN_CALLIGRAPHER,
+	@ unconditionally -- including while evaluating something unrelated (e.g.
+	@ effect (2)'s "Activate Effect" availability), since that also sets
+	@ card_id to ours. _080A8FB0 (the shared tail every other branch in this
+	@ dispatcher also jumps to) has special handling for a negative result:
+	@ it sets gUnk_0201E4D0.unk12 bit 3, queues message opcode 0x29, and
+	@ returns +1 (not the original -1!) to our own caller, which in turn
+	@ clears unk12 bit 1 -- real, confirmed mutation of shared state that
+	@ happens every time we report "not eligible" here, breaking effect (2)
+	@ whenever it's evaluated while no field Dragon (other than this card
+	@ itself) exists. Falling through to the untouched original dispatch
+	@ instead avoids ever feeding it a negative result for our card_id.
+	bl gEngineEffectSpecialSummon_080A8C30
 	b _080A8FB0
 _080A8F1E:
 	bl gEngineEffectSpecialSummonDiscard_080A7064
@@ -1748,7 +1772,15 @@ _EVDFZ_0868: .4byte 0x00000868
 _EVDFZ_C510: .4byte gUnk_0201C510
 _EVDFZ_LASTZONE: .4byte gEngNC_LastValidatedDragonZone
 
+@ This whole file never switches out of .text (set at the top), so these
+@ writable scratch globals were sitting in .text -- which the linker script
+@ places in ROM, not EWRAM -- making every write to them a silent no-op.
+@ Switching to .bss here routes them to EWRAM instead (asm/new_code.o(.bss)
+@ is mapped there in linker.ld).
+	.bss
 	.align 2
+	.global gEngNC_UsedEffectFlags
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each
 	.global gEngNC_LastValidatedDragonZone
 gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZone header above
+	.text
