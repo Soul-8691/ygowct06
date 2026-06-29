@@ -79,6 +79,7 @@ void EngineMarkUsedEffectThisTurn(u32 playerIdx, u32 cardId, u32 effectSlot);
 // shape (XYZ-Dragon Cannon) -- checked against field zones as the player
 // indicates one, instead of a plain pending-selection pointer.
 s32 EngineValidateDragonFieldZone(s32 playerIdx, s32 category, s32 index);
+extern s32 gEngNC_LastValidatedDragonZone;
 
 enum {
     RDMD_EFFECT_BANISH_SUMMON = 0,
@@ -329,50 +330,46 @@ void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
 // you control" alt-summon cost. Testing whether that opcode alone changes
 // both the highlight set (field monsters) and the destination (banished
 // instead of GY).
+// gEngineEffectBoostATKBoostDEF_08047A80(request, playerRelative, zoneIndex)
+// is the exact real function Dark Core/Chaos Sorcerer/BLS's real "remove
+// from play" cost calls (gCardEffectBanishSpecialSummon_08076DE0), hardcoded
+// to destination 0xF (Banished) inside (confirmed by reading it directly --
+// no need to pass 0xF ourselves).
+//
+// First param is a real gCardEffects3-style request pointer (not playerIdx
+// -- that was an earlier bug: passing a raw 0/1 made a deeper call
+// dereference an invalid address instead of failing loudly, so the monster
+// silently never got removed). Built the same way
+// gEngineEffectDrawDiscard_08047D28 builds its own request (zeroed buffer,
+// byte[2] bit 0 = playerIdx).
+//
+// Second/third params: gEngineEffectBoostATKBoostDEF_08047724's loop tests
+// bit position (playerRelative<<4)+zoneIndex against gPlayerCards+0x1CE8
+// XOR'd with a 0/1 loop variable -- playerRelative=0 means "myself", so the
+// field zone index belongs in the THIRD argument, not the second (had this
+// backwards before).
+s32 gEngineEffectBoostATKBoostDEF_08047A80(s32 *request, s32 playerRelative, s32 zoneIndex);
+
 s32 gEngineEffectBanishToSpecialSummon(void)
 {
-    switch (gUnk_0201E4D0.unk13_2) {
-        case 0: {
-            u32 i;
-            u32 cardId;
-            u32 playerIdx = gUnk_0201E4D0.unk0;
-            bool32 found = FALSE;
+    u32 i;
+    u32 cardId;
+    u32 playerIdx = gUnk_0201E4D0.unk0;
+    s32 foundZone = -1;
+    s32 request[6] = {0};
 
-            // Register the field-zone target list right here instead of in
-            // the AI search table -- the AI-candidate route (gAISearcherCardEffects/
-            // sub_0808DAB0) didn't affect opcode 0x46's highlighting at all,
-            // so whatever opcode 0x46 consults must be queried directly from
-            // this resolution context instead.
-            for (i = 0; i < 5; i++) {
-                cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
-                if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON) {
-                    sub_0808D88C(playerIdx, i, 0);
-                    found = TRUE;
-                }
-            }
-
-            if (!found)
-                return -1;
-
-            // XYZ-Dragon Cannon's real callback (gEngineEffectSpecialSummon_080A7ACC)
-            // is passed here instead of a plain s32* like BESD's -- this is
-            // what its real code uses to validate/accept the player's field-
-            // zone choice against its hardcoded material list. Using our own
-            // race-checking equivalent (EngineValidateDragonFieldZone) here
-            // in case that's what's needed to make the actual removal banish
-            // instead of sending to GY.
-            gEngineEffectSpecialSummon_08093390(playerIdx, 0x46);
-            sub_080969C4((s32 *)EngineValidateDragonFieldZone);
-            gUnk_0201E4D0.unk13_2++;
-            return 0;
+    for (i = 0; i < 5; i++) {
+        cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
+        if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON) {
+            foundZone = i;
         }
-        case 1: {
-            if (sub_08096B14() == 0)
-                return 0;
-
-            return 1;
-        }
-        default:
-            return 0;
     }
+
+    if (foundZone < 0)
+        return -1;
+
+    ((u8 *)request)[2] = (u8)playerIdx;
+    // gEngineEffectSpecialSummon_08093390(playerIdx, 0x46);
+    gEngineEffectBoostATKBoostDEF_08047A80(request, 0, foundZone);
+    return 1;
 }

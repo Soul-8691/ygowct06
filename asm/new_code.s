@@ -1731,7 +1731,9 @@ EngineValidateDragonFieldZone: @ r0=playerIdx, r1=category, r2=index
 	movs r1, #1 @ RACE_DRAGON
 	cmp r0, r1
 	bne _EVDFZ_FAIL
-	movs r0, #1
+	ldr r0, _EVDFZ_LASTZONE @ record this zone -- no confirmed real removal
+	str r4, [r0]             @ mechanism was found, so the caller (case 1 of
+	movs r0, #1               @ gEngineEffectBanishToSpecialSummon) performs the
 	lsls r0, r0, #0xb @ 0x800, matching the real callback's "valid" sentinel
 	b _EVDFZ_DONE
 _EVDFZ_FAIL:
@@ -1744,6 +1746,9 @@ _EVDFZ_DONE:
 _EVDFZ_E4D0: .4byte gUnk_0201E4D0
 _EVDFZ_0868: .4byte 0x00000868
 _EVDFZ_C510: .4byte gUnk_0201C510
+_EVDFZ_LASTZONE: .4byte gEngNC_LastValidatedDragonZone
 
 	.align 2
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each
+	.global gEngNC_LastValidatedDragonZone
+gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZone header above
