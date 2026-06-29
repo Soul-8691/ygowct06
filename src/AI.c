@@ -794,7 +794,7 @@ const struct CardAIEffect gAIEffects6[5] = {
 };
 
 // gAIEffects7  (207 entries)
-const struct CardAIEffect gAIEffects7[208] = {
+const struct CardAIEffect gAIEffects7[207] = {
 //  KonamiId                                             pad  Effect
     { KONAMI_MOOYAN_CURRY                               , 0, gCardAIGainLP_080B777C                        },
     { KONAMI_RED_MEDICINE                               , 0, gCardAIGainLP_080B777C                        },
@@ -972,7 +972,6 @@ const struct CardAIEffect gAIEffects7[208] = {
     { KONAMI_ELEMENTAL_HERO_TEMPEST                     , 0, gCardAISpecialSummonFusionSummon_080BAB1C     },
     { KONAMI_RAVIEL_LORD_OF_PHANTASMS                   , 0, gCardAISpecialSummonBoostATK_080BAB3C         },
     { KONAMI_ARCHLORD_ZERATO                            , 0, gCardAISpecialSummonDiscard_080BABA8          },
-    { KONAMI_GOBLIN_CALLIGRAPHER                        , 0, gCardAISpecialSummonDiscard_080BABA8          },
     { KONAMI_THE_BLOCKMAN                               , 0, gCardAISpecialSummonPreventAttack_080BACCC    },
     { KONAMI_LEKUNGA                                    , 0, gCardAISpecialSummonChangePosition_080BABD4   },
     { KONAMI_A_LEGENDARY_OCEAN                          , 0, gCardAIBoostATKBoostDEF_080B851C              },

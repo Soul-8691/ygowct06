@@ -18,7 +18,7 @@ extern const struct CardAIEffect gAIEffects3[57]; // effects6
 extern const struct CardAIEffect gAIEffects4[165]; // effects7
 extern const struct CardAIEffect gAIEffects5[3]; // effects8
 extern const struct CardAIEffect gAIEffects6[5]; // effects9
-extern const struct CardAIEffect gAIEffects7[208]; // effects10
+extern const struct CardAIEffect gAIEffects7[207]; // effects10
 extern const struct CardAIEffect gAIEffects8[71]; // effects11
 
 #endif // GUARD_AI_H
