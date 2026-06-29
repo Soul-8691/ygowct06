@@ -295,12 +295,19 @@ s32 sub_0808D88C(s32, s32, u32);
 // real slot-2 check correctly report "not eligible" on a repeat activation
 // attempt. Paired with EngineRDMD_MarkSummonUsedThenAnimate (asm/new_code.s,
 // wired into slot 3 instead of the bare real function) marking the flag.
+//
+// EngineUsedEffectThisTurn's check is DISABLED here for now: now that
+// gEngNC_UsedEffectFlags actually lives in EWRAM (see linker.ld) instead of
+// silently no-opping in ROM, the flag really does get set and persists --
+// but nothing resets it on a new turn (no real turn-change event was found
+// this session), so it permanently blocked candidate registration after the
+// first use, ever. King Dragun's real chain, finding zero pre-registered
+// hand/GY candidates, fell back to its own native deck-search behavior --
+// the "looks for a card in the deck" bug. Re-add the check once a real
+// per-turn reset mechanism is found.
 void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
     u32 i;
     u32 cardId;
-
-    if (EngineUsedEffectThisTurn(1 & arg0, KONAMI_GOBLIN_CALLIGRAPHER, RDMD_EFFECT_SUMMON_DRAGON))
-        return;
 
     for (i = 0; i < gPlayerCards[(1 & arg0)][3]; i++) {
         cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x48 + i]))->card;

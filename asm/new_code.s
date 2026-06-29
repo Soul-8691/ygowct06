@@ -1782,21 +1782,15 @@ _EVDFZ_0868: .4byte 0x00000868
 _EVDFZ_C510: .4byte gUnk_0201C510
 _EVDFZ_LASTZONE: .4byte gEngNC_LastValidatedDragonZone
 
-@ Confirmed empirically: the .bss placement tried here (asm/new_code.o(.bss)
-@ mapped at the very end of the gUnk_0203EEB0 gap in linker.ld) is NOT safe.
-@ That whole gap is gUnk_0203EEB0's own real, dynamically-sized allocation
-@ (every gap between consecutive gUnk_xxx markers in this linker script is
-@ a real variable's own footprint, not free padding), and it can apparently
-@ grow far enough to reach even the far edge of its range, corrupting
-@ whatever we place there. Left in .text (ROM) for now instead -- writes to
-@ these are silent no-ops, so the once-per-turn flag never actually gets
-@ set/checked (effect (2) can be activated repeatedly in the same turn) and
-@ the multi-target zone result never persists (case 1 of
-@ gEngineEffectBanishToSpecialSummon always reads zone 0), but nothing
-@ crashes or corrupts real state. Needs a genuinely safe storage location
-@ (or the real per-card "used this turn" mechanism other cards rely on)
-@ before either of those can be restored.
+@ Placing these at gUnk_0203EEB0 + 0x404 (linker.ld) -- right after that
+@ buffer's confirmed real usage (sub_080F5F28's 128-record sort buffer)
+@ instead of at the very end of the whole gap, which got corrupted in
+@ practice. If THIS placement also gets corrupted, the buffer's real reach
+@ exceeds 0x404 bytes and this needs to move again.
+	.bss
 	.align 2
+	.global gEngNC_UsedEffectFlags
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each
 	.global gEngNC_LastValidatedDragonZone
 gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZone header above
+	.text

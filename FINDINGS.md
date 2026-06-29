@@ -104,20 +104,20 @@ elsewhere, not invented:
 - **`gUnk_0203EEB0` is not free space.** In this linker script, the gap
   between any two consecutive `gUnk_xxx` markers in the `ewram (NOLOAD)`
   section is that *previous* variable's own real, allocated footprint — not
-  padding. `gUnk_0203EEB0`'s "gap" (4432 bytes, up to `0x00040000`, the very
-  top of EWRAM) is itself a real, actively-growing buffer used by the
-  original engine (confirmed: a static trace found one real routine
-  — `sub_080F5F28`, asm/code_080F55A0.s:1299 — that reads/sorts/writes 1028
-  bytes from its base as up to 128 8-byte records, and a second,
-  unbounded-looking 0x20-byte-stride record layout starting at the same
-  base address right next to it). Empirically, placing our own data even at
-  the *far end* of this gap (last 64 bytes, `0x0203FFC0`-`0x0203FFFF`) got
-  silently corrupted in practice, while testing effect (2) — so the real
-  usage reaches at least ~4368 bytes, likely the whole gap. **Treat this
-  entire region as unsafe.** There is currently no known-safe EWRAM scratch
-  location for this card's flags; `gEngNC_UsedEffectFlags` and
-  `gEngNC_LastValidatedDragonZone` are back in `.text` (ROM, read-only) as a
-  result (see "Open questions").
+  padding. `gUnk_0203EEB0`'s confirmed real usage is 0x404 bytes (one real
+  routine, `sub_080F5F28`, asm/code_080F55A0.s:1299, reads/sorts/writes that
+  much from its base as up to 128 8-byte records). Placing our own data at
+  the *far end* of the full 4432-byte gap instead (last 64 bytes,
+  `0x0203FFC0`-`0x0203FFFF`) got silently corrupted in practice while
+  testing effect (2) — proving the buffer's real reach exceeds 0x404 bytes
+  somewhere, just not by how much. **Fix that worked**: place data
+  immediately after the confirmed 0x404-byte region instead
+  (`gUnk_0203EEB0 + 0x404` = `0x0203F2B4`, see `linker.ld`) — confirmed via
+  testing to fix effect (1)'s multi-Dragon target-selection persistence.
+  `gEngNC_UsedEffectFlags`/`gEngNC_LastValidatedDragonZone` are back in
+  `.bss` (real EWRAM) at this address. If this placement also gets
+  corrupted under some other condition, the buffer's real reach is bigger
+  than 0x404 and this needs to move again.
 - The GBA stack (`sp_sys`/`sp_irq` in `asm/crt0.s`) lives in **IWRAM**
   (`IWRAM_END - 0x800` / `- 0x200`), not EWRAM — ruled out as a cause of the
   above corruption.
@@ -202,15 +202,32 @@ elsewhere, not invented:
   is the obvious candidate, but registering REDMD in it breaks Normal
   Summon — see landmines above). Confirmed explicitly: Normal Summon must
   stay unblocked; that's not a bug to fix.
-- **No safe EWRAM scratch storage found.** `EngineUsedEffectThisTurn`/
-  `EngineMarkUsedEffectThisTurn` and `EngineValidateDragonFieldZone`'s
-  result currently write to ROM (no-ops). Practical effect: effect (1)'s
-  once-per-turn limit and effect (2)'s once-per-turn limit are not actually
-  enforced (can be repeated in the same turn), and multi-Dragon target
-  selection for effect (1) doesn't persist (always resolves zone 0 in case
-  1). Needs either a genuinely-safe EWRAM location (not yet found) or the
-  real per-card "used this turn" mechanism other once-per-turn cards rely
-  on (also not yet found/confirmed).
+- **No real turn-change/reset event found.** Both a targeted search and a
+  background research agent looked for a global turn counter or a generic
+  turn-change hook real once-per-turn cards reset against, and found
+  neither — Cannon Soldier's Tribute effect, the only real "once per turn"
+  example traced, doesn't appear to use one either (its slot 2 has no
+  explicit once-per-turn gate beyond the slot-2/slot-3
+  speculative-vs-committed split). Consequence: once
+  `gEngNC_UsedEffectFlags` actually persisted in EWRAM (see above), nothing
+  ever clears it again — it's "used forever," not "used this turn."
+  Discovered the hard way: enabling the flag check in
+  `gCardAISpecialSummonDragonFromHandOrGraveyard` made it permanently stop
+  registering hand/GY candidates after the first use, and King Dragun's
+  real resolution chain — finding zero pre-registered candidates — fell
+  back to its own native behavior: searching the Deck. **Fix applied**: the
+  `EngineUsedEffectThisTurn` check in `gCardAISpecialSummonDragonFromHandOrGraveyard`
+  is commented out/removed for now. Effect (2) has no once-per-turn
+  enforcement at all currently (can be activated repeatedly in the same
+  turn) — a known regression from the real card's text, but strictly better
+  than permanently breaking after one use. `EngineRDMD_MarkSummonUsedThenAnimate`
+  still marks the flag on commit (now harmlessly inert) so the check can be
+  restored with a one-line change once a real reset mechanism is found.
+  Effect (1) (`gEngineEffectBanishToSpecialSummon`) never had this check to
+  begin with, so it's unaffected.
 - `src/card.c` Level still 1, not 10 (cosmetic/testing convenience — see
   above).
 - `src/card_names_descriptions.c` still says "Goblin Calligrapher".
+- "Summon" can still be selected with no valid Dragon on the field (effect
+  (1)'s actual condition unmet) and silently does nothing — no error/cancel
+  message. Not yet investigated.
