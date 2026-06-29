@@ -42,12 +42,15 @@
 
 extern Unk_0201E4D0 gUnk_0201E4D0;
 extern Unk_0201E2A0 gUnk_0201E2A0;
+extern s32 gEngineEffectSpecialSummon_080A5714;
 
 // ---- Existing engine helpers (signatures as used in engine_effects.c/_2.c) ----
 s32 sub_08096B14(void);                                            /* extern */
-s32 gEngineEffectSpecialSummon_08093390(u32, s32*);                /* extern */
+s32 gEngineEffectSpecialSummon_08093390(u32, s32);
 s32 sub_080969C4(s32*);                                             /* extern */
 s32 gEngineEffectSpecialSummonGraveyard_080B70AC(u32, u32, s32*);  /* extern */
+s32 gEngineEffectSpecialSummon_0801EC9C(s32, s32, s32, s32);
+s32 gEngineEffectSpecialSummonDiscard_080A5F7C(void);
 
 // ---- Implemented in asm/new_code.s (see that file for REAL vs NEW) ----
 // Field zone index of a face-up monster of "race" that "playerIdx" controls,
@@ -101,7 +104,7 @@ s32 gEngineEffectRedEyesDarknessMetalDragon_BanishSummon(void)
                 gUnk_0201E4D0.unk13_2 = 2;
             }
             else {
-                gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, NULL);
+                gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, 0);
                 sub_080969C4(&gEngineEffectRedEyesDarknessMetalDragon_PendingZone);
                 gUnk_0201E4D0.unk13_2 = 1;
             }
@@ -147,7 +150,7 @@ s32 gEngineEffectRedEyesDarknessMetalDragon_SummonDragon(void)
                 gUnk_0201E4D0.unk13_2 = 2;
             }
             else {
-                gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, NULL);
+                gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, 0);
                 sub_080969C4(&gEngineEffectRedEyesDarknessMetalDragon_PendingLocation);
                 gUnk_0201E4D0.unk13_2 = 1;
             }
@@ -182,7 +185,7 @@ s32 gEngineEffectRedEyesDarknessMetalDragon_SummonDragon(void)
 // (gCardEffectSpecialSummon_080659E8 / _08062E1C / gCardEffectDestroySpecialSummon_080563A4).
 // That alone didn't work (it found nothing, since King Dragun's own AI
 // function populates the AI-candidate list, gUnk_0201E4F0, with Dragons
-// from the *Deck*, not hand). The fix was adding gCardAISpecialSummonDragonFromHand
+// from the *Deck*, not hand). The fix was adding gCardAISpecialSummonDragonFromHandOrGraveyard
 // below to src/AI_2.c's table instead -- it populates the exact same
 // candidate list with Dragons from *hand* (using the real sub_080EEDF8 race
 // check and the real sub_0808D88C candidate-registration call, same as
@@ -232,7 +235,7 @@ void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void)
 // of the ROM; its old slot is 0xFF-filled.
 //
 // src/AI_2.c -- KONAMI_GOBLIN_CALLIGRAPHER's AI-candidate-search table entry
-// is gCardAISpecialSummonDragonFromHand (below), the function that actually
+// is gCardAISpecialSummonDragonFromHandOrGraveyard (below), the function that actually
 // makes effect (2) work (see the breakthrough note above).
 //
 // src/card.c -- both CardInfo rows (CARD_GOBLIN_CALLIGRAPHER and the
@@ -280,7 +283,7 @@ s32 sub_0808D88C(s32, s32, u32);
 // real slot-2 check correctly report "not eligible" on a repeat activation
 // attempt. Paired with EngineRDMD_MarkSummonUsedThenAnimate (asm/new_code.s,
 // wired into slot 3 instead of the bare real function) marking the flag.
-void gCardAISpecialSummonDragonFromHand(s32 arg0) {
+void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
     u32 i;
     u32 cardId;
 
@@ -298,6 +301,46 @@ void gCardAISpecialSummonDragonFromHand(s32 arg0) {
         cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x106 + i]))->card;
         if (cardId != KONAMI_GOBLIN_CALLIGRAPHER && sub_080EEDF8(cardId) == RACE_DRAGON) {
             sub_0808D88C(arg0, 0xE, i);
+        }
+    }
+}
+
+s32 gEngineEffectBanishToSpecialSummon(void)
+{
+    if (!(gUnk_0201E4D0.unk12 & 2)) {
+        return gEngineEffectSpecialSummonDiscard_080A5F7C();
+    }
+    else {
+        u8 state = gUnk_0201E4D0.unk13_2;
+        switch (state) {
+            case 0: {
+                if (gUnk_0201E2A0.unk8[gUnk_0201E4D0.unk0] == 1) {
+                    gEngineEffectSpecialSummonGraveyard_080B70AC(gUnk_0201E4D0.unk0, gUnk_0201E4D0.card_id, &gEngineEffectSpecialSummon_080A5714);
+                } else {
+                    gEngineEffectSpecialSummon_08093390(gUnk_0201E4D0.unk0, 18);
+                    sub_080969C4(&gEngineEffectSpecialSummon_080A5714);
+                }
+    
+                gUnk_0201E4D0.unk13_2++;
+                return 0;
+            }
+            case 1: {
+                if (sub_08096B14() != 0) {
+                    // ATK/DEF boost amounts, matching the args to gEngineEffectBoostATKBoostDEF_08047A38.
+                    s32 atkBoost = ((PlayerCards *)gPlayerCards)->unk1D68;
+                    s32 defBoost = ((PlayerCards *)gPlayerCards)->unk1D6C + ((PlayerCards *)gPlayerCards)->unk1D70;
+                    gEngineEffectSpecialSummon_0801EC9C(40, atkBoost, defBoost, 0);
+                    gUnk_0201E4D0.unk8 = state;
+                    gUnk_0201E4D0.unkC = (u8)atkBoost;
+                    gUnk_0201E4D0.unkC |= (u8)defBoost << 8;
+                    return 1;
+                }
+    
+                return -1;
+            }
+            default: {
+                return 0;
+            }
         }
     }
 }

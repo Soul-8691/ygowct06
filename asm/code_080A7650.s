@@ -7826,7 +7826,7 @@ gEngineEffectSpecialSummon_080AB200: @ 0x080AB200
 	ldr r3, _080AB234 @ =gUnk_0201E4D0
 	cmp r0, #0
 	beq _080AB238
-	bl gEngineEffectSpecialSummon_080A8C30_RDMD @ extended for Red-Eyes Darkness Metal Dragon (KONAMI_GOBLIN_CALLIGRAPHER); see asm/new_code.s
+	bl gEngineEffectSpecialSummon_080A8C30_New
 	cmp r0, #0
 	beq _080AB270
 	movs r0, #2
