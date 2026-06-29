@@ -75,6 +75,10 @@ void EngineSpecialSummonFromHandOrGY(u32 playerIdx, s32 location);
 // named card + which of its effect slots was used.
 bool32 EngineUsedEffectThisTurn(u32 playerIdx, u32 cardId, u32 effectSlot);
 void EngineMarkUsedEffectThisTurn(u32 playerIdx, u32 cardId, u32 effectSlot);
+// Validation callback matching gEngineEffectSpecialSummon_080A7ACC's real
+// shape (XYZ-Dragon Cannon) -- checked against field zones as the player
+// indicates one, instead of a plain pending-selection pointer.
+s32 EngineValidateDragonFieldZone(s32 playerIdx, s32 category, s32 index);
 
 enum {
     RDMD_EFFECT_BANISH_SUMMON = 0,
@@ -260,6 +264,7 @@ void gCardEffectRedEyesDarknessMetalDragon_SummonDragon(void)
 // overwritten with new content.
 
 extern s32 gPlayerCards[][0x21A];
+extern s32 gUnk_0201C510[][0x21A];
 s32 sub_080EEDF8(u32);
 s32 sub_0808D88C(s32, s32, u32);
 
@@ -311,32 +316,63 @@ void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
     }
 }
 
-extern s32 gUnk_0201C510[][0x21A];
-
-// Confirmed safe to READ (not write -- writing to it earlier this session
-// corrupted the deck-browsing UI) via Cannon Soldier's real tribute-target
-// validator (gEngineEffectTributeSpecialSummon_08033730/gEngineEffectTribute_080339D8):
-// 5 field zones per player, 20 bytes (5 s32 words) per zone, card:13 in the
-// first word, base = gUnk_0201C510 + playerIdx*0x868.
-static bool32 EngineHasFaceUpDragon(u32 playerIdx)
-{
-    u32 i;
-    u32 cardId;
-
-    for (i = 0; i < 5; i++) {
-        cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
-        if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
+// gUnk_0201C510 confirmed safe to READ (not write -- writing to it earlier
+// this session corrupted the deck-browsing UI) via Cannon Soldier's real
+// tribute-target validator (gEngineEffectTributeSpecialSummon_08033730/
+// gEngineEffectTribute_080339D8): 5 field zones per player, 20 bytes
+// (5 s32 words) per zone, card:13 in the first word, base =
+// gUnk_0201C510 + playerIdx*0x868.
+// XYZ-Dragon Cannon's real alt-Fusion-summon path (gEngineEffectSpecialSummonFusion_080A7B78)
+// announces with opcode 0x46 (not 18, which BESD/Cannon-Soldier-style discard/
+// tribute-to-GY effects use) when asking the player to pick the field
+// monster(s) to remove from play for its "remove from play [specific cards]
+// you control" alt-summon cost. Testing whether that opcode alone changes
+// both the highlight set (field monsters) and the destination (banished
+// instead of GY).
 s32 gEngineEffectBanishToSpecialSummon(void)
 {
-    if (!EngineHasFaceUpDragon(gUnk_0201E4D0.unk0))
-        return -1;
+    switch (gUnk_0201E4D0.unk13_2) {
+        case 0: {
+            u32 i;
+            u32 cardId;
+            u32 playerIdx = gUnk_0201E4D0.unk0;
+            bool32 found = FALSE;
 
-    sub_080A1C78(gUnk_0201E4D0.unk0, 0xFFFF, 1);
-    return 1;
+            // Register the field-zone target list right here instead of in
+            // the AI search table -- the AI-candidate route (gAISearcherCardEffects/
+            // sub_0808DAB0) didn't affect opcode 0x46's highlighting at all,
+            // so whatever opcode 0x46 consults must be queried directly from
+            // this resolution context instead.
+            for (i = 0; i < 5; i++) {
+                cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
+                if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON) {
+                    sub_0808D88C(playerIdx, i, 0);
+                    found = TRUE;
+                }
+            }
+
+            if (!found)
+                return -1;
+
+            // XYZ-Dragon Cannon's real callback (gEngineEffectSpecialSummon_080A7ACC)
+            // is passed here instead of a plain s32* like BESD's -- this is
+            // what its real code uses to validate/accept the player's field-
+            // zone choice against its hardcoded material list. Using our own
+            // race-checking equivalent (EngineValidateDragonFieldZone) here
+            // in case that's what's needed to make the actual removal banish
+            // instead of sending to GY.
+            gEngineEffectSpecialSummon_08093390(playerIdx, 0x46);
+            sub_080969C4((s32 *)EngineValidateDragonFieldZone);
+            gUnk_0201E4D0.unk13_2++;
+            return 0;
+        }
+        case 1: {
+            if (sub_08096B14() == 0)
+                return 0;
+
+            return 1;
+        }
+        default:
+            return 0;
+    }
 }

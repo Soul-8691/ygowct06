@@ -1685,5 +1685,65 @@ EngineRDMD_MarkSummonUsedThenAnimate: @ r0 = request ptr
 	.align 2, 0
 _ERDMD_ID: .4byte 0x000017D0 @ KONAMI_GOBLIN_CALLIGRAPHER (6096)
 
+@ ----------------------------------------------------------------------------
+@ gEngineEffectSpecialSummon_080A7ACC (XYZ-Dragon Cannon's real alt-Fusion
+@ path) is itself a validation CALLBACK, not a plain data pointer like BESD's
+@ &gEngineEffectSpecialSummon_080A5714 -- sub_080969C4/gEngineEffectSpecialSummonGraveyard_080B70AC's
+@ third arg is polymorphic depending on whether the real card needs to ask
+@ the player to indicate a field zone. The real callback's signature is
+@ (playerIdx, category, index), computing zoneIndex = category+index, then
+@ checking gUnk_0201C510 at that zone against XYZ-Dragon Cannon's own
+@ hardcoded material list (gUnk_0201B290+0x5AC). This is the same shape,
+@ but checking RACE_DRAGON via the real sub_080EEDF8 instead.
+@ ----------------------------------------------------------------------------
+
+	@ s32 EngineValidateDragonFieldZone(s32 playerIdx, s32 category, s32 index)
+	thumb_func_start EngineValidateDragonFieldZone
+EngineValidateDragonFieldZone: @ r0=playerIdx, r1=category, r2=index
+	push {r4, r5, r6, r7, lr}
+	adds r5, r0, #0 @ r5 = playerIdx
+	adds r4, r1, r2 @ r4 = zoneIndex = category+index
+	cmp r4, #4
+	bgt _EVDFZ_FAIL @ only the 5 monster zones (0-4)
+	ldr r7, _EVDFZ_E4D0
+	ldrb r1, [r7]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	cmp r5, r0
+	bne _EVDFZ_FAIL @ must match the resolving player (mirrors the real callback)
+	movs r2, #1
+	ands r2, r5
+	lsls r0, r4, #2
+	adds r0, r0, r4
+	lsls r0, r0, #2 @ r0 = zoneIndex*5*4 = zoneIndex*20
+	ldr r1, _EVDFZ_0868
+	muls r1, r2, r1
+	adds r0, r0, r1
+	ldr r1, _EVDFZ_C510
+	adds r0, r0, r1
+	ldr r0, [r0]
+	lsls r0, r0, #0x13
+	lsrs r6, r0, #0x13 @ r6 = cardId at this zone
+	cmp r6, #0
+	beq _EVDFZ_FAIL
+	adds r0, r6, #0
+	bl sub_080EEDF8
+	movs r1, #1 @ RACE_DRAGON
+	cmp r0, r1
+	bne _EVDFZ_FAIL
+	movs r0, #1
+	lsls r0, r0, #0xb @ 0x800, matching the real callback's "valid" sentinel
+	b _EVDFZ_DONE
+_EVDFZ_FAIL:
+	movs r0, #0
+_EVDFZ_DONE:
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_EVDFZ_E4D0: .4byte gUnk_0201E4D0
+_EVDFZ_0868: .4byte 0x00000868
+_EVDFZ_C510: .4byte gUnk_0201C510
+
 	.align 2
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each
