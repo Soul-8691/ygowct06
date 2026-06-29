@@ -3175,6 +3175,12 @@ gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZ
 	@ practice (the duel ends by deck-out long before that).
 	.global gEngNC_BanishSummonDeckCountAtLastUse
 gEngNC_BanishSummonDeckCountAtLastUse: .space 8 @ s32[2], one per player
+	@ Same "deck count at last use" trick, for effect (2)'s own once-per-turn
+	@ limit -- without this, a second copy of REDMD in hand could each
+	@ Special Summon a Dragon from hand/GY in the same turn, since nothing
+	@ tracked it per-player across activations.
+	.global gEngNC_SummonDragonDeckCountAtLastUse
+gEngNC_SummonDragonDeckCountAtLastUse: .space 8 @ s32[2], one per player
 	.text
 
 	@ Cathedral of Nobles
@@ -3316,9 +3322,28 @@ _0806FF2C:
 	movs r0, #0x64
 	b _0806FF48
 _0806FF3C:
-	ldrb r4, [r4, #2]
-	lsls r0, r4, #0x1f
-	lsrs r0, r0, #0x1f
+	@ Same "deck count at last use" trick as effect (1)'s
+	@ gEngNC_BanishSummonDeckCountAtLastUse: record the player's current
+	@ Deck count here, at the real commit point, so
+	@ gCardAISpecialSummonDragonFromHandOrGraveyard can compare against it
+	@ to enforce effect (2)'s own once-per-turn limit (previously a plain
+	@ EngineMarkUsedEffectThisTurn flag, which permanently blocked
+	@ candidate registration after the first use ever, with no reset).
+	ldr r0, _ERDMD_PLAYERCARDS
+	ldr r1, _ERDMD_ROWSTRIDE
+	muls r1, r5, r1
+	adds r0, r0, r1
+	ldr r1, _ERDMD_DECKOFS
+	adds r0, r0, r1
+	ldr r1, [r0]
+	ldr r0, _ERDMD_DECKCOUNT
+	lsls r2, r5, #2
+	str r1, [r0, r2]
+	.align 2, 0
+_ERDMD_PLAYERCARDS: .4byte gPlayerCards
+_ERDMD_ROWSTRIDE: .4byte 0x00000868
+_ERDMD_DECKOFS: .4byte 0x00000010
+_ERDMD_DECKCOUNT: .4byte gEngNC_SummonDragonDeckCountAtLastUse
 _0806FF46:
 	movs r0, #0
 _0806FF48:

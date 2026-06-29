@@ -296,18 +296,33 @@ s32 sub_0808D88C(s32, s32, u32);
 // attempt. Paired with EngineRDMD_MarkSummonUsedThenAnimate (asm/new_code.s,
 // wired into slot 3 instead of the bare real function) marking the flag.
 //
-// EngineUsedEffectThisTurn's check is DISABLED here for now: now that
-// gEngNC_UsedEffectFlags actually lives in EWRAM (see linker.ld) instead of
-// silently no-opping in ROM, the flag really does get set and persists --
-// but nothing resets it on a new turn (no real turn-change event was found
-// this session), so it permanently blocked candidate registration after the
-// first use, ever. King Dragun's real chain, finding zero pre-registered
-// hand/GY candidates, fell back to its own native deck-search behavior --
-// the "looks for a card in the deck" bug. Re-add the check once a real
-// per-turn reset mechanism is found.
+// EngineUsedEffectThisTurn's plain persistent-flag check was DISABLED here
+// (and stays disabled): now that gEngNC_UsedEffectFlags actually lives in
+// EWRAM (see linker.ld) instead of silently no-opping in ROM, the flag
+// really does get set and persists -- but nothing resets it on a new turn
+// (no real turn-change event was found this session), so it permanently
+// blocked candidate registration after the first use, ever. King Dragun's
+// real chain, finding zero pre-registered hand/GY candidates, fell back to
+// its own native deck-search behavior -- the "looks for a card in the deck"
+// bug.
+//
+// Once-per-turn instead uses the same Deck-count trick as effect (1)'s
+// gEngNC_BanishSummonDeckCountAtLastUse: EngineRDMD_MarkSummonUsedThenAnimate
+// (asm/new_code.s, wired into gCardEffects3 slot 3, the real commit point)
+// records the player's Deck count into gEngNC_SummonDragonDeckCountAtLastUse
+// when the effect actually resolves. If unchanged since then, no draw has
+// happened yet, so it's still the same turn -- skip registering any
+// candidates at all, which makes King Dragun's real slot-2 check correctly
+// report "not eligible" without ever risking the deck-search fallback.
+extern s32 gEngNC_SummonDragonDeckCountAtLastUse[2];
+
 void gCardAISpecialSummonDragonFromHandOrGraveyard(s32 arg0) {
     u32 i;
     u32 cardId;
+    u32 playerIdx = 1 & arg0;
+
+    if (gEngNC_SummonDragonDeckCountAtLastUse[playerIdx] == gPlayerCards[playerIdx][4])
+        return;
 
     for (i = 0; i < gPlayerCards[(1 & arg0)][3]; i++) {
         cardId = ((struct PlayerCard *)(&gPlayerCards[(1 & arg0)][0x48 + i]))->card;
