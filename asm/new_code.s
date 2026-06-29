@@ -3176,3 +3176,153 @@ gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZ
 	.global gEngNC_BanishSummonDeckCountAtLastUse
 gEngNC_BanishSummonDeckCountAtLastUse: .space 8 @ s32[2], one per player
 	.text
+
+	@ Cathedral of Nobles
+	thumb_func_start gCardEffectSearchSpecialSummon_0806FDEC_New
+gCardEffectSearchSpecialSummon_0806FDEC_New: @ 0x0806FDEC
+	push {r4, lr}
+	adds r4, r0, #0
+	ldr r0, _0806FE0C @ =gUnk_0201B290
+	movs r1, #0x94
+	lsls r1, r1, #3
+	adds r0, r0, r1
+	ldr r0, [r0]
+	subs r0, #0x64
+	cmp r0, #0x1c
+	bls _0806FE02
+	b _0806FF46
+_0806FE02:
+	lsls r0, r0, #2
+	ldr r1, _0806FE10 @ =_0806FE14
+	adds r0, r0, r1
+	ldr r0, [r0]
+	mov pc, r0
+	.align 2, 0
+_0806FE0C: .4byte gUnk_0201B290
+_0806FE10: .4byte _0806FE14
+_0806FE14: @ jump table
+	.4byte _0806FF3C @ case 0
+	.4byte _0806FF46 @ case 1
+	.4byte _0806FF46 @ case 2
+	.4byte _0806FF46 @ case 3
+	.4byte _0806FF46 @ case 4
+	.4byte _0806FF46 @ case 5
+	.4byte _0806FF46 @ case 6
+	.4byte _0806FF46 @ case 7
+	.4byte _0806FF2C @ case 8
+	.4byte _0806FF1A @ case 9
+	.4byte _0806FF0A @ case 10
+	.4byte _0806FF46 @ case 11
+	.4byte _0806FF46 @ case 12
+	.4byte _0806FF46 @ case 13
+	.4byte _0806FF46 @ case 14
+	.4byte _0806FF46 @ case 15
+	.4byte _0806FF46 @ case 16
+	.4byte _0806FF46 @ case 17
+	.4byte _0806FF46 @ case 18
+	.4byte _0806FF46 @ case 19
+	.4byte _0806FF46 @ case 20
+	.4byte _0806FF46 @ case 21
+	.4byte _0806FF46 @ case 22
+	.4byte _0806FF46 @ case 23
+	.4byte _0806FF46 @ case 24
+	.4byte _0806FF46 @ case 25
+	.4byte _0806FEF0 @ case 26
+	.4byte _0806FEDC @ case 27
+	.4byte _0806FE88 @ case 28
+_0806FE88:
+	ldrb r1, [r4, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	bl gEngineEffectSpecialSummon_080335B8
+	cmp r0, #0
+	beq _0806FF46
+	ldrb r1, [r4, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	bl gEngineEffectSpecialSummonChangePosition_0803BB7C
+	cmp r0, #0
+	beq _0806FF46
+	ldrb r1, [r4, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	ldrh r1, [r4]
+	movs r2, #0
+	bl sub_0808DAB0
+	cmp r0, #0
+	bne _0806FEC6
+	ldrb r4, [r4, #2]
+	lsls r0, r4, #0x1f
+	lsrs r0, r0, #0x1f
+	movs r1, #0xd
+	bl gEngineEffectSpecialSummon_08093390
+	movs r0, #0x6e
+	b _0806FF48
+_0806FEC6:
+	ldrb r4, [r4, #2]
+	lsls r0, r4, #0x1f
+	lsrs r0, r0, #0x1f
+	ldr r1, _0806FED8 @ =0x0000011D
+	bl gEngineEffectSpecialSummon_08093390
+	movs r0, #0x7f
+	b _0806FF48
+	.align 2, 0
+_0806FED8: .4byte 0x0000011D
+_0806FEDC:
+	ldrb r1, [r4, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	ldrh r2, [r4]
+	movs r1, #6
+	movs r3, #0
+	bl gEngineEffectDiscardDestroyAll_080941C4
+	movs r0, #0x7e
+	b _0806FF48
+_0806FEF0:
+	ldrb r4, [r4, #2]
+	lsls r4, r4, #0x1f
+	lsrs r4, r4, #0x1f
+	bl sub_080942DC
+	adds r1, r0, #0
+	adds r0, r4, #0
+	movs r2, #1
+	movs r3, #0
+	bl gEngineEffectChangePosition_080ABE40
+	movs r0, #0x64
+	b _0806FF48
+_0806FF0A:
+	ldrb r4, [r4, #2]
+	lsls r0, r4, #0x1f
+	lsrs r0, r0, #0x1f
+	movs r1, #1
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
+	movs r0, #0x6d
+	b _0806FF48
+_0806FF1A:
+	ldrb r4, [r4, #2]
+	lsls r1, r4, #0x1f
+	lsrs r1, r1, #0x1f
+	movs r0, #1
+	subs r0, r0, r1
+	bl sub_080A1CD0
+	movs r0, #0x6c
+	b _0806FF48
+_0806FF2C:
+	ldrb r4, [r4, #2]
+	lsls r0, r4, #0x1f
+	lsrs r0, r0, #0x1f
+	movs r1, #0
+	bl gEngineEffectGainLPStandbyPhase_0804A4CC
+	movs r0, #0x64
+	b _0806FF48
+_0806FF3C:
+	ldrb r4, [r4, #2]
+	lsls r0, r4, #0x1f
+	lsrs r0, r0, #0x1f
+_0806FF46:
+	movs r0, #0
+_0806FF48:
+	pop {r4}
+	pop {r1}
+	bx r1
+	.align 2, 0
