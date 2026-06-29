@@ -807,9 +807,19 @@ _RDMD_8F18_FALLBACK:
 	@ clears unk12 bit 1 -- real, confirmed mutation of shared state that
 	@ happens every time we report "not eligible" here, breaking effect (2)
 	@ whenever it's evaluated while no field Dragon (other than this card
-	@ itself) exists. Falling through to the untouched original dispatch
-	@ instead avoids ever feeding it a negative result for our card_id.
-	bl gEngineEffectSpecialSummon_080A8C30
+	@ itself) exists.
+	@ Originally tried falling through to the untouched original dispatch
+	@ (gEngineEffectSpecialSummon_080A8C30) here, assuming it'd return a
+	@ harmless default for our unrecognized card_id -- instead, since our
+	@ card_id never matches anything in that dispatcher's real binary search,
+	@ it falls all the way through to _080A8F84, its true default case,
+	@ which calls gEngineEffectSpecialSummonDiscard_080A5F7C (a real "search
+	@ the deck" style alt-summon resolver) -- reproducing exactly the
+	@ deck-search corruption reported. _080A8FB0 only special-cases NEGATIVE
+	@ results, so returning a plain 0 directly is enough to reach the same
+	@ harmless "return 0" path (_080A8FDC -> _080A9124) without ever invoking
+	@ the original dispatcher at all.
+	movs r0, #0
 	b _080A8FB0
 _080A8F1E:
 	bl gEngineEffectSpecialSummonDiscard_080A7064
@@ -1772,15 +1782,21 @@ _EVDFZ_0868: .4byte 0x00000868
 _EVDFZ_C510: .4byte gUnk_0201C510
 _EVDFZ_LASTZONE: .4byte gEngNC_LastValidatedDragonZone
 
-@ This whole file never switches out of .text (set at the top), so these
-@ writable scratch globals were sitting in .text -- which the linker script
-@ places in ROM, not EWRAM -- making every write to them a silent no-op.
-@ Switching to .bss here routes them to EWRAM instead (asm/new_code.o(.bss)
-@ is mapped there in linker.ld).
-	.bss
+@ Confirmed empirically: the .bss placement tried here (asm/new_code.o(.bss)
+@ mapped at the very end of the gUnk_0203EEB0 gap in linker.ld) is NOT safe.
+@ That whole gap is gUnk_0203EEB0's own real, dynamically-sized allocation
+@ (every gap between consecutive gUnk_xxx markers in this linker script is
+@ a real variable's own footprint, not free padding), and it can apparently
+@ grow far enough to reach even the far edge of its range, corrupting
+@ whatever we place there. Left in .text (ROM) for now instead -- writes to
+@ these are silent no-ops, so the once-per-turn flag never actually gets
+@ set/checked (effect (2) can be activated repeatedly in the same turn) and
+@ the multi-target zone result never persists (case 1 of
+@ gEngineEffectBanishToSpecialSummon always reads zone 0), but nothing
+@ crashes or corrupts real state. Needs a genuinely safe storage location
+@ (or the real per-card "used this turn" mechanism other cards rely on)
+@ before either of those can be restored.
 	.align 2
-	.global gEngNC_UsedEffectFlags
 gEngNC_UsedEffectFlags: .space 8 @ 2 players * 2 effect slots, u16 each
 	.global gEngNC_LastValidatedDragonZone
 gEngNC_LastValidatedDragonZone: .space 4 @ NEW -- see EngineValidateDragonFieldZone header above
-	.text
