@@ -397,7 +397,7 @@ s32 gEngineEffectBanishToSpecialSummon(void)
             // already excludes it the same way.
             for (i = 0; i < 5; i++) {
                 cardId = ((struct PlayerCard *)(&gUnk_0201C510[(1 & playerIdx)][i * 5]))->card;
-                if (cardId != 0 && cardId != KONAMI_GOBLIN_CALLIGRAPHER && sub_080EEDF8(cardId) == RACE_DRAGON) {
+                if (cardId != 0 && sub_080EEDF8(cardId) == RACE_DRAGON) {
                     dragonCount++;
                     onlyZone = i;
                 }
