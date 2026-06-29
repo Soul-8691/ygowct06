@@ -1499,11 +1499,15 @@ gEngineEffectSpecialSummon_080A4AF4_New: @ 0x080A4AF4
 	lsrs r4, r0, #0x13
 	movs r6, #0
 	cmp r4, #0
-	beq _080A4BFE
+	bne _080A4AF4_SKIP1
+	b _080A4BFE @ out of beq range after the once-per-turn gate below was inserted
+_080A4AF4_SKIP1:
 	adds r0, r4, #0
 	bl sub_0804AD48
 	cmp r0, #0
-	beq _080A4BFE
+	bne _080A4AF4_SKIP2
+	b _080A4BFE @ out of beq range after the once-per-turn gate below was inserted
+_080A4AF4_SKIP2:
 	movs r1, #1
 	rsbs r1, r1, #0
 	adds r0, r4, #0
@@ -1544,7 +1548,32 @@ _080A4B70:
 	ldr r0, _RDMD_0804B81C_ID___
 	cmp r4, r0
 	bne next__
+	@ Once-per-turn gate: if effect (1) was already used this turn (Deck
+	@ count unchanged since last use -- see src/new_code.c's
+	@ gEngNC_BanishSummonDeckCountAtLastUse comment), don't treat REDMD as
+	@ a valid alt-summon candidate here. Without this, the "Sp. Summon"
+	@ option still gets offered for a second copy (this function doesn't
+	@ know about our flag), the player picks it, and gEngineEffectBanishToSpecialSummon
+	@ immediately returns -1 -- that mismatch (menu offered it, resolution
+	@ refused it) froze the game.
+	ldr r1, _RDMD_080A4B70_DECKCOUNT
+	lsls r2, r5, #2
+	ldr r0, [r1, r2]
+	ldr r1, _RDMD_080A4B70_PLAYERCARDS
+	ldr r2, _RDMD_080A4B70_ROWSTRIDE
+	muls r2, r5, r2
+	adds r1, r1, r2
+	ldr r2, _RDMD_080A4B70_DECKOFS
+	adds r1, r1, r2
+	ldr r1, [r1]
+	cmp r0, r1
+	beq next__
 	b _080A50B0
+	.align 2, 0
+_RDMD_080A4B70_DECKCOUNT: .4byte gEngNC_BanishSummonDeckCountAtLastUse
+_RDMD_080A4B70_PLAYERCARDS: .4byte gPlayerCards
+_RDMD_080A4B70_ROWSTRIDE: .4byte 0x00000868
+_RDMD_080A4B70_DECKOFS: .4byte 0x00000010
 next__:
 	ldr r0, _080A4B8C @ =0x000015FA (YZ-Tank Dragon)
 	cmp r4, r0
@@ -2462,7 +2491,34 @@ _080A54E0:
 	ldr r0, _RDMD_0804B81C_ID____
 	cmp r2, r0
 	bne next___
+	@ Once-per-turn gate, matching gEngineEffectSpecialSummon_080A4AF4_New's
+	@ gate above -- avoids the same UI/resolution mismatch freeze for this
+	@ second real call site. r0/r1/r3 are free here (r3 is never restored
+	@ at this function's epilogue); r2/r4/r5/r6/r7 are all still needed
+	@ later and must not be touched.
+	ldr r1, _RDMD_080A54_E4D0
+	ldrb r1, [r1]
+	lsls r1, r1, #0x1f
+	lsrs r3, r1, #0x1f
+	ldr r0, _RDMD_080A54_DECKCOUNT
+	lsls r1, r3, #2
+	ldr r0, [r0, r1]
+	ldr r1, _RDMD_080A54_ROWSTRIDE
+	muls r1, r3, r1
+	ldr r3, _RDMD_080A54_PLAYERCARDS
+	adds r1, r1, r3
+	ldr r3, _RDMD_080A54_DECKOFS
+	adds r1, r1, r3
+	ldr r1, [r1]
+	cmp r0, r1
+	beq next___
 	b _080A564E
+	.align 2, 0
+_RDMD_080A54_E4D0: .4byte gUnk_0201E4D0
+_RDMD_080A54_DECKCOUNT: .4byte gEngNC_BanishSummonDeckCountAtLastUse
+_RDMD_080A54_ROWSTRIDE: .4byte 0x00000868
+_RDMD_080A54_PLAYERCARDS: .4byte gPlayerCards
+_RDMD_080A54_DECKOFS: .4byte 0x00000010
 next___:
 	ldr r0, _080A5538 @ =0x000018B9 (Master Monk)
 	cmp r2, r0
