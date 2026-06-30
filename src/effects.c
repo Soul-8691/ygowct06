@@ -600,6 +600,7 @@ extern void gCardEffectNegateDamage_0807F1EC(void);
 extern void gCardEffectNegateDestroy_08053098(void);
 extern void gCardEffectNegateDestroy_080551BC(void);
 extern void gCardEffectNegateDestroy_0805D118(void);
+extern void gCardEffectNegateDestroy_0805D118_New(void);
 extern void gCardEffectNegateDestroy_08065698(void);
 extern void gCardEffectNegateDestroy_0806A054(void);
 extern void gCardEffectNegateDestroy_08070B14(void);
@@ -1770,6 +1771,13 @@ const struct CardEffects gCardEffects[] = {
     { KONAMI_SHIELD_CRASH                               , 0, { gCardEffectDestroy_08064654                      , gCardEffectDestroyChangePosition_08053C00        , NULL                                             , NULL                                             , gCardEffectDestroy_0808198C                       } },
     { KONAMI_CORPSE_OF_YATA_GARASU                      , 0, { gCardEffectDraw_080656E0                         , gCardEffectUnknown_08053C70                      , gCardEffectUnknown_08061C68                      , gCardEffectDestroyDamage_08056BC4                , NULL                                              } },
     { KONAMI_EARTHBOUND_SPIRIT_S_INVITATION             , 0, { gCardEffectDestroyChangePosition_08070AA4        , NULL                                             , gCardEffectUnknown_08061C90                      , NULL                                             , NULL                                              } },
+    // My Body as a Shield (slotted in as KONAMI_GIGOBYTE).
+    // slot 0: exact same function pointer as Magic Jammer / Seven Tools -- tests whether the
+    //         engine passes r1=target correctly (eliminates any copy-of-function bugs)
+    // slot 2: gCardEffectNegateDestroy_0805D118_New = original routing table + KONAMI_GIGOBYTE
+    //         case that returns 1 for valid spell/trap activations (after common pre-checks)
+    // slot 3: pay 1500 LP
+    { KONAMI_GIGOBYTE                                   , 0, { gCardEffectNegateDestroy_08065698                , NULL                                             , gCardEffectNegateDestroy_0805D118_New                , gCardEffectMBaaS_PayLP1500                       , NULL                                              } },
     { KONAMI_SPECIAL_HURRICANE                          , 0, { gCardEffectDestroy_08064660                      , gCardEffectSpecialSummonDiscard_08053034         , gCardEffectDiscard_0805C1E4                      , gCardEffectDiscard_08056380                      , NULL                                              } },
     { KONAMI_ORDER_TO_CHARGE                            , 0, { gCardEffectDestroyTribute_0807965C               , gCardEffectDestroyDamage_08052AA8                , gCardEffectDestroyTribute_08061D5C               , NULL                                             , gCardEffectDestroy_0808198C                       } },
     { KONAMI_SWORD_OF_THE_SOUL_EATER                    , 0, { gCardEffectEquipBoostATK_08064678                , gCardEffectEquipBoostATK_0805000C                , NULL                                             , NULL                                             , gCardEffectBoostATKEquip_08084674                 } },
@@ -1946,11 +1954,6 @@ const struct CardEffects gCardEffects[] = {
     { KONAMI_MALFUNCTION                                , 0, { gCardEffectNegateDamage_0807F1EC                 , NULL                                             , gCardEffectNegateDestroy_0805D118                , gCardEffectDamage_0805635C                       , NULL                                              } },
     { KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH             , 0, { gCardEffectSearchSpecialSummon_0807F280          , NULL                                             , gCardEffectSearchGraveyard_0805C43C              , NULL                                             , NULL                                              } },
     { KONAMI_FAULT_ZONE                                 , 0, { gCardEffectBoostATKBoostDEF_08064760             , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
-    // My Body as a Shield (slotted in as KONAMI_GIGOBYTE).
-    // slot 0: negate + destroy the opponent's card (copied from Magic Jammer's gCardEffectNegateDestroy_08065698)
-    // slot 2: eligibility check -- opponent activated a spell or trap (new function in new_code.s/new_code.c)
-    // slot 3: pay 1500 LP (new function in new_code.s)
-    { KONAMI_GIGOBYTE                                   , 0, { gCardEffectMBaaS_NegateDestroy                   , NULL                                             , gCardEffectMBaaS_CheckTrigger                    , gCardEffectMBaaS_PayLP1500                       , NULL                                              } },
 };
 
 // gFlipEffects  (392 entries)

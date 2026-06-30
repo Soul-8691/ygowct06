@@ -3412,3 +3412,893 @@ gCardEffectMBaaS_PayLP1500:
 	bx r1
 	.align 2, 0
 _MBAAS_LP_COST: .4byte 0x000005DC  @ 1500
+
+	@ A-Team: Trap Disposal Unit
+	@ Anti Raigeki
+	@ Anti-Spell
+	@ Armor Break
+	@ Call of the Grave
+	@ Curse of Royal
+	@ Cursed Seal of the Forbidden Spell
+	@ Dark Balter the Terrible
+	@ Dark Paladin
+	@ Feather Wind
+	@ Goblin Out of the Frying Pan
+	@ Gryphon Wing
+	@ Horus the Black Flame Dragon LV8
+	@ Jar Robber
+	@ Judgment of Anubis
+	@ Magic Drain
+	@ Magic Jammer
+	@ Malfunction
+	@ Maryokutai
+	@ Mystical Refpanel
+	@ Riryoku Field
+	@ Royal Surrender
+	@ Ryu Senshi
+	@ Seven Tools of the Bandit
+	@ Sorcerer of Dark Magic
+	@ Spell Shield Type-8
+	@ Spell Vanishing
+	@ Spell-Stopping Statute
+	@ Trap Jammer
+	@ Tutan Mask
+	@ White Hole
+	thumb_func_start gCardEffectNegateDestroy_0805D118_New
+gCardEffectNegateDestroy_0805D118_New: @ 0x0805D118
+	push {r4, r5, r6, lr}
+	sub sp, #4
+	adds r5, r0, #0
+	adds r4, r1, #0
+	cmp r4, #0
+	bne _0805D126
+	b _0805D736
+_0805D126:
+	ldrb r1, [r4, #2]
+	lsls r0, r1, #0x1a
+	lsrs r0, r0, #0x1b
+	cmp r0, #0xa
+	bls _0805D132
+	b _0805D736
+_0805D132:
+	movs r0, #0x30
+	ldrb r2, [r4, #3]
+	ands r0, r2
+	cmp r0, #0
+	beq _0805D13E
+	b _0805D736
+_0805D13E:
+	ldrh r0, [r4]
+	bl gEngineEffectNegateReturnToHand_0804C16C
+	cmp r0, #0
+	beq _0805D14A
+	b _0805D736
+_0805D14A:
+	ldrh r1, [r5]
+	ldr r0, _0805D188_
+	cmp r1, r0
+	bne next____
+	b _0805D732
+next____:
+	ldr r0, _0805D188 @ =0x000015F1 (Spell Shield Type-8)
+	cmp r1, r0
+	bne _0805D154
+	b _0805D4D2
+_0805D154:
+	cmp r1, r0
+	bgt _0805D21C
+	ldr r0, _0805D18C @ =0x0000140D (Magic Drain)
+	cmp r1, r0
+	bne _0805D160
+	b _0805D3D0
+_0805D160:
+	cmp r1, r0
+	bgt _0805D1B8
+	ldr r0, _0805D190 @ =0x000012F7 (Anti Raigeki (None))
+	cmp r1, r0
+	bne _0805D16C
+	b _0805D33C
+_0805D16C:
+	cmp r1, r0
+	bgt _0805D194
+	subs r0, #2
+	cmp r1, r0
+	bne _0805D178
+	b _0805D2F4
+_0805D178:
+	cmp r1, r0
+	ble _0805D17E
+	b _0805D318
+_0805D17E:
+	subs r0, #0x1b
+	cmp r1, r0
+	bne _0805D186
+	b _0805D6CA
+_0805D186:
+	b _0805D736
+	.align 2, 0
+_0805D188_: .4byte 0x00001783 @ Gigobyte
+_0805D188: .4byte 0x000015F1 @ Spell Shield Type-8
+_0805D18C: .4byte 0x0000140D @ Magic Drain
+_0805D190: .4byte 0x000012F7 @ Anti Raigeki (None)
+_0805D194:
+	ldr r0, _0805D1A4 @ =0x000012FF (Seven Tools of the Bandit)
+	cmp r1, r0
+	bne _0805D19C
+	b _0805D396
+_0805D19C:
+	cmp r1, r0
+	bgt _0805D1A8
+	subs r0, #1
+	b _0805D242
+	.align 2, 0
+_0805D1A4: .4byte 0x000012FF @ Seven Tools of the Bandit
+_0805D1A8:
+	ldr r0, _0805D1B4 @ =0x0000131C (Gryphon Wing (None))
+	cmp r1, r0
+	bne _0805D1B0
+	b _0805D360
+_0805D1B0:
+	b _0805D736
+	.align 2, 0
+_0805D1B4: .4byte 0x0000131C @ Gryphon Wing (None)
+_0805D1B8:
+	ldr r0, _0805D1DC @ =0x000014B6 (Dark Balter the Terrible)
+	cmp r1, r0
+	bne _0805D1C0
+	b _0805D644
+_0805D1C0:
+	cmp r1, r0
+	bgt _0805D1F0
+	subs r0, #0x2a
+	cmp r1, r0
+	bne _0805D1CC
+	b _0805D5F4
+_0805D1CC:
+	cmp r1, r0
+	bgt _0805D1E0
+	subs r0, #0x1c
+	cmp r1, r0
+	bne _0805D1D8
+	b _0805D3F0
+_0805D1D8:
+	b _0805D736
+	.align 2, 0
+_0805D1DC: .4byte 0x000014B6 @ Dark Balter the Terrible
+_0805D1E0:
+	ldr r0, _0805D1EC @ =0x0000148F (Riryoku Field)
+	cmp r1, r0
+	bne _0805D1E8
+	b _0805D424
+_0805D1E8:
+	b _0805D736
+	.align 2, 0
+_0805D1EC: .4byte 0x0000148F @ Riryoku Field
+_0805D1F0:
+	ldr r0, _0805D208 @ =0x0000153E (Tutan Mask)
+	cmp r1, r0
+	bne _0805D1F8
+	b _0805D43E
+_0805D1F8:
+	cmp r1, r0
+	bgt _0805D20C
+	subs r0, #0x77
+	cmp r1, r0
+	bne _0805D204
+	b _0805D65A
+_0805D204:
+	b _0805D736
+	.align 2, 0
+_0805D208: .4byte 0x0000153E @ Tutan Mask
+_0805D20C:
+	ldr r0, _0805D218 @ =0x00001541 (Curse of Royal)
+	cmp r1, r0
+	bne _0805D214
+	b _0805D4AC
+_0805D214:
+	b _0805D736
+	.align 2, 0
+_0805D218: .4byte 0x00001541 @ Curse of Royal
+_0805D21C:
+	ldr r0, _0805D24C @ =0x000017C6 (Sorcerer of Dark Magic)
+	cmp r1, r0
+	bne _0805D224
+	b _0805D666
+_0805D224:
+	cmp r1, r0
+	bgt _0805D290
+	ldr r0, _0805D250 @ =0x000016A6 (Spell Vanishing)
+	cmp r1, r0
+	bne _0805D230
+	b _0805D388
+_0805D230:
+	cmp r1, r0
+	bgt _0805D264
+	subs r0, #0x7c
+	cmp r1, r0
+	bne _0805D23C
+	b _0805D514
+_0805D23C:
+	cmp r1, r0
+	bgt _0805D254
+	subs r0, #0x2e
+_0805D242:
+	cmp r1, r0
+	bne _0805D248
+	b _0805D388
+_0805D248:
+	b _0805D736
+	.align 2, 0
+_0805D24C: .4byte 0x000017C6 @ Sorcerer of Dark Magic
+_0805D250: .4byte 0x000016A6 @ Spell Vanishing
+_0805D254:
+	ldr r0, _0805D260 @ =0x00001634 (Anti-Spell)
+	cmp r1, r0
+	bne _0805D25C
+	b _0805D528
+_0805D25C:
+	b _0805D736
+	.align 2, 0
+_0805D260: .4byte 0x00001634 @ Anti-Spell
+_0805D264:
+	ldr r0, _0805D27C @ =0x00001721 (Trap Jammer)
+	cmp r1, r0
+	bne _0805D26C
+	b _0805D3A4
+_0805D26C:
+	cmp r1, r0
+	bgt _0805D280
+	subs r0, #0x44
+	cmp r1, r0
+	bne _0805D278
+	b _0805D550
+_0805D278:
+	b _0805D736
+	.align 2, 0
+_0805D27C: .4byte 0x00001721 @ Trap Jammer
+_0805D280:
+	ldr r0, _0805D28C @ =0x0000176B (Armor Break)
+	cmp r1, r0
+	bne _0805D288
+	b _0805D574
+_0805D288:
+	b _0805D736
+	.align 2, 0
+_0805D28C: .4byte 0x0000176B @ Armor Break
+_0805D290:
+	ldr r0, _0805D2B4 @ =0x000018DE (Royal Surrender)
+	cmp r1, r0
+	bne _0805D298
+	b _0805D5BA
+_0805D298:
+	cmp r1, r0
+	bgt _0805D2C8
+	subs r0, #0xa4
+	cmp r1, r0
+	bne _0805D2A4
+	b _0805D686
+_0805D2A4:
+	cmp r1, r0
+	bgt _0805D2B8
+	subs r0, #0x66
+	cmp r1, r0
+	bne _0805D2B0
+	b _0805D674
+_0805D2B0:
+	b _0805D736
+	.align 2, 0
+_0805D2B4: .4byte 0x000018DE @ Royal Surrender
+_0805D2B8:
+	ldr r0, _0805D2C4 @ =0x000018DD (Spell-Stopping Statute)
+	cmp r1, r0
+	bne _0805D2C0
+	b _0805D58E
+_0805D2C0:
+	b _0805D736
+	.align 2, 0
+_0805D2C4: .4byte 0x000018DD @ Spell-Stopping Statute
+_0805D2C8:
+	ldr r0, _0805D2E0 @ =0x000019E1 (Goblin Out of the Frying Pan)
+	cmp r1, r0
+	bne _0805D2D0
+	b _0805D674
+_0805D2D0:
+	cmp r1, r0
+	bgt _0805D2E4
+	subs r0, #0x81
+	cmp r1, r0
+	bne _0805D2DC
+	b _0805D5DA
+_0805D2DC:
+	b _0805D736
+	.align 2, 0
+_0805D2E0: .4byte 0x000019E1 @ Goblin Out of the Frying Pan
+_0805D2E4:
+	ldr r0, _0805D2F0 @ =0x000019E2 (Malfunction)
+	cmp r1, r0
+	bne _0805D2EC
+	b _0805D666
+_0805D2EC:
+	b _0805D736
+	.align 2, 0
+_0805D2F0: .4byte 0x000019E2 @ Malfunction
+_0805D2F4:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r6, [r4, #2]
+	ands r1, r6
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D306
+	b _0805D736
+_0805D306:
+	movs r1, #0
+	ldr r0, _0805D314 @ =0x000010F6 (Dark Hole)
+	ldrh r4, [r4]
+	cmp r4, r0
+	beq _0805D312
+	b _0805D682
+_0805D312:
+	b _0805D680
+	.align 2, 0
+_0805D314: .4byte 0x000010F6 @ Dark Hole
+_0805D318:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r2, [r4, #2]
+	ands r1, r2
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D32A
+	b _0805D736
+_0805D32A:
+	movs r1, #0
+	ldr r0, _0805D338 @ =0x000012EA (Monster Reborn)
+	ldrh r4, [r4]
+	cmp r4, r0
+	beq _0805D336
+	b _0805D682
+_0805D336:
+	b _0805D680
+	.align 2, 0
+_0805D338: .4byte 0x000012EA @ Monster Reborn
+_0805D33C:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r6, [r4, #2]
+	ands r1, r6
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D34E
+	b _0805D736
+_0805D34E:
+	movs r1, #0
+	ldr r0, _0805D35C @ =0x000010F7 (Raigeki)
+	ldrh r4, [r4]
+	cmp r4, r0
+	beq _0805D35A
+	b _0805D682
+_0805D35A:
+	b _0805D680
+	.align 2, 0
+_0805D35C: .4byte 0x000010F7 @ Raigeki
+_0805D360:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r2, [r4, #2]
+	ands r1, r2
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D372
+	b _0805D736
+_0805D372:
+	ldr r0, _0805D384 @ =0x00001246 (Harpie's Feather Duster)
+	movs r1, #0
+	ldrh r4, [r4]
+	cmp r4, r0
+	beq _0805D37E
+	b _0805D682
+_0805D37E:
+	movs r1, #2
+	b _0805D682
+	.align 2, 0
+_0805D384: .4byte 0x00001246 @ Harpie's Feather Duster
+_0805D388:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D394
+	b _0805D736
+_0805D394:
+	b _0805D41A
+_0805D396:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x17
+	beq _0805D3A2
+	b _0805D736
+_0805D3A2:
+	b _0805D732
+_0805D3A4:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r6, [r4, #2]
+	ands r1, r6
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D3B6
+	b _0805D736
+_0805D3B6:
+	ldr r0, _0805D3C8 @ =gPlayerCards
+	ldr r1, _0805D3CC @ =0x00001CF4
+	adds r0, r0, r1
+	ldr r0, [r0]
+	cmp r0, #3
+	beq _0805D3C4
+	b _0805D736
+_0805D3C4:
+	b _0805D396
+	.align 2, 0
+_0805D3C8: .4byte gPlayerCards
+_0805D3CC: .4byte 0x00001CF4
+_0805D3D0:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r2, [r4, #2]
+	ands r1, r2
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D3E2
+	b _0805D736
+_0805D3E2:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D3EE
+	b _0805D736
+_0805D3EE:
+	b _0805D732
+_0805D3F0:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r6, [r4, #2]
+	ands r1, r6
+	ldrb r2, [r5, #2]
+	ands r0, r2
+	cmp r1, r0
+	bne _0805D402
+	b _0805D736
+_0805D402:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D40E
+	b _0805D736
+_0805D40E:
+	adds r0, r4, #0
+	bl gEngineEffectDestroy_08030500
+	cmp r0, #0
+	bne _0805D41A
+	b _0805D736
+_0805D41A:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gCardEffectDiscard_0805C1E4
+	b _0805D738
+_0805D424:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D430
+	b _0805D736
+_0805D430:
+	adds r0, r4, #0
+	bl sub_08030988
+_0805D436:
+	cmp r0, #0
+	bne _0805D43C
+	b _0805D736
+_0805D43C:
+	b _0805D732
+_0805D43E:
+	ldr r0, [r4, #4]
+	movs r1, #0xe0
+	lsls r1, r1, #0xa
+	ands r0, r1
+	movs r1, #0x80
+	lsls r1, r1, #8
+	cmp r0, r1
+	beq _0805D450
+	b _0805D736
+_0805D450:
+	ldrh r0, [r4]
+	bl sub_0804AD48
+	cmp r0, #0
+	beq _0805D45C
+	b _0805D736
+_0805D45C:
+	adds r0, r4, #0
+	movs r1, #0
+	bl sub_08080D6C
+	lsls r1, r0, #0x18
+	lsrs r4, r1, #0x18
+	lsls r0, r0, #0x10
+	lsrs r3, r0, #0x18
+	cmp r3, #4
+	ble _0805D472
+	b _0805D736
+_0805D472:
+	movs r2, #1
+	ands r2, r4
+	lsls r0, r3, #2
+	adds r0, r0, r3
+	lsls r0, r0, #2
+	ldr r1, _0805D4A4 @ =0x00000868
+	muls r1, r2, r1
+	adds r0, r0, r1
+	ldr r1, _0805D4A8 @ =gUnk_0201C510
+	adds r0, r0, r1
+	ldrh r0, [r0, #8]
+	cmp r0, #0
+	bne _0805D48E
+	b _0805D736
+_0805D48E:
+	adds r0, r4, #0
+	adds r1, r3, #0
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
+	lsls r0, r0, #0x10
+	lsrs r0, r0, #0x10
+	cmp r0, #2
+	bne _0805D4A0
+	b _0805D732
+_0805D4A0:
+	b _0805D736
+	.align 2, 0
+_0805D4A4: .4byte 0x00000868
+_0805D4A8: .4byte gUnk_0201C510
+_0805D4AC:
+	movs r5, #0
+	ldrh r0, [r4]
+	bl sub_0804AD48
+	cmp r0, #0
+	bne _0805D4CE
+	adds r0, r4, #0
+	bl gEngineEffectDestroy_08030500
+	cmp r0, #0
+	beq _0805D4CE
+	adds r0, r4, #0
+	bl gEngineEffectDestroy_08030500
+	cmp r0, #3
+	bgt _0805D4CE
+	movs r5, #1
+_0805D4CE:
+	adds r0, r5, #0
+	b _0805D738
+_0805D4D2:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D4DE
+	b _0805D736
+_0805D4DE:
+	adds r0, r4, #0
+	bl sub_08030988
+	cmp r0, #0
+	beq _0805D4EA
+	b _0805D732
+_0805D4EA:
+	ldr r0, _0805D510 @ =0x00001332 (Banisher of the Light)
+	bl sub_0803279C
+	cmp r0, #0
+	beq _0805D4F6
+	b _0805D736
+_0805D4F6:
+	ldrb r6, [r5, #2]
+	lsls r0, r6, #0x1f
+	lsrs r0, r0, #0x1f
+	ldrh r5, [r5, #4]
+	lsls r2, r5, #0x11
+	lsrs r2, r2, #0x17
+	movs r1, #1
+	str r1, [sp]
+	movs r3, #0
+	bl gEngineEffectSpecialSummonBanish_0805C068
+	b _0805D716
+	.align 2, 0
+_0805D510: .4byte 0x00001332 @ Banisher of the Light
+_0805D514:
+	movs r1, #0
+	ldr r0, _0805D524 @ =0x000012EC (Pot of Greed)
+	ldrh r4, [r4]
+	cmp r4, r0
+	beq _0805D520
+	b _0805D682
+_0805D520:
+	b _0805D680
+	.align 2, 0
+_0805D524: .4byte 0x000012EC @ Pot of Greed
+_0805D528:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D534
+	b _0805D736
+_0805D534:
+	ldrb r1, [r5, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f
+	bl gEngineEffectDestroyCounter_08036A78
+	adds r4, r0, #0
+	adds r0, r5, #0
+	bl gEngineEffectCounterDestroy_08055EBC
+	movs r1, #0
+	cmp r4, r0
+	bge _0805D54E
+	b _0805D682
+_0805D54E:
+	b _0805D680
+_0805D550:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D55C
+	b _0805D736
+_0805D55C:
+	ldrb r2, [r5, #2]
+	lsls r0, r2, #0x1f
+	lsrs r0, r0, #0x1f
+	ldrh r5, [r5, #4]
+	lsls r2, r5, #0x11
+	lsrs r2, r2, #0x17
+	movs r1, #1
+	str r1, [sp]
+	movs r3, #0
+	bl gEngineEffectSpecialSummonDamage_0805C044
+	b _0805D436
+_0805D574:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D580
+	b _0805D736
+_0805D580:
+	ldrh r0, [r4]
+	bl sub_080EEE7C
+	cmp r0, #3
+	beq _0805D58C
+	b _0805D736
+_0805D58C:
+	b _0805D732
+_0805D58E:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r6, [r4, #2]
+	ands r1, r6
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D5A0
+	b _0805D736
+_0805D5A0:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D5AC
+	b _0805D736
+_0805D5AC:
+	ldrh r0, [r4]
+	bl sub_080EEE7C
+	cmp r0, #4
+	beq _0805D5B8
+	b _0805D736
+_0805D5B8:
+	b _0805D732
+_0805D5BA:
+	movs r0, #1
+	adds r1, r0, #0
+	ldrb r2, [r4, #2]
+	ands r1, r2
+	ldrb r5, [r5, #2]
+	ands r0, r5
+	cmp r1, r0
+	bne _0805D5CC
+	b _0805D736
+_0805D5CC:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x17
+	beq _0805D5D8
+	b _0805D736
+_0805D5D8:
+	b _0805D5AC
+_0805D5DA:
+	ldrb r5, [r5, #2]
+	lsls r0, r5, #0x1f
+	lsrs r0, r0, #0x1f
+	ldr r1, _0805D5F0 @ =0x000018A6 (Elemental Hero Avian)
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
+	movs r1, #0
+	cmp r0, #0
+	ble _0805D682
+	b _0805D680
+	.align 2, 0
+_0805D5F0: .4byte 0x000018A6 @ Elemental Hero Avian
+_0805D5F4:
+	ldr r2, _0805D63C @ =gPlayerCards
+	ldr r6, _0805D640 @ =0x00001CE8
+	adds r2, r2, r6
+	ldrb r0, [r5, #2]
+	lsls r6, r0, #0x1f
+	lsrs r1, r6, #0x1f
+	ldrb r0, [r5, #3]
+	lsls r3, r0, #0x19
+	lsrs r0, r3, #0x1f
+	eors r1, r0
+	movs r0, #1
+	subs r0, r0, r1
+	ldr r1, [r2]
+	cmp r1, r0
+	beq _0805D614
+	b _0805D736
+_0805D614:
+	ldrb r1, [r4, #2]
+	lsls r2, r1, #0x1f
+	lsrs r2, r2, #0x1f
+	ldrb r1, [r4, #3]
+	lsls r0, r1, #0x19
+	lsrs r0, r0, #0x1f
+	lsrs r1, r6, #0x1f
+	lsrs r3, r3, #0x1f
+	eors r2, r0
+	eors r1, r3
+	cmp r2, r1
+	bne _0805D62E
+	b _0805D736
+_0805D62E:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	beq _0805D6B0
+	b _0805D736
+	.align 2, 0
+_0805D63C: .4byte gPlayerCards
+_0805D640: .4byte 0x00001CE8
+_0805D644:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x16
+	bne _0805D736
+_0805D64E:
+	ldrh r0, [r4]
+	bl sub_080EEE7C
+	cmp r0, #0
+	beq _0805D732
+	b _0805D736
+_0805D65A:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x17
+	bne _0805D736
+	b _0805D64E
+_0805D666:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	movs r1, #0
+	cmp r0, #0x17
+	bne _0805D682
+	b _0805D680
+_0805D674:
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	movs r1, #0
+	cmp r0, #0x16
+	bne _0805D682
+_0805D680:
+	movs r1, #1
+_0805D682:
+	adds r0, r1, #0
+	b _0805D738
+_0805D686:
+	ldrb r2, [r4, #2]
+	lsls r3, r2, #0x1f
+	lsrs r3, r3, #0x1f
+	ldrb r6, [r4, #3]
+	lsls r2, r6, #0x19
+	lsrs r2, r2, #0x1f
+	ldrb r0, [r5, #2]
+	lsls r1, r0, #0x1f
+	lsrs r1, r1, #0x1f
+	ldrb r6, [r5, #3]
+	lsls r0, r6, #0x19
+	lsrs r0, r0, #0x1f
+	eors r3, r2
+	eors r1, r0
+	cmp r3, r1
+	beq _0805D736
+	ldrh r0, [r4]
+	bl sub_080EEDF8
+	cmp r0, #0x17
+	bne _0805D736
+_0805D6B0:
+	ldrb r2, [r5, #2]
+	lsls r1, r2, #0x1f
+	lsrs r0, r1, #0x1f
+	ldrb r5, [r5, #3]
+	lsls r3, r5, #0x19
+	lsrs r3, r3, #0x1f
+	eors r0, r3
+	lsrs r1, r1, #0x1f
+	lsls r2, r2, #0x1a
+	lsrs r2, r2, #0x1b
+	bl gEngineEffectTributeSpecialSummon_08033730
+	b _0805D738
+_0805D6CA:
+	ldrh r0, [r4]
+	bl gEngineEffectDamage_0804BF88
+	cmp r0, #0
+	beq _0805D736
+	ldrh r1, [r4]
+	ldr r0, _0805D6F0 @ =0x00001325 (Delinquent Duo)
+	cmp r1, r0
+	bgt _0805D6F4
+	subs r0, #1
+	cmp r1, r0
+	bge _0805D724
+	subs r0, #0x34
+	cmp r1, r0
+	beq _0805D724
+	adds r0, #0xa
+	cmp r1, r0
+	beq _0805D700
+	b _0805D732
+	.align 2, 0
+_0805D6F0: .4byte 0x00001325 @ Delinquent Duo
+_0805D6F4:
+	ldr r0, _0805D6FC @ =0x0000132B (The Forceful Sentry)
+	cmp r1, r0
+	beq _0805D724
+	b _0805D732
+	.align 2, 0
+_0805D6FC: .4byte 0x0000132B @ The Forceful Sentry
+_0805D700:
+	ldr r2, _0805D71C @ =gPlayerCards
+	ldrb r5, [r5, #2]
+	lsls r0, r5, #0x1f
+	lsrs r0, r0, #0x1f
+	movs r1, #1
+	eors r0, r1
+	ldr r1, _0805D720 @ =0x00000868
+	muls r0, r1, r0
+	adds r2, #0xc
+	adds r0, r0, r2
+	ldr r0, [r0]
+_0805D716:
+	cmp r0, #0
+	bne _0805D732
+	b _0805D736
+	.align 2, 0
+_0805D71C: .4byte gPlayerCards
+_0805D720: .4byte 0x00000868
+_0805D724:
+	ldrb r0, [r5, #2]
+	lsls r1, r0, #0x1f
+	lsrs r1, r1, #0x1f
+	adds r0, r5, #0
+	bl sub_0805C188
+	b _0805D716
+_0805D732:
+	movs r0, #1
+	b _0805D738
+_0805D736:
+	movs r0, #0
+_0805D738:
+	add sp, #4
+	pop {r4, r5, r6}
+	pop {r1}
+	bx r1
