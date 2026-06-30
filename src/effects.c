@@ -1774,8 +1774,9 @@ const struct CardEffects gCardEffects[] = {
     // My Body as a Shield (slotted in as KONAMI_GIGOBYTE).
     // slot 0: exact same function pointer as Magic Jammer / Seven Tools -- tests whether the
     //         engine passes r1=target correctly (eliminates any copy-of-function bugs)
-    // slot 2: gCardEffectNegateDestroy_0805D118_New = original routing table + KONAMI_GIGOBYTE
-    //         case that returns 1 for valid spell/trap activations (after common pre-checks)
+    // slot 2: gCardEffectNegateDestroy_0805D118_New = original routing table plus MBaaS early
+    //         exit: spell/trap pre-checks (NegateDestroy path) OR monster-effect destroy
+    //         validation (gCardEffectNegateDiscard_080629C8 / Divine Wrath path)
     // slot 3: pay 1500 LP
     { KONAMI_GIGOBYTE                                   , 0, { gCardEffectNegateDestroy_08065698                , NULL                                             , gCardEffectNegateDestroy_0805D118_New                , gCardEffectMBaaS_PayLP1500                       , NULL                                              } },
     { KONAMI_SPECIAL_HURRICANE                          , 0, { gCardEffectDestroy_08064660                      , gCardEffectSpecialSummonDiscard_08053034         , gCardEffectDiscard_0805C1E4                      , gCardEffectDiscard_08056380                      , NULL                                              } },

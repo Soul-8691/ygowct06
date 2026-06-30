@@ -3352,6 +3352,46 @@ _0806FF48:
 	bx r1
 	.align 2, 0
 
+@ My Body as a Shield - monster-effect trigger check.
+@ Copied from gCardEffectNegateDiscard_080629C8 (Divine Wrath slot 2): validates that the
+@ opponent activated a spell/trap or monster effect that would destroy field monster(s).
+@ r0 = self (MBaaS), r1 = target (opponent's activation); returns 1 if chainable.
+	thumb_func_start MBaaS_MonsterEffectCheck
+MBaaS_MonsterEffectCheck:
+	push {r4, r5, lr}
+	adds r5, r0, #0
+	adds r4, r1, #0
+	cmp r4, #0
+	beq _MBAAS_MEC_Fail
+	ldrh r0, [r4]
+	bl gEngineEffectNegateReturnToHand_0804C16C
+	cmp r0, #0
+	bne _MBAAS_MEC_Fail
+	ldrh r0, [r4]
+	bl sub_0804AD48
+	cmp r0, #0
+	beq _MBAAS_MEC_Fail
+	ldrh r0, [r4]
+	bl sub_0804AD70
+	cmp r0, #0
+	beq _MBAAS_MEC_Fail
+	movs r0, #0x3e
+	ldrb r1, [r4, #2]
+	ands r0, r1
+	cmp r0, #0x1a
+	beq _MBAAS_MEC_Fail
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl gCardEffectDiscard_0805C1E4
+	b _MBAAS_MEC_Done
+_MBAAS_MEC_Fail:
+	movs r0, #0
+_MBAAS_MEC_Done:
+	pop {r4, r5}
+	pop {r1}
+	bx r1
+	.align 2, 0
+
 @ My Body as a Shield - slot 0: negate + destroy the opponent's activated spell/trap.
 @ Copied directly from gCardEffectNegateDestroy_08065698 (Magic Jammer's slot 0).
 @ r0 = self (MBAS card struct), r1 = target (opponent's activated card struct)
@@ -3451,8 +3491,34 @@ gCardEffectNegateDestroy_0805D118_New: @ 0x0805D118
 	adds r5, r0, #0
 	adds r4, r1, #0
 	cmp r4, #0
-	bne _0805D126
+	bne next____
 	b _0805D736
+next____:
+	ldrh r6, [r5]
+	ldr r0, _0805D188_
+	cmp r6, r0
+	bne _0805D126
+@ MBaaS (Gigobyte): spell/trap pre-checks first, then Divine Wrath monster-effect path
+	ldrb r1, [r4, #2]
+	lsls r0, r1, #0x1a
+	lsrs r0, r0, #0x1b
+	cmp r0, #0xa
+	bhi _MBAAS_TryMonster
+	movs r0, #0x30
+	ldrb r2, [r4, #3]
+	ands r0, r2
+	cmp r0, #0
+	bne _MBAAS_TryMonster
+	ldrh r0, [r4]
+	bl gEngineEffectNegateReturnToHand_0804C16C
+	cmp r0, #0
+	bne _MBAAS_TryMonster
+	b _0805D732
+_MBAAS_TryMonster:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl MBaaS_MonsterEffectCheck
+	b _0805D738
 _0805D126:
 	ldrb r1, [r4, #2]
 	lsls r0, r1, #0x1a
@@ -3475,11 +3541,6 @@ _0805D13E:
 	b _0805D736
 _0805D14A:
 	ldrh r1, [r5]
-	ldr r0, _0805D188_
-	cmp r1, r0
-	bne next____
-	b _0805D732
-next____:
 	ldr r0, _0805D188 @ =0x000015F1 (Spell Shield Type-8)
 	cmp r1, r0
 	bne _0805D154
@@ -3517,7 +3578,7 @@ _0805D17E:
 _0805D186:
 	b _0805D736
 	.align 2, 0
-_0805D188_: .4byte 0x00001783 @ Gigobyte
+_0805D188_: .4byte 0x00001783 @ Gigobyte (My Body as a Shield)
 _0805D188: .4byte 0x000015F1 @ Spell Shield Type-8
 _0805D18C: .4byte 0x0000140D @ Magic Drain
 _0805D190: .4byte 0x000012F7 @ Anti Raigeki (None)
