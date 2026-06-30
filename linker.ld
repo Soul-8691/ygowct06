@@ -253,6 +253,8 @@ SECTIONS {
         src/GL/GL_Oam.o(.text);
         src/GL/GL_Scrollbar.o(.text);
         asm/code_0801563C.o(.text);
+        src/engine_effects_4.o(.text);
+        asm/code_0801EF94.o(.text);
         src/engine_effects_3.o(.text);
         asm/code_08088C9C.o(.text);
         src/engine_effects.o(.text);

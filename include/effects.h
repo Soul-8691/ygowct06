@@ -50,4 +50,28 @@ typedef struct Unk_0201E2A0 {
     s32 unk8[0]; // TODO: Unknown size
 } Unk_0201E2A0;
 
+struct Unk_0201FEC0 {
+    u32 unk0;
+    u32 unk4;
+};
+
+struct Unk_02020160 {
+    u8 padding[0x2F51];
+    u8 unk2F51;
+};
+
+struct Unk_02023110 {
+    u8 padding[0x19];
+    u8 unk19;
+};
+
+struct Unk_03000040 {
+    u8 padding[0x23F];
+    u8 unk23F;
+};
+
+struct Unk_0201F440 {
+    u8 unk0;
+};
+
 #endif // GUARD_EFFECTS_H
