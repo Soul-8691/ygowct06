@@ -3351,3 +3351,64 @@ _0806FF48:
 	pop {r1}
 	bx r1
 	.align 2, 0
+
+@ My Body as a Shield - slot 0: negate + destroy the opponent's activated spell/trap.
+@ Copied directly from gCardEffectNegateDestroy_08065698 (Magic Jammer's slot 0).
+@ r0 = self (MBAS card struct), r1 = target (opponent's activated card struct)
+	thumb_func_start gCardEffectMBaaS_NegateDestroy
+gCardEffectMBaaS_NegateDestroy:
+	push {r4, r5, lr}
+	adds r5, r0, #0
+	adds r4, r1, #0
+	cmp r4, #0
+	beq _MBAAS_ND_End
+	movs r0, #2
+	ldrb r1, [r4, #4]
+	orrs r0, r1
+	movs r1, #4
+	orrs r0, r1
+	movs r1, #8
+	orrs r0, r1
+	strb r0, [r4, #4]
+	ldrb r2, [r4, #2]
+	lsls r0, r2, #0x1f
+	lsrs r0, r0, #0x1f
+	lsls r1, r2, #0x1a
+	lsrs r1, r1, #0x1b
+	ldrh r3, [r4, #4]
+	lsls r2, r3, #0x11
+	lsrs r2, r2, #0x17
+	bl gEngineEffectDestroyBoostATK_08044DCC
+	ldrb r2, [r4, #2]
+	lsls r1, r2, #0x1f
+	lsrs r1, r1, #0x1f
+	lsls r2, r2, #0x1a
+	lsrs r2, r2, #0x1b
+	adds r0, r5, #0
+	bl gEngineEffectBoostATKBoostDEF_08047A14
+_MBAAS_ND_End:
+	movs r0, #0
+	pop {r4, r5}
+	pop {r1}
+	bx r1
+	.align 2, 0
+
+@ My Body as a Shield - slot 3: pay 1500 LP.
+@ Mirrors gCardEffectDamage_0805635C but hardcodes 1500 instead of going through
+@ gEngineEffectDamage_08055930 (which is a switch table and doesn't know KONAMI_GIGOBYTE).
+@ r0 = self (MBAS card struct)
+	thumb_func_start gCardEffectMBaaS_PayLP1500
+gCardEffectMBaaS_PayLP1500:
+	push {r4, lr}
+	ldrb r1, [r0, #2]
+	lsls r4, r1, #0x1f
+	lsrs r4, r4, #0x1f      @ r4 = activating player index (bit 0 of byte 2)
+	ldr r1, _MBAAS_LP_COST  @ r1 = 1500
+	adds r0, r4, #0          @ r0 = playerIdx
+	bl sub_08048750          @ deduct LP from player
+	movs r0, #1
+	pop {r4}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_MBAAS_LP_COST: .4byte 0x000005DC  @ 1500

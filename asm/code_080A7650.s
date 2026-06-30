@@ -28909,7 +28909,7 @@ _080B4BF6:
 	bne _080B4C40
 	adds r5, #8
 	adds r4, #1
-	cmp r4, #0x44
+	cmp r4, #0x45
 	bls _080B4BF6
 	ldrb r0, [r6, #2]
 	lsls r1, r0, #0x1f

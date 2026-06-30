@@ -584,6 +584,9 @@ extern void gCardEffectGraveyard_08060E04(void);
 extern void gCardEffectGraveyard_0806C780(void);
 extern void gCardEffectGraveyard_08076908(void);
 extern void gCardEffectGraveyard_08082F44(void);
+extern void gCardEffectMBaaS_CheckTrigger(void);
+extern void gCardEffectMBaaS_NegateDestroy(void);
+extern void gCardEffectMBaaS_PayLP1500(void);
 extern void gCardEffectNegateBattlePhase_0805CD20(void);
 extern void gCardEffectNegateBattlePhase_08068F0C(void);
 extern void gCardEffectNegateBoostATK_0805E1B0(void);
@@ -1943,6 +1946,11 @@ const struct CardEffects gCardEffects[] = {
     { KONAMI_MALFUNCTION                                , 0, { gCardEffectNegateDamage_0807F1EC                 , NULL                                             , gCardEffectNegateDestroy_0805D118                , gCardEffectDamage_0805635C                       , NULL                                              } },
     { KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH             , 0, { gCardEffectSearchSpecialSummon_0807F280          , NULL                                             , gCardEffectSearchGraveyard_0805C43C              , NULL                                             , NULL                                              } },
     { KONAMI_FAULT_ZONE                                 , 0, { gCardEffectBoostATKBoostDEF_08064760             , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
+    // My Body as a Shield (slotted in as KONAMI_GIGOBYTE).
+    // slot 0: negate + destroy the opponent's card (copied from Magic Jammer's gCardEffectNegateDestroy_08065698)
+    // slot 2: eligibility check -- opponent activated a spell or trap (new function in new_code.s/new_code.c)
+    // slot 3: pay 1500 LP (new function in new_code.s)
+    { KONAMI_GIGOBYTE                                   , 0, { gCardEffectMBaaS_NegateDestroy                   , NULL                                             , gCardEffectMBaaS_CheckTrigger                    , gCardEffectMBaaS_PayLP1500                       , NULL                                              } },
 };
 
 // gFlipEffects  (392 entries)

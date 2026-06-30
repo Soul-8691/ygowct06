@@ -470,7 +470,7 @@ const struct CardAIEffect gAIEffects[222] = {
 };
 
 // gAIEffects2  (69 entries)
-const struct CardAIEffect gAIEffects2[69] = {
+const struct CardAIEffect gAIEffects2[70] = {
 //  KonamiId                                             pad  Effect
     { KONAMI_WHITE_HOLE_NONE                            , 0, gCardAIGraveyardDestroy_080B76A4              },
     { KONAMI_ANTI_RAIGEKI_NONE                          , 0, gCardAIGraveyardDestroy_080B76A4              },
@@ -541,6 +541,7 @@ const struct CardAIEffect gAIEffects2[69] = {
     { KONAMI_HERO_BARRIER                               , 0, gCardAIDrawSpecialSummon_080B46CC             },
     { KONAMI_THE_FLUTE_OF_SUMMONING_KURIBOH             , 0, gCardAISearchSpecialSummon_080B4850           },
     { KONAMI_INTERDIMENSIONAL_MATTER_TRANSPORTER        , 0, gCardAIBanishEndPhase_080B4878                },
+    { KONAMI_GIGOBYTE                                   , 0, gCardAINegateDestroy_080B40D8                 },
 };
 
 // gAIEffects3  (57 entries)

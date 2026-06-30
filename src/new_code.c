@@ -452,3 +452,44 @@ s32 gEngineEffectBanishToSpecialSummon(void)
 
     return 0;
 }
+
+// My Body as a Shield - slot 2: trigger/eligibility check.
+// Returns 1 if the opponent activated a spell or trap that can be negated.
+// Mirrors gCardEffectNegateDestroy_0805D118:
+//   traps  → return 1 immediately after the race check (label _0805D3A2)
+//   spells → apply the zone / flag / cannot-negate guards first (label _0805D41A)
+extern s32 gEngineEffectNegateReturnToHand_0804C16C(u32 cardId);
+
+s32 gCardEffectMBaaS_CheckTrigger(void *self, void *target)
+{
+    u8 *tgt = (u8 *)target;
+    u16 targetId;
+    u32 zone;
+    u32 race;
+
+    if (!target)
+        return 0;
+
+    targetId = (u16)tgt[0] | ((u16)tgt[1] << 8);
+    race = (u32)sub_080EEDF8((s32)targetId);
+
+    // Trap: accept immediately, no further checks needed
+    if (race == RACE_TRAP)
+        return 1;
+
+    // Spell: apply additional guards
+    if (race != RACE_SPELL)
+        return 0;
+
+    zone = ((u32)tgt[2] << 26) >> 27;
+    if (zone > 10)
+        return 0;
+
+    if (tgt[3] & 0x30)
+        return 0;
+
+    if (gEngineEffectNegateReturnToHand_0804C16C((u32)targetId) != 0)
+        return 0;
+
+    return 1;
+}

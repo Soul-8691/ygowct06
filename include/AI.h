@@ -13,7 +13,7 @@ struct CardAIEffect {
 
 extern const struct CardAIEffect gAISearcherCardEffects[308]; // searchers
 extern const struct CardAIEffect gAIEffects[222]; // effects4
-extern const struct CardAIEffect gAIEffects2[69]; // effects5
+extern const struct CardAIEffect gAIEffects2[70]; // effects5
 extern const struct CardAIEffect gAIEffects3[57]; // effects6
 extern const struct CardAIEffect gAIEffects4[165]; // effects7
 extern const struct CardAIEffect gAIEffects5[3]; // effects8
