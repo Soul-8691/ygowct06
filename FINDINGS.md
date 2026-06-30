@@ -258,3 +258,168 @@ elsewhere, not invented:
 - "Summon" can still be selected with no valid Dragon on the field (effect
   (1)'s actual condition unmet) and silently does nothing — no error/cancel
   message. Not yet investigated.
+
+---
+
+# My Body as a Shield (MBAS) — Findings
+
+Slotted onto `KONAMI_GIGOBYTE` (0x1783 / 6019, `CARD_GIGOBYTE` = 1565) — a
+vanilla monster with no original `gEffects1/2/3` entry and no AI entry.
+Implemented as a **Quick-Play Spell** (`RACE_SPELL / ATTR_SPELL / TYPE_SPELL /
+SPELLTYPE_QUICK_PLAY`) that costs 1500 LP and negates/destroys any activated
+Spell, Trap, or on-field monster effect.
+
+## Current live wiring
+
+- `src/card.c`: both `CARD_GIGOBYTE` rows set to Quick-Play Spell
+  (`RACE_SPELL / ATTR_SPELL / TYPE_SPELL / SPELLTYPE_QUICK_PLAY`).
+- `src/effects.c` (`gCardEffects` / gEffects1 row):
+  ```c
+  { KONAMI_GIGOBYTE, 0, {
+      gCardEffectNegateDestroy_08065698,     // slot 0: negate (same fn as MJ/7-Tools)
+      NULL,
+      gCardEffectNegateDestroy_0805D118_New, // slot 2: eligibility (spell/trap OR monster)
+      gCardEffectMBaaS_PayLP1500,            // slot 3: pay 1500 LP
+      NULL
+  } }
+  ```
+  The table must remain sorted by Konami ID; MBAS's entry is placed
+  accordingly.
+- `src/AI.c` (`gAIEffects2`, size bumped to 70):
+  `{ KONAMI_GIGOBYTE, 0, gCardAINegateDestroy_080B40D8 }`
+- `asm/new_code.s`:
+  - `MBaaS_MonsterEffectCheck` — local helper; copy of Divine Wrath's
+    slot-2 (`gCardEffectNegateDiscard_080629C8`). Checks:
+    1. target != NULL
+    2. `gEngineEffectNegateReturnToHand_0804C16C(target_id) == 0`
+    3. `sub_0804AD48(target_id) != 0` (card has activatable effects)
+    4. `sub_0804AD70(target_id) != 0` (card's type/race is targetable)
+    5. `target[2] & 0x3E != 0x1A` (not from hand zone)
+    6. Calls `gCardEffectDiscard_0805C1E4(self, target)` and returns its
+       result (inherited directly from DW's copy — MBAS pays LP, not a
+       discard, so this is the one divergence from the real card's text).
+  - `gCardEffectNegateDestroy_0805D118_New` — slot 2; copy of
+    `gCardEffectNegateDestroy_0805D118` with MBAS's ID handled first,
+    before the original routing table. For `KONAMI_GIGOBYTE`:
+    - Runs the spell/trap pre-checks (zone ≤ 0xA, target[3] & 0x30 == 0,
+      not already-negated) → if all pass, jumps to `_0805D732` (return 1).
+    - If those fail, falls through to `_MBAAS_TryMonster` which calls
+      `MBaaS_MonsterEffectCheck` and returns its result via `_0805D738`.
+    For all other card IDs the function falls through to the original
+    binary-search routing table unchanged.
+  - `gCardEffectMBaaS_NegateDestroy` — dead code; an earlier standalone
+    copy of `gCardEffectNegateDestroy_08065698`. Not wired into any table;
+    the live slot-0 uses the original function pointer directly.
+  - `gCardEffectMBaaS_PayLP1500` — slot 3; reads playerIdx from `self[2]`
+    bit 0, hardcodes 1500 (`0x5DC`), calls `sub_08048750(playerIdx, 1500)`.
+- `src/starter_decks.c`: `gStarterDeck[6]` pointer fields cast to `(u8 *)`
+  to suppress the "initialization from incompatible pointer type" warning
+  (the struct declares `u8 *pointer` but the arrays are `u16 [][2]`).
+
+## Quick-response slot architecture (applies to MJ, 7-Tools, MBAS)
+
+- **Slot 2** (`gCardEffectNegateDestroy_0805D118` family):
+  - Called speculatively to ask "should this card be offered right now?"
+  - Pre-checks (shared for all routed cards, `_0805D126`–`_0805D14A`):
+    1. `target == NULL` → return 0
+    2. `(target[2] >> 1) & 0x1F > 0xA` (zone > 10) → return 0
+       — this means both spell/trap zones **and** monster zones 0–4
+       all pass; the zone check does NOT restrict to spell/trap only.
+    3. `target[3] & 0x30 != 0` → return 0 (already-resolved state flags)
+    4. `gEngineEffectNegateReturnToHand_0804C16C(target_id) != 0` → return 0
+       (e.g. another counter trap on the chain)
+  - After pre-checks, dispatch is on **self's** Konami ID (not target's).
+    Each card's branch does its own further target-type check before
+    returning 1 (for Seven Tools: confirm target is a Trap; for Magic
+    Jammer: confirm target is a Spell; for MBAS's `_New` variant: return 1
+    unconditionally after the shared pre-checks).
+- **Slot 3** (cost): called once on commit. For MBAS: deduct 1500 LP. For
+  Seven Tools: call `gCardEffectDamage_0805635C` (which calls
+  `gEngineEffectDamage_08055930` first — a routing function that also
+  handles Spell Economics). For Magic Jammer: `gCardEffectDiscard_08056380`
+  (discard from hand).
+- **Slot 0** (`gCardEffectNegateDestroy_08065698`): the actual negate+destroy.
+  - Sets `target[4] |= 0xE` (bits 1,2,3 — marks card as negated).
+  - Extracts `playerIdx` and `zone` from `target[2]`, and `index` from
+    `target[4:5]` via `(halfword << 17) >> 23` (= bits[14:6] of the
+    halfword).
+  - Calls `gEngineEffectDestroyBoostATK_08044DCC(playerIdx, zone, index)` —
+    conditionally destroys the card AND always queues negate command 0x43
+    via `sub_0803BD2C(0x43/0x8043, zone, index, 0)`.
+  - Calls `gEngineEffectBoostATKBoostDEF_08047A14(self, playerIdx, zone)` —
+    computes `mask = 1 << (playerIdx*16 + zone)`, passes to
+    `gEngineEffectBoostATKBoostDEF_08047724`. Appears to be a
+    broadcast/notification step, not an ATK/DEF write.
+
+## Chain entry struct (confirmed layout)
+
+6-byte struct in `gUnk_0201B590[]` (24-byte stride, one per chain entry):
+```
+offset 0 (u16): Konami ID of activating card
+offset 2 (u8):  bit 0 = playerIdx; bits[5:1] = zone index (0–4 monster,
+                5–9 S/T zone, higher = GY/hand/etc.)
+offset 3 (u8):  flags — bits 4,5 checked in slot-2 pre-check (_0805D132)
+offset 4 (u8):  negate flags — bits 1,2,3 set by slot-0 to mark negated;
+                bit 5 checked by sub_08090988 to skip slot-0 altogether
+offset 5 (u8):  chain index
+```
+
+## Chain resolution engine
+
+`sub_080A09C8` (0x080A09C8) — multi-step state machine, called repeatedly:
+- Step 0 (counter = 0): init, writes metadata to fixed offsets in
+  `gUnk_0201B590`, increments step counter.
+- Step 1 (counter = 1): calls `sub_08090988(r5, r6)` where
+  `r5 = gUnk_0201B590[count * 24]` (current resolving card's chain entry)
+  and `r6 = r5 - 24` (the card it's responding to).
+
+`sub_08090988(self, target)` (0x08090988):
+- Checks `self[4] & 0x20` (bit 5). If set → skip slot-0 (card was already
+  negated by a higher-priority counter trap on the same chain).
+- Otherwise: binary-searches `gCardEffects[]` for self's Konami ID via
+  `sub_080904F4`, loads `effects[0]`, calls `slot0Fn(self, target)`.
+
+`sub_0803BD2C(opcode, zone, index, extra)` (0x0803BD2C):
+- Appends one command (8 bytes) to the queue at `gUnk_0201BCC0`.
+- Guard: if `gUnk_0201E2A0[8] == 3`, silently skips the enqueue.
+- The command queue is flushed between chain entry resolutions — slot-0
+  for MBAS enqueues 0x43 (negate), the engine processes it and sets bit 5
+  on the target's chain entry, so when Dark Hole's turn comes
+  `sub_08090988` sees bit 5 set and skips its slot-0.
+
+## Divine Wrath — functions for monster-effect negation
+
+Needed to extend MBAS to also negate monster effects.
+
+**Slot-2 eligibility: `gCardEffectNegateDiscard_080629C8`** (0x080629C8):
+- Runs the same four pre-checks as the `_0805D118` family above.
+- `sub_0804AD48(konamiId)` → wraps `sub_080EEE50`; returns 1 if the card
+  has at least one activatable effect (count > 0), 0 otherwise.
+- `sub_0804AD70(konamiId)` → wraps `sub_080EEEA8`; jump-table on
+  `(result - 1)` for values 0–11; returns 0 for cases 1, 3, 8
+  (races/types that can't be targeted), 1 for all others.
+- Zone check: `target[2] & 0x3E != 0x1A` — excludes activations from
+  hand/certain zones.
+- Finally calls `gCardEffectDiscard_0805C1E4(self, target)` — checks
+  whether the activating player has a card to discard (DW's cost).
+  **MBAS skips this last check** (LP payment, not discard).
+
+**Slot-0 resolution: `gCardEffectNegateDiscard_0807B0C8`** (0x0807B0C8):
+- Sets `target[4] |= 0xE` (same as MJ/7-Tools).
+- Calls `sub_08030DE8(zone_index_from_target[4:5])` → r5 = card location
+  struct (zone type, position on board, etc.).
+- If `zone (target[2] bits[5:1]) <= 0xA` (on field): calls
+  `gEngineEffectDestroyBoostATK_08044DCC` to negate+destroy the monster.
+- Checks `r5`'s lower byte for zone type (≤ 0xA vs. 0xB vs. other) then
+  routes to `gEngineEffectBanishGraveyard_08048020` or
+  `gEngineEffectBoostATKBoostDEF_08047970` to handle the destroyed
+  monster's destination.
+
+## Open items
+
+- **`gCardEffectDiscard_0805C1E4` call in `MBaaS_MonsterEffectCheck`.**
+  Inherited verbatim from DW's slot-2; for the real MBAS it's incorrect
+  (MBAS has no discard cost). In practice it means MBAS cannot respond to
+  a monster effect if the activating player has no cards in hand. Has not
+  caused observed test failures, but is a known divergence from the real
+  card's text.
