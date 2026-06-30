@@ -1,8 +1,5 @@
 	.section .data
 
-gUnk_09E5FD54:: @ 09E5FD54
-	.incbin "baserom.gba", 0x1E5FD54, 0x30
-
 gUnk_09E5FD84:: @ 09E5FD84
 	.incbin "baserom.gba", 0x1E5FD84, 0x1C
 

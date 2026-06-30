@@ -1,7 +1,7 @@
 #include "global.h"
 #include "card.h"
 
-u16 gStarterDeckDragonsRoar[40][2] = {
+u16 gStarterDeckDragonsRoar[DRAGONS_ROAR][2] = {
     { STARTER_DECK_CARD(KONAMI_GIGOBYTE, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_GIGOBYTE, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_GIGOBYTE, 0), 0 },
@@ -44,7 +44,7 @@ u16 gStarterDeckDragonsRoar[40][2] = {
     { STARTER_DECK_CARD(KONAMI_MASKED_DRAGON, 0), 0 },
 };
 
-u16 gStarterDeckZombieMadness[16][2] = {
+u16 gStarterDeckZombieMadness[ZOMBIE_MADNESS][2] = {
     { STARTER_DECK_CARD(KONAMI_POT_OF_GREED, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_POT_OF_GREED, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_POT_OF_GREED, 0), 0 },
@@ -63,7 +63,7 @@ u16 gStarterDeckZombieMadness[16][2] = {
     { STARTER_DECK_CARD(KONAMI_POT_OF_GREED, 0), 0 },
 };
 
-u16 gStarterDeckMoltenDestruction[31][2] = {
+u16 gStarterDeckMoltenDestruction[MOLTEN_DESTRUCTION][2] = {
     { STARTER_DECK_CARD(KONAMI_LITTLE_CHIMERA, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_POT_OF_GREED, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_TRIBUTE_TO_THE_DOOMED, 0), 0 },
@@ -97,7 +97,7 @@ u16 gStarterDeckMoltenDestruction[31][2] = {
     { STARTER_DECK_CARD(KONAMI_INFERNAL_FLAME_EMPEROR, 0), 0 },
 };
 
-u16 gStarterDeckFuryFromTheDeep[32][2] = {
+u16 gStarterDeckFuryFromTheDeep[FURY_FROM_THE_DEEP][2] = {
     { STARTER_DECK_CARD(KONAMI_7_COLORED_FISH, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_STAR_BOY, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_POT_OF_GREED, 0), 0 },
@@ -132,7 +132,7 @@ u16 gStarterDeckFuryFromTheDeep[32][2] = {
     { STARTER_DECK_CARD(KONAMI_OCEAN_DRAGON_LORD_NEO_DAEDALUS, 0), 0 },
 };
 
-u16 gStarterDeckWarriorsTriumph[36][2] = {
+u16 gStarterDeckWarriorsTriumph[WARRIORS_TRIUMPH][2] = {
     { STARTER_DECK_CARD(KONAMI_MAGIC_JAMMER, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_ROYAL_DECREE, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_HEAVY_STORM, 0), 0 },
@@ -171,7 +171,7 @@ u16 gStarterDeckWarriorsTriumph[36][2] = {
     { STARTER_DECK_CARD(KONAMI_DIVINE_SWORD_PHOENIX_BLADE, 0), 0 },
 };
 
-u16 gStarterDeckSpellcastersJudgement[36][2] = {
+u16 gStarterDeckSpellcastersJudgement[SPELLCASTERS_JUDGEMENT][2] = {
     { STARTER_DECK_CARD(KONAMI_DARK_MAGICIAN, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_SWORDS_OF_REVEALING_LIGHT, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_MAGICIAN_OF_FAITH, 1), 0 },
@@ -208,4 +208,13 @@ u16 gStarterDeckSpellcastersJudgement[36][2] = {
     { STARTER_DECK_CARD(KONAMI_DARK_ERADICATOR_WARLOCK, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_MYTHICAL_BEAST_CERBERUS, 0), 0 },
     { STARTER_DECK_CARD(KONAMI_MAGICAL_BLAST, 0), 0 },
+};
+
+struct StarterDeck gStarterDeck[6] = {
+    {(u8 *)gStarterDeckDragonsRoar, DRAGONS_ROAR},
+    {(u8 *)gStarterDeckZombieMadness, ZOMBIE_MADNESS},
+    {(u8 *)gStarterDeckMoltenDestruction, MOLTEN_DESTRUCTION},
+    {(u8 *)gStarterDeckFuryFromTheDeep, FURY_FROM_THE_DEEP},
+    {(u8 *)gStarterDeckWarriorsTriumph, WARRIORS_TRIUMPH},
+    {(u8 *)gStarterDeckSpellcastersJudgement, SPELLCASTERS_JUDGEMENT}
 };

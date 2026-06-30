@@ -4907,4 +4907,17 @@ struct PlayerCard
     u32 unk_23:8;
 };
 
+struct StarterDeck
+{
+    u8 *pointer;
+    u32 cardCount;
+};
+
+#define DRAGONS_ROAR 40
+#define ZOMBIE_MADNESS 16
+#define MOLTEN_DESTRUCTION 31
+#define FURY_FROM_THE_DEEP 32
+#define WARRIORS_TRIUMPH 36
+#define SPELLCASTERS_JUDGEMENT 36
+
 #endif // GUARD_CARD_H

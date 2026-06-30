@@ -13514,7 +13514,7 @@ sub_080FBB60: @ 0x080FBB60
 	adds r4, r0, #0
 	ldr r0, _080FBC5C @ =gUnk_02001138
 	mov sb, r0
-	ldr r0, _080FBC60 @ =gUnk_09E5FD54
+	ldr r0, _080FBC60 @ =gStarterDeck
 	lsls r1, r4, #3
 	adds r2, r1, r0
 	ldr r6, [r2]
@@ -13630,7 +13630,7 @@ _080FBC26:
 	bx r0
 	.align 2, 0
 _080FBC5C: .4byte gUnk_02001138
-_080FBC60: .4byte gUnk_09E5FD54
+_080FBC60: .4byte gStarterDeck
 _080FBC64: .4byte 0x00005AF4
 _080FBC68: .4byte 0x000005E7
 _080FBC6C: .4byte gInterfaceTextOffsets
