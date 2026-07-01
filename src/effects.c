@@ -547,6 +547,8 @@ extern void gCardEffectFusionSummonNegate_0807136C(void);
 extern void gCardEffectFusionSummonTakeControl_08063D38(void);
 extern void gCardEffectFusionSummonTakeControl_0807D65C(void);
 extern void gCardEffectFFF_GYTrigger(void);
+extern void gCardEffectFFF_GYResolve(void);
+extern void gCardEffectDestroy_08050994(void);
 extern void gCardEffectGainLPDamage_0805E30C(void);
 extern void gCardEffectGainLPDamage_0805F85C(void);
 extern void gCardEffectGainLPDamage_0806D2D0(void);
@@ -2373,7 +2375,7 @@ const struct CardEffects gCardEffects2[] = {
     { KONAMI_COCKROACH_KNIGHT                           , 0, { gCardEffectSendToGYGraveyard_0806683C            , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
     { KONAMI_MINAR                                      , 0, { gCardEffectDamageGraveyard_080655EC              , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
     { KONAMI_WITCH_OF_THE_BLACK_FOREST                  , 0, { gCardEffectSearchSendToGY_080661FC               , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },
-    { KONAMI_FLAME_VIPER                                , 0, { gCardEffectFFF_GYTrigger, NULL, NULL, NULL, NULL} },
+    { KONAMI_FLAME_VIPER                                , 0, { gCardEffectFFF_GYResolve                         , gCardEffectTakeControlFlip_08052080                      , NULL                                             , NULL                                             , gCardEffectDestroy_0808198C                       } },
     { KONAMI_CHIMERA_THE_FLYING_MYTHICAL_BEAST          , 0, { gCardEffectSpecialSummonGraveyard_080687A8       , NULL                                             , gCardEffectSpecialSummonGraveyard_0805C248       , gCardEffectGraveyardSpecialSummon_080563CC       , gCardEffectGraveyardSpecialSummon_08081B84        } },
     { KONAMI_PARASITE_PARACIDE                          , 0, { gCardEffectSpecialSummonDamage_08068990          , NULL                                             , NULL                                             , gCardEffectSpecialSummonDamage_08057138          , NULL                                              } },
     { KONAMI_SKULL_MARK_LADYBUG                         , 0, { gCardEffectDamageGraveyard_080655EC              , NULL                                             , NULL                                             , NULL                                             , NULL                                              } },

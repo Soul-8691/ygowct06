@@ -4452,6 +4452,50 @@ _FFF_ZoneBase:  .4byte gUnk_0201C510
 _FFF_Stride:    .4byte 0x00000868
 _FFF_GY_Damage: .4byte 500
 
+@ ============================================================================
+@ Fencing Fire Ferret GY resolution (slot-0 in gCardEffects2)
+@ Called after player selects a target via gCardEffectDestroy_08050994 (slot-1).
+@ Destroys the registered target, then inflicts 500 damage to the opponent.
+@ ============================================================================
+
+	thumb_func_start gCardEffectFFF_GYResolve
+gCardEffectFFF_GYResolve:
+	push {r4, r5, lr}
+	adds r5, r0, #0            @ r5 = self
+
+	@ Skip if negated (bit 2 of self[4])
+	movs r0, #4
+	ldrb r1, [r5, #4]
+	ands r0, r1
+	bne _FFF_Res_Done
+
+	@ Destroy the registered target
+	adds r0, r5, #0
+	bl gEngineEffectDestroyBoostATK_0806460C
+	cmp r0, #0
+	beq _FFF_Res_Done          @ skip damage if destroy failed
+
+	@ opponentIdx = 1 - playerIdx (bit 0 of self[2])
+	ldrb r1, [r5, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f         @ r0 = playerIdx
+	movs r4, #1
+	subs r4, r4, r0            @ r4 = opponentIdx
+
+	@ Inflict 500 damage to opponent
+	ldr r2, _FFF_Res_Damage
+	adds r1, r4, #0
+	adds r0, r5, #0
+	bl gEngineEffectDiscardDamage_080487B0
+
+_FFF_Res_Done:
+	movs r0, #0
+	pop {r4, r5}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_FFF_Res_Damage: .4byte 500
+
 	@ Agido
 	@ Amazoness Chain Master
 	@ Archfiend of Gilfer
