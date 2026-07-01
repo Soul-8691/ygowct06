@@ -261,6 +261,88 @@ elsewhere, not invented:
 
 ---
 
+# Fencing Fire Ferret (FFF) — Findings
+
+Slotted onto `KONAMI_FLAME_VIPER` (0x122A / 4650, `CARD_FLAME_VIPER` = 529) — a vanilla
+monster with no meaningful original effect. Effect text: "If destroyed and sent to GY:
+destroy 1 face-up monster the opponent controls, then inflict 500 damage to your opponent."
+
+## Current live wiring
+
+- `src/card.c`: both `CARD_FLAME_VIPER` rows — ATK 1700 / DEF 600 / Level 4 /
+  RACE_BEAST / ATTR_FIRE / TYPE_EFFECT.
+- `src/effects.c` (`gCardEffects2` row, sorted between WITCH=4580 and CHIMERA=4756):
+  ```c
+  { KONAMI_FLAME_VIPER, 0, {
+      gCardEffectFFF_GYResolve,             // slot-0: destroy registered target + 500 dmg
+      gCardEffectTakeControlFlip_08052080,  // slot-1: validate face-up opponent monster
+      NULL,
+      NULL,
+      gCardEffectDestroy_0808198C           // slot-4: enable GY targeting chain
+  } }
+  ```
+- `asm/new_code.s`:
+  - `gCardEffectFFF_GYTrigger` — dead code (auto-selects first face-up opponent
+    monster, no targeting UI). Not wired into any table; kept as reference.
+  - `gCardEffectFFF_GYResolve` — live slot-0. Calls
+    `gEngineEffectDestroyBoostATK_0806460C` (reads the player-selected target
+    registered by the engine during the targeting phase), then on success computes
+    `opponentIdx = 1 - (self[2] & 1)` and calls
+    `gEngineEffectDiscardDamage_080487B0(self, opponentIdx, 500)`.
+  - `gEngineEffectGraveyardSendToGY_0804559C_New` — clone of the original
+    `_0804559C` with FLAME_VIPER (0x122A) detected early in the binary-search
+    tree and routed to `_080459A4` (the same path used by Sangan/Witch/etc.
+    for gCardEffects2-style GY triggers).
+- `asm/code_0801EF94.s`: 4 call sites changed from
+  `gEngineEffectGraveyardSendToGY_0804559C` to
+  `gEngineEffectGraveyardSendToGY_0804559C_New` (lines 82676, 83916, 84198, 84584).
+
+## gCardEffects2 slot architecture (confirmed)
+
+- **Slot-4** (`gCardEffectDestroy_0808198C`): called by the chain state machine
+  (case 5 in the dispatch table at `_0804D258`). When slot-4 is present, the
+  machine routes through case 5 → case 6 instead of jumping directly from case 4
+  to case 6. Slot-4 calls `gEngineEffectDiscardDestroySpellTrap_08081900` or
+  `gEngineEffectDestroy_080B5D98` depending on a global phase flag
+  (`gUnk_0201E2A0`). This sets up the targeting context that allows slot-1 to be
+  invoked for player selection. **Without slot-4, no targeting UI appears** — the
+  engine skips straight to case 6 with no selection step.
+- **Slot-1** (`gCardEffectTakeControlFlip_08052080`): called during the targeting
+  phase for each `(playerIdx, zone)` pair. Returns 1 if the zone is a valid target,
+  0 otherwise. This function performs:
+  1. Zone ≤ 4 (monster zones only)
+  2. Card present: `word[0] << 19 != 0`
+  3. Opponent-only: `(self[2] & 1) != playerIdx`
+  4. Face-up: `halfword[8] != 0` — halfword at offset 8 of the zone entry is 0 for
+     face-down monsters and non-zero for face-up monsters
+  5. Standard validity checks (`gEngineEffectSpecialSummonNegate_08036770`,
+     `gEngineEffectSpecialSummonDestroy_08036450/0803670C`)
+- **Slot-0** (`gCardEffectFFF_GYResolve`): resolution. The engine has already
+  registered the player's selection before slot-0 is called.
+  `gEngineEffectDestroyBoostATK_0806460C` reads that registration via
+  `sub_08080D94` and destroys the target. Returns 1 on success; slot-0 only
+  deals 500 damage if the destroy succeeded.
+
+## GY trigger detection
+
+`gEngineEffectGraveyardSendToGY_0804559C` has a hardcoded binary-search tree over
+Konami IDs. Cards not in the tree return 0 (no GY effect). Adding FFF required
+cloning the function as `_New` and inserting a check for 0x122A before the real
+tree, branching to `_080459A4` — the entry point that eventually calls the chain
+state machine for `gCardEffects2`-style effects (same path as Sangan/Witch). The
+4 call sites in `code_0801EF94.s` that send cards to GY are redirected to `_New`.
+
+## `halfword[8]` face-up encoding (confirmed)
+
+Zone entry format (`gUnk_0201C510`, 20 bytes per zone):
+- `word[0]` bits 12:0 = game card ID (0 = empty)
+- `halfword[8]` (bytes 8–9) = 0 for face-down, non-zero for face-up (holds
+  the relevant ATK or similar display value). The face-up check `ldrh r0,[entry,#8]; cmp r0,#0; beq skip` is the canonical engine pattern — used by
+  `gCardEffectTakeControlFlip_08052080` (slot-1 here), the old
+  `gCardEffectFFF_GYTrigger`, and several other real effect functions.
+
+---
+
 # My Body as a Shield (MBAS) — Findings
 
 Slotted onto `KONAMI_GIGOBYTE` (0x1783 / 6019, `CARD_GIGOBYTE` = 1565) — a
