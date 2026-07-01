@@ -82673,7 +82673,7 @@ _08047692:
 	orrs r2, r4
 _080476BE:
 	adds r0, r7, #0
-	bl gEngineEffectGraveyardSendToGY_0804559C
+	bl gEngineEffectGraveyardSendToGY_0804559C_New
 	ldr r0, [sp, #8]
 	bl sub_0804ADF0
 	cmp r0, #0
@@ -83913,7 +83913,7 @@ _08047FD0:
 	ldr r0, [r1]
 	adds r1, r6, #0
 	movs r2, #0
-	bl gEngineEffectGraveyardSendToGY_0804559C
+	bl gEngineEffectGraveyardSendToGY_0804559C_New
 	ldr r1, [sp]
 	movs r0, #0x16
 	bl sub_08085320
@@ -84195,7 +84195,7 @@ _080481F4:
 	adds r0, r4, #0
 	adds r1, r6, #0
 	movs r2, #0
-	bl gEngineEffectGraveyardSendToGY_0804559C
+	bl gEngineEffectGraveyardSendToGY_0804559C_New
 	mov r0, sl
 	bl sub_0804ADF0
 	cmp r0, #0
@@ -84581,7 +84581,7 @@ _080484F0:
 	adds r0, r4, #0
 	adds r1, r7, #0
 	movs r2, #0
-	bl gEngineEffectGraveyardSendToGY_0804559C
+	bl gEngineEffectGraveyardSendToGY_0804559C_New
 	mov r0, r8
 	bl sub_0804ADF0
 	cmp r0, #0

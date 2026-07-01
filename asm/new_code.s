@@ -4451,3 +4451,2088 @@ _FFF_GY_Done:
 _FFF_ZoneBase:  .4byte gUnk_0201C510
 _FFF_Stride:    .4byte 0x00000868
 _FFF_GY_Damage: .4byte 500
+
+	@ Agido
+	@ Amazoness Chain Master
+	@ Archfiend of Gilfer
+	@ Black Pendant
+	@ Blast with Chain
+	@ Burning Algae
+	@ Centrifugal Field
+	@ Cobra Jar
+	@ Cockroach Knight
+	@ Criosphinx
+	@ D.D. Survivor
+	@ Dark Coffin
+	@ Emissary of the Afterlife
+	@ Familiar Knight
+	@ Firebird
+	@ Fuhma Shuriken
+	@ Giant Kozaky
+	@ Giant Rat
+	@ Gokipon
+	@ Granadora
+	@ Helios Tris Megiste
+	@ Kozaky's Self-Destruct Button
+	@ Lord Poison
+	@ Maji-Gire Panda
+	@ Makyura the Destructor
+	@ Manticore of Darkness
+	@ Masked Beast Des Gardius
+	@ Masked Dragon
+	@ Mecha-Dog Marron
+	@ Mokey Mokey
+	@ Mokey Mokey King
+	@ Mokey Mokey Smackdown
+	@ Mystic Tomato
+	@ Necklace of Command
+	@ Nimble Momonga
+	@ Nitro Unit
+	@ Ojama Trio
+	@ Ojamagic
+	@ Pandemonium
+	@ Sacred Phoenix of Nephthys
+	@ Sand Moth
+	@ Sangan
+	@ Shining Angel
+	@ Silpheed
+	@ Slate Warrior
+	@ UFOroid
+	@ Vampire Lord
+	@ Water Dragon
+	@ Wicked Dragon with the Ersatz Head
+	@ Witch of the Black Forest
+	@ Yomi Ship
+	thumb_func_start gEngineEffectGraveyardSendToGY_0804559C_New
+gEngineEffectGraveyardSendToGY_0804559C_New: @ 0x0804559C
+	push {r4, r5, r6, r7, lr}
+	mov r7, sl
+	mov r6, sb
+	mov r5, r8
+	push {r5, r6, r7}
+	sub sp, #0x24
+	str r0, [sp]
+	str r1, [sp, #4]
+	adds r3, r0, #0
+	lsls r0, r3, #0x16
+	lsrs r0, r0, #0x1f
+	mov sl, r0
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1c
+	str r0, [sp, #8]
+	mov sb, r1
+	ldr r7, [r1]
+	lsls r0, r7, #0x13
+	lsrs r6, r0, #0x13
+	lsls r0, r3, #0xd
+	lsrs r0, r0, #0x1f
+	mov r1, sl
+	eors r0, r1
+	str r0, [sp, #0xc]
+	movs r4, #0
+	str r4, [sp, #0x10]
+	lsls r0, r3, #8
+	cmp r0, #0
+	blt _080455DA
+	movs r0, #1
+	str r0, [sp, #0x10]
+_080455DA:
+	movs r1, #0
+	str r1, [sp, #0x14]
+	lsls r0, r3, #9
+	lsrs r0, r0, #0x1c
+	mov ip, r0
+	cmp r0, #0xe
+	bne _080455EC
+	movs r4, #1
+	str r4, [sp, #0x14]
+_080455EC:
+	lsls r0, r3, #0x10
+	lsrs r0, r0, #0x1f
+	str r0, [sp, #0x18]
+	lsls r0, r3, #0xf
+	lsrs r0, r0, #0x1f
+	str r0, [sp, #0x1c]
+	lsrs r5, r2, #0x12
+	movs r0, #1
+	mov r8, r0
+	ands r5, r0
+	lsrs r4, r2, #0x13
+	ands r4, r0
+	lsrs r1, r2, #0x14
+	ands r1, r0
+	lsrs r2, r2, #0x15
+	ands r2, r0
+	movs r0, #0
+	str r0, [sp, #0x20]
+	ldr r0, _08045658_
+	cmp r6, r0
+	bne next_____
+	b _080459A4
+next_____:
+	ldr r0, _08045658 @ =0x00001591 (Yomi Ship)
+	cmp r6, r0
+	bne _08045618
+	b _08045AB4
+_08045618:
+	cmp r6, r0
+	ble _0804561E
+	b _080457CC
+_0804561E:
+	ldr r0, _0804565C @ =0x00001342 (Mystic Tomato)
+	cmp r6, r0
+	bne _08045626
+	b _08045AB4
+_08045626:
+	cmp r6, r0
+	bgt _080456FC
+	subs r0, #0xa0
+	cmp r6, r0
+	bne _08045632
+	b _08045CA4
+_08045632:
+	cmp r6, r0
+	bgt _080456A8
+	movs r0, #0x87
+	lsls r0, r0, #5
+	cmp r6, r0
+	bgt _0804566C
+	subs r0, #1
+	cmp r6, r0
+	blt _08045646
+	b _080459A4
+_08045646:
+	subs r0, #9
+	cmp r6, r0
+	bne _0804564E
+	b _080459A4
+_0804564E:
+	cmp r6, r0
+	bgt _08045664
+	ldr r0, _08045660 @ =0x00000FD6 (Sangan)
+	b _0804587A
+	.align 2, 0
+_08045658_: .4byte 0x0000122A @ Flame Viper
+_08045658: .4byte 0x00001591 @ Yomi Ship
+_0804565C: .4byte 0x00001342 @ Mystic Tomato
+_08045660: .4byte 0x00000FD6 @ Sangan
+_08045664:
+	ldr r0, _08045668 @ =0x000010DD (Black Pendant)
+	b _0804587A
+	.align 2, 0
+_08045668: .4byte 0x000010DD @ Black Pendant
+_0804566C:
+	ldr r0, _0804568C @ =0x00001185 (Cockroach Knight)
+	cmp r6, r0
+	bne _08045674
+	b _08045CA4
+_08045674:
+	cmp r6, r0
+	bgt _08045690
+	subs r0, #0x9e
+	cmp r6, r0
+	bne _08045680
+	b _080459A4
+_08045680:
+	adds r0, #0x8d
+	cmp r6, r0
+	bne _08045688
+	b _08045A00
+_08045688:
+	b _08045D5C
+	.align 2, 0
+_0804568C: .4byte 0x00001185 @ Cockroach Knight
+_08045690:
+	ldr r0, _080456A4 @ =0x000011E4 (Witch of the Black Forest)
+	cmp r6, r0
+	bne _08045698
+	b _080459A4
+_08045698:
+	adds r0, #0xb0
+	cmp r6, r0
+	bne _080456A0
+	b _08045C64
+_080456A0:
+	b _08045D5C
+	.align 2, 0
+_080456A4: .4byte 0x000011E4 @ Witch of the Black Forest
+_080456A8:
+	ldr r0, _080456D0 @ =0x0000133A (Nimble Momonga)
+	cmp r6, r0
+	bgt _080456E4
+	subs r0, #1
+	cmp r6, r0
+	blt _080456B6
+	b _08045AB4
+_080456B6:
+	subs r0, #0x2e
+	cmp r6, r0
+	bne _080456BE
+	b _08045AB4
+_080456BE:
+	cmp r6, r0
+	bgt _080456D4
+	subs r0, #0x67
+	cmp r6, r0
+	bne _080456CA
+	b _080459B2
+_080456CA:
+	adds r0, #0x65
+	b _08045996
+	.align 2, 0
+_080456D0: .4byte 0x0000133A @ Nimble Momonga
+_080456D4:
+	ldr r0, _080456E0 @ =0x00001333 (Giant Rat)
+	cmp r6, r0
+	bne _080456DC
+	b _08045AB4
+_080456DC:
+	adds r0, #2
+	b _0804595C
+	.align 2, 0
+_080456E0: .4byte 0x00001333 @ Giant Rat
+_080456E4:
+	ldr r0, _080456F8 @ =0x0000133C (Shining Angel)
+	cmp r6, r0
+	bne _080456EC
+	b _08045AB4
+_080456EC:
+	cmp r6, r0
+	bge _080456F2
+	b _08045A00
+_080456F2:
+	adds r0, #3
+	b _080457B6
+	.align 2, 0
+_080456F8: .4byte 0x0000133C @ Shining Angel
+_080456FC:
+	ldr r0, _08045724 @ =0x000014AB (Amazoness Chain Master)
+	cmp r6, r0
+	bne _08045704
+	b _08045AB4
+_08045704:
+	cmp r6, r0
+	bgt _0804575C
+	subs r0, #0xfb
+	cmp r6, r0
+	bne _08045710
+	b _08045AC2
+_08045710:
+	cmp r6, r0
+	bgt _08045730
+	subs r0, #0xf
+	cmp r6, r0
+	bne _0804571C
+	b _08045D34
+_0804571C:
+	cmp r6, r0
+	bgt _08045728
+	subs r0, #3
+	b _080457B6
+	.align 2, 0
+_08045724: .4byte 0x000014AB @ Amazoness Chain Master
+_08045728:
+	ldr r0, _0804572C @ =0x000013AD (Slate Warrior)
+	b _08045862
+	.align 2, 0
+_0804572C: .4byte 0x000013AD @ Slate Warrior
+_08045730:
+	ldr r0, _08045748 @ =0x000013E3 (Archfiend of Gilfer)
+	cmp r6, r0
+	bne _08045738
+	b _08045CA4
+_08045738:
+	cmp r6, r0
+	bgt _0804574C
+	subs r0, #0x2f
+	cmp r6, r0
+	bne _08045744
+	b _08045AC2
+_08045744:
+	adds r0, #0x13
+	b _0804595C
+	.align 2, 0
+_08045748: .4byte 0x000013E3 @ Archfiend of Gilfer
+_0804574C:
+	ldr r0, _08045758 @ =0x000013E9 (Masked Beast Des Gardius (None))
+	cmp r6, r0
+	bne _08045754
+	b _080459A4
+_08045754:
+	adds r0, #0x7e
+	b _0804587A
+	.align 2, 0
+_08045758: .4byte 0x000013E9 @ Masked Beast Des Gardius (None)
+_0804575C:
+	ldr r0, _08045780 @ =0x00001514 (Blast with Chain)
+	cmp r6, r0
+	bne _08045764
+	b _08045BF4
+_08045764:
+	cmp r6, r0
+	bgt _0804579C
+	subs r0, #0x2b
+	cmp r6, r0
+	bne _08045770
+	b _08045AA0
+_08045770:
+	cmp r6, r0
+	bgt _08045784
+	subs r0, #0xc
+	cmp r6, r0
+	bne _0804577C
+	b _08045AB4
+_0804577C:
+	b _0804595A
+	.align 2, 0
+_08045780: .4byte 0x00001514 @ Blast with Chain
+_08045784:
+	ldr r0, _08045798 @ =0x000014F6 (Agido)
+	cmp r6, r0
+	bne _0804578C
+	b _08045AB4
+_0804578C:
+	adds r0, #0x17
+	cmp r6, r0
+	bne _08045794
+	b _08045B9A
+_08045794:
+	b _08045D5C
+	.align 2, 0
+_08045798: .4byte 0x000014F6 @ Agido
+_0804579C:
+	ldr r0, _080457B0 @ =0x00001544 (Dark Coffin)
+	cmp r6, r0
+	bgt _080457B4
+	subs r0, #1
+	cmp r6, r0
+	blt _080457AA
+	b _08045B72
+_080457AA:
+	subs r0, #0x14
+	b _0804595C
+	.align 2, 0
+_080457B0: .4byte 0x00001544 @ Dark Coffin
+_080457B4:
+	ldr r0, _080457C8 @ =0x0000156D (Lord Poison)
+_080457B6:
+	cmp r6, r0
+	ble _080457BC
+	b _08045D5C
+_080457BC:
+	subs r0, #1
+	cmp r6, r0
+	bge _080457C4
+	b _08045D5C
+_080457C4:
+	b _08045AB4
+	.align 2, 0
+_080457C8: .4byte 0x0000156D @ Lord Poison
+_080457CC:
+	ldr r0, _08045800 @ =0x00001841 (Necklace of Command)
+	cmp r6, r0
+	bne _080457D4
+	b _08045C78
+_080457D4:
+	cmp r6, r0
+	bgt _080458B8
+	ldr r0, _08045804 @ =0x000016F5 (Burning Algae)
+	cmp r6, r0
+	bne _080457E0
+	b _08045CA4
+_080457E0:
+	cmp r6, r0
+	bgt _08045840
+	subs r0, #0xa6
+	cmp r6, r0
+	bne _080457EC
+	b _08045CBC
+_080457EC:
+	cmp r6, r0
+	bgt _08045818
+	subs r0, #0x3d
+	cmp r6, r0
+	bne _080457F8
+	b _08045AC2
+_080457F8:
+	cmp r6, r0
+	bgt _08045808
+	subs r0, #0x59
+	b _0804587A
+	.align 2, 0
+_08045800: .4byte 0x00001841 @ Necklace of Command
+_08045804: .4byte 0x000016F5 @ Burning Algae
+_08045808:
+	ldr r0, _08045814 @ =0x0000163F (Granadora)
+	cmp r6, r0
+	bne _08045810
+	b _08045AA0
+_08045810:
+	adds r0, #3
+	b _0804595C
+	.align 2, 0
+_08045814: .4byte 0x0000163F @ Granadora
+_08045818:
+	ldr r0, _08045834 @ =0x000016C8 (Silpheed)
+	cmp r6, r0
+	bgt _08045838
+	subs r0, #1
+	cmp r6, r0
+	blt _08045826
+	b _08045AB4
+_08045826:
+	subs r0, #0x6b
+	cmp r6, r0
+	bne _0804582E
+	b _08045A52
+_0804582E:
+	adds r0, #0x2b
+	b _08045996
+	.align 2, 0
+_08045834: .4byte 0x000016C8 @ Silpheed
+_08045838:
+	ldr r0, _0804583C @ =0x000016CC (Fuhma Shuriken)
+	b _0804587A
+	.align 2, 0
+_0804583C: .4byte 0x000016CC @ Fuhma Shuriken
+_08045840:
+	ldr r0, _0804586C @ =0x000017C3 (Familiar Knight)
+	cmp r6, r0
+	bne _08045848
+	b _08045AB4
+_08045848:
+	cmp r6, r0
+	bgt _08045888
+	subs r0, #0x75
+	cmp r6, r0
+	bne _08045854
+	b _08045AD4
+_08045854:
+	cmp r6, r0
+	bgt _08045870
+	subs r0, #0x58
+	cmp r6, r0
+	bne _08045860
+	b _08045B30
+_08045860:
+	adds r0, #0x39
+_08045862:
+	cmp r6, r0
+	bne _08045868
+	b _08045AC2
+_08045868:
+	b _08045D5C
+	.align 2, 0
+_0804586C: .4byte 0x000017C3 @ Familiar Knight
+_08045870:
+	ldr r0, _08045884 @ =0x00001796 (Emissary of the Afterlife)
+	cmp r6, r0
+	bne _08045878
+	b _080459A4
+_08045878:
+	adds r0, #0xf
+_0804587A:
+	cmp r6, r0
+	bne _08045880
+	b _080459A4
+_08045880:
+	b _08045D5C
+	.align 2, 0
+_08045884: .4byte 0x00001796 @ Emissary of the Afterlife
+_08045888:
+	ldr r0, _080458A4 @ =0x000017E6 (Masked Dragon)
+	cmp r6, r0
+	bgt _080458A8
+	subs r0, #1
+	cmp r6, r0
+	blt _08045896
+	b _08045AB4
+_08045896:
+	subs r0, #0x20
+	cmp r6, r0
+	bne _0804589E
+	b _08045CA4
+_0804589E:
+	adds r0, #0x11
+	b _0804595C
+	.align 2, 0
+_080458A4: .4byte 0x000017E6 @ Masked Dragon
+_080458A8:
+	ldr r0, _080458B4 @ =0x0000183D (Mokey Mokey King)
+	cmp r6, r0
+	bne _080458B0
+	b _08045C6A
+_080458B0:
+	b _08045D5C
+	.align 2, 0
+_080458B4: .4byte 0x0000183D @ Mokey Mokey King
+_080458B8:
+	ldr r0, _080458E8 @ =0x00001914 (Giant Kozaky)
+	cmp r6, r0
+	bne _080458C0
+	b _08045AFC
+_080458C0:
+	cmp r6, r0
+	bgt _08045928
+	subs r0, #0x6a
+	cmp r6, r0
+	bne _080458CC
+	b _08045B30
+_080458CC:
+	cmp r6, r0
+	bgt _080458FC
+	subs r0, #0x43
+	cmp r6, r0
+	bne _080458D8
+	b _08045AB4
+_080458D8:
+	cmp r6, r0
+	bgt _080458EC
+	subs r0, #0x25
+	cmp r6, r0
+	bne _080458E4
+	b _08045CA0
+_080458E4:
+	b _08045D5C
+	.align 2, 0
+_080458E8: .4byte 0x00001914 @ Giant Kozaky
+_080458EC:
+	ldr r0, _080458F8 @ =0x00001869 (Mecha-Dog Marron)
+	cmp r6, r0
+	bne _080458F4
+	b _08045B30
+_080458F4:
+	adds r0, #0x26
+	b _0804595C
+	.align 2, 0
+_080458F8: .4byte 0x00001869 @ Mecha-Dog Marron
+_080458FC:
+	ldr r0, _08045914 @ =0x000018D7 (Kozaky's Self-Destruct Button)
+	cmp r6, r0
+	bne _08045904
+	b _08045B86
+_08045904:
+	cmp r6, r0
+	bgt _08045918
+	subs r0, #0x20
+	cmp r6, r0
+	bne _08045910
+	b _08045AB4
+_08045910:
+	adds r0, #0xe
+	b _0804595C
+	.align 2, 0
+_08045914: .4byte 0x000018D7 @ Kozaky's Self-Destruct Button
+_08045918:
+	ldr r0, _08045924 @ =0x000018F4 (UFOroid)
+	cmp r6, r0
+	bne _08045920
+	b _08045AB4
+_08045920:
+	adds r0, #3
+	b _0804595C
+	.align 2, 0
+_08045924: .4byte 0x000018F4 @ UFOroid
+_08045928:
+	ldr r0, _08045950 @ =0x00001951 (Water Dragon)
+	cmp r6, r0
+	bne _08045930
+	b _08045B30
+_08045930:
+	cmp r6, r0
+	bgt _08045968
+	subs r0, #0x18
+	cmp r6, r0
+	bne _0804593C
+	b _08045AB4
+_0804593C:
+	cmp r6, r0
+	bgt _08045954
+	subs r0, #0x20
+	cmp r6, r0
+	bne _08045948
+	b _08045AA6
+_08045948:
+	adds r0, #1
+	cmp r6, r0
+	beq _080459CE
+	b _08045D5C
+	.align 2, 0
+_08045950: .4byte 0x00001951 @ Water Dragon
+_08045954:
+	ldr r0, _08045964 @ =0x00001946 (Ojamagic)
+	cmp r6, r0
+	beq _080459A4
+_0804595A:
+	adds r0, #0xa
+_0804595C:
+	cmp r6, r0
+	bne _08045962
+	b _08045AB4
+_08045962:
+	b _08045D5C
+	.align 2, 0
+_08045964: .4byte 0x00001946 @ Ojamagic
+_08045968:
+	ldr r0, _08045988 @ =0x000019C5 (Gokipon)
+	cmp r6, r0
+	bne _08045970
+	b _08045AB4
+_08045970:
+	cmp r6, r0
+	bgt _0804598C
+	subs r0, #0x5b
+	cmp r6, r0
+	bne _0804597C
+	b _08045AB4
+_0804597C:
+	adds r0, #0x46
+	cmp r6, r0
+	bne _08045984
+	b _08045CAA
+_08045984:
+	b _08045D5C
+	.align 2, 0
+_08045988: .4byte 0x000019C5 @ Gokipon
+_0804598C:
+	ldr r0, _080459A0 @ =0x000019D2 (Sand Moth)
+	cmp r6, r0
+	bne _08045994
+	b _08045B4A
+_08045994:
+	adds r0, #0x2c
+_08045996:
+	cmp r6, r0
+	bne _0804599C
+	b _08045CA4
+_0804599C:
+	b _08045D5C
+	.align 2, 0
+_080459A0: .4byte 0x000019D2 @ Sand Moth
+_080459A4:
+	movs r1, #0
+	str r1, [sp, #0x20]
+	ldr r2, [sp, #0x10]
+	cmp r2, #0
+	bne _080459B0
+	b _08045D5C
+_080459B0:
+	b _08045CA4
+_080459B2:
+	ldr r4, [sp, #0x10]
+	cmp r4, #0
+	bne _080459BA
+	b _08045D5C
+_080459BA:
+	ldr r0, [sp, #0x14]
+	cmp r0, #0
+	bne _080459C2
+	b _08045D5C
+_080459C2:
+	lsls r0, r7, #0x12
+	lsrs r0, r0, #0x1f
+	cmp r0, sl
+	beq _080459CC
+	b _08045D5C
+_080459CC:
+	b _08045A2C
+_080459CE:
+	ldr r2, [sp, #4]
+	ldrh r0, [r2, #8]
+	cmp r0, #0
+	bne _080459D8
+	b _08045D5C
+_080459D8:
+	ldr r3, [sp, #0x10]
+	cmp r3, #0
+	bne _080459E0
+	b _08045D5C
+_080459E0:
+	ldr r4, [sp, #0x14]
+	cmp r4, #0
+	bne _080459E8
+	b _08045D5C
+_080459E8:
+	ldr r0, [sp, #0x1c]
+	cmp r0, #0
+	beq _08045A2C
+	ldr r0, _080459FC @ =gUnk_0201BB90
+	ldr r0, [r0, #0x24]
+	cmp r0, r6
+	bne _080459F8
+	b _08045D5C
+_080459F8:
+	b _08045A2C
+	.align 2, 0
+_080459FC: .4byte gUnk_0201BB90
+_08045A00:
+	ldr r2, [sp, #0x10]
+	cmp r2, #0
+	bne _08045A08
+	b _08045D5C
+_08045A08:
+	ldr r3, [sp, #0x14]
+	cmp r3, #0
+	bne _08045A10
+	b _08045D5C
+_08045A10:
+	ldr r4, [sp, #0x1c]
+	cmp r4, #0
+	beq _08045A1E
+	ldr r0, _08045A34 @ =gUnk_0201BB90
+	ldr r0, [r0, #0x24]
+	cmp r0, r6
+	beq _08045A2C
+_08045A1E:
+	ldr r0, [sp, #4]
+	ldr r1, [r0, #0x10]
+	lsrs r0, r1, #4
+	movs r2, #1
+	ands r0, r2
+	cmp r0, #0
+	beq _08045A38
+_08045A2C:
+	movs r1, #1
+	str r1, [sp, #0x20]
+	b _08045D5C
+	.align 2, 0
+_08045A34: .4byte gUnk_0201BB90
+_08045A38:
+	lsrs r0, r1, #0x13
+	ands r0, r2
+	cmp r0, #0
+	bne _08045A42
+	b _08045D5C
+_08045A42:
+	movs r2, #1
+	str r2, [sp, #0x20]
+	movs r1, #0x80
+	lsls r1, r1, #0x10
+	ldr r0, [sp]
+	orrs r0, r1
+	str r0, [sp]
+	b _08045D5C
+_08045A52:
+	cmp r5, #0
+	bne _08045A58
+	b _08045D5C
+_08045A58:
+	ldr r4, [sp, #0x18]
+	cmp r4, #0
+	bne _08045A60
+	b _08045D5C
+_08045A60:
+	ldr r0, [sp, #0x14]
+	cmp r0, #0
+	bne _08045A68
+	b _08045D5C
+_08045A68:
+	mov r0, sl
+	ldr r1, [sp, #8]
+	bl sub_0802F680
+	lsls r0, r0, #0x10
+	ldr r1, _08045A94 @ =0xFFFF0000
+	cmp r0, r1
+	bne _08045A7A
+	b _08045D5C
+_08045A7A:
+	ldr r0, _08045A98 @ =gPlayerCards
+	ldr r1, _08045A9C @ =0x000010D0 (Wicked Dragon with the Ersatz Head)
+	adds r0, r0, r1
+	ldr r0, [r0]
+	mov r2, r8
+	ands r0, r2
+	cmp r0, #0
+	beq _08045A8C
+	b _08045D5C
+_08045A8C:
+	movs r3, #1
+	str r3, [sp, #0x20]
+	b _08045D5C
+	.align 2, 0
+_08045A94: .4byte 0xFFFF0000
+_08045A98: .4byte gPlayerCards
+_08045A9C: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
+_08045AA0:
+	movs r4, #0
+	str r4, [sp, #0x20]
+	b _08045B3C
+_08045AA6:
+	mov r2, sb
+	ldr r0, [r2]
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	cmp r0, sl
+	beq _08045AB4
+	b _08045D5C
+_08045AB4:
+	movs r3, #0
+	str r3, [sp, #0x20]
+	ldr r4, [sp, #0x1c]
+	cmp r4, #0
+	bne _08045AC0
+	b _08045D64
+_08045AC0:
+	b _08045B3C
+_08045AC2:
+	movs r2, #0
+	str r2, [sp, #0x20]
+	ldr r3, [sp, #0x1c]
+	cmp r3, #0
+	bne _08045ACE
+	b _08045D64
+_08045ACE:
+	ldr r4, [sp, #0x18]
+	str r4, [sp, #0x20]
+	b _08045D5C
+_08045AD4:
+	ldr r0, [sp, #0x1c]
+	cmp r0, #0
+	bne _08045ADC
+	b _08045D64
+_08045ADC:
+	ldr r1, [sp, #0x18]
+	cmp r1, #0
+	bne _08045AE4
+	b _08045D5C
+_08045AE4:
+	ldr r2, [sp, #0x14]
+	cmp r2, #0
+	bne _08045AEC
+	b _08045D5C
+_08045AEC:
+	ldr r0, _08045AF8 @ =gUnk_0201BB90
+	ldr r1, [r0, #0x24]
+	eors r1, r6
+	rsbs r0, r1, #0
+	orrs r0, r1
+	b _08045CB6
+	.align 2, 0
+_08045AF8: .4byte gUnk_0201BB90
+_08045AFC:
+	ldr r3, [sp, #0x18]
+	cmp r3, #0
+	bne _08045B04
+	b _08045D5C
+_08045B04:
+	mov r4, sb
+	ldrh r0, [r4, #8]
+	cmp r0, #0
+	bne _08045B0E
+	b _08045D5C
+_08045B0E:
+	ldr r0, [sp, #0x10]
+	cmp r0, #0
+	bne _08045B16
+	b _08045D5C
+_08045B16:
+	ldr r1, [sp, #0x1c]
+	cmp r1, #0
+	bne _08045B1E
+	b _08045C9A
+_08045B1E:
+	ldr r0, _08045B2C @ =gUnk_0201BB90
+	ldr r0, [r0, #0x24]
+	cmp r0, r6
+	bne _08045B28
+	b _08045D5C
+_08045B28:
+	b _08045C9A
+	.align 2, 0
+_08045B2C: .4byte gUnk_0201BB90
+_08045B30:
+	movs r3, #0
+	str r3, [sp, #0x20]
+	ldr r4, [sp, #0x10]
+	cmp r4, #0
+	bne _08045B3C
+	b _08045D5C
+_08045B3C:
+	ldr r0, [sp, #0x18]
+	cmp r0, #0
+	bne _08045B44
+	b _08045D5C
+_08045B44:
+	ldr r1, [sp, #0x14]
+	str r1, [sp, #0x20]
+	b _08045D5C
+_08045B4A:
+	ldr r2, [sp, #4]
+	ldrh r0, [r2, #8]
+	cmp r0, #0
+	beq _08045B54
+	b _08045D5C
+_08045B54:
+	ldrh r0, [r2, #6]
+	cmp r0, #0
+	bne _08045B5C
+	b _08045D5C
+_08045B5C:
+	ldr r3, [sp, #0x18]
+	cmp r3, #0
+	bne _08045B64
+	b _08045D5C
+_08045B64:
+	ldr r4, [sp, #0x1c]
+	cmp r4, #0
+	beq _08045B6C
+	b _08045E7E
+_08045B6C:
+	ldr r0, [sp, #0x14]
+	str r0, [sp, #0x20]
+	b _08045D5C
+_08045B72:
+	mov r1, sb
+	ldrh r0, [r1, #8]
+	cmp r0, #0
+	beq _08045B7C
+	b _08045D5C
+_08045B7C:
+	ldr r2, [sp, #0x18]
+	cmp r2, #0
+	bne _08045B84
+	b _08045D5C
+_08045B84:
+	b _08045CA4
+_08045B86:
+	mov r4, sb
+	ldrh r0, [r4, #8]
+	cmp r0, #0
+	beq _08045B90
+	b _08045D5C
+_08045B90:
+	ldr r0, [sp, #0x18]
+	cmp r0, #0
+	bne _08045B98
+	b _08045D5C
+_08045B98:
+	b _08045BBA
+_08045B9A:
+	cmp r5, #0
+	bne _08045BA0
+	b _08045D5C
+_08045BA0:
+	ldr r0, [sp, #0x18]
+	cmp r0, #0
+	bne _08045BA8
+	b _08045D5C
+_08045BA8:
+	mov r0, sl
+	ldr r1, [sp, #8]
+	bl sub_0802F680
+	lsls r0, r0, #0x10
+	ldr r1, _08045BE8 @ =0xFFFF0000
+	cmp r0, r1
+	bne _08045BBA
+	b _08045D5C
+_08045BBA:
+	ldr r3, _08045BEC @ =gPlayerCards
+	ldr r1, [sp, #8]
+	lsls r0, r1, #2
+	adds r0, r0, r1
+	lsls r0, r0, #2
+	mov r1, sl
+	mov r2, r8
+	ands r1, r2
+	ldr r2, _08045BF0 @ =0x00000868
+	muls r1, r2, r1
+	adds r0, r0, r1
+	adds r3, #0x40
+	adds r0, r0, r3
+	ldr r0, [r0]
+	lsrs r0, r0, #5
+	mov r3, r8
+	ands r0, r3
+	cmp r0, #0
+	beq _08045BE2
+	b _08045D5C
+_08045BE2:
+	movs r4, #3
+	str r4, [sp, #0x20]
+	b _08045D5C
+	.align 2, 0
+_08045BE8: .4byte 0xFFFF0000
+_08045BEC: .4byte gPlayerCards
+_08045BF0: .4byte 0x00000868
+_08045BF4:
+	cmp r5, #0
+	bne _08045BFA
+	b _08045D5C
+_08045BFA:
+	ldr r0, [sp, #0x18]
+	cmp r0, #0
+	bne _08045C02
+	b _08045D5C
+_08045C02:
+	mov r0, sl
+	ldr r1, [sp, #8]
+	bl sub_0802F680
+	lsls r0, r0, #0x10
+	ldr r1, _08045C54 @ =0xFFFF0000
+	cmp r0, r1
+	bne _08045C14
+	b _08045D5C
+_08045C14:
+	ldr r3, _08045C58 @ =gPlayerCards
+	ldr r1, _08045C5C @ =0x000010D0 (Wicked Dragon with the Ersatz Head)
+	adds r0, r3, r1
+	ldr r0, [r0]
+	mov r2, r8
+	ands r0, r2
+	cmp r0, #0
+	beq _08045C26
+	b _08045D5C
+_08045C26:
+	ldr r4, [sp, #8]
+	lsls r0, r4, #2
+	adds r0, r0, r4
+	lsls r0, r0, #2
+	mov r1, sl
+	ands r1, r2
+	ldr r2, _08045C60 @ =0x00000868
+	muls r1, r2, r1
+	adds r0, r0, r1
+	adds r1, r3, #0
+	adds r1, #0x40
+	adds r0, r0, r1
+	ldr r0, [r0]
+	lsrs r0, r0, #5
+	mov r1, r8
+	ands r0, r1
+	cmp r0, #0
+	beq _08045C4C
+	b _08045D5C
+_08045C4C:
+	movs r2, #3
+	str r2, [sp, #0x20]
+	b _08045D5C
+	.align 2, 0
+_08045C54: .4byte 0xFFFF0000
+_08045C58: .4byte gPlayerCards
+_08045C5C: .4byte 0x000010D0 @ Wicked Dragon with the Ersatz Head
+_08045C60: .4byte 0x00000868
+_08045C64:
+	ldr r3, [sp, #0x18]
+	str r3, [sp, #0x20]
+	b _08045D5C
+_08045C6A:
+	mov r4, sb
+	ldrh r0, [r4, #8]
+	cmp r0, #0
+	beq _08045D5C
+	ldr r0, [sp, #0x10]
+	str r0, [sp, #0x20]
+	b _08045D5C
+_08045C78:
+	cmp r1, #0
+	beq _08045D5C
+	ldr r1, [sp, #0x14]
+	cmp r1, #0
+	beq _08045D5C
+	lsls r0, r7, #0x12
+	lsrs r0, r0, #0x1f
+	cmp sl, r0
+	bne _08045D5C
+	mov r0, sl
+	ldr r1, [sp, #8]
+	bl sub_0802F6E4
+	lsls r0, r0, #0x18
+	lsrs r0, r0, #0x18
+	cmp r0, sl
+	bne _08045D5C
+_08045C9A:
+	movs r2, #1
+	str r2, [sp, #0x20]
+	b _08045D5C
+_08045CA0:
+	cmp r4, #0
+	beq _08045D5C
+_08045CA4:
+	ldr r3, [sp, #0x14]
+	str r3, [sp, #0x20]
+	b _08045D5C
+_08045CAA:
+	cmp r4, #0
+	beq _08045D5C
+	cmp r1, #0
+	bne _08045D5C
+	rsbs r0, r2, #0
+	orrs r0, r2
+_08045CB6:
+	lsrs r0, r0, #0x1f
+	str r0, [sp, #0x20]
+	b _08045D5C
+_08045CBC:
+	ldr r4, [sp, #0x10]
+	cmp r4, #0
+	beq _08045D5C
+	ldr r0, [sp, #0x18]
+	cmp r0, #0
+	beq _08045D5C
+	ldr r1, [sp, #0x14]
+	cmp r1, #0
+	beq _08045D5C
+	mov r2, sb
+	ldrh r1, [r2, #0xa]
+	cmp r1, #0
+	beq _08045D5C
+	adds r2, r6, #0
+_08045CD8:
+	lsls r1, r1, #3
+	ldr r0, _08045D08 @ =gUnk_0201D9C0
+	adds r7, r1, r0
+	ldrh r1, [r7, #6]
+	ldrh r3, [r7]
+	cmp r3, r2
+	bne _08045D2E
+	mov r4, sb
+	ldr r2, [r4]
+	lsls r0, r2, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r5, r0, #0x1f
+	ldr r1, [sp]
+	lsls r0, r1, #9
+	lsrs r0, r0, #0x1c
+	lsls r0, r0, #0x10
+	adds r4, r6, #0
+	lsls r1, r1, #0xf
+	mov ip, r2
+	cmp r1, #0
+	bge _08045D0C
+	movs r3, #0xb1
+	lsls r3, r3, #0x16
+	b _08045D10
+	.align 2, 0
+_08045D08: .4byte gUnk_0201D9C0
+_08045D0C:
+	movs r3, #0xd9
+	lsls r3, r3, #0x16
+_08045D10:
+	orrs r3, r0
+	orrs r3, r5
+	orrs r3, r4
+	mov r1, ip
+	lsls r0, r1, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r1, r1, #0x12
+	lsrs r1, r1, #0x1f
+	orrs r1, r0
+	ldrh r2, [r7, #4]
+	adds r0, r3, #0
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
+	b _08045D5C
+_08045D2E:
+	cmp r1, #0
+	bne _08045CD8
+	b _08045D5C
+_08045D34:
+	mov r2, sb
+	ldrh r0, [r2, #8]
+	cmp r0, #0
+	beq _08045D5C
+	mov r4, ip
+	cmp r4, #0xd
+	bne _08045D5C
+	lsls r1, r7, #0x12
+	lsrs r1, r1, #0x1f
+	lsls r0, r1, #0x1f
+	ldr r2, _08045DB4 @ =0x364D0000
+	orrs r2, r6
+	orrs r0, r2
+	lsls r2, r7, #2
+	lsrs r2, r2, #0x18
+	lsls r2, r2, #1
+	orrs r1, r2
+	adds r2, r3, #0
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
+_08045D5C:
+	ldr r0, [sp, #0x1c]
+	cmp r0, #0
+	beq _08045D64
+	b _08045E7E
+_08045D64:
+	ldr r1, [sp, #0x18]
+	cmp r1, #0
+	beq _08045DEC
+	ldr r2, [sp, #0x14]
+	cmp r2, #0
+	beq _08045DEC
+	ldr r3, [sp, #8]
+	cmp r3, #4
+	bgt _08045DEC
+	adds r0, r6, #0
+	bl sub_0804AD48
+	cmp r0, #0
+	beq _08045DEC
+	adds r0, r6, #0
+	bl gEngineEffectDestroyGraveyard_0804AEA0
+	cmp r0, #0
+	beq _08045DEC
+	movs r4, #0
+_08045D8C:
+	adds r0, r4, #0
+	movs r1, #0xa
+	ldr r2, _08045DB8 @ =0x0000169F (Pandemonium)
+	bl sub_08032548
+	cmp r0, #0
+	beq _08045DE6
+	lsls r1, r4, #0x1f
+	movs r0, #0xd8
+	lsls r0, r0, #0x16
+	orrs r1, r0
+	mov r2, sb
+	ldr r0, [r2]
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	cmp r0, r4
+	beq _08045DC0
+	ldr r3, _08045DBC @ =0x012A169F
+	b _08045DC2
+	.align 2, 0
+_08045DB4: .4byte 0x364D0000
+_08045DB8: .4byte 0x0000169F @ Pandemonium
+_08045DBC: .4byte 0x012A169F
+_08045DC0:
+	ldr r3, _08045E38 @ =0x002A169F
+_08045DC2:
+	orrs r3, r1
+	movs r0, #1
+	ands r0, r4
+	ldr r1, _08045E3C @ =0x00000868
+	muls r0, r1, r0
+	ldr r1, _08045E40 @ =gUnk_0201C5D8
+	adds r0, r0, r1
+	ldr r1, [r0]
+	lsls r0, r1, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r1, r1, #0x12
+	lsrs r1, r1, #0x1f
+	orrs r1, r0
+	ldr r2, [sp]
+	adds r0, r3, #0
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
+_08045DE6:
+	adds r4, #1
+	cmp r4, #1
+	ble _08045D8C
+_08045DEC:
+	ldr r3, [sp, #0x1c]
+	cmp r3, #0
+	bne _08045E7E
+	ldr r4, [sp, #0x18]
+	cmp r4, #0
+	beq _08045E78
+	ldr r0, [sp, #0x14]
+	cmp r0, #0
+	beq _08045E78
+	ldr r1, [sp, #8]
+	cmp r1, #4
+	bgt _08045E78
+	adds r0, r6, #0
+	bl sub_0804ADC8
+	cmp r0, #0
+	beq _08045E78
+	movs r4, #0
+_08045E10:
+	adds r0, r4, #0
+	movs r1, #0xa
+	ldr r2, _08045E44 @ =0x0000187F (Centrifugal Field)
+	bl sub_08032548
+	cmp r0, #0
+	beq _08045E72
+	lsls r1, r4, #0x1f
+	movs r0, #0xd8
+	lsls r0, r0, #0x16
+	orrs r1, r0
+	mov r2, sb
+	ldr r0, [r2]
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	cmp r0, r4
+	beq _08045E4C
+	ldr r3, _08045E48 @ =0x012A187F
+	b _08045E4E
+	.align 2, 0
+_08045E38: .4byte 0x002A169F
+_08045E3C: .4byte 0x00000868
+_08045E40: .4byte gUnk_0201C5D8
+_08045E44: .4byte 0x0000187F @ Centrifugal Field
+_08045E48: .4byte 0x012A187F
+_08045E4C:
+	ldr r3, _08045EEC @ =0x002A187F
+_08045E4E:
+	orrs r3, r1
+	movs r0, #1
+	ands r0, r4
+	ldr r1, _08045EF0 @ =0x00000868
+	muls r0, r1, r0
+	ldr r1, _08045EF4 @ =gUnk_0201C5D8
+	adds r0, r0, r1
+	ldr r1, [r0]
+	lsls r0, r1, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r1, r1, #0x12
+	lsrs r1, r1, #0x1f
+	orrs r1, r0
+	ldr r2, [sp]
+	adds r0, r3, #0
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
+_08045E72:
+	adds r4, #1
+	cmp r4, #1
+	ble _08045E10
+_08045E78:
+	ldr r3, [sp, #0x1c]
+	cmp r3, #0
+	beq _08045EA2
+_08045E7E:
+	ldr r4, [sp, #0x14]
+	cmp r4, #0
+	beq _08045EA2
+	movs r0, #1
+	mov r1, sl
+	subs r0, r0, r1
+	ldr r1, _08045EF8 @ =0x000018D1 (Nitro Unit)
+	movs r2, #1
+	rsbs r2, r2, #0
+	bl sub_08032654
+	cmp r0, #0
+	beq _08045EA2
+	ldr r1, _08045EFC @ =gEngineEffectSpecialSummonSendToGY_08045530
+	ldr r0, [sp, #4]
+	mov r2, sp
+	bl sub_0803009C
+_08045EA2:
+	mov r2, sb
+	ldr r0, [r2]
+	lsls r1, r0, #2
+	lsrs r1, r1, #0x18
+	lsls r1, r1, #1
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	adds r1, r1, r0
+	adds r0, r6, #0
+	bl gEngineEffectBoostATKBoostDEF_08034298
+	movs r1, #0
+	cmp r0, #0
+	bne _08045EC0
+	movs r1, #1
+_08045EC0:
+	ldr r0, _08045F00 @ =0x00001672 (Ojama Token (black) (None))
+	cmp r6, r0
+	bgt _08045F1C
+	subs r0, #2
+	cmp r6, r0
+	blt _08045ECE
+	b _08045FC8
+_08045ECE:
+	ldr r0, _08045F04 @ =0x000014A5 (Makyura the Destructor)
+	cmp r6, r0
+	beq _08045F6C
+	cmp r6, r0
+	bgt _08045F08
+	subs r0, #0xff
+	cmp r6, r0
+	bne _08045EE0
+	b _08045FFE
+_08045EE0:
+	adds r0, #0xc0
+	cmp r6, r0
+	bne _08045EE8
+	b _0804604A
+_08045EE8:
+	b _080461DE
+	.align 2, 0
+_08045EEC: .4byte 0x002A187F
+_08045EF0: .4byte 0x00000868
+_08045EF4: .4byte gUnk_0201C5D8
+_08045EF8: .4byte 0x000018D1 @ Nitro Unit
+_08045EFC: .4byte gEngineEffectSpecialSummonSendToGY_08045530
+_08045F00: .4byte 0x00001672 @ Ojama Token (black) (None)
+_08045F04: .4byte 0x000014A5 @ Makyura the Destructor
+_08045F08:
+	ldr r0, _08045F18 @ =0x00001522 (Vampire Lord)
+	cmp r6, r0
+	bne _08045F10
+	b _08046084
+_08045F10:
+	adds r0, #0x9b
+	cmp r6, r0
+	beq _08045FA2
+	b _080461DE
+	.align 2, 0
+_08045F18: .4byte 0x00001522 @ Vampire Lord
+_08045F1C:
+	ldr r0, _08045F38 @ =0x000018BC (D.D. Survivor)
+	cmp r6, r0
+	bne _08045F24
+	b _08046178
+_08045F24:
+	cmp r6, r0
+	bgt _08045F44
+	ldr r0, _08045F3C @ =0x000016F9 (Manticore of Darkness)
+	cmp r6, r0
+	beq _08045FE4
+	ldr r0, _08045F40 @ =0x0000185C (Sacred Phoenix of Nephthys)
+	cmp r6, r0
+	bne _08045F36
+	b _08046108
+_08045F36:
+	b _080461DE
+	.align 2, 0
+_08045F38: .4byte 0x000018BC @ D.D. Survivor
+_08045F3C: .4byte 0x000016F9 @ Manticore of Darkness
+_08045F40: .4byte 0x0000185C @ Sacred Phoenix of Nephthys
+_08045F44:
+	ldr r0, _08045F68 @ =0x000019F8 (Helios Tris Megiste)
+	cmp r6, r0
+	ble _08045F4C
+	b _080461DE
+_08045F4C:
+	subs r0, #1
+	cmp r6, r0
+	bge _08045F54
+	b _080461DE
+_08045F54:
+	ldr r3, [sp, #0x1c]
+	cmp r3, #0
+	bne _08045F5C
+	b _080461DE
+_08045F5C:
+	ldr r4, [sp, #0x18]
+	cmp r4, #0
+	bne _08045F64
+	b _0804630C
+_08045F64:
+	b _080461C0
+	.align 2, 0
+_08045F68: .4byte 0x000019F8 @ Helios Tris Megiste
+_08045F6C:
+	cmp r1, #0
+	bne _08045F72
+	b _080461DE
+_08045F72:
+	ldr r0, [sp, #0x14]
+	cmp r0, #0
+	bne _08045F7A
+	b _080461DE
+_08045F7A:
+	mov r1, sb
+	ldr r2, [r1]
+	lsls r0, r2, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r2, r2, #2
+	lsrs r2, r2, #0x18
+	lsls r2, r2, #1
+	adds r2, r2, r0
+	movs r1, #0xe
+	bl sub_08048674
+	mov r2, sb
+	ldr r3, [r2]
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r3, r3, #2
+	lsrs r3, r3, #0x18
+	lsls r3, r3, #1
+	orrs r3, r0
+	b _080461B0
+_08045FA2:
+	ldr r3, [sp, #0x1c]
+	cmp r3, #0
+	bne _08045FAA
+	b _080461DE
+_08045FAA:
+	ldr r4, [sp, #0x18]
+	cmp r4, #0
+	bne _08045FB2
+	b _0804630C
+_08045FB2:
+	ldr r1, [sp, #4]
+	ldr r0, [r1, #0xc]
+	movs r1, #0xfa
+	lsls r1, r1, #1
+	ldr r3, _08045FC4 @ =0x00001595 (Cobra Jar)
+	movs r2, #1
+	bl gEngineEffectDiscardDamage_080487DC
+	b _080461DE
+	.align 2, 0
+_08045FC4: .4byte 0x00001595 @ Cobra Jar
+_08045FC8:
+	ldr r2, [sp, #0x18]
+	cmp r2, #0
+	bne _08045FD0
+	b _0804630C
+_08045FD0:
+	movs r1, #0x96
+	lsls r1, r1, #1
+	ldr r3, _08045FE0 @ =0x0000166A (Ojama Trio)
+	mov r0, sl
+	movs r2, #0
+	bl gEngineEffectDiscardDamage_080487DC
+	b _080461DE
+	.align 2, 0
+_08045FE0: .4byte 0x0000166A @ Ojama Trio
+_08045FE4:
+	ldr r3, [sp, #0x14]
+	cmp r3, #0
+	bne _08045FEC
+	b _080461DE
+_08045FEC:
+	mov r4, sb
+	ldr r3, [r4]
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r3, r3, #2
+	lsrs r3, r3, #0x18
+	lsls r3, r3, #1
+	orrs r3, r0
+	b _080461B0
+_08045FFE:
+	ldr r0, [sp, #0x10]
+	cmp r0, #0
+	bne _08046006
+	b _080461DE
+_08046006:
+	ldr r1, [sp, #0x18]
+	cmp r1, #0
+	bne _0804600E
+	b _0804630C
+_0804600E:
+	ldr r2, [sp, #0x14]
+	cmp r2, #0
+	bne _08046016
+	b _080461DE
+_08046016:
+	mov r3, sb
+	ldr r1, [r3]
+	lsls r0, r1, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r2, r1, #0x12
+	lsrs r2, r2, #0x1f
+	adds r0, r0, r2
+	lsls r1, r1, #0x13
+	lsrs r1, r1, #0x13
+	bl gEngineEffectBoostATKBoostDEF_0802FF10
+	cmp r0, #0
+	beq _08046034
+	b _080461DE
+_08046034:
+	mov r4, sb
+	ldr r3, [r4]
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r1, r3, #0x13
+	lsrs r1, r1, #0x13
+	lsls r3, r3, #2
+	lsrs r3, r3, #0x18
+	lsls r3, r3, #1
+	orrs r3, r0
+	b _080461B2
+_0804604A:
+	mov r0, sb
+	ldr r3, [r0]
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1f
+	cmp sl, r0
+	beq _08046058
+	b _080461DE
+_08046058:
+	ldr r1, [sp, #8]
+	cmp r1, #4
+	ble _08046060
+	b _080461DE
+_08046060:
+	ldr r2, [sp, #0x18]
+	cmp r2, #0
+	bne _08046068
+	b _0804630C
+_08046068:
+	ldr r4, [sp, #0x14]
+	cmp r4, #0
+	bne _08046070
+	b _080461DE
+_08046070:
+	ldr r0, [sp, #0xc]
+	cmp r0, #0
+	bne _08046078
+	b _080461DE
+_08046078:
+	lsls r3, r3, #2
+	lsrs r3, r3, #0x18
+	lsls r3, r3, #1
+	mov r1, sl
+	orrs r3, r1
+	b _080461AE
+_08046084:
+	mov r2, sb
+	ldr r1, [r2]
+	lsls r0, r1, #0x12
+	lsrs r0, r0, #0x1f
+	mov ip, r1
+	cmp sl, r0
+	beq _08046094
+	b _080461DE
+_08046094:
+	ldr r3, [sp, #8]
+	cmp r3, #4
+	ble _0804609C
+	b _080461DE
+_0804609C:
+	ldr r4, [sp, #0x1c]
+	cmp r4, #0
+	beq _080460A4
+	b _080461DE
+_080460A4:
+	ldr r0, [sp, #0x18]
+	cmp r0, #0
+	bne _080460AC
+	b _0804630C
+_080460AC:
+	ldr r1, [sp, #0x14]
+	cmp r1, #0
+	bne _080460B4
+	b _080461DE
+_080460B4:
+	ldr r2, [sp, #0xc]
+	cmp r2, #0
+	bne _080460BC
+	b _080461DE
+_080460BC:
+	ldr r1, _080460DC @ =gPlayerCards
+	ldr r3, _080460E0 @ =0x00001CE8
+	adds r0, r1, r3
+	ldr r0, [r0]
+	cmp sl, r0
+	bne _080460E8
+	ldr r4, _080460E4 @ =0x00001CF4
+	adds r0, r1, r4
+	ldr r1, [r0]
+	rsbs r0, r1, #0
+	orrs r0, r1
+	asrs r2, r0, #0x1f
+	movs r0, #2
+	ands r2, r0
+	b _080460EA
+	.align 2, 0
+_080460DC: .4byte gPlayerCards
+_080460E0: .4byte 0x00001CE8
+_080460E4: .4byte 0x00001CF4
+_080460E8:
+	movs r2, #1
+_080460EA:
+	adds r1, r6, #0
+	lsls r2, r2, #4
+	movs r0, #1
+	orrs r2, r0
+	mov r3, ip
+	lsls r0, r3, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r3, r3, #0x12
+	lsrs r3, r3, #0x1f
+	orrs r3, r0
+	mov r0, sl
+	bl sub_0804A484
+	b _080461DE
+_08046108:
+	ldr r4, [sp, #8]
+	cmp r4, #4
+	bgt _080461DE
+	ldr r0, [sp, #0x1c]
+	cmp r0, #0
+	bne _080461DE
+	ldr r1, [sp, #0x18]
+	cmp r1, #0
+	bne _0804611C
+	b _0804630C
+_0804611C:
+	ldr r2, [sp, #0x14]
+	cmp r2, #0
+	beq _080461DE
+	mov r3, sb
+	ldr r2, [r3]
+	lsls r1, r2, #0x12
+	lsrs r1, r1, #0x1f
+	ldr r3, _0804614C @ =gPlayerCards
+	ldr r4, _08046150 @ =0x00001CE8
+	adds r0, r3, r4
+	ldr r0, [r0]
+	mov ip, r2
+	cmp r1, r0
+	bne _08046158
+	ldr r1, _08046154 @ =0x00001CF4
+	adds r0, r3, r1
+	ldr r1, [r0]
+	rsbs r0, r1, #0
+	orrs r0, r1
+	asrs r2, r0, #0x1f
+	movs r0, #2
+	ands r2, r0
+	b _0804615A
+	.align 2, 0
+_0804614C: .4byte gPlayerCards
+_08046150: .4byte 0x00001CE8
+_08046154: .4byte 0x00001CF4
+_08046158:
+	movs r2, #1
+_0804615A:
+	mov r3, ip
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1f
+	adds r1, r6, #0
+	lsls r2, r2, #4
+	movs r3, #1
+	orrs r2, r3
+	mov r4, ip
+	lsls r3, r4, #2
+	lsrs r3, r3, #0x18
+	lsls r3, r3, #1
+	orrs r3, r0
+	bl sub_0804A484
+	b _080461DE
+_08046178:
+	ldr r0, [sp, #0x10]
+	cmp r0, #0
+	beq _080461DE
+	ldr r0, [sp]
+	lsls r0, r0, #9
+	lsrs r0, r0, #0x1c
+	cmp r0, #0xf
+	bne _080461DE
+	ldr r1, [sp, #4]
+	ldrh r0, [r1, #8]
+	cmp r0, #0
+	beq _080461DE
+	ldr r2, [sp, #0x1c]
+	cmp r2, #0
+	beq _0804619E
+	ldr r0, _080461BC @ =gUnk_0201BB90
+	ldr r0, [r0, #0x24]
+	cmp r0, r6
+	beq _080461DE
+_0804619E:
+	mov r4, sb
+	ldr r3, [r4]
+	lsls r0, r3, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r3, r3, #0x12
+	lsrs r3, r3, #0x1f
+	orrs r3, r0
+_080461AE:
+	mov r0, sl
+_080461B0:
+	adds r1, r6, #0
+_080461B2:
+	movs r2, #1
+	bl sub_0804A484
+	b _080461DE
+	.align 2, 0
+_080461BC: .4byte gUnk_0201BB90
+_080461C0:
+	ldr r0, [sp, #0x14]
+	cmp r0, #0
+	beq _080461DE
+	mov r1, sb
+	ldr r3, [r1]
+	lsls r0, r3, #0x12
+	lsrs r0, r0, #0x1f
+	adds r1, r6, #0
+	lsls r3, r3, #2
+	lsrs r3, r3, #0x18
+	lsls r3, r3, #1
+	orrs r3, r0
+	movs r2, #1
+	bl sub_0804A484
+_080461DE:
+	ldr r2, [sp, #0x18]
+	cmp r2, #0
+	bne _080461E6
+	b _0804630C
+_080461E6:
+	ldr r3, [sp, #0x10]
+	cmp r3, #0
+	beq _0804625C
+	ldr r1, _08046234 @ =0x00001782 (Mokey Mokey)
+	mov r0, sl
+	bl gEngineEffectSpecialSummonBoostATK_08032C94
+	cmp r0, #0
+	beq _0804625C
+	ldr r1, _08046238 @ =0x00001843 (Mokey Mokey Smackdown)
+	movs r2, #1
+	rsbs r2, r2, #0
+	mov r0, sl
+	bl sub_08032654
+	cmp r0, #0
+	beq _0804625C
+	ldr r4, [sp, #0x1c]
+	cmp r4, #0
+	beq _08046240
+	ldr r3, _0804623C @ =gUnk_0201BB90
+	mov r1, sb
+	ldr r0, [r1]
+	lsls r1, r0, #2
+	lsrs r1, r1, #0x18
+	lsls r1, r1, #1
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	adds r1, r1, r0
+	ldr r0, [r3, #0x70]
+	movs r2, #0
+	cmp r0, r1
+	bne _0804622A
+	movs r2, #0x38
+_0804622A:
+	adds r0, r3, #0
+	adds r0, #0x50
+	adds r0, r2, r0
+	ldr r0, [r0]
+	b _0804624C
+	.align 2, 0
+_08046234: .4byte 0x00001782 @ Mokey Mokey
+_08046238: .4byte 0x00001843 @ Mokey Mokey Smackdown
+_0804623C: .4byte gUnk_0201BB90
+_08046240:
+	mov r0, sl
+	ldr r1, [sp, #8]
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
+	lsls r0, r0, #0x10
+	lsrs r0, r0, #0x10
+_0804624C:
+	cmp r0, #0x11
+	bne _0804625C
+	ldr r1, _0804629C @ =0x00001843 (Mokey Mokey Smackdown)
+	mov r0, sl
+	movs r2, #1
+	movs r3, #0
+	bl sub_0804A484
+_0804625C:
+	ldr r2, [sp, #0x18]
+	cmp r2, #0
+	beq _0804630C
+	ldr r3, [sp, #4]
+	ldrh r0, [r3, #8]
+	cmp r0, #0
+	beq _0804630C
+	ldr r4, [sp, #0x10]
+	cmp r4, #0
+	beq _0804630C
+	ldr r0, [sp, #0x1c]
+	cmp r0, #0
+	beq _080462A4
+	ldr r3, _080462A0 @ =gUnk_0201BB90
+	mov r1, sb
+	ldr r0, [r1]
+	lsls r1, r0, #2
+	lsrs r1, r1, #0x18
+	lsls r1, r1, #1
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	adds r1, r1, r0
+	ldr r0, [r3, #0x70]
+	movs r2, #0
+	cmp r0, r1
+	bne _08046292
+	movs r2, #0x38
+_08046292:
+	adds r0, r3, #0
+	adds r0, #0x50
+	adds r0, r2, r0
+	ldr r0, [r0]
+	b _080462B0
+	.align 2, 0
+_0804629C: .4byte 0x00001843 @ Mokey Mokey Smackdown
+_080462A0: .4byte gUnk_0201BB90
+_080462A4:
+	mov r0, sl
+	ldr r1, [sp, #8]
+	bl gEngineEffectSpecialSummonChangePosition_0803ABF0
+	lsls r0, r0, #0x10
+	lsrs r0, r0, #0x10
+_080462B0:
+	mov r8, r0
+	mov r2, r8
+	cmp r2, #0xb
+	bne _080462E4
+	movs r5, #0
+_080462BA:
+	movs r4, #0
+	adds r7, r5, #1
+_080462BE:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	ldr r2, _08046364 @ =0x00001862 (Maji-Gire Panda)
+	bl sub_08032548
+	cmp r0, #0
+	beq _080462D8
+	adds r0, r5, #0
+	adds r1, r4, #0
+	movs r2, #4
+	movs r3, #1
+	bl sub_0804A970
+_080462D8:
+	adds r4, #1
+	cmp r4, #4
+	ble _080462BE
+	adds r5, r7, #0
+	cmp r5, #1
+	ble _080462BA
+_080462E4:
+	mov r3, r8
+	cmp r3, #0x10
+	bne _0804630C
+	movs r4, #0
+_080462EC:
+	mov r0, sl
+	adds r1, r4, #0
+	ldr r2, _08046368 @ =0x00001875 (Firebird)
+	bl sub_08032548
+	cmp r0, #0
+	beq _08046306
+	mov r0, sl
+	adds r1, r4, #0
+	movs r2, #4
+	movs r3, #1
+	bl sub_0804A970
+_08046306:
+	adds r4, #1
+	cmp r4, #4
+	ble _080462EC
+_0804630C:
+	ldr r0, [sp]
+	lsls r0, r0, #9
+	lsrs r0, r0, #0x1c
+	cmp r0, #0xb
+	bne _08046352
+	ldr r4, [sp, #8]
+	cmp r4, #4
+	bgt _08046352
+	movs r5, #0
+_0804631E:
+	movs r4, #0
+	adds r7, r5, #1
+_08046322:
+	adds r0, r5, #0
+	adds r1, r4, #0
+	ldr r2, _0804636C @ =0x000018B2 (Criosphinx)
+	bl sub_08032548
+	cmp r0, #0
+	beq _08046346
+	mov r1, sb
+	ldr r0, [r1]
+	lsls r0, r0, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r0, r0, #3
+	movs r2, #1
+	lsls r2, r0
+	adds r0, r5, #0
+	adds r1, r4, #0
+	bl sub_08045268
+_08046346:
+	adds r4, #1
+	cmp r4, #4
+	ble _08046322
+	adds r5, r7, #0
+	cmp r5, #1
+	ble _0804631E
+_08046352:
+	ldr r2, [sp, #0x20]
+	cmp r2, #2
+	beq _080463F8
+	cmp r2, #2
+	bgt _08046370
+	cmp r2, #1
+	beq _08046378
+	b _080463F8
+	.align 2, 0
+_08046364: .4byte 0x00001862 @ Maji-Gire Panda
+_08046368: .4byte 0x00001875 @ Firebird
+_0804636C: .4byte 0x000018B2 @ Criosphinx
+_08046370:
+	ldr r3, [sp, #0x20]
+	cmp r3, #3
+	beq _080463BC
+	b _080463F8
+_08046378:
+	mov r4, sb
+	ldr r2, [r4]
+	lsls r0, r2, #0x12
+	lsrs r0, r0, #0x1f
+	lsls r3, r0, #0x1f
+	ldr r1, [sp]
+	lsls r0, r1, #9
+	lsrs r0, r0, #0x1c
+	lsls r5, r0, #0x10
+	lsls r0, r1, #0xf
+	adds r7, r1, #0
+	mov ip, r2
+	cmp r0, #0
+	bge _0804639A
+	movs r4, #0xb1
+	lsls r4, r4, #0x16
+	b _0804639E
+_0804639A:
+	movs r4, #0xd9
+	lsls r4, r4, #0x16
+_0804639E:
+	orrs r4, r5
+	orrs r4, r3
+	orrs r4, r6
+	mov r1, ip
+	lsls r0, r1, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r1, r1, #0x12
+	lsrs r1, r1, #0x1f
+	orrs r1, r0
+	adds r0, r4, #0
+	adds r2, r7, #0
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
+	b _080463F8
+_080463BC:
+	mov r2, sl
+	lsls r3, r2, #0x1f
+	ldr r4, [sp, #8]
+	lsls r5, r4, #0x10
+	adds r2, r6, #0
+	ldr r0, [sp]
+	lsls r1, r0, #0xf
+	adds r7, r0, #0
+	cmp r1, #0
+	bge _080463D8
+	ldr r4, _080463D4 @ =0x2C200000
+	b _080463DA
+	.align 2, 0
+_080463D4: .4byte 0x2C200000
+_080463D8:
+	ldr r4, _08046408 @ =0x36200000
+_080463DA:
+	orrs r4, r5
+	orrs r4, r3
+	orrs r4, r2
+	mov r0, sb
+	ldr r1, [r0]
+	lsls r0, r1, #2
+	lsrs r0, r0, #0x18
+	lsls r0, r0, #1
+	lsls r1, r1, #0x12
+	lsrs r1, r1, #0x1f
+	orrs r1, r0
+	adds r0, r4, #0
+	adds r2, r7, #0
+	bl gEngineEffectSpecialSummonSendToGY_0804C910
+_080463F8:
+	add sp, #0x24
+	pop {r3, r4, r5}
+	mov r8, r3
+	mov sb, r4
+	mov sl, r5
+	pop {r4, r5, r6, r7}
+	pop {r0}
+	bx r0
+	.align 2, 0
+_08046408: .4byte 0x36200000
