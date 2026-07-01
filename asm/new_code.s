@@ -4363,3 +4363,91 @@ _0805D738:
 	pop {r4, r5, r6}
 	pop {r1}
 	bx r1
+
+@ ============================================================================
+@ Fencing Fire Ferret (replaces Flame Viper, KONAMI_FLAME_VIPER = 0x122A)
+@ GY trigger (slot-4 in gCardEffects3):
+@ "If destroyed and sent to GY: destroy 1 face-up monster the opponent
+@ controls (auto-selects the first found in zones 0-4), then inflict
+@ 500 damage to your opponent."
+@ Zone check mirrors Armed Dragon LV5's slot-1 (gCardEffectSpecialSummonSendToGY_080546E0):
+@ gUnk_0201C510[opponentIdx * 0x868 + zone * 20] word[0] bits[12:0] != 0 (card present)
+@ AND halfword[8] != 0 (face-up / ATK present)
+@ Destruction: gEngineEffectBoostATKDestroy_08047990(self, opponentIdx, zone) => 1 card.
+@ ============================================================================
+
+	thumb_func_start gCardEffectFFF_GYTrigger
+gCardEffectFFF_GYTrigger:
+	push {r4, r5, r6, r7, lr}
+	adds r5, r0, #0            @ r5 = self
+
+	@ Skip if negated (bit 2 of self[4])
+	movs r0, #4
+	ldrb r1, [r5, #4]
+	ands r0, r1
+	bne _FFF_GY_Done
+
+	@ r6 = opponentIdx = 1 - self's playerIdx
+	ldrb r1, [r5, #2]
+	lsls r0, r1, #0x1f
+	lsrs r0, r0, #0x1f        @ r0 = playerIdx (bit 0)
+	movs r6, #1
+	subs r6, r6, r0            @ r6 = opponentIdx
+
+	@ r7 = base ptr: gUnk_0201C510 + opponentIdx * 0x868
+	ldr r7, _FFF_ZoneBase
+	ldr r1, _FFF_Stride        @ r1 = 0x868
+	adds r2, r6, #0            @ r2 = opponentIdx
+	muls r1, r2, r1            @ r1 = opponentIdx * 0x868
+	adds r7, r7, r1
+
+	@ Iterate monster zones 0-4, destroy first valid face-up opponent monster
+	movs r4, #0                @ r4 = zone
+_FFF_GY_ZoneLoop:
+	@ Compute zone entry ptr: r7 + zone * 20
+	adds r0, r4, #0
+	lsls r2, r0, #2            @ r2 = zone * 4
+	adds r2, r2, r0            @ r2 = zone * 5
+	lsls r2, r2, #2            @ r2 = zone * 20
+	adds r2, r7, r2            @ r2 = entry ptr
+
+	@ Check card present: entry[0] << 19 != 0
+	ldr r0, [r2]
+	lsls r0, r0, #0x13
+	cmp r0, #0
+	beq _FFF_GY_NextZone
+
+	@ Check face-up / ATK: entry[8] != 0
+	ldrh r0, [r2, #8]
+	cmp r0, #0
+	beq _FFF_GY_NextZone
+
+	@ Found target — destroy it (destroys exactly 1 card)
+	adds r0, r5, #0            @ self
+	adds r1, r6, #0            @ opponentIdx
+	adds r2, r4, #0            @ zone
+	bl gEngineEffectBoostATKDestroy_08047990
+	cmp r0, #0
+	beq _FFF_GY_Done           @ destroy failed, skip damage
+
+	@ Inflict 500 damage to opponent
+	ldr r2, _FFF_GY_Damage
+	adds r1, r6, #0            @ opponentIdx
+	adds r0, r5, #0            @ self
+	bl gEngineEffectDiscardDamage_080487B0
+	b _FFF_GY_Done
+
+_FFF_GY_NextZone:
+	adds r4, #1
+	cmp r4, #4
+	ble _FFF_GY_ZoneLoop
+
+_FFF_GY_Done:
+	movs r0, #0
+	pop {r4, r5, r6, r7}
+	pop {r1}
+	bx r1
+	.align 2, 0
+_FFF_ZoneBase:  .4byte gUnk_0201C510
+_FFF_Stride:    .4byte 0x00000868
+_FFF_GY_Damage: .4byte 500

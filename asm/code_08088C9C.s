@@ -15733,7 +15733,7 @@ _08090538:
 _08090540: .4byte gCardEffects2
 _08090544:
 	ldr r5, _0809054C @ =gCardEffects3
-	movs r2, #0xb8
+	movs r2, #0xb9
 	b _0809056C
 	.align 2, 0
 _0809054C: .4byte gCardEffects3

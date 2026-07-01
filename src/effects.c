@@ -546,6 +546,7 @@ extern void gCardEffectFusionSummonNegate_08071170(void);
 extern void gCardEffectFusionSummonNegate_0807136C(void);
 extern void gCardEffectFusionSummonTakeControl_08063D38(void);
 extern void gCardEffectFusionSummonTakeControl_0807D65C(void);
+extern void gCardEffectFFF_GYTrigger(void);
 extern void gCardEffectGainLPDamage_0805E30C(void);
 extern void gCardEffectGainLPDamage_0805F85C(void);
 extern void gCardEffectGainLPDamage_0806D2D0(void);
@@ -2516,6 +2517,7 @@ const struct CardEffects gCardEffects3[] = {
     { KONAMI_GODDESS_OF_WHIM                            , 0, { gCardEffectRNG_080670A0                          , NULL                                             , gCardEffectDestroyRNG_0805C1C0                   , gCardEffectDestroySpecialSummon_080563A4         , NULL                                              } },
     { KONAMI_GALE_DOGRA_NONE                            , 0, { gCardEffectSendToGYDamage_080672A4               , NULL                                             , gCardEffectSendToGYDamage_0805C608               , gCardEffectDamage_0805635C                       , NULL                                              } },
     { KONAMI_CANNON_SOLDIER                             , 0, { gCardEffectDamageGraveyard_080655EC              , NULL                                             , gCardEffectTributeDamage_0805C3EC                , gCardEffectTribute_080567A0                      , NULL                                              } },
+    { KONAMI_FLAME_VIPER                                , 0, { NULL                                             , NULL                                             , NULL                                             , NULL                                             , gCardEffectFFF_GYTrigger                          } },
     { KONAMI_MAGICAL_LABYRINTH                          , 0, { gCardEffectSpecialSummonEquip_08067B5C           , NULL                                             , gCardEffectSpecialSummonEquip_0805C724           , gCardEffectSpecialSummonEquip_080568D0           , NULL                                              } },
     { KONAMI_RELINQUISHED                               , 0, { gCardEffectDestroyEquip_08068350                 , gCardEffectTakeControlDestroy_0804F618           , gCardEffectDestroyEquip_0805CA50                 , gCardEffectDestroySpecialSummon_080563A4         , gCardEffectDestroyPreventAttack_080824A4          } },
     { KONAMI_THOUSAND_EYES_RESTRICT                     , 0, { gCardEffectDestroyEquip_08068350                 , gCardEffectTakeControlDestroy_0804F618           , gCardEffectDestroyEquip_0805CA50                 , gCardEffectDestroySpecialSummon_080563A4         , gCardEffectDestroyPreventAttack_080824A4          } },
