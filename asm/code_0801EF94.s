@@ -49185,7 +49185,7 @@ _080376DE:
 	ldr r1, _08037750 @ =0x00000868
 	adds r2, r0, #0
 	muls r2, r1, r2
-	ldr r1, _08037754 @ =gUnk_0201C600
+	ldr r1, _08037754 @ =gPlayerHand
 	ldr r3, _08037758 @ =0xFFFFFEEC
 	adds r0, r1, r3
 	adds r3, r2, r0
@@ -49224,7 +49224,7 @@ _0803772C:
 	.align 2, 0
 _0803774C: .4byte gPlayerCards
 _08037750: .4byte 0x00000868
-_08037754: .4byte gUnk_0201C600
+_08037754: .4byte gPlayerHand
 _08037758: .4byte 0xFFFFFEEC
 _0803775C:
 	adds r5, #4
@@ -49416,7 +49416,7 @@ _080378B4:
 	adds r0, r5, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _080378E0 @ =gUnk_0201C600
+	ldr r0, _080378E0 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -49431,7 +49431,7 @@ _080378B4:
 	.align 2, 0
 _080378D8: .4byte gPlayerCards
 _080378DC: .4byte 0x00000868
-_080378E0: .4byte gUnk_0201C600
+_080378E0: .4byte gPlayerHand
 _080378E4:
 	adds r4, #1
 	ldr r3, _08037900 @ =0x00000868
@@ -49474,7 +49474,7 @@ _08037924:
 	adds r0, r5, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _08037950 @ =gUnk_0201C600
+	ldr r0, _08037950 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -49489,7 +49489,7 @@ _08037924:
 	.align 2, 0
 _08037948: .4byte gPlayerCards
 _0803794C: .4byte 0x00000868
-_08037950: .4byte gUnk_0201C600
+_08037950: .4byte gPlayerHand
 _08037954:
 	adds r4, #1
 	ldr r3, _08037970 @ =0x00000868
@@ -57449,13 +57449,13 @@ _0803B344:
 	ands r0, r3
 	ldr r1, _0803B354 @ =0x00000868
 	muls r0, r1, r0
-	ldr r1, _0803B358 @ =gUnk_0201C600
+	ldr r1, _0803B358 @ =gPlayerHand
 	adds r0, r0, r1
 	lsls r1, r2, #2
 	b _0803B396
 	.align 2, 0
 _0803B354: .4byte 0x00000868
-_0803B358: .4byte gUnk_0201C600
+_0803B358: .4byte gPlayerHand
 _0803B35C:
 	adds r2, r1, r2
 	cmp r2, #0xa
@@ -57584,13 +57584,13 @@ _0803B448:
 	ldr r2, _0803B45C @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _0803B460 @ =gUnk_0201C600
+	ldr r0, _0803B460 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	b _0803B49E
 	.align 2, 0
 _0803B45C: .4byte 0x00000868
-_0803B460: .4byte gUnk_0201C600
+_0803B460: .4byte gPlayerHand
 _0803B464:
 	adds r1, r4, r2
 	cmp r1, #0xa
@@ -57718,13 +57718,13 @@ _0803B550:
 	ldr r2, _0803B564 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _0803B568 @ =gUnk_0201C600
+	ldr r0, _0803B568 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r1, [r1]
 	b _0803B5A6
 	.align 2, 0
 _0803B564: .4byte 0x00000868
-_0803B568: .4byte gUnk_0201C600
+_0803B568: .4byte gPlayerHand
 _0803B56C:
 	adds r1, r4, r2
 	cmp r1, #0xa
@@ -69266,7 +69266,7 @@ _08041144:
 	ands r0, r1
 	ldr r1, _0804120C @ =0x00000868
 	muls r1, r0, r1
-	ldr r0, _08041210 @ =gUnk_0201C600
+	ldr r0, _08041210 @ =gPlayerHand
 	adds r1, r1, r0
 	mov r2, r8
 	lsls r0, r2, #2
@@ -69359,7 +69359,7 @@ _080411FC:
 	b _08041228
 	.align 2, 0
 _0804120C: .4byte 0x00000868
-_08041210: .4byte gUnk_0201C600
+_08041210: .4byte gPlayerHand
 _08041214: .4byte gUnk_0201C4D8
 _08041218: .4byte 0xFFFFC03F
 _0804121C: .4byte 0xFFFF7FFF
@@ -69560,7 +69560,7 @@ _080413A4:
 	ands r0, r5
 	ldr r1, _08041458 @ =0x00000868
 	muls r1, r0, r1
-	ldr r0, _0804145C @ =gUnk_0201C600
+	ldr r0, _0804145C @ =gPlayerHand
 	adds r1, r1, r0
 	mov r2, sb
 	lsls r0, r2, #2
@@ -69645,7 +69645,7 @@ _0804144A:
 	b _08041474
 	.align 2, 0
 _08041458: .4byte 0x00000868
-_0804145C: .4byte gUnk_0201C600
+_0804145C: .4byte gPlayerHand
 _08041460: .4byte gUnk_0201C4D8
 _08041464: .4byte 0xFFFFC03F
 _08041468: .4byte 0xFFFF7FFF
@@ -75859,7 +75859,7 @@ _080444AC:
 	ldr r1, _08044534 @ =0x00000868
 	muls r0, r1, r0
 	adds r0, r6, r0
-	ldr r1, _08044538 @ =gUnk_0201C600
+	ldr r1, _08044538 @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -75877,7 +75877,7 @@ _080444E0:
 	ldr r1, _08044534 @ =0x00000868
 	adds r4, r0, #0
 	muls r4, r1, r4
-	ldr r5, _08044538 @ =gUnk_0201C600
+	ldr r5, _08044538 @ =gPlayerHand
 	adds r1, r4, r5
 	adds r1, r1, r6
 	movs r2, #0x80
@@ -75912,7 +75912,7 @@ _08044520:
 _0804452C: .4byte 0x00001332 @ Banisher of the Light
 _08044530: .4byte 0x000019DA @ Samsara
 _08044534: .4byte 0x00000868
-_08044538: .4byte gUnk_0201C600
+_08044538: .4byte gPlayerHand
 _0804453C: .4byte 0x000014E2 @ Super Rejuvenation
 
 	thumb_func_start sub_08044540
@@ -88545,7 +88545,7 @@ gEngineEffectSpecialSummonBoostATK_0804A334: @ 0x0804A334
 	adds r6, r0, #0
 	muls r6, r2, r6
 	adds r1, r1, r6
-	ldr r7, _0804A408 @ =gUnk_0201C600
+	ldr r7, _0804A408 @ =gPlayerHand
 	adds r1, r1, r7
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -88601,7 +88601,7 @@ _0804A3AA:
 	ldr r0, _0804A404 @ =0x00000868
 	muls r0, r6, r0
 	adds r3, r3, r0
-	ldr r0, _0804A408 @ =gUnk_0201C600
+	ldr r0, _0804A408 @ =gPlayerHand
 	adds r7, r3, r0
 	ldr r3, [r7]
 	lsls r0, r3, #2
@@ -88627,7 +88627,7 @@ _0804A3AA:
 	b _0804A456
 	.align 2, 0
 _0804A404: .4byte 0x00000868
-_0804A408: .4byte gUnk_0201C600
+_0804A408: .4byte gPlayerHand
 _0804A40C: .4byte 0x0000804F
 _0804A410: .4byte 0x0000198A @ Bubble Illusion
 _0804A414:
@@ -121942,7 +121942,7 @@ sub_080592E4: @ 0x080592E4
 	ldr r2, _0805933C @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _08059340 @ =gUnk_0201C600
+	ldr r0, _08059340 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -121963,7 +121963,7 @@ sub_080592E4: @ 0x080592E4
 _08059334: .4byte gUnk_0201B290
 _08059338: .4byte 0x00000484
 _0805933C: .4byte 0x00000868
-_08059340: .4byte gUnk_0201C600
+_08059340: .4byte gPlayerHand
 _08059344:
 	movs r0, #0
 _08059346:
@@ -124080,7 +124080,7 @@ gEngineEffectSendToGYGraveyard_0805A354: @ 0x0805A354
 	ldr r1, _0805A3D4 @ =0x00000868
 	muls r0, r1, r0
 	adds r4, r4, r0
-	ldr r0, _0805A3D8 @ =gUnk_0201C600
+	ldr r0, _0805A3D8 @ =gPlayerHand
 	adds r4, r4, r0
 	ldr r0, [r4]
 	lsls r0, r0, #0x13
@@ -124127,7 +124127,7 @@ gEngineEffectSendToGYGraveyard_0805A354: @ 0x0805A354
 	bx r1
 	.align 2, 0
 _0805A3D4: .4byte 0x00000868
-_0805A3D8: .4byte gUnk_0201C600
+_0805A3D8: .4byte gPlayerHand
 _0805A3DC: .4byte 0xFFFF803F
 
 	thumb_func_start gEngineEffectSpecialSummonDiscard_0805A3E0
@@ -125869,7 +125869,7 @@ gEngineEffectSendToGYGraveyard_0805B164: @ 0x0805B164
 	ldr r1, _0805B1E0 @ =0x00000868
 	muls r0, r1, r0
 	adds r4, r4, r0
-	ldr r0, _0805B1E4 @ =gUnk_0201C600
+	ldr r0, _0805B1E4 @ =gPlayerHand
 	adds r4, r4, r0
 	ldr r0, [r4]
 	lsls r1, r0, #2
@@ -125897,7 +125897,7 @@ gEngineEffectSendToGYGraveyard_0805B164: @ 0x0805B164
 	bx r1
 	.align 2, 0
 _0805B1E0: .4byte 0x00000868
-_0805B1E4: .4byte gUnk_0201C600
+_0805B1E4: .4byte gPlayerHand
 _0805B1E8: .4byte 0xFFFF803F
 _0805B1EC: .4byte 0xFFFFF03F
 
@@ -127619,7 +127619,7 @@ _0805BF56:
 	adds r0, r1, #0
 	muls r0, r3, r0
 	add r0, sb
-	ldr r1, _0805BF9C @ =gUnk_0201C600
+	ldr r1, _0805BF9C @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r2, [r0]
 	lsls r0, r2, #0x13
@@ -127650,7 +127650,7 @@ _0805BF84:
 	.align 2, 0
 _0805BF94: .4byte gPlayerCards
 _0805BF98: .4byte 0x00000868
-_0805BF9C: .4byte gUnk_0201C600
+_0805BF9C: .4byte gPlayerHand
 _0805BFA0:
 	cmp r6, #8
 	beq _0805BFB2
@@ -127682,7 +127682,7 @@ _0805BFCA:
 	muls r5, r0, r5
 	mov r1, sb
 	adds r0, r1, r5
-	ldr r7, _0805C038 @ =gUnk_0201C600
+	ldr r7, _0805C038 @ =gPlayerHand
 	adds r0, r0, r7
 	ldr r0, [r0]
 	lsls r3, r0, #2
@@ -127733,7 +127733,7 @@ _0805C024:
 	bx r1
 	.align 2, 0
 _0805C034: .4byte 0x00000868
-_0805C038: .4byte gUnk_0201C600
+_0805C038: .4byte gPlayerHand
 _0805C03C: .4byte 0x000012A1 @ Parasite Paracide
 _0805C040: .4byte 0xFFFFFEEC
 
@@ -127802,7 +127802,7 @@ _0805C0B2:
 	mov r0, sl
 	muls r0, r3, r0
 	add r0, r8
-	ldr r1, _0805C170 @ =gUnk_0201C600
+	ldr r1, _0805C170 @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r2, [r0]
 	lsls r0, r2, #0x13
@@ -127846,7 +127846,7 @@ _0805C102:
 	muls r4, r7, r4
 	mov r1, r8
 	adds r0, r1, r4
-	ldr r6, _0805C170 @ =gUnk_0201C600
+	ldr r6, _0805C170 @ =gPlayerHand
 	adds r0, r0, r6
 	ldr r0, [r0]
 	lsls r3, r0, #2
@@ -127898,7 +127898,7 @@ _0805C158:
 	.align 2, 0
 _0805C168: .4byte gPlayerCards
 _0805C16C: .4byte 0x00000868
-_0805C170: .4byte gUnk_0201C600
+_0805C170: .4byte gPlayerHand
 _0805C174: .4byte 0x000012A1 @ Parasite Paracide
 _0805C178: .4byte 0xFFFFFEEC
 
@@ -139902,7 +139902,7 @@ _080614C2:
 	adds r0, r1, #0
 	muls r0, r3, r0
 	adds r2, r2, r0
-	ldr r0, _0806150C @ =gUnk_0201C600
+	ldr r0, _0806150C @ =gPlayerHand
 	adds r2, r2, r0
 	ldr r0, [r2]
 	lsls r0, r0, #0x13
@@ -139927,7 +139927,7 @@ _080614FC: .4byte 0x00001332 @ Banisher of the Light
 _08061500: .4byte 0x00000868
 _08061504: .4byte gUnk_0201C510
 _08061508: .4byte gPlayerCards
-_0806150C: .4byte gUnk_0201C600
+_0806150C: .4byte gPlayerHand
 _08061510:
 	adds r5, #1
 	ldrb r2, [r6, #2]
@@ -140361,7 +140361,7 @@ _0806180C:
 	adds r0, r1, #0
 	muls r0, r3, r0
 	adds r2, r2, r0
-	ldr r0, _08061870 @ =gUnk_0201C600
+	ldr r0, _08061870 @ =gPlayerHand
 	adds r2, r2, r0
 	ldr r0, [r2]
 	lsls r0, r0, #0x13
@@ -140403,7 +140403,7 @@ _0806185E:
 	.align 2, 0
 _08061868: .4byte gPlayerCards
 _0806186C: .4byte 0x00000868
-_08061870: .4byte gUnk_0201C600
+_08061870: .4byte gPlayerHand
 
 	@ Self-Destruct Button
 	thumb_func_start gCardEffectUnknown_08061874
@@ -141740,7 +141740,7 @@ _080621A6:
 	adds r0, r1, #0
 	muls r0, r3, r0
 	adds r2, r2, r0
-	ldr r0, _0806220C @ =gUnk_0201C600
+	ldr r0, _0806220C @ =gPlayerHand
 	adds r2, r2, r0
 	ldr r0, [r2]
 	lsls r0, r0, #0x13
@@ -141779,7 +141779,7 @@ _080621F6:
 _08062200: .4byte 0x00001332 @ Banisher of the Light
 _08062204: .4byte gPlayerCards
 _08062208: .4byte 0x00000868
-_0806220C: .4byte gUnk_0201C600
+_0806220C: .4byte gPlayerHand
 _08062210:
 	movs r0, #2
 	b _08062238
@@ -156336,7 +156336,7 @@ _08068A9E:
 	adds r1, r0, #0
 	ldr r2, _08068ABC @ =0x00000868
 	muls r2, r1, r2
-	ldr r1, _08068AC0 @ =gUnk_0201C600
+	ldr r1, _08068AC0 @ =gPlayerHand
 	adds r2, r2, r1
 	lsls r1, r5, #2
 	adds r2, r2, r1
@@ -156346,7 +156346,7 @@ _08068A9E:
 	b _08068B4A
 	.align 2, 0
 _08068ABC: .4byte 0x00000868
-_08068AC0: .4byte gUnk_0201C600
+_08068AC0: .4byte gPlayerHand
 _08068AC4:
 	ldr r3, _08068AD0 @ =0x000004A4
 	adds r0, r6, r3
@@ -156370,7 +156370,7 @@ _08068AD4:
 	lsrs r2, r0, #0x1f
 	ldr r1, _08068B18 @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _08068B1C @ =gUnk_0201C600
+	ldr r2, _08068B1C @ =gPlayerHand
 	adds r1, r1, r2
 	lsls r3, r3, #2
 	adds r1, r1, r3
@@ -156388,7 +156388,7 @@ _08068AD4:
 	.align 2, 0
 _08068B14: .4byte 0x000004A4
 _08068B18: .4byte 0x00000868
-_08068B1C: .4byte gUnk_0201C600
+_08068B1C: .4byte gPlayerHand
 _08068B20:
 	movs r1, #0x95
 	lsls r1, r1, #3
@@ -157400,7 +157400,7 @@ _080692A6:
 	lsls r0, r4, #2
 	adds r6, r0, r1
 _080692C0:
-	ldr r0, _0806930C @ =gUnk_0201C600
+	ldr r0, _0806930C @ =gPlayerHand
 	adds r0, r6, r0
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -157435,7 +157435,7 @@ _080692FE:
 	.align 2, 0
 _08069304: .4byte gPlayerCards
 _08069308: .4byte 0x00000868
-_0806930C: .4byte gUnk_0201C600
+_0806930C: .4byte gPlayerHand
 _08069310:
 	ldr r2, _080693AC @ =gPlayerCards
 	movs r0, #1
@@ -162460,7 +162460,7 @@ _0806B990:
 	ands r0, r4
 	ldr r1, _0806B9E4 @ =0x00000868
 	muls r1, r0, r1
-	ldr r0, _0806B9E8 @ =gUnk_0201C600
+	ldr r0, _0806B9E8 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r2, _0806B9EC @ =0x00001C88
 	adds r0, r0, r2
@@ -162496,7 +162496,7 @@ _0806B990:
 	b _0806BA66
 	.align 2, 0
 _0806B9E4: .4byte 0x00000868
-_0806B9E8: .4byte gUnk_0201C600
+_0806B9E8: .4byte gPlayerHand
 _0806B9EC: .4byte 0x00001C88
 _0806B9F0:
 	movs r0, #1
@@ -166765,7 +166765,7 @@ gEngineEffectSpecialSummonSendToGY_0806DB10: @ 0x0806DB10
 	ldr r2, _0806DB68 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _0806DB6C @ =gUnk_0201C600
+	ldr r0, _0806DB6C @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -166785,7 +166785,7 @@ gEngineEffectSpecialSummonSendToGY_0806DB10: @ 0x0806DB10
 _0806DB60: .4byte gUnk_0201B290
 _0806DB64: .4byte 0x00000484
 _0806DB68: .4byte 0x00000868
-_0806DB6C: .4byte gUnk_0201C600
+_0806DB6C: .4byte gPlayerHand
 _0806DB70:
 	cmp r0, #2
 	beq _0806DB9E
@@ -167206,7 +167206,7 @@ _0806DEB2:
 	adds r1, r2, #0
 	muls r1, r6, r1
 	adds r1, r3, r1
-	ldr r5, _0806DF10 @ =gUnk_0201C600
+	ldr r5, _0806DF10 @ =gPlayerHand
 	adds r1, r1, r5
 	ldr r2, [r1]
 	lsls r2, r2, #2
@@ -167231,7 +167231,7 @@ _0806DF00: .4byte 0x00001DA8
 _0806DF04: .4byte gUnk_0201B290
 _0806DF08: .4byte 0x000004A4
 _0806DF0C: .4byte 0x00000868
-_0806DF10: .4byte gUnk_0201C600
+_0806DF10: .4byte gPlayerHand
 _0806DF14:
 	add r4, sp, #0x100
 	movs r5, #0x84
@@ -175992,7 +175992,7 @@ _08072300:
 	ldr r6, _08072378 @ =0x00000868
 	muls r1, r6, r1
 	adds r1, r3, r1
-	ldr r5, _0807237C @ =gUnk_0201C600
+	ldr r5, _0807237C @ =gPlayerHand
 	adds r1, r1, r5
 	ldr r1, [r1]
 	lsls r1, r1, #2
@@ -176036,7 +176036,7 @@ _08072300:
 	.align 2, 0
 _08072374: .4byte 0x000004A4
 _08072378: .4byte 0x00000868
-_0807237C: .4byte gUnk_0201C600
+_0807237C: .4byte gPlayerHand
 _08072380:
 	cmp r2, #2
 	beq _08072398
@@ -177438,7 +177438,7 @@ _08072DF8:
 	ldr r5, _08072E60 @ =0x00000868
 	muls r1, r5, r1
 	adds r1, r3, r1
-	ldr r4, _08072E64 @ =gUnk_0201C600
+	ldr r4, _08072E64 @ =gPlayerHand
 	adds r1, r1, r4
 	ldr r1, [r1]
 	lsls r1, r1, #2
@@ -177479,7 +177479,7 @@ _08072DF8:
 	.align 2, 0
 _08072E5C: .4byte 0x000004A4
 _08072E60: .4byte 0x00000868
-_08072E64: .4byte gUnk_0201C600
+_08072E64: .4byte gPlayerHand
 _08072E68: .4byte 0x00001C88
 _08072E6C:
 	cmp r2, #2
@@ -178357,7 +178357,7 @@ _0807352C:
 	ands r1, r0
 	ldr r2, _08073560 @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _08073564 @ =gUnk_0201C600
+	ldr r2, _08073564 @ =gPlayerHand
 	adds r1, r1, r2
 	ldr r3, _08073568 @ =0x00001C88
 	adds r2, r2, r3
@@ -178377,7 +178377,7 @@ _08073554:
 	.align 2, 0
 _0807355C: .4byte 0x000004A4
 _08073560: .4byte 0x00000868
-_08073564: .4byte gUnk_0201C600
+_08073564: .4byte gPlayerHand
 _08073568: .4byte 0x00001C88
 
 	@ Machine Duplication
@@ -183524,7 +183524,7 @@ _08075E8C:
 	adds r1, r0, #0
 	ldr r2, _08075EB4 @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _08075EB8 @ =gUnk_0201C600
+	ldr r2, _08075EB8 @ =gPlayerHand
 	adds r1, r1, r2
 	ldr r5, _08075EBC @ =0x000004A4
 	adds r2, r3, r5
@@ -183540,7 +183540,7 @@ _08075EB0:
 	b _08075F6A
 	.align 2, 0
 _08075EB4: .4byte 0x00000868
-_08075EB8: .4byte gUnk_0201C600
+_08075EB8: .4byte gPlayerHand
 _08075EBC: .4byte 0x000004A4
 _08075EC0:
 	ldr r1, _08075EEC @ =gCardEffectDestroyAll_08050750
@@ -184363,7 +184363,7 @@ gEngineEffectDamageSendToGY_08076510: @ 0x08076510
 	ldr r1, _08076564 @ =0x00000868
 	muls r1, r3, r1
 	adds r0, r0, r1
-	ldr r1, _08076568 @ =gUnk_0201C600
+	ldr r1, _08076568 @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -184384,7 +184384,7 @@ gEngineEffectDamageSendToGY_08076510: @ 0x08076510
 _0807655C: .4byte gUnk_0201B290
 _08076560: .4byte 0x00000484
 _08076564: .4byte 0x00000868
-_08076568: .4byte gUnk_0201C600
+_08076568: .4byte gPlayerHand
 _0807656C: .4byte 0x00001656 @ Dark Scorpion - Chick the Yellow
 _08076570: .4byte 0x00001531 @ Dark Scorpion Burglars
 _08076574:
@@ -184577,7 +184577,7 @@ _080766D8:
 	ldr r1, _08076714 @ =0x00000868
 	muls r1, r2, r1
 	adds r0, r0, r1
-	ldr r1, _08076718 @ =gUnk_0201C600
+	ldr r1, _08076718 @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -184597,7 +184597,7 @@ _080766D8:
 	b _08076758
 	.align 2, 0
 _08076714: .4byte 0x00000868
-_08076718: .4byte gUnk_0201C600
+_08076718: .4byte gPlayerHand
 _0807671C: .4byte 0x00001656 @ Dark Scorpion - Chick the Yellow
 _08076720: .4byte 0x00001531 @ Dark Scorpion Burglars
 _08076724:
@@ -186098,7 +186098,7 @@ _0807729E:
 	ands r1, r2
 	ldr r2, _080772CC @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _080772D0 @ =gUnk_0201C600
+	ldr r2, _080772D0 @ =gPlayerHand
 	adds r1, r1, r2
 	ldr r3, _080772D4 @ =0x00001C88
 	adds r2, r2, r3
@@ -186111,7 +186111,7 @@ _0807729E:
 	b _0807730A
 	.align 2, 0
 _080772CC: .4byte 0x00000868
-_080772D0: .4byte gUnk_0201C600
+_080772D0: .4byte gPlayerHand
 _080772D4: .4byte 0x00001C88
 _080772D8:
 	ldrb r5, [r5, #2]
@@ -186659,7 +186659,7 @@ _080776C6:
 	lsls r0, r4, #2
 	adds r5, r0, r1
 _08077704:
-	ldr r0, _080777AC @ =gUnk_0201C600
+	ldr r0, _080777AC @ =gPlayerHand
 	adds r0, r5, r0
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -186736,7 +186736,7 @@ _0807778C:
 _080777A0: .4byte gUnk_0201E1C8
 _080777A4: .4byte 0x00000868
 _080777A8: .4byte gUnk_0201C4EC
-_080777AC: .4byte gUnk_0201C600
+_080777AC: .4byte gPlayerHand
 
 	@ Dark Mirror Force
 	thumb_func_start gCardEffectBanishChangePosition_080777B0
@@ -191585,7 +191585,7 @@ gCardEffectSearchSpecialSummon_08079E60: @ 0x08079E60
 	adds r1, r0, #0
 	ldr r2, _08079EBC @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _08079EC0 @ =gUnk_0201C600
+	ldr r2, _08079EC0 @ =gPlayerHand
 	adds r1, r1, r2
 	lsls r2, r5, #2
 	adds r1, r1, r2
@@ -191600,7 +191600,7 @@ _08079EB4:
 	bx r1
 	.align 2, 0
 _08079EBC: .4byte 0x00000868
-_08079EC0: .4byte gUnk_0201C600
+_08079EC0: .4byte gPlayerHand
 
 	@ Horus the Black Flame Dragon LV8
 	@ Sorcerer of Dark Magic
@@ -193855,7 +193855,7 @@ _0807B058:
 	ldr r1, _0807B090 @ =0x00000868
 	muls r1, r5, r1
 	adds r0, r0, r1
-	ldr r1, _0807B094 @ =gUnk_0201C600
+	ldr r1, _0807B094 @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r0, [r0]
 	lsls r1, r0, #2
@@ -193875,7 +193875,7 @@ _0807B058:
 	.align 2, 0
 _0807B08C: .4byte 0x000004A4
 _0807B090: .4byte 0x00000868
-_0807B094: .4byte gUnk_0201C600
+_0807B094: .4byte gPlayerHand
 _0807B098:
 	adds r0, r5, #0
 	movs r1, #2
@@ -193985,7 +193985,7 @@ _0807B152:
 	adds r4, r0, #0
 	ldr r2, _0807B180 @ =0x00000868
 	muls r2, r4, r2
-	ldr r4, _0807B184 @ =gUnk_0201C600
+	ldr r4, _0807B184 @ =gPlayerHand
 	adds r2, r2, r4
 	lsls r4, r1, #2
 	adds r2, r2, r4
@@ -194000,7 +194000,7 @@ _0807B178:
 	bx r1
 	.align 2, 0
 _0807B180: .4byte 0x00000868
-_0807B184: .4byte gUnk_0201C600
+_0807B184: .4byte gPlayerHand
 
 	@ Xing Zhen Hu
 	thumb_func_start gCardEffectUnknown_0807B188
@@ -196804,7 +196804,7 @@ gCardEffectSpecialSummonDestroySpellTrap_0807C750: @ 0x0807C750
 	adds r1, r0, #0
 	ldr r2, _0807C7B0 @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _0807C7B4 @ =gUnk_0201C600
+	ldr r2, _0807C7B4 @ =gPlayerHand
 	adds r1, r1, r2
 	lsls r2, r6, #2
 	adds r1, r1, r2
@@ -196824,7 +196824,7 @@ _0807C7AC:
 	b _0807C7E8
 	.align 2, 0
 _0807C7B0: .4byte 0x00000868
-_0807C7B4: .4byte gUnk_0201C600
+_0807C7B4: .4byte gPlayerHand
 _0807C7B8:
 	ldr r0, [r4, #0x14]
 	bl sub_080EEDF8
@@ -197477,7 +197477,7 @@ _0807CCEC:
 	ands r1, r2
 	ldr r2, _0807CD1C @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _0807CD20 @ =gUnk_0201C600
+	ldr r2, _0807CD20 @ =gPlayerHand
 	adds r1, r1, r2
 	ldr r3, _0807CD24 @ =0x00001C88
 	adds r2, r2, r3
@@ -197494,7 +197494,7 @@ _0807CD16:
 	bx r1
 	.align 2, 0
 _0807CD1C: .4byte 0x00000868
-_0807CD20: .4byte gUnk_0201C600
+_0807CD20: .4byte gPlayerHand
 _0807CD24: .4byte 0x00001C88
 
 	@ Spiritual Wind Art - Miyabi
@@ -203130,7 +203130,7 @@ _0807FA08:
 	ldr r2, _0807FA64 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _0807FA68 @ =gUnk_0201C600
+	ldr r0, _0807FA68 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r1, r0, #0x13
@@ -203167,7 +203167,7 @@ _0807FA60:
 	b _0807FAC0
 	.align 2, 0
 _0807FA64: .4byte 0x00000868
-_0807FA68: .4byte gUnk_0201C600
+_0807FA68: .4byte gPlayerHand
 _0807FA6C: .4byte gUnk_0201B290
 _0807FA70:
 	movs r2, #0
@@ -204009,7 +204009,7 @@ _0808011C:
 	ldr r0, _08080168 @ =0x00000868
 	adds r1, r6, #0
 	muls r1, r0, r1
-	ldr r0, _0808016C @ =gUnk_0201C600
+	ldr r0, _0808016C @ =gPlayerHand
 	adds r1, r1, r0
 	lsls r4, r4, #2
 	adds r1, r1, r4
@@ -204026,12 +204026,12 @@ _0808015C: .4byte 0x000012E5 @ Polymerization
 _08080160: .4byte 0x0000804B
 _08080164: .4byte 0x0000149C @ Fusion Gate
 _08080168: .4byte 0x00000868
-_0808016C: .4byte gUnk_0201C600
+_0808016C: .4byte gPlayerHand
 _08080170:
 	ldr r0, _080801B0 @ =0x00000868
 	adds r1, r6, #0
 	muls r1, r0, r1
-	ldr r0, _080801B4 @ =gUnk_0201C600
+	ldr r0, _080801B4 @ =gPlayerHand
 	adds r1, r1, r0
 	lsls r4, r4, #2
 	adds r1, r1, r4
@@ -204052,7 +204052,7 @@ _08080198:
 	ldr r0, _080801B0 @ =0x00000868
 	muls r0, r6, r0
 	adds r0, r4, r0
-	ldr r1, _080801B4 @ =gUnk_0201C600
+	ldr r1, _080801B4 @ =gPlayerHand
 	adds r0, r0, r1
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -204061,7 +204061,7 @@ _08080198:
 	b _080802A8
 	.align 2, 0
 _080801B0: .4byte 0x00000868
-_080801B4: .4byte gUnk_0201C600
+_080801B4: .4byte gPlayerHand
 _080801B8: .4byte gUnk_0201B290
 _080801BC: .4byte 0x000018FB @ UFOroid Fighter
 _080801C0:
@@ -216111,7 +216111,7 @@ _080858BC:
 	adds r0, r5, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _08085900 @ =gUnk_0201C600
+	ldr r0, _08085900 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -216137,7 +216137,7 @@ _080858EE:
 _080858F4: .4byte 0x00000868
 _080858F8: .4byte gUnk_0201C510
 _080858FC: .4byte gPlayerCards
-_08085900: .4byte gUnk_0201C600
+_08085900: .4byte gPlayerHand
 _08085904:
 	adds r6, #1
 	ldr r3, _08085924 @ =0x00000868
@@ -216259,7 +216259,7 @@ _080859DA:
 	adds r0, r5, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _08085A24 @ =gUnk_0201C600
+	ldr r0, _08085A24 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -216288,7 +216288,7 @@ _08085A12:
 _08085A18: .4byte 0x00000868
 _08085A1C: .4byte gUnk_0201C510
 _08085A20: .4byte gPlayerCards
-_08085A24: .4byte gUnk_0201C600
+_08085A24: .4byte gPlayerHand
 _08085A28:
 	adds r6, #1
 	ldr r3, _08085A4C @ =0x00000868
@@ -217543,7 +217543,7 @@ _080864AA:
 	adds r0, r5, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _080864E4 @ =gUnk_0201C600
+	ldr r0, _080864E4 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -217564,7 +217564,7 @@ _080864AA:
 _080864D8: .4byte gPlayerCards
 _080864DC: .4byte 0x00000868
 _080864E0: .4byte gRitual
-_080864E4: .4byte gUnk_0201C600
+_080864E4: .4byte gPlayerHand
 _080864E8:
 	adds r4, #1
 	ldr r3, _08086504 @ =0x00000868
@@ -217616,7 +217616,7 @@ _08086538:
 	adds r0, r7, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _08086568 @ =gUnk_0201C600
+	ldr r0, _08086568 @ =gPlayerHand
 	adds r5, r1, r0
 	ldr r0, [r5]
 	lsls r0, r0, #0x13
@@ -217634,7 +217634,7 @@ _08086538:
 	.align 2, 0
 _08086560: .4byte gPlayerCards
 _08086564: .4byte 0x00000868
-_08086568: .4byte gUnk_0201C600
+_08086568: .4byte gPlayerHand
 _0808656C:
 	ldr r0, [r5]
 	lsls r1, r0, #2
@@ -217783,7 +217783,7 @@ gEngineEffectRitualSummonTribute_08086634: @ 0x08086634
 	ldr r2, _080866E8 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _080866EC @ =gUnk_0201C600
+	ldr r0, _080866EC @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r1, r0, #0x13
@@ -217829,7 +217829,7 @@ _080866DC: .4byte gUnk_0201B290
 _080866E0: .4byte 0x000004A4
 _080866E4: .4byte gRitual
 _080866E8: .4byte 0x00000868
-_080866EC: .4byte gUnk_0201C600
+_080866EC: .4byte gPlayerHand
 _080866F0:
 	ldr r0, [sp, #0xb0]
 	ldr r1, [sp, #0xb4]
@@ -218223,7 +218223,7 @@ _080869DC:
 	adds r0, r4, r3
 	ldrh r0, [r0]
 	lsls r1, r0, #0x13
-	ldr r0, _08086A18 @ =gUnk_0201C600
+	ldr r0, _08086A18 @ =gPlayerHand
 	adds r0, r6, r0
 	ldr r0, [r0]
 	lsls r0, r0, #0x13
@@ -218245,7 +218245,7 @@ _08086A08: .4byte gUnk_0201B290
 _08086A0C: .4byte 0x00000484
 _08086A10: .4byte gRitual
 _08086A14: .4byte 0x00000868
-_08086A18: .4byte gUnk_0201C600
+_08086A18: .4byte gPlayerHand
 _08086A1C:
 	adds r4, #4
 	adds r5, #1
@@ -218473,7 +218473,7 @@ _08086BBA:
 	adds r0, r1, #0
 	muls r0, r3, r0
 	adds r2, r2, r0
-	ldr r0, _08086C0C @ =gUnk_0201C600
+	ldr r0, _08086C0C @ =gPlayerHand
 	adds r2, r2, r0
 	ldr r0, [r2]
 	lsls r0, r0, #0x13
@@ -218501,7 +218501,7 @@ _08086BFC: .4byte 0x000019D9 @ End of the World
 _08086C00: .4byte gRitual
 _08086C04: .4byte 0x00000868
 _08086C08: .4byte gUnk_0201C510
-_08086C0C: .4byte gUnk_0201C600
+_08086C0C: .4byte gPlayerHand
 _08086C10:
 	movs r1, #1
 	rsbs r1, r1, #0
@@ -218794,7 +218794,7 @@ _08086DFE:
 	ldr r0, _08086E5C @ =0x00000868
 	muls r0, r1, r0
 	adds r2, r2, r0
-	ldr r0, _08086E60 @ =gUnk_0201C600
+	ldr r0, _08086E60 @ =gPlayerHand
 	adds r2, r2, r0
 	ldr r0, [r2]
 	lsls r0, r0, #0x13
@@ -218827,7 +218827,7 @@ _08086E50: .4byte 0x000019D9 @ End of the World
 _08086E54: .4byte gUnk_0201E2A0
 _08086E58: .4byte gPlayerCards
 _08086E5C: .4byte 0x00000868
-_08086E60: .4byte gUnk_0201C600
+_08086E60: .4byte gPlayerHand
 _08086E64: .4byte gRitual
 _08086E68:
 	adds r5, #1
@@ -219179,7 +219179,7 @@ _0808710C:
 	adds r1, r3, #0
 	ldr r2, _08087160 @ =0x00000868
 	muls r1, r2, r1
-	ldr r2, _08087164 @ =gUnk_0201C600
+	ldr r2, _08087164 @ =gPlayerHand
 	adds r1, r1, r2
 	lsls r0, r0, #2
 	adds r1, r1, r0
@@ -219203,7 +219203,7 @@ _08087158:
 	.align 2, 0
 _0808715C: .4byte gRitual
 _08087160: .4byte 0x00000868
-_08087164: .4byte gUnk_0201C600
+_08087164: .4byte gPlayerHand
 _08087168: .4byte gUnk_0201E2A0
 _0808716C:
 	ldr r0, _080871A4 @ =0x000019DA (Samsara)
@@ -219855,7 +219855,7 @@ _080875B2:
 	adds r0, r6, #0
 	muls r0, r3, r0
 	adds r1, r1, r0
-	ldr r0, _08087674 @ =gUnk_0201C600
+	ldr r0, _08087674 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -219946,7 +219946,7 @@ _08087658:
 _08087668: .4byte 0x000019CE @ Princess Curran
 _0808766C: .4byte gPlayerCards
 _08087670: .4byte 0x00000868
-_08087674: .4byte gUnk_0201C600
+_08087674: .4byte gPlayerHand
 _08087678: .4byte gUnk_0201C740
 
 	@ Monster Eye
@@ -220472,7 +220472,7 @@ gCardAISpecialSummonSendToGY_08087A20: @ 0x08087A20
 	ldr r2, _08087A78 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _08087A7C @ =gUnk_0201C600
+	ldr r0, _08087A7C @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -220502,7 +220502,7 @@ _08087A6C:
 	bx r0
 	.align 2, 0
 _08087A78: .4byte 0x00000868
-_08087A7C: .4byte gUnk_0201C600
+_08087A7C: .4byte gPlayerHand
 
 	@ Drill Bug
 	thumb_func_start gCardAIDamage_08087A80
@@ -220673,7 +220673,7 @@ gCardAISpecialSummon_08087BA8: @ 0x08087BA8
 	ldr r2, _08087BEC @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _08087BF0 @ =gUnk_0201C600
+	ldr r0, _08087BF0 @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -220698,7 +220698,7 @@ _08087BE6:
 	bx r0
 	.align 2, 0
 _08087BEC: .4byte 0x00000868
-_08087BF0: .4byte gUnk_0201C600
+_08087BF0: .4byte gPlayerHand
 
 	@ Fusion Gate
 	@ Polymerization
@@ -221653,7 +221653,7 @@ gCardAIDestroySpellTrap_08088304: @ 0x08088304
 	ldr r2, _08088358 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _0808835C @ =gUnk_0201C600
+	ldr r0, _0808835C @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -221685,7 +221685,7 @@ _08088352:
 	bx r0
 	.align 2, 0
 _08088358: .4byte 0x00000868
-_0808835C: .4byte gUnk_0201C600
+_0808835C: .4byte gPlayerHand
 
 	@ Call of the Haunted
 	@ Dark Ruler Vandalgyon
@@ -222337,7 +222337,7 @@ gCardAISpecialSummon_0808882C: @ 0x0808882C
 	ldr r2, _08088868 @ =0x00000868
 	muls r0, r2, r0
 	adds r1, r1, r0
-	ldr r0, _0808886C @ =gUnk_0201C600
+	ldr r0, _0808886C @ =gPlayerHand
 	adds r1, r1, r0
 	ldr r0, [r1]
 	lsls r0, r0, #0x13
@@ -222358,7 +222358,7 @@ gCardAISpecialSummon_0808882C: @ 0x0808882C
 	b _080888E4
 	.align 2, 0
 _08088868: .4byte 0x00000868
-_0808886C: .4byte gUnk_0201C600
+_0808886C: .4byte gPlayerHand
 _08088870: .4byte 0x0000165B @ Contract with Exodia
 _08088874: .4byte 0x00001476 @ Ancient Lamp
 _08088878:
