@@ -78,7 +78,7 @@ SECTIONS {
         . = 0x0001C5E8; gUnk_0201C5E8 = .;
         . = 0x0001C5EC; gUnk_0201C5EC = .;
         . = 0x0001C5FC; gUnk_0201C5FC = .;
-        . = 0x0001C600; gUnk_0201C600 = .;
+        . = 0x0001C600; gPlayerHand = .;
         . = 0x0001C740; gUnk_0201C740 = .;
         . = 0x0001C880; gUnk_0201C880 = .;
         . = 0x0001C8F4; gUnk_0201C8F4 = .;
