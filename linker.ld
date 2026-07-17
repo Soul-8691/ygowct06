@@ -382,7 +382,7 @@ SECTIONS {
         src/input.o(.data);
         data/data_09E5F8F0.o(.data);
         src/starter_decks.o(.data);
-        data/data_09E5FD84.o(.data);
+        data/data_09E5FD54.o(.data);
         src/deck.o(.rodata);
         data/data_09E69970.o(.rodata);
 
