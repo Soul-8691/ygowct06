@@ -144,7 +144,6 @@ def step_png_to_8bpp():
         result = run_gbagfx(
             win_to_wsl(png_path),
             win_to_wsl(bpp_path),
-            '-mwidth', '10',
         )
         if result.returncode == 0:
             ok += 1
