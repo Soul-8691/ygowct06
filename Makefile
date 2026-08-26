@@ -116,7 +116,16 @@ TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
 MAKEFLAGS += --no-print-directory
 
-all: tools rom
+# Only wire `graphics` into the default build when the generated card art
+# isn't there yet (ignoring the placeholder .gitkeep files) -- once it's
+# present, regular builds skip the PNG scan and stay fast.
+GRAPHICS_MISSING := $(if $(wildcard graphics/6bpp/cards/*.6bpp),,1)$(if $(wildcard graphics/8bpp/cards/icons/*.8bpp),,1)
+
+all: tools
+ifneq ($(GRAPHICS_MISSING),)
+all: graphics
+endif
+all: rom
 
 rom: $(ROM)
 ifeq ($(COMPARE),1)
@@ -187,6 +196,9 @@ $(C_BUILDDIR)/card_icons.o: $(C_SUBDIR)/card_icons.c
 
 $(CARD6BPP):
 	@$(MAKE) -C tools/card6bpp
+
+$(GFX):
+	@$(MAKE) -C tools/gbagfx
 
 ifeq ($(NODEP),1)
 $(C_BUILDDIR)/%.o: c_dep :=
