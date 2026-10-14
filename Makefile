@@ -116,16 +116,11 @@ TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
 MAKEFLAGS += --no-print-directory
 
-# Only wire `graphics` into the default build when the generated card art
-# isn't there yet (ignoring the placeholder .gitkeep files) -- once it's
-# present, regular builds skip the PNG scan and stay fast.
-GRAPHICS_MISSING := $(if $(wildcard graphics/6bpp/cards/*.6bpp),,1)$(if $(wildcard graphics/8bpp/cards/icons/*.8bpp),,1)
-
-all: tools
-ifneq ($(GRAPHICS_MISSING),)
-all: graphics
-endif
+# Card art conversion must finish before any object file is built (card_graphics.c
+# incbins 6bpp files). Order-only so mtime checks stay fast when PNGs are unchanged.
 all: rom
+
+$(OBJS): | graphics
 
 rom: $(ROM)
 ifeq ($(COMPARE),1)

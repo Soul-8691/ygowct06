@@ -1,15 +1,14 @@
 # Card art from graphics/png/cards (paths contain spaces — never list as make prerequisites):
 #   convert_graphics.py: PNG -> .8bpp -> .6bpp  (build direction)
 #
-# card_graphics.o/card_icons.o don't depend on these individually (see the
-# scaninc note above), so `make` only runs this automatically when the
-# generated 6bpp/8bpp output is missing (GRAPHICS_MISSING in the main
-# Makefile, which ignores the placeholder .gitkeep files). Run `make graphics`
-# explicitly after changing any card art or icon PNGs so it re-scans PNG mtimes.
+# card_graphics.o/card_icons.o don't list each .6bpp/.8bpp as a prerequisite
+# (see scaninc note above). The main Makefile adds `| graphics` on all $(OBJS)
+# so conversion always runs before compile. These recipes no-op when PNGs are
+# up to date; run `make graphics` alone to force the same checks without a full build.
 
 .PHONY: convert-graphics convert-icons graphics
 
-graphics: convert-graphics convert-icons
+graphics: tools convert-graphics convert-icons
 
 convert-graphics: $(GFX)
 	@if [ -z "$$(find graphics/6bpp/cards -maxdepth 1 -name '*.6bpp' -print -quit 2>/dev/null)" ] || \
