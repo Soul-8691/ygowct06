@@ -46,7 +46,8 @@ typedef struct PlayerCards {
 } PlayerCards;
 
 typedef struct Unk_0201E2A0 {
-    u8 fill0[0x8-0x0];
+    u8 fill0[0x4-0x0];
+    u32 unk4;
     s32 unk8[0]; // TODO: Unknown size
 } Unk_0201E2A0;
 
@@ -72,6 +73,22 @@ struct Unk_03000040 {
 
 struct Unk_0201F440 {
     u8 unk0;
+};
+
+struct Unk_0201C4E8 { // TODO: really?
+    u32 unk0;
+    u32 unk4;
+    u8 pad4[0x868 - 0x8];
+};
+
+struct Unk_020230E8 {
+    u32 unk0, unk4, unk8[0]; // TODO: IDK the size
+};
+
+struct Unk_02023130 {
+    u8 pad0[0x4C - 0x0];
+    u16 unk4C[2];
+    u16 unk50[1][0x50];
 };
 
 #endif // GUARD_EFFECTS_H

@@ -5,6 +5,7 @@
 # (see scaninc note above). The main Makefile adds `| graphics` on all $(OBJS)
 # so conversion always runs before compile. These recipes no-op when PNGs are
 # up to date; run `make graphics` alone to force the same checks without a full build.
+# Or use `make SKIP_GRAPHICS=1` when generated 6bpp/8bpp is already present.
 
 .PHONY: convert-graphics convert-icons graphics
 

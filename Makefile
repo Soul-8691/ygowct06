@@ -118,9 +118,13 @@ MAKEFLAGS += --no-print-directory
 
 # Card art conversion must finish before any object file is built (card_graphics.c
 # incbins 6bpp files). Order-only so mtime checks stay fast when PNGs are unchanged.
+# Set SKIP_GRAPHICS=1 to skip PNG→6bpp/8bpp checks (run `make graphics` after changing art).
+SKIP_GRAPHICS ?= 0
 all: rom
 
+ifeq ($(SKIP_GRAPHICS),0)
 $(OBJS): | graphics
+endif
 
 rom: $(ROM)
 ifeq ($(COMPARE),1)
